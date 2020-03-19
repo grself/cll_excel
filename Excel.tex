@@ -1,0 +1,126 @@
+%********************************************************************
+% Title: Excel for CLL
+% Description: An Open Educational Resource for my CLL Excel class
+% Author: George Self
+% History: 
+%   200320: Started This Puppy
+%********************************************************************
+
+\RequirePackage{fix-cm} % fix some latex issues see: http://texdoc.net/texmf-dist/doc/latex/base/fixltx2e.pdf
+\documentclass[ twoside, openright, titlepage, numbers=noenddot, headinclude,
+  %1headlines, % letterpaper a4paper, 
+  footinclude=true, cleardoublepage=empty, abstractoff, 
+  % <--- obsolete, remove (todo)
+  BCOR=5mm, 
+  %paper=a4,
+  paper=letter, fontsize=11pt,
+  % ngerman (New German) formats German umlauts (among other things)
+  american
+  %
+]{scrreprt}
+
+%*********************************************************************
+% Note: Make all your adjustments in here
+%*********************************************************************
+\input{Excel-config}
+
+%*********************************************************************
+% Bibliographies
+%*********************************************************************
+%\addbibresource{Bibliography.bib}
+%\addbibresource[label=ownpubs]{AMiede_Publications.bib}
+
+%*********************************************************************
+% Hyphenation
+%*********************************************************************
+%\hyphenation{put special hyphenation here}
+
+%*********************************************************************
+% The document
+%*********************************************************************
+\begin{document}
+\frenchspacing
+\raggedbottom
+\selectlanguage{american} % american ngerman
+%\renewcommand*{\bibname}{new name}
+%\setbibpreamble{}
+\pagenumbering{roman}
+\pagestyle{plain}
+%*********************************************************************
+% Frontmatter
+%*********************************************************************
+%\include{FrontBackmatter/DirtyTitlepage}
+\include{FrontBackmatter/Titlepage}
+\include{FrontBackmatter/Titleback}
+%\cleardoublepage\include{FrontBackmatter/Dedication}
+\cleardoublepage\include{FrontBackmatter/Foreword}
+%\cleardoublepage\include{FrontBackmatter/Abstract}
+%\cleardoublepage\include{FrontBackmatter/Publications}
+%\cleardoublepage\include{FrontBackmatter/Acknowledgments}
+\pagestyle{scrheadings}
+\cleardoublepage\include{FrontBackmatter/Contents}
+%*********************************************************************
+% Mainmatter
+%*********************************************************************
+\cleardoublepage\pagenumbering{arabic}
+\ctparttext{Part 1 is a basic introduction to Excel. Topics include using toolbars and worksheets, selecting cells and entering data, creating spreadsheets and formulas, formatting cells, handling and saving files.}
+\part{Basic Skills}
+\cleardoublepage
+\include{Chapters/01Fundamental}
+%\include{Chapters/02Foundations}
+%\include{Chapters/03Ethics}
+%\include{Chapters/04Design}
+
+\ctparttext{Part 2 builds on your skills from Part 1. It covers worksheet tables, selecting and formatting objects, text boxes, shapes and charts, conditional formatting and printing tips.}
+\part{Intermediate Skills}
+%\cleardoublepage
+%\include{Chapters/05Measuring}
+%\include{Chapters/06Data} 
+%\include{Chapters/07Sampling}
+%\include{Chapters/08Surveys}
+%\include{Chapters/09Experimental}
+%
+\ctparttext{Part 3 moves on to advanced Excel skills. You can learn to create macros, develop multi-sheet and multi-file formulas and discover pivot tables.}
+\part{Advanced Skills}
+%\cleardoublepage
+%\include{Chapters/10Interviews}
+%\include{Chapters/11Field}
+%\include{Chapters/12Unobtrusive}
+%\include{Chapters/13Interpretive}
+%
+%\ctparttext{All quantitative and qualitative research methods have certain strengths and weaknesses. Mixed methods are an attempt to use more than one research method on a given project to utilize the strengths of each method while mitigating their weaknesses.}
+%\part{Mixed Methods}
+%\cleardoublepage
+%\include{Chapters/14mixed}
+%
+%\ctparttext{After a research project is completed, the investigator must report the results of the project, often in both written and oral forms. This chapter concerns the reporting process.}
+%\part{Reporting}
+%\cleardoublepage
+%\include{Chapters/15Presenting}
+
+%*******************************************************************
+% Sandbox
+%*******************************************************************
+%\include{Chapters/98Sandbox}
+
+
+%*******************************************************************
+% Backmatter
+%*******************************************************************
+%\appendix
+%\renewcommand{\thechapter}{\alph{chapter}}
+%\cleardoublepage
+%\ctparttext{This part contains the Glossary, Bibliography, and Colophon.}
+%\part{Appendix}
+%\include{Chapters/00Appendix}
+%*********************************************************************
+% Other Stuff in the Back
+%*********************************************************************
+%\cleardoublepage\include{FrontBackmatter/Glossary}
+%\cleardoublepage\include{FrontBackmatter/Bibliography}
+%\cleardoublepage\include{FrontBackmatter/Declaration}
+\cleardoublepage\include{FrontBackmatter/Colophon}
+%*********************************************************************
+% Game Over: Restore, Restart, or Quit?
+%*********************************************************************
+\end{document}
