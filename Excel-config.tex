@@ -112,7 +112,7 @@
   natbib=true % natbib compatibility mode (\citep and \citet still work)
   }{biblatex}
   \usepackage{biblatex}
-\addbibresource{ResearchMethods}
+%\addbibresource{ResearchMethods}
 
 %*****
 % Generally useful packages
@@ -162,6 +162,7 @@
 % Special text boxes
 %*****
 \usepackage{tcolorbox} % create nice color boxes
+\definecolor{infopurple}{RGB}{136,3,145}
 \definecolor{objgold}{RGB}{255,178,102}
 \definecolor{shtcutblue}{RGB}{102,255,255}
 \definecolor{sklred}{RGB}{176,5,5}
@@ -170,6 +171,13 @@
 \newtcolorbox{objbox}[1]{
 	colback=objgold!5!white,
 	colframe=objgold!85!black,
+	fonttitle=\bfseries,
+	width=.95\linewidth,
+	title=#1}
+% a ``information'' box
+\newtcolorbox{infobox}[1]{
+	colback=infopurple!5!white,
+	colframe=infopurple!85!black,
 	fonttitle=\bfseries,
 	width=.95\linewidth,
 	title=#1}
