@@ -307,7 +307,7 @@ Once you create a new workbook, you will need to change the file name and choose
 The Status Bar is located below the worksheet tabs on the Excel screen (see Figure \ref{01:fig13}). It displays a variety of information, such as the status of certain keys on your keyboard (e.g., CAPS LOCK), the available views for a workbook, the magnification of the screen, and mathematical functions that can be performed when data are highlighted on a worksheet. You can customize the Status Bar as follows:
 
 \begin{enumerate}
-	\item 1. Place the mouse pointer over any area of the Status Bar and right click to display the ``Customize Status Bar'' list of options (see Figure \ref{01:fig13}).
+	\item Place the mouse pointer over any area of the Status Bar and right click to display the ``Customize Status Bar'' list of options (see Figure \ref{01:fig13}).
 	\item Select the Caps Lock option from the menu (see Figure \ref{01:fig13}).
 	\item Press the CAPS LOCK key on your keyboard. You will see the Caps Lock indicator on the lower right side of the Status Bar.
 	\item Press the CAPS LOCK on your keyboard again. The indicator on the Status Bar goes away.
@@ -472,8 +472,7 @@ Data that has been entered in a cell can be changed by double clicking the cell 
 \end{center}
 
 
-\begin{enumerate}
-	\setcounter{enumi}{5}
+\begin{enumerate}[resume]
 	\item Click the checkmark to the left of the Formula Bar (see Figure \ref{01:fig17}). This will enter the change into the cell.
 \end{enumerate}
 
@@ -484,9 +483,8 @@ Data that has been entered in a cell can be changed by double clicking the cell 
 	\label{01:fig17}
 \end{figure}
 
-\begin{enumerate}
-	\setcounter{enumi}{6}
-	\item Double click cell A15\textsf{A15}.
+\begin{enumerate}[resume]
+	\item Double click cell \textsf{A15}.
 	\item Add a space after the word Total and type the word \textbf{Sales}.
 	\item Press the ENTER key.
 \end{enumerate}
@@ -588,8 +586,7 @@ There are several methods for removing data from a worksheet, a few of which are
 	\end{shtcutbox}
 \end{center}
 
-\begin{enumerate}
-	\setcounter{enumi}{2}
+\begin{enumerate}[resume]
 	\item Highlight the range \textsf{C2:C14} by placing the mouse pointer over cell \textsf{C2}. Then left click and drag the mouse pointer down to cell \textsf{C14}.
 	\item Click the Clear button in the Home tab of the Ribbon, which is next to the Cells group of commands (see Figure \ref{01:fig22}). This opens a drop-down menu that contains several options for removing or clearing data from a cell. Notice that you also have options for clearing just the formats or the hyperlinks in a cell.
 	\item Click the Clear All option. This removes the data in the cell range.
@@ -884,9 +881,7 @@ Using Excel workbooks that have been created by others is a very efficient way t
 	\end{infobox}
 \end{center}
 
-\begin{enumerate}
-	\setcounter{enumi}{2}
-
+\begin{enumerate}[resume]
 	\item Click the Insert Sheet Columns option from the drop-down menu (see Figure \ref{01:fig29}). A blank column will be inserted to the left of Column \textsf{C}. The contents that were previously in Column \textsf{C} now appear in Column \textsf{D}. Note that columns are always inserted to the left of the activated cell.
 
 \end{enumerate}
@@ -913,9 +908,7 @@ Using Excel workbooks that have been created by others is a very efficient way t
 	\end{shtcutbox}
 \end{center}
 
-\begin{enumerate}
-	\setcounter{enumi}{3}
-
+\begin{enumerate}[resume]
 	\item Click cell \textsf{A3} in the Sheet1 worksheet by placing the mouse pointer over the cell location and clicking the left mouse button.
 	\item Click the down arrow on the Insert button in the Home tab of the Ribbon (see Figure \ref{01:fig28}).
 	\item Click the Insert Sheet Rows option from the drop-down menu (see Figure \ref{01:fig29}). A blank row will be inserted above Row 3. The contents that were previously in Row 3 now appear in Row 4. Note that rows are always inserted above the activated cell.
@@ -971,9 +964,7 @@ Once data are entered into a worksheet, you have the ability to move it to diffe
 	\label{01:fig30}
 \end{figure}
 
-\begin{enumerate}
-	\setcounter{enumi}{2}
-	
+\begin{enumerate}[resume]
 	\item Left Click and drag the mouse pointer to cell \textsf{C2}.
 	\item Release the left mouse button. The data now appears in Column \textsf{C}.
 	\item Click the Undo button in the Quick Access Toolbar. This moves the data back to Column \textsf{D}.
@@ -1021,8 +1012,7 @@ You may need to delete entire columns or rows of data from a worksheet. This nee
 	\end{shtcutbox}
 \end{center}
 
-\begin{enumerate}
-	\setcounter{enumi}{3}
+\begin{enumerate}[resume]
 	\item Click cell C1 by placing the mouse pointer over the cell location and clicking the left mouse button.
 	\item Click the down arrow on the Delete button in the Cells group in the Home tab of the Ribbon.
 	\item Click the Delete Sheet Columns option from the drop-down menu (see Figure \ref{01:fig31}). This removes Column C and shifts all the data in the worksheet (to the right of Column B) over one column to the left.
@@ -1083,1001 +1073,819 @@ You may need to delete entire columns or rows of data from a worksheet. This nee
 
 \section{Formatting and Data Analysis}
 
-%TODO Start here
+\begin{center}
+	\begin{objbox}{Learning Objectives}
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Use formatting techniques as introduced in the Excel Spreadsheet Guidelines to enhance the appearance of a worksheet.
+			\item Understand how to align data in cell locations.
+			\item Examine how to enter multiple lines of text in a cell location.
+			\item Understand how to add borders to a worksheet.
+			\item Examine how to use the AutoSum feature to calculate totals.
+			\item Use the Cut, Copy, and Paste commands to manipulate the data on a worksheet.
+			\item 7. Understand how to move, rename, insert, and delete worksheet tabs.
+		\end{itemize}
+	\end{objbox}
+\end{center}
 
-Learning Objectives
+This section addresses formatting commands that can be used to enhance the visual appearance of a worksheet. It also provides an introduction to mathematical calculations. The skills introduced in this section will give you powerful tools for analyzing the data that we have been working with in this workbook and will highlight how Excel is used to make key decisions in virtually any career. Additionally, Excel Spreadsheet Guidelines for format and appearance will be introduced as a format for the course and spreadsheets submitted.
 
+\subsection{Formatting Data and Cells}
 
-1. Use formatting techniques as introduced in the Excel Spreadsheet Guidelines to enhance the appearance
-of a worksheet.
-2. Understand how to align data in cell locations.
-3. Examine how to enter multiple lines of text in a cell location.
-4. Understand how to add borders to a worksheet.
-5. Examine how to use the AutoSum feature to calculate totals.
-6. Use the Cut, Copy, and Paste commands to manipulate the data on a worksheet.
-7. Understand how to move, rename, insert, and delete worksheet tabs.
+Enhancing the visual appearance of a worksheet is a critical step in creating a valuable tool for you or your coworkers when making key decisions. There are accepted professional formatting standards when spreadsheets contain only currency data. For this course, we will use the following Excel Guidelines for Formatting. The Figure \ref{01:fig32} displays how to use Accounting number format when ALL figures are currency. Only the first row of data and the totals should be formatted with the Accounting format. The other data should be formatted with Comma style. There also needs to be a Top Border above the numbers in the total row. If any of the numbers have cents, you need to format all of the data with two decimal places.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig32}
+	\caption{Excel Guidelines for Formatting Currency}
+	\label{01:fig32}
+\end{figure}
 
+Often, your Excel spreadsheet will contain values that are both currency and non-currency in nature. When that is the case, use the guidelines in Figure \ref{01:fig33}.
 
-This section addresses formatting commands that can be used to enhance the visual appearance of
-a worksheet. It also provides an introduction to mathematical calculations. The skills introduced in
-this section will give you powerful tools for analyzing the data that we have been working with in
-this workbook and will highlight how Excel is used to make key decisions in virtually any career.
-Additionally, Excel Spreadsheet Guidelines for format and appearance will be introduced as a format
-for the course and spreadsheets submitted.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig33}
+	\caption{Excel Guidelines for Formatting Numbers}
+	\label{01:fig33}
+\end{figure}
 
-FORMATTING DATA AND CELLS
-
-Enhancing the visual appearance of a worksheet is a critical step in creating a valuable tool for you
-or your coworkers when making key decisions. There are accepted professional formatting standards
-when spreadsheets contain only currency data. For this course, we will use the following Excel
-Guidelines for Formatting. The first figure displays how to use Accounting number format when ALL
-figures are currency. Only the first row of data and the totals should be formatted with the Accounting
-format. The other data should be formatted with Comma style. There also needs to be a Top Border
-above the numbers in the total row. If any of the numbers have cents, you need to format all of the
-data with two decimal places.
-
-
-
-
-44 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 1.31a
-
-
-Often, your Excel spreadsheet will contain values that are both currency and non-currency in nature.
-When that is the case, you’ll want to use the guidelines in the following figure:
-
-
-
-
-BEGINNING EXCEL 45
-Figure 1.31b
-
-
-The following steps demonstrate several fundamental formatting skills that will be applied to the
-workbook that we are developing for this chapter. Several of these formatting skills are identical to
-ones that you may have already used in other Microsoft applications such as Microsoft® Word® or
+The following steps demonstrate several fundamental formatting skills that will be applied to the workbook that we are developing for this chapter. Several of these formatting skills are identical to ones that you may have already used in other Microsoft applications such as Microsoft® Word® or
 Microsoft® PowerPoint®.
 
-1. Highlight the range A2:D2 in the Sheet1 worksheet by placing the mouse pointer over cell A2
-and left clicking and dragging to cell D2. Click the Bold button in the Font group of commands
-in the Home tab of the ribbon.
-2. Click the Border button in the Font group of commands in the Home tab of the Ribbon
-(see Figure 1.32). Select the Bottom Border option from the list to achieve the goal of a border
-on the bottom of row 2 below the column headings.
-
-
-
-
-46 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 1.32 Font Group of Commands
-
-
-
-
-Keyboard Shortcuts
-
-
-Bold Format
-
-%◦ Hold the CTRL key while pressing the letter B on your keyboard.
-
-
-
-3. Highlight the range A15:D15 by placing the mouse pointer over cell A15 and left clicking and
-dragging to cell D15.
-4. Click the Bold button in the Font group of commands in the Home tab of the Ribbon.
-5. Click the Border button in the Font group of commands in the Home tab of the Ribbon
-(see Figure 1.32). Select the Top Border option from the list to achieve the goal of a border on
-the top of row 15 where totals will eventually display.
-
-
-Keyboard Shortcuts
-
-
-Italics Format
-
-%◦ Hold the CTRL key while pressing the letter I on your keyboard.
-
-
-
-
-BEGINNING EXCEL 47
-Keyboard Shortcuts
-
-
-Underline Format
-
-%◦ Hold the CTRL key while pressing the letter U on your keyboard.
-
-
-
-
-1. Highlight the range B3:B14 by placing the mouse pointer over cell B3 and left clicking and
-dragging down to cell B14.
-2. Click the Comma Style button in the Number group of commands in the Home tab of the
-Ribbon. This feature adds a comma as well as two decimal places. (see Figure 1.33).
-
-
-
-
-Why?
-
-Format Column Headings and Totals
-
-Applying formatting enhancements to the column headings and column totals in a worksheet is a very important
-technique, especially if you are sharing a workbook with other people. These formatting techniques allow users of
-the worksheet to clearly see the column headings that define the data. In addition, the column totals usually contain
-the most important data on a worksheet with respect to making decisions, and formatting techniques allow users
-to quickly see this information.
-
-
-
-
-48 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 1.33 Number Group of Commands
-
-
-3. Since the figures in this range do not include cents, click the Decrease Decimal button in the
-Number group of commands in the Home tab of the Ribbon two times (see Figure 1.33).
-4. The numbers will also be reduced to zero decimal places.
-5. Highlight the range C3:C14 by placing the mouse pointer over cell C3 and left clicking and
-dragging down to cell C14.
-6. Click the Accounting Number Format button in the Number group of commands in the Home
-tab of the Ribbon (see Figure 1.33). This will add the US currency symbol and two decimal
-places to the values. This format is common when working with pricing data. As discussed
-above in the Formatting Data and Cells section, you will want to use Accounting format on all
-values in this range since the worksheet contains non-currency as well as currency data.
-7. Highlight the range D3:D14 by placing the mouse pointer over cell D3 and left clicking and
-dragging down to cell D14.
-8. Again, select the Accounting Number Format; this will add the US currency symbol to the
-values as well as two decimal places.
-9. Click the Decrease Decimal button in the Number group of commands in the Home tab of the
-Ribbon.
-10. This will add the US currency symbol to the values and reduce the decimal places to zero since
-there are no cents in these figures.
-11. Highlight the range A1:D1 by placing the mouse pointer over cell A1 and left clicking and
-dragging over to cell D1.
-12. Click the down arrow next to the Fill Color button in the Font group of commands in the Home
-tab of the Ribbon (see Figure 1.34). This will prepare the range for a worksheet title.
-
-
-
-
-BEGINNING EXCEL 49
-Figure 1.34 Fill Color Palette
-
-
-
-
-13. Click the Blue, Accent 1, Darker 25% color from the palette (see Figure 1.34). Notice that as you
-move the mouse pointer over the color palette, you will see a preview of how the color will
-appear in the highlighted cells. Experiment with this feature.
-14. Click on A1 and enter the worksheet title: General Merchandise World and click on the check
-mark in the formula bar to enter this information.
-15. Since the black font is difficult to read on the blue background, you’ll change the font color to be
-more visible. Click the down arrow next to the Font Color button in the Font group of
-commands in the Home tab of the Ribbon; select White as the font color for this range
-(see Figure 1.32).
-16. Highlight the range A1:D15 by placing the mouse pointer over cell A1 and left clicking and
-dragging down to cell D15.
-17. Click the drop-down arrow on the right side of the Font button in the Home tab of the Ribbon;
-select Arial as the font for this range. (see Figure 1.32).
-18. Notice that as you move the mouse pointer over the font style options, you can see the font
-change in the highlighted cells.
-19. Expand the column width of Column D to 14 characters.
-
-
-
-Figure 1.35 shows how the Sheet1 worksheet should appear after the formatting techniques are
-applied.
-
-
-
-50 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 1.35 Formatting Techniques Applied
-
-
-
-
-Why?
-
-%Pound Signs (####) Appear in Columns
-
-When a column is too narrow for a long number, Excel will automatically convert the number to a series of pound
-%signs (####). In the case of words or text data, Excel will only show the characters that fit in the column. However,
-this is not the case with numeric data because it can give the appearance of a number that is much smaller than
-what is actually in the cell. To remove the pound signs, increase the width of the column.
-
-
-
-
-BEGINNING EXCEL 51
-DATA ALIGNMENT (WRAP TEXT, MERGE CELLS, AND CENTER)
-
-The skills presented in this segment show how data are aligned within cell locations. For example, text
-and numbers can be centered in a cell location, left justified, right justified, and so on. In some cases
-you may want to stack multiword text entries vertically in a cell instead of expanding the width of a
-column. This is referred to as wrapping text. These skills are demonstrated in the following steps:
-
-1. Highlight the range B2:D2 by placing the mouse pointer over cell B2 and left clicking and
-dragging over to cell D2.
-2. Click the Center button in the Alignment group of commands in the Home tab of the Ribbon
-(see Figure 1.36). This will center the column headings in each cell location.
-
-
-
-
-Figure 1.36 Alignment Group in Home Tab
-
-
-
-
-3. Click the Wrap Text button in the Alignment group (see Figure 1.36). The height of Row 2
-automatically expands, and the words that were cut off because the columns were too narrow
-are now stacked vertically.
-
-
-
-
-52 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Keyboard Shortcuts
-
-
-Wrap Text
-
-%◦ Press the ALT key and then the letters H and W one at a time.
-
-
-
-4. Highlight the range A1:D1 by placing the mouse pointer over cell A1 and left clicking and
-dragging over to cell D1.
-%5. Click the down arrow on the right side of the Merge & Center button in the Alignment group of
-commands in the Home tab of the Ribbon.
-%6. Left click the Merge & Center option (see Figure 1.37). This will create one large cell location
-running across the top of the data set.
-
-
-Keyboard Shortcuts
-
-
-Merge Commands
-
-%• Merge & Center: Press the ALT key and then the letters H, M, and C one at a time.
-
-• Merge Cells: Press the ALT key and then the letters H, M, and M one at a time.
-
-• Unmerge Cells: Press the ALT key and then the letters H, M, and U one at a time.
-
-
-
-
-Why?
-
-Wrap Text
-
-The benefit of using the Wrap Text command is that it significantly reduces the need to expand the column width to
-accommodate multiword column headings. The problem with increasing the column width is that you may reduce
-the amount of data that can fit on a piece of paper or one screen. This makes it cumbersome to analyze the data in
-the worksheet and could increase the time it takes to make a decision.
-
-
-
-
-BEGINNING EXCEL 53
-Figure 1.37 Merge Cell Drop-Down Menu
-
-
-
-
-Figure 1.38 shows the Sheet1 worksheet with the data alignment commands applied. The reason for
-merging the cells in the range A1:D1 will become apparent in the next segment.
-
-
-
-
-Why?
-
-%Merge & Center
-
-%One of the most common reasons the Merge & Center command is used is to center the title of a worksheet directly
-above the columns of data. Once the cells above the column headings are merged, a title can be centered above the
-columns of data. It is very difficult to center the title over the columns of data if the cells are not merged.
-
-
-
-
-54 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 1.38 Sheet1 with Data Alignment Features Added
-
-
-
-
-Skill Refresher
-
-
-Wrap Text
-
-1. Activate the cell or range of cells that contain text data.
-2. Click the Home tab of the Ribbon.
-
-
-
-BEGINNING EXCEL 55
-3. Click the Wrap Text button.
-
-
-
-
-Skill Refresher
-
-
-Merge Cells
-
-1. Highlight a range of cells that will be merged.
-2. Click the Home tab of the Ribbon.
-%3. Click the down arrow next to the Merge & Center button.
-%4. Select an option from the Merge & Center list.
-
-
-
-ENTERING MULTIPLE LINES OF TEXT
-
-In the Sheet1 worksheet, the cells in the range A1:D1 were merged for the purposes of adding a title
-to the worksheet. This worksheet will contain both a title and a subtitle. The following steps explain
-how you can enter text into a cell and determine where you want the second line of text to begin:
-
-1. Activate cell A1 in the Sheet1 worksheet by placing the mouse pointer over cell A1 and clicking
-the left mouse button. Since the cells were merged, clicking cell A1 will automatically activate
-the range A1:D1. Position your mouse to the end of the title, directly after the “d” in the word
-“World” and double-click to get a cursor (flashing I-beam).
-2. Hold down the ALT key and press the ENTER key. This will start a new line of text in this cell
-location.
-3. Type the text Retail Sales (in millions) and press the ENTER key.
-4. Select cell A1. Then click the Italics and Bold buttons in the Font group of commands in the
-Home tab of the Ribbon.
-5. Increase the height of Row 1 to 30 points. Once the row height is increased, all the text typed
-into the cell will be visible (see Figure 1.39).
-
-
-
-
-56 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-%Figure 1.39 Title & Subtitle Added to the Worksheet
-
-
-
-
-Skill Refresher
-
-
-Entering Multiple Lines of Text
-
-1. Activate a cell location.
-2. Type the first line of text.
-3. Hold down the ALT key and press the ENTER key.
-4. Type the second line of text and press the ENTER key.
-
-
-
-BORDERS (ADDING LINES TO A WORKSHEET)
-
-In Excel, adding custom lines to a worksheet is known as adding borders. Borders are different from
-the grid lines that appear on a worksheet and that define the perimeter of the cell locations. The
-Borders command lets you add a variety of line styles to a worksheet that can make reading the
-BEGINNING EXCEL 57
-worksheet much easier. The following steps illustrate methods for adding preset borders and custom
-borders to a worksheet:
-
-1. Click the down arrow to the right of the Borders button in the Font group of commands in the
-Home page of the Ribbon to view border options. (see Figure 1.40).Figure 1.40 Borders Drop-
-Down Menu
-
-
-
-
-2. Highlight the range A1:D15. Left click the All Borders option from the Borders drop-down
-menu (see Figure 1.40). This will add vertical and horizontal lines to the range A1:D15.
-3. Highlight the range A2:D2 by placing the mouse pointer over cell A2 and left clicking and
-dragging over to cell D2.
-4. Click the down arrow to the right of the Borders button.
-5. Left click the Thick Bottom Border option from the Borders drop-down menu.
-6. Highlight the range A14:D14 and apply a Thick Bottom Border from the drop-down menu. The
-thick border will help maintain the Excel Formatting Guidelines.
-7. Highlight the range A1:D15.
-8. Click the down arrow to the right of the Borders button.
-9. Click More Borders… at the bottom of the List.
-10. This will open the Format Cells dialog box (see Figure 1.41). You can access all formatting
-commands in Excel through this dialog box.
-11. In the Style section of the Borders tab, left click the thickest line style (see Figure 1.41).
-12. Left click the Outline button in the Presets section (see Figure 1.41).
-13. Click the OK button at the bottom of the dialog box (see Figure 1.41).
-
-
-58 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 1.41 Borders Tab of the Format Cells Dialog Box
-
-
-
-
-BEGINNING EXCEL 59
-Figure 1.42 Borders Added to the Sheet1 Worksheet
-
-
-
-
-Skill Refresher
-
-
-Preset Borders
-
-1. Highlight a range of cells that require borders.
-2. Click the Home tab of the Ribbon.
-3. Click the down arrow next to the Borders button.
-4. Select an option from the preset borders list.
-
-Custom Borders
-
-
-
-
-60 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-1. Highlight a range of cells that require borders.
-2. Click the Home tab of the Ribbon.
-3. Click the down arrow next to the Borders button.
-4. Select the More Borders option at the bottom of the options list.
-5. Select a line style and line color.
-6. Select a placement option.
-7. Click the OK button on the dialog box.
-
-
-
-
-AUTOSUM
-
-You will see at the bottom of Figure 1.42 that Row 15 is intended to show the totals for the data
-in this worksheet. Applying mathematical computations to a range of cells is accomplished
-through functions in Excel. Chapter 2 “Mathematical Computations” will review mathematical
-formulas and functions in detail. However, the following steps will demonstrate how you can quickly
-sum the values in a column of data using the AutoSum command:
-
-1. Activate cell B15 in the Sheet1 worksheet.
-2. Click the Formulas tab of the Ribbon.
-3. Click the down arrow below the AutoSum button in the Function Library group of commands
-(see Figure 1.43). Note that the AutoSum button can also be found in the Editing group of
-commands in the Home tab of the Ribbon.
-
-
-
-
-BEGINNING EXCEL 61
-Figure 1.43 AutoSum Drop-Down List
-
-
-
-
-4. Click the Sum option from the AutoSum drop-down menu. The first click will display a flashing
-marquee around the range. Click the check mark next to the Formula bar to complete the
-function.
-5. Excel will provide a total for the values in the Unit Sales column.
-6. Activate cell D15. It would not make sense to total the averages in column C so C15 will be left
-blank.
-7. Repeat steps 3 through 5 to sum the values in the Sales Dollars column (see Figure 1.44).
-
-
-
-
-62 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 1.44 Totals Added to the Sheet1 Worksheet
-
-
-
-
-Skill Refresher
-
-
-AutoSum
-
-1. Highlight a cell location below or to the right of a range of cells that contain numeric values.
-2. Click the Formulas tab of the Ribbon.
-3. Click the down arrow below the AutoSum button.
-4. Select a mathematical function from the list.
-
-
-
-MOVING, RENAMING, INSERTING, AND DELETING WORKSHEETS
-
-The default names for the worksheet tabs at the bottom of workbook are Sheet1, Sheet2, and so on.
-However, you can change the worksheet tab names to identify the data you are using in a workbook.
-Additionally, you can change the order in which the worksheet tabs appear in the workbook. The
-following steps explain how to rename and move the worksheets in a workbook:
-
-1. With the left mouse button, double click the Sheet1 worksheet tab at the bottom of the
-workbook (see Figure 1.45). Type the name Sales by Month.
-2. Press the ENTER key on your keyboard.
-
-BEGINNING EXCEL 63
-3. With the left mouse button, double click the Sheet2 worksheet tab at the bottom of the
-workbook.
-4. Type the name Unit Sales Rank to prepare the worksheet for future use.
-5. Press the ENTER key on your keyboard.
-
-
-
-
-Figure 1.45 Renaming a Worksheet Tab
-
-
-
-
-6. Click the Sheet3 worksheet tab.
-7. Click the Home tab of the Ribbon.
-8. Click the down arrow on the Delete button in the Cells group of commands.
-9. Click the Delete Sheet option from the drop-down list. This removes the unneeded worksheet.
-10. Click the Delete button on the Delete warning box (if a warning box appears).
-11. Complete the steps above to delete the newly named Unit Sales Rank worksheet since it’s
-decided that worksheet is also unnecessary so that you are left with just one worksheet.
-12. Save the changes to your workbook by clicking either the Save button on the Home ribbon; or
-by selecting the Save option from the File menu.
-
-
-
-
-Integrity Check
-
-Deleting Worksheets
-
-Be very cautious when deleting worksheets that contain data. Once a worksheet is deleted, you cannot use the
-Undo command to bring the sheet back. Deleting a worksheet is a permanent command.
-
-
-
-
-64 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Keyboard Shortcuts
-
-
-Inserting New Worksheets
-
-• Press the SHIFT key and then the F11 key on your keyboard.
-
-
-
-Figure 1.46 shows the final appearance of the GMW Sales workbook.
-
-
-
-
-Figure 1.46 Final Appearance of the GMW Sales Workbook
-
-
-
-
-Skill Refresher
-
-
-Renaming Worksheets
-
-1. Double click the worksheet tab.
-
-
-BEGINNING EXCEL 65
-2. Type the new name.
-3. Press the ENTER key.
-
-Moving Worksheets
-
-1. Left click the worksheet tab.
-2. Drag it to the desired position.
-
-Deleting Worksheets
-
-1. Open the worksheet to be deleted.
-2. Click the Home tab of the Ribbon.
-3. Click the down arrow on the Delete button.
-4. Select the Delete Sheet option.
-5. Click Delete on the warning box.
-
-
-
-
-Key Takeaways
-
-
-• Formatting skills are critical for creating worksheets that are easy to read and have a professional
-appearance.
-
-%• A series of pound signs (####) in a cell location indicates that the column is too narrow to display the
-number entered.
-
-• Using the Wrap Text command allows you to stack multiword column headings vertically in a cell location,
-reducing the need to expand column widths.
-
-%• Use the Merge & Center command to center the title of a worksheet directly over the columns that contain
-data.
-
-• Adding borders or lines will make your worksheet easier to read and helps to separate the data in each
-column and row.
-
-• You cannot use the Undo command to bring back a worksheet that has been deleted.
-
-
-
-ATTRIBUTION
-
-Adapted by Barbara Lave from How to Use Microsoft Excel: The Careers in Practice Series, adapted
-by The Saylor Foundation without attribution as requested by the work’s original creator or
-licensee, and licensed under CC BY-NC-SA 3.0.
-
-
-
-
-66 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-1.4 PRINTING
-
-
-
-
-Learning Objectives
-
-
-• Use the Page Layout tab to prepare a worksheet for printing.
-
-• Add headers and footers to a printed worksheet.
-
-• Examine how to print worksheets and workbooks.
-
-
-
-Once you have completed a workbook, it is good practice to select the appropriate settings for
-printing. These settings are in the Page Layout tab of the Ribbon and discussed in this section of the
-chapter.
-
-PAGE SETUP
-
-Before you can properly print the worksheets in a workbook, you must establish appropriate settings.
-The following steps explain several of the commands in the Page Layout tab of the Ribbon used to
-prepare a worksheet for printing:
-
-1. Open the CH1 GMW Sales workbook, if it is not already open.
-2. Click the Page Layout tab of the Ribbon.
-3. Click the Margins button in the Page Setup group of commands. This will open a drop-down
-list of options for setting the margins of your printed document.
-4. Click the Wide option from the Margins drop-down list. (see Figure 1.47)
-5. Click the Orientation button in the Page Setup and select Landscape.
-6. Click on the arrow to the bottom right of the Page Setup category to launch the Page Setup
-options dialog box.
-7. Click the Margins tab and locate “Center on Page”. Click the boxes to Horizontally and
-Vertically center the data on the worksheet. Click OK.
-
-
-
-
-BEGINNING EXCEL 67
-Figure 1.47 Page Layout Commands for Printing
-
-
-
-
-Why?
-
-Use Print Settings
-
-Because professionals often share Excel workbooks, it is a good practice to select the appropriate print settings in
-the Page Layout tab even if you do not intend to print the worksheets in a workbook. It can be extremely frustrating
-for recipients of a workbook who wish to print your worksheets to find that the necessary print settings have not
-been selected. This may reflect poorly on your attention to detail, especially if the recipient of the workbook is your
-boss.
-
-
-
-
-68 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Table 1.2 Printing Resources: Purpose and Use for Page Setup Commands
-
-Command        Purpose                                                       Use
-
-1. Click the Page Layout tab of the Ribbon.
-
-2. Click the Margin button.
-
-Sets the top, bottom, right, and left margin space for the    3. Click one of the preset margin options or click
-Margins        printed document                                              Custom Margins.
-
-1. Click the Page Layout tab of the Ribbon.
-
-2. Click the Orientation button.
-Sets the orientation of the printed document to either
-Orientation    portrait or landscape                                         3. Click one of the preset orientation options.
-
-1. Click the Page Layout tab of the Ribbon.
-
-2. Click the Size button.
-
-3. Click one of the preset paper size options or click
-Size           Sets the paper size for the printed document                  More Paper Sizes.
-
-1. Highlight the range of cells on a worksheet that you
-wish to print.
-
-2. Click the Page Layout tab of the Ribbon.
-
-3. Click the Print Area button.
-
-Used for printing only a specific area or range of cells on   4. Click the Set Print Area option from the drop-down
-Print Area     a worksheet                                                   list.
-
-1. Activate a cell on the worksheet where the page
-break should be placed. Breaks are created above and
-to the left of the activated cell.
-
-2. Click the Page Layout tab of the Ribbon.
-
-3. Click the Breaks button.
-
-Allows you to manually set the page breaks on a               4. Click the Insert Page Break option from the drop-
-Breaks         worksheet                                                     down list.
-
-1. Click the Page Layout tab of the Ribbon.
-
-2. Click the Background button.
-
-3. Select a picture stored on your computer or
-Background Adds a picture behind the cell locations in a worksheet           network.
-
-1. Click the Page Layout tab of the Ribbon.
-
-2. Click the Print Titles button.
-
-3. Click in the Rows to Repeat at Top input box in the
-Page Setup dialog box.
-
-4. Click any cell in the row that contains the column
-headings for your worksheet.
-Used when printing large data sets that are several pages
-long. This command will repeat the column headings at         5. Click the OK button at the bottom of the Page Setup
-Print Titles   the top of each printed page.                                 dialog box.
-
-
-HEADERS AND FOOTERS
-
-When printing worksheets from Excel, it is common to add headers and footers to the printed
-document. Information in the header or footer could include the date, page number, file name,
-
-
-BEGINNING EXCEL 69
-company name, and so on. The following steps explain how to add headers and footers to the GMW
-Sales Data workbook:
-
-%1. Click the Insert Ribbon and click on Header & Footer at the right end of the ribbon (located in
-the Text group). You will see the Design tab added to the Ribbon; this is used for creating the
-headers and footers for the printed worksheet. Also, this will convert the view of the worksheet
-%from Normal to Page Layout (see Figure 1.48). This Page Layout view makes adding Headers &
-Footers easy and provides key features to incorporate.
-
-
-
-
-Figure 1.48 Design Tab for Creating Headers and Footers
-
-
-
-
-2. Type your name in the center section of the Header.
-3. Place the mouse pointer over the left section of the Header and left click (see Figure 1.48).
-%4. Click the Current Date button in the Header & Footer Elements group of commands in the
-%Design tab of the Ribbon. This view will display as &[Date] until printed or until you return to
-normal view.
-5. Click the Go to Footer button in the Navigation group of commands in the Design tab of the
-Ribbon.
-6. Place the mouse pointer over the far right section of the footer and left click.
-%7. Click the Page Number button (you may need to click on the Design tab again) in the Header &
-Footer Elements group of commands in the Design tab of the Ribbon. This view will display as
-%&[Page] until printed or until you return to normal view.
-8. Click any cell location outside the header or footer area. The Design tab for creating headers
-and footers will disappear.
-9. Click the Normal view button in the lower right side of the Status Bar (see Figure 1.49).
-
-70 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 1.49 Worksheet in Page Layout View
-
-
-PRINTING WORKSHEETS AND WORKBOOKS
-
-Once you have established the print settings for the worksheets in a workbook and have added
-headers and footers, you are ready to print your worksheets. The following steps explain how to print
-the worksheets in the GMW Sales workbook:
-
-1. Click the File tab on the Ribbon.
-2. Click the Print option on the left side of the Backstage view (see Figure 1.50). On the right side
-of the Backstage view, you will be able to see a preview of your printed worksheet.
-
-
-
-
-BEGINNING EXCEL 71
-Figure 1.50 Backstage View Print option
-
-
-3.   Click the Print Active Sheets button in the Print section of the Backstage view (see Figure 1.50).
-4.   If your instructor has asked you to print your work, click the Print button.
-5.   Click the Home tab of the Ribbon.
-6.   Save and close the CH1 GMW Sales workbook.
-7.   Compare your work with the self-check answer key (found in the Course Files link) and then
-submit the CH1 GMW Sales workbook as directed by your instructor.
-
-
-Key Takeaways
-
-
-• The commands in the Page Layout tab of the Ribbon are used to prepare a worksheet for printing.
-
-• You can add headers and footers to a worksheet to show key information such as page numbers, the date,
-the file name, your name, and so on.
-
-• The Print commands are in the File tab of the Ribbon.
-
-
-
-ATTRIBUTION
-
-Adapted by Barbara Lave from How to Use Microsoft Excel: The Careers in Practice Series, adapted
-by The Saylor Foundation without attribution as requested by the work’s original creator or
-licensee, and licensed under CC BY-NC-SA 3.0.
-
-
-
-
-72 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-1.5 CHAPTER PRACTICE
-
-
-
-
-To assess your understanding of the material covered in the chapter, complete the following
-assignment.
-
-BASIC MONTHLY BUDGET FOR MEDICAL OFFICE
-
-Download Data File: PR1 Data
-
-Creating and maintaining budgets are common practices in many careers. Budgets play a critical role
-in helping a business or household control expenditures. In this exercise you will create a budget for
-a hypothetical medical office while reviewing the skills covered in this chapter.
-
-1. Open the file name PR1 Data, then Save As PR1 Medical Office Budget.
-2. Activate all the cell locations in the Sheet1 worksheet by left clicking the Select All button in the
-upper left corner of the worksheet.
-
-
-
-
-3. In the Home tab of the Ribbon, set the font style to Arial and the font size to 12 points. Then
-click any cell to Deselect.
-4. Increase the width of Column A so all the entries in the range A3:A8 are visible. Place the mouse
-pointer between the letter A and letter B of Column A and Column B. When the mouse pointer
-changes to a double arrow, left click and drag it to the right until the character width is
-approximately 18.00.
-
-BEGINNING EXCEL 73
-5. Enter Quarter 1 in cell B2.
-6. Use AutoFill to complete the headings in the range C2:E2. Activate cell B2 and place the mouse
-pointer over the Fill Handle. When the mouse pointer changes to a black plus sign, left click and
-drag it to cell E2.
-7. Highlight the range B2:E2 and click the Format button in the Home tab of the Ribbon. Click the
-Column Width option, type 11.57 in the Column Width dialog box, and then click the OK
-button in the Column Width dialog box.
-8. Enter the words Medical Office Budget in cell A1.
-9. Insert a blank column between Columns A and B by clicking on any cell in Column B. Then,
-click the drop-down arrow of the Insert button in the Home tab of the Ribbon. Click the Insert
-Sheet Columns option.
-10. Enter the words Budget Cost in cell B2.
-11. Adjust the width of Column B to approximately 13.29 characters.
-%12. Highlight the range A1:F1 and click the Merge & Center button in the Home tab of the Ribbon
-to merge the cells in that range.
-13. Make the following format adjustments to the range A1:F1: bold; italics; change the font size to
-14 points; change the cell fill color to Aqua, Accent 5, Darker 50%; and change the font color to
-white.
-14. Increase the height of Row 1 to approximately 24.75 points.
-15. Make the following format adjustment to the range A2:F2: bold; and change the cell fill color to
-Tan, Background 2, Darker 10%. Center the column titles so that they are horizontally centered
-in each cell.
-16. Set the alignment in cell B2 to Wrap Text. Select B2 and choose the Wrap Text button in the
-Home tab of the Ribbon.
-17. Copy cell C3 and paste the contents into the range D3:F3.
-18. Copy the contents in the range C6:C8 by highlighting the range and clicking the Copy button in
-the Home tab of the Ribbon. Then, highlight the range D6:F8 and click the Paste button in the
-Home tab of the Ribbon.
-19. Calculate the total budget for all four quarters for the salaries. Activate cell B3 and click the
-down arrow on the AutoSum button in the Formulas tab of the Ribbon. Click the Sum option
-from the drop-down list. Then, highlight the range C3:F3 and press the ENTER key on your
-keyboard.
-20. Copy the formula in cell B3 and paste them into the range B4:B8.
-21. Format the range B3:F8 with Accounting format and zero decimal places.
-22. Highlight the range A1:F8 and click the down arrow next to the Borders button in the Home tab
-of the Ribbon. Select the All Borders option from the drop-down list.
-23. Double click the Sheet1 worksheet tab to change the name of Sheet1 to the word Budget, and
-press the ENTER key. Delete any unnecessary worksheets.
-24. Change the orientation of the Budget worksheet so it prints landscape instead of portrait.
-25. Use Fit to 1 page so the Budget worksheet prints on one piece of paper, if it does not already.
-26. Add a header to the Budget worksheet that shows the date in the upper left corner and your
-name in the center.
-27. Add a footer to the Budget worksheet that shows the page number in the lower right corner.
-28. Save PR1 Medical Office Budget workbook.
-
-74 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-29. Compare your work with the self-check answer key (found in the Course Files link) and then
-submit the PR1 Medical Office Budget workbook as directed by your instructor.
-
-ATTRIBUTION
-
-Adapted by Barbara Lave from How to Use Microsoft Excel: The Careers in Practice Series, adapted
-by The Saylor Foundation without attribution as requested by the work’s original creator or
-licensee, and licensed under CC BY-NC-SA 3.0.
-
-
-
-
-BEGINNING EXCEL 75
-1.6 SCORED ASSESSMENT
-
-
-
-
-SALES AND INVENTORY ITEMS
-
-Download Data File: SC1 Data
-
-A key activity for marketing professionals is to analyze projected sales and inventory information.
-This is especially important for retail environments. This exercise utilizes the skills covered in this
-chapter to analyze sales and inventory data.
-
-1.   Open the file named SC1 Data and then Save As SC1 Sales and Inventory
-2.   In the Sheet1 worksheet, enter the word Totals in cell C14.
-3.   Format all the cells in Sheet1 to Century font style and a 12-point font size.
-4.   Set the column width for Columns A through G to 13.5.
-5.   Edit the entry in cell B2 to read “Item Number.”
-6.   Use AutoFill to fill the Item Numbers from B3 into the range B4:B13. The item numbers should
-increase by one as they are filled through the range.
-7.   Copy the contents of cell A3 and paste them into the range A4:A8.
-8.   Delete Column F.
-9.   Format the range A1:F2 so the text is Bold.
-10.   Set the alignment in the range A2:F2 to Wrap Text.
-11.   Prepare A1:F1 for the title text by changing the fill color of the cells in the range A1:F1 to Red,
-Accent 2, Darker 25%.
-12.   Make the following font changes to the range A1:F1: set the font color to white, add italics, and
-set the font size to 14.
-13.   Merge and center the cells in the range A1:F1.
-14.   Enter the title for this worksheet in the range A1:F1. The title should appear on two lines. The
-first line should read Status Report. The second line should read Sales and Inventory by Item.
-15.   Increase the height of Row 1 so the entire title is visible.
-16.   Format the values in the range C3:C13 with dollar signs and two decimal places.
-17.   Format the values in the range E3:F13 with comma style, zero decimal places.
-18.   In cell E14, use AutoSum to calculate the sum of the values in the range E3:E13.
-19.   In cell F14, use AutoSum to calculate the sum of the values in the range F3:F13.
-20.   Apply All Borders to the range A1:F14.
-21.   Add a thick bottom border to row 2; add a thick bottom border to row 13.
-22.   Add a thick line border around the perimeter of the range A1:F14.
-23.   Insert a new blank worksheet in the workbook (this will be Sheet4).
-24.   Delete Sheet3.
-76 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-25.   Move Sheet4 ahead of Sheet2 so the order of the worksheets is Sheet1, Sheet4, and Sheet2.
-26.   Rename the Sheet1 worksheet tab to “Status Report.”
-27.   Change the orientation of the Status Report worksheet so it prints landscape instead of portrait.
-28.   Add a header to the Status Report worksheet that shows the date (needs to update) in the upper
-left corner and your name in the center.
-29.   Add a footer to the Status Report worksheet that shows the page number in the lower right
-corner with the word “Page” before the number.
-30.   Center the worksheet both horizontally and vertically on the sheet.
-31.   Save the SC1 Sales and Inventory workbook.
-32.   Submit the SC1 Sales and Inventory workbook as directed by your instructor.
-
-ATTRIBUTION
-
-Adapted by Barbara Lave from How to Use Microsoft Excel: The Careers in Practice Series, adapted
-by The Saylor Foundation without attribution as requested by the work’s original creator or
-licensee, and licensed under CC BY-NC-SA 3.0.
-
-
-
-
+\begin{enumerate}
+	\item Highlight the range \textsf{A2:D2} in the \textbf{Sheet1} worksheet by placing the mouse pointer over cell \textsf{A2} and left clicking and dragging to cell \textsf{D2}. 
+	\item Click the Bold button in the Font group of commands in the Home tab of the ribbon.
+	\item Click the Border button in the Font group of commands in the Home tab of the Ribbon (see Figure \ref{01:fig34}). Select the Bottom Border option from the list to achieve the goal of a border on the bottom of row 2 below the column headings.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig34}
+	\caption{Font Group of Commands}
+	\label{01:fig34}
+\end{figure}
+
+\begin{center}
+	\begin{shtcutbox}{Keyboard Shortcuts}
+		\textbf{Text Formats}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Bold: hold the CTRL key while pressing the letter B on your keyboard.
+			\item Italics: hold the CTRL key while pressing the letter I on your keyboard.
+			\item Underline: hold the CTRL key while pressing the letter U on your keyboard.
+			
+		\end{itemize}
+	\end{shtcutbox}
+\end{center}
+
+\begin{enumerate}[resume]
+	\item Highlight the range \textsf{A15:D15} by placing the mouse pointer over cell \textsf{A15} and left clicking and dragging to cell \textsf{D15}.
+	\item Click the Bold button in the Font group of commands in the Home tab of the Ribbon.
+	\item Click the Border button in the Font group of commands in the Home tab of the Ribbon. Select the Top Border option from the list to achieve the goal of a border on the top of row 15 where totals will eventually display.
+	\item Highlight the range \textsf{B3:B14} by placing the mouse pointer over cell A and left clicking and dragging down to cell \textsf{B14}.
+	\item Click the Comma Style button in the Number group of commands in the Home tab of the Ribbon. This feature adds a comma as well as two decimal places. (see Figure \ref{01:fig35}).
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig35}
+	\caption{Number Group of Commands}
+	\label{01:fig35}
+\end{figure}
+
+\begin{center}
+	\begin{infobox}{Why?}
+		\textbf{Format Column Headings and Totals}
+		\\
+		\\
+		Applying formatting enhancements to the column headings and column totals in a worksheet is a very important technique, especially if you are sharing a workbook with other people. These formatting techniques allow users of the worksheet to clearly see the column headings that define the data. In addition, the column totals usually contain the most important data on a worksheet with respect to making decisions, and formatting techniques allow users to quickly see this information.
+	\end{infobox}
+\end{center}
+
+
+\begin{enumerate}[resume]
+	\item Since the figures in this range do not include cents, click the Decrease Decimal button in the Number group of commands in the Home tab of the Ribbon two times (see Figure \ref{01:fig35}).
+	\item The numbers will also be reduced to zero decimal places.
+	\item Highlight the range \textsf{C3:C14} by placing the mouse pointer over cell \textsf{C3} and left clicking and dragging down to cell \textsf{C14}.
+	\item Click the Accounting Number Format button in the Number group of commands in the Home tab of the Ribbon (see Figure \ref{01:fig35}). This will add the US currency symbol and two decimal places to the values. This format is common when working with pricing data. As discussed above in the Formatting Data and Cells section, you will want to use Accounting format on all values in this range since the worksheet contains non-currency as well as currency data.
+	\item Highlight the range \textsf{D3:D14} by placing the mouse pointer over cell \textsf{D3} and left clicking and dragging down to cell \textsf{D14}.
+	\item Again, select the Accounting Number Format; this will add the US currency symbol to the values as well as two decimal places.
+	\item Click the Decrease Decimal button in the Number group of commands in the Home tab of the Ribbon.
+	\item This will add the US currency symbol to the values and reduce the decimal places to zero since there are no cents in these figures.
+	\item Highlight the range \textsf{A1:D1} by placing the mouse pointer over cell \textsf{A1} and left clicking and dragging over to cell \textsf{D1}.
+	\item Click the down arrow next to the Fill Color button in the Font group of commands in the Home tab of the Ribbon (see Figure \ref{01:fig36}). This will prepare the range for a worksheet title.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig36}
+	\caption{Fill Color Palette}
+	\label{01:fig36}
+\end{figure}
+
+\begin{enumerate}[resume]
+	\item Click the Blue, Accent 1, Darker 25\% color from the palette (see Figure \ref{01:fig36}). Notice that as you move the mouse pointer over the color palette, you will see a preview of how the color will appear in the highlighted cells. Experiment with this feature.
+	\item Click on \textsf{A1} and enter the worksheet title: \textbf{General Merchandise World} and click on the check mark in the formula bar to enter this information.
+	\item Since the black font is difficult to read on the blue background, change the font color to be more visible. Click the down arrow next to the Font Color button in the Font group of commands in the Home tab of the Ribbon and select White as the font color for this range (see Figure \ref{01:fig34}).
+	\item Highlight the range \textsf{A1:D15} by placing the mouse pointer over cell \textsf{A1} and left clicking and dragging down to cell \textsf{D15}.
+	\item Click the drop-down arrow on the right side of the Font button in the Home tab of the Ribbon; select Arial as the font for this range. (see Figure \ref{01:fig34}).
+	\item Notice that as you move the mouse pointer over the font style options, you can see the font change in the highlighted cells.
+	\item Expand the column width of Column \textsf{D} to 14 characters.
+\end{enumerate}
+
+Figure \ref{01:fig37} shows how the \textbf{Sheet1} worksheet should appear after the formatting techniques are applied.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig37}
+	\caption{Formatting Techniques Applied}
+	\label{01:fig37}
+\end{figure}
+
+\begin{center}
+	\begin{infobox}{Why}
+		\textbf{Pound Signs (\#\#\#\#) Appear in Columns}
+		\\
+		\\
+		When a column is too narrow for a long number, Excel will automatically convert the number to a series of pound signs (\#\#\#\#). In the case of words or text data, Excel will only show the characters that fit in the column. However, this is not the case with numeric data because it can give the appearance of a number that is much smaller than what is actually in the cell. To remove the pound signs, increase the width of the column.
+	\end{infobox}
+\end{center}
+
+
+\subsection{Data Alignment (Wrap Text, Merge Cells, and Center)}
+
+The skills presented in this segment show how data are aligned within cell locations. For example, text and numbers can be centered in a cell location, left justified, right justified, and so on. In some cases you may want to stack multiword text entries vertically in a cell instead of expanding the width of a column. This is referred to as wrapping text. These skills are demonstrated in the following steps.
+
+\begin{enumerate}
+	\item 1. Highlight the range \textsf{B2:D2} by placing the mouse pointer over cell B2 and left clicking and dragging over to cell \textsf{D2}.
+	\item Click the Center button in the Alignment group of commands in the Home tab of the Ribbon (see Figure \ref{01:fig38}). This will center the column headings in each cell location.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig38}
+	\caption{Alignment Group in Home Tab}
+	\label{01:fig38}
+\end{figure}
+
+\begin{enumerate}[resume]
+	\item Click the Wrap Text button in the Alignment group (see Figure \ref{01:fig38}). The height of Row 2 automatically expands, and the words that were cut off because the columns were too narrow are now stacked vertically.
+\end{enumerate}
+
+\begin{center}
+	\begin{shtcutbox}{Keyboard Shortcuts}
+		\textbf{Wrap Text}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Press the ALT key and then the letters H and W one at a time.
+			
+		\end{itemize}
+	\end{shtcutbox}
+\end{center}
+
+\begin{enumerate}[resume]
+	\item Highlight the range \textsf{A1:D1} by placing the mouse pointer over cell A1 and left clicking and dragging over to cell \textsf{D1}.
+	\item Click the down arrow on the right side of the Merge \& Center button in the Alignment group of commands in the Home tab of the Ribbon.
+	\item Left click the Merge \& Center option (see Figure \ref{01:fig39}). This will create one large cell location running across the top of the data set.
+
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig39}
+	\caption{Merge Cell Drop-Down Menu}
+	\label{01:fig39}
+\end{figure}
+
+\begin{center}
+	\begin{shtcutbox}{Keyboard Shortcuts}
+		\textbf{Merge Commands}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Merge \& Center: Press the ALT key and then the letters H, M, and C one at a time.
+			\item Merge Cells: Press the ALT key and then the letters H, M, and M one at a time.
+			\item Unmerge Cells: Press the ALT key and then the letters H, M, and U one at a time.
+			
+		\end{itemize}
+	\end{shtcutbox}
+\end{center}
+
+\begin{center}
+	\begin{infobox}{Why?}
+		\textbf{Wrap Text}
+		\\
+		\\
+		The benefit of using the Wrap Text command is that it significantly reduces the need to expand the column width to accommodate multiword column headings. The problem with increasing the column width is that you may reduce the amount of data that can fit on a piece of paper or one screen. This makes it cumbersome to analyze the data in the worksheet and could increase the time it takes to make a decision.
+	\end{infobox}
+\end{center}
+
+Figure \ref{01:fig40} shows the Sheet1 worksheet with the data alignment commands applied. The reason for merging the cells in the range \textsf{A1:D1} will become apparent in the next segment.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig40}
+	\caption{Sheet1 with Data Alignment Features Added}
+	\label{01:fig40}
+\end{figure}
+
+\begin{center}
+	\begin{infobox}{Why?}
+		\textbf{Merge \& Center}
+		\\
+		\\
+		One of the most common reasons the Merge \& Center command is used is to center the title of a worksheet directly above the columns of data. Once the cells above the column headings are merged, a title can be centered above the columns of data. It is very difficult to center the title over the columns of data if the cells are not merged.
+	\end{infobox}
+\end{center}
+
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Wrap Text}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Activate the cell or range of cells that contain text data.
+			\item Click the Home tab of the Ribbon.
+			\item Click the Wrap Text button.
+
+		\end{itemize}
+	\end{sklbox}
+\end{center}
+
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Merge Cells}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Highlight a range of cells that will be merged.
+			\item Click the Home tab of the Ribbon.
+			\item Click the down arrow next to the Merge \& Center button.
+			\item Select an option from the Merge \& Center list.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
+
+
+\subsection{Entering Multiple Lines of Text}
+
+In the Sheet1 worksheet, the cells in the range \textsf{A1:D1} were merged for the purposes of adding a title to the worksheet. This worksheet will contain both a title and a subtitle. The following steps explain how you can enter text into a cell and determine where you want the second line of text to begin.
+
+\begin{enumerate}
+	\item Activate cell \textsf{A1} in the Sheet1 worksheet by placing the mouse pointer over cell \textsf{A1} and clicking the left mouse button. Since the cells were merged, clicking cell \textsf{A1} will automatically activate the range \textsf{A1:D1}. Position your mouse to the end of the title, directly after the ``d'' in the word ``World'' and double-click to get a cursor (flashing I-beam).
+	\item Hold down the ALT key and press the ENTER key. This will start a new line of text in this cell location.
+	\item 3. Type the text ``Retail Sales (in millions)'' and press the ENTER key.
+	\item Select cell \textsf{A1}. Then click the Italics and Bold buttons in the Font group of commands in the Home tab of the Ribbon.
+	\item Increase the height of Row 1 to 30 points. Once the row height is increased, all the text typed into the cell will be visible (see Figure \ref{01:fig41}).
+
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig41}
+	\caption{Title \& Subtitle Added to the Worksheet}
+	\label{01:fig41}
+\end{figure}
+
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Entering Multiple Lines of Text}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Activate a cell location.
+			\item Type the first line of text.
+			\item Hold down the ALT key and press the ENTER key.
+			\item Type the second line of text and press the ENTER key.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
+
+\subsection{Borders (Adding Lines to a Worksheet)}
+
+In Excel, adding custom lines to a worksheet is known as adding borders. Borders are different from the grid lines that appear on a worksheet and that define the perimeter of the cell locations. The Borders command lets you add a variety of line styles to a worksheet that can make reading the worksheet much easier. The following steps illustrate methods for adding preset borders and custom borders to a worksheet.
+
+\begin{enumerate}
+	\item Click the down arrow to the right of the Borders button in the Font group of commands in the Home page of the Ribbon to view border options. (see Figure \ref{01:fig42}).
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig42}
+	\caption{Borders Drop-Down Menu}
+	\label{01:fig42}
+\end{figure}
+
+\begin{enumerate}[resume]
+	\item 2. Highlight the range \textsf{A1:D15}. Left click the All Borders option from the Borders drop-down menu (see Figure \ref{01:fig42}). This will add vertical and horizontal lines to the range \textsf{A1:D15}.
+	\item Highlight the range \textsf{A2:D2} by placing the mouse pointer over cell \textsf{A2} and left clicking and dragging over to cell \textsf{D2}.
+	\item Click the down arrow to the right of the Borders button.
+	\item Left click the Thick Bottom Border option from the Borders drop-down menu.
+	\item Highlight the range \textsf{A14:D14} and apply a Thick Bottom Border from the drop-down menu. The thick border will help maintain the Excel Formatting Guidelines.
+	\item Highlight the range \textsf{A1:D15}.
+	\item Click the down arrow to the right of the Borders button.
+	\item Click More Borders… at the bottom of the List.
+	\item This will open the Format Cells dialog box (see Figure \ref{01:fig43}). You can access all formatting commands in Excel through this dialog box.
+	\item In the Style section of the Borders tab, left click the thickest line style (see Figure \ref{01:fig43}).
+	\item Left click the Outline button in the Presets section (see Figure \ref{01:fig43}).
+	\item Click the OK button at the bottom of the dialog box (see Figure \ref{01:fig43}).
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig43}
+	\caption{Borders Tab of the Format Cells Dialog Box}
+	\label{01:fig43}
+\end{figure}
+
+The Sheet1 worksheet should now look like Figure \ref{01:fig44}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig44}
+	\caption{Borders Added to the Sheet1 Worksheet}
+	\label{01:fig44}
+\end{figure}
+
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Preset Borders}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Highlight a range of cells that require borders.
+			\item Click the Home tab of the Ribbon.
+			\item Click the down arrow next to the Borders button.
+			\item Select an option from the preset borders list.
+			
+		\end{itemize}
+
+		\hfill \break
+		\textbf{Custom Borders}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Highlight a range of cells that require borders.
+			\item Click the Home tab of the Ribbon.
+			\item Click the down arrow next to the Borders button.
+			\item Select the More Borders option at the bottom of the options list.
+			\item Select a line style and line color.
+			\item Select a placement option.
+			\item Click the OK button on the dialog box.
+			
+		\end{itemize}
+
+	\end{sklbox}
+\end{center}
+
+\subsection{Autosum}
+
+You will see at the bottom of Figure \ref{01:fig44} that Row 15 is intended to show the totals for the data in this worksheet. Applying mathematical computations to a range of cells is accomplished through functions in Excel. Chapter 2, ``Mathematical Computations,'' will review mathematical formulas and functions in detail. However, the following steps will demonstrate how you can quickly sum the values in a column of data using the AutoSum command.
+
+\begin{enumerate}
+	\item Activate cell \textsf{B15} in the Sheet1 worksheet.
+	\item Click the Formulas tab of the Ribbon.
+	\item Click the down arrow below the AutoSum button in the Function Library group of commands (see Figure \ref{01:fig45}). Note that the AutoSum button can also be found in the Editing group of commands in the Home tab of the Ribbon.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig45}
+	\caption{AutoSum Drop-Down List}
+	\label{01:fig45}
+\end{figure}
+
+\begin{enumerate}[resume]
+	\item Click the Sum option from the AutoSum drop-down menu. The first click will display a flashing marquee around the range. Click the check mark next to the Formula bar to complete the function.
+	\item Excel will provide a total for the values in the Unit Sales column.
+	\item Activate cell \textsf{D15}. It would not make sense to total the averages in column \textsf{C} so \textsf{C15} will be left blank.
+	\item Repeat steps 3 through 5 to sum the values in the Sales Dollars column (see Figure \ref{01:fig46}).
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig46}
+	\caption{Totals Added to the Sheet1 Worksheet}
+	\label{01:fig46}
+\end{figure}
+
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{AutoSum}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Highlight a cell location below or to the right of a range of cells that contain numeric values.
+			\item Click the Formulas tab of the Ribbon.
+			\item Click the down arrow below the AutoSum button.
+			\item Select a mathematical function from the list.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
+
+\subsection{Moving, Renaming, Inserting, and Deleting Worksheets}
+
+The default names for the worksheet tabs at the bottom of workbook are Sheet1, Sheet2, and so on. However, you can change the worksheet tab names to identify the data you are using in a workbook. Additionally, you can change the order in which the worksheet tabs appear in the workbook. The following steps explain how to rename and move the worksheets in a workbook.
+
+\begin{enumerate}
+	\item With the left mouse button, double click the Sheet1 worksheet tab at the bottom of the workbook (see Figure \ref{01:fig47}). Type the name \textbf{Sales by Month}.
+	\item Press the ENTER key on your keyboard.
+	\item With the left mouse button, double click the Sheet2 worksheet tab at the bottom of the workbook.
+	\item Type the name \textbf{Unit Sales Rank} to prepare the worksheet for future use.
+	\item Press the ENTER key on your keyboard.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig47}
+	\caption{Renaming a Worksheet Tab}
+	\label{01:fig47}
+\end{figure}
+
+\begin{enumerate}
+	\item Click the Sheet3 worksheet tab.
+	\item Click the Home tab of the Ribbon.
+	\item Click the down arrow on the Delete button in the Cells group of commands.
+	\item Click the Delete Sheet option from the drop-down list. This removes the unneeded worksheet.
+	\item Click the Delete button on the Delete warning box (if a warning box appears).
+	\item Complete the steps above to delete the newly named Unit Sales Rank worksheet since it is decided that worksheet is also unnecessary so that you are left with just one worksheet.
+	\item Save the changes to your workbook by clicking either the Save button on the Home ribbon or by selecting the Save option from the File menu.
+\end{enumerate}
+
+\begin{center}
+	\begin{infobox}{Integrity Check}
+		\textbf{Deleting Worksheets}
+		\\
+		\\
+		Be very cautious when deleting worksheets that contain data. Once a worksheet is deleted, you cannot use the Undo command to bring the sheet back. Deleting a worksheet is a permanent command.
+	\end{infobox}
+\end{center}
+
+\begin{center}
+	\begin{shtcutbox}{Keyboard Shortcuts}
+		\textbf{Inserting New Worksheets}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Press the SHIFT key and then the F11 key on your keyboard.
+			
+		\end{itemize}
+	\end{shtcutbox}
+\end{center}
+
+
+Figure \ref{01:fig48} shows the final appearance of the GMW Sales workbook.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig48}
+	\caption{Final Appearance of the GMW Sales Workbook}
+	\label{01:fig48}
+\end{figure}
+
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Renaming Worksheets}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Double click the worksheet tab.
+			\item Type the new name.
+			\item Press the ENTER key.
+		\end{itemize}
+
+		\hfill \break
+		\textbf{Moving Worksheets}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Left click the worksheet tab.
+			\item Drag it to the desired position.
+		\end{itemize}
+
+		\hfill \break
+		\textbf{Deleting Worksheets}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Open the worksheet to be deleted.
+			\item Click the Home tab of the Ribbon.
+			\item Click the down arrow on the Delete button.
+			\item Select the Delete Sheet option.
+			\item Click Delete on the warning box.
+		\end{itemize}
+
+	\end{sklbox}
+\end{center}
+
+\begin{center}
+	\begin{tkwbox}{Key Take-Aways}
+		\textbf{Save}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Formatting skills are critical for creating worksheets that are easy to read and have a professional appearance.
+			\item A series of pound signs (\#\#\#\#) in a cell location indicates that the column is too narrow to display the number entered.
+			\item Using the Wrap Text command allows you to stack multiword column headings vertically in a cell location, reducing the need to expand column widths.
+			\item Use the Merge \& Center command to center the title of a worksheet directly over the columns that contain data.
+			\item Adding borders or lines will make your worksheet easier to read and helps to separate the data in each column and row.
+			\item You cannot use the Undo command to bring back a worksheet that has been deleted.
+		
+		\end{itemize}
+	\end{tkwbox}
+\end{center}
+
+\section{Printing}
+
+\begin{center}
+	\begin{objbox}{Learning Objectives}
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Use the Page Layout tab to prepare a worksheet for printing.
+			\item Add headers and footers to a printed worksheet.
+			\item Examine how to print worksheets and workbooks.
+		\end{itemize}
+	\end{objbox}
+\end{center}
+
+Once you have completed a workbook, it is good practice to select the appropriate settings for printing. These settings are in the Page Layout tab of the Ribbon and discussed in this section of the chapter.
+
+\subsection{Page Setup}
+
+Before you can properly print the worksheets in a workbook, you must establish appropriate settings. The following steps explain several of the commands in the Page Layout tab of the Ribbon used to prepare a worksheet for printing.
+
+\begin{enumerate}
+	\item Open the \textbf{CH1 GMW Sales} workbook, if it is not already open.
+	\item Click the Page Layout tab of the Ribbon.
+	\item Click the Margins button in the Page Setup group of commands. This will open a drop-down list of options for setting the margins of your printed document.
+	\item Click the Wide option from the Margins drop-down list. (see Figure \ref{01:fig49})
+	\item Click the Orientation button in the Page Setup and select Landscape.
+	\item Click on the arrow to the bottom right of the Page Setup category to launch the Page Setup options dialog box.
+	\item Click the Margins tab and locate ``Center on Page''. Click the boxes to Horizontally and Vertically center the data on the worksheet. Click OK.
+
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig49}
+	\caption{Page Layout Commands for Printing}
+	\label{01:fig49}
+\end{figure}
+
+\begin{center}
+	\begin{infobox}{Why?}
+		\textbf{Use Print Settings}
+		\\
+		\\
+		Because professionals often share Excel workbooks, it is a good practice to select the appropriate print settings in the Page Layout tab even if you do not intend to print the worksheets in a workbook. It can be extremely frustrating for recipients of a workbook who wish to print your worksheets to find that the necessary print settings have not been selected. This may reflect poorly on your attention to detail, especially if the recipient of the workbook is your boss.
+	\end{infobox}
+\end{center}
+
+{\small
+\begin{longtable}{p{0.75in}p{1.5in}p{1.5in}}
+	\textbf{Command} & \textbf{Purpose} & \textbf{Use} \\
+	\hline \endhead
+	Margins & Sets the top, bottom, right, and left margin space for the printed document & 1. Click the Page Layout tab of the Ribbon.\newline2. Click the Margin button.\newline3. Click one of the preset margin options or click Custom Margins.\\
+	\hline \\
+	Orientation & Sets the orientation of the printed document to either portrait or landscape & 1. Click the Page Layout tab of the Ribbon.\newline2. Click the Orientation button.\newline3. Click one of the preset orientation options.\\
+	\hline \\
+	Size & Sets the paper size for the printed document & 1. Click the Page Layout tab of the Ribbon.\newline2. Click the Size button.\newline3. Click one of the preset paper size options or click More Paper Sizes. \\
+	\hline \\
+	Print Area & Used for printing only a specific area or range of cells on a worksheet & 1. Highlight the range of cells on a worksheet that you 		wish to print.\newline2. Click the Page Layout tab of the Ribbon.\newline3. Click the Print Area button.\newline4. Click the Set Print Area option from the drop-down list. \\
+	\hline \\
+	Breaks & Allows you to manually set the page breaks on a worksheet & 1. Activate a cell on the worksheet where the page break should be placed. Breaks are created above and to the left of the activated cell.\newline2. Click the Page Layout tab of the Ribbon.\newline3. Click the Breaks button.\newline4. Click the Insert Page Break option from the drop-down list. \\
+	\hline \\
+	Background & Adds a picture behind the cell locations in a worksheet & 1. Click the Page Layout tab of the Ribbon.\newline2. Click the Background button.\newline3. Select a picture stored on your computer or network. \\
+	\hline \\
+	Print Titles & Used when printing large data sets that are several pages long. This command will repeat the column headings at the top of each printed page. & 1. Click the Page Layout tab of the Ribbon.\newline2. Click the Print Titles button.\newline3. Click in the Rows to Repeat at Top input box in the Page Setup dialog box.\newline4. Click any cell in the row that contains the column headings for your worksheet.\newline5. Click the OK button at the bottom of the Page Setup dialog box. \\
+
+	\caption{Purpose and Use for Page Setup Commands}
+	\label{01:tab02}
+\end{longtable}
+}
+
+\subsection{Headers and Footers}
+
+When printing worksheets from Excel, it is common to add headers and footers to the printed document. Information in the header or footer could include the date, page number, file name, company name, and so on. The following steps explain how to add headers and footers to the GMW Sales Data workbook.
+
+\begin{enumerate}
+	\item Click the Insert Ribbon and click on Header \& Footer at the right end of the ribbon (located in the Text group). You will see the Design tab added to the Ribbon; this is used for creating the headers and footers for the printed worksheet. Also, this will convert the view of the worksheet from Normal to Page Layout (see Figure \ref{01:fig50}). This Page Layout view makes adding Headers \& Footers easy and provides key features to incorporate.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig50}
+	\caption{Design Tab for Creating Headers and Footers}
+	\label{01:fig50}
+\end{figure}
+
+\begin{enumerate}[resume]
+	\item Type your name in the center section of the Header.
+	\item Place the mouse pointer over the left section of the Header and left click (see Figure \ref{01:fig50}).
+	\item Click the Current Date button in the Header \& Footer Elements group of commands in the Design tab of the Ribbon. This view will display as \&[Date] until printed or until you return to normal view.
+	\item Click the Go to Footer button in the Navigation group of commands in the Design tab of the Ribbon.
+	\item Place the mouse pointer over the far right section of the footer and left click.
+	\item Click the Page Number button (you may need to click on the Design tab again) in the Header \& Footer Elements group of commands in the Design tab of the Ribbon. This view will display as \&[Page] until printed or until you return to normal view.
+	\item Click any cell location outside the header or footer area. The Design tab for creating headers and footers will disappear.
+	\item Click the Normal view button in the lower right side of the Status Bar (see Figure \ref{01:fig51}).
+
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig51}
+	\caption{Worksheet in Page Layout View}
+	\label{01:fig51}
+\end{figure}
+
+\subsection{Printing Worksheets and Workbooks}
+
+Once you have established the print settings for the worksheets in a workbook and have added headers and footers, you are ready to print your worksheets. The following steps explain how to print the worksheets in the GMW Sales workbook.
+
+\begin{enumerate}
+	\item Click the File tab on the Ribbon.
+	\item Click the Print option on the left side of the Backstage view (see Figure \ref{01:fig52}). On the right side of the Backstage view, you will be able to see a preview of your printed worksheet.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig52}
+	\caption{Backstage View Print option}
+	\label{01:fig52}
+\end{figure}
+
+\begin{enumerate}[resume]
+	\item Click the Print Active Sheets button in the Print section of the Backstage view (see Figure \ref{01:fig52}).
+	\item If your instructor has asked you to print your work, click the Print button.
+	\item Click the Home tab of the Ribbon.
+	\item Save and close the \textbf{CH1 GMW Sales} workbook.
+	\item Compare your work with the self-check answer key (found in the Course Files link) and then submit the \textbf{CH1 GMW Sales} workbook as directed by your instructor.
+\end{enumerate}
+
+\begin{center}
+	\begin{tkwbox}{Key Take-Aways}
+		\textbf{Print}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+
+			\item The commands in the Page Layout tab of the Ribbon are used to prepare a worksheet for printing.
+			\item You can add headers and footers to a worksheet to show key information such as page numbers, the date, the file name, your name, and so on.
+			\item The Print commands are in the File tab of the Ribbon.
+			
+		\end{itemize}
+	\end{tkwbox}
+\end{center}
+
+\section{Chapter Practice}
+
+To assess your understanding of the material covered in the chapter, complete the following assignment.
+
+\subsection{Basic Monthly Budget for Medical Office}
+
+\textit{Download Data File: PR1 Data}
+
+Creating and maintaining budgets are common practices in many careers. Budgets play a critical role in helping a business or household control expenditures. In this exercise you will create a budget for a hypothetical medical office while reviewing the skills covered in this chapter.
+
+\begin{enumerate}
+	\item Open the file name \textbf{PR1 Data}, then Save As \textbf{PR1 Medical Office Budget}.
+	\item Activate all the cell locations in the Sheet1 worksheet by left clicking the Select All button in the upper left corner of the worksheet (See Figure \ref{01:fig53}).
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch01_fig53}
+	\caption{The Select All Button}
+	\label{01:fig53}
+\end{figure}
+
+
+\begin{enumerate}[resume]
+	\item In the Home tab of the Ribbon, set the font style to Arial and the font size to 12 points. Then click any cell to deselect.
+	\item Increase the width of Column \textsf{A} so all the entries in the range \textsf{A3:A8} are visible. Place the mouse pointer between the letter \textit{A} and letter \textit{B} of Column \textsf{A} and Column \textsf{B}. When the mouse pointer changes to a double arrow, left click and drag it to the right until the character width is approximately 18.00.
+	\item Enter \textbf{Quarter 1} in cell \textsf{B2}.
+	\item Use AutoFill to complete the headings in the range \textsf{C2:E2}. Activate cell \textsf{B2} and place the mouse pointer over the Fill Handle. When the mouse pointer changes to a black plus sign, left click and drag it to cell \textsf{E2}.
+	\item Highlight the range \textsf{B2:E2} and click the Format button in the Home tab of the Ribbon. Click the Column Width option, type 11.57 in the Column Width dialog box, and then click the OK button in the Column Width dialog box.
+	\item Enter the words \textbf{Medical Office Budget} in cell \textsf{A1}.
+	\item Insert a blank column between Columns \textsf{A} and \textsf{B} by clicking on any cell in Column A. Then, click the drop-down arrow of the Insert button in the Home tab of the Ribbon. Click the Insert Sheet Columns option.
+	\item Enter the words \textbf{Budget Cost} in cell \textsf{B2}.
+	\item Adjust the width of Column \textsf{B} to approximately 13.29 characters.
+	\item Highlight the range \textsf{A1:F1} and click the Merge \& Center button in the Home tab of the Ribbon to merge the cells in that range.
+	\item Make the following format adjustments to the range \textsf{A1:F1}: bold; italics; change the font size to 14 points; change the cell fill color to Aqua, Accent 5, Darker 50\%; and change the font color to white.
+	\item Increase the height of Row 1 to approximately 24.75 points.
+	\item Make the following format adjustment to the range \textsf{A2:F2}: bold; and change the cell fill color to Tan, Background 2, Darker 10\%. Center the column titles so that they are horizontally centered in each cell.
+	\item Set the alignment in cell \textsf{B2} to Wrap Text. Select \textsf{B2} and choose the Wrap Text button in the Home tab of the Ribbon.
+	\item Copy cell \textsf{C3} and paste the contents into the range \textsf{D3:F3}.
+	\item Copy the contents in the range \textsf{C6:C8} by highlighting the range and clicking the Copy button in the Home tab of the Ribbon. Then, highlight the range \textsf{D6:F8} and click the Paste button in the Home tab of the Ribbon.
+	\item Calculate the total budget for all four quarters for the salaries. Activate cell \textsf{B3} and click the down arrow on the AutoSum button in the Formulas tab of the Ribbon. Click the Sum option from the drop-down list. Then, highlight the range \textsf{C3:F3} and press the ENTER key on the keyboard.
+	\item Copy the formula in cell \textsf{B3} and paste them into the range \textsf{B4:B8}.
+	\item Format the range \textsf{B3:F8} with Accounting format and zero decimal places.
+	\item Highlight the range \textsf{A1:F8} and click the down arrow next to the Borders button in the Home tab of the Ribbon. Select the All Borders option from the drop-down list.
+	\item Double click the Sheet1 worksheet tab to change the name of Sheet1 to the word \textbf{Budget}, and press the ENTER key. Delete any unnecessary worksheets.
+	\item Change the orientation of the Budget worksheet so it prints landscape instead of portrait.
+	\item Use Fit to 1 page so the Budget worksheet prints on one piece of paper, if it does not already.
+	\item Add a header to the Budget worksheet that shows the date in the upper left corner and your name in the center.
+	\item Add a footer to the Budget worksheet that shows the page number in the lower right corner. 
+	\item Save \textbf{PR1 Medical Office Budget} workbook.
+	\item Compare your work with the self-check answer key and then submit the \textbf{PR1 Medical Office Budget} workbook as directed by your instructor.
+\end{enumerate}
+
+\section{Scored Assessment}
+
+\subsection{Sales and Inventory Items}
+
+\textit{Download Data File: SC1 Data}
+
+A key activity for marketing professionals is to analyze projected sales and inventory information. This is especially important for retail environments. This exercise utilizes the skills covered in this chapter to analyze sales and inventory data.
+
+\begin{enumerate}
+	\item Open the file named \textbf{SC1 Data} and then Save As \textbf{SC1 Sales and Inventory}
+	\item In the Sheet1 worksheet, enter the word \textbf{Totals} in cell \textsf{C14}.
+	\item Format all the cells in Sheet1 to Century font style and a 12-point font size.
+	\item Set the column width for Columns \textsf{A} through \textsf{G} to 13.5.
+	\item Edit the entry in cell \textsf{B2} to read ``Item Number.''
+	\item Use AutoFill to fill the Item Numbers from \textsf{B3} into the range \textsf{B4:B13}. The item numbers should increase by one as they are filled through the range.
+	\item Copy the contents of cell \textsf{A3} and paste them into the range \textsf{A4:A8}.
+	\item Delete Column \textsf{F}.
+	\item Format the range \textsf{A1:F2} so the text is Bold.
+	\item Set the alignment in the range \textsf{A2:F2} to Wrap Text.
+	\item Prepare \textsf{A1:F1} for the title text by changing the fill color of the cells in the range \textsf{A1:F1} to Red, Accent 2, Darker 25\%.
+	\item Make the following font changes to the range \textsf{A1:F1}: set the font color to white, add italics, and set the font size to 14.
+	\item Merge and center the cells in the range \textsf{A1:F1}.
+	\item Enter the title for this worksheet in the range \textsf{A1:F1}. The title should appear on two lines. The first line should read \textbf{Status Report}. The second line should read \textbf{Sales and Inventory by Item}.
+	\item Increase the height of Row 1 so the entire title is visible.
+	\item Format the values in the range \textsf{C3:C13} with dollar signs and two decimal places.
+	\item Format the values in the range \textsf{E3:F13} with comma style, zero decimal places.
+	\item In cell \textsf{E14}, use AutoSum to calculate the sum of the values in the range \textsf{E3:E13}.
+	\item In cell \textsf{F14}, use AutoSum to calculate the sum of the values in the range \textsf{F3:F13}.
+	\item Apply All Borders to the range \textsf{A1:F14}.
+	\item Add a thick bottom border to row 2; add a thick bottom border to row 13.
+	\item Add a thick line border around the perimeter of the range \textsf{A1:F14}.
+	\item Insert a new blank worksheet in the workbook (this will be Sheet4).
+	\item Delete Sheet3.
+	\item Move Sheet4 ahead of Sheet2 so the order of the worksheets is Sheet1, Sheet4, and Sheet2.
+	\item Rename the Sheet1 worksheet tab to ``Status Report.''
+	\item Change the orientation of the Status Report worksheet so it prints landscape instead of portrait.
+	\item Add a header to the Status Report worksheet that shows the date (needs to update) in the upper left corner and your name in the center.
+	\item Add a footer to the Status Report worksheet that shows the page number in the lower right corner with the word ``Page'' before the number.
+	\item Center the worksheet both horizontally and vertically on the sheet.
+	\item Save the \textbf{SC1 Sales and Inventory} workbook.
+	\item Submit the \textbf{SC1 Sales and Inventory} workbook as directed by your instructor.
+
+\end{enumerate}

@@ -1,0 +1,50 @@
+% This file contains all of the acronymns and glossary entries for the book.
+
+% Acronyms
+% The ``code'' is what I use in the document to link to a definition here
+% The ``name'' is what the user sees in the document
+% The ``definition'' is what the user sees in the glossary
+%\newacronym{code}{name}{Definition}
+
+%\newacronym{nasa}{NASA}{National Aeronatics and Space Administration}
+
+% Glossary
+% The ``code'' is what I use in the document to link to a definition here
+% The ``name'' is the phrase listed in the glossary
+% The ``description'' defines the phrase
+% Can also include a ``text'' entry that is how the phrase will appear in the text
+% Ex: name{Latin Alphabet} uses caps in the Glossary
+%     text{Latin alphabet} uses LC in the text
+% Can also include a ``plural'' entry to spell non-standard plural words
+% Ex: name{bravo} 
+%     plural{bravi}
+
+%\newglossaryentry{code}{name={Phrase in Glossary},
+%		description={This describes the phrase.}}
+% ``see'' creates a cross-link in the glossary, usually not needed
+% Note that a glossary entry will not be printed if it is not in the
+% main text somewhere.
+
+%\newglossaryentry{myphone}{
+%	name={George's Phone},
+%	description={(520) 335-2958},
+%	see={myaddr}
+%}
+
+% For long entries, the percent sign after the opening brace
+% removes the CR/LF so you don't get an extra vertical space
+
+% To use:
+%   \gls{label} (regular form)
+%   \glspl{label} (plural form)
+%   \Gls{label} (Capitalized regular form)
+%   \Glspl{label} (Capitalized plural form)
+
+\longnewglossaryentry{contentvalidity}
+{name={content validity},
+	see={validity}}
+{%
+	A determination of whether a measure correctly assesses the construct's content. For example, if a research project is attempting to determine the drivers for total sales in a store but only measured the price of the merchandise being sold then ignoring factors like advertising, competition, and even the general economy of the region would call into question the content validity of the study.
+}
+
+\newacronym{cpi}{CPI}{Consumer Price Index}
