@@ -2,8 +2,6 @@
 \chapter{Mathematical Computations}\label{ch02:mathematical_computations}
 %*****************************************
 
-\chapter{Mathematical Computations}
-
 Perhaps the most valuable feature of Excel is its ability to produce mathematical outputs using the data in a workbook. This chapter reviews several mathematical outputs that you can produce in Excel through the construction of formulas and functions. The chapter begins with the construction of formulas for basic and complex mathematical computations. The second section reviews statistical functions, such as SUM, AVERAGE, MIN, and MAX, which can be applied to a range of cells. The last section of the chapter addresses functions used to calculate mortgage and lease payments as well as the valuation of investments. This chapter also shows how you can use data from multiple worksheets to construct formulas and functions. These skills will be demonstrated in the context of a personal cash budget, which is a vital tool for managing your money for long-term financial security. The personal budget objective will also provide you with several opportunities to demonstrate Excel's what-if scenario capabilities, which highlight how formulas and functions automatically produce new outputs when one or more inputs are changed.
 
 \section{Formulas}
@@ -195,11 +193,11 @@ The next formula to be added to the Personal Budget workbook is the percent chan
 		\textbf{Use Relative Referencing}
 		\\
 		\\
-		Relative referencing is a convenient feature in Excel. When you use cell references in a formula, Excel automatically adjusts the cell references when the formula is pasted into new cell locations. If this feature were not available, you would have to manually retype the formula when you want the same calculation applied to other cell locations in a 		column or row.
+		Relative referencing is a convenient feature in Excel. When you use cell references in a formula, Excel automatically adjusts the cell references when the formula is pasted into new cell locations. If this feature were not available, you would have to manually retype the formula when you want the same calculation applied to other cell locations in a column or row.
 	\end{infobox}
 \end{center}
 
-Figure \ref{02:tab03} shows the formula that was added to the \textbf{Budget Detail} worksheet to calculate the percent change in spending. The parentheses were added to this formula to control the order of operations. Any mathematical computations placed in parentheses are executed first before the standard order of mathematical operations (see Table \ref{02:tab03}). In this case, if parentheses were not used, Excel would produce an erroneous result for this worksheet.
+Figure \ref{02:fig06} shows the formula that was added to the \textbf{Budget Detail} worksheet to calculate the percent change in spending. The parentheses were added to this formula to control the order of operations. Any mathematical computations placed in parentheses are executed first before the standard order of mathematical operations (see Table \ref{02:tab03}). In this case, if parentheses were not used, Excel would produce an erroneous result for this worksheet.
 
 Figure \ref{02:fig07} shows the result of the percent change formula if the parentheses are removed. The formula produces a result of a $ 299900\% $ increase. Since there is no change between the LY spend and the budget Annual Spend, the result should be 0\%. However, without the parentheses, Excel is following the standard order of operations. This means the value in cell \textsf{E3} will be divided by \textsf{E3} first ($ 3,000 / 3,000 $), which is $ 1 $. Then, the value of $ 1 $ will be subtracted from the value in cell \textsf{D3} ($ 3,000 - 1 $), which is $ 2,999 $. Since cell \textsf{F3} is formatted as a percentage, Excel expresses the output as an increase of $ 299900\% $.
 
@@ -233,574 +231,484 @@ Figure \ref{02:fig07} shows the result of the percent change formula if the pare
 	\end{sklbox}
 \end{center}
 
-\section{Auditing Formulas}
+\subsection{Auditing Formulas}
 
-Excel provides a few tools that you can use to review the formulas entered into a worksheet. For
-example, instead of showing the outputs for the formulas used in a worksheet, you can have Excel
-show the formula as it was entered in the cell locations. This is demonstrated as follows:
+Excel provides a few tools that you can use to review the formulas entered into a worksheet. For example, instead of showing the outputs for the formulas used in a worksheet, you can have Excel show the formula as it was entered in the cell locations. This is demonstrated as follows.
 
-1. With the Budget Detail worksheet open, click the Formulas tab of the Ribbon.
-2. Click the Show Formulas button in the Formula Auditing group of commands. This displays the
-formulas in the worksheet instead of showing the mathematical outputs.
-3. Click the Show Formulas button again. The worksheet returns to showing the output of the
+\begin{enumerate}
+	\item With the Budget Detail worksheet open, click the Formulas tab of the Ribbon.
+	\item Click the Show Formulas button in the Formula Auditing group of commands. This displays the formulas in the worksheet instead of showing the mathematical outputs.
+	\item Click the Show Formulas button again. The worksheet returns to showing the output of the
 formulas.
-
-Figure 2.8 shows the Budget Detail worksheet after activating the Show Formulas command in the
-Formulas tab of the Ribbon. As shown in the figure, this command allows you to view and check
-all the formulas in a worksheet without having to click each cell individually. After activating this
-command, the column widths in your worksheet increase significantly. The column widths were
-adjusted for the worksheet shown in Figure 2.8 so all columns can be seen. The column widths return
-to their previous width when the Show Formulas command is deactivated.
-
-
-
-
-Integrity Check
-
-Does the Output of Your Formula Make Sense?
-
-It is important to note that the accuracy of the output produced by a formula depends on how it is constructed.
-Therefore, always check the result of your formula to see whether it makes sense with data in your worksheet. As
-shown in Figure 2.7, a poorly constructed formula can give you an inaccurate result. In other words, you can see
-that there is no change between the Annual Spend and LY Spend for Household Utilities. Therefore, the result of the
-%formula should be 0%. However, since the parentheses were removed in this case, the formula is clearly producing
-an erroneous result.
-
-
-
-
-90 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 2.8 Show Formulas Command
-
-
-
-
-Skill Refresher
-
-
-Show Formulas
-
-1. Click the Formulas tab on the Ribbon.
-2. Click the Show Formulas button in the Formula Auditing group of commands.
-3. Click the Show Formulas button again to show formula outputs.
-
-
-
-
-Keyboard Shortcuts
-
-
-Show Formulas
-
-%• Hold down the CTRL key while pressing the accent symbol `.
-
-
-
-Two other tools in the Formula Auditing group of commands are the Trace Precedents and Trace
-Dependents commands. These commands are used to trace the cell references used in a formula. A
-precedent cell is a cell whose value is used in other cells. The Trace Precedents command shows an
-arrow to indicate the cells or ranges (precedents) which affect the active cell’s value. A dependent cell
-is a cell whose value depends on the values of other cells in the workbook. The Trace Dependents
-
-BEGINNING EXCEL 91
-command shows where any given cell is referenced in a formula. The following is a demonstration of
-these commands:
-
-1. Click cell D3 in the Budget Detail worksheet.
-2. Click the Trace Dependents button in the Formula Auditing group of commands in the
-Formulas tab of the Ribbon. A double blue arrow appears, pointing to cell locations C3 and F3
-(see Figure 2.9). This indicates that cell D3 is referenced in formulas that are entered in cells C3
-and F3.
-3. Click the Remove Arrows command in the Formula Auditing group of commands in the
-Formulas tab of the Ribbon. This removes the Trace Dependents arrow.
-4. Click cell F3 in the Budget Detail worksheet.
-5. Click the Trace Precedents button in the Formula Auditing group of commands in the Formulas
-tab of the Ribbon. A blue arrow running through cells D3 and E3 and pointing to cell F3 appears
-(see Figure 2.10). This indicates that cells D3 and E3 are references in a formula entered in cell
-F3.
-6. Click the Remove Arrows command in the Formula Auditing group of commands in the
-Formulas tab of the Ribbon. This removes the Trace Precedents arrow.
-7. Save the Ch2 Personal Budget file.
-
-Figure 2.9 shows the Trace Dependents arrow on the Budget Detail worksheet. The blue dot
-represents the activated cell. The arrows indicate where the cell is referenced in formulas.
-
-
-
-
-Figure 2.9 Trace Dependents Example
-
-
-Figure 2.10 shows the Trace Precedents arrow on the Budget Detail worksheet. The blue dots on this
-arrow indicate the cells that are referenced in the formula contained in the activated cell. The arrow
-is pointing to the activated cell location that contains the formula.
-
-
-
-
-92 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 2.10 Trace Precedents Example
-
-
-
-
-Skill Refresher
-
-
-Trace Dependents
-
-1. Click a cell location that contains a number or formula.
-2. Click the Formulas tab on the Ribbon.
-3. Click the Trace Dependents button in the Formula Auditing group of commands.
-4. Use the arrow(s) to determine where the cell is referenced in formulas and functions.
-5. Click the Remove Arrows button to remove the arrows from the worksheet.
-
-
-
-
-Skill Refresher
-
-
-Trace Precedents
-
-1. Click a cell location that contains a formula or function.
-2. Click the Formulas tab on the Ribbon.
-3. Click the Trace Precedents button in the Formula Auditing group of commands.
-4. Use the dot(s) along the line to determine what cells are referenced in the formula or function.
-5. Click the Remove Arrows button to remove the line with the dots.
-
-
-
-
-BEGINNING EXCEL 93
-Key Takeaways
-
-
-• Mathematical computations are conducted through formulas and functions.
-
-• An equal sign = precedes all formulas and functions.
-
-• Formulas and functions must be created with cell references to conduct what-if scenarios where
-mathematical outputs are recalculated when one or more inputs are changed.
-
-• Mathematical operators on a typical calculator are different from those used in Excel. Table 2.2 “Excel
-Mathematical Operators” lists Excel mathematical operators.
-
-• When using numerical values in formulas and functions, only use universal constants that do not change,
-such as days in a week, months in a year, and so on.
-
-• Relative referencing automatically adjusts the cell references in formulas and functions when they are
-pasted into new locations on a worksheet. This eliminates the need to retype formulas and functions when
-they are needed in multiple rows or columns on a worksheet.
-
-• Parentheses must be used to control the order of operations when necessary for complex formulas.
-
-• Formula auditing tools such as Trace Dependents, Trace Precedents, and Show Formulas should be used to
-check the integrity of formulas that have been entered into a worksheet.
-
-
-
-ATTRIBUTION
-
-Adapted by Mary Schatz from How to Use Microsoft Excel: The Careers in Practice Series, adapted
-by The Saylor Foundation without attribution as requested by the work’s original creator or
-licensee, and licensed under CC BY-NC-SA 3.0.
-
-
-
-
-94 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-2.2 STATISTICAL FUNCTIONS
-
-
-
-
-Learning Objectives
-
-
-1. Use the SUM function to calculate totals.
-2. Use absolute references to calculate percent of totals.
-3. Use the COUNT function to count cell locations with numerical values.
-4. Use the AVERAGE function to calculate the arithmetic mean.
-5. Use the MAX and MIN functions to find the highest and lowest values in a range of cells.
-6. Learn how to copy and paste formulas without formats applied to a cell location.
-7. Learn how to set a multiple level sort sequence for data sets that have duplicate values or outputs.
-
-
-
-In addition to formulas, another way to conduct mathematical computations in Excel is through
-functions. Statistical functions apply a mathematical process to a group of cells in a worksheet. For
-example, the SUM function is used to add the values contained in a range of cells. A list of commonly
-used statistical functions is shown in Table 2.4. Functions are more efficient than formulas when
-you are applying a mathematical process to a group of cells. If you use a formula to add the values
-in a range of cells, you would have to add each cell location to the formula one at a time. This can
-be very time-consuming if you have to add the values in a few hundred cell locations. However,
-when you use a function, you can highlight all the cells that contain values you wish to sum in just
-one step. This section demonstrates a variety of statistical functions that we will add to the Personal
-Budget workbook. In addition to demonstrating functions, this section also reviews percent of total
-calculations and the use of absolute references.
-
-Table 2.4 Commonly Used Statistical Functions
-
-
-
-
-BEGINNING EXCEL 95
-Function     Output
-ABS          The absolute value of a number
-AVERAGE      The average or arithmetic mean for a group of numbers
-COUNT        The number of cell locations in a range that contain a numeric character
-COUNTA       The number of cell locations in a range that contain a text or numeric character
-MAX          The highest numeric value in a group of numbers
-The middle number in a group of numbers (half the numbers in the group are higher than the median and half the
-MEDIAN
-numbers in the group are lower than the median)
-MIN          The lowest numeric value in a group of numbers
-MODE         The number that appears most frequently in a group of numbers
-PRODUCT The result of multiplying all the values in a range of cell locations
-SQRT         The positive square root of a number
-STDEV.S      The standard deviation for a group of numbers based on a sample
-SUM          The total of all numeric values in a group
-
-
-THE SUM FUNCTION
-
-The SUM function is used when you need to calculate totals for a range of cells or a group of selected
-cells on a worksheet. With regard to the Budget Detail worksheet, we will use the SUM function
-to calculate the totals in row 12. It is important to note that there are several methods for adding a
-function to a worksheet, which will be demonstrated throughout the remainder of this chapter. The
-following illustrates how a function can be added to a worksheet by typing it into a cell location:
-
-1.    Click the Budget Detail worksheet tab to open the worksheet.
-2.    Click cell C12.
-3.    Type an equal sign =.
-4.    Type the function name SUM.
-5.    Type an open parenthesis (.
-6.    Click cell C3 and drag down to cell C11. This places the range C3:C11 into the function.
-7.    Type a closing parenthesis ).
-8.    Press the ENTER key. The function calculates the total for the Monthly Spend column, which is
-\$1,496.
-
-Figure 2.11 shows the appearance of the SUM function added to the Budget Detail worksheet before
-pressing the ENTER key.
-
-
-
-
-96 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 2.11 Adding the SUM Function to the Budget Detail Worksheet
-
-
-As shown in Figure 2.11, the SUM function was added to cell C12. However, this function is also
-needed to calculate the totals in the Annual Spend and LY Spend columns. The function can be copied
-and pasted into these cell locations because of relative referencing. Relative referencing serves the
-same purpose for functions as it does for formulas. The following demonstrates how the total row is
-completed:
-
-1. Click cell C12 in the Budget Detail worksheet.
-2. Click the Copy button in the Home tab of the Ribbon.
-3. Highlight cells D12 and E12.
-4. Click the Paste button in the Home tab of the Ribbon. This pastes the SUM function into cells
-D12 and E12 and calculates the totals for these columns.
-5. Click cell F11.
-6. Click the Copy button in the Home tab of the Ribbon.
-7. Click cell F12, then click the Paste button in the Home tab of the Ribbon. Since we now have
-totals in row 12, we can paste the percent change formula into this row.
-
-Figure 2.12 shows the output of the SUM function that was added to cells C12, D12, and E12. In
-addition, the percent change formula was copied and pasted into cell F12. Notice that this version of
-the budget is planning a 1.7% decrease in spending compared to last year.
-
-
-
-
-BEGINNING EXCEL 97
-Figure 2.12 Results of the SUM Function in the Budget Detail Worksheet
-
-
-
-
-Integrity Check
-
-Cell Ranges in Statistical Functions
-
-When you intend to use a statistical function on a range of cells in a worksheet, make sure there are two cell
-locations separated by a colon and not a comma. If you enter two cell locations separated by a comma, the function
-will produce an output but it will be applied to only two cell locations instead of a range of cells. For example, the
-SUM function shown in Figure 2.13 will add only the values in cells C3 and C11, not the range C3:C11.
-
-
-
-
-98 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 2.13 SUM Function Adding Two Cell Locations
-
-
-ABSOLUTE REFERENCES (CALCULATING PERCENT OF TOTALS)
-
-Data file: Continue with CH2 Personal Budget.
-
-Since totals were added to row 12 of the Budget Detail worksheet, a percent of total calculation can
-be added to Column B beginning in cell B3. The percent of total calculation shows the percentage
-for each value in the Annual Spend column with respect to the total in cell D12. However, after the
-formula is created, it will be necessary to turn off Excel’s relative referencing feature before copying
-and pasting the formula to the rest of the cell locations in the column. Turning off Excel’s relative
-referencing feature is accomplished through an absolute reference. The following steps explain how
-this is done:
-
-1.   Click cell B3 in the Budget Detail worksheet.
-2.   Type an equal sign =.
-3.   Click cell D3.
-%4.   Type a forward slash /.
-5.   Click cell D12.
-6.   Press the ENTER key. You will see that Household Utilities represents 16.7% of the Annual
-Spend budget (see Figure 2.14).
-
-
-
-
-BEGINNING EXCEL 99
-Figure 2.14 Adding a Formula to Calculate the Percent of Total
-
-
-Figure 2.14 shows the completed formula that is calculating the percentage that Household Utilities
-Annual Spend represents to the total Annual Spend for the budget (see cell B3). Normally, we would
-copy this formula and paste it into the range B4:B11. However, because of relative referencing, both
-cell references will increase by one row as the formula is pasted into the cells below B3. This is fine
-for the first cell reference in the formula (D3) but not for the second cell reference (D12). Figure 2.15
-illustrates what happens if we paste the formula into the range B4:B12 in its current state. Notice
-%that Excel produces the \#DIV/0 error code. This means that Excel is trying to divide a number by
-zero, which is impossible. Looking at the formula in cell B4, you see that the first cell reference was
-changed from D3 to D4. This is fine because we now want to divide the Annual Spend for Insurance
-by the total Annual Spend in cell D12. However, Excel has also changed the D12 cell reference to D13.
-%Because cell location D13 is blank, the formula produces the \#DIV/0 error code.
-
-
-
-
-100 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-%Figure 2.15 \#DIV/0 Error from Relative Referencing
-
-
-To eliminate the divide-by-zero error shown in Figure 2.15 we must add an absolute reference to
-cell D12 in the formula. An absolute reference prevents relative referencing from changing a cell
-reference in a formula. This is also referred to as locking a cell. The following explains how this is
-accomplished:
-
-1. Double click cell B3.
-2. Place the mouse pointer in front of D12 and click. The blinking cursor should be in front of the
-D in the cell reference D12.
-3. Press the F4 key. You will see a dollar sign (\$) added in front of the column letter D and the row
-number 12. You can also type the dollar signs in front of the column letter and row number.
-4. Press the ENTER key.
-5. Click cell B3.
-6. Click the Copy button in the Home tab of the Ribbon.
-7. Highlight the range B4:B11.
-8. Click the Paste button in the Home tab of the Ribbon.
-
-Figure 2.16 shows the percent of total formula with an absolute reference added to D12. Notice that
-in cell B4, the cell reference remains D12 instead of changing to D13 as shown in Figure 2.15. Also,
-
-BEGINNING EXCEL 101
-you will see that the percentages are being calculated in the rest of the cells in the column, and the
-divide-by-zero error is now eliminated.
-
-
-
-
-Figure 2.16 Adding an Absolute Reference to a Cell Reference in a Formula
-
-
-
-
-Skill Refresher
-
-
-Absolute References
-
-1. Click in front of the column letter of a cell reference in a formula or function that you do not want altered
-when the formula or function is pasted into a new cell location.
-2. Press the F4 key or type a dollar sign \$ in front of the column letter and row number of the cell reference.
-
-
-
-THE COUNT FUNCTION
-
-Data file: Continue with CH2 Personal Budget.
-
-102 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-The next function that we will add to the Budget Detail worksheet is the COUNT function. The
-COUNT function is used to determine how many cells in a range contain a numeric entry. The
-COUNT function will not work for counting text or other non-numeric entries. For the Budget
-Detail worksheet, we will use the COUNT function to count the number of items that are planned in
-the Annual Spend column (Column D). The following explains how the COUNT function is added to
-the worksheet by using the function list:
-
-1. Click cell D13 in the Budget Detail worksheet.
-2. Type an equal sign =.
-3. Type the letter C.
-4. Click the down arrow on the scroll bar of the function list (see Figure 2.17) and find the word
-COUNT.
-5. Double click the word COUNT from the function list.
-6. Highlight the range D3:D11.
-7. You can type a closing parenthesis ) and then press the ENTER key, or simply press the ENTER
-key and Excel will close the function for you. The function produces an output of 9 since there
-are 9 items planned on the worksheet.
-
-Figure 2.17 shows the function list box that appears after completing steps 2 and 3 for the COUNT
-function. The function list provides an alternative method for adding a function to a worksheet.
-
-
-
-
-Figure 2.17 Using the Function List to Add the COUNT Function
-
-
-Figure 2.18 shows the output of the COUNT function after pressing the ENTER key. The function
-
-
-
-BEGINNING EXCEL 103
-counts the number of cells in the range D3:D11 that contain a numeric value. The result of 9 indicates
-that there are 9 categories planned for this budget.
-
-
-
-
-Figure 2.18 Completed COUNT Function in the Budget Detail Worksheet
-
-
-THE AVERAGE FUNCTION
-
-The next function we will add to the Budget Detail worksheet is the AVERAGE function. This
-function is used to calculate the arithmetic mean for a group of numbers. For the Budget
-Detail worksheet, we will use the function to calculate the average of the values in the Annual Spend
-column. We will add this to the worksheet by using the Function Library. The following steps explain
-how this is accomplished:
-
-1.   Click cell D14 in the Budget Detail worksheet.
-2.   Click the Formulas tab on the Ribbon.
-3.   Click the More Functions button in the Function Library group of commands.
-4.   Place the mouse pointer over the Statistical option from the drop-down list of options.
-5.   Click the AVERAGE function name from the list of functions that appear in the menu (see
-Figure 2.19). This opens the Function Arguments dialog box.
-6.   Click the Collapse Dialog button in the Function Arguments dialog box (see Figure 2.20).
-7.   Highlight the range D3:D11.
-8.   Click the Expand Dialog button in the Function Arguments dialog box (see Figure 2.21). You can
-also press the ENTER key to get the same result.
-9.   Click the OK button on the Function Arguments dialog box. This adds the AVERAGE function
-to the worksheet.
-
-
-104 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 2.19 illustrates how a function is selected from the Function Library in the Formulas tab of the
-Ribbon.
-
-
-
-
-Figure 2.19 Selecting the AVERAGE Function from the Function Library
-
-
-Figure 2.20 shows the Function Arguments dialog box. This appears after a function is selected from
-the Function Library. The Collapse Dialog button is used to hide the dialog box so a range of cells can
-be highlighted on the worksheet and then added to the function.
-
-
-
-
-Figure 2.20 Function Arguments Dialog Box
-
-
-BEGINNING EXCEL 105
-Figure 2.21 shows how a range of cells can be selected from the Function Arguments dialog box once
-it has been collapsed.
-
-
-
-
-Figure 2.21 Selecting a Range from the Function Arguments Dialog Box
-
-
-Figure 2.22 shows the Function Arguments dialog box after the cell range is defined for the
-AVERAGE function. The dialog box shows the result of the function before it is added to the cell
-location. This allows you to assess the function output to determine whether it makes sense before
-adding it to the worksheet.
-
-
-
-
-106 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 2.22 Function Arguments Dialog Box after a Cell Range Is Defined for a Function
-
-
-Figure 2.23 shows the completed AVERAGE function in the Budget Detail worksheet. The output
-of the function shows that on average we expect to spend \$1,994 for each of the categories listed in
-Column A of the budget. This average spend calculation per category can be used as an indicator to
-determine which categories are costing more or less than the average budgeted spend dollars.
-
-
-
-
-Figure 2.23 Completed AVERAGE Function
-
-
-THE MAX AND MIN FUNCTIONS
-
-Data file: Continue with CH2 Personal Budget.
-
-BEGINNING EXCEL 107
-The final two statistical functions that we will add to the Budget Detail worksheet are the MAX
-and MIN functions. These functions identify the highest and lowest values in a range of cells. The
-following steps explain how to add these functions to the Budget Detail worksheet:
-
-1.   Click cell D15 in the Budget Detail worksheet.
-2.   Type an equal sign =.
-3.   Type the word MIN.
-4.   Type an open parenthesis (.
-5.   Highlight the range D3:D11.
-6.   Type a closing parenthesis ) and press the ENTER key, or simply press the ENTER key and
-Excel will close the function for you. The MIN function produces an output of $1,200, which is
-the lowest value in the Annual Spend column (see Figure 2.24).
-7.   Click cell D16.
-8.   Type an equal sign =.
-9.   Type the word MAX.
-10.   Type an open parenthesis (.
-11.   Highlight the range D3:D11.
-12.   Type a closing parenthesis ) and press the ENTER key, or simply press the ENTER key and
-Excel will close the function for you. The MAX function produces an output of $3,500. This is
-the highest value in the Annual Spend column (see Figure 2.25).
-
-
-
-
-Figure 2.24 MIN Function Added to the Budget Detail Worksheet
-
-
-
-
-108 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 2.25 MAX Function Added to the Budget Detail Worksheet
-
-
-
-
-Skill Refresher
-
-
-Statistical Functions
-
-1. Type an equal sign =.
-2. Type the function name followed by an open parenthesis ( or double click the function name from the
-function list.
-3. Highlight a range on a worksheet or click individual cell locations followed by commas.
-4. Type a closing parenthesis ) and press the ENTER key or press the ENTER key to close the function.
-
-
-
-COPY AND PASTE FORMULAS (PASTING WITHOUT FORMATS)
-
-Data file: Continue with CH2 Personal Budget.
+\end{enumerate}
+
+Figure \ref{02:fig08} shows the Budget Detail worksheet after activating the Show Formulas command in the Formulas tab of the Ribbon. As shown in the figure, this command allows you to view and check all the formulas in a worksheet without having to click each cell individually. After activating this command, the column widths in your worksheet increase significantly. The column widths were adjusted for the worksheet shown in Figure \ref{02:fig08} so all columns can be seen. The column widths return to their previous width when the Show Formulas command is deactivated.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig08}
+	\caption{Show Formulas Command}
+	\label{02:fig08}
+\end{figure}
+
+\begin{center}
+	\begin{infobox}{Integrity Check}
+		\textbf{Does the Output of Your Formula Make Sense?}
+		\\
+		\\
+		It is important to note that the accuracy of the output produced by a formula depends on how it is constructed. Therefore, always check the result of your formula to see whether it makes sense with data in your worksheet. As shown in Figure \ref{02:fig07}, a poorly constructed formula can give you an inaccurate result. In other words, you can see that there is no change between the Annual Spend and LY Spend for Household Utilities. Therefore, the result of the formula should be 0\%. However, since the parentheses were removed in this case, the formula is clearly producing an erroneous result.
+	\end{infobox}
+\end{center}
+
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Show Formulas}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Click the Formulas tab on the Ribbon.
+			\item Click the Show Formulas button in the Formula Auditing group of commands.
+			\item Click the Show Formulas button again to show formula outputs.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
+
+\begin{center}
+	\begin{shtcutbox}{Keyboard Shortcuts}
+		\textbf{Show Formulas}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Hold down the CTRL key while pressing the accent symbol `.
+			
+		\end{itemize}
+	\end{shtcutbox}
+\end{center}
+
+Two other tools in the Formula Auditing group of commands are the Trace Precedents and Trace Dependents commands. These commands are used to trace the cell references used in a formula. A precedent cell is a cell whose value is used in other cells. The Trace Precedents command shows an arrow to indicate the cells or ranges (precedents) which affect the active cell’s value. A dependent cell is a cell whose value depends on the values of other cells in the workbook. The Trace Dependents command shows where any given cell is referenced in a formula. The following is a demonstration of these commands.
+
+\begin{enumerate}
+	\item Click cell \textsf{D3} in the \textbf{Budget Detail} worksheet.
+	\item Click the Trace Dependents button in the Formula Auditing group of commands in the Formulas tab of the Ribbon. A double blue arrow appears, pointing to cell locations \textsf{C3} and \textsf{F3} (see Figure \ref{02:fig09}). This indicates that cell \textsf{D3} is referenced in formulas that are entered in cells \textsf{C3} and \textsf{F3}.
+	\item Click the Remove Arrows command in the Formula Auditing group of commands in the Formulas tab of the Ribbon. This removes the Trace Dependents arrow.
+	\item Click cell \textsf{F3} in the \textbf{Budget Detail} worksheet.
+	\item Click the Trace Precedents button in the Formula Auditing group of commands in the Formulas tab of the Ribbon. A blue arrow running through cells \textsf{D3} and \textsf{E3} and pointing to cell \textsf{F3} appears (see Figure \ref{02:fig10}). This indicates that cells \textsf{D3} and \textsf{E3} are references in a formula entered in cell \textsf{F3}.
+	\item Click the Remove Arrows command in the Formula Auditing group of commands in the Formulas tab of the Ribbon. This removes the Trace Precedents arrow.
+	\item Save the \textbf{Ch2 Personal Budget} file.
+\end{enumerate}
+
+Figure \ref{02:fig09} shows the Trace Dependents arrow on the Budget Detail worksheet. The blue dot represents the activated cell. The arrows indicate where the cell is referenced in formulas.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig09}
+	\caption{Trace Dependents Example}
+	\label{02:fig09}
+\end{figure}
+
+Figure \ref{02:fig10} shows the Trace Precedents arrow on the Budget Detail worksheet. The blue dots on this arrow indicate the cells that are referenced in the formula contained in the activated cell. The arrow is pointing to the activated cell location that contains the formula.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig10}
+	\caption{Trace Precedents Example}
+	\label{02:fig10}
+\end{figure}
+
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Trace Dependents}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Click a cell location that contains a number or formula.
+			\item Click the Formulas tab on the Ribbon.
+			\item Click the Trace Dependents button in the Formula Auditing group of commands.
+			\item Use the arrow(s) to determine where the cell is referenced in formulas and functions.
+			\item Click the Remove Arrows button to remove the arrows from the worksheet.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
+
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Trace Precedents}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Click a cell location that contains a formula or function.
+			\item Click the Formulas tab on the Ribbon.
+			\item Click the Trace Precedents button in the Formula Auditing group of commands.
+			\item Use the dot(s) along the line to determine what cells are referenced in the formula or function.
+			\item Click the Remove Arrows button to remove the line with the dots.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
+
+\begin{center}
+	\begin{tkwbox}{Key Take-Aways}
+		\textbf{Formulas}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Mathematical computations are conducted through formulas and functions.
+			\item An equal sign $ = $ precedes all formulas and functions.
+			\item Formulas and functions must be created with cell references to conduct what-if scenarios where mathematical outputs are recalculated when one or more inputs are changed.
+			\item Mathematical operators on a typical calculator are different from those used in Excel. Table \ref{02:tab02}, ``Excel Mathematical Operators,'' lists Excel mathematical operators.
+			\item When using numerical values in formulas and functions, only use universal constants that do not change, such as days in a week, months in a year, and so on.
+			\item Relative referencing automatically adjusts the cell references in formulas and functions when they are pasted into new locations on a worksheet. This eliminates the need to retype formulas and functions when they are needed in multiple rows or columns on a worksheet.
+			\item Parentheses must be used to control the order of operations when necessary for complex formulas.
+			\item Formula auditing tools such as Trace Dependents, Trace Precedents, and Show Formulas should be used to check the integrity of formulas that have been entered into a worksheet.
+			
+		\end{itemize}
+	\end{tkwbox}
+\end{center}
+
+\section{Statistical Functions}
+
+\begin{center}
+	\begin{objbox}{Learning Objectives}
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Use the SUM function to calculate totals.
+			\item Use absolute references to calculate percent of totals.
+			\item Use the COUNT function to count cell locations with numerical values.
+			\item Use the AVERAGE function to calculate the arithmetic mean.
+			\item Use the MAX and MIN functions to find the highest and lowest values in a range of cells.
+			\item Learn how to copy and paste formulas without formats applied to a cell location.
+			\item Learn how to set a multiple level sort sequence for data sets that have duplicate values or outputs.
+			
+ 		\end{itemize}
+	\end{objbox}
+\end{center}
+
+In addition to formulas, another way to conduct mathematical computations in Excel is through functions. Statistical functions apply a mathematical process to a group of cells in a worksheet. For example, the SUM function is used to add the values contained in a range of cells. A list of commonly used statistical functions is shown in Table \ref{02:tab04}. Functions are more efficient than formulas when you are applying a mathematical process to a group of cells. If you use a formula to add the values in a range of cells, you would have to add each cell location to the formula one at a time. This can be very time-consuming if you have to add the values in a few hundred cell locations. However, when you use a function, you can highlight all the cells that contain values you wish to sum in just one step. This section demonstrates a variety of statistical functions that we will add to the Personal Budget workbook. In addition to demonstrating functions, this section also reviews percent of total calculations and the use of absolute references.
+
+{\small
+	\begin{longtable}{p{0.75in}p{3.0in}}
+		\textbf{Function} & \textbf{Output} \endhead
+		\hline \\
+		ABS & The absolute value of a number\\
+		AVERAGE & The average or arithmetic mean for a group of numbers\\
+		COUNT & The number of cell locations in a range that contain a numeric character\\
+		COUNTA & The number of cell locations in a range that contain a text or numeric character\\
+		MAX & The highest numeric value in a group of numbers\\
+		MEDIAN & The middle number in a group of numbers (half the numbers in the group are higher than the median and half the numbers in the group are lower than the median)\\
+		MIN & The lowest numeric value in a group of numbers\\
+		MODE & The number that appears most frequently in a group of numbers\\
+		PRODUCT & The result of multiplying all the values in a range of cell locations\\
+		SQRT & The positive square root of a number\\
+		STDEV.S & The standard deviation for a group of numbers based on a sample\\
+		SUM & The total of all numeric values in a group\\
+		\caption{Commonly Used Statistical Functions}
+		\label{02:tab04}
+	\end{longtable}
+}
+
+The following discusses a few of the more commonly-used statistical functions.
+
+\subsection{The Sum Function}
+
+The SUM function is used when you need to calculate totals for a range of cells or a group of selected cells on a worksheet. With regard to the Budget Detail worksheet, we will use the SUM function to calculate the totals in row 12. It is important to note that there are several methods for adding a function to a worksheet, which will be demonstrated throughout the remainder of this chapter. The following illustrates how a function can be added to a worksheet by typing it into a cell location.
+
+\begin{enumerate}
+	\item Click the Budget Detail worksheet tab to open the worksheet.
+	\item Click cell \textsf{C12}.
+	\item Type an equal sign $ = $.
+	\item Type the function name SUM.
+	\item Type an open parenthesis $ ( $.
+	\item Click cell \textsf{C3} and drag down to cell \textsf{C11}. This places the range \textsf{C3:C11} into the function.
+	\item Type a closing parenthesis $ ) $.
+	\item Press the ENTER key. The function calculates the total for the Monthly Spend column, which is \$1,496.
+\end{enumerate}
+
+Figure \ref{02:fig11} shows the appearance of the SUM function added to the Budget Detail worksheet before pressing the ENTER key.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig11}
+	\caption{Adding the SUM Function to the Budget Detail Worksheet}
+	\label{02:fig11}
+\end{figure}
+
+As shown in Figure \ref{02:fig11}, the SUM function was added to cell \textsf{C12}. However, this function is also needed to calculate the totals in the Annual Spend and LY Spend columns. The function can be copied and pasted into these cell locations because of relative referencing. Relative referencing serves the same purpose for functions as it does for formulas. The following demonstrates how the total row is completed.
+
+\begin{enumerate}
+	\item Click cell \textsf{C12} in the Budget Detail worksheet.
+	\item Click the Copy button in the Home tab of the Ribbon.
+	\item Highlight cells \textsf{D12} and \textsf{E12}.
+	\item Click the Paste button in the Home tab of the Ribbon. This pastes the SUM function into cells \textsf{D12} and \textsf{E12} and calculates the totals for these columns.
+	\item Click cell \textsf{F11}.
+	\item Click the Copy button in the Home tab of the Ribbon.
+	\item Click cell \textsf{F12}, then click the Paste button in the Home tab of the Ribbon. Since we now have totals in row 12, we can paste the percent change formula into this row.
+\end{enumerate}
+
+Figure \ref{02:fig12} shows the output of the SUM function that was added to cells \textsf{C12}, \textsf{D12}, and \textsf{E12}. In addition, the percent change formula was copied and pasted into cell \textsf{F12}. Notice that this version of the budget is planning a 1.7\% decrease in spending compared to last year.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig12}
+	\caption{Results of the SUM Function in the Budget Detail Worksheet}
+	\label{02:fig12}
+\end{figure}
+
+\begin{center}
+	\begin{infobox}{Integrity Check}
+		\textbf{Cell Ranges in Statistical Functions}
+		\\
+		\\
+		When you intend to use a statistical function on a range of cells in a worksheet, make sure there are two cell locations separated by a colon and not a comma. If you enter two cell locations separated by a comma, the function will produce an output but it will be applied to only two cell locations instead of a range of cells. For example, the SUM function shown in Figure 2.13 will add only the values in cells \textsf{C3} and \textsf{C11}, not the range \textsf{C3:C11}.
+	\end{infobox}
+\end{center}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig13}
+	\caption{SUM Function Adding Two Cell Locations}
+	\label{02:fig13}
+\end{figure}
+
+\subsection{Absolute References (Calculating Percent of Totals)}
+
+\textit{Data file: Continue with CH2 Personal Budget.}
+
+Since totals were added to row 12 of the \textbf{Budget Detail} worksheet, a percent of total calculation can be added to Column B beginning in cell \textsf{B3}. The percent of total calculation shows the percentage for each value in the Annual Spend column with respect to the total in cell \textsf{D12}. However, after the formula is created, it will be necessary to turn off Excel's relative referencing feature before copying and pasting the formula to the rest of the cell locations in the column. Turning off Excel's relative referencing feature is accomplished through an absolute reference. The following steps explain how this is done:
+
+\begin{enumerate}
+	\item Click cell \textsf{B3} in the \textbf{Budget Detail} worksheet.
+	\item Type an equal sign $ = $.
+	\item Click cell \textsf{D3}.
+	\item Type a forward slash $ / $.
+	\item Click cell \textsf{D12}.
+	\item Press the ENTER key. You will see that Household Utilities represents $ 16.7\% $ of the Annual Spend budget (see Figure \ref{02:fig14}).
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig14}
+	\caption{Adding a Formula to Calculate the Percent of Total}
+	\label{02:fig14}
+\end{figure}
+
+Figure \ref{02:fig14} shows the completed formula that is calculating the percentage that Household Utilities Annual Spend represents to the total Annual Spend for the budget (see cell \textsf{B3}). Normally, we would copy this formula and paste it into the range \textsf{B4:B11}. However, because of relative referencing, both cell references will increase by one row as the formula is pasted into the cells below \textsf{B3}. This is fine for the first cell reference in the formula (\textsf{D3}) but not for the second cell reference (\textsf{D12}). Figure \ref{02:fig15} illustrates what happens if we paste the formula into the range \textsf{B4:B12} in its current state. Notice that Excel produces the $ \#DIV/0 $ error code. This means that Excel is trying to divide a number by zero, which is impossible. Looking at the formula in cell \textsf{B4}, you see that the first cell reference was changed from \textsf{D3} to \textsf{D4}. This is fine because we now want to divide the Annual Spend for Insurance by the total Annual Spend in cell \textsf{D12}. However, Excel has also changed the \textsf{D12} cell reference to \textsf{D13}. Because cell location \textsf{D13} is blank, the formula produces the $ \#DIV/0 $ error code.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig15}
+	\caption{$ \#DIV/0 $ Error from Relative Referencing}
+	\label{02:fig15}
+\end{figure}
+
+To eliminate the divide-by-zero error shown in Figure \ref{02:fig15} we must add an absolute reference to cell \textsf{D12} in the formula. An absolute reference prevents relative referencing from changing a cell reference in a formula. This is also referred to as locking a cell. The following explains how this is accomplished.
+
+\begin{enumerate}
+	\item Double click cell \textsf{B3}.
+	\item Place the mouse pointer in front of \textsf{D12} and click. The blinking cursor should be in front of the D in the cell reference \textsf{D12}.
+	\item Press the F4 key. You will see a dollar sign ($ \$ $) added in front of the column letter D and the row number 12. You can also type the dollar signs in front of the column letter and row number.
+	\item Press the ENTER key.
+	\item Click cell \textsf{B3}.
+	\item Click the Copy button in the Home tab of the Ribbon.
+	\item Highlight the range \textsf{B4:B11}.
+	\item Click the Paste button in the Home tab of the Ribbon.
+\end{enumerate}
+
+Figure \ref{02:fig16} shows the percent of total formula with an absolute reference added to \textsf{D12}. Notice that in cell \textsf{B4}, the cell reference remains \textsf{D12} instead of changing to \textsf{D13} as shown in Figure \ref{02:fig15}. Also, you will see that the percentages are being calculated in the rest of the cells in the column, and the divide-by-zero error is now eliminated.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig16}
+	\caption{Adding an Absolute Reference to a Cell Reference in a Formula}
+	\label{02:fig16}
+\end{figure}
+
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Absolute References}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Click in front of the column letter of a cell reference in a formula or function that you do not want altered when the formula or function is pasted into a new cell location.
+			\item Press the F4 key or type a dollar sign ($ \$ $) in front of the column letter and row number of the cell reference.
+
+		\end{itemize}
+	\end{sklbox}
+\end{center}
+
+\subsection{The Count Function}
+
+\textit{Data file: Continue with CH2 Personal Budget.}
+
+The next function that we will add to the \textbf{Budget Detail} worksheet is the COUNT function. The COUNT function is used to determine how many cells in a range contain a numeric entry. The COUNT function will not work for counting text or other non-numeric entries. For the \textbf{Budget Detail} worksheet, we will use the COUNT function to count the number of items that are planned in the Annual Spend column (Column D). The following explains how the COUNT function is added to the worksheet by using the function list.
+
+\begin{enumerate}
+	\item Click cell \textsf{D13} in the \textbf{Budget Detail} worksheet.
+	\item Type an equal sign $ = $.
+	\item Type the letter C.
+	\item Click the down arrow on the scroll bar of the function list (see Figure \ref{02:fig17}) and find the word COUNT.
+	\item Double click the word COUNT from the function list.
+	\item Highlight the range \textsf{D3:D11}.
+	\item You can type a closing parenthesis $ ) $ and then press the ENTER key, or simply press the ENTER key and Excel will close the function for you. The function produces an output of 9 since there are 9 items planned on the worksheet.
+\end{enumerate}
+
+Figure \ref{02:fig17} shows the function list box that appears after completing steps 2 and 3 for the COUNT function. The function list provides an alternative method for adding a function to a worksheet.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig17}
+	\caption{Using the Function List to Add the COUNT Function}
+	\label{02:fig17}
+\end{figure}
+
+Figure \ref{02:fig18} shows the output of the COUNT function after pressing the ENTER key. The function counts the number of cells in the range \textsf{D3:D11} that contain a numeric value. The result of 9 indicates that there are 9 categories planned for this budget.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig18}
+	\caption{Completed COUNT Function in the Budget Detail Worksheet}
+	\label{02:fig18}
+\end{figure}
+
+\subsection{The Average Function}
+
+The next function we will add to the \textbf{Budget Detail} worksheet is the AVERAGE function. This function is used to calculate the arithmetic mean for a group of numbers. For the \textbf{Budget Detail} worksheet, we will use the function to calculate the average of the values in the Annual Spend column. We will add this to the worksheet by using the Function Library. The following steps explain how this is accomplished.
+
+\begin{enumerate}
+	\item Click cell \textsf{D14} in the \textbf{Budget Detail} worksheet.
+	\item Click the Formulas tab on the Ribbon.
+	\item Click the More Functions button in the Function Library group of commands.
+	\item Place the mouse pointer over the Statistical option from the drop-down list of options.
+	\item Click the AVERAGE function name from the list of functions that appear in the menu (see Figure \ref{02:fig19}). This opens the Function Arguments dialog box.
+	\item Click the Collapse Dialog button in the Function Arguments dialog box (see Figure \ref{02:fig20}).
+	\item Highlight the range \textsf{D3:D11}.
+	\item Click the Expand Dialog button in the Function Arguments dialog box (see Figure \ref{02:fig21}). You can also press the ENTER key to get the same result.
+	\item Click the OK button on the Function Arguments dialog box. This adds the AVERAGE function to the worksheet.
+\end{enumerate}
+
+Figure \ref{02:fig19} illustrates how a function is selected from the Function Library in the Formulas tab of the Ribbon.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig19}
+	\caption{Selecting the AVERAGE Function from the Function Library}
+	\label{02:fig19}
+\end{figure}
+
+Figure \ref{02:fig20} shows the Function Arguments dialog box. This appears after a function is selected from the Function Library. The Collapse Dialog button is used to hide the dialog box so a range of cells can be highlighted on the worksheet and then added to the function.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig20}
+	\caption{Function Arguments Dialog Box}
+	\label{02:fig20}
+\end{figure}
+
+Figure \ref{02:fig21} shows how a range of cells can be selected from the Function Arguments dialog box once it has been collapsed.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig21}
+	\caption{Selecting a Range from the Function Arguments Dialog Box}
+	\label{02:fig21}
+\end{figure}
+
+Figure \ref{02:fig22} shows the Function Arguments dialog box after the cell range is defined for the AVERAGE function. The dialog box shows the result of the function before it is added to the cell location. This allows you to assess the function output to determine whether it makes sense before adding it to the worksheet.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig22}
+	\caption{Function Arguments Dialog Box after a Cell Range Is Defined for a Function}
+	\label{02:fig22}
+\end{figure}
+
+Figure \ref{02:fig23} shows the completed AVERAGE function in the Budget Detail worksheet. The output of the function shows that on average we expect to spend $ \$1,994 $ for each of the categories listed in Column A of the budget. This average spend calculation per category can be used as an indicator to determine which categories are costing more or less than the average budgeted spend dollars.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig23}
+	\caption{Completed AVERAGE Function}
+	\label{02:fig23}
+\end{figure}
+
+\subsection{The Max and Min Functions}
+
+\textit{Data file: Continue with CH2 Personal Budget.}
+
+The final two statistical functions that we will add to the Budget Detail worksheet are the MAX and MIN functions. These functions identify the highest and lowest values in a range of cells. The following steps explain how to add these functions to the Budget Detail worksheet.
+
+\begin{enumerate}
+	\item Click cell \textsf{D15} in the Budget Detail worksheet.
+	\item Type an equal sign $ = $.
+	\item Type the word MIN.
+	\item Type an open parenthesis $ ( $.
+	\item Highlight the range \textsf{D3:D11}.
+	\item Type a closing parenthesis $ ) $ and press the ENTER key, or simply press the ENTER key and Excel will close the function for you. The MIN function produces an output of $ \$1,200 $, which is the lowest value in the Annual Spend column (see Figure \ref{02:fig24}).
+	\item Click cell \textsf{D16}.
+	\item Type an equal sign $ = $.
+	\item Type the word MAX.
+	\item Type an open parenthesis $ ( $.
+	\item Highlight the range \textsf{D3:D11}.
+	\item Type a closing parenthesis $ ) $ and press the ENTER key, or simply press the ENTER key and Excel will close the function for you. The MAX function produces an output of $ \$3,500 $. This is the highest value in the Annual Spend column (see Figure \ref{02:fig25}).
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig24}
+	\caption{MIN Function Added to the Budget Detail Worksheet}
+	\label{02:fig24}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig25}
+	\caption{MAX Function Added to the Budget Detail Worksheet}
+	\label{02:fig25}
+\end{figure}
+
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Statistical Functions}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+
+			\item Type an equal sign $ = $.
+			\item Type the function name followed by an open parenthesis $ ( $ or double click the function name from the function list.
+			\item Highlight a range on a worksheet or click individual cell locations followed by commas.
+			\item Type a closing parenthesis $ ) $ and press the ENTER key or press the ENTER key to close the function.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
+
+\section{Copy and Paste Formulas (Pasting Without Formats)}
+
+\textit{Data file: Continue with CH2 Personal Budget.}
 
 As shown in Figure 2.25, the COUNT, AVERAGE, MIN, and MAX functions are summarizing the
 data in the Annual Spend column. You will also notice that there is space to copy and paste these
