@@ -77,7 +77,7 @@ The first formula that we will add to the \textbf{Budget Detail} worksheet will 
 	\item Type \textsf{D3}. This adds \textsf{D3} to the formula, which is now a cell reference. Excel will use whatever value is entered into cell \textsf{D3} to produce an output.
 	\item Type the slash symbol $ / $. This is the symbol for division in Excel. As shown in Table \ref{02:tab02} the mathematical operators in Excel are slightly different from those found on a typical calculator.
 	\item Type the number $ 12 $. This divides the value in cell \textsf{D3} by $ 12 $. In this formula, a number, or constant, is used instead of a cell reference because it will not change. In other words, there will always be $ 12 $ months in a year.
-	\item Press the ENTER key.
+	\item Press the \keystroke{Enter} key.
 \end{enumerate}
 
 \begin{longtable}{p{0.85in}p{2.8in}}
@@ -93,8 +93,7 @@ The first formula that we will add to the \textbf{Budget Detail} worksheet will 
 	\label{02:tab02}
 \end{longtable}
 
-
-Figure \ref{02:fig03} shows how the formula appears in cell \textsf{C3} before you press the ENTER key. Figure \ref{02:fig04} shows the output of the formula after you press the ENTER key. The Monthly Spend for Household Utilities is \$250 because the formula is taking the Annual Spend in cell \textsf{D3} and dividing it by 12. If the value in cell \textsf{D3} is changed, the formula automatically produces a new output. We are calculating the spend per month for each category because people often get paid and are billed for these items on a monthly basis. This formula allows you to compare your monthly income to your monthly bills to determine whether you have enough income to pay these expenses.
+Figure \ref{02:fig03} shows how the formula appears in cell \textsf{C3} before you press the \keystroke{Enter} key. Figure \ref{02:fig04} shows the output of the formula after you press the \keystroke{Enter} key. The Monthly Spend for Household Utilities is \$250 because the formula is taking the Annual Spend in cell \textsf{D3} and dividing it by 12. If the value in cell \textsf{D3} is changed, the formula automatically produces a new output. We are calculating the spend per month for each category because people often get paid and are billed for these items on a monthly basis. This formula allows you to compare your monthly income to your monthly bills to determine whether you have enough income to pay these expenses.
 
 \begin{figure}[H]
 	\centering
@@ -128,7 +127,7 @@ Once a formula is typed into a worksheet, it can be copied and pasted to other c
 	\item Place the mouse pointer over the Auto Fill Handle.
 	\item When the mouse pointer turns from a white block plus sign to a black plus sign, click and drag down to cell \textsf{C11}. This pastes the formula into the range \textsf{C4:C11}.
 	\item Double click cell \textsf{C6}. Notice that the cell reference in the formula is automatically changed to \textsf{D6}.
-	\item Press the ENTER key.
+	\item Press the \keystroke{Enter} key.
 \end{enumerate}
 
 Figure \ref{02:fig05} shows the outputs added to the rest of the cell locations in the Monthly Spend column. For each row, the formula takes the value in the Annual Spend column and divides it by 12. You will also see that cell \textsf{D6} has been double clicked to show the formula. Notice that Excel automatically changed the original cell reference of \textsf{D3} to \textsf{D6}. This is the result of relative referencing, which means Excel automatically adjusts a cell reference relative to its original location when it is pasted into new cell locations. In this example, the formula was pasted into eight cell locations below the original cell location. As a result, Excel increased the row number of the original cell reference by a value of one for each row it was pasted into.
@@ -163,7 +162,7 @@ The next formula to be added to the Personal Budget workbook is the percent chan
 	\item Type a closing parenthesis $ ) $.
 	\item Type the slash $ / $ symbol for division.
 	\item Click cell \textsf{E3}. This completes the formula that will calculate the percent change of last year's actual spent dollars vs. this year's budgeted spend dollars (see Figure \ref{02:fig06}).
-	\item Press the ENTER key.
+	\item Press the \keystroke{Enter} key.
 	\item Click cell \textsf{F3} to activate it.
 	\item Place the mouse pointer over the Auto Fill Handle.
 	\item When the mouse pointer turns from a white block plus sign to a black plus sign, click and drag down to cell \textsf{F11}. This pastes the formula into the range \textsf{F4:F11}.
@@ -222,7 +221,7 @@ Figure \ref{02:fig07} shows the result of the percent change formula if the pare
 			\item Type a mathematical operator.
 			\item Click or type a cell location. If using constants, type a number.
 			\item Use parentheses where necessary to control the order of operations.
-			\item Press the ENTER key.
+			\item Press the \keystroke{Enter} key.
 
 			\item one
 			\item two
@@ -286,7 +285,7 @@ Figure \ref{02:fig08} shows the Budget Detail worksheet after activating the Sho
 			\setlength{\parskip}{0pt}
 			\setlength{\parsep}{0pt}
 			
-			\item Hold down the CTRL key while pressing the accent symbol `.
+			\item Hold down the \keystroke{Ctrl} key while pressing the accent symbol `.
 			
 		\end{itemize}
 	\end{shtcutbox}
@@ -382,7 +381,7 @@ Figure \ref{02:fig10} shows the Trace Precedents arrow on the Budget Detail work
 	\end{tkwbox}
 \end{center}
 
-\section{Statistical Functions}
+\section{Statistical Functions}\label{ch02.2:statistical_functions}
 
 \begin{center}
 	\begin{objbox}{Learning Objectives}
@@ -440,10 +439,10 @@ The SUM function is used when you need to calculate totals for a range of cells 
 	\item Type an open parenthesis $ ( $.
 	\item Click cell \textsf{C3} and drag down to cell \textsf{C11}. This places the range \textsf{C3:C11} into the function.
 	\item Type a closing parenthesis $ ) $.
-	\item Press the ENTER key. The function calculates the total for the Monthly Spend column, which is \$1,496.
+	\item Press the \keystroke{Enter} key. The function calculates the total for the Monthly Spend column, which is \$1,496.
 \end{enumerate}
 
-Figure \ref{02:fig11} shows the appearance of the SUM function added to the Budget Detail worksheet before pressing the ENTER key.
+Figure \ref{02:fig11} shows the appearance of the SUM function added to the Budget Detail worksheet before pressing the \keystroke{Enter} key.
 
 \begin{figure}[H]
 	\centering
@@ -501,7 +500,7 @@ Since totals were added to row 12 of the \textbf{Budget Detail} worksheet, a per
 	\item Click cell \textsf{D3}.
 	\item Type a forward slash $ / $.
 	\item Click cell \textsf{D12}.
-	\item Press the ENTER key. You will see that Household Utilities represents $ 16.7\% $ of the Annual Spend budget (see Figure \ref{02:fig14}).
+	\item Press the \keystroke{Enter} key. You will see that Household Utilities represents $ 16.7\% $ of the Annual Spend budget (see Figure \ref{02:fig14}).
 \end{enumerate}
 
 \begin{figure}[H]
@@ -525,8 +524,8 @@ To eliminate the divide-by-zero error shown in Figure \ref{02:fig15} we must add
 \begin{enumerate}
 	\item Double click cell \textsf{B3}.
 	\item Place the mouse pointer in front of \textsf{D12} and click. The blinking cursor should be in front of the D in the cell reference \textsf{D12}.
-	\item Press the F4 key. You will see a dollar sign ($ \$ $) added in front of the column letter D and the row number 12. You can also type the dollar signs in front of the column letter and row number.
-	\item Press the ENTER key.
+	\item Press the \keystroke{F4} key. You will see a dollar sign ($ \$ $) added in front of the column letter D and the row number 12. You can also type the dollar signs in front of the column letter and row number.
+	\item Press the \keystroke{Enter} key.
 	\item Click cell \textsf{B3}.
 	\item Click the Copy button in the Home tab of the Ribbon.
 	\item Highlight the range \textsf{B4:B11}.
@@ -552,7 +551,7 @@ Figure \ref{02:fig16} shows the percent of total formula with an absolute refere
 			\setlength{\parsep}{0pt}
 			
 			\item Click in front of the column letter of a cell reference in a formula or function that you do not want altered when the formula or function is pasted into a new cell location.
-			\item Press the F4 key or type a dollar sign ($ \$ $) in front of the column letter and row number of the cell reference.
+			\item Press the \keystroke{F4} key or type a dollar sign ($ \$ $) in front of the column letter and row number of the cell reference.
 
 		\end{itemize}
 	\end{sklbox}
@@ -571,7 +570,7 @@ The next function that we will add to the \textbf{Budget Detail} worksheet is th
 	\item Click the down arrow on the scroll bar of the function list (see Figure \ref{02:fig17}) and find the word COUNT.
 	\item Double click the word COUNT from the function list.
 	\item Highlight the range \textsf{D3:D11}.
-	\item You can type a closing parenthesis $ ) $ and then press the ENTER key, or simply press the ENTER key and Excel will close the function for you. The function produces an output of 9 since there are 9 items planned on the worksheet.
+	\item You can type a closing parenthesis $ ) $ and then press the \keystroke{Enter} key, or simply press the \keystroke{Enter} key and Excel will close the function for you. The function produces an output of 9 since there are 9 items planned on the worksheet.
 \end{enumerate}
 
 Figure \ref{02:fig17} shows the function list box that appears after completing steps 2 and 3 for the COUNT function. The function list provides an alternative method for adding a function to a worksheet.
@@ -583,7 +582,7 @@ Figure \ref{02:fig17} shows the function list box that appears after completing 
 	\label{02:fig17}
 \end{figure}
 
-Figure \ref{02:fig18} shows the output of the COUNT function after pressing the ENTER key. The function counts the number of cells in the range \textsf{D3:D11} that contain a numeric value. The result of 9 indicates that there are 9 categories planned for this budget.
+Figure \ref{02:fig18} shows the output of the COUNT function after pressing the \keystroke{Enter} key. The function counts the number of cells in the range \textsf{D3:D11} that contain a numeric value. The result of 9 indicates that there are 9 categories planned for this budget.
 
 \begin{figure}[H]
 	\centering
@@ -604,7 +603,7 @@ The next function we will add to the \textbf{Budget Detail} worksheet is the AVE
 	\item Click the AVERAGE function name from the list of functions that appear in the menu (see Figure \ref{02:fig19}). This opens the Function Arguments dialog box.
 	\item Click the Collapse Dialog button in the Function Arguments dialog box (see Figure \ref{02:fig20}).
 	\item Highlight the range \textsf{D3:D11}.
-	\item Click the Expand Dialog button in the Function Arguments dialog box (see Figure \ref{02:fig21}). You can also press the ENTER key to get the same result.
+	\item Click the Expand Dialog button in the Function Arguments dialog box (see Figure \ref{02:fig21}). You can also press the \keystroke{Enter} key to get the same result.
 	\item Click the OK button on the Function Arguments dialog box. This adds the AVERAGE function to the worksheet.
 \end{enumerate}
 
@@ -665,13 +664,13 @@ The final two statistical functions that we will add to the Budget Detail worksh
 	\item Type the word MIN.
 	\item Type an open parenthesis $ ( $.
 	\item Highlight the range \textsf{D3:D11}.
-	\item Type a closing parenthesis $ ) $ and press the ENTER key, or simply press the ENTER key and Excel will close the function for you. The MIN function produces an output of $ \$1,200 $, which is the lowest value in the Annual Spend column (see Figure \ref{02:fig24}).
+	\item Type a closing parenthesis $ ) $ and press the \keystroke{Enter} key, or simply press the \keystroke{Enter} key and Excel will close the function for you. The MIN function produces an output of $ \$1,200 $, which is the lowest value in the Annual Spend column (see Figure \ref{02:fig24}).
 	\item Click cell \textsf{D16}.
 	\item Type an equal sign $ = $.
 	\item Type the word MAX.
 	\item Type an open parenthesis $ ( $.
 	\item Highlight the range \textsf{D3:D11}.
-	\item Type a closing parenthesis $ ) $ and press the ENTER key, or simply press the ENTER key and Excel will close the function for you. The MAX function produces an output of $ \$3,500 $. This is the highest value in the Annual Spend column (see Figure \ref{02:fig25}).
+	\item Type a closing parenthesis $ ) $ and press the \keystroke{Enter} key, or simply press the \keystroke{Enter} key and Excel will close the function for you. The MAX function produces an output of $ \$3,500 $. This is the highest value in the Annual Spend column (see Figure \ref{02:fig25}).
 \end{enumerate}
 
 \begin{figure}[H]
@@ -700,7 +699,7 @@ The final two statistical functions that we will add to the Budget Detail worksh
 			\item Type an equal sign $ = $.
 			\item Type the function name followed by an open parenthesis $ ( $ or double click the function name from the function list.
 			\item Highlight a range on a worksheet or click individual cell locations followed by commas.
-			\item Type a closing parenthesis $ ) $ and press the ENTER key or press the ENTER key to close the function.
+			\item Type a closing parenthesis $ ) $ and press the \keystroke{Enter} key or press the \keystroke{Enter} key to close the function.
 			
 		\end{itemize}
 	\end{sklbox}
@@ -710,568 +709,368 @@ The final two statistical functions that we will add to the Budget Detail worksh
 
 \textit{Data file: Continue with CH2 Personal Budget.}
 
-As shown in Figure 2.25, the COUNT, AVERAGE, MIN, and MAX functions are summarizing the
-data in the Annual Spend column. You will also notice that there is space to copy and paste these
-functions under the LY Spend column. This allows us to compare what we spent last year and what we
-are planning to spend this year. Normally, we would simply copy and paste these functions into the
-range E13:E16. However, you may have noticed the double-line style border that was used around the
-perimeter of the range B13:E16. If we used the regular Paste command, the double line on the right
-side of the range E13:E16 would be replaced with a single line. Therefore, we are going to use one
-
-BEGINNING EXCEL 109
-of the Paste Special commands to paste only the functions without any of the formatting treatments.
-This is accomplished through the following steps:
-
-1.    Highlight the range D13:D16 in the Budget Detail worksheet.
-2.    Click the Copy button in the Home tab of the Ribbon.
-3.    Click cell E13.
-4.    Click the down arrow below the Paste button in the Home tab of the Ribbon.
-5.    Click the Formulas option from the drop-down list of buttons (see Figure 2.26).
-
-Figure 2.26 shows the list of buttons that appear when you click the down arrow below the Paste
-button in the Home tab of the Ribbon. One thing to note about these options is that you can preview
-them before you make a selection by dragging the mouse pointer over the options. As shown in the
-figure, when the mouse pointer is placed over the Formulas button, you can see how the functions
-will appear before making a selection. Notice that the double-line border does not change when this
-option is previewed. That is why this selection is made instead of the regular Paste option.
-
-
-
-
-Figure 2.26 Paste Formulas Option
-
-
-
-
-Skill Refresher
-
-
-Paste Formulas
-
-
-
-110 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-1. Click a cell location containing a formula or function.
-2. Click the Copy button in the Home tab of the Ribbon.
-3. Click the cell location or cell range where the formula or function will be pasted.
-4. Click the down arrow below the Paste button in the Home tab of the Ribbon.
-5. Click the Formulas button under the Paste group of buttons.
-
-
-
-SORTING DATA (MULTIPLE LEVELS)
-
-Data file: Continue with CH2 Personal Budget.
-
-The Budget Detail worksheet shown in Figure 2.26 is now producing several mathematical outputs
-through formulas and functions. The outputs allow you to analyze the details and identify trends as
-to how money is being budgeted and spent. Before we draw some conclusions from this worksheet,
-we will sort the data based on the Percent of Total column. Sorting is a powerful tool that enables you
-to analyze key trends in any data set. Sorting will be covered thoroughly in a later chapter, but will
-be briefly introduced here. For the purposes of the Budget Detail worksheet, we want to set multiple
-levels for the sort order. This is accomplished through the following steps:
-
-1. Highlight the range A2:F11 in the Budget Detail worksheet.
-2. Click the Data tab in the Ribbon.
-3. Click the Sort button in the Sort \& Filter group of commands. This opens the Sort dialog box, as
-shown in Figure 2.27.
-4. Click the down arrow next to the “Sort by” box.
-5. Click the Percent of Total option from the drop-down list.
-6. Click the down arrow next to the sort Order box.
-7. Click the Largest to Smallest option.
-8. Click the Add Level button. This allows you to set a second level for any duplicate values in the
-Percent of Total column.
-9. Click the down arrow next to the “Then by” box.
-10. Select the LY Spend option. Leave the Sort Order as Smallest to Largest
-11. Click the OK button at the bottom of the Sort dialog box.
-12. Save the Ch2 Personal Budget file.
-
-
-
-
-BEGINNING EXCEL 111
-Figure 2.27 Sort Dialog Box
-
-
-Figure 2.28 shows the Budget Detail worksheet after it has been sorted. Notice that there are three
-identical values in the Percent of Total column. This is why a second sort level had to be created for
-this worksheet. The second sort level arranges the values of 8.4% based on the values in the LY Spend
-column in ascending order. Excel gives you the option to set as many sort levels as necessary for the
-data contained in a worksheet.
-
-
-
-
-112 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 2.28 Budget Detail Worksheet after Sorting
-
-
-
-
-Skill Refresher
-
-
-Sorting Data (Multiple Levels)
-
-1. Highlight a range of cells to be sorted.
-2. Click the Data tab of the Ribbon.
-3. Click the Sort button in the Sort \& Filter group.
-4. Select a column from the “Sort by” drop-down list in the Sort dialog box.
-5. Select a sort order from the Order drop-down list in the Sort dialog box.
-6. Click the Add Level button in the Sort dialog box.
-7. Repeat Steps 4 and 5.
-8. Click the OK button on the Sort dialog box.
-
-
-
-Now that the Budget Detail worksheet is sorted, a few key trends can be easily identified. The
-BEGINNING EXCEL 113
-worksheet clearly shows that the top three categories as a percentage of total budgeted spending for
-the year are Taxes, Household Utilities, and Food. All three categories are necessities (or realities) of
-life and typically require a significant amount of income for most households. Looking at the Percent
-Change column, we can see how our planned spending is expected to change from last year. This is
-perhaps the most important column on the worksheet because it allows you to assess whether your
-plan is realistic. You will see that there are no changes planned for Taxes and Household Utilities.
-While Taxes can change from year to year, it is not too difficult to predict what they will be. In this
-case, we are assuming that there are no changes to the tax costs for our budget. We are also planning
-no change in Household Utilities. These costs can fluctuate from year to year as well. However, you
-can take measures to reduce costs, such as using less electricity, turning off heat when no one is in the
-house, keeping track of your wireless minutes so you do not go over the maximum allowed in your
-plan, and so on. As a result, there is no change in planned spending for Household Utilities because
-we will assume that any rate increases will be offset with a decrease in usage. The third item that is
-planned not to change is Insurance. Insurance policies for cars and homes can change, but as is true
-for taxes, the changes are predictable. Therefore, we are assuming no changes in our insurance policy.
-
-The first big change that is noticeable in the worksheet is the Food and Entertainment categories in
-rows 5 and 6 (see definitions in Table 2.1). The Percent Change column indicates that there is an 11.1%
-decrease in Entertainment spending and an 11.1% increase in Food spending. This is logical because
-if you plan to eat in restaurants less frequently, you will be eating at home more frequently. Although
-this makes sense in theory, it may be hard to do in practice. Dinners and parties with friends may be
-tough to turn down. However, the entire process of maintaining a budget is based on discipline, and
-it certainly takes a significant amount of discipline to plan targets for yourself and stick to them.
-
-A few other points to note are the changes in the Gasoline and Vacation categories. If you commute
-to school or work, the price of gas can have a significant impact on your budget. It is important
-to be realistic if gas prices are increasing, and you should reflect these increases in your budget. To
-compensate for the increased spending for gas, the spending plan for vacations has been reduced by
-25%. Budgeting often requires a certain degree of creativity. Although the Vacation budget has been
-reduced, there is still money you can set aside to make plans for spring break or winter break.
-
-Finally, the budget shows a decrease in Miscellaneous spending of 19.8%. This was defined as a group
-containing several expenses, such as textbooks, school supplies, software updates, and so on (see
-Table 2.1). You may be able to reduce your spending in this category if you can use items such as
-online textbooks. This reduction in spending can free up funds for Clothes, a spend category that has
-increased by 20%. We will continue to develop the Personal Budget workbook further in Section 2.3
-“Functions for Personal Finance”.
-
-
-Key Takeaways
-
-
-• Statistical functions are used when a mathematical process is required for a range of cells, such as summing
-the values in several cell locations. For these computations, functions are preferable to formulas because
-adding many cell locations one at a time to a formula can be very time-consuming.
-
-
-
-114 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-• Statistical functions can be created using cell ranges or selected cell locations separated by commas. Make
-sure you use a cell range (two cell locations separated by a colon) when applying a statistical function to a
-contiguous range of cells.
-
-• To prevent Excel from changing the cell references in a formula or function when they are pasted to a new
-cell location, you must use an absolute reference. You can do this by placing a dollar sign (\$) in front of the
-column letter and row number of a cell reference.
-
-• The \#DIV/0 error appears if you create a formula that attempts to divide a constant or the value in a cell
-reference by zero.
-
-• The Paste Formulas option is used when you need to paste formulas without any formatting treatments into
-cell locations that have already been formatted.
-
-• You need to set multiple levels, or columns, in the Sort dialog box when sorting data that contains several
-duplicate values.
-
-
-
-ATTRIBUTION
-
-Adapted by Mary Schatz from How to Use Microsoft Excel: The Careers in Practice Series, adapted
-by The Saylor Foundation without attribution as requested by the work’s original creator or
-licensee, and licensed under CC BY-NC-SA 3.0.
-
-
-
-
-BEGINNING EXCEL 115
-2.3 FUNCTIONS FOR PERSONAL FINANCE
-
-
-
-
-Learning Objectives
-
-
-1. Understand the fundamentals of loans and leases.
-2. Use the PMT function to calculate monthly mortgage payments on a house.
-3. Use the PMT function to calculate monthly lease payments for an automobile.
-4. Learn how to summarize data in a workbook by using worksheet links to create a summary worksheet.
-
-
-
-In this section, we continue to develop the Personal Budget workbook. Notable items that are
-missing from the Budget Detail worksheet are the payments you might make for a car or a home.
-This section demonstrates Excel functions used to calculate lease payments for a car and to calculate
-mortgage payments for a house.
-
-THE FUNDAMENTALS OF LOANS AND LEASES
-
-One of the functions we will add to the Personal Budget workbook is the PMT function. This function
-calculates the payments required for a loan or a lease. However, before demonstrating this function,
-it is important to cover a few fundamental concepts on loans and leases.
-
-A loan is a contractual agreement in which money is borrowed from a lender and paid back over
-a specific period of time. The amount of money that is borrowed from the lender is called
-the principal of the loan. The borrower is usually required to pay the principal of the loan plus
-interest. When you borrow money to buy a house, the loan is referred to as a mortgage. This is because
-the house being purchased also serves as collateral to ensure payment. In other words, the bank can
-take possession of your house if you fail to make loan payments. As shown in Table 2.5, there are
-several key terms related to loans and leases.
-
-Table 2.5 Key Terms for Loans and Leases
-
-
-
-
-116 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Term        Definition
-Collateral Any item of value that is used to secure a loan to ensure payments to the lender
-Down        The amount of cash paid toward the purchase of a house. If you are paying 20% down, you are paying 20% of the cost
-Payment     of the house in cash and are borrowing the rest from a lender.
-Interest
-The interest that is charged to the borrower as a cost for borrowing money
-Rate
-Mortgage A loan where property is put up for collateral
-Principal   The amount of money that has been borrowed
-Residual
-The estimated selling price of a vehicle at a future point in time
-Value
-Terms       The amount of time you have to repay a loan
-
-
-Figure 2.29 shows an example of an amortization table for a loan. A lender is required by law to
-provide borrowers with an amortization table when a loan contract is offered. The table in the figure
-shows how the payments of a loan would work if you borrowed $100,000 from a lender and agreed to
-pay it back over 10 years at an interest rate of 5%. You will notice that each time you make a payment,
-you are paying the bank an interest fee plus some of the loan principal. Each year the amount of
-interest paid to the bank decreases and the amount of money used to pay off the principal increases.
-This is because the bank is charging you interest on the amount of principal that has not been paid. As
-you pay off the principal, the interest rate is applied to a lower number, which reduces your interest
-charges. Finally, the figure shows that the sum of the values in the Interest Payment column is $29,505.
-This is how much it costs you to borrow this money over 10 years. Indeed, borrowing money is not
-free. It is important to note that to simplify this example, the payments were calculated on an annual
-basis. However, most loan payments are made on a monthly basis.
-
-
-
-
-BEGINNING EXCEL 117
-Figure 2.29 Example of an Amortization Table
-
-
-A lease is a contract in which you, the lessee, use an asset such as a car or a piece of equipment and you
-agree to make regular payments to the owner or the lessor. When you lease a car, the manufacturer
-or a leasing company retains ownership of the vehicle and you agree to make regular payments for a
-specific period of time. The amount of money you pay depends on the price of the car, the terms of
-the lease contract, and the car’s expected residual value at the end of the lease. The calculation of lease
-payments is similar to the calculation of loan payments. However, when you lease a car, you pay only
-the value of the car that is used. For example, suppose you are leasing a car that is priced at $25,000.
-The lease contract is for 4 years at an interest rate of 5%. The residual value of the car is $10,000. This
-means the car will lose $15,000 of its value over 4 years. Another way to state this is that the car will
-depreciate $15,000. A lease will be structured so that you pay this $15,000 in depreciation. However,
-
-118 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-the interest charges will be based on the purchase price of \$25,000. We will look at a demonstration
-of leasing a car as well as buying a home in the next section.
-
-THE PMT (PAYMENT) FUNCTION FOR LOANS
-
-Data file: Continue with CH2 Personal Budget.
-
-If you own a home, your mortgage payments are a major component of your household budget. If you
-are planning to buy a home, having a clear understanding of your monthly payments is critical for
-maintaining strong financial health. In Excel, mortgage payments are conveniently calculated through
-the PMT (payment) function. This function is more complex than the statistical functions covered in
-Section 2.2 “Statistical Functions”. With statistical functions, you are required to add only a range of
-cells or selected cells within the parentheses of the function, also known as the argument. With the
-PMT function, you must accurately define a series of arguments in order for the function to produce
-a reliable output. Table 2.6 lists the arguments for the PMT function. It is helpful to review the key
-loan and lease terms in Table 2.5 before reviewing the PMT function arguments.
-
-Table 2.6 Arguments for the PMT Function
-
-Argument Definition
-This is the interest rate the lender is charging the borrower. The interest rate is usually quoted in annual terms, so
-Rate
-you have to divide this rate by 12 if you are calculating monthly payments.
-The argument letters stand for number of periods. This is the term of the loan, which is the amount of time you have
-Nper      to repay the bank. This is usually quoted in years, so you have to multiply the years by 12 if you are calculating
-monthly payments.
-The argument letters stand for present value. This is the principal of the loan or the amount of money that is
-Pv        borrowed. When defining this argument, a minus sign must precede the cell location or value. For leases, this
-argument is used for the price of the item being leased.
-The argument letters stand for future value. The brackets around the argument indicate that it is not always
-[Fv]      necessary to define it. It is used if there is a lump-sum payment that will be made at the end of the loan terms. This is
-also used for the residual value of a lease. If it is not defined, Excel will assume that it is zero.
-This argument can be defined with either a 1 or a 0. The number 1 is used if payments are made at the beginning of
-each period. A 0 is used if payments are made at the end of each period. The argument is in brackets because it does
-[Type]
-not have to be defined if payments are made at the end of each period. Excel assumes that this argument is 0 if it is
-not defined.
-
-
-By default, the result of the PMT function in Excel is shown as a negative number. This is because
-it represents an outgoing payment. When making a mortgage or car payment, you are paying money
-out of your pocket or bank account. Depending on the type of work that you do, your employer may
-want you to leave your payments negative or they may ask you to format them as positive numbers.
-In the following assignments, the payments calculated using the PMT function will be made positive
-to make them easier to work with. To do this, when defining the PV argument (amount of money
-borrowed) in the PMT dialog box, a minus sign must precede the cell location or value (see the PV
-argument in Figure 2.32).
-
-We will use the PMT function in the Personal Budget workbook to calculate the monthly mortgage
-payments for a house. These calculations will be made in the Mortgage Payments worksheet and
-then displayed in the Budget Summary worksheet through a cell reference link. So far we have
-demonstrated several methods for adding functions to a worksheet. The following steps explain a new
-method using the Insert Function command for adding the PMT function:
-BEGINNING EXCEL 119
-1.   Click the Mortgage Payments worksheet tab.
-2.   Click cell B5.
-3.   Click the Formulas tab on the Ribbon.
-4.   Click the Insert Function button (see Figure 2.30). This opens the Insert Function dialog box,
-which can be used for searching all functions in Excel.
-5.   In the “Search for a function:” input box at the top of the Insert Function dialog box,
-type mortgage payments (see Figure 2.31). Note that the current description in the “Search for
-a function:” input box will already be highlighted. You can begin typing and the description will
-be replaced with your entry.
-6.   Click the Go button in the upper right side of the Insert Function dialog box. This adds all the
-Excel functions that match your description in the “Select a function:” box in the lower half of
-the Insert Function dialog box (see Figure 2.31).
-7.   Click the PMT option in the “Select a function:” box in the lower half of the Insert Function
-dialog box.
-8.   Click the OK button at the lower right side of the Insert Function dialog box. This will open the
-Function Arguments dialog box.
-
-
-
-
-120 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 2.30 Mortgage Payments Worksheet
-
-
-
-
-BEGINNING EXCEL 121
-Figure 2.31 Insert Function Dialog Box
-
-
-
-
-9. Click the Collapse Dialog button next to the Rate argument in the Function Arguments dialog
-box. This will be the first argument defined for the function (see Figure 2.32)
-10. Click cell B3 on the worksheet. This is the rate being charged on the loan.
-11. Type a forward slash / for division.
-12. Type the number 12. Since our goal is to calculate the monthly payments for the loan, we need
-to divide the rate, which is stated in annual terms, by 12. This converts the annual rate to a
-monthly rate.
-13. Press the ENTER key on your keyboard. This returns the Function Arguments dialog box to its
-expanded form. You will also see that the Rate argument is now defined.
-14. Click the Collapse Dialog button next to the Nper argument in the Function Arguments dialog
-box. This is the second argument we define in the function.
-15. Click cell B4 on the worksheet. This is the term or the amount of time we have to repay the loan.
-16. Type an asterisk * for multiplication.
-17. Type the number 12. Since our goal is to calculate the monthly payments for the loan, we need
-to multiply the terms of the loan by 12. This converts the terms of the loan from years to
-months.
-18. Press the ENTER key on your keyboard. This returns the Function Arguments dialog box to its
-expanded form. You will also see that the Nper argument is now defined.
-19. Click the Collapse Dialog button next to the Pv argument in the Function Arguments dialog
-box. This is the third argument we will define in the function.
-20. Type a minus sign -. When defining the Pv argument of the PMT function, any cell location or
-value must be preceded with a minus sign.
-21. Click cell B2 on the worksheet. This is the principal of the loan.
-122 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-22. Press the ENTER key on your keyboard. You will now see the Rate, Nper, and Pv arguments
-defined for the function.
-23. Click the OK button at the bottom of the Function Arguments dialog box. The function will
-now be placed into the worksheet. Since we are not paying any lump sums of money at the end
-of the loan, there is no need to define the Fv argument. Also, we will assume that the monthly
-mortgage payments will be made at the end of each month. Therefore, there is no need to define
-the Type argument.
-
-
-Keyboard Shortcuts
-
-
-Insert Function
-
-• Hold the SHIFT key while pressing the F3 key.
-
-Function Arguments Dialog Box
-
-• After the equal sign = and function name are typed into cell a location, hold down the CTRL key and press
-the letter A on your keyboard.
-
-
-
-Figure 2.32 shows the completed Function Arguments dialog box for the PMT function. Notice that
-the dialog box shows the values for the Rate and Nper arguments. The Rate is divided by 12 to convert
-the annual interest rate to a monthly interest rate. The Nper argument is multiplied by 12 to convert
-the terms of the loan from years to months. Finally, the dialog box provides you with a definition for
-each argument. The definition appears when you click in the input box for the argument.
-
-
-
-
-Figure 2.32 Function Arguments Dialog Box for the PMT Function
-
-
-
-
-BEGINNING EXCEL 123
-Figure 2.33 shows the final appearance of the Mortgage Payments worksheet after the PMT function
-is added. The result of the function in cell B5 will be displayed in the Budget Summary worksheet.
-
-
-
-
-Figure 2.33 Mortgage Payments Worksheet with the PMT Function
-
-
-
-
-Integrity Check
-
-Comparable Arguments for PMT Function
-
-When using functions such as PMT, make sure the arguments are defined in comparable terms. For example, if you
-are calculating the monthly payments of a loan, make sure both the Rate and Nper argument are expressed in terms
-of months. The function will produce an erroneous result if one argument is expressed in years while the other is
-expressed in months.
-
-
-
-
-124 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-THE PMT (PAYMENT) FUNCTION FOR LEASES
-
-In addition to calculating the mortgage payments for a home, the PMT function will be used in the
-Personal Budget workbook to calculate the lease payments for a car. The details for the lease payments
-are found in the Car Lease Payments worksheet. Similar to the statistical functions, we can either
-type the PMT function directly into a cell or use the Insert Function button. However, you must know
-the definitions for each argument of the function and understand how these arguments need to be
-defined based on your objective. The terms for loans and leases are in Table 2.5, and the definitions
-for the arguments of the PMT function are in Table 2.6. The following steps explain how the PMT
-function is added to the Personal Budget workbook to calculate the lease payments for a car:
-
-1. Click cell B6 in the Car Lease Payments worksheet.
-2. Click the Formulas tab on the Ribbon.
-3. Click the Financial button in the Function Library group. This opens the Financial Function
-drop down list.
-4. Scroll down and click on the PMT Function in the drop down list. This will open the PMT
-Function Arguments dialog box. See Figure 2.34.
-5. Click the Collapse Dialog button next to the Rate argument in the PMT Function Arguments
-dialog box. This will be the first argument defined for the monthly car lease payment.
-6. Click cell B4. This is the interest rate being charged for the lease.
-7. Type the forward slash / for division.
-8. Type the number 12. Since our goal is to calculate the monthly lease payments, we divide the
-interest rate by 12 to convert the annual rate to a monthly rate.
-9. Press the ENTER key on your keyboard. This returns the Function Arguments dialog box to its
-expanded form. You will also see that the Rate argument is now defined.
-10. Click the Collapse Dialog button next to the Nper argument in the Function Arguments dialog
-box. This is the second argument we define in the function.
-11. Click cell B5. This is the term or the length of time for the lease contract. Since the term is
-already expressed in months, we can just reference cell B5 and move to the next argument. If the
-term was defined in years, instead of months, we would need to multiply the terms (years) of the
-loan by 12 to convert the years to months.
-12. Press the ENTER key on your keyboard. This returns the Function Arguments dialog box to its
-expanded form. You will also see that the Nper argument is now defined.
-13. Click the Collapse Dialog button next to the Pv argument in the Function Arguments dialog
-box. This is the third argument we will define in the function.
-14. Type a minus sign -. Remember that cell locations or values used to define the Pv argument
-must be preceded with a minus sign.
-15. Click cell B2 on the worksheet, which is the price of the car.
-16. Press the ENTER key on your keyboard. You will now see the Rate, Nper, and Pv arguments
-defined for the function.
-17. Click the Collapse Dialog button next to the Fv argument in the Function Arguments dialog
-box. This is the fourth argument we will define in the function.
-18. Click cell B3 on the worksheet. This is the residual value of the car. Note that cell location and
-values used to define the [Fv] argument are NOT preceded by a minus sign.
-
-
-BEGINNING EXCEL 125
-19. Press the ENTER key on your keyboard. You will now see the Rate, Nper, Pv and Fv arguments
-defined for the function.
-20. Click the Collapse Dialog button next to the Type argument in the Function Arguments dialog
-box. This is the fifth and last argument we will define in the function.
-21. Type the number 1. We will assume that the lease payments will be due at the beginning of each
-month. For payments made at the beginning of the period, a 1 will be entered in the Type
-argument box. For payments made at the end of the period, a 0 will be entered in the Type
-argument box.
-22. Press the ENTER key. You will now see the Rate, Nper, Pv, Fv and Type arguments defined for
-the function. See Figure 2.34.
-23. Click the OK button at the bottom of the Function Arguments dialog box. The function will
-now be placed into the worksheet.
-
-Figure 2.34 shows how the the completed Function Arguments dialog box for the PMT function car
-lease should appear before pressing the OK button.
-
-
-
-
-Figure 2-34 Function Arguments Dialog Box for the PMT Lease Function
-
-
-Figure 2.35 shows the result of the PMT function for the car lease. The monthly payments for this
-lease are \$206.56. This monthly payment will be displayed in the Budget Summary worksheet.
-
-
-
-
-126 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 2.35 Results of the PMT Function in the Car Lease Payments Worksheet
-
-
-
-
-Skill Refresher
-
-
-PMT Function
-
-1. Type an equal sign =.
-2. Type the letters PMT followed by an open parenthesis, or double click the function name from the
-function list.
-3. Define the Rate argument with a cell location that contains the rate being charged by the lender for the
-loan or lease. If the interest rate given is an annual rate, divide it by 12 to convert it to a monthly rate.
-4. Define the Nper argument with a cell location that contains the amount of time to repay the loan or lease.
-If the amount of time is in years, multiply it by 12 to convert it to number of months.
-5. Define the Pv argument with a cell location that contains the principal of the loan or the price of the item
-being leased. Cell locations or values used for this argument must be preceded by a minus sign.
-6. Define the [Fv] argument with a cell location that contains the residual value of the item being leased or
-the lump sum payment for a loan.
-7. Define the [Type] argument with a 1 if payments are made at the beginning of each period or 0 if payments
-are made at the end of each period.
-
-
-
-BEGINNING EXCEL 127
-8. Type a closing parenthesis ).
-9. Press the ENTER key.
-
-
-
-LINKING WORKSHEETS (CREATING A SUMMARY WORKSHEET)
+As shown in Figure \ref{02:fig25}, the COUNT, AVERAGE, MIN, and MAX functions are summarizing the data in the Annual Spend column. You will also notice that there is space to copy and paste these functions under the LY Spend column. This allows us to compare what we spent last year and what we are planning to spend this year. Normally, we would simply copy and paste these functions into the range \textsf{E13:E16}. However, you may have noticed the double-line style border that was used around the perimeter of the range \textsf{B13:E16}. If we used the regular Paste command, the double line on the right side of the range \textsf{E13:E16} would be replaced with a single line. Therefore, we are going to use one of the Paste Special commands to paste only the functions without any of the formatting treatments. This is accomplished through the following steps.
+
+\begin{enumerate}
+	\item Highlight the range D13:D16 in the Budget Detail worksheet.
+\item Click the Copy button in the Home tab of the Ribbon.
+\item Click cell E13.
+\item Click the down arrow below the Paste button in the Home tab of the Ribbon.
+\item Click the Formulas option from the drop-down list of buttons (see Figure \ref{02:fig26}).
+\end{enumerate}
+
+Figure \ref{02:fig26} shows the list of buttons that appear when you click the down arrow below the Paste button in the Home tab of the Ribbon. One thing to note about these options is that you can preview them before you make a selection by dragging the mouse pointer over the options. As shown in the figure, when the mouse pointer is placed over the Formulas button, you can see how the functions will appear before making a selection. Notice that the double-line border does not change when this option is previewed. That is why this selection is made instead of the regular Paste option.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig26}
+	\caption{Paste Formulas Option}
+	\label{02:fig26}
+\end{figure}
+
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Paste Formulas}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Click a cell location containing a formula or function.
+			\item Click the Copy button in the Home tab of the Ribbon.
+			\item Click the cell location or cell range where the formula or function will be pasted.
+			\item Click the down arrow below the Paste button in the Home tab of the Ribbon.
+			\item Click the Formulas button under the Paste group of buttons.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
+
+\section{Sorting Data (Multiple Levels)}
+
+\textit{Data file: Continue with CH2 Personal Budget.}
+
+The \textbf{Budget Detail} worksheet shown in Figure \ref{02:fig26} is now producing several mathematical outputs through formulas and functions. The outputs allow you to analyze the details and identify trends as to how money is being budgeted and spent. Before we draw some conclusions from this worksheet, we will sort the data based on the Percent of Total column. Sorting is a powerful tool that enables you to analyze key trends in any data set. Sorting will be covered thoroughly in a later chapter, but will be briefly introduced here. For the purposes of the \textbf{Budget Detail} worksheet, we want to set multiple levels for the sort order. This is accomplished through the following steps:
+
+\begin{enumerate}
+	\item Highlight the range \textsf{A2:F11} in the \textbf{Budget Detail} worksheet.
+	\item Click the Data tab in the Ribbon.
+	\item Click the Sort button in the Sort \& Filter group of commands. This opens the Sort dialog box, as shown in Figure \ref{02:fig27}.
+	\item Click the down arrow next to the ``Sort by'' box.
+	\item Click the Percent of Total option from the drop-down list.
+	\item Click the down arrow next to the sort Order box.
+	\item Click the Largest to Smallest option.
+	\item Click the Add Level button. This allows you to set a second level for any duplicate values in the Percent of Total column.
+	\item Click the down arrow next to the ``Then by'' box.
+	\item Select the LY Spend option. Leave the Sort Order as Smallest to Largest
+	\item Click the OK button at the bottom of the Sort dialog box.
+	\item Save the \textbf{Ch2 Personal Budget} file.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig27}
+	\caption{Sort Dialog Box}
+	\label{02:fig27}
+\end{figure}
+
+Figure \ref{02:fig28} shows the Budget Detail worksheet after it has been sorted. Notice that there are three identical values in the Percent of Total column. This is why a second sort level had to be created for this worksheet. The second sort level arranges the values of $ 8.4\% $ based on the values in the LY Spend column in ascending order. Excel gives you the option to set as many sort levels as necessary for the data contained in a worksheet.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig28}
+	\caption{Budget Detail Worksheet after Sorting}
+	\label{02:fig28}
+\end{figure}
+
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Sorting Data (Multiple Levels)}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Highlight a range of cells to be sorted.
+			\item Click the Data tab of the Ribbon.
+			\item Click the Sort button in the Sort \& Filter group.
+			\item Select a column from the ``Sort by'' drop-down list in the Sort dialog box.
+			\item Select a sort order from the Order drop-down list in the Sort dialog box.
+			\item Click the Add Level button in the Sort dialog box.
+			\item Repeat Steps 4 and 5.
+			\item Click the OK button on the Sort dialog box.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
+
+Now that the \textbf{Budget Detail} worksheet is sorted, a few key trends can be easily identified. The worksheet clearly shows that the top three categories as a percentage of total budgeted spending for the year are Taxes, Household Utilities, and Food. All three categories are necessities (or realities) of life and typically require a significant amount of income for most households. Looking at the Percent Change column, we can see how our planned spending is expected to change from last year. This is perhaps the most important column on the worksheet because it allows you to assess whether your plan is realistic. You will see that there are no changes planned for Taxes and Household Utilities. While Taxes can change from year to year, it is not too difficult to predict what they will be. In this case, we are assuming that there are no changes to the tax costs for our budget. We are also planning no change in Household Utilities. These costs can fluctuate from year to year as well. However, you can take measures to reduce costs, such as using less electricity, turning off heat when no one is in the house, keeping track of your wireless minutes so you do not go over the maximum allowed in your plan, and so on. As a result, there is no change in planned spending for Household Utilities because we will assume that any rate increases will be offset with a decrease in usage. The third item that is planned not to change is Insurance. Insurance policies for cars and homes can change, but as is true for taxes, the changes are predictable. Therefore, we are assuming no changes in our insurance policy.
+
+The first big change that is noticeable in the worksheet is the Food and Entertainment categories in rows 5 and 6 (see definitions in Table \ref{02:tab01}). The Percent Change column indicates that there is an $ 11.1\% $ decrease in Entertainment spending and an $ 11.1\% $ increase in Food spending. This is logical because if you plan to eat in restaurants less frequently, you will be eating at home more frequently. Although this makes sense in theory, it may be hard to do in practice. Dinners and parties with friends may be tough to turn down. However, the entire process of maintaining a budget is based on discipline, and it certainly takes a significant amount of discipline to plan targets for yourself and stick to them.
+
+A few other points to note are the changes in the Gasoline and Vacation categories. If you commute to school or work, the price of gas can have a significant impact on your budget. It is important to be realistic if gas prices are increasing, and you should reflect these increases in your budget. To compensate for the increased spending for gas, the spending plan for vacations has been reduced by $ 25\% $. Budgeting often requires a certain degree of creativity. Although the Vacation budget has been reduced, there is still money you can set aside to make plans for spring break or winter break.
+
+Finally, the budget shows a decrease in Miscellaneous spending of $ 19.8\% $. This was defined as a group containing several expenses, such as textbooks, school supplies, software updates, and so on (see Table \ref{02:tab01}). You may be able to reduce your spending in this category if you can use items such as online textbooks. This reduction in spending can free up funds for Clothes, a spend category that has increased by $ 20\% $. We will continue to develop the Personal Budget workbook further in Section \ref{ch02.3:functions_personal}: \nameref{ch02.3:functions_personal}.
+
+\begin{center}
+	\begin{tkwbox}{Key Take-Aways}
+		\textbf{Save}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Statistical functions are used when a mathematical process is required for a range of cells, such as summing the values in several cell locations. For these computations, functions are preferable to formulas because adding many cell locations one at a time to a formula can be very time-consuming.
+			\item Statistical functions can be created using cell ranges or selected cell locations separated by commas. Make sure you use a cell range (two cell locations separated by a colon) when applying a statistical function to a
+			contiguous range of cells.
+			\item To prevent Excel from changing the cell references in a formula or function when they are pasted to a new cell location, you must use an absolute reference. You can do this by placing a dollar sign (\$) in front of the column letter and row number of a cell reference.
+			\item The $ \#DIV/0 $ error appears if you create a formula that attempts to divide a constant or the value in a cell reference by zero.
+			\item The Paste Formulas option is used when you need to paste formulas without any formatting treatments into cell locations that have already been formatted.
+			\item You need to set multiple levels, or columns, in the Sort dialog box when sorting data that contains several duplicate values.
+			
+		\end{itemize}
+	\end{tkwbox}
+\end{center}
+
+\section{Functions for Personal Finance}\label{ch02.3:functions_personal}
+
+\begin{center}
+	\begin{objbox}{Learning Objectives}
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Understand the fundamentals of loans and leases.
+			\item Use the PMT function to calculate monthly mortgage payments on a house.
+			\item Use the PMT function to calculate monthly lease payments for an automobile.
+			\item Learn how to summarize data in a workbook by using worksheet links to create a summary worksheet.
+
+		\end{itemize}
+	\end{objbox}
+\end{center}
+
+In this section, we continue to develop the \textbf{Personal Budget} workbook. Notable items that are missing from the Budget Detail worksheet are the payments you might make for a car or a home. This section demonstrates Excel functions used to calculate lease payments for a car and to calculate mortgage payments for a house.
+
+\subsection{The Fundamentals of Loans and Leases}
+
+One of the functions we will add to the \textbf{Personal Budget} workbook is the PMT function. This function calculates the payments required for a loan or a lease. However, before demonstrating this function, it is important to cover a few fundamental concepts on loans and leases.
+
+A loan is a contractual agreement in which money is borrowed from a lender and paid back over a specific period of time. The amount of money that is borrowed from the lender is called the principal of the loan. The borrower is usually required to pay the principal of the loan plus interest. When you borrow money to buy a house, the loan is referred to as a mortgage. This is because the house being purchased also serves as collateral to ensure payment. In other words, the bank can take possession of your house if you fail to make loan payments. As shown in Table \ref{02:tab05}, there are several key terms related to loans and leases.
+
+{\small
+	\begin{longtable}{p{0.75in}p{3.5in}}
+		\textbf{Term} & \textbf{Definition}\endhead
+		\hline \\
+		Collateral & Any item of value that is used to secure a loan to ensure payments to the lender.\\
+		Down Payment & The amount of cash paid toward the purchase of a house. If you are paying $ 20\% $ down, you are paying $ 20\% $ of the cost of the house in cash and are borrowing the rest from a lender.\\
+		Interest Rate & The interest that is charged to the borrower as a cost for borrowing money.\\
+		Mortgage & A loan where property is put up for collateral.\\
+		Principle & The amount of money that has been borrowed.\\
+		Residual Value & The estimated selling price of a vehicle at a future point in time.\\
+		Terms & The amount of time you have to repay a loan.\\
+		\caption{Key Terms for Loans and Leases}
+		\label{02:tab05}
+	\end{longtable}
+}
+
+Figure \ref{02:fig29} shows an example of an amortization table for a loan. A lender is required by law to provide borrowers with an amortization table when a loan contract is offered. The table in the figure shows how the payments of a loan would work if you borrowed $ \$100,000 $ from a lender and agreed to pay it back over $ 10 $ years at an interest rate of $ 5\% $. You will notice that each time you make a payment, you are paying the bank an interest fee plus some of the loan principal. Each year the amount of interest paid to the bank decreases and the amount of money used to pay off the principal increases. This is because the bank is charging you interest on the amount of principal that has not been paid. As you pay off the principal, the interest rate is applied to a lower number, which reduces your interest charges. Finally, the figure shows that the sum of the values in the Interest Payment column is $ \$29,505 $. This is how much it costs you to borrow this money over $ 10 $ years. Indeed, borrowing money is not free. It is important to note that to simplify this example, the payments were calculated on an annual basis. However, most loan payments are made on a monthly basis.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig29}
+	\caption{Example of an Amortization Table}
+	\label{02:fig29}
+\end{figure}
+
+A lease is a contract in which you, the lessee, use an asset such as a car or a piece of equipment and you agree to make regular payments to the owner or the lessor. When you lease a car, the manufacturer or a leasing company retains ownership of the vehicle and you agree to make regular payments for a specific period of time. The amount of money you pay depends on the price of the car, the terms of the lease contract, and the car's expected residual value at the end of the lease. The calculation of lease payments is similar to the calculation of loan payments. However, when you lease a car, you pay only the value of the car that is used. For example, suppose you are leasing a car that is priced at $ \$25,000 $ for $ 4 $ years at an interest rate of $ 5\% $. The residual value of the car is $ \$10,000 $. This means the car will lose $ \$15,000 $ of its value over $ 4 $ years. Another way to state this is that the car will depreciate $ \$15,000 $. A lease will be structured so that you pay this $ \$15,000 $ in depreciation. However, the interest charges will be based on the purchase price of $ \$25,000 $. We will look at a demonstration of leasing a car as well as buying a home in the next section.
+
+\subsection{The Pmt (Payment) Function for Loans}
+
+\textit{Data file: Continue with CH2 Personal Budget.}
+
+If you own a home, your mortgage payments are a major component of your household budget. If you are planning to buy a home, having a clear understanding of your monthly payments is critical for maintaining strong financial health. In Excel, mortgage payments are conveniently calculated through the PMT (payment) function. This function is more complex than the statistical functions covered in Section \ref{ch02.2:statistical_functions}: \nameref{ch02.2:statistical_functions}. With statistical functions, you are required to add only a range of cells or selected cells within the parentheses of the function, also known as the argument. With the PMT function, you must accurately define a series of arguments in order for the function to produce a reliable output. Table 2.6 lists the arguments for the PMT function. It is helpful to review the key loan and lease terms in Table \ref{02:tab05} before reviewing the PMT function arguments.
+
+{\small
+	\begin{longtable}{p{0.75in}p{3.5in}}
+		\textbf{Argument} & \textbf{Definition}\endhead
+		\hline \\
+		Rate & This is the interest rate the lender is charging the borrower. The interest rate is usually quoted in annual terms, so you have to divide this rate by $ 12 $ if you are calculating monthly payments.\\
+		Nper & The argument letters stand for number of periods. This is the term of the loan, which is the amount of time you have to repay the bank. This is usually quoted in years, so you have to multiply the years by $ 12 $ if you are calculating monthly payments.\\
+		Pv & The argument letters stand for present value. This is the principal of the loan or the amount of money that is borrowed. When defining this argument, a minus sign must precede the cell location or value. For leases, this argument is used for the price of the item being leased.\\
+		{[Fv]} & The argument letters stand for future value. The brackets around the argument indicate that it is not always necessary to define it. It is used if there is a lump-sum payment that will be made at the end of the loan terms. This is also used for the residual value of a lease. If it is not defined, Excel will assume that it is zero.\\
+		{[Type]} & This argument can be defined with either a $ 1 $ or a $ 0 $. The number $ 1 $ is used if payments are made at the beginning of each period. A $ 0 $ is used if payments are made at the end of each period. The argument is in brackets because it does not have to be defined if payments are made at the end of each period. Excel assumes that this argument is $ 0 $ if it is not defined.\\
+		\caption{Arguments for the PMT Function}
+		\label{02:tab06}
+	\end{longtable}
+}
+
+By default, the result of the PMT function in Excel is shown as a negative number. This is because it represents an outgoing payment. When making a mortgage or car payment, you are paying money out of your pocket or bank account. Depending on the type of work that you do, your employer may want you to leave your payments negative or they may ask you to format them as positive numbers. In the following assignments, the payments calculated using the PMT function will be made positive to make them easier to work with. To do this, when defining the PV argument (amount of money borrowed) in the PMT dialog box, a minus sign must precede the cell location or value (see the PV argument in Figure \ref{02:fig32}).
+
+We will use the PMT function in the \textbf{Personal Budget} workbook to calculate the monthly mortgage payments for a house. These calculations will be made in the Mortgage Payments worksheet and then displayed in the Budget Summary worksheet through a cell reference link. So far we have demonstrated several methods for adding functions to a worksheet. The following steps explain a new method using the Insert Function command for adding the PMT function.
+
+\begin{enumerate}
+	\item Click the \textbf{Mortgage Payments} worksheet tab.
+	\item Click cell \textsf{B5}.
+	\item Click the Formulas tab on the Ribbon.
+	\item Click the Insert Function button (see Figure \ref{02:fig30}). This opens the Insert Function dialog box, which can be used for searching all functions in Excel.
+	\item In the ``Search for a function:'' input box at the top of the Insert Function dialog box, type mortgage payments (see Figure \ref{02:fig31}). Note that the current description in the ``Search for a function:'' input box will already be highlighted. You can begin typing and the description will be replaced with your entry.
+	\item Click the Go button in the upper right side of the Insert Function dialog box. This adds all the Excel functions that match your description in the ``Select a function:'' box in the lower half of the Insert Function dialog box (see Figure \ref{02:fig31}).
+	\item Click the PMT option in the ``Select a function:'' box in the lower half of the Insert Function dialog box.
+	\item Click the OK button at the lower right side of the Insert Function dialog box. This will open the Function Arguments dialog box.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig30}
+	\caption{Mortgage Payments Worksheet}
+	\label{02:fig30}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig31}
+	\caption{Insert Function Dialog Box}
+	\label{02:fig31}
+\end{figure}
+
+\begin{enumerate}[resume]
+	\item Click the Collapse Dialog button next to the Rate argument in the Function Arguments dialog box. This will be the first argument defined for the function (see Figure \ref{02:fig32})
+	\item Click cell \textsf{B3} on the worksheet. This is the rate being charged on the loan.
+	\item Type a forward slash $ / $ for division.
+	\item Type the number $ 12 $. Since our goal is to calculate the monthly payments for the loan, we need to divide the rate, which is stated in annual terms, by $ 12 $. This converts the annual rate to a monthly rate.
+	\item Press the \keystroke{Enter} key on your keyboard. This returns the Function Arguments dialog box to its expanded form. You will also see that the Rate argument is now defined.
+	\item Click the Collapse Dialog button next to the Nper argument in the Function Arguments dialog box. This is the second argument we define in the function.
+	\item Click cell \textsf{B4} on the worksheet. This is the term or the amount of time we have to repay the loan.
+	\item Type an asterisk $ * $ for multiplication.
+	\item Type the number $ 12 $. Since our goal is to calculate the monthly payments for the loan, we need to multiply the terms of the loan by $ 12 $. This converts the terms of the loan from years to months.
+	\item Press the \keystroke{Enter} key on your keyboard. This returns the Function Arguments dialog box to its expanded form. You will also see that the Nper argument is now defined.
+	\item Click the Collapse Dialog button next to the Pv argument in the Function Arguments dialog box. This is the third argument we will define in the function.
+	\item Type a minus sign $ - $. When defining the Pv argument of the PMT function, any cell location or value must be preceded with a minus sign.
+	\item Click cell \textsf{B2} on the worksheet. This is the principal of the loan.
+	\item Press the \keystroke{Enter} key on your keyboard. You will now see the Rate, Nper, and Pv arguments defined for the function.
+	\item Click the OK button at the bottom of the Function Arguments dialog box. The function will now be placed into the worksheet. Since we are not paying any lump sums of money at the end of the loan, there is no need to define the Fv argument. Also, we will assume that the monthly mortgage payments will be made at the end of each month. Therefore, there is no need to define the Type argument.
+\end{enumerate}
+
+\begin{center}
+	\begin{shtcutbox}{Keyboard Shortcuts}
+		\textbf{Functions}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item \textbf{Insert Function}: Hold the \keystroke{Shift} key while pressing the \keystroke{F3} key.
+			\item \textbf{Function Arguments}: After the equal sign $ = $ and function name are typed into cell a location, hold down the \keystroke{Ctrl} key and press the letter A on your keyboard.		
+		\end{itemize}
+	
+	\end{shtcutbox}
+\end{center}
+
+Figure \ref{02:fig32} shows the completed Function Arguments dialog box for the PMT function. Notice that the dialog box shows the values for the Rate and Nper arguments. The Rate is divided by $ 12 $ to convert the annual interest rate to a monthly interest rate. The Nper argument is multiplied by $ 12 $ to convert the terms of the loan from years to months. Finally, the dialog box provides you with a definition for each argument. The definition appears when you click in the input box for the argument.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig32}
+	\caption{Function Arguments Dialog Box for the PMT Function}
+	\label{02:fig32}
+\end{figure}
+
+Figure \ref{02:fig33} shows the final appearance of the \textbf{Mortgage Payments} worksheet after the PMT function is added. The result of the function in cell \textsf{B5} will be displayed in the Budget Summary worksheet.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig33}
+	\caption{Mortgage Payments Worksheet with the PMT Function}
+	\label{02:fig33}
+\end{figure}
+
+\begin{center}
+	\begin{infobox}{Integrity Check}
+		\textbf{Comparable Arguments for PMT Function}
+		\\
+		\\
+		When using functions such as PMT, make sure the arguments are defined in comparable terms. For example, if you are calculating the monthly payments of a loan, make sure both the Rate and Nper argument are expressed in terms of months. The function will produce an erroneous result if one argument is expressed in years while the other is expressed in months.		
+	\end{infobox}
+\end{center}
+
+\subsection{The Pmt (Payment) Function for Leases}
+
+In addition to calculating the mortgage payments for a home, the PMT function will be used in the Personal Budget workbook to calculate the lease payments for a car. The details for the lease payments are found in the Car Lease Payments worksheet. Similar to the statistical functions, we can either type the PMT function directly into a cell or use the Insert Function button. However, you must know the definitions for each argument of the function and understand how these arguments need to be defined based on your objective. The terms for loans and leases are in Table \ref{02:tab05} and the definitions for the arguments of the PMT function are in Table \ref{02:tab06}. The following steps explain how the PMT function is added to the \textbf{Personal Budget} workbook to calculate the lease payments for a car.
+
+\begin{enumerate}
+	\item Click cell \textsf{B6} in the \textbf{Car Lease Payments} worksheet.
+	\item Click the Formulas tab on the Ribbon.
+	\item Click the Financial button in the Function Library group. This opens the Financial Function drop down list.
+	\item Scroll down and click on the PMT Function in the drop down list. This will open the PMT Function Arguments dialog box. See Figure \ref{02:fig34}.
+	\item Click the Collapse Dialog button next to the Rate argument in the PMT Function Arguments dialog box. This will be the first argument defined for the monthly car lease payment.
+	\item Click cell \textsf{B4}. This is the interest rate being charged for the lease.
+	\item Type the forward slash $ / $ for division.
+	\item Type the number $ 12 $. Since our goal is to calculate the monthly lease payments, we divide the interest rate by $ 12 $ to convert the annual rate to a monthly rate.
+	\item Press the \keystroke{Enter} key on your keyboard. This returns the Function Arguments dialog box to its expanded form. You will also see that the Rate argument is now defined.
+	\item Click the Collapse Dialog button next to the Nper argument in the Function Arguments dialog box. This is the second argument we define in the function.
+	\item Click cell \textsf{B5}. This is the term or the length of time for the lease contract. Since the term is already expressed in months, we can just reference cell \textsf{B5} and move to the next argument. If the term was defined in years, instead of months, we would need to multiply the terms (years) of the loan by $ 12 $ to convert the years to months.
+	\item Press the \keystroke{Enter} key on your keyboard. This returns the Function Arguments dialog box to its expanded form. You will also see that the Nper argument is now defined.
+	\item Click the Collapse Dialog button next to the Pv argument in the Function Arguments dialog box. This is the third argument we will define in the function.
+	\item Type a minus sign $ - $. Remember that cell locations or values used to define the Pv argument must be preceded with a minus sign.
+	\item Click cell \textsf{B2} on the worksheet, which is the price of the car.
+	\item Press the \keystroke{Enter} key on your keyboard. You will now see the Rate, Nper, and Pv arguments defined for the function.
+	\item Click the Collapse Dialog button next to the Fv argument in the Function Arguments dialog box. This is the fourth argument we will define in the function.
+	\item Click cell \textsf{B3} on the worksheet. This is the residual value of the car. Note that cell location and values used to define the [Fv] argument are NOT preceded by a minus sign.
+	\item Press the \keystroke{Enter} key on your keyboard. You will now see the Rate, Nper, Pv and Fv arguments defined for the function.
+	\item Click the Collapse Dialog button next to the Type argument in the Function Arguments dialog box. This is the fifth and last argument we will define in the function.
+	\item Type the number $ 1 $. We will assume that the lease payments will be due at the beginning of each month. For payments made at the beginning of the period, a $ 1 $ will be entered in the Type argument box. For payments made at the end of the period, a $ 0 $ will be entered in the Type argument box.
+	\item Press the \keystroke{Enter} key. You will now see the Rate, Nper, Pv, Fv and Type arguments defined for the function. See Figure \ref{02:fig34}.
+	\item Click the OK button at the bottom of the Function Arguments dialog box. The function will now be placed into the worksheet.
+\end{enumerate}
+
+Figure \ref{02:fig34} shows how the the completed Function Arguments dialog box for the PMT function car lease should appear before pressing the OK button.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig34}
+	\caption{Function Arguments Dialog Box for the PMT Lease Function}
+	\label{02:fig34}
+\end{figure}
+
+Figure \ref{02:fig35} shows the result of the PMT function for the car lease. The monthly payments for this lease are $ \$206.56 $. This monthly payment will be displayed in the \textbf{Budget Summary} worksheet.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig35}
+	\caption{Results of the PMT Function in the Car Lease Payments Worksheet}
+	\label{02:fig35}
+\end{figure}
+
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{PMT Function}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Type an equal sign $ = $.
+			\item Type the letters PMT followed by an open parenthesis, or double click the function name from the function list.
+			\item Define the Rate argument with a cell location that contains the rate being charged by the lender for the loan or lease. If the interest rate given is an annual rate, divide it by $ 12 $ to convert it to a monthly rate.
+			\item Define the Nper argument with a cell location that contains the amount of time to repay the loan or lease. If the amount of time is in years, multiply it by $ 12 $ to convert it to number of months.
+			\item Define the Pv argument with a cell location that contains the principal of the loan or the price of the item being leased. Cell locations or values used for this argument must be preceded by a minus sign.
+			\item Define the [Fv] argument with a cell location that contains the residual value of the item being leased or the lump sum payment for a loan.
+			\item Define the [Type] argument with a $ 1 $ if payments are made at the beginning of each period or $ 0 $ if payments are made at the end of each period.
+			\item Type a closing parenthesis $ ) $.
+			\item Press the \keystroke{Enter} key.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
+
+%TODO Start Here
+\section{Linking Worksheets (Creating a Summary Worksheet)}
 
 So far we have used cell references in formulas and functions, which allow Excel to produce new
 outputs when the values in the cell references are changed. Cell references can also be used to display
@@ -1285,7 +1084,7 @@ the use of cell references. The following steps explain how this is accomplished
 2.   Type an equal sign =.
 3.   Click the Budget Detail worksheet tab.
 4.   Click cell D12 on the Budget Detail worksheet.
-5.   Press the ENTER key on your keyboard. The output of the SUM function in cell D12 on
+5.   Press the \keystroke{Enter} key on your keyboard. The output of the SUM function in cell D12 on
 the Budget Detail worksheet will be displayed in cell C3 on the Budget Summary worksheet.
 
 Figure 2.36 shows how the cell reference appears in the Budget Summary worksheet. Notice that
@@ -1314,7 +1113,7 @@ is accomplished:
 5.   Type an asterisk * for multiplication.
 6.   Type the number 12. This multiplies the monthly payments by 12 to calculate the total payments
 required for the year. The formula in the formula bar should read: =’Mortgage Payments’!B5*12
-7.   Press the ENTER key on your keyboard. The value of multiplying the monthly mortgage
+7.   Press the \keystroke{Enter} key on your keyboard. The value of multiplying the monthly mortgage
 payments by 12 is now displayed on the Budget Summary worksheet.
 8.   Click cell C5 on the Budget Summary worksheet.
 9.   Type an equal sign =.
@@ -1323,7 +1122,7 @@ payments by 12 is now displayed on the Budget Summary worksheet.
 12.   Type an asterisk * for multiplication.
 13.   Type the number 12. This multiplies the monthly lease payments by 12 to calculate the total
 payments required for the year.
-14.   Press the ENTER key on your keyboard. The value of multiplying the monthly lease payments
+14.   Press the \keystroke{Enter} key on your keyboard. The value of multiplying the monthly lease payments
 by 12 is now displayed on the Budget Summary worksheet.
 BEGINNING EXCEL 129
 Figure 2.37 shows the results of creating formulas that reference cell locations in the Mortgage
@@ -1343,15 +1142,13 @@ explain how this is accomplished:
 2.   Type an equal sign =.
 3.   Type the function name SUM followed by an open parenthesis (.
 4.   Highlight the range C3:C5.
-5.   Type a closing parenthesis ) and press the ENTER key on your keyboard or simply press the
-ENTER key to close the function. The total for all annual expenses now appears on the
-worksheet.
+5.   Type a closing parenthesis ) and press the \keystroke{Enter} key on your keyboard or simply press the \keystroke{Enter} key to close the function. The total for all annual expenses now appears on the worksheet.
 6.   Click cell D7 on the Budget Summary worksheet. You will enter a formula to calculate Net
 Change in Cash in this cell.
 7.   Type an equal sign =.
 8.   Click cell D2.
 9.   Type a minus sign - and then click cell D6.
-10.   Press the ENTER key on your keyboard. This formula produces an output of \$1,942, indicating
+10.   Press the \keystroke{Enter} key on your keyboard. This formula produces an output of \$1,942, indicating
 our income is greater than our total expenses.
 
 Figure 2.38 shows the results of the formulas that were added to the Budget Summary worksheet.
@@ -1374,8 +1171,8 @@ earlier in this chapter. The following steps explain how to add these formulas:
 2.   Type an equal sign =.
 3.   Click cell D6.
 4.   Type a forward slash / for division and then click D2.
-5.   Press the F4 key on your keyboard. This adds an absolute reference to cell D2.
-6.   Press the ENTER key. The result of the formula shows that total expenses consume 94.1% of our
+5.   Press the \keystroke{F4} key on your keyboard. This adds an absolute reference to cell D2.
+6.   Press the \keystroke{Enter} key. The result of the formula shows that total expenses consume 94.1% of our
 net income.
 7.   Click cell E6.
 8.   Place the mouse pointer over the Auto Fill Handle.
@@ -1636,7 +1433,7 @@ payments.
 12. Pv: Type a minus sign -, click cell D3, and type a comma ,. Remember that this argument must
 always be preceded by a minus sign.
 13. Fv: Click cell E3 (Residual Value) and type a comma ,.
-14. Type: Type the number 1, type a closing parenthesis ), and press the ENTER key. We will assume
+14. Type: Type the number 1, type a closing parenthesis ), and press the \keystroke{Enter} key. We will assume
 the lease payments will be made at the beginning of each month, which requires that this
 argument be defined with a value of 1.
 15. Copy the PMT function in cell F3 and paste it into the range F4:F6, or use the Autofill handle.
@@ -1652,7 +1449,7 @@ Price option in the “Then by” drop-down box. Select Largest to Smallest for 
 the OK button in the Sort dialog box.
 18. Click cell B11 on the Annual Plan worksheet. The monthly lease payments that are calculated
 in the Lease worksheet will be displayed in this cell.
-19. Type an equal sign =. Click the Leases worksheet, click cell F10, and press the ENTER key.
+19. Type an equal sign =. Click the Leases worksheet, click cell F10, and press the \keystroke{Enter} key.
 20. Click cell C12 on the Annual Plan worksheet. Create a formula that calculates the annual lease
 payments. This should be the Monthly Lease Payments * 12.
 21. Click cell C14 on the Annual Plan worksheet. Create a formula that calculates the Total Lawn \&
@@ -1670,7 +1467,7 @@ automatically change if any new investments are added to the worksheet. It is im
 however, that the Total in cell B9 should not be included in the Count range.
 26. Click cell D3 on the Investments worksheet.
 27. Type an equal sign =. Click the Annual Plan worksheet. Click cell D17 and type a forward slash
-/ for division. Click the Investments worksheet. Click cell B10 and press the ENTER key. This
+/ for division. Click the Investments worksheet. Click cell B10 and press the \keystroke{Enter} key. This
 formula divides the profit calculated on the Annual Plan worksheet by the number of
 investments in the Investments worksheet. We will assume that the profits from this business
 will be invested evenly among the funds listed in Column A of the Investments worksheet.
