@@ -381,7 +381,7 @@ Figure \ref{02:fig10} shows the Trace Precedents arrow on the Budget Detail work
 	\end{tkwbox}
 \end{center}
 
-\section{Statistical Functions}\label{ch02.2:statistical_functions}
+\section{Statistical Functions}\label{ch02:statistical_functions}
 
 \begin{center}
 	\begin{objbox}{Learning Objectives}
@@ -763,7 +763,7 @@ The \textbf{Budget Detail} worksheet shown in Figure \ref{02:fig26} is now produ
 	\item Click the Largest to Smallest option.
 	\item Click the Add Level button. This allows you to set a second level for any duplicate values in the Percent of Total column.
 	\item Click the down arrow next to the ``Then by'' box.
-	\item Select the LY Spend option. Leave the Sort Order as Smallest to Largest
+	\item Select the \textit{LY Spend} option. Leave the Sort Order as Smallest to Largest
 	\item Click the OK button at the bottom of the Sort dialog box.
 	\item Save the \textbf{Ch2 Personal Budget} file.
 \end{enumerate}
@@ -812,7 +812,7 @@ The first big change that is noticeable in the worksheet is the Food and Enterta
 
 A few other points to note are the changes in the Gasoline and Vacation categories. If you commute to school or work, the price of gas can have a significant impact on your budget. It is important to be realistic if gas prices are increasing, and you should reflect these increases in your budget. To compensate for the increased spending for gas, the spending plan for vacations has been reduced by $ 25\% $. Budgeting often requires a certain degree of creativity. Although the Vacation budget has been reduced, there is still money you can set aside to make plans for spring break or winter break.
 
-Finally, the budget shows a decrease in Miscellaneous spending of $ 19.8\% $. This was defined as a group containing several expenses, such as textbooks, school supplies, software updates, and so on (see Table \ref{02:tab01}). You may be able to reduce your spending in this category if you can use items such as online textbooks. This reduction in spending can free up funds for Clothes, a spend category that has increased by $ 20\% $. We will continue to develop the Personal Budget workbook further in Section \ref{ch02.3:functions_personal}: \nameref{ch02.3:functions_personal}.
+Finally, the budget shows a decrease in Miscellaneous spending of $ 19.8\% $. This was defined as a group containing several expenses, such as textbooks, school supplies, software updates, and so on (see Table \ref{02:tab01}). You may be able to reduce your spending in this category if you can use items such as online textbooks. This reduction in spending can free up funds for Clothes, a spend category that has increased by $ 20\% $. We will continue to develop the Personal Budget workbook further in Section \ref{ch02:functions_personal}: \nameref{ch02:functions_personal}.
 
 \begin{center}
 	\begin{tkwbox}{Key Take-Aways}
@@ -835,7 +835,7 @@ Finally, the budget shows a decrease in Miscellaneous spending of $ 19.8\% $. Th
 	\end{tkwbox}
 \end{center}
 
-\section{Functions for Personal Finance}\label{ch02.3:functions_personal}
+\section{Functions for Personal Finance}\label{ch02:functions_personal}
 
 \begin{center}
 	\begin{objbox}{Learning Objectives}
@@ -892,7 +892,7 @@ A lease is a contract in which you, the lessee, use an asset such as a car or a 
 
 \textit{Data file: Continue with CH2 Personal Budget.}
 
-If you own a home, your mortgage payments are a major component of your household budget. If you are planning to buy a home, having a clear understanding of your monthly payments is critical for maintaining strong financial health. In Excel, mortgage payments are conveniently calculated through the PMT (payment) function. This function is more complex than the statistical functions covered in Section \ref{ch02.2:statistical_functions}: \nameref{ch02.2:statistical_functions}. With statistical functions, you are required to add only a range of cells or selected cells within the parentheses of the function, also known as the argument. With the PMT function, you must accurately define a series of arguments in order for the function to produce a reliable output. Table 2.6 lists the arguments for the PMT function. It is helpful to review the key loan and lease terms in Table \ref{02:tab05} before reviewing the PMT function arguments.
+If you own a home, your mortgage payments are a major component of your household budget. If you are planning to buy a home, having a clear understanding of your monthly payments is critical for maintaining strong financial health. In Excel, mortgage payments are conveniently calculated through the PMT (payment) function. This function is more complex than the statistical functions covered in Section \ref{ch02:statistical_functions}: \nameref{ch02:statistical_functions}. With statistical functions, you are required to add only a range of cells or selected cells within the parentheses of the function, also known as the argument. With the PMT function, you must accurately define a series of arguments in order for the function to produce a reliable output. Table 2.6 lists the arguments for the PMT function. It is helpful to review the key loan and lease terms in Table \ref{02:tab05} before reviewing the PMT function arguments.
 
 {\small
 	\begin{longtable}{p{0.75in}p{3.5in}}
@@ -1069,534 +1069,430 @@ Figure \ref{02:fig35} shows the result of the PMT function for the car lease. Th
 	\end{sklbox}
 \end{center}
 
-%TODO Start Here
 \section{Linking Worksheets (Creating a Summary Worksheet)}
 
-So far we have used cell references in formulas and functions, which allow Excel to produce new
-outputs when the values in the cell references are changed. Cell references can also be used to display
-values or the outputs of formulas and functions in cell locations on other worksheets. This is how data
-will be displayed on the Budget Summary worksheet in the Personal Budget workbook. Outputs
-from the formulas and functions that were entered into the Budget Detail, Mortgage Payments,
-and Car Lease Payments worksheets will be displayed on the Budget Summary worksheet through
-the use of cell references. The following steps explain how this is accomplished:
-
-1.   Click cell C3 in the Budget Summary worksheet.
-2.   Type an equal sign =.
-3.   Click the Budget Detail worksheet tab.
-4.   Click cell D12 on the Budget Detail worksheet.
-5.   Press the \keystroke{Enter} key on your keyboard. The output of the SUM function in cell D12 on
-the Budget Detail worksheet will be displayed in cell C3 on the Budget Summary worksheet.
-
-Figure 2.36 shows how the cell reference appears in the Budget Summary worksheet. Notice that
-the cell reference D12 is preceded by the Budget Detail worksheet name enclosed in apostrophes
-followed by an exclamation point (‘Budget Detail’!) This indicates that the value displayed in the cell
-is referencing a cell location in the Budget Detail worksheet.
-
-
-
-
-128 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 2.36 Cell Reference Showing the Total Expenses in the Budget Summary Worksheet
-
-
-As shown in Figure 2.36, the Budget Summary worksheet is designed to show the expense budget
-for the mortgage payments and the auto lease payments. However, you will recall that we used the
-PMT function to calculate the monthly payments. In the Budget Summary worksheet, we need to
-show the total annual payments. As a result, we will create a formula that references cell locations in
-the Mortgage Payments and Car Lease Payments worksheets. The following steps explain how this
-is accomplished:
-
-1.   Click cell C4 in the Budget Summary worksheet.
-2.   Type an equal sign =.
-3.   Click the Mortgage Payments worksheet tab.
-4.   Click cell B5 in the Mortgage Payments worksheet.
-5.   Type an asterisk * for multiplication.
-6.   Type the number 12. This multiplies the monthly payments by 12 to calculate the total payments
-required for the year. The formula in the formula bar should read: =’Mortgage Payments’!B5*12
-7.   Press the \keystroke{Enter} key on your keyboard. The value of multiplying the monthly mortgage
-payments by 12 is now displayed on the Budget Summary worksheet.
-8.   Click cell C5 on the Budget Summary worksheet.
-9.   Type an equal sign =.
-10.   Click the Car Lease Payments worksheet tab.
-11.   Click cell B6 in the Car Lease Payments worksheet.
-12.   Type an asterisk * for multiplication.
-13.   Type the number 12. This multiplies the monthly lease payments by 12 to calculate the total
-payments required for the year.
-14.   Press the \keystroke{Enter} key on your keyboard. The value of multiplying the monthly lease payments
-by 12 is now displayed on the Budget Summary worksheet.
-BEGINNING EXCEL 129
-Figure 2.37 shows the results of creating formulas that reference cell locations in the Mortgage
-Payments and Car Lease Payments worksheets.
-
-
-
-
-Figure 2.37 Formulas Referencing Cells in Mortgage Payments and Car Lease Payments Worksheets
-
-
-We can now add other formulas and functions to the Budget Summary worksheet that can calculate
-the difference between the total spend dollars vs. the total net income in cell D2. The following steps
-explain how this is accomplished:
-
-1.   Click cell D6 in the Budget Summary worksheet.
-2.   Type an equal sign =.
-3.   Type the function name SUM followed by an open parenthesis (.
-4.   Highlight the range C3:C5.
-5.   Type a closing parenthesis ) and press the \keystroke{Enter} key on your keyboard or simply press the \keystroke{Enter} key to close the function. The total for all annual expenses now appears on the worksheet.
-6.   Click cell D7 on the Budget Summary worksheet. You will enter a formula to calculate Net
-Change in Cash in this cell.
-7.   Type an equal sign =.
-8.   Click cell D2.
-9.   Type a minus sign - and then click cell D6.
-10.   Press the \keystroke{Enter} key on your keyboard. This formula produces an output of \$1,942, indicating
-our income is greater than our total expenses.
-
-Figure 2.38 shows the results of the formulas that were added to the Budget Summary worksheet.
-The output for the formula in cell D7 shows that the net income exceeds total planned expenses by
-130 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-\$1,942. Overall, having your income exceed your total expenses is a good thing because it allows you
-to save money for future spending needs or unexpected events.
-
-
-
-
-Figure 2.38 Formulas Added to Show Income Is Greater Than Expenses
-
-
-We can now add a few formulas that calculate both the spending rate and the savings rate as a
-percentage of net income. These formulas require the use of absolute references, which we covered
-earlier in this chapter. The following steps explain how to add these formulas:
-
-1.   Click cell E6 in the Budget Summary worksheet.
-2.   Type an equal sign =.
-3.   Click cell D6.
-4.   Type a forward slash / for division and then click D2.
-5.   Press the \keystroke{F4} key on your keyboard. This adds an absolute reference to cell D2.
-6.   Press the \keystroke{Enter} key. The result of the formula shows that total expenses consume 94.1% of our
-net income.
-7.   Click cell E6.
-8.   Place the mouse pointer over the Auto Fill Handle.
-9.   When the mouse pointer turns to a black plus sign, left click and drag down to cell E7. This
-copies and pastes the formula into cell E7.
-10.   Save the CH2 Personal Budget file.
-11.   Compare your work with the self-check answer key (found in the Course Files link) and then
-submit the CH2 Personal Budget workbook as directed by your instructor.
-12.   Close the CH2 Personal Budget file before moving on to 2.4 – Preparing to Print.
-
-Figure 2.39 shows the output of the formulas calculating the spending rate and savings rate as a
-BEGINNING EXCEL 131
-percentage of net income. The absolute reference shown for cell D2 prevents the cell from changing
-when the formula is copied from cell E6 and pasted into cell E7. The results of the formula show that
-our current budget allows for a savings rate of 5.9%. This is a fairly good savings rate.
-
-
-
-
-Figure 2.39 Calculating the Savings Rate
-
-
-
-
-Key Takeaways
-
-
-• The PMT function can be used to calculate the monthly mortgage payments for a house or the monthly lease
-payments for a car.
-
-• When using the PMT function, each argument must be separated by a comma.
-
-• To calculate the monthly payment for a loan using the PMT function, the Rate and Nper arguments must be
-defined in terms of months. The Rate should be divided by 12 to convert it from an annual rate to a monthly
-rate. The Nper should be multiplied by 12 to convert the term of the loan from years to months.
-
-• The PMT function produces a negative output if the Pv argument is not preceded by a minus sign. For the
-purposes of this textbook, a minus sign will be entered before the PV argument in the PMT dialog box.
-
-
-
-ATTRIBUTION
-
-Adapted by Mary Schatz from How to Use Microsoft Excel: The Careers in Practice Series, adapted
-by The Saylor Foundation without attribution as requested by the work’s original creator or
-licensee, and licensed under CC BY-NC-SA 3.0.
-
-132 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-2.4 PREPARING TO PRINT
-
-
-
-
-Learning Objectives
-
-
-1. Review and learn new cell formatting techniques.
-2. Understand how to modify page scaling and margins.
-3. Create custom headers and footers to automatically update information.
-
-
-
-In this section, we will review some of the formatting techniques covered in Chapter 1, as well as
-learn some new techniques. We will also preview a two-page worksheet and set page setup options to
-present the data in a professional manner. A new data file will be used in this section.
-
-
-
-
-BEGINNING EXCEL 133
-Figure 2.40 Finished Prepare to Print Worksheet in Print Preview
-
-
-134 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-FORMATTING WORKSHEET DATA
-
-Download Data File: CH2 PTP Data
-
-You have been given sales data that needs to be formatted in a professional manner. This worksheet
-will be printed and presented to investors, so it needs to be prepared for printing as well. Figure 2.40
-shows how the finished worksheet will appear in Print Preview.
-
-1. Open the Data file named CH2 PTP Data and use the File/Save As command to save it with the
-new name CH2 Sales Data.
-2. To change the font of the entire worksheet, click the Select All button in the top left corner of
-the worksheet grid (see Figure 2.41).
-
-
-
-
-Figure 2.41 Select All button
-
-
-3. Change the font to Calibri, Size 12.
-4. Using the skills learned in Chapter 1, make the following formatting changes:
-
-1. A1:H1 – Merge and Center; format text as bold and apply a font color and size of your
-choice
-2. A2:H2 – Merge and Center; format text as bold and italic, apply a font color of your choice
-3. A5:H5 – Apply a dark fill color; format text as white and bold
-4. C5:H5 – Center align
-5. A15:H15 – Apply Top Border to the cells; format text as bold
-6. C6:H6 and C15:H15 – Apply Accounting Number format with 0 decimal places
-7. C7:H14 – Apply Comma style with 0 decimal places
-8. Highlight A6:A14 (salespeople’s names) and click the Increase Indent button in the
-Alignment group on the Home ribbon (see Figure 2.42). This will indent the text from the
-cell border.
-
-
-
-
-Figure 2.42 Increase Indent button
-
-
-
-
-BEGINNING EXCEL 135
-USING PAGE SETUP OPTIONS
-
-Once the worksheet is professionally formatted, you need to look in Print Preview to see how the
-pages will print.
-
-1. With the CH2 Sales Data file still open, go to Backstage View by clicking the File tab on the
-ribbon. Select Print from the menu. Notice that the worksheet is currently printing on two
-pages, with the page breaking between the April and May columns. To fix this problem, you will
-first change the left and right margins while still in Print Preview
-2. Click the Margins drop-down arrow in the Settings section (see Figure 2.43)
-3. Select Custom Margins… at the bottom of the list.
-4. Type in 0.5 for the Left Margin and 0.5 for the Right Margin.
-5. Click OK. Changing the margins brought the May column onto the same page, but the June
-column is still on a separate page. Next you will use Page Scaling to fix this while still in Print
-Preview.
-6. Click the Scaling drop-down arrow in the Settings section (Figure 2.43).
-7. Select Fit All Columns on One Page.
-8. Exit Backstage View.
-
-
-
-
-Figure 2.43 Settings section of Print Preview
-
-
-CREATING A FOOTER USING PAGE SETUP
-
-Now that the entire worksheet is printing on one page, you need to add a footer with information
-136 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-about the date the file was printed along with the filename. In Chapter 1 you learned how to create
-headers and footers using the Insert ribbon. You can also create headers and footers using the Custom
-Header/Footer dialog box.
-
-1. Click the Page Layout tab on the ribbon.
-2. Click the dialog box launcher in the Page Setup group. A window similar to Figure 2.44 should
-appear.
-
-
-
-
-Figure 2.44 Page Setup Dialog Box
-
-
-3. Click the Header/Footer tab in the Page Setup dialog box.
-4. Click the Custom Footer button. The Footer dialog box should appear (see Figure 2.45).
-
-
-
-
-BEGINNING EXCEL 137
-Figure 2.45 Footer Dialog Box
-
-
-5.   Click in the Left section: box and type Printed on.
-6.   Making sure to leave a space after the word on, click the Insert Date button.
-7.   Click in the Right section: box and type Filename:.
-8.   Making sure to leave a space after the colon, click the Insert File Name button.
-9.   The Footer dialog box should look like Figure 2.46.
-10.   Click the OK button. Click OK again to close the Page Setup dialog box.
-11.   Go to Print Preview to see that the current date and file name are displayed in the footer.
-12.   Exit Backstage View. Save the CH2 Sales Data file.
-13.   Compare your work with the self-check answer key (found in the Course Files link) and then
-submit the CH2 Sales Data workbook as directed by your instructor.
-
-
-
-
-Figure 2.46 Completed Custom Footer Dialog Box
-
-
-
-
-Key Takeaways
-
-
-• It is important to always check your workbooks in Print Preview to ensure that the data is printed in a
-professional and easy to read manner.
-
-• Adjust margins and page scaling as needed to keep columns of data together on one page if possible.
-
-
-
-138 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-• Use headers and footers to display information in the top and bottom margins of the printed worksheet.
-Use the Insert buttons to insert changing information, such as dates and file names, instead of typing them
-in directly.
-
-
-
-ATTRIBUTION
-
-“2.4 Preparing to Print” by Julie Romey, Portland Community College is licensed under CC BY 4.0
-
-
-
-
-BEGINNING EXCEL 139
-2.5 CHAPTER PRACTICE
-
-
-
-
-FINANCIAL PLAN FOR A LAWN CARE BUSINESS
-
-Download Data File: PR2 Data
-
-Running your own lawn care business can be an excellent way to make money over the summer while
-on break from college. It can also be a way to supplement your existing income for the purpose of
-saving money for retirement or for a college fund. However, managing the costs of the business will
-be critical in order for it to be a profitable venture. In this exercise you will create a simple financial
-plan for a lawn care business by using the skills covered in this chapter.
-
-1. Open the file named PR2 Data and then Save As PR2 Lawn Care.
-2. Click cell C5 in the Annual Plan worksheet.
-3. Write a formula that calculates the average price per lawn cut. Do not use the AVERAGE
-function. The formula should be the Price per Acre multiplied by the Average Acreage per
-Customer.
-4. Click cell C8.
-5. Enter a formula that calculates the total number of lawns that will be cut during the year
-(Number of Customers * Frequency of Lawn Cuts per Customer).
-6. Click cell D9.
-7. Enter a formula that calculates the total sales for the plan (Average Price per Cut * Total Lawn
-Cuts).
-8. Click cell F3 in the Leases worksheet. The PMT function will be used to calculate the monthly
-lease payment for the first item. For many businesses, leasing (or renting) equipment is a more
-favorable option than purchasing equipment because it requires far less cash. This enables you
-to begin a business such as a lawn care business without having to put up a lot of money to buy
-equipment. The PMT function can be entered using the Insert Function button as seen in
-Chapter 2, or we can type the PMT function directly into a cell. For this assignment, we will
-type the function into cell F3 using the following instructions.
-9. Type =PMT(. Define the arguments of the function as follows:
-10. Rate: Click cell B3, type a forward slash / for division, type the number 12, and type a comma ,.
-Since we are calculating monthly payments, the annual interest rate must be converted to a
-monthly interest rate by dividing by 12.
-11. Nper: Click cell C3, type *12 and then type a comma ,. Similar to the Rate argument, the terms
-of the lease must be converted to months by multiplying by 12 since we are calculating monthly
-payments.
-
-
-140 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-12. Pv: Type a minus sign -, click cell D3, and type a comma ,. Remember that this argument must
-always be preceded by a minus sign.
-13. Fv: Click cell E3 (Residual Value) and type a comma ,.
-14. Type: Type the number 1, type a closing parenthesis ), and press the \keystroke{Enter} key. We will assume
-the lease payments will be made at the beginning of each month, which requires that this
-argument be defined with a value of 1.
-15. Copy the PMT function in cell F3 and paste it into the range F4:F6, or use the Autofill handle.
-16. Click cell F10 in the Leases worksheet. Enter an Autosum function to calculate the total for the
-monthly lease payments. Make sure that blank rows (7 through 9) were included in the range for
-the SUM function. If other items are added to the worksheet, they will be included in the output
-of the SUM function.
-17. Highlight the range A2:F6 on the Leases worksheet. The data in this range will be sorted, first by
-Interest Rate and then by Price. Click the Sort button in the Data tab of the Ribbon. In the Sort
-dialog box, select the Interest Rate option in the “Sort by” drop-down box. Select Largest to
-Smallest for the sort order. Then, click the Add Level button on the Sort dialog box. Select the
-Price option in the “Then by” drop-down box. Select Largest to Smallest for the sort order. Click
-the OK button in the Sort dialog box.
-18. Click cell B11 on the Annual Plan worksheet. The monthly lease payments that are calculated
-in the Lease worksheet will be displayed in this cell.
-19. Type an equal sign =. Click the Leases worksheet, click cell F10, and press the \keystroke{Enter} key.
-20. Click cell C12 on the Annual Plan worksheet. Create a formula that calculates the annual lease
-payments. This should be the Monthly Lease Payments * 12.
-21. Click cell C14 on the Annual Plan worksheet. Create a formula that calculates the Total Lawn \&
-Equipment Expenses (Lawn \& Equipment Expenses per Cut * Total Lawn Cuts).
-22. Click cell D16 on the Annual Plan worksheet. Enter a SUM function that adds the Expenses for
-the business in column C. Make sure to add the Expenses only (not the Sales Plan information).
-23. Click cell D17 on the Annual Plan worksheet. Enter a formula that calculates the annual profit
-(Operating Income) for the business. This should be the Total Sales – Total Expenses.
-24. Format all cells that contain money amounts in the Annual Plan worksheet for Accounting
-Number Format (\$) with no decimals.
-25. Click cell B10 on the Investments worksheet. Enter a COUNT function that counts the number
-of investments that currently have a balance in column B. Make sure that the additional blank
-rows in rows 6 through 8 are included in the range for this function. The function output will
-automatically change if any new investments are added to the worksheet. It is important to note,
-however, that the Total in cell B9 should not be included in the Count range.
-26. Click cell D3 on the Investments worksheet.
-27. Type an equal sign =. Click the Annual Plan worksheet. Click cell D17 and type a forward slash
-/ for division. Click the Investments worksheet. Click cell B10 and press the \keystroke{Enter} key. This
-formula divides the profit calculated on the Annual Plan worksheet by the number of
-investments in the Investments worksheet. We will assume that the profits from this business
-will be invested evenly among the funds listed in Column A of the Investments worksheet.
-28. Before copying and pasting the formula created in cell D3, absolute references must be added to
-the cell locations in the formula. Edit the formula in cell D3 on the Investments worksheet so
-that cells D17 and B10 are absolute. The formula in cell D3 should be: ='Annual Plan'!$D$17/
-
-BEGINNING EXCEL 141
-Investments!$B$10. When you copy the formula in cell D3 down, the cell references will not
-change, because they are absolute. The formula will continue to divide the Operating Income in
-cell D17 of the Annual Plan by the Number of Investments in cell B10 of the Investments sheet.
-29.   Copy cell D3 and paste it into cells D4 and D5 or use the Auto Fill handle to copy down.
-30.   Click cell B9 on the Investments worksheet. Enter a SUM function that adds the current balance
-for all investments in column B. Make sure that blank rows (rows 6 through 8) are added to the
-range for the function so additional investments will automatically be included in the Autosum
-function output.
-31.   Copy the SUM function in cell B9 and paste it into cell D9.
-32.   Format the Investments and Leases sheets appropriately for Accounting Format. This should
-include $ signs on the top row and total row for money amounts, and comma style in the middle
-rows. In the Investments sheet, apply Comma Style with 0 decimals to the ranges B4:B5 and
-D4:D5. In the Leases worksheet, apply Accounting Number Format ($) with two decimals to the
-range D3:F3 and F10. Apply comma format with two decimals to the range D4:F9. Double check
-that your formatting matches Figures 2.47a through 2.47c.
-33.   Save the PR2 Lawn Care workbook.
-34.   Compare your work with the self-check answer key (found in the Course Files link) and then
-submit the PR2 Lawn Care workbook as directed by your instructor.
-
-
-
-
-Figure 2.47a Completed Lawn Care Annual Plan Worksheet
-
-
-142 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-Figure 2.47b Completed Lawn Care Investments Worksheet
-
-
-
-
-BEGINNING EXCEL 143
-Figure 2.47c Completed Lawn Care Leases Worksheet
-
-
-ATTRIBUTION
-
-Adapted by Mary Schatz from How to Use Microsoft Excel: The Careers in Practice Series, adapted
-by The Saylor Foundation without attribution as requested by the work’s original creator or
-licensee, and licensed under CC BY-NC-SA 3.0.
-
-
-
-
-144 NOREEN BROWN, BARBARA LAVE, JULIE ROMEY, MARY SCHATZ, DIANE SHINGLEDECKER
-2.6 CHAPTER SCORED
-
-
-
-
-HOTEL OCCUPANCY AND EXPENSES
-
-Download Data File: SC2 Data
-
-The hotel management industry presents a wide variety of career opportunities. These range from
-running a bed and breakfast to a management position at a large hotel. No matter what hotel
-management career you choose to pursue, understanding hotel occupancy and costs are critical to
-running a successful operation. This exercise examines the occupancy rate and expenses of a small
-hotel.
-
-1. Open the file named SC2 Data and then Save As SC2 Hotel.
-2. Enter a formula in cell C5 on the Occupancy worksheet to calculate the January capacity for
-the hotel. The capacity shows how many people the hotel can hold during the month. It is
-calculated by first multiplying the occupants per room by the number of rooms in the hotel.
-This result is then multiplied by the number of days in the month (cell B5 for January). Create
-this formula using absolute references so that the appropriate cells do not change when the
-formula is pasted throughout column C. Hint: two of the cells in the formula need to be absolute
-references.
-3. Copy the formula in cell C5 and paste it into the range C6:C16. Use a paste method that does
-not remove the border at the bottom of cell C16.
-4. Enter a formula in cell E5 on the Occupancy worksheet to calculate the Percent Occupied of
-the hotel (this statistic shows what percentage of the hotel is full or occupied). Your formula
-should divide the Actual Occupancy by the Hotel Capacity. Then copy and paste the formula
-into the range E6:E16. Use a paste method that does not remove the border at the bottom of cell
-E16. Format the results in E5:E16 as percentages with two decimal places.
-5. Enter a function in cell C17 on the Occupancy worksheet that sums the values in the range
-C5:C16. Copy the function and paste it into cell D17.
-6. Copy the formula in cell E16 and paste it into cell E17. Make sure cell E17 is formatted as a
-percentage with two decimals and bold.
-7. On the Statistics worksheet, enter a function into cell B3 that shows the highest value (Max) in
-the range D5:D16 in the Actual Occupancy column on the Occupancy worksheet.
-8. On the Statistics worksheet, enter a function into cell B4 that shows the lowest value (Min) in
-the range D5:D16 in the Actual Occupancy column on the Occupancy worksheet.
-9. On the Statistics worksheet, enter a function into cell B5 that shows the average value in the
-range D5:D16 in the Actual Occupancy column on the Occupancy worksheet.
-10. Use the Auto Fill handle to copy the formulas in the range B3:B5 to the range C3:C5.
-BEGINNING EXCEL 145
-11. Format the range B3:B5 for comma format with zero decimal places. Format cells C3:C5 as
-percentages with two decimal places.
-12. The hotel is considering buying or leasing a car to shuttle customers to and from the airport.
-You hope to keep the monthly payment under \$400 and will determine whether leasing or
-buying will meet that goal. On the Lease or Buy worksheet, type the terms in Figure 2.48 below
-for the purchase vs. lease of the car. Make sure that dollar amounts and percentages are
-formatted to match Figure 2.48:
-
-
-
-
-Figure 2.48 Terms for the purchase vs. lease of the car
-
-
-13. In cell B8 create a PMT function to calculate the Monthly Payment if you purchase the car.
-Make sure the arguments in the PMT function are converted into months and that the Monthly
-Payment is a positive number.
-14. In cell C8 create a PMT function to calculate the Monthly Payment if you lease the car. The car
-will have a residual value of \$15,000 when the lease is over. Assume that payments are made at
-the end of the month.
-15. Format the Monthly Payments in B8:C8 for Accounting Number Format with two decimals.
-16. Select the range A4:A8 and click the Increase Indent button once to indent the labels in column
-A.
-17. From the Page Layout tab, access the Page Setup dialog box launcher and center the Lease or
-Buy worksheet horizontally on the page.
-18. Insert a footer on the Lease or Buy worksheet. Insert the date (use the Insert Date button) in the
-left section of the footer. Insert the File Name (use the Insert File Name button) in the right
-section of the footer.
-19. Save the SC2 Hotel workbook.
-20. Submit the SC2 Hotel workbook as directed by your instructor.
-
-ATTRIBUTION
-
-Adapted by Mary Schatz from How to Use Microsoft Excel: The Careers in Practice Series, adapted
-by The Saylor Foundation without attribution as requested by the work’s original creator or
-licensee, and licensed under CC BY-NC-SA 3.0.
-
+So far we have used cell references in formulas and functions, which allow Excel to produce new outputs when the values in the cell references are changed. Cell references can also be used to display values or the outputs of formulas and functions in cell locations on other worksheets. This is how data will be displayed on the \textbf{Budget Summary} worksheet in the \textbf{Personal Budget} workbook. Outputs from the formulas and functions that were entered into the \textbf{Budget Detail}, \textbf{Mortgage Payments}, and \textbf{Car Lease Payments} worksheets will be displayed on the \textbf{Budget Summary} worksheet through the use of cell references. The following steps explain how this is accomplished.
+
+\begin{enumerate}
+	\item Click cell \textsf{C3} in the \textbf{Budget Summary} worksheet.
+	\item Type an equal sign $ = $.
+	\item Click the \textbf{Budget Detail} worksheet tab.
+	\item Click cell \textsf{D12} on the \textbf{Budget Detail} worksheet.
+	\item Press the \keystroke{Enter} key on your keyboard. The output of the SUM function in cell \textsf{D12} on the \textbf{Budget Detail} worksheet will be displayed in cell \textsf{C3} on the \textbf{Budget Summary} worksheet.
+\end{enumerate}
+
+Figure \ref{02:fig36} shows how the cell reference appears in the \textbf{Budget Summary} worksheet. Notice that the cell reference \textsf{D12} is preceded by the \textbf{Budget Detail} worksheet name enclosed in apostrophes followed by an exclamation point ('Budget Detail'!) This indicates that the value displayed in the cell is referencing a cell location in the \textbf{Budget Detail} worksheet.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig36}
+	\caption{Cell Reference Showing the Total Expenses in the Budget Summary Worksheet}
+	\label{02:fig36}
+\end{figure}
+
+As shown in Figure \ref{02:fig36}, the \textbf{Budget Summary} worksheet is designed to show the expense budget for the mortgage payments and the auto lease payments. However, you will recall that we used the PMT function to calculate the monthly payments. In the \textbf{Budget Summary} worksheet, we need to show the total annual payments. As a result, we will create a formula that references cell locations in the \textbf{Mortgage Payments} and \textbf{Car Lease Payments} worksheets. The following steps explain how this is accomplished.
+
+\begin{enumerate}
+	\item Click cell \textsf{C4} in the \textbf{Budget Summary} worksheet.
+	\item Type an equal sign $ = $.
+	\item Click the \textbf{Mortgage Payments} worksheet tab.
+	\item Click cell \textsf{B5} in the \textbf{Mortgage Payments} worksheet.
+	\item Type an asterisk $ * $ for multiplication.
+	\item Type the number $ 12 $. This multiplies the monthly payments by $ 12 $ to calculate the total payments required for the year. The formula in the formula bar should read: \formatfunc{='Mortgage Payments'!B5*12}
+	\item Press the \keystroke{Enter} key on your keyboard. The value of multiplying the monthly mortgage payments by $ 12 $ is now displayed on the \textbf{Budget Summary} worksheet.
+	\item Click cell \textsf{C5} on the \textbf{Budget Summary} worksheet.
+	\item Type an equal sign $ = $.
+	\item Click the \textbf{Car Lease Payments} worksheet tab.
+	\item Click cell \textsf{B6} in the \textbf{Car Lease Payments} worksheet.
+	\item Type an asterisk $ * $ for multiplication.
+	\item Type the number $ 12 $. This multiplies the monthly lease payments by $ 12 $ to calculate the total payments required for the year.
+	\item Press the \keystroke{Enter} key on your keyboard. The value of multiplying the monthly lease payments by $ 12 $ is now displayed on the \textbf{Budget Summary} worksheet.
+\end{enumerate}
+
+Figure \ref{02:fig37} shows the results of creating formulas that reference cell locations in the \textbf{Mortgage Payments} and \textbf{Car Lease Payments} worksheets.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig37}
+	\caption{Formulas Referencing Cells in Mortgage Payments and Car Lease Payments Worksheets}
+	\label{02:fig37}
+\end{figure}
+
+We can now add other formulas and functions to the \textbf{Budget Summary} worksheet that can calculate the difference between the total spend dollars vs. the total net income in cell \textsf{D2}. The following steps explain how this is accomplished.
+
+\begin{enumerate}
+	\item Click cell \textsf{D6} in the \textbf{Budget Summary} worksheet.
+	\item Type an equal sign $ = $.
+	\item Type the function name SUM followed by an open parenthesis $ ( $.
+	\item Highlight the range \textsf{C3:C5}.
+	\item Type a closing parenthesis $ ) $ and press the \keystroke{Enter} key on your keyboard or simply press the \keystroke{Enter} key to close the function. The total for all annual expenses now appears on the worksheet.
+	\item Click cell \textsf{D7} on the \textbf{Budget Summary} worksheet. You will enter a formula to calculate Net Change in Cash in this cell.
+	\item Type an equal sign $ = $.
+	\item Click cell \textsf{D2}.
+	\item Type a minus sign $ - $ and then click cell \textsf{D6}.
+	\item Press the \keystroke{Enter} key on your keyboard. This formula produces an output of $ \$1,942 $, indicating our income is greater than our total expenses.
+\end{enumerate}
+
+Figure \ref{02:fig38} shows the results of the formulas that were added to the \textbf{Budget Summary} worksheet. The output for the formula in cell \textsf{D7} shows that the net income exceeds total planned expenses by $ \$1,942 $. Overall, having your income exceed your total expenses is a good thing because it allows you to save money for future spending needs or unexpected events.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig38}
+	\caption{Formulas Added to Show Income Is Greater Than Expenses}
+	\label{02:fig38}
+\end{figure}
+
+We can now add a few formulas that calculate both the spending rate and the savings rate as a percentage of net income. These formulas require the use of absolute references, which were covered earlier in this chapter. The following steps explain how to add these formulas.
+
+\begin{enumerate}
+	\item Click cell \textsf{E6} in the \textbf{Budget Summary} worksheet.
+	\item Type an equal sign $ = $.
+	\item Click cell \textsf{D6}.
+	\item Type a forward slash $ / $ for division and then click \textsf{D2}.
+	\item Press the \keystroke{F4} key on your keyboard. This adds an absolute reference to cell \textsf{D2}.
+	\item Press the \keystroke{Enter} key. The result of the formula shows that total expenses consume $ 94.1\% $ of our net income.
+	\item Click cell \textsf{E6}.
+	\item Place the mouse pointer over the Auto Fill Handle.
+	\item When the mouse pointer turns to a black plus sign, left click and drag down to cell \textsf{E7}. This copies and pastes the formula into cell \textsf{E7}.
+	\item Save the \textbf{CH2 Personal Budget} file.
+	\item Compare your work with the self-check answer key (found in the Course Files) and then submit the \textbf{CH2 Personal Budget} workbook as directed by your instructor.
+	\item Close the \textbf{CH2 Personal Budget} file before moving on to \ref{ch02:preparing_to_print}: \nameref{ch02:preparing_to_print}.
+\end{enumerate}
+
+Figure \ref{02:fig39} shows the output of the formulas calculating the spending rate and savings rate as a percentage of net income. The absolute reference shown for cell \textsf{D2} prevents the cell from changing when the formula is copied from cell \textsf{E6} and pasted into cell \textsf{E7}. The results of the formula show that our current budget allows for a savings rate of $ 5.9\% $. This is a fairly good savings rate.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig39}
+	\caption{Calculating the Savings Rate}
+	\label{02:fig39}
+\end{figure}
+
+\begin{center}
+	\begin{tkwbox}{Key Take-Aways}
+		\textbf{Save}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item The PMT function can be used to calculate the monthly mortgage payments for a house or the monthly lease payments for a car.
+			\item When using the PMT function, each argument must be separated by a comma.
+			\item To calculate the monthly payment for a loan using the PMT function, the Rate and Nper arguments must be defined in terms of months. The Rate should be divided by $ 12 $ to convert it from an annual rate to a monthly rate. The Nper should be multiplied by $ 12 $ to convert the term of the loan from years to months.
+			\item The PMT function produces a negative output if the Pv argument is not preceded by a minus sign. For the purposes of this textbook, a minus sign will be entered before the PV argument in the PMT dialog box.
+			
+		\end{itemize}
+	\end{tkwbox}
+\end{center}
+
+\section{Preparing to Print}\label{ch02:preparing_to_print}
+
+\begin{center}
+	\begin{objbox}{Learning Objectives}
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Review and learn new cell formatting techniques.
+			\item Understand how to modify page scaling and margins.
+			\item Create custom headers and footers to automatically update information.
+
+		\end{itemize}
+	\end{objbox}
+\end{center}
+
+In this section, we will review some of the formatting techniques covered in Chapter \ref{ch01:fundamental_skills}, \nameref{ch01:fundamental_skills}, as well as learn some new techniques. We will also preview a two-page worksheet and set page setup options to present the data in a professional manner. A new data file will be used in this section.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig40}
+	\caption{Finished Prepare to Print Worksheet in Print Preview}
+	\label{02:fig40}
+\end{figure}
+
+\textit{Data File: CH2 PTP Data}
+
+You have been given sales data that needs to be formatted in a professional manner. This worksheet will be printed and presented to investors, so it needs to be prepared for printing as well. Figure \ref{02:fig40} shows how the finished worksheet will appear in Print Preview.
+
+\begin{enumerate}
+	\item Open the Data file named \textbf{CH2 PTP Data} and use the File/Save As command to save it with the new name \textbf{CH2 Sales Data}.
+	\item To change the font of the entire worksheet, click the Select All button in the top left corner of the worksheet grid (see Figure \ref{02:fig41}).
+	\item Change the font to Calibri, Size 12.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig41}
+	\caption{Select All button}
+	\label{02:fig41}
+\end{figure}
+
+Using the skills learned in Chapter \ref{ch01:fundamental_skills}, \nameref{ch01:fundamental_skills}, make the following formatting changes.
+
+\begin{enumerate}
+	\item \textsf{A1:H1} --- Merge and Center; format text as bold and apply a font color and size of your choice
+	\item \textsf{A2:H2} --- Merge and Center; format text as bold and italic, apply a font color of your choice
+	\item \textsf{A5:H5} --- Apply a dark fill color; format text as white and bold
+	\item \textsf{C5:H5} --- Center align
+	\item \textsf{A15:H15} --- Apply Top Border to the cells; format text as bold
+	\item \textsf{C6:H6} and \textsf{C15:H15} --- Apply Accounting Number format with $ 0 $ decimal places
+	\item \textsf{C7:H14} --- Apply Comma style with $ 0 $ decimal places
+	\item Highlight \textsf{A6:A14} (salespeople's names) and click the Increase Indent button in the Alignment group on the Home ribbon (see Figure \ref{02:fig42}). This will indent the text from the cell border.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig42}
+	\caption{Increase Indent button}
+	\label{02:fig42}
+\end{figure}
+
+\subsection{Using Page Setup Options}
+
+Once the worksheet is professionally formatted, you need to look in Print Preview to see how the pages will print.
+
+\begin{enumerate}
+	\item With the \textbf{CH2 Sales Data} file still open, go to Backstage View by clicking the File tab on the ribbon. Select \textit{Print} from the menu. Notice that the worksheet is currently printing on two pages, with the page breaking between the April and May columns. To fix this problem, you will first change the left and right margins while still in Print Preview
+	\item Click the Margins drop-down arrow in the Settings section (see Figure \ref{02:fig43})
+	\item Select \textit{Custom Margins…} at the bottom of the list.
+	\item Type in $ 0.5 $ for the Left Margin and $ 0.5 $ for the Right Margin.
+	\item Click OK. Changing the margins brought the May column onto the same page, but the June column is still on a separate page. Next you will use Page Scaling to fix this while still in Print Preview.
+	\item Click the Scaling drop-down arrow in the Settings section (Figure \ref{02:fig43}).
+	\item Select \textit{Fit All Columns on One Page}.
+	\item Exit Backstage View.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig43}
+	\caption{Settings section of Print Preview}
+	\label{02:fig43}
+\end{figure}
+
+\subsection{Creating a Footer Using Page Setup}
+
+Now that the entire worksheet is printing on one page, you need to add a footer with information about the date the file was printed along with the filename. In Chapter \ref{ch01:fundamental_skills}, \nameref{ch01:fundamental_skills}, you learned how to create headers and footers using the Insert ribbon. You can also create headers and footers using the Custom Header/Footer dialog box.
+
+\begin{enumerate}
+	\item Click the \textbf{Page Layout} tab on the ribbon.
+	\item Click the dialog box launcher in the Page Setup group. A window similar to Figure \ref{02:fig44} should appear.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig44}
+	\caption{Page Setup Dialog Box}
+	\label{02:fig44}
+\end{figure}
+
+\begin{enumerate}[resume]
+	\item Click the Header/Footer tab in the Page Setup dialog box.
+	\item Click the Custom Footer button. The Footer dialog box should appear (see Figure \ref{02:fig45}).
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig45}
+	\caption{Footer Dialog Box}
+	\label{02:fig45}
+\end{figure}
+
+
+\begin{enumerate}
+	\item Click in the Left section: box and type \textbf{Printed on}.
+	\item Making sure to leave a space after the word on, click the Insert Date button.
+	\item Click in the Right section: box and type \textbf{Filename:}.
+	\item Making sure to leave a space after the colon, click the Insert File Name button.
+	\item The Footer dialog box should look like Figure \ref{02:fig46}.
+	\item Click the OK button. Click OK again to close the Page Setup dialog box.
+	\item Go to Print Preview to see that the current date and file name are displayed in the footer.
+	\item Exit Backstage View. Save the \textbf{CH2 Sales Data} file.
+	\item Compare your work with the self-check answer key (found in the Course Files) and then submit the \textbf{CH2 Sales Data} workbook as directed by your instructor.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig46}
+	\caption{Completed Custom Footer Dialog Box}
+	\label{02:fig46}
+\end{figure}
+
+\begin{center}
+	\begin{tkwbox}{Key Take-Aways}
+		\textbf{Save}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item It is important to always check your workbooks in Print Preview to ensure that the data is printed in a professional and easy to read manner.
+			\item Adjust margins and page scaling as needed to keep columns of data together on one page if possible.
+			\item Use headers and footers to display information in the top and bottom margins of the printed worksheet.
+			\item Use the Insert buttons to insert changing information, such as dates and file names, instead of typing them in directly.
+			
+		\end{itemize}
+	\end{tkwbox}
+\end{center}
+
+\section{Chapter Practice}
+
+\subsection{Financial Plan for a Lawn Care Business}
+
+\textit{Data File: PR2 Data}
+
+Running your own lawn care business can be an excellent way to make money over the summer while on break from college. It can also be a way to supplement your existing income for the purpose of saving money for retirement or for a college fund. However, managing the costs of the business will be critical in order for it to be a profitable venture. In this exercise you will create a simple financial plan for a lawn care business by using the skills covered in this chapter.
+
+\begin{enumerate}
+	\item Open the file named \textbf{PR2 Data} and then Save As \textbf{PR2 Lawn Care}.
+	
+	\item Click cell \textsf{C5} in the \textbf{Annual Plan} worksheet.
+
+	\item Write a formula that calculates the average price per lawn cut. Do \textit{not} use the AVERAGE function. The formula should be the Price per Acre multiplied by the Average Acreage per Customer.
+	
+	\item Click cell \textsf{C8}.
+	
+	\item Enter a formula that calculates the total number of lawns that will be cut during the year: \formatfunc{Number of Customers * Frequency of Lawn Cuts per Customer}.
+	
+	\item Click cell \textsf{D9}.
+	
+	\item Enter a formula that calculates the total sales for the plan: \formatfunc{Average Price per Cut * Total Lawn Cuts}.
+	
+	\item Click cell \textsf{F3} in the \textbf{Leases} worksheet. The PMT function will be used to calculate the monthly lease payment for the first item. For many businesses, leasing (or renting) equipment is a more favorable option than purchasing equipment because it requires far less cash. This enables you to begin a business such as a lawn care business without having to put up a lot of money to buy equipment. The PMT function can be entered using the Insert Function button as seen in this chapter, or we can type the PMT function directly into a cell. For this assignment, we will type the function into cell \textsf{F3} using the following instructions.
+	
+	\item Type \formatfunc{=PMT(}. Define the arguments of the function as follows.
+
+	\begin{enumerate}
+		\item \textbf{Rate}: Click cell \textsf{B3}, type a forward slash $ / $ for division, type the number $ 12 $, and type a comma ,. Since we are calculating monthly payments, the annual interest rate must be converted to a monthly interest rate by dividing by $ 12 $.
+		
+		\item \textbf{Nper}: Click cell \textsf{C3}, type $ *12 $ and then type a comma ,. Similar to the Rate argument, the terms of the lease must be converted to months by multiplying by $ 12 $ since we are calculating monthly payments.
+		
+		\item \textbf{Pv}: Type a minus sign $ - $, click cell \textsf{D3}, and type a comma ,. Remember that this argument must always be preceded by a minus sign.
+		
+		\item \textbf{Fv}: Click cell \textsf{E3} (Residual Value) and type a comma ,.
+		
+		\item \textbf{Type}: Type the number $ 1 $, type a closing parenthesis $ ) $, and press the \keystroke{Enter} key. We will assume the lease payments will be made at the beginning of each month, which requires that this argument be defined with a value of $ 1 $.
+	\end{enumerate}
+
+	\item Copy the PMT function in cell \textsf{F3} and paste it into the range \textsf{F4:F6}, or use the Autofill handle.
+	
+	\item Click cell \textsf{F10} in the \textbf{Leases} worksheet. Enter an Autosum function to calculate the total for the monthly lease payments. Make sure that blank rows (7 through 9) were included in the range for the SUM function. If other items are added to the worksheet, they will be included in the output of the SUM function.
+	
+	\item Highlight the range \textsf{A2:F6} on the \textbf{Completed Lawn Care Leases Worksheet} worksheet. The data in this range will be sorted, first by Interest Rate and then by Price. Click the Sort button in the Data tab of the Ribbon. In the Sort dialog box, select the \textit{Interest Rate} option in the ``Sort by'' drop-down box. Select \textit{Largest to Smallest} for the sort order. Then, click the Add Level button on the Sort dialog box. Select the \textit{Price} option in the ``Then by'' drop-down box. Select \textit{Largest to Smallest} for the sort order. Click the OK button in the Sort dialog box.
+	
+	\item Click cell \textsf{B11} on the \textbf{Annual Plan} worksheet. The monthly lease payments that are calculated in the Lease worksheet will be displayed in this cell.
+	
+	\item Type an equal sign $ = $. Click the \textbf{Leases} worksheet, click cell \textsf{F10}, and press the \keystroke{Enter} key.
+	
+	\item Click cell \textsf{C12} on the \textbf{Annual Plan} worksheet. Create a formula that calculates the annual lease payments. This should be the \formatfunc{Monthly Lease Payments $ * 12 $}.
+	
+	\item Click cell \textsf{C14} on the \textbf{Annual Plan} worksheet. Create a formula that calculates the Total Lawn \& Equipment Expenses (\formatfunc{Lawn \& Equipment Expenses per Cut * Total Lawn Cuts}).
+	
+	\item Click cell \textsf{D16} on the \textbf{Annual Plan} worksheet. Enter a SUM function that adds the Expenses for the business in column C. Make sure to add the Expenses only (not the Sales Plan information).
+	
+	\item Click cell \textsf{D17} on the \textbf{Annual Plan} worksheet. Enter a formula that calculates the annual profit (Operating Income) for the business. This should be the \formatfunc{Total Sales $ – $ Total Expenses}.
+	
+	\item Format all cells that contain money amounts in the \textbf{Annual Plan} worksheet for Accounting Number Format (\$) with no decimals.
+	
+	\item Click cell \textsf{B10} on the \textbf{Investments} worksheet. Enter a COUNT function that counts the number of investments that currently have a balance in column B. Make sure that the additional blank rows in rows 6 through 8 are included in the range for this function. The function output will automatically change if any new investments are added to the worksheet. It is important to note, however, that the Total in cell \textsf{B9} should not be included in the Count range.
+	
+	\item Click cell \textsf{D3} on the \textbf{Investments} worksheet.
+	
+	\item Type an equal sign $ = $. Click the \textbf{Annual Plan} worksheet. Click cell \textsf{D17} and type a forward slash $ / $ for division. Click the \textbf{Investments} worksheet. Click cell \textsf{B10} and press the \keystroke{Enter} key. This formula divides the profit calculated on the Annual Plan worksheet by the number of investments in the \textbf{Investments} worksheet. We will assume that the profits from this business will be invested evenly among the funds listed in Column A of the Completed Lawn Care Leases Worksheet worksheet.
+	
+	\item Before copying and pasting the formula created in cell \textsf{D3}, absolute references must be added to the cell locations in the formula. Edit the formula in cell \textsf{D3} on the Completed Lawn Care Leases Worksheet worksheet so that cells \textsf{D17} and \textsf{B10} are absolute. The formula in cell D3 should be: \formatfunc{='Annual Plan'!\$D\$17/ Investments!\$B\$10}. When you copy the formula in cell \textsf{D3} down, the cell references will not change, because they are absolute. The formula will continue to divide the Operating Income in cell \textsf{D17} of the Annual Plan by the Number of Investments in cell \textsf{B10} of the \textbf{Investments} sheet.
+	
+	\item Copy cell \textsf{D3} and paste it into cells \textsf{D4} and \textsf{D5} or use the Auto Fill handle to copy down.
+	
+	\item Click cell \textsf{B9} on the \textbf{Investments} worksheet. Enter a SUM function that adds the current balance for all investments in column B. Make sure that blank rows (rows 6 through 8) are added to the range for the function so additional investments will automatically be included in the Autosum function output.
+	
+	\item Copy the SUM function in cell \textsf{B9} and paste it into cell \textsf{D9}.
+	
+	\item Format the \textbf{Investments and Leases} sheets appropriately for Accounting Format. This should include \$ signs on the top row and total row for money amounts, and comma style in the middle rows. In the Investments sheet, apply Comma Style with $ 0 $ decimals to the ranges \textsf{B4:B5} and \textsf{D4:D5}. In the Leases worksheet, apply Accounting Number Format (\$) with two decimals to the range \textsf{D3:F3} and \textsf{F10}. Apply comma format with two decimals to the range \textsf{D4:F9}. Double check that your formatting matches Figures \ref{02:fig47}, \ref{02:fig48}, and \ref{02:fig49}.
+	
+	\item Save the \textbf{PR2 Lawn Care} workbook.
+	
+	\item Compare your work with the self-check answer key (found in the Course Files) and then submit the \textbf{PR2 Lawn Care} workbook as directed by your instructor.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig47}
+	\caption{Completed Lawn Care Annual Plan Worksheet}
+	\label{02:fig47}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig48}
+	\caption{Completed Lawn Care Investments Worksheet}
+	\label{02:fig48}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig49}
+	\caption{Completed Lawn Care Leases Worksheet}
+	\label{02:fig49}
+\end{figure}
+
+\section{Chapter Scored}
+
+\subsection{Hotel Occupancy and Expenses}
+
+\textit{Data File: SC2 Data}
+
+The hotel management industry presents a wide variety of career opportunities. These range from running a bed and breakfast to a management position at a large hotel. No matter what hotel management career you choose to pursue, understanding hotel occupancy and costs are critical to running a successful operation. This exercise examines the occupancy rate and expenses of a small hotel.
+
+\begin{enumerate}
+	\item Open the file named \textbf{SC2 Data} and then Save As \textbf{SC2 Hotel}.
+	
+	\item Enter a formula in cell \textsf{C5} on the \textbf{Occupancy} worksheet to calculate the January capacity for the hotel. The capacity shows how many people the hotel can hold during the month. It is calculated by first multiplying the occupants per room by the number of rooms in the hotel. This result is then multiplied by the number of days in the month (cell \textsf{B5} for January). Create this formula using absolute references so that the appropriate cells do not change when the formula is pasted throughout column C. Hint: two of the cells in the formula need to be absolute references.
+	
+	\item Copy the formula in cell \textsf{C5} and paste it into the range \textsf{C6:C16}. Use a paste method that does not remove the border at the bottom of cell \textsf{C16}.
+	
+	\item Enter a formula in cell \textsf{E5} on the \textbf{Occupancy} worksheet to calculate the Percent Occupied of the hotel (this statistic shows what percentage of the hotel is full or occupied). Your formula should divide the Actual Occupancy by the Hotel Capacity. Then copy and paste the formula into the range \textsf{E6:E16}. Use a paste method that does not remove the border at the bottom of cell \textsf{E16}. Format the results in \textsf{E5:E16} as percentages with two decimal places.
+	
+	\item Enter a function in cell \textsf{C17} on the \textbf{Occupancy} worksheet that sums the values in the range \textsf{C5:C16}. Copy the function and paste it into cell \textsf{D17}.
+	
+	\item Copy the formula in cell \textsf{E16} and paste it into cell \textsf{E17}. Make sure cell \textsf{E17} is formatted as a percentage with two decimals and bold.
+	
+	\item On the \textbf{Statistics} worksheet, enter a function into cell \textsf{B3} that shows the highest value (Max) in the range \textsf{D5:D16} in the Actual Occupancy column on the \textbf{Occupancy} worksheet.
+	
+	\item On the \textbf{Statistics} worksheet, enter a function into cell \textsf{B4} that shows the lowest value (Min) in the range \textsf{D5:D16} in the Actual Occupancy column on the \textbf{Occupancy} worksheet.
+	
+	\item On the \textbf{Statistics} worksheet, enter a function into cell \textsf{B5} that shows the average value in the range \textsf{D5:D16} in the Actual Occupancy column on the \textbf{Occupancy} worksheet.
+	
+	\item Use the Auto Fill handle to copy the formulas in the range \textsf{B3:B5} to the range \textsf{C3:C5}.
+	
+	\item Format the range \textsf{B3:B5} for comma format with zero decimal places. Format cells \textsf{C3:C5} as percentages with two decimal places.
+	
+	\item The hotel is considering buying or leasing a car to shuttle customers to and from the airport. You hope to keep the monthly payment under $ \$400 $ and will determine whether leasing or buying will meet that goal. On the \textbf{Lease or Buy} worksheet, type the terms in Figure \ref{02:fig50} for the purchase vs. lease of the car. Make sure that dollar amounts and percentages are formatted to match Figure \ref{02:fig50}.
+	\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch02_fig50}
+	\caption{Terms for the Purchase vs. Lease of the Car}
+	\label{02:fig50}
+\end{figure}
+
+\begin{enumerate}[resume]
+	\item In cell \textsf{B8} create a PMT function to calculate the Monthly Payment if you purchase the car. Make sure the arguments in the PMT function are converted into months and that the Monthly Payment is a positive number.
+	
+	\item In cell \textsf{C8} create a PMT function to calculate the Monthly Payment if you lease the car. The car will have a residual value of $ \$15,000 $ when the lease is over. Assume that payments are made at the end of the month.
+	
+	\item Format the Monthly Payments in \textsf{B8:C8} for Accounting Number Format with two decimals.
+	
+	\item Select the range \textsf{A4:A8} and click the Increase Indent button once to indent the labels in column A.
+	
+	\item From the Page Layout tab, access the Page Setup dialog box launcher and center the \textbf{Lease or Buy} worksheet horizontally on the page.
+	
+	\item Insert a footer on the \textbf{Lease or Buy} worksheet. Insert the date (use the Insert Date button) in the left section of the footer. Insert the File Name (use the Insert File Name button) in the right section of the footer.
+	
+	\item Save the \textbf{SC2 Hotel} workbook.
+	
+	\item Submit the \textbf{SC2 Hotel} workbook as directed by your instructor.
+\end{enumerate}
