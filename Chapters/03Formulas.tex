@@ -364,23 +364,25 @@ Sometimes Excel notices errors in the calculations and may post a slightly myste
 	\begin{longtable}{p{0.75in}p{3.50in}} %Max width: 4.25in
 		\textbf{Message} & \textbf{What Went Wrong} \endhead
 		\hline \\
-		$ \#DIV/0! $ & A number is being divided by a zero ($ 0 $) or by an empty cell.\\
-		\#NAME & A cell range name in the formula is not defined. Frequently this error occurs because the name is entered incorrectly.\\
-		\#N/A & The formula refers to an empty cell, so no data is available for computing the formula. Sometimes people enter \textit{N/A} in a cell as a placeholder to signal the fact that data is not entered yet. Revise the formula or enter a number or formula in the empty cells.\\
-		\#NULL & The formula refers to a cell range that Excel cannot understand. Make sure that the range is entered correctly.\\
-		\#NUM & An argument you use in your formula is invalid.\\
-		\#REF & The cell or range of cells that the formula refers to are not there.\\
-		\#VALUE & The formula includes a function that was used incorrectly, takes an invalid argument, or is misspelled. Make sure that the function uses the right argument and is spelled correctly.\\
+		$ \#DIV/0! $ & The division operation refers to a cell that contains the value $ 0 $ or is blank.\\
+		\#N/A & Technically, this is not an error value but a special value 		that can be manually entered into a cell to indicate that there is no value yet. This is a placeholder used while a spreadsheet is being developed.\\
+		\#NAME? & This error value appears when a range name is incorrectly entered or the name is deleted. Also, this commonly means that the formula is missing quotation marks around a text string.\\
+		\#NULL & This error occurs if a space used instead of a comma between ranges in function arguments. The formula needs to be carefully checked and corrected.\\
+		\#NUM & This error is caused by an invalid argument in an Excel	function or by a formula that produces a number too large or too small for the worksheet.\\
+		\#REF & This error occurs when a cell referred to in a formula has been deleted.\\
+		\#VALUE & This error is most often the result of specifying a mathematical operation that refers to one or more cells that contain text.\\
 		\caption{Common Error Messages}
 		\label{03:tab01}
 	\end{longtable}
 }
 
+\footnote{Table \ref{03:tab01} was adapted from  \url{https://www.dummies.com/software/microsoft-office/excel/understanding-excel-2010s-formula-error-values/}}
+
 \subsection{Date Functions}
 
 Very often dates and times are an important part of Excel data. Numbers that are correct today may not be accurate tomorrow so it is frequently useful to include dates and times on your spreadsheets.
 
-These dates and times fall into two categories, ones that:
+These dates and times fall into two categories.
 
 \begin{itemize}
 	\item \textbf{Remain the same.} For instance, if a spreadsheet includes data for May 15th then that date should not change each time the spreadsheet is accessed.
@@ -396,41 +398,27 @@ Take a look at the list of Date and Time functions offered in the Function Libra
 	\label{03:fig16}
 \end{figure}
 
-For our gradebook, we want the date and time to be displayed in \textsf{A2}, and it needs to update whenever the workbook file is opened.
+For the gradebook, the date and time should be displayed in \textsf{A2}, and it needs to be updated whenever the workbook file is opened.
 
-1. Make A2 your active cell. Notice that A2 extends all the way from column A to Column R.
-Previously, someone has used the Merge \& Center tool on this cell to make it match the title
-above.
-2. On the Formulas tab, in the Function Library, select NOW from the Date \& Time drop-down
-list and then click OK.
-3. The result you will see in the formula bar is: =NOW(). The result you will see in A2 depends on
-the current date and time.The NOW function is a very handy function. It takes no arguments
+\begin{enumerate}
+	\item Make \textsf{A2} your active cell. Notice that \textsf{A2} extends all the way from column A to Column R. Previously, someone has used the Merge \& Center tool on this cell to make it match the title above.
+	\item On the Formulas tab, in the Function Library, select \formatfunc{NOW} from the Date \& Time drop-down list and then click OK.
+	\item The result in the formula bar is: \formatfunc{=NOW()} and the result in \textsf{A2} depends on the current date and time. The \formatfunc{NOW} function is a very handy function, it takes no arguments and is volatile! That is not as alarming as it may seem. This just means that it doesn't need any information to do its job and the results will change frequently. 
+	\item Make sure that \textsf{A1} is your active cell and press  \keystroke{F9} to update the time.
+\end{enumerate}
 
-and is Volatile! That is not as alarming as it may seem. This just means that you don’t need to
-give it any more information to do its job and that your results will change frequently.You can
-update the date and time whenever you want – you don’t have to wait until you open the
-workbook again.
-4. Make sure that A1 is your active cell and press the F9 function key (along the top of your
-keyboard.) The time will update.
+Excel will update this field independently whenever the file is saved, reopened, or printed. It may happen more frequently than that, depending on how the Excel installation was set up.
 
-Excel will update this field independently whenever you save and re-open the file, or print it. It may
-happen more frequently than that – depending on how you have set this up in your installation of
-Excel.
+Another variation of the current date is the \formatfunc{TODAY} function.
 
-Another variation of the current date is the TODAY function. Let’s try that one next.
-
-1. Make sure A2 is your active cell. Press Delete to remove the NOW function.
-2. From the Date \& Time drop-down list in the Function Library on the Formulas tab (see Figure
-3.16), select TODAY and then click OK.
-3. The result you will see in the formula bar is: =TODAY(). The result you will see in A2 depends
-on the current date.Since we haven’t asked for the time, the time you are seeing is likely 12:00.
-That is not very helpful so we need to change the format of the date.
-4. On the Home tab, in the Number group, press the Number Format Launch button (see Figure
-3.17).
-5. In the Format Cells dialog box, click the Number tab. Choose the Date category and select
-Wednesday, March 14, 2012 (this format is called Long Date).
-6. The current day and date will display in A2.
-
+\begin{enumerate}
+	\item Make sure \textsf{A2} is the active cell. Press \keystroke{Delete} to remove the \formatfunc{NOW} function.
+	\item From the Date \& Time drop-down list in the Function Library on the Formulas tab (see Figure \ref{03:fig16}), select \formatfunc{TODAY} and then click OK.
+	\item The result in the formula bar is \formatfunc{=TODAY()} and the result in \textsf{A2} is the current date. Since the time was not requested it is likely 12:00. That is not very helpful so the date format needs to be adjusted.
+	\item On the Home tab, in the Number group, press the Number Format Launch button (see Figure \ref{03:fig17}).
+	\item In the \textbf{Format Cells} dialog box, click the Number tab. Choose the \textbf{Date} category and select \textit{Wednesday, March 14, 2012} (this format is called \textbf{Long Date}).
+	\item The current day and date should now be displayed in \textsf{A2}.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -439,19 +427,21 @@ Wednesday, March 14, 2012 (this format is called Long Date).
 	\label{03:fig17}
 \end{figure}
 
+\begin{center}
+	\begin{shtcutbox}{Keyboard Shortcuts}
+		\textbf{Static Date and Time}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-
-
-
-Keyboard Shortcuts
-
-
-Sometimes you want the date or the time to show up in your spreadsheet, but you don’t want it to change. You can simply
-type in the date or time. Or, you can use shortcut keys.
-
-• CTRL; (semi colon) will bring you the current date
-
-• CTRL: (colon or CTRL SHIFT ; ) will bring you the current time.
+			\item \keystroke{CTRL} + \keystroke{;} (semicolon) inserts the current date
+			\item \keystroke{CTRL} + \keystroke{:} (colon) inserts the current time.
+			
+		\end{itemize}
+	\end{shtcutbox}
+\end{center}
 
 
 \begin{center}
@@ -463,13 +453,12 @@ type in the date or time. Or, you can use shortcut keys.
 			\setlength{\parskip}{0pt}
 			\setlength{\parsep}{0pt}
 
-			\item Functions don’t always have to be about arithmetic. Excel provides functions that will help you perform logical evaluations, look things up, and work with dates and times.
+			\item Functions don't always have to be about arithmetic. Excel provides functions that will help you perform logical evaluations, look things up, and work with dates and times.
 			\item Excel displays error messages when your formulas and functions are not constructed properly.
 			
 		\end{itemize}
 	\end{tkwbox}
 \end{center}
-
 
 \section{Conditional Formatting}
 
@@ -480,36 +469,25 @@ type in the date or time. Or, you can use shortcut keys.
 			\setlength{\parskip}{0pt}
 			\setlength{\parsep}{0pt}
 
-			\item Use Conditional Formatting techniques to provide flexible highlighting, applying specified formatting only
-			when certain conditions are met. Techniques include:
-			
-			\item Data bars — to make it easy to visualize values in a range of cells.
-			
-			\item Cells Rules — to highlight values that match the requirements you specify.
-			
+			\item Use Conditional Formatting techniques to provide flexible highlighting or applying specified formatting only when certain conditions are met. Techniques include:
+
+			\begin{itemize}			
+				\item \textbf{Data bars}. Makes it easy to visualize values in a range of cells.
+				\item \textbf{Cell Rules}. Highlights values that match the requirements you specify.
+			\end{itemize}
+
 		\end{itemize}
 	\end{objbox}
 \end{center}
 
+All necessary calculations are now in the CAS 170 Grades spreadsheet. However, the grade book contains a lot of data. To make it easier to quickly find the most important pieces of data, Excel provides \textit{Conditional Formatting}.
 
+\begin{enumerate}
+	\item Select the values in the Total Points column (\textsf{O5:O24}).
+	\item At the bottom of the selection, click on the Quick Analysis Tool. On the Formatting tab, select Data Bars (see Figure \ref{03:fig18}).
+\end{enumerate}
 
-
-
-
-
-You now have all the calculations you need in your CAS 170 Grades spreadsheet. There is a lot of
-data here. To make it easier to pick out the most important pieces of data, Excel provides Conditional
-Formatting. The best thing about Conditional Formatting is that it is flexible, applying specified
-formatting only when certain conditions are met.
-
-1. Select the values in the Total Points column (O5:O24).
-2. At the bottom of your selection, click on the Quick Analysis Tool. On the Formatting tab, select
-Data Bars (see Figure 3.18).
-
-Excel places blue bars on top of your values; long blue bars for larger numbers, shorter ones for
-smaller numbers. This makes it easier to see how well each student did in the class – without having
-to look at the specific numbers.
-
+Excel places blue bars on top of the values; long blue bars for larger numbers, shorter ones for smaller numbers. This makes it easier to see how well each student did in the class without having to look at the specific numbers.
 
 \begin{figure}[H]
 	\centering
@@ -519,12 +497,13 @@ to look at the specific numbers.
 \end{figure}
 
 
-Another way to apply Data Bars is to:
+Following is another way to apply Data Bars.
 
-• Select the range that needs data bars
-• On the Home tab, in the Styles group, select Data Bars from the Conditional Formatting tool.
-• From there you can select data bars of different colors and opacities (see Figure 3.19).
-
+\begin{enumerate}
+	\item Select the range that needs data bars
+	\item On the Home tab, in the Styles group, select Data Bars from the Conditional Formatting tool.
+	\item From there you can select data bars of different colors and opacities (see Figure \ref{03:fig19}).
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -533,25 +512,14 @@ Another way to apply Data Bars is to:
 	\label{03:fig19}
 \end{figure}
 
+It is even more important to highlight the students who are failing in the class, so that will be done in two places, the Percentages and Letter Grade columns. To start, any \textbf{F} letter grades should be formatted with a light red fill color and dark red text.
 
-
-
-It is even more important to highlight the students who are failing in the class. To practice further
-with Conditional Formatting we will do that in two places, in the Percentages column and on the
-
-
-
-Letter Grade column. To start with, we want any F letter grades to be formatted with a light red fill
-color and dark red text.
-
-1. Select the Letter Grades (R5:R24).
-2. On the Home tab, in the Styles group, select Highlight Cell Rules from the Conditional
-Formatting tool (see Figure 3.20).
-3. Select Equal To
-4. Fill out the Equal to dialog box so that cells that are equal to: F have Light Red Fill with Dark
-Red Text (see Figure 3.21).
-
-
+\begin{enumerate}
+	\item Select the Letter Grades (\textsf{R5:R24}).
+	\item On the Home tab, in the Styles group, select Highlight Cell Rules from the Conditional Formatting tool (see Figure \ref{03:fig20}).
+	\item Select \textbf{Equal To}
+	\item Fill out the Equal to dialog box so that cells that are equal to \textbf{F} have Light Red Fill with Dark Red Text (see Figure \ref{03:fig21}).
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -560,7 +528,6 @@ Red Text (see Figure 3.21).
 	\label{03:fig20}
 \end{figure}
 
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch03_fig21}
@@ -568,39 +535,25 @@ Red Text (see Figure 3.21).
 	\label{03:fig21}
 \end{figure}
 
+Now, highlight students who are passing the class. This time, use the Pass/Fail text in the Pass/Fail column. If the text for a student is ``Pass'' the cell should be formatted with a yellow fill with dark yellow text.
 
+\begin{enumerate}
+	\item Select the Pass/Fail grades (\textsf{Q5:Q24}).
+	\item On the Home tab, in the Styles group, select Highlight Cell Rules from the Conditional Formatting tool (see Figure \ref{03:fig20}).
+	\item Select \textbf{Equal To} 
+	\item Fill out the Equal to dialog box so that cells that are equal to ``Pass'' have Yellow Fill with Dark Yellow Text. (To find the Yellow Fill with Dark Yellow text option, click the the down arrow at the end of the last (with) box).
+\end{enumerate}
 
+The default styles are a simple way to make specified data stand out, but any cell formatting can be set. When using custom cell formatting, it is probably a good idea to include other styling in addition to color. Remember that spreadsheets are often printed in black and white so Conditional formatting that relies only on color would be lost. Next, use conditional formatting to display any Percentages that are less than $ 60\% $ with red text formatted in bold and italic.
 
-Let’s try that one more time – to highlight those students who are passing the class. This time we will
-use the Pass/Fail text in the Pass/Fail column. If the text for a student is Pass we want the cell to be
-formatted with a yellow fill with dark yellow text.
-
-1. Select the Pass/Fail grades (Q5:Q24).
-2. On the Home tab, in the Styles group, select Highlight Cell Rules from the Conditional
-Formatting tool (see Figure 3.20).
-3. Select Equal To
-4. Fill out the Equal to dialog box so that cells that are equal to: Pass have Yellow Fill with Dark
-Yellow Text. (To find the Yellow Fill with Dark Yellow text option, click the the down arrow at
-the end of the last (with) box).
-
-You do not have to use the default styles to make your data stand out. You can set any formatting
-you want. When you do, it is probably a good idea to include other styling in addition to color. Your
-spreadsheet might be printed in black and white. You would hate to lose your Conditional formatting.
-Now we are going to use conditional formatting to display any Percentages that are less than 60%
-with red text formatted in bold and italic.
-
-1. Select the Percentage grades (P5:P24).
-2. On the Home tab, in the Styles group, select Highlight Cell Rules from the Conditional
-Formatting tool (see Figure 3.20).
-3. Select Less Than
-4. Fill out the Less Than dialog box so that cells that are less than .6 will be have conditional
-formatting. But, instead of using the default red text on a light red fill, press the down arrow at
-the end of that box and select Custom Format.
-
-5. On the Font tab of the Format Cells dialog box, in the Font style box, select Bold Italic. In the
-Color box, select Red (see Figure 3.22).
-6. Press OK. Then press OK again.
-
+\begin{enumerate}
+	\item Select the Percentage grades (\textsf{P5:P24}).
+	\item On the Home tab, in the Styles group, select Highlight Cell Rules from the Conditional Formatting tool (see Figure \ref{03:fig20}).
+	\item Select \textbf{Less Than}
+	\item Fill out the Less Than dialog box so that cells that are less than $ 0.6 $ will be have conditional formatting. Instead of using the default red text on a light red fill, press the down arrow at the end of that box and select \textbf{Custom Format}.
+	\item On the Font tab of the Format Cells dialog box, in the Font style box, select \textbf{Bold Italic}. In the Color box, select \textbf{Red} (see Figure \ref{03:fig22}).
+	\item Press OK. Then press OK again.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -609,21 +562,11 @@ Color box, select Red (see Figure 3.22).
 	\label{03:fig22}
 \end{figure}
 
-
-
-Conditional Formatting is valuable in that it reflects the current data. It changes to reflect changes in
-the data. To test this, delete DeShea’s final exam score. (Select N5. Press Delete on your keyboard.)
-Suddenly, DeShae is failing the course and the Conditional Formatting reflects that. This is a little
-unfair to DeShae – who has worked so hard this quarter. Let’s give him back his grade. Press CTRL Z
-(Undo). His test score reappears and the Conditional formatting reflects that as well.
+Conditional Formatting is valuable in that it reflects the current data and it changes to whenever the data changes. To test this, delete DeShea's final exam score. (Select \textsf{N5}. Press Delete on your keyboard.) Suddenly, DeShae is failing the course and the Conditional Formatting reflects that. Press CTRL Z (Undo). The test score reappears and the Conditional formatting reflects that as well.
 
 \subsection{Making Changes}
-
-What if you have made a mistake with your Conditional Formatting? Or, you want to delete it
-altogether? You can use the Conditional Formatting Manage Rules tool. In our example, we want
-to remove the conditional formatting rule that formats the Pass text with yellow. We are also going
-to modify the minimum passing percentage for the conditional formatting rule that is applied to the
-percentages.
+%TODO Start Here
+What if there is a mistake with the Conditional Formatting or it needs to be delete altogether? Use the \textbf{Conditional Formatting Manage Rules} tool. In the grade book, remove the conditional formatting rule that formats the ``Pass'' text with yellow and modify the minimum passing percentage.
 
 1. On the Home Tab, in the Styles Group, select Manage Rules at the very bottom of the
 Conditional Formatting drop-down list.
