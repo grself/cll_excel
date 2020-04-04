@@ -565,17 +565,14 @@ The default styles are a simple way to make specified data stand out, but any ce
 Conditional Formatting is valuable in that it reflects the current data and it changes to whenever the data changes. To test this, delete DeShea's final exam score. (Select \textsf{N5}. Press Delete on your keyboard.) Suddenly, DeShae is failing the course and the Conditional Formatting reflects that. Press CTRL Z (Undo). The test score reappears and the Conditional formatting reflects that as well.
 
 \subsection{Making Changes}
-%TODO Start Here
-What if there is a mistake with the Conditional Formatting or it needs to be delete altogether? Use the \textbf{Conditional Formatting Manage Rules} tool. In the grade book, remove the conditional formatting rule that formats the ``Pass'' text with yellow and modify the minimum passing percentage.
 
-1. On the Home Tab, in the Styles Group, select Manage Rules at the very bottom of the
-Conditional Formatting drop-down list.
-2. Show formatting rules for: This Worksheet (see Figure 3.23).
+What if there is a mistake with the Conditional Formatting or it needs to be delete altogether? Use the \textbf{Conditional Formatting Manage Rules} tool. In the grade book example, remove the conditional formatting rule that formats the ``Pass'' text with yellow and modify the minimum passing percentage.
 
-
-3. We don’t really need to highlight the students who are passing the class, so select that rule in the
-Rules Manager and press the Delete Rule button.
-
+\begin{enumerate}
+	\item On the Home Tab, in the Styles Group, select \textbf{Manage Rules} at the very bottom of the Conditional Formatting drop-down list.
+	\item Show formatting rules for: \textbf{This Worksheet} (see Figure \ref{03:fig23}).
+	\item Since there is no need to highlight the students who are passing the class, select that rule in the Rules Manager and press the \textbf{Delete Rule} button.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -584,15 +581,13 @@ Rules Manager and press the Delete Rule button.
 	\label{03:fig23}
 \end{figure}
 
+In a previous exercise (the \formatfunc{IF} function), it was decided that students were failing if they got a percentage score of less than $ 70\% $, so the Conditional Formatting rule in the Percentage column needs repair.
 
-
-In a previous exercise (the IF function), we decided that students were failing if they got a
-percentage score of less than 70\%, so the Conditional Formatting rule in the Percentage column
-needs repair.
-4. Select the rule that reads Cell Value <0.6.
-5. Select the Edit Rule button, and change the .6 to .7 (see Figure 3.24).
-6. Click OK (or Apply) twice. Double check that your completed workbook matches Figure 3.25.
-
+\begin{enumerate}[resume]
+	\item Select the rule that reads Cell Value $ <0.6 $.
+	\item Select the Edit Rule button, and change the $ 0.6 $ to $ 0.7 $ (see Figure \ref{03:fig24}).
+	\item Click OK (or Apply) twice. Double check that your completed workbook matches Figure \ref{03:fig25}.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -608,32 +603,24 @@ needs repair.
 	\label{03:fig25}
 \end{figure}
 
-
 \subsection{Setting the Print Area}
 
-Before you consider this workbook finished, you need to prepare it for printing. The first thing you
-will do is set the Print Area so that the table of Letter Grades in A27:B32 does not print.
+Before this workbook is finished, it needs to be prepared for printing. The first thing to do is set the Print Area so that the table of Letter Grades in \textsf{A27:B32} does not print.
 
-1. Select A1:R25. This is the only part of the worksheet that you want to have print.
-2. On the Page Layout ribbon, click the Print Area button. Choose Set Print Area from the menu.
+\begin{enumerate}
+	\item Select \textsf{A1:R25}. This is the only part of the worksheet to be printed.
+	\item On the \textbf{Page Layout} ribbon, click the \textbf{Print Area} button. Choose \textbf{Set Print Area} from the menu.
+\end{enumerate}
 
-Next you will preview the worksheet in Print Preview to check that the print area setting worked, as
-well as make sure it is printing on one page.
+Next, preview the worksheet in Print Preview to check that the print area setting worked and to make sure it is printing on one page.
 
-1.   View the workbook in Print Preview.
-2.   Set the page orientation to Landscape.
-3.   Change the page scaling if needed so that the entire worksheet prints on one page.
-4.   Save and close the CH3 Gradebook workbook.
-5.   Compare your work with the self-check answer key (found in the Course Files link) and then
-submit the CH3 Gradebook workbook as directed by your instructor.
-
-
-
-
-
-
-
-
+\begin{enumerate}
+	\item View the workbook in Print Preview.
+	\item Set the page orientation to \textbf{Landscape}.
+	\item Change the page scaling if needed so that the entire worksheet prints on one page.
+	\item Save and close the \textbf{CH3 Gradebook} workbook.
+	\item Compare your work with the self-check answer key (found in the Course Files) and then submit the \textbf{CH3 Gradebook} workbook as directed by the instructor.
+\end{enumerate}
 
 \section{Preparing to Print}
 
@@ -653,22 +640,13 @@ submit the CH3 Gradebook workbook as directed by your instructor.
 	\end{objbox}
 \end{center}
 
-
-
-In this section, we will review a worksheet for formatting consistency, as well as learn two new
-formatting techniques. This worksheet currently prints on four pages, so we will learn new page setup
-options to control how these pages print. A new data file will be used for this section.
+In this section, a worksheet will be reviewed for formatting consistency. Also, two new formatting techniques are presented. The worksheet used in this section currently prints on four pages, so new page setup options are used to control how these pages print. 
 
 \subsection{Reviewing Formatting for Consistency}
 
-Download Data File: CH3 PTP Data
+\textit{Download Data File: CH3 PTP Data}
 
-You have been given a workbook with data about the national parks in the western United States.
-Your coworker formatted the workbook and has asked you to review it for consistency. You also need
-to prepare it for printing. Figure 3.26 shows how the second page of the finished worksheet will
-appear in Print Preview.
-
-
+The workbook contains data about the national parks in the western United States. The workbook has been formatted but needs to be reviewed for consistency and prepared for printing. Figure \ref{03:fig26} shows how the second page of the finished worksheet will appear in Print Preview.
 
 \begin{figure}[H]
 	\centering
@@ -677,44 +655,42 @@ appear in Print Preview.
 	\label{03:fig26}
 \end{figure}
 
-
-
 \subsection{Reviewing Formatting for Inconsistencies}
 
-The first thing you are going to do is review the worksheet for formatting inconsistencies.
+The first thing to do is review the worksheet for formatting inconsistencies.
 
-1. Open the data file named CH3 PTP Data and use the File/Save As command to save it with the
-new name CH3 National Parks.
-2. Scroll through the worksheet and locate the following formatting errors:
+\begin{enumerate}
+	\item Open the data file named \textbf{CH3 PTP Data} and use the File/Save As command to save it with the new name \textbf{CH3 National Parks}.
+	\item Scroll through the worksheet and locate the following formatting errors.
 
-* The formatting of the Utah label does not match the other states.
-* The Year Established values for Hawaii are not center aligned like the other years.
-* The cells for the Nevada data should have the same green fill color as the other alternating
-states.
-* The number of digits after the decimal place for the Size values is inconsistent. Also, these
-values should be formatted with Comma style to make them easier to read.
+	\begin{itemize}
+		\item The formatting of the Utah label does not match the other states.
+		\item The Year Established values for Hawaii are not center aligned like the other years.
+		\item The cells for the Nevada data should have the same green fill color as the other alternating states.
+		\item The number of digits after the decimal place for the Size values is inconsistent. Also, these values should be formatted with Comma style to make them easier to read.
+	\end{itemize}
 
-3. To fix these errors, complete the following steps:
+		\item To fix these errors, complete the following steps.
 
-
-* Merge \& Center A34:A38. Change the font size to 16 and apply Bold format.
-* Center align C28:C29.
-* Apply the green fill color to A31:E31 (be sure to match the green fill color of the other states).
-* Select E4:E43 and apply Comma Style. Use Increase Decimal and/or Decrease Decimal until one digit appears after the decimal place for all values.
-
-4. While you're fixing errors, proofread the sheet and correct any typos.
+	\begin{itemize}
+		\item Merge \& Center \textsf{A34:A38}. Change the font size to 16 and apply Bold format.
+		\item Center align \textsf{C28:C29}.
+		\item Apply the green fill color to \textsf{A31:E31} (be sure to match the green fill color of the other states).
+		\item Select \textsf{E4:E43} and apply Comma Style. Use Increase Decimal and/or Decrease Decimal until one digit appears after the decimal place for all values.
+	\end{itemize}
+	
+	\item While these formatting errors are being corrected all typos should also be corrected.
+\end{enumerate}
 
 \subsection{Fine-Tuning Formatting}
 
-Now that you have fixed the inconsistencies in the formatting, you decide to apply some formatting
-techniques to make the worksheet look even better. You are going to start by vertically aligning the
-names of the states within the cells.
+Now that the formatting inconsistencies have been corrected, apply additional formatting techniques to make the worksheet look better. Start by vertically aligning the names of the states within the cells.
 
-1. Select A4:A43 (the cells with the state labels).
-2. Click the Home tab on the ribbon.
-3. In the Alignment group, click the Middle Align button (see Figure 3.26). Notice that the names
-of the states are now centered between the top and bottom borders of the cells.
-
+\begin{enumerate}
+	\item Select \textsf{A4:A43} (the cells with the state labels).
+	\item Click the Home tab on the ribbon.
+	\item In the Alignment group, click the \textbf{Middle Align} button (see Figure \ref{03:fig27}). Notice that the names of the states are now centered between the top and bottom borders of the cells.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -723,20 +699,15 @@ of the states are now centered between the top and bottom borders of the cells.
 	\label{03:fig27}
 \end{figure}
 
+The next formatting correction is to change the label in \textsf{E3} from ``Size (km2)'' to ``Size (km\textsuperscript{2})'' with the $ 2 $ after km formatted as a superscript.
 
-
-The next new formatting skill is to change the label in E3 from Size (km2) to Size (km2) with the 2
-after km formatted with superscript.
-
-1. Double-click on cell E3 to enter Edit mode
-2. Select just the 2 (be careful not to select anything else).
-3. On the ribbon (Home tab) click the dialog box launcher arrow in the Font group.
-4. In the Effects section of the Format Cells dialog box, check the box for Superscript (see Figure
-3-27). Click OK.
-5. Save the CH3 National Parks file.
-
-
-
+\begin{enumerate}
+	\item Double-click on cell \textsf{E3} to enter Edit mode
+	\item Select just the $ 2 $ (be careful not to select anything else).
+	\item On the ribbon (Home tab) click the dialog box launcher arrow in the Font group.
+	\item In the Effects section of the Format Cells dialog box, check the box for Superscript (see Figure \ref{03:fig28}). Click OK.
+	\item Save the \textbf{CH3 National Parks} file.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -745,26 +716,18 @@ after km formatted with superscript.
 	\label{03:fig28}
 \end{figure}
 
-
 \subsection{Repeating Column (And Row) Labels}
 
-Now that you have fixed the cell and text formatting, you are ready to review the worksheet in Print
-Preview. You will notice that the worksheet is printing on multiple pages, and you cannot tell what
-each column of data represents on some of the pages.
+Now that the cell and text formatting are corrected, review the worksheet in Print Preview. Notice that the worksheet is printing on multiple pages and it is not possible to know what each column of data represents on some of the pages.
 
-1. With the CH3 National Parks file still open, go to Backstage View by clicking the File tab on the
-ribbon. Select Print from the menu.
-2. Click through each of the pages. The worksheet is currently printing on four pages, with the
-City and Sizes columns printing on separate pages from the rest of the data.
-3. Change the Orientation from Portrait to Landscape. This fits all of the columns on one page.All
-of the columns are now on the same page, but the second and third pages have no column labels
-to identify what information is in each column. You are going to use Print Titles to repeat the
-first three rows of the worksheet on each of the printed pages. To set Print Titles you need to
-exit Print Preview.
-4. Exit Backstage View then click the Page Layout tab on the ribbon.
-5. Click the Print Titles button in the Page Setup group on the ribbon. The dialog box shown
-in Figure 3.28 should appear.
-
+\begin{enumerate}
+	\item With the \textbf{CH3 National Parks} file still open, go to Backstage View by clicking the File tab on the ribbon. Select Print from the menu.
+	\item Click through each of the pages. The worksheet is currently printing on four pages, with the City and Sizes columns printing on separate pages from the rest of the data.
+	\item Change the Orientation from Portrait to Landscape to fit all of the columns on one page. Unfortunately, the second and third pages have no column labels to identify the information in each column. Use \textbf{Print Titles} to repeat the first three rows of the worksheet on each of the printed pages. 
+	\item Exit Print Preview.
+	\item Exit Backstage View then click the Page Layout tab on the ribbon.
+	\item Click the Print Titles button in the Page Setup group on the ribbon. The dialog box shown in Figure \ref{03:fig29} should appear.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -773,21 +736,18 @@ in Figure 3.28 should appear.
 	\label{03:fig29}
 \end{figure}
 
+\begin{enumerate}[resume]
+	\item Click in the \textit{Rows to repeat at top} box. Be sure the insertion point is blinking in that box before moving on to the next step.
+	\item In the worksheet, select Rows 1 through 3. The text \$1:\$3 should now appear in the \textit{Rows to repeat at top} box.
+	\item Click OK.
+\end{enumerate}
 
+The worksheet does not change in Normal view, so return to Print Preview. While in Print Preview, notice that the pages are breaking in inconvenient places, but that will be corrected in the next section.
 
-6. Click in the Rows to repeat at top: box. Be sure your insertion point is blinking in that box before
-moving on to the next step.
-7. In the worksheet, select Rows 1 through 3. The text $1:$3 should now appear in the Rows to
-repeat at top: box.
-8. Click OK.
-
-You will not see a change to the worksheet in Normal view, so you will need to return to Print
-Preview. While looking in Print Preview, you will notice that the pages are breaking in inconvenient
-places.
-
-1. Go to Print Preview and look at each of the pages. Notice that the first three rows are now
-repeated at the top of each page.
-2. Exit Backstage View.
+\begin{enumerate}
+	\item Go to Print Preview and look at each of the pages. Notice that the first three rows are now repeated at the top of each page.
+	\item Exit Backstage View.
+\end{enumerate}
 
 \begin{center}
 	\begin{sklbox}{Skill Refresher}
@@ -806,18 +766,13 @@ repeated at the top of each page.
 	\end{sklbox}
 \end{center}
 
-
 \subsection{Inserting Page Breaks}
 
-Notice that the data for California is split between the first and second pages. You want all of the data
-for each state to be together on the same page, so you need to control the page breaks. You are going
-to start by inserting a page break before the California data to force it to start on the second page,
-then you will move the page break for the third page if needed. To make these changes you are going
-to work in Page Break Preview.
+Notice that the data for California is split between the first and second pages. Since it is desirable to keep all of the data for each state on the same page, the page breaks need to be adjusted. Start by inserting a page break before the California data to force it to start on the second page, then move the page break for the third page if needed. To make these changes work in \textbf{Page Break Preview}.
 
-1. Click the View tab on the ribbon then click Page Break Preview in the Workbook Views Group.
-Your screen should look similar to Figure 3.29.
-
+\begin{enumerate}
+	\item 1. Click the View tab on the ribbon then click \textbf{Page Break Preview} in the Workbook Views Group. Your screen should look similar to Figure \ref{03:fig30}.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -826,23 +781,15 @@ Your screen should look similar to Figure 3.29.
 	\label{03:fig30}
 \end{figure}
 
+In Page Break Preview, automatic page breaks are displayed as dotted blue lines. Notice the dotted blue lines after rows $ 19 $ and $ 35 $. These lines indicate where Excel will start a new page. For this worksheet, the first page should to break at the California data, so insert a manual page break.
 
-In Page Break Preview, automatic page breaks are displayed as dotted blue lines. Notice the dotted
-blue lines after rows 19 and 35. These lines indicate where Excel will start a new page. For this
-
-
-
-worksheet, you want the first page to break before the California data, so you are going to insert a
-manual page break.
-
-1. Select cell A15. When inserting a page break, you select the cell below where you want the page
-break to appear.
-2. Click the Page Layout tab on the ribbon.
-3. Click the Breaks button in the Page Setup group (see Figure 3.30).
-4. Select Insert Page Break from the menu. There is now a solid blue line after row 14, which
-indicates a manual page break that was inserted.
-5. Go to Print Preview. Notice that the California data now starts on the second page.
-
+\begin{enumerate}
+	\item Select cell \textsf{A15}. When inserting a page break, select the cell \textit{below} where you want the page break to appear.
+	\item Click the Page Layout tab on the ribbon.
+	\item Click the Breaks button in the Page Setup group (see Figure \ref{03:fig31}).
+	\item Select \textbf{Insert Page Break} from the menu. There is now a solid blue line after row $ 14 $, which indicates a manual page break was inserted.
+	\item Go to Print Preview. Notice that the California data now starts on the second page.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -851,59 +798,44 @@ indicates a manual page break that was inserted.
 	\label{03:fig31}
 \end{figure}
 
+After looking at each page in Print Preview it was decided that the third page should start with Montana. To make this change, move the automatic page break that appears after Nevada.
 
-While looking at each page in Print Preview you decide that the third page should start with Montana.
-To make this change you are going to move the automatic page break that appears after Nevada.
+\begin{enumerate}
+	\item Exit Backstage View. Switch back to Page Break Preview if needed.
+	\item Locate the next dotted blue line (automatic page break).
+	\item Put the pointer over the dotted blue line and it will switch to a vertical double-headed arrow. Click on the dotted blue line and drag it above Montana.
+	\item Release the mouse button when the line is above row $ 30 $ (above Montana). The line will now be a solid blue line, indicating a manual page break.
+	\item Go to Print Preview. The Montana data now appears at the top of the third page.
+\end{enumerate}
 
-1. Exit Backstage View. Switch back to Page Break Preview if needed.
-2. Locate the next dotted blue line (automatic page break).
-3. Put your pointer over the dotted blue line and it will switch to a vertical double-headed arrow.
-Click on the dotted blue line and drag it above Montana.
-4. Release the mouse button when the line is above row 30 (above Montana). The line will now be a
-solid blue line, indicating a manual page break.
-5. Go to Print Preview. The Montana data now appears at the top of the third page.
+While evaluating the pages in Print Preview it appears that there is too much white space at the bottom of the pages. To fix this, center the contents vertically on the pages.
 
-While evaluating the pages in Print Preview you decide that there is too much white space at the
-bottom of the pages. To fix this, you are going to center the contents vertically on the pages.
-
-1. Click the Page Setup link at the bottom of the Settings section of Backstage View to open the
-Page Setup dialog box.
-2. Click on the Margins tab.
-3. In the Center on page section, check the box for Vertically then click OK.
-4. Review each page in Print Preview to see the changes. Exit Backstage View.
+\begin{enumerate}
+	\item Click the Page Setup link at the bottom of the Settings section of Backstage View to open the Page Setup dialog box.
+	\item Click on the Margins tab.
+	\item In the Center on page section, check the box for Vertically then click OK.
+	\item Review each page in Print Preview to see the changes. Exit Backstage View.
+\end{enumerate}
 
 \subsection{Creating a Header and Footer Using Page Layout View}
 
-Now that the worksheet is printing on three pages, with page breaks in appropriate places, you are
-ready to add a header with the current date and filename. You will also add a footer with the page
-number and the total number of pages that will appear as Page 1 of 3. You are going to edit the header
-and footer in Page Layout View.
+Now that the worksheet is printing on three pages, with page breaks in appropriate places, it is time to add a header with the current date and filename. A footer will also be added with the page number and the total number of pages that will appear as ``Page 1 of 3''. 
 
-
-
-1. Click the View tab on the ribbon and click the Page Layout button in the Workbook Views
-group.
-2. The white space at the top of the worksheet should say Add header. Place the mouse pointer
-over the left section of the Header and click to activate that section.
-3. Click the Header \& Footer Tools Design tab on the ribbon.
-4. Click the Current Date button in the Header \& Footer Elements group (see Figure 3.31).
-Inserting the date this way will insert a field that will update every time the workbook is opened.
-5. Click in the right section of the Header. Click the Filename button in the Header \& Footer
-Elements group (see Figure 3.31). Inserting the filename this way will insert a field that will
-update if the filename is changed.
-6. Click the Go to Footer button in the Navigation group of commands.
-7. In the center section of the footer, type the word Page with a space after it.
-8. Click the Page Number button in the Header \& Footer Elements group (see Figure 3.31), then
-type a space after the \&[Page] code that appears.
-9. Type the word of with a space after it, then click the Number of Pages button in the Header \&
-Footer Elements group (see Figure 3.31). The footer should match Figure 3.32.
-10. Click anywhere on the worksheet to close the Footer editing.
-11. Review the worksheet again in Print Preview. Pay careful attention to the page numbers in the
-footer to ensure they will print correctly, then exit Backstage View.
-12. Save the CH3 National Parks workbook.
-13. Compare your work with the self-check answer key (found in the Course Files link) and then
-submit the CH3 National Parks workbook as directed by your instructor.
-
+\begin{enumerate}
+	\item Click the View tab on the ribbon and click the Page Layout button in the Workbook Views group.
+	\item The white space at the top of the worksheet should say Add header. Place the mouse pointer over the left section of the Header and click to activate that section.
+	\item Click the Header \& Footer Tools Design tab on the ribbon.
+	\item Click the \textbf{Current Date} button in the Header \& Footer Elements group (see Figure \ref{03:fig32}). Inserting the date this way will insert a field that will update every time the workbook is opened.
+	\item Click in the right section of the Header. Click the \textbf{Filename} button in the Header \& Footer Elements group (see Figure \ref{03:fig32}). Inserting the filename this way will insert a field that will update if the filename is changed.
+	\item Click the \textbf{Go to Footer} button in the Navigation group of commands.
+	\item In the center section of the footer, type the word Page with a space after it.
+	\item Click the Page Number button in the Header \& Footer Elements group (see Figure \ref{03:fig32}), then type a space after the \&[Page] code that appears.
+	\item Type the word ``of'' with a space after it, then click the \textbf{Number of Pages} button in the Header \& Footer Elements group (see Figure \ref{03:fig32}). The footer should match Figure \ref{03:fig33}.
+	\item Click anywhere on the worksheet to close the Footer editing.
+	\item Review the worksheet again in Print Preview. Pay careful attention to the page numbers in the footer to ensure they will print correctly, then exit Backstage View.
+	\item Save the \textbf{CH3 National Parks} workbook.
+	\item Compare your work with the self-check answer key (found in the Course Files) and then submit the \textbf{CH3 National Parks} workbook as directed by your instructor.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -918,8 +850,6 @@ submit the CH3 National Parks workbook as directed by your instructor.
 	\caption{Completed Footer}
 	\label{03:fig33}
 \end{figure}
-
-
 
 \begin{center}
 	\begin{sklbox}{Skill Refresher}
@@ -957,138 +887,103 @@ submit the CH3 National Parks workbook as directed by your instructor.
 	\end{tkwbox}
 \end{center}
 
-
 \section{Chapter Practice}
-
-
-
 
 \subsection{Household Budget}
 
-Download Data File: PR3 Data
+\textit{Data File: PR3 Data}
 
-Elijah and Kelly Williams are a recently married couple living in Portland, Oregon. Elijah works part
-time and attends the local community college. Kelly works as a marketing manager at a clothing
-company in North Portland. They are trying to decide if they can afford to move to a better
-apartment, one that is closer to work and school. They want to use Excel to examine their household
-budget. They have started their budget spreadsheet, but they need your help with it.
+Elijah and Kelly Williams are a recently married couple living in Portland, Oregon. Elijah works part time and attends the local community college. Kelly works as a marketing manager at a clothing company in North Portland. They are trying to decide if they can afford to move to a better apartment, one that is closer to work and school. They want to use Excel to examine their household budget. They have started their budget spreadsheet, but they need help with it.
 
-1. Open the file named PR3 Data and then save it as PR3 Williams.
-2. Insert two new rows at the top of the worksheet.
-3. Enter the following text:
+\begin{enumerate}
+	\item Open the file named \textbf{PR3 Data} and then save it as \textbf{PR3 Williams}.
+	\item Insert two new rows at the top of the worksheet.
+	\item Enter the following text in the indicated cells.
 
-A2        Category
-B2        Item
-C2        January
-O2        Yearly Total (adjust column width as needed to fit this text)
+\begin{itemize}
+	\item \textsf{A2}: Category
+	\item \textsf{B2}: Item
+	\item \textsf{C2}: January
+	\item \textsf{O2}: Yearly Total (adjust column width as needed to fit this text)
+\end{itemize}
 
-1. Using the text in cell C2, use Autofill to fill in the months February through December in cells
-D2:N2. Adjust column widths as needed to fit the names of the months in these columns.
-2. Bold and center align all of the headings in Row 2.
-3. Type “Williams Family Budget” in A1. Merge \& Center A1:O1. Make this text 22 point bold.
-4. Next you need to complete the monthly values for some of the income and expense items. In the
-rows for Income \#1, Income \#2, Mortgage/Rent, Homeowners/Rent Insurance, Car Insurance,
-Car Payment, and Gym Fees/Memberships, copy the values for January to the cells for February
-through December.
-5. Use the Totals tab in the Quick Analysis tool to add the SUM to Column O. Delete the formulas
-from O7, O17, O24, O32, and O38.
-6. In C6: O6, use the SUM function to calculate the Total Income for each month.
-7. Similar to step 6, use the SUM function to calculate the Total Home Expenses, Total Daily
-Living Expenses, Total Transportation Expenses, Total Entertainment Expenses, and Total
-Personal Expenses for each month.
-8. Use the SUM function to calculate the Yearly Total Personal Expenses in cell O45.
-9. Format the numerical data in Row 3 as Currency with no decimal places. Format all the total
-rows as Currency with no decimal places and with a top border.
-
-
-10. Apply the Comma format with no decimal places in all the other rows.
-11. In A47, type “Total Expenses”.
-12. In C47, enter a formula that adds together all of the expense category totals for January. Copy
-the formula in C47 to D47:O47.
-13. In A49, type “NET INCOME”. Bold and indent this text.
-14. In C49, enter a formula that calculates the difference between Total Income and Total Expenses
-(=Total Income-Total Expenses) for January. Copy this formula to D49:O49.
-15. Format the data in Rows 47 and 49 as Currency with no decimal places. Bold O47 and O49. Add
-a Top and Double Bottom Border to the data in Row 49.
-16. Select C49:N49. Use the Quick Analysis tool to add data bars to this data.
-17. In B50, type “New Apartment?”. Enter an IF statement in C50 that displays the word “No” if the
-amount in C49 is less than or equal to zero and “Maybe” if the amount is greater than zero.
-Copy C50 to D50:N50.
-18. Check to see if your IF statement worked correctly in row 50. If the cells say “No” when the data
-bar in the cell above it is red and “Maybe” when the data bar in the cell above it is blue, your IF
-statement is correct.
-19. Review the worksheet in Print Preview. Make any changes needed to make the worksheet print
-on one page with landscape orientation.
-20. Save the PR3 Williams workbook.
-21. Compare your work with the self-check answer key and then submit the PR3 Williams
-workbook as directed by your instructor.
-
-
-
+	\item Using the text in cell \textsf{C2}, use Autofill to fill in the months February through December in cells \textsf{D2:N2}. Adjust column widths as needed to fit the names of the months in these columns.
+	\item Bold and center align all of the headings in Row $ 2 $.
+	\item Type ``Williams Family Budget'' in A. Merge \& Center \textsf{A1:O1}. Make this text $ 22 $ point bold.
+	\item Next complete the monthly values for some of the income and expense items. In the rows for Income \#1, Income \#2, Mortgage/Rent, Homeowners/Rent Insurance, Car Insurance, Car Payment, and Gym Fees/Memberships, copy the values for January to the cells for February through December.
+	\item Use the Totals tab in the Quick Analysis tool to add the SUM to Column O. Delete the formulas from \textsf{O7}, \textsf{O17}, \textsf{O24}, \textsf{O32}, and \textsf{O38}.
+	\item In \textsf{C6:O6}, use the SUM function to calculate the Total Income for each month.
+	\item Use the SUM function to calculate the Total Home Expenses, Total Daily Living Expenses, Total Transportation Expenses, Total Entertainment Expenses, and Total Personal Expenses for each month.
+	\item Use the SUM function to calculate the Yearly Total Personal Expenses in cell \textsf{O45}.
+	\item Format the numerical data in Row $ 3 $ as Currency with no decimal places. Format all the total rows as Currency with no decimal places and with a top border.
+	\item Apply the Comma format with no decimal places in all the other rows.
+	\item In \textsf{A47}, type ``Total Expenses''.
+	\item In \textsf{C47}, enter a formula that adds together all of the expense category totals for January. Copy the formula in \textsf{C47} to \textsf{D47:O47}.
+	\item In \textsf{A49}, type ``NET INCOME''. Bold and indent this text.
+	\item In \textsf{C49}, enter a formula that calculates the difference between Total Income and Total Expenses (\formatfunc{=Total Income-Total Expenses}) for January. Copy this formula to \textsf{D49:O49}.
+	\item Format the data in Rows $ 47 $ and $ 49 $ as Currency with no decimal places. Bold \textsf{O47} and \textsf{O49}. Add a Top and Double Bottom Border to the data in Row $ 49 $.
+	\item Select \textsf{C49:N49}. Use the Quick Analysis tool to add data bars to this data.
+	\item In \textsf{B50}, type ``New Apartment?''. Enter an \formatfunc{IF} statement in \textsf{C50} that displays the word ``No'' if the amount in \textsf{C49} is less than or equal to zero and ``Maybe'' if the amount is greater than zero. Copy \textsf{C50} to \textsf{D50:N50}.
+	\item Check to see if the \formatfunc{IF} statement worked correctly in row \textsf{50}. If the cells say ``No'' when the data bar in the cell above it is red and ``Maybe'' when the data bar in the cell above it is blue, then the \formatfunc{IF} statement is correct.
+	\item Review the worksheet in Print Preview. Make any changes needed to make the worksheet print on one page with landscape orientation.
+	\item Save the \textbf{PR3 Williams} workbook.
+	\item Compare the result with the self-check answer key and then submit the \textbf{PR3 Williams} workbook as directed by your instructor.
+\end{enumerate}
 
 \section{Chapter Scored}
 
-
-
-
 \subsection{Astrocoffee Company}
 
-Download Data File: SC3 Data
+\textit{Data File: SC3 Data}
 
-AstroCoffee: Cynthia McHenry owns a coffee supply company named AstroCoffee. She needs some
-help writing the formulas for the order form she uses to invoice customers. You will need to write the
-formulas for all of the calculations on the form. Some of the more complex parts are determining if
-the customer will get a discount (based on the customer status) as well as the shipping charge (orders
-over \$200 get free shipping). You will use IF functions for both of those calculations.
+Cynthia McHenry owns a coffee supply company named AstroCoffee. She needs some help writing the formulas for the order form she uses to invoice customers. Formulas are needed for all of the calculations on the form. Some of the more complex parts are determining if the customer will get a discount (based on the customer status) as well as the shipping charge (orders over \$200 get free shipping). Use \formatfunc{IF} functions for both of those calculations.
 
-1. Open the SC3 Data workbook and save the workbook as SC3 AstroCoffee.
-2. Enter the following order information:
-Order \#: 45676
-Order Date: use a function that displays the current date
-3. Enter the following Billing Information:
-Edwina Copeland
-4270 Heron Way Portland, OR 97225
-503-779-1873
-edwina.copeland@hmail.com
-4. For the Shipping Information, create formulas using cell references to display the corresponding
-information from the Billing Information section. For example, the Customer cell will display
-the name of the customer in cell C11.
-5. In the range B19:E22, enter the following item orders:
+\begin{enumerate}
+	\item Open the SC3 Data workbook and save the workbook as SC3 AstroCoffee.
+\item Enter the following order information.
+\begin{itemize}
+	\item Order \#: 45676
+	\item Order Date: use a function that displays the current date
+\end{itemize}
 
-Item \# Description                       Qty Unit Price
-K56    Dark Mocha K-Cups (12 pack)       1    10.99
-G03    Decaf Dark Roast – Ground (1 lb.) 3    12.99
-B07    Dark Roast – Whole Bean (1 lb.)   2    13.99
-K52    Chai Latte K-Cups (12 pack)       3    12.99
+\item Enter the following Billing Information.
 
-6. In cell F19, enter an IF function that tests whether the order quantity in cell D19 is greater than
-0 (zero). lf it is, return the value of the Qty (in D19) multiplied by the Unit Price (in E19);
-otherwise, return no text by entering “”.
-7. Copy/fill this formula into the other cells in the range F19:F25. Hint: be sure to copy the formula to
-all of the Item Total cells, even if it is a blank row. You want the worksheet to be prepared for orders with
-more items in the future.
+\begin{table}[H]
+	\centering
+	\begin{tabulary}{\linewidth}{L}
+		\hline
+		Edwina Copeland\\
+		4270 Heron Way Portland, OR 97225\\
+		503-779-1873\\
+		edwina.copeland@hmail.com\\
+		\hline
+	\end{tabulary} 
+\end{table}
 
+\item For the Shipping Information, create formulas using cell references to display the corresponding information from the Billing Information section. For example, the Customer cell will display the name of the customer in cell \textsf{C11}.
+\item In the range \textsf{B19:E22}, enter the following item orders:
 
-8. In cell F26, calculate the sum of all of the Item Total cells.
-9. In cell F27, use an IF function to calculate the discount amount for this order based on the
-customer’s status (which is found in F16). If the customer’s status is Preferred, the discount
-amount will be the Order Subtotal times the discount percentage found in cell B29; otherwise
-the discount amount will be 0 (zero). Hint: You will need to use a formula for the Value if True
-argument.
-10. Calculate the Discounted Total for this order in cell F28. Hint: Use a simple subtraction formula.
-11. In cell F29, use an IF function to display the correct Shipping Charge, based on the amount of
-the Discounted Total. If the Discounted Total is greater than or equal to the Free Shipping
-Minimum found in cell B28, the Shipping Charge is 0 (zero); otherwise, the Shipping Charge is
-5\% of the Discounted Total. Hint: You will need to use a formula for the Value if False to calculate what
-5\% of the Discounted Total will be.
-12. Calculate the Invoice Total in cell F31. Hint: This will be the total of the Discounted Total and the
-Shipping Charge.
-13. Review the worksheet in Print Preview. Make any changes needed to make the worksheet print
-on one page.
-14. Save the SC3 AstroCoffee workbook.
-15. Submit the SC3 Astro Coffee workbook as directed by your instructor.
+{\small
+	\begin{longtable}{p{0.4in}p{2.10in}p{0.25in}p{0.5in}} %Max width: 4.25in
+		\textbf{Item \#} & \textbf{Description} & \textbf{Qty} & \textbf{Unit Price}\endhead
+		\hline \\
+		K56 & Dark Mocha K-Cups (12 pack) & 1 & 10.99\\
+		G03 & Decaf Dark Roast – Ground (1 lb.) & 3 & 12.99\\
+		B07 & Dark Roast – Whole Bean (1 lb.) & 2 & 13.99\\
+		K52 & Chai Latte K-Cups (12 pack) & 3 & 12.99\\
+		\caption{AstroCoffee Orders}
+		\label{03:tab02}
+	\end{longtable}
+}
 
-
-
-
-
+\item In cell \textsf{F19}, enter an \formatfunc{IF} function that tests whether the order quantity in cell \textsf{D19} is greater than $ 0 $ (zero). lf it is, return the value of the Qty (in \textsf{D19}) multiplied by the Unit Price (in \textsf{E19}), otherwise, return no text by entering ``''.
+\item Copy/fill this formula into the other cells in the range \textsf{F19:F25}. \textit{Hint:} be sure to copy the formula to all of the Item Total cells, even if it is a blank row. You want the worksheet to be prepared for orders with more items in the future.
+\item In cell \textsf{F26}, calculate the sum of all of the Item Total cells.
+\item In cell \textsf{F27}, use an \formatfunc{IF} function to calculate the discount amount for this order based on the customer's status (which is found in \textsf{F16}). If the customer's status is Preferred, the discount amount will be the Order Subtotal times the discount percentage found in cell \textsf{B29}; otherwise the discount amount will be $ 0 $ (zero). \textit{Hint:} You will need to use a formula for the Value if True argument.
+\item Calculate the Discounted Total for this order in cell \textsf{F28}. \textit{Hint:} Use a simple subtraction formula.
+\item In cell \textsf{F29}, use an \formatfunc{IF} function to display the correct Shipping Charge, based on the amount of the Discounted Total. If the Discounted Total is greater than or equal to the Free Shipping Minimum found in cell \textsf{B28}, the Shipping Charge is $ 0 $ (zero), otherwise, the Shipping Charge is $ 5\% $ of the Discounted Total. \textit{Hint:} You will need to use a formula for the Value if False to calculate what $ 5\% $ of the Discounted Total will be.
+\item Calculate the Invoice Total in cell \textsf{F31}. \textit{Hint:} This will be the total of the Discounted Total and the Shipping Charge.
+\item Review the worksheet in Print Preview. Make any changes needed to make the worksheet print on one page.
+\item Save the \textbf{SC3 AstroCoffee} workbook.
+\item Submit the \textbf{SC3 Astro Coffee} workbook as directed by your instructor.
+\end{enumerate}
