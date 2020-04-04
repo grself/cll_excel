@@ -6,85 +6,67 @@ One of the most important things to consider when using charts in Excel is that 
 
 \section{Choosing a Chart Type}
 
-LEARNING OBJECTIVES
+\begin{center}
+	\begin{objbox}{Learning Objectives}
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
+			\item Construct a line chart to show a time series trend.
+			\item Learn how to adjust the Y axis scale.
+			\item Construct a line chart to present a comparison of two trends.
+			\item Learn how to use a column chart to show a frequency distribution.
+			\item Create a separate chart sheet for a chart embedded in a worksheet.
+			\item Construct a column chart that compares two frequency distributions.
+			\item Learn how to use a pie chart to show the percent of total for a data set.
+			\item Construct a stacked column chart to show how a percent of total changes over time.
+			
+		\end{itemize}
+	\end{objbox}
+\end{center}
 
-1. Construct a line chart to show a time series trend.
-2. Learn how to adjust the Y axis scale.
-3. Construct a line chart to present a comparison of two trends.
-4. Learn how to use a column chart to show a frequency distribution.
-5. Create a separate chart sheet for a chart embedded in a worksheet.
-6. Construct a column chart that compares two frequency distributions.
-7. Learn how to use a pie chart to show the percent of total for a data set.
-8. Construct a stacked column chart to show how a percent of total changes over time.
+This section reviews the most commonly used Excel chart types. To demonstrate the variety of chart types available in Excel, it is necessary to use a variety of data sets. This is necessary not only to demonstrate the construction of charts but also to explain how to choose the right type of chart given the data and idea being communicated.
 
+Here are a few key points to consider before creating any chart in Excel.
 
+\begin{enumerate}
+	\item The first is identifying the idea or message. It is important to keep in mind that the primary purpose of a chart is to present quantitative information to an audience. Therefore, first decide what message or idea is being presented. This is critical in selecting specific data from a worksheet that will be used in a chart. This chapter continually reinforces the idea of determining the intended message before creating each chart.
+	\item The second key point is selecting the right chart type. The chart type selected will depend on the data and the message to communicate.
+	\item The third key point is identifying the values that should appear on the X and Y axes. One of the ways to identify which values belong on the X and Y axes is to sketch the chart on paper first. Visualizing the chart first makes easier to select the information and then use Excel to construct an effective chart that accurately communicates the message. 
+\end{enumerate}
 
-This section reviews the most commonly used Excel chart types. To demonstrate the variety of chart
-types available in Excel, it is necessary to use a variety of data sets. This is necessary not only to
-demonstrate the construction of charts but also to explain how to choose the right type of chart given
-your data and the idea you intend to communicate.
+Table \ref{04:tab01}, ``Key Steps Before Constructing an Excel Chart,'' provides a brief summary of the preceding points.
 
-Before we begin, let’s review a few key points you need to consider before creating any chart in Excel.
-
-1. The first is identifying your idea or message. It is important to keep in mind that the primary
-purpose of a chart is to present quantitative information to an audience. Therefore, you must
-first decide what message or idea you wish to present. This is critical in helping you select
-specific data from a worksheet that will be used in a chart. Throughout this chapter, we will
-reinforce the intended message first before creating each chart.
-2. The second key point is selecting the right chart type. The chart type you select will depend
-on the data you have and the message you intend to communicate.
-3. The third key point is identifying the values that should appear on the X and Y axes. One of
-the ways to identify which values belong on the X and Y axes is to sketch the chart on paper
-first. If you can visualize what your chart is supposed to look like, you will have an easier time
-selecting information correctly and using Excel to construct an effective chart that accurately
-communicates your message. Table 4.1 “Key Steps Before Constructing an Excel Chart”
-provides a brief summary of these points.
-
-
-Table 4.1 Key Steps before Constructing an Excel Chart
-
-Step                   Description
-Define your            Identify the main idea you are trying to communicate to an audience. If there is no main point or important
-message.               message that can be revealed by a chart, you might want to question the necessity of creating a chart.
-Identify the data      Once you have a clear message, identify the data on a worksheet that you will need to construct a chart. In
-you need.              some cases, you may need to create formulas or consolidate items into broader categories.
-
-
-The type of chart you select will depend on the message you are communicating and the data you are using.
-Select a chart type.
-After you have selected a chart type, you may find that drawing a sketch is helpful in identifying which
-values should be on the X and Y axes. In Excel, the axes are:
-Identify the values
-for the X and Y
-axes.                  The “category” axis. Usually the horizontal axis – where the labels are found
-
-The “value” axis. Usually the vertical axis – where the numbers are found.
-
+{\small
+	\begin{longtable}{p{0.75in}p{3.0in}} %Max width: 4.25in
+		\textbf{Step} & \textbf{Description} \endhead
+		\hline \\
+		Define the message & Identify the main idea being communicated. If there is no main point or important message that can be revealed by a chart then do not create a chart.\\
+		Identify the data needed & Once there is a clear message, identify the data on a worksheet that is needed to construct a chart. In some cases, formulas may be needed to better define the data or some data items may need to be consolidated into broader categories.\\
+		Select a chart type & The type of chart selected will depend on the message being communicated and the data being presented.\\
+		Identify the values for the X and Y axes & After selecting a chart type, drawing a sketch is often helpful in identifying which values should be on the X and Y axes. In Excel, the axes are: the ``category'' axis, which is usually the horizontal axis, where the labels are found, and the ``value'' axis, which is usually the vertical axis, where the numbers are found.\\
+		\caption{Key Steps before Constructing an Excel Chart}
+		\label{04:tab01}
+	\end{longtable}
+}
 
 \subsection{Time Series Trend: Line Chart 1}
 
-The first chart we will demonstrate is a line chart. Figure 4.1 shows part of the data that will be used
-to create two line charts. This chart will show the trend of the NASDAQ stock index.
+The first chart is a line chart. Figure \ref{04:fig01} shows part of the data that will be used to create two line charts. This chart will show the trend of the NASDAQ stock index.
 
-Read more: \url{http://www.investopedia.com/terms/n/nasdaq.asp}
+\footnote{The NASDAQ data was found at \url{http://www.investopedia.com/terms/n/nasdaq.asp}}
 
-This chart will be used to communicate a simple message: to show how the index has performed over
-a two-year period. We can use this chart in a presentation to show whether stock prices have been
-increasing, decreasing, or remaining constant over the designated period of time.
+This chart will be used to communicate a simple message: to show how the index has performed over a two-year period. This chart can be used in a presentation to show whether stock prices have been increasing, decreasing, or remaining constant over the designated period of time.
 
-
-
-
-Integrity Check
-
-Carefully Select Data When Creating a Chart
-
-Just because you have data in a worksheet does not mean it must all be placed onto a chart. When creating a chart,
-it is common for only specific data points to be used. To determine what data should be used when creating a chart,
-you must first identify the message or idea that you want to communicate to an audience.
-
-
+\begin{center}
+	\begin{infobox}{Integrity Check}
+		\textbf{Carefully Select Data When Creating a Chart}
+		\\
+		\\
+		Just because a worksheet contains data does not mean it must all be placed onto a chart. When creating a chart, it is common for only specific data points to be used. To determine what data should be used when creating a chart, start by identifying the message or idea that must be communicated to the audience.
+	\end{infobox}
+\end{center}
 
 \begin{figure}[H]
 	\centering
@@ -93,27 +75,17 @@ you must first identify the message or idea that you want to communicate to an a
 	\label{04:fig01}
 \end{figure}
 
+Before creating the line chart, it is important to identify why it is an appropriate chart type given the message being communicated and the data available. When presenting the trend for any data over a designated period of time, the most commonly used chart types are the line chart and the column chart. A column chart is limited to a certain number of bars or data points. As the number of bars increases it becomes increasingly difficult to read. The worksheet contains 24 points of data that were used to construct the chart shown in Figure \ref{04:fig01}. This is generally too many data points to put on a column chart, which is why a line chart is a better choice. The line chart will show the volume of sales for the NASDAQ on the Y axis and the Month number on the X axis. The following steps explain how to construct this chart.
 
+\textit{Data file: CH4 Data}
 
-Before we create the line chart, it is important to identify why it is an appropriate chart type given the
-message we wish to communicate and the data we have. When presenting the trend for any data over
-a designated period of time, the most commonly used chart types are the line chart and the column
-chart. With the column chart, you are limited to a certain number of bars or data points. As you
-increase the number of bars on a column chart, it becomes increasingly difficult to read. As you scroll
-through the data on the worksheet shown in Figure 4.1 you will see that there are 24 points of data
-used to construct the chart. This is generally too many data points to put on a column chart, which is
-why we are using a line chart. Our line chart will show the volume of sales for the NASDAQ on the Y
-axis and the Month number on the X axis. The following steps explain how to construct this chart:
-
-Download Data file: CH4 Data
-
-1. Open data file CH4 Data and save a file to your computer as CH4 Charting.
-2. Navigate to the Stock Trend worksheet.
-3. Highlight the range B4:C28 on the Stock Trend worksheet. (Note – you have selected a label in
-the first row and more labels in column B. Watch where they show up in your completed chart.)
-4. Click the Insert tab of the ribbon.
-5. Click the Line button in the Charts group of commands. Click the first option from the list,
-which is a basic 2D Line Chart (see Figure 4.2).
+\begin{enumerate}
+	\item Open data file \textbf{CH4 Data} and save it as \textbf{CH4 Charting}.
+	\item Navigate to the \textbf{Stock Trend} worksheet.
+	\item Highlight the range \textsf{B4:C28} on the \textbf{Stock Trend} worksheet. (Note that a label in the first row and more labels in column B are selected. Watch where they show up in the completed chart.)
+	\item Click the Insert tab of the ribbon.
+	\item Click the \textbf{Line} button in the \textbf{Charts} group of commands. Click the first option from the list, which is a basic 2D Line Chart (see Figure \ref{04:fig02}).
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -122,32 +94,18 @@ which is a basic 2D Line Chart (see Figure 4.2).
 	\label{04:fig02}
 \end{figure}
 
+This adds, or embeds, the line chart to the worksheet, as shown in Figure \ref{04:fig03}. Notice where the labels showed up on the chart.
 
+\begin{center}
+	\begin{infobox}{Why?}
+		\textbf{Line Chart vs. Column Chart}
+		\\
+		\\
+		Both a line chart and a column chart can be used to illustrate a trend over time. However, a line chart is far more effective when there are many periods of time being measured. For example, if fifty-two weeks are being reported a column chart would require fifty-two bars. A general rule of thumb is to use a column chart when twenty bars or fewer are required. A column chart becomes difficult to read as the number of bars exceeds twenty.
+	\end{infobox}
+\end{center}
 
-
-This adds, or embeds, the line chart to the worksheet, as shown in Figure 4.3
-
-Figure 4.3 shows the embedded line chart in the Stock Trend worksheet. Do you see where your labels
-showed up on the chart?
-
-
-
-
-Why?
-
-Line Chart vs. Column Chart
-
-We can use both a line chart and a column chart to illustrate a trend over time. However, a line chart is far more
-effective when there are many periods of time being measured. For example, if we are measuring fifty-two weeks,
-a column chart would require fifty-two bars. A general rule of thumb is to use a column chart when twenty bars or
-less are required. A column chart becomes difficult to read as the number of bars exceeds twenty.
-
-
-
-
-
-Notice that additional tabs, or contextual tabs, are added to the ribbon. We will demonstrate the
-commands in these tabs throughout this chapter. These tabs appear only when the chart is activated.
+Notice that additional tabs, or contextual tabs, are added to the ribbon when a chart is selected. We will demonstrate the commands in these tabs throughout this chapter. These tabs appear only when the chart is activated.
 
 \begin{figure}[H]
 	\centering
@@ -156,88 +114,66 @@ commands in these tabs throughout this chapter. These tabs appear only when the 
 	\label{04:fig03}
 \end{figure}
 
-
-
-
-
-
-As shown in Figure 4.3, the embedded chart is not placed in an ideal location on the worksheet
-since it is covering several cell locations that contain data. The following steps demonstrate common
-adjustments that are made when working with embedded charts:
+As shown in Figure \ref{04:fig03}, the embedded chart is not placed in an ideal location on the worksheet since it is covering several cell locations that contain data. The following steps demonstrate common adjustments that are made when working with embedded charts.
 
 1. Moving a chart: Click and drag the upper left corner of the chart to the corner of cell B30.
-
-
 2. Resizing a chart: Place the mouse pointer over the right upper corner sizing handle, hold down
 the ALT key on your keyboard, and click and drag the chart so it “snaps” to the right side of
 Column I.
-3. Repeat step 2 to resize the chart so the top “snaps” to the top of Row 30, the bottom “snaps” to
-
-
-
-
-Note: Excel 2010 uses three contextual tabs for charts. Later versions use only two. Each has all the
-same tools. They are just organized a little differently.
-
-
-
-
-
-the bottom of Row 45, and the left side “snaps” to the left side of Column B. Make sure the right
-side of the chart snaps to the line between column I and J.
+3. Repeat step 2 to resize the chart so the top “snaps” to the top of Row 30, the bottom ``snaps'' to the bottom of Row 45, and the left side “snaps” to the left side of Column B. Make sure the right side of the chart snaps to the line between column I and J.
 4.   Adjusting the chart title: Click the chart title once. Then click in front of the first letter. You
 should see a blinking cursor in front of the letter. This allows you to modify the title of the chart.
-5.   Type the following in front of the first letter in the chart title: May 2014-2016 Trend for
-NASDAQ Sales.
+5.   Type the following in front of the first letter in the chart title: May 2014-2016 Trend for NASDAQ Sales.
 6.   Click anywhere outside of the chart to deactivate it.
 7.   Save your work.
 
-Figure 4.4 shows the line chart after it is moved and resized. You can also see that the title of the
-chart has been edited to read May 2014-2016 Trend for NASDAQ Sales Volume. Notice that the
-sizing handles do not appear around the perimeter of the chart. This is because the chart has been
-deactivated. To activate the chart, click anywhere inside the chart perimeter.
+Note: Excel 2010 uses three contextual tabs for charts. Later versions use only two. Each has all the same tools. They are just organized a little differently.
+
+Figure 4.4 shows the line chart after it is moved and resized. You can also see that the title of the chart has been edited to read May 2014-2016 Trend for NASDAQ Sales Volume. Notice that the sizing handles do not appear around the perimeter of the chart. This is because the chart has been deactivated. To activate the chart, click anywhere inside the chart perimeter.
 
 \begin{tabular}{p{3.25in}p{0.5in}} %Max width: 4.25in
 	\hline
-	\textit{Note:} The pointer will change into the shape illustrated on the right when it is in the right place to \textbf{move} the chart. & \raisebox{-0.30in}{\includegraphics[]{gfx/ch04_fig04}} \\
+	\textit{Note:} The pointer will change into the shape illustrated on the right when it is in the right place to \textbf{move} the chart. & \raisebox{-0.30in}{\includegraphics[]{gfx/ch04_fig99}} \\
 	\hline
-	\textit{Note:} The pointer will change into the shape illustrated on the right when it is in the right place to \textbf{resize} the chart. & \raisebox{-0.30in}{\includegraphics[]{gfx/ch04_fig05}} \\
+	\textit{Note:} The pointer will change into the shape illustrated on the right when it is in the right place to \textbf{resize} the chart. & \raisebox{-0.30in}{\includegraphics[]{gfx/ch04_fig98}} \\
 	\hline
 \end{tabular}
 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig06}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig04}
 	\caption{Line Chart Moved and Resized}
-	\label{04:fig06}
+	\label{04:fig04}
 \end{figure}
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Inserting a Line Chart}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-Skill Refresher
+			\item Highlight a range of cells that contain data that will be used to create the chart. Be sure to include labels in the selection.
+			\item Click the Insert tab of the ribbon.
+			\item Click the Line button in the Charts group.
+			\item Select a format option from the Line Chart drop-down menu.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
+\begin{center}
+	\begin{infobox}{Integrity Check}
+		\textbf{Category Axis}
+		\\
+		\\
+		When using line charts in Excel, keep in mind that anything placed on the X axis is considered a descriptive label, not a numeric value. This is an example of a category axis. This is important because there will never be a change in the spacing of any items placed on the X axis of a line chart. If numeric data must be placed on the category axis the chart will need to be modified. That process is covered later in the chapter.		
+	\end{infobox}
+\end{center}
 
-Inserting a Line Chart
-
-
-
-
-Integrity Check
-
-When using line charts in Excel, keep in mind that anything placed on the X axis is considered a descriptive label,
-not a numeric value. This is an example of a category axis. This is important because there will never be a change in
-the spacing of any items placed on the X axis of a line chart. If you need to create a chart using numeric data on the
-category axis, you will have to modify the chart. We will do that later in the chapter.
-
-
-
-
-
-1. Highlight a range of cells that contain data that will be used to create the chart. Be sure to include labels
-in your selection.
-2. Click the Insert tab of the ribbon.
-3. Click the Line button in the Charts group.
-4. Select a format option from the Line Chart drop-down menu.
 
 
 
@@ -265,9 +201,9 @@ Press “Escape” to turn the menu off and try again
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig07}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig05}
 	\caption{Format Axis Pane}
-	\label{04:fig07}
+	\label{04:fig05}
 \end{figure}
 
 
@@ -289,31 +225,33 @@ audience to see the magnitude of the trend.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig08}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig06}
 	\caption{Adjusted Y Axis for the S\&P 500 Chart}
-	\label{04:fig08}
+	\label{04:fig06}
 \end{figure}
 
 
 
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Adjusting the Y Axis Scale}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-
-
-Skill Refresher
-
-
-Adjusting the Y Axis Scale
-
-1. Click anywhere along the Y axis to activate it.
-2. Right Click.
-(Note, you can also select the Format tab in the Chart Tools section of the ribbon.)
-3. Select Format Axis . . .
-4. In the Format Axis pane, make your changes to the Axis Options.
-5. Click in the input box next to the desired axis option and then type the new scale value.
-6. Click the Close button at the top right of the Format Axis pane to close it.
-
-
+			\item Click anywhere along the Y axis to activate it.
+			\item Right Click. (\textit{Note}: you can also select the Format tab in the Chart Tools section of the ribbon.)
+			\item Select Format Axis . . .
+			\item In the Format Axis pane, make the changes to the Axis Options.
+			\item Click in the input box next to the desired axis option and then type the new scale value.
+			\item Click the Close button at the top right of the Format Axis pane to close it.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
 \subsection{Trend Comparisons: Line Chart 2}
 
@@ -344,9 +282,9 @@ changed.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig09}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig07}
 	\caption{Trend Comparison Line Chart}
-	\label{04:fig09}
+	\label{04:fig07}
 \end{figure}
 
 
@@ -381,9 +319,9 @@ the chart.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig10}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig08}
 	\caption{Adding a Secondary Axis}
-	\label{04:fig10}
+	\label{04:fig08}
 \end{figure}
 
 
@@ -403,9 +341,9 @@ Better! But, it would be nice to be able to see that the values on the right rep
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig11}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig09}
 	\caption{Modifying the Secondary Axis}
-	\label{04:fig11}
+	\label{04:fig09}
 \end{figure}
 
 
@@ -414,9 +352,9 @@ Better! But, it would be nice to be able to see that the values on the right rep
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig12}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig10}
 	\caption{Final Comparison Line Chart}
-	\label{04:fig12}
+	\label{04:fig10}
 \end{figure}
 
 
@@ -433,9 +371,9 @@ On the Stock Trend worksheet:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig13}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig11}
 	\caption{Range Selection}
-	\label{04:fig13}
+	\label{04:fig11}
 \end{figure}
 
 
@@ -453,9 +391,9 @@ Closing Prices as the new name and hit Enter.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig14}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig12}
 	\caption{Instant Chart}
-	\label{04:fig14}
+	\label{04:fig12}
 \end{figure}
 
 
@@ -502,9 +440,9 @@ immediately see that the greatest number of students earned a final grade in the
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig15}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig13}
 	\caption{Grade Frequency Distribution Chart}
-	\label{04:fig15}
+	\label{04:fig13}
 \end{figure}
 
 \subsection{Creating a Chart Sheet}
@@ -549,9 +487,9 @@ the configuration of a column chart. On a bar chart, the descriptive categories 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig16}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig14}
 	\caption{Moving a Chart to a Chart Sheet}
-	\label{04:fig16}
+	\label{04:fig14}
 \end{figure}
 
 
@@ -564,9 +502,9 @@ displayed in the Grade Distribution worksheet.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig17}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig15}
 	\caption{Chart Sheet Added to the Workbook}
-	\label{04:fig17}
+	\label{04:fig15}
 \end{figure}
 
 
@@ -606,9 +544,9 @@ Or, use the Fill Handle to copy the calculation in F4 all the way down to F8.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig18}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig16}
 	\caption{Completed Grade Distribution Percentages}
-	\label{04:fig18}
+	\label{04:fig16}
 \end{figure}
 
 
@@ -639,9 +577,9 @@ Above Chart option from the drop-down list.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig19}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig17}
 	\caption{Completed Data Series for the Class Grade Distribution}
-	\label{04:fig19}
+	\label{04:fig17}
 \end{figure}
 
 
@@ -656,28 +594,25 @@ However, the class had more Bs and Cs compared with the college population.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig20}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig18}
 	\caption{Completed Grade Distribution Column Chart}
-	\label{04:fig20}
+	\label{04:fig18}
 \end{figure}
 
-
-
-Integrity Check
-
-Too Many Bars on a Column Chart?
-Although there is no specific limit for the number of bars you should use on a column chart, a general rule of thumb
-is twenty bars or less. Figure 4.18 contains a total of thirty-two bars. This is considered a poor use of a column
-chart because it is difficult to identify meaningful trends or comparisons. The data used to create this chart might
-be better used in two or three different column charts, each with a distinct idea or message.
-
-
+\begin{center}
+	\begin{infobox}{Integrity Check}
+		\textbf{Too Many Bars on a Column Chart?}
+		\\
+		\\
+		 Although there is no specific limit for the number of bars you should use on a column chart, a general rule of thumb is twenty bars or less. Figure \ref{04:fig21} contains a total of thirty-two bars. This is considered a poor use of a column chart because it is difficult to identify meaningful trends or comparisons. The data used to create this chart might be better used in two or three different column charts, each with a distinct idea or message.
+	\end{infobox}
+\end{center}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig21}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig19}
 	\caption{Poor Use of a Column Chart}
-	\label{04:fig21}
+	\label{04:fig19}
 \end{figure}
 
 \subsection{Percent of Total: Pie Chart}
@@ -710,9 +645,9 @@ the bottom of Row 10 (see Figure 4.19).
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig22}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig20}
 	\caption{Pie Chart Moved and Resized}
-	\label{04:fig22}
+	\label{04:fig20}
 \end{figure}
 
 
@@ -749,9 +684,9 @@ button. This will bold the data labels on the pie chart.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig23}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig21}
 	\caption{Final Settings in the Format Data Labels Pane}
-	\label{04:fig23}
+	\label{04:fig21}
 \end{figure}
 
 
@@ -766,27 +701,32 @@ identify key categories that make up the majority of the total.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig24}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig22}
 	\caption{Final Enrollment Statistics Pie Chart}
-	\label{04:fig24}
+	\label{04:fig22}
 \end{figure}
 
 
 
 
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Inserting a Pie Chart}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-
-Skill Refresher
-
-
-Inserting a Pie Chart
-
-1. Highlight a range of cells that contain the data you will use to create the chart.
-2. Click the Insert tab of the ribbon.
-3. Click the Pie button in the Charts group.
-4. Select a format option from the Pie Chart drop-down menu.
-
+			\item Highlight a range of cells that contain the data used to create the chart.
+			\item Click the Insert tab of the ribbon.
+			\item Click the Pie button in the Charts group.
+			\item Select a format option from the Pie Chart drop-down menu.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
 
 \subsection{Percent of Total: Stacked Column Chart}
@@ -797,16 +737,16 @@ enrollment by race for several colleges. We would like to see all of the data on
 
 1. Highlight the range A2:D6 on the Enrollment Statistics worksheet.
 2. Click the Insert tab of the ribbon.
-3. Click the Column button in the Charts group of commands. Select the 100% Stacked Column
+3. Click the Column button in the Charts group of commands. Select the 100\% Stacked Column
 format option from 2-D Column section in the drop-down list (see Figure 4.22).
 
 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig25}
-	\caption{Selecting the 100% Stacked Column Chart}
-	\label{04:fig25}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig23}
+	\caption{Selecting the 100\% Stacked Column Chart}
+	\label{04:fig23}
 \end{figure}
 
 
@@ -819,9 +759,9 @@ colleges were there instead.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig26}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig24}
 	\caption{Initial Construction of the 100\% Stacked Column Chart}
-	\label{04:fig26}
+	\label{04:fig24}
 \end{figure}
 
 
@@ -840,9 +780,9 @@ ribbon. This reverses the legend and current X axis categories.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig27}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig25}
 	\caption{Switch Row/Column}
-	\label{04:fig27}
+	\label{04:fig25}
 \end{figure}
 
 
@@ -878,66 +818,71 @@ enrollment at the local community colleges.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig28}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig26}
 	\caption{Final 100\% Stacked Column Chart}
-	\label{04:fig28}
+	\label{04:fig26}
 \end{figure}
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Inserting a Stacked Column Chart}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-Skill Refresher:
+			\item Highlight a range of cells that contain data that will be used to create the chart.
+			\item Click the Insert tab of the ribbon.
+			\item Click the Column button in the Charts group.
+			\item Select the Stacked Column format option from the Column Chart drop-down menu to show the values of each category on the Y axis. Select the 100\% Stacked Column option to show the percent of total for each category on the Y axis.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
+\begin{center}
+	\begin{tkwbox}{Key Take-Aways}
+		\textbf{Save}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Identifying the message you wish to convey to an audience is a critical first step in creating an Excel chart.
+			\item Both a column chart and a line chart can be used to present a trend over a period of time. However, a line chart is preferred over a column chart when presenting data over long periods of time.
+			\item The number of bars on a column chart should be limited to approximately twenty bars or less.
+			\item When creating a chart to compare trends, the values for each data series must be within a reasonable range. If there is a wide variance between the values in the two data series (two times or more), the percent change should be calculated with respect to the first data point for each series.
+			\item When working with frequency distributions, the use of a column chart or a bar chart is a matter of preference. However, a column chart is preferred when working with a trend over a period of time.
+			\item A pie chart is used to present the percent of total for a data set.
+			\item A stacked column chart is used to show how a percent total changes over time.
 
-Inserting a Stacked Column Chart
-
-1. Highlight a range of cells that contain data that will be used to create the chart.
-2. Click the Insert tab of the ribbon.
-3. Click the Column button in the Charts group.
-4. Select the Stacked Column format option from the Column Chart drop-down menu to show the values of
-each category on the Y axis. Select the 100% Stacked Column option to show the percent of total for each
-category on the Y axis.
-
-
-
-
-Key Takeaways
-
-
-• Identifying the message you wish to convey to an audience is a critical first step in creating an Excel chart.
-
-• Both a column chart and a line chart can be used to present a trend over a period of time. However, a line
-chart is preferred over a column chart when presenting data over long periods of time.
-
-• The number of bars on a column chart should be limited to approximately twenty bars or less.
-
-• When creating a chart to compare trends, the values for each data series must be within a reasonable range.
-If there is a wide variance between the values in the two data series (two times or more), the percent change
-should be calculated with respect to the first data point for each series.
-
-• When working with frequency distributions, the use of a column chart or a bar chart is a matter of
-preference. However, a column chart is preferred when working with a trend over a period of time.
-
-• A pie chart is used to present the percent of total for a data set.
-
-• A stacked column chart is used to show how a percent total changes over time.
-
-
+		\end{itemize}
+	\end{tkwbox}
+\end{center}
 
 
 \section{Formatting Charts}
 
 
+\begin{center}
+	\begin{objbox}{Learning Objectives}
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-
-Learning Objectives
-
-
-1. Apply formatting commands to the X and Y axes.
-2. Enhance the visual appearance of the chart title and chart legend by using various formatting techniques.
-3. Assign titles to the X and Y axes that clarify labels and numeric values for the reader.
-4. Apply labels and formatting techniques to the data series in the plot area of a chart.
-5. Apply formatting commands to the chart area and the plot area of a chart.
-6. Employ series lines and annotations to enhance trends and provide additional information on a chart.
-
+			\item Apply formatting commands to the X and Y axes.
+			\item Enhance the visual appearance of the chart title and chart legend by using various formatting techniques.
+			\item Assign titles to the X and Y axes that clarify labels and numeric values for the reader.
+			\item Apply labels and formatting techniques to the data series in the plot area of a chart.
+			\item Apply formatting commands to the chart area and the plot area of a chart.
+			\item Employ series lines and annotations to enhance trends and provide additional information on a chart.
+			
+		\end{itemize}
+	\end{objbox}
+\end{center}
 
 
 You can use a variety of formatting techniques to enhance the appearance of a chart once you have
@@ -965,9 +910,9 @@ axis) of the Grade Distribution Comparison chart.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig29}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig27}
 	\caption{Font Dialog Box}
-	\label{04:fig29}
+	\label{04:fig27}
 \end{figure}
 
 
@@ -982,9 +927,9 @@ axis) of the Grade Distribution Comparison chart.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig30}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig28}
 	\caption{Formatted X and Y Axes}
-	\label{04:fig30}
+	\label{04:fig28}
 \end{figure}
 
 
@@ -1005,49 +950,51 @@ columns more dramatic. The Format Axis pane should match Figure 4.28.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig31}
-	\caption{Format Axis Pane changes}
-	\label{04:fig31}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig29}
+	\caption{Format Axis Pane Changes}
+	\label{04:fig29}
 \end{figure}
-
-
-
-
-
-
-
 
 Note: Experiment! You can also change font styling using shortcut keys and the buttons on the Home
 tab.
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Formatting the X and Y Axes}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+
+			\item Click anywhere along the X or Y axis to activate it.
+			\item Click either the Home tab or Design tab of the ribbon.
+			\item Select any of the available formatting commands in these tabs.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{X and Y Axis Number Formats}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-
-Skill Refresher
-
-
-Formatting the X and Y Axes
-
-1. Click anywhere along the X or Y axis to activate it.
-2. Click either the Home tab or Design tab of the ribbon.
-3. Select any of the available formatting commands in these tabs.
-
-
-
-
-Skill Refresher
-
-
-X and Y Axis Number Formats
-
-1. Click anywhere along the X or Y axis to activate it.
-2. Click the Layout tab in the Chart Tools section of the ribbon.
-3. Click the Format Selection button in the Current Selection group of commands.
-4. Click Number from the list of options on the left side of the Format Axis dialog box.
-5. Select a number format and set decimal places on the right side of the Format Axis dialog box.
-6. Click the Close button in the Format Axis pane.
-
+			\item Click anywhere along the X or Y axis to activate it.
+			\item Click the Layout tab in the Chart Tools section of the ribbon.
+			\item Click the Format Selection button in the Current Selection group of commands.
+			\item Click Number from the list of options on the left side of the Format Axis dialog box.
+			\item Select a number format and set decimal places on the right side of the Format Axis dialog box.
+			\item Click the Close button in the Format Axis pane.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
 
 \subsection{Chart Legend and Title Formats}
@@ -1067,9 +1014,9 @@ line next to the plot area (see Figure 4.29).
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig32}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig30}
 	\caption{Moving the Legend}
-	\label{04:fig32}
+	\label{04:fig30}
 \end{figure}
 
 
@@ -1085,9 +1032,9 @@ line next to the plot area (see Figure 4.29).
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig33}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig31}
 	\caption{Legend Formatted and Resized}
-	\label{04:fig33}
+	\label{04:fig31}
 \end{figure}
 
 
@@ -1106,40 +1053,46 @@ Preset shadows. Change the color, if you like.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig34}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig32}
 	\caption{Format Chart Title Pane}
-	\label{04:fig34}
+	\label{04:fig32}
 \end{figure}
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Formatting the Chart Legend}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-Skill Refresher
+			\item Click the Legend to activate it.
+			\item Click either the Home tab or right click to activate the appropriate formatting pane.
+			\item Select any of the available formatting commands.
+			\item Click and drag the legend to move it.
+			\item Click and drag any of the sizing handles to adjust the size of the legend.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Formatting the Chart Title}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-Formatting the Chart Legend
-
-1. Click the Legend to activate it.
-2. Click either the Home tab or right click to activate the appropriate formatting pane.
-3. Select any of the available formatting commands.
-4. Click and drag the legend to move it.
-5. Click and drag any of the sizing handles to adjust the size of the legend.
-
-
-
-
-Skill Refresher
-
-
-Formatting the Chart Title
-
-
-
-
-
-1. Click anywhere on the chart title.
-2. Click either the Home tab or right click to activate the appropriate formatting pane.
-3. Select any of the available formatting commands.
-
-
+			\item Click anywhere on the chart title.
+			\item Click either the Home tab or right click to activate the appropriate formatting pane.
+			\item Select any of the available formatting commands.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
 \subsection{X and Y Axis Titles}
 
@@ -1156,9 +1109,9 @@ Primary Vertical. (See Figure 4.32)
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig35}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig33}
 	\caption{Selecting a Title for the Y Axis}
-	\label{04:fig35}
+	\label{04:fig33}
 \end{figure}
 
 3. Using the Home ribbon, change the font of the axis title to Arial, Bold, size 11.
@@ -1168,9 +1121,9 @@ Excel Students.(see Figure 4.33).
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig36}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig34}
 	\caption{Adding and Formatting the Y Axis Title}
-	\label{04:fig36}
+	\label{04:fig34}
 \end{figure}
 
 
@@ -1186,23 +1139,28 @@ grade categories along the X axis as well as the percentages on the Y axis.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig37}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig35}
 	\caption{X and Y Axis Titles Added}
-	\label{04:fig37}
+	\label{04:fig35}
 \end{figure}
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{X and Y Axis Titles}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-Skill Refresher
-
-
-X and Y Axis Titles
-
-1. On the Design tab select the Add Chart Element button.
-2. Click anywhere on the chart to activate it.
-3. Select one of the options from the second drop-down list.
-4. Click in the axis title to remove the generic title and type a new title.
-
-
+			\item On the Design tab select the Add Chart Element button.
+			\item Click anywhere on the chart to activate it.
+			\item Select one of the options from the second drop-down list.
+			\item Click in the axis title to remove the generic title and type a new title.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
 \subsection{Data Series Labels and Formats}
 
@@ -1232,9 +1190,9 @@ foreground and background colors.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig38}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig36}
 	\caption{Changing the Fill of a Data Series}
-	\label{04:fig38}
+	\label{04:fig36}
 \end{figure}
 
 Now we are going to add the Data Labels at the end of the columns.
@@ -1253,9 +1211,9 @@ size 9 as well.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig39}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig37}
 	\caption{Adding Labels to a Data Series}
-	\label{04:fig39}
+	\label{04:fig37}
 \end{figure}
 
 
@@ -1268,37 +1226,46 @@ an individual data label, click it twice, then click and drag.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig40}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig38}
 	\caption{Completed Formatting Adjustments for the Data Series}
-	\label{04:fig40}
+	\label{04:fig38}
 \end{figure}
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Adding Data Labels}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-Skill Refresher:
+			\item Click anywhere on the chart to activate it.
+			\item Click the Design tab in the Chart Tools section of the ribbon.
+			\item Click the Add Chart Element in the Chart Layout group.
+			\item Select Data Labels
+			\item Select one of the preset positions from the drop-down list.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
-
-Adding Data Labels
-
-1. Click anywhere on the chart to activate it.
-2. Click the Design tab in the Chart Tools section of the ribbon.
-3. Click the Add Chart Element in the Chart Layout group.
-4. Then, select Data Labels
-5. Select one of the preset positions from the drop-down list.
-
-
-
-
-
-Skill Refresher
-
-
-Formatting a Data Series
-
-1. Click any bar or line for a data series.
-2. Right click to activate the Format Data Series pane.
-3. Use the formatting tools in the pane to make changes to the data series.
-
-
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Formatting a Data Series}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Click any bar or line for a data series.
+			\item Right click to activate the Format Data Series pane.
+			\item Use the formatting tools in the pane to make changes to the data series.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
 \subsection{Adding Series Lines and Annotations to a Chart}
 
@@ -1336,9 +1303,9 @@ This adds lines to the chart, connecting each data series between the three stac
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig41}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig39}
 	\caption{Selecting the Series Lines Option}
-	\label{04:fig41}
+	\label{04:fig39}
 \end{figure}
 
 1. Right click on any of the series lines added to the chart. Clicking one line will activate all lines
@@ -1356,9 +1323,9 @@ attention to changes in the percent of total trend.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig42}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig40}
 	\caption{Series Lines Added to the Stacked Column Chart}
-	\label{04:fig42}
+	\label{04:fig40}
 \end{figure}
 
 
@@ -1372,9 +1339,9 @@ about ½ inch.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig43}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig41}
 	\caption{Resizing the Plot Area}
-	\label{04:fig43}
+	\label{04:fig41}
 \end{figure}
 
 
@@ -1403,87 +1370,97 @@ paste the text boxes if you would like to save time.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig44}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig42}
 	\caption{Completed Stacked Column Chart}
-	\label{04:fig44}
+	\label{04:fig42}
 \end{figure}
 
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Adding Series Lines}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Click anywhere on the chart area.
+			\item Click the Layout tab of the ribbon.
+			\item Click the Lines button in the Analysis group of commands.
+			\item Click the Series Lines option from the drop-down list.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
+
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Adding Annotations}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Click anywhere on the chart area.
+			\item Click the Insert tab of the ribbon.
+			\item Click the Text Box button in the Text group of commands.
+			\item Click and drag the size of the text box needed on the chart.
+			\item Apply any desired format changes from the Home tab of the ribbon.
+			\item Type the desired text.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
+
+\begin{center}
+	\begin{infobox}{Integrity Check}
+		\textbf{Annotations and Axis Titles}
+		\\
+		\\
+		Although adding annotations and axis titles can be a tedious process, doing so maintains a high level of integrity for charts. People can misinterpret the message being conveyed by the chart if they make inaccurate assumptions about the values displayed. Axis titles and annotations help prevent readers from making false assumptions and ensure that readers see the most accurate representation of the message being conveyed by the chart.		
+	\end{infobox}
+\end{center}
 
 
-Skill Refresher
+\begin{center}
+	\begin{tkwbox}{Key Take-Aways}
+		\textbf{Save}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-
-Adding Series Lines
-
-1. Click anywhere on the chart area.
-2. Click the Layout tab of the ribbon.
-3. Click the Lines button in the Analysis group of commands.
-4. Click the Series Lines option from the drop-down list.
-
-
-
-
-Skill Refresher:
-
-
-Adding Annotations
-
-1. Click anywhere on the chart area.
-2. Click the Insert tab of the ribbon.
-3. Click the Text Box button in the Text group of commands.
-4. Click and drag the size of the text box needed on the chart.
-5. Apply any desired format changes from the Home tab of the ribbon.
-6. Type the desired text.
-
-
-
-
-Integrity Check
-
-Annotations and Axis Titles
-
-Although adding annotations and axis titles can be a tedious process, doing so maintains a high level of integrity for
-your charts. People can misinterpret the message being conveyed by the chart if they make inaccurate assumptions
-about the values displayed. Axis titles and annotations help prevent readers from making false assumptions and
-ensure that readers see the most accurate representation of the message being conveyed by the chart.
-
-
-
-
-
-Key Takeaways
-
-
-• Applying appropriate formatting techniques is critical for making a chart easier to read.
-
-• Many formatting commands in the Home tab of the ribbon can be applied to a chart.
-
-• To change the number format for a data label, you must use the Number section in the Format Data Labels
-dialog box. You cannot use the Number format commands in the Home tab of the ribbon.
-
-• To change the number format for the values on the Y axis, and the X axis in the case of a scatter chart, you
-must use the Number section of the Format Axis dialog box. You cannot use the Number format commands
-in the Home tab of the ribbon.
-
-• Axis titles and annotations help prevent false assumptions from being made and ensure that the reader sees
-the most accurate representation of the information presented on a chart.
-
-
+			\item Applying appropriate formatting techniques is critical for making a chart easier to read.
+			\item Many formatting commands in the Home tab of the ribbon can be applied to a chart.
+			\item To change the number format for a data label, you must use the Number section in the Format Data Labels dialog box. You cannot use the Number format commands in the Home tab of the ribbon.
+			\item To change the number format for the values on the Y axis, and the X axis in the case of a scatter chart, you must use the Number section of the Format Axis dialog box. You cannot use the Number format commands
+			in the Home tab of the ribbon.
+			\item Axis titles and annotations help prevent false assumptions from being made and ensure that the reader sees the most accurate representation of the information presented on a chart.
+			
+		\end{itemize}
+	\end{tkwbox}
+\end{center}
 
 
 \section{Using Charts With Microsoft® Word® and Microsoft® Powerpoint®}
 
 
+\begin{center}
+	\begin{objbox}{Learning Objectives}
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-
-Learning Objectives
-
-
-1. Learn how to paste an image of an Excel chart into a Word document.
-2. Learn how to paste a link to an Excel chart into a PowerPoint slide.
-
-
+			\item Learn how to paste an image of an Excel chart into a Word document.
+			\item Learn how to paste a link to an Excel chart into a PowerPoint slide.
+			
+		\end{itemize}
+	\end{objbox}
+\end{center}
 
 Charts that are created in Excel are commonly used in Microsoft Word documents or for
 presentations that use Microsoft PowerPoint slides. Excel provides options for pasting an image of a
@@ -1525,9 +1502,9 @@ file in the taskbar.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig45}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig43}
 	\caption{Paste Picture in Word}
-	\label{04:fig45}
+	\label{04:fig43}
 \end{figure}
 
 
@@ -1545,9 +1522,9 @@ the Paragraph group, and select Center.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig46}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig44}
 	\caption{Changing the Size of a Picture in Word}
-	\label{04:fig46}
+	\label{04:fig44}
 \end{figure}
 
 
@@ -1560,29 +1537,30 @@ clicking and dragging on a corner sizing handle will also keep the chart in prop
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig47}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig45}
 	\caption{Final Appearance of Pasting a Chart Image into Word}
-	\label{04:fig47}
+	\label{04:fig45}
 \end{figure}
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Pasting a Chart Image into Word}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-Skill Refresher
-
-
-Pasting a Chart Image into Word
-
-1. Activate an Excel chart and click the Copy button in the Home tab of the ribbon.
-2. Click on the location in the Word document where the Excel chart will be pasted.
-3. Click the down arrow of the Paste button in the Home tab of the ribbon.
-
-
-
-
-4. Click the Picture option from the drop-down list.
-5. Click the Format tab in the Picture Tools section of the ribbon.
-6. Resize the picture by clicking the up or down arrow on the Shape Width or Shape Height buttons.
-
-
+			\item Activate an Excel chart and click the Copy button in the Home tab of the ribbon.
+			\item Click on the location in the Word document where the Excel chart will be pasted.
+			\item Click the down arrow of the Paste button in the Home tab of the ribbon.
+			\item Click the Picture option from the drop-down list.
+			\item Click the Format tab in the Picture Tools section of the ribbon.
+			\item Resize the picture by clicking the up or down arrow on the Shape Width or Shape Height buttons.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
 \subsection{Pasting a Linked Chart Image Into Powerpoint}
 
@@ -1622,9 +1600,9 @@ PowerPoint slide.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig48}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig46}
 	\caption{Creating a Link to an Excel Chart in PowerPoint}
-	\label{04:fig48}
+	\label{04:fig46}
 \end{figure}
 
 
@@ -1638,9 +1616,9 @@ see the same Excel Chart Tools tabs added to the ribbon (see Figure 4.46).
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig49}
-	\caption{Modifying and Excel Chart Pasted into a PowerPoint Slide}
-	\label{04:fig49}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig47}
+	\caption{Modifying an Excel Chart Pasted into a PowerPoint Slide}
+	\label{04:fig47}
 \end{figure}
 
 Paste linking this chart caused trouble with the text boxes we added, so next we are going to delete
@@ -1681,84 +1659,83 @@ Refresh Data button.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig50}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig48}
 	\caption{Styled and Updated Chart}
-	\label{04:fig50}
+	\label{04:fig48}
 \end{figure}
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Pasting a Linked Chart Image into PowerPoint}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Activate an Excel chart and click the Copy button in the Home tab of the ribbon.
+			\item Click in the PowerPoint slide where the Excel chart will be pasted.
+			\item Click the down arrow of the Paste button in the Home tab of the ribbon.
+			\item Click the Keep Source Formatting \& Link Data option from the drop-down list.
+			\item Click the Refresh Data button in the Design tab of the ribbon to ensure any changes in the Excel file are reflected in the chart.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
-Skill Refresher:
-
-
-Pasting a Linked Chart Image into PowerPoint
-
-
-
-
-Integrity Check
-
-Refreshing Linked Charts in PowerPoint and Word
-
-When creating a link to a chart in Word or PowerPoint, you must refresh the data if you make any changes in
-the Excel workbook. This is especially true if you make changes in the Excel file prior to opening the Word or
-PowerPoint file that contains a link to a chart. To refresh the chart, make sure it is activated, then click the Refresh
-Data button in the Design tab of the ribbon. Forgetting this step can result in old or erroneous data being displayed
-on the chart.
-
-
-
-
-
-1. Activate an Excel chart and click the Copy button in the Home tab of the ribbon.
-2. Click in the PowerPoint slide where the Excel chart will be pasted.
-3. Click the down arrow of the Paste button in the Home tab of the ribbon.
-4. Click the Keep Source Formatting \& Link Data option from the drop-down list.
-5. Click the Refresh Data button in the Design tab of the ribbon to ensure any changes in the Excel file are
-reflected in the chart.
+\begin{center}
+	\begin{infobox}{Integrity Check}
+		\textbf{Refreshing Linked Charts in PowerPoint and Word}
+		\\
+		\\
+		When creating a link to a chart in Word or PowerPoint, the data must be refreshed when there are changes in the Excel workbook. This is especially true if the changes are made in the Excel file prior to opening the Word or PowerPoint file that contains a link to a chart. To refresh the chart, make sure it is activated, then click the Refresh Data button in the Design tab of the ribbon. Forgetting this step can result in old or erroneous data being displayed on the chart.
+	\end{infobox}
+\end{center}
 
 
 
+\begin{center}
+	\begin{tkwbox}{Key Take-Aways}
+		\textbf{Save}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-Key Takeaways
+			\item When pasting an image of an Excel chart into a Word document or PowerPoint file, use the Picture option from the Paste drop-down list of options if you want the image to act as an image. You will not be able to make any changes to the content of the picture.
+			\item When creating a link to a chart in Word or PowerPoint, you may need to refresh the data if you make any changes in the originating spreadsheet. You should not use the Picture option.
+					
+		\end{itemize}
+	\end{tkwbox}
+\end{center}
 
-
-• When pasting an image of an Excel chart into a Word document or PowerPoint file, use the Picture option
-from the Paste drop-down list of options – if you want the image to act as an image. You will not be able to
-make any changes to the content of the picture.
-
-• When creating a link to a chart in Word or PowerPoint, you may need to refresh the data if you make any
-changes in the originating spreadsheet. You should not use the Picture option.
-
-
-
-
-Integrity Check
-
-Severed Link?
-
-When creating a link to an Excel chart in Word or PowerPoint, you must keep the Excel workbook in its original
-location on your computer or network. If you move or delete the Excel workbook, you will get an error message
-when you try to update the link in your Word or PowerPoint file. You will also get an error if the Excel workbook
-is saved on a network drive that your computer cannot access. These errors occur because the link to the Excel
-workbook has been severed. Therefore, if you know in advance that you will be using a USB drive to pull up your
-documents or presentation, move the Excel workbook to your USB drive before you establish the link in your Word
-or PowerPoint file.
-
-
-
+\begin{center}
+	\begin{infobox}{Integrity Check}
+		\textbf{Severed Link?}
+		\\
+		\\
+		When creating a link to an Excel chart in Word or PowerPoint, the Excel workbook must stay in its original location on the computer or network. If the workbook is moved or deleted, an error message will be generated when the link in your Word or PowerPoint file is updated. An error is also generated if the Excel workbook is saved on a network drive that the computer cannot access. These errors occur because the link to the Excel workbook has been severed. Therefore, if a USB drive is being used for a presentation then all of the linked Excel workbooks must be moved to the USB drive before establishing the Word or PowerPoint link.
+	\end{infobox}
+\end{center}
 
 
 \section{Preparing to Print}
 
 
+\begin{center}
+	\begin{objbox}{Learning Objectives}
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-
-Learning Objectives
-
-
-1. Review each worksheet in a workbook in Print Preview.
-2. Modify worksheets as needed to professionally print data and charts.
-
+			\item Review each worksheet in a workbook in Print Preview.
+			\item Modify worksheets as needed to professionally print data and charts.
+			
+		\end{itemize}
+	\end{objbox}
+\end{center}
 
 
 In this section we will take a look at each of the worksheets created in the previous sections. Since
@@ -1818,9 +1795,9 @@ pages, but the numbers in column AH are no longer going to print.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig51}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig49}
 	\caption{Hide Columns in Format Menu}
-	\label{04:fig51}
+	\label{04:fig49}
 \end{figure}
 
 The data is still split between pages 2 and 3, and the charts are splitting oddly as well. The first step
@@ -1852,16 +1829,16 @@ well. Using your preferred method, move the text from A50:A51 to M31:M32.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig52}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig50}
 	\caption{Page Break Preview before moving the charts in Step 3}
-	\label{04:fig52}
+	\label{04:fig50}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig53}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig51}
 	\caption{Page Break Preview after moving the charts and text}
-	\label{04:fig53}
+	\label{04:fig51}
 \end{figure}
 
 
@@ -1883,9 +1860,9 @@ columns L and M. This will make it a solid blue line, which will no longer adjus
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig54}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig52}
 	\caption{Page Break Preview after removing a page break}
-	\label{04:fig54}
+	\label{04:fig52}
 \end{figure}
 
 Now you need to do one final check of this worksheet in Print Preview.
@@ -2081,9 +2058,9 @@ incarcerated data.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig55}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig53}
 	\caption{International Incarceration Rates}
-	\label{04:fig55}
+	\label{04:fig53}
 \end{figure}
 
 
@@ -2120,9 +2097,9 @@ Chart1 — Felony Disenfranchisement Rate Washington
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig56}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig54}
 	\caption{Felony Disenfranchisement Rate Washington}
-	\label{04:fig56}
+	\label{04:fig54}
 \end{figure}
 
 
@@ -2134,9 +2111,9 @@ Chart2 — Felony Disenfranchisement Rate Oregon
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig57}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig55}
 	\caption{Felony Disenfranchisement Rate Oregon}
-	\label{04:fig57}
+	\label{04:fig55}
 \end{figure}
 
 
@@ -2145,9 +2122,9 @@ Chart3 – Comparison – Oregon and Washington
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig58}
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch04_fig56}
 	\caption{Comparison of Oregon and Washington}
-	\label{04:fig58}
+	\label{04:fig56}
 \end{figure}
 
 
