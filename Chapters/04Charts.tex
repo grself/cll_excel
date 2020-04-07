@@ -534,19 +534,15 @@ Although there are no specific limits for the number of categories that can be u
 	\end{sklbox}
 \end{center}
 
-%TODO Start Here
 \subsection{Percent of Total: Stacked Column Chart}
 
-The last chart type we will demonstrate is the stacked column chart. We use a stacked column chart to
-show a percent of a total . For example, the data on the Enrollment Statistics worksheet shows student
-enrollment by race for several colleges. We would like to see all of the data on all of the colleges.
+The last chart type demonstrated in this chapter is the stacked column chart. A stacked column chart is used  to show a percent of a total . For example, the data on the Enrollment Statistics worksheet shows student enrollment by race for several colleges. Suppose that it was necessary to show all of the data for all colleges.
 
-1. Highlight the range A2:D6 on the Enrollment Statistics worksheet.
-2. Click the Insert tab of the ribbon.
-3. Click the Column button in the Charts group of commands. Select the 100\% Stacked Column
-format option from 2-D Column section in the drop-down list (see Figure 4.22).
-
-
+\begin{enumerate}
+	\item Highlight the range \textsf{A2:D6} on the \textbf{Enrollment Statistics} worksheet.
+	\item Click the Insert tab of the ribbon.
+	\item Click the Column button in the Charts group of commands. Select the $ 100\% $ Stacked Column format option from 2-D Column section in the drop-down list (see Figure \ref{04:fig23}).
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -555,13 +551,7 @@ format option from 2-D Column section in the drop-down list (see Figure 4.22).
 	\label{04:fig23}
 \end{figure}
 
-
-Figure 4.23 shows the column chart that is created after selecting the 100% Stacked Column format
-option. As mentioned, the goal of this chart is to show the enrollment of students by race. However,
-notice that Excel places the racial categories on the X axis. It would be more useful if the different
-colleges were there instead.
-
-
+Figure \ref{04:fig24} shows the column chart that is created after selecting the $ 100\% $ Stacked Column format option. As mentioned, the goal of this chart is to show the enrollment of students by race. However, notice that Excel places the racial categories on the X axis. It would be more useful if the different colleges were there instead.
 
 \begin{figure}[H]
 	\centering
@@ -570,19 +560,11 @@ colleges were there instead.
 	\label{04:fig24}
 \end{figure}
 
+The reason that Excel organized the data this way is that there are more Race/ethnicity categories (data in column A) than there are colleges (data in row 2). Not a bad guess. But, this is not what is wanted in this case. The next steps explain how to correct this problem and complete the chart.
 
-
-
-
-The reason that Excel organized the data this way is that there are more Race/ethnicity categories
-(data in column A) than there are colleges (data in row 2). Not a bad guess. But, not what we wanted
-in this case.
-
-The remaining steps explain how to correct this problem and complete the chart:
-
-1. Click the Switch Row/Column button in the Design tab on the Chart Tools section of the
-ribbon. This reverses the legend and current X axis categories.
-
+\begin{enumerate}
+	\item Click the Switch Row/Column button in the Design tab on the Chart Tools section of the ribbon. This reverses the legend and current X axis categories.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -591,36 +573,22 @@ ribbon. This reverses the legend and current X axis categories.
 	\label{04:fig25}
 \end{figure}
 
+\begin{enumerate}[resume]
+	\item Click and drag the chart so the upper left corner is in the middle of cell \textsf{E12}.
+	\item Resize the chart so the left side is locked to the left side of Column E, the right side is locked to the right side of Column N, the top is locked to the top of Row $ 12 $, and the bottom is locked to the bottom of Row $ 30 $.
+	\item Click the legend one time and press the DELETE key on the keyboard.
+	\item Add a Data Table. This is another way of displaying a legend for a column chart along with the numerical values that make up each component.
 
+	\begin{itemize}
+		\item In earlier versions of Excel, find the Labels group of commands and select the Show Data Table with Legend Keys option from the drop-down menu.
+		\item In Excel 2016, find the Add Chart Element tool on the Design tab, select Data Table With Legend Keys
+	\end{itemize}
 
+	\item Change the Chart Title to \textit{Enrollment by Race}. If there is no chart title, add one using the Add Chart Element tool on the Design tab.
+	\item Save the worksheet.
+\end{enumerate}
 
-
-2. Click and drag the chart so the upper left corner is in the middle of cell E12.
-3. Resize the chart so the left side is locked to the left side of Column E, the right side is locked to
-
-
-
-the right side of Column N, the top is locked to the top of Row 12, and the bottom is locked to
-the bottom of Row 30.
-4. Click the legend one time and press the DELETE key on your keyboard.
-5. Add a Data Table. This is another way of displaying a legend for a column chart along with the
-numerical values that make up each component.
-
-* In earlier versions of Excel, find the Labels group of commands and select the Show Data
-Table with Legend Keys option from the drop-down menu.
-* In Excel 2016, find the Add Chart Element tool on the Design tab, select Data Table With
-Legend Keys
-
-6. Change the Chart Title to Enrollment by Race.
-
-* If there is no chart title, you will need to add one using the Add Chart Element tool on
-the Design tab.
-
-7. Save your work.
-
-Figure 4.25 shows the final stacked column chart. Notice the similarities and differences in the
-enrollment at the local community colleges.
-
+Figure \ref{04:fig26} shows the final stacked column chart. Notice the similarities and differences in the enrollment at the local community colleges.
 
 \begin{figure}[H]
 	\centering
@@ -668,9 +636,7 @@ enrollment at the local community colleges.
 	\end{tkwbox}
 \end{center}
 
-
 \section{Formatting Charts}
-
 
 \begin{center}
 	\begin{objbox}{Learning Objectives}
@@ -690,28 +656,17 @@ enrollment at the local community colleges.
 	\end{objbox}
 \end{center}
 
-
-You can use a variety of formatting techniques to enhance the appearance of a chart once you have
-created it. Formatting commands are applied to a chart for the same reason they are applied to a
-worksheet: they make the chart easier to read. However, formatting techniques also help you qualify
-and explain the data in a chart. For example, you can add footnotes explaining the data source as
-well as notes that clarify the type of numbers being presented (i.e., if the numbers in a chart are
-truncated, you can state whether they are in thousands, millions, etc.). These notes are also helpful
-in answering questions if you are using charts in a live presentation. We will demonstrate these
-formatting techniques using the column chart and stacked column chart from the previous section.
+A variety of formatting techniques can be used to enhance the appearance of a chart once it is created. Formatting commands are applied to a chart for the same reason they are applied to a worksheet, they make the chart easier to read. However, formatting techniques also help qualify and explain the data in a chart. For example, footnotes can be added that explain the data source as well as notes that clarify the type of numbers being presented (\ie, if the numbers in a chart are truncated, a note can state whether they are in thousands, millions, etc.). These notes are also helpful in answering questions when using charts in a live presentation. This section demonstrates these formatting techniques using the column chart and stacked column chart from the previous section.
 
 \subsection{X and Y Axis Formats}
 
-There are numerous formatting commands we can apply to the X and Y axes of a chart. Although
-adjusting the font size, style, and color are common, many more options are available through the
-Format Axis pane. The following steps demonstrate a few of these formatting techniques on the
-Grade Distribution Comparison chart:
+There are numerous formatting commands that can be applied to the X and Y axes of a chart. Although adjusting the font size, style, and color are common, many more options are available through the Format Axis pane. The following steps demonstrate a few of these formatting techniques on the \textbf{Grade Distribution Comparison} chart.
 
-1. Switch to the Grade Distribution worksheet and click anywhere along the X axis (horizontal
-axis) of the Grade Distribution Comparison chart.
-2. Right click and select Font.
-3. Change the font to Arial, the Font Style to Bold, and the Size to 11 (see Figure 4.26).
-
+\begin{enumerate}
+	\item Switch to the Grade Distribution worksheet and click anywhere along the X axis (horizontal axis) of the Grade Distribution Comparison chart.
+	\item Right click and select Font.
+	\item Change the font to Arial, the Font Style to Bold, and the Size to $ 11 $ (see Figure \ref{04:fig27}).
+\end{enumerate}
 
 
 \begin{figure}[H]
@@ -721,15 +676,11 @@ axis) of the Grade Distribution Comparison chart.
 	\label{04:fig27}
 \end{figure}
 
-
-
-
-
-4. Click anywhere along the Y axis to activate it and repeat steps 2 and 3.
-5. Click on the chart title and repeat steps 2 and 3, but set the Size to 14.
-6. The final appearance of the axes is shown in Figure 4.27 Formatted X \& Y Axes.
-
-
+\begin{enumerate}[resume]
+	\item Click anywhere along the Y axis to activate it and repeat steps $ 2 $ and $ 3 $.
+	\item Click on the chart title and repeat steps $ 2 $ and $ 3 $, but set the Size to $ 14 $.
+	\item The final appearance of the axes is shown in Figure \ref{04:fig28}.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -738,21 +689,16 @@ axis) of the Grade Distribution Comparison chart.
 	\label{04:fig28}
 \end{figure}
 
+Next make some changes to the percentage numbers on the Y (vertical) axis.
 
-
-
-
-Next we want to make some changes to the percentage numbers on the Y (vertical) axis.
-
-1. Right click the vertical (value) axis. Select Format Axis. This opens the Format Axis pane.
-2. Click Number from the list of options. The commands in this section of the Format Axis pane
-are used to format numbers that appear on the selected axis of the chart.
-3. Click in the Decimal places input box and change the value to 1.
-4. Select Axis Options. Change the Minimum Bound to .05 to make the differences in the
-columns more dramatic. The Format Axis pane should match Figure 4.28.
-5. Click the Close button at the top of the Format Axis pane.
-6. Save your work.
-
+\begin{enumerate}
+	\item Right click the vertical (value) axis. Select Format Axis. This opens the Format Axis pane.
+	\item Click Number from the list of options. The commands in this section of the Format Axis pane are used to format numbers that appear on the selected axis of the chart.
+	\item Click in the Decimal places input box and change the value to $ 1 $.
+	\item Select Axis Options. Change the Minimum Bound to $ .05 $ to make the differences in the columns more dramatic. The Format Axis pane should match Figure \ref{04:fig29}.
+	\item Click the Close button at the top of the Format Axis pane.
+	\item Save the workbook.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -761,8 +707,14 @@ columns more dramatic. The Format Axis pane should match Figure 4.28.
 	\label{04:fig29}
 \end{figure}
 
-Note: Experiment! You can also change font styling using shortcut keys and the buttons on the Home
-tab.
+\begin{center}
+	\begin{infobox}{Note}
+		\textbf{Experiment!}
+		\\
+		\\
+		The font styling can also be changed using shortcut keys and the buttons on the Home tab.
+	\end{infobox}
+\end{center}
 
 \begin{center}
 	\begin{sklbox}{Skill Refresher}
@@ -780,7 +732,6 @@ tab.
 		\end{itemize}
 	\end{sklbox}
 \end{center}
-
 
 \begin{center}
 	\begin{sklbox}{Skill Refresher}
@@ -802,21 +753,15 @@ tab.
 	\end{sklbox}
 \end{center}
 
-
 \subsection{Chart Legend and Title Formats}
 
-The next items we will format on the Grade Distribution Comparison chart are the chart legend and
-title. Similar to the how we formatted the X and Y axes, we can format these items by activating them
-and using the formatting commands in the Home tab or the Format pane. The following steps explain
-how to add these formats:
+The next items to be formatted on the \textbf{Grade Distribution Comparison} chart are the chart legend and title. Similar to the X and Y axes, format these items by activating them and using commands in the Home tab or the Format pane. The following steps explain how to change these formats.
 
-1. Right click the legend on the Grade Distribution Comparison chart and select Format Legend.
-2. Select Right in the Legend Position options. Close the Format Legend pane.
-3. Move the legend by placing your cursor – shaped like a little plus sign with four arrows – on the
-edge of the selection box. Click and drag the legend so the top of the legend aligns with the 35%
-line next to the plot area (see Figure 4.29).
-
-
+\begin{enumerate}
+	\item Right click the legend on the Grade Distribution Comparison chart and select Format Legend.
+	\item Select Right in the Legend Position options. Close the Format Legend pane.
+	\item Move the legend by placing your cursor, shaped like a little plus sign with four arrows, on the edge of the selection box. Click and drag the legend so the top of the legend aligns with the $ 35\% $ line next to the plot area (see Figure \ref{04:fig30}).
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -825,16 +770,12 @@ line next to the plot area (see Figure 4.29).
 	\label{04:fig30}
 \end{figure}
 
-
-
-
-
-1.   While the legend is still selected, change the font style in the Home tab of the ribbon to Arial.
-2.   Change the font size to 12 points.
-3.   Click the bold and italics commands in the Home tab of the ribbon.
-4.   Click and drag the left sizing handle so the legend is against the plot area (see Figure 4.30).
-
-
+\begin{enumerate}
+	\item While the legend is still selected, change the font style in the Home tab of the ribbon to Arial.
+	\item Change the font size to $ 12 $ points.
+	\item Click the bold and italics commands in the Home tab of the ribbon.
+	\item Click and drag the left sizing handle so the legend is against the plot area (see Figure \ref{04:fig31}).
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -843,19 +784,13 @@ line next to the plot area (see Figure 4.29).
 	\label{04:fig31}
 \end{figure}
 
-
-
-
-
-1. Click the chart title to activate it.
-2. Right click on the chart title and select Format Chart Title to open the Format Chart Title
-pane.
-3. Under Title Options , in the Effects group (the option in the middle) give your title one of the
-Preset shadows. Change the color, if you like.
-4. Close the Format Chart Title pane.
-5. Save your work.
-
-
+\begin{enumerate}
+	\item Click the chart title to activate it.
+	\item Right click on the chart title and select Format Chart Title to open the Format Chart Title pane (see Figure \ref{04:fig32}).
+	\item Under Title Options in the Effects group (the option in the middle) give the title one of the Preset shadows. Also, change the color if desired.
+	\item Close the Format Chart Title pane.
+	\item Save the workbook.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -902,16 +837,12 @@ Preset shadows. Change the color, if you like.
 
 \subsection{X and Y Axis Titles}
 
-Titles for the X and Y axes are necessary for defining the numbers and categories presented on a
-chart. For example, by looking at the Grade Distribution Comparison chart, it is not clear what the
-percentages along the Y axis represent. The following steps explain how to add titles to the X and Y
-axes to define these numbers and categories:
+Titles for the X and Y axes are necessary for defining the numbers and categories presented on a chart. For example, by looking at the Grade Distribution Comparison chart, it is not clear what the percentages along the Y axis represent. The following steps explain how to add titles to the X and Y axes to define these numbers and categories.
 
-1. Click anywhere on the Grade Distribution Comparison chart in the Grade Distribution
-worksheet to activate it.
-2. On the Design tab on the ribbon select the Add Chart Element button, then Axis Titles, then
-Primary Vertical. (See Figure 4.32)
-
+\begin{enumerate}
+	\item Click anywhere on the Grade Distribution Comparison chart in the Grade Distribution worksheet to activate it.
+	\item On the Design tab on the ribbon select the Add Chart Element button, then Axis Titles, then Primary Vertical. (See Figure \ref{04:fig33})
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -920,10 +851,10 @@ Primary Vertical. (See Figure 4.32)
 	\label{04:fig33}
 \end{figure}
 
-3. Using the Home ribbon, change the font of the axis title to Arial, Bold, size 11.
-4. Click in the beginning of the Y axis title and delete the generic title. Type Percent of Enrolled
-Excel Students.(see Figure 4.33).
-
+\begin{enumerate}
+	\item Using the Home ribbon, change the font of the axis title to Arial, Bold, size $ 11 $.
+	\item Click in the beginning of the Y axis title and delete the generic title. Type Percent of Enrolled Excel Students.(see Figure \ref{04:fig34}).
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -932,16 +863,14 @@ Excel Students.(see Figure 4.33).
 	\label{04:fig34}
 \end{figure}
 
+Next, add the title for the X axis.
 
-Next we will add the title for the X axis.
-
-1. On the Design tab select the Add Chart Element button, then Axis Titles, then Primary
-Horizontal.
-2. Using the Home ribbon, change the font of the axis title to Arial, Bold, size 11.
-3. Click in the beginning of the X axis title and delete the generic title. Type Final Course Grade.
-Figure 4.34 shows the added titles for the X and Y axes. The titles provide definitions for the
-grade categories along the X axis as well as the percentages on the Y axis.
-4. Save your work.
+\begin{enumerate}
+	\item On the Design tab select the Add Chart Element button, then Axis Titles, then Primary Horizontal.
+	\item Using the Home ribbon, change the font of the axis title to Arial, Bold, size $ 11 $. 
+	\item Click in the beginning of the X axis title and delete the generic title. Type Final Course Grade. Figure \ref{04:fig35} shows the added titles for the X and Y axes. The titles provide definitions for the grade categories along the X axis as well as the percentages on the Y axis.
+	\item Save the workbook.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -970,29 +899,18 @@ grade categories along the X axis as well as the percentages on the Y axis.
 
 \subsection{Data Series Labels and Formats}
 
-Adding labels to the data series of a chart is a key formatting feature. A data series is the item
-that is being displayed graphically on a chart. For example, the blue bars on the Grade Distribution
+Adding labels to the data series of a chart is a key formatting feature. A data series is the item that is being displayed graphically on a chart. For example, the blue bars on the Grade Distribution
 
-Comparison chart represent one data series. We can add labels at the end of each bar to show the
-exact percentage the bar represents. In addition, we can add other formatting enhancements to the
-data series, such as changing the color of the bars or adding an effect. The following steps explain how
-to add these labels and formats to the chart:
+Comparison charts represent one data series. Labels can be added at the end of each bar to show the exact percentage the bar represents. In addition, other formatting enhancements can be added to the data series, such as changing the color of the bars or adding an effect. The following steps explain how to add these labels and formats to the chart.
 
-1. Click on any of the the red bars representing the All Excel Classes data series on the Grade
-Distribution Comparison chart in the Grade Distribution worksheet. Clicking one bar
-automatically activates all bars in the data series. If you click a bar a second time, only that bar is
-activated.
-2. Right click and select Format Data Series to open up the Format Data Series pane.
-3. Click the Fill and Line (paint bucket) button to bring up the Fill and Border group of
-commands.
-4. Click the word Fill (if needed) to expand the list of Fill options.
-5. Select Pattern Fill. Then select 30% (fifth column, top row). Changing your fill pattern to a
-pattern makes it easier to distinguish between the data series when you print or view your chart
-in black and white. While you are there, make changes to the fill by experimenting with different
-foreground and background colors.
-6. Close the Format Data Series pane.
-
-
+\begin{enumerate}
+	\item Click on any of the the red bars representing the All Excel Classes data series on the Grade Distribution Comparison chart in the \textbf{Grade Distribution} worksheet. Clicking one bar automatically activates all bars in the data series. If a bar is clicked a second time, only that bar is activated.
+	\item Right click and select Format Data Series to open up the Format Data Series pane.
+	\item Click the Fill and Line (paint bucket) button to bring up the Fill and Border group of commands.
+	\item Click the word Fill (if needed) to expand the list of Fill options.
+	\item Select Pattern Fill. Then select $ 30\% $ (fifth column, top row). Changing the fill pattern to a pattern makes it easier to distinguish between the data series when the chart is printed or viewed in black and white. Experiment with the fill pattern by selecting different foreground and background colors.
+	\item Close the Format Data Series pane.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -1001,19 +919,16 @@ foreground and background colors.
 	\label{04:fig36}
 \end{figure}
 
-Now we are going to add the Data Labels at the end of the columns.
+Now add the Data Labels at the end of the columns.
 
-1. Be sure that your entire chart is selected, not just one of the data series. Click the Design tab in
-the Chart Tools section of the ribbon.
-2. On the Design tab select the Add Chart Element button, then Data Labels, then Outside
-End (see Figure 4.36.)
-3. Click on one of the Data Labels. Note that all of the data labels for that data series are selected.
-4. Using the Home ribbon, change the font to Arial, Bold, size 9.
-5. Click on one of the data labels for the other data series. Format those data labels as Arial, Bold,
-size 9 as well.
-6. Save your work.
-
-
+\begin{enumerate}
+	\item Be sure that the entire chart is selected, not just one of the data series. Click the Design tab in the Chart Tools section of the ribbon.
+	\item On the Design tab select the Add Chart Element button, then Data Labels, then Outside End (see Figure \ref{04:fig37}.)
+	\item Click on one of the Data Labels. Note that all of the data labels for that data series are selected.
+	\item Using the Home ribbon, change the font to Arial, Bold, size $ 9 $.
+	\item Click on one of the data labels for the other data series. Format those data labels as Arial, Bold, size $ 9 $ as well.
+	\item Save the workbook.
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering
@@ -1022,13 +937,7 @@ size 9 as well.
 	\label{04:fig37}
 \end{figure}
 
-
-Figure 4.37 shows the Grade Distribution Comparison chart with the completed formatting
-adjustments and labels added to the data series. Note that we can move each individual data label. This
-might be necessary if two data labels overlap or if a data label falls in the middle of a grid line. To move
-an individual data label, click it twice, then click and drag.
-
-
+Figure \ref{04:fig38} shows the Grade Distribution Comparison chart with the completed formatting adjustments and labels added to the data series. Note that each individual data label can be moved if two data labels overlap or if a data label falls in the middle of a grid line. To move an individual data label, click it twice, then click and drag.
 
 \begin{figure}[H]
 	\centering
@@ -1072,7 +981,7 @@ an individual data label, click it twice, then click and drag.
 		\end{itemize}
 	\end{sklbox}
 \end{center}
-
+%TODO Start Here
 \subsection{Adding Series Lines and Annotations to a Chart}
 
 The last formatting features we will demonstrate are adding series lines and annotations to a chart.
