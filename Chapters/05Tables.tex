@@ -4,19 +4,22 @@
 
 Excel workbooks are designed to store lots of information and organizing this information so that they display meaningful data can be challenging. Excel has many features that can help organize data and find needed information efficiently. Setting up data as a table from the onset will allows users to sort, filter, total, and subtotal the data easily. In Excel, a table is a collection of data about a particular subject stored in adjacent rows and columns. Tables can improve the look and feel of a workbook. This chapter explores how to best set up Excel tables, how to edit them, and then how to work with them effectively. These skills will be demonstrated in the context of a multi-sheet file that shows national average weather for two very different cities in the United States. Weather data is often voluminous and difficult to summarize since so much is collected every hour of every day and providing meaningful summaries of such data is a useful skill. The skills learned using weather data in this chapter can be be transferred to data found in any discipline or field.
 
-
 \section{Table Basics}
 
-
-Learning Objectives
-
-
-1. Understand table structure.
-2. Plan, create, and edit a table.
-3. Freeze rows and columns.
-4. Sort data in a table.
-
-
+\begin{center}
+	\begin{objbox}{Learning Objectives}
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item Understand table structure.
+			\item Plan, create, and edit a table.
+			\item Freeze rows and columns.
+			\item Sort data in a table.
+		\end{itemize}
+	\end{objbox}
+\end{center}
 
 
 This section reviews the fundamental skills for setting up and maintaining an Excel table. The
@@ -120,39 +123,55 @@ Let’s try these steps again in the following steps:
 5.    Adjust your columns widths so that you can see the complete headings in row 5 with the filter
 arrows showing.
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Create a Table}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+
+			\item Click on the top left cell in your data.
+			\item Click the Table button in the Insert tab of the Ribbon.
+			\item Make sure ``My table has headers'' is checked. Click OK.
+			\item Click on the top left cell again.
+			\item Adjust your columns widths so the complete headings with the filter arrows are showing.
+						
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
 
 
-Skill Refresher
 
-
-Create a Table
-
-1. Click on the top left cell in your data.
-2. Click the Table button in the Insert tab of the Ribbon.
-3. Make sure “My table has headers” is checked. Click OK.
-4. Click on the top left cell again.
-5. Adjust your columns widths so that you can see the complete headings with the filter arrows showing.
 
 
 
 \subsection{Formatting Tables}
 
 There are many ways to format an Excel table. There are preset colored Table Styles with Light,
-Medium, and Dark colors. There are also a variety of Table Style Options listed in Table 5.1.
+Medium, and Dark colors. There are also a variety of Table Style Options listed in Table \ref{05:tab01}.
 
-Table 5.1 Table Style Options
+{\small
+	\begin{longtable}{p{1.0in}p{3.00in}} %Max width: 4.25in
+		\textbf{Table Style} & \textbf{Description} \endhead
+		\hline \\
+		Header Row & Top row of the table that includes column headings\\
+		Total Row & Row added to the bottom that applies column summary calculations\\
+		First Column & Formatting added to the left-most column in the table\\
+		Last Column & Formatting added to the right-most column in the table\\
+		Banded Rows & Alternating rows of color added to make it easier to see rows of data\\
+		Banded Columns & Alternating columns of color added to make it easier to see columns of data\\
+		Filter Button & Button that appear at the top of each column that lists options for sorting and filtering\\
+		\caption{Table Style Options}
+		\label{05:tab01}
+	\end{longtable}
+}
 
-Table Style          Description
-Header Row           Top row of the table that includes column headings
-Total Row            Row added to the bottom that applies column summary calculations
-First Column         Formatting added to the left-most column in the table
-Last Column          Formatting added to the right-most column in the table
-Banded Rows          Alternating rows of color added to make it easier to see rows of data
-Alternating columns of color added to make it easier to see columns of
-Banded Columns
-data
-Filter Button        Button that appear at the top of each column that lists options for sorting and filtering
+
+
+
 
 
 We’ll add some formatting to both of our Portland weather tables in the following steps:
@@ -212,16 +231,20 @@ tables. The following steps will walk you through doing this.
 2. Click on A34 (the left-most cell below the last row in the table).
 3. Enter the following data:
 
-Table 5.2 Portland, Maine data
-
-Rain     Snow
-Day High (°F) Low (°F)
-(inches) (inches)
-29    31.4       13.3       0.12       0.59
-30    31.6       3.4        0.08       0.47
-31    31.7       13.5       0.12       0.63
-
-
+\begin{table}[H]
+	\centering
+	\begin{tabulary}{\linewidth}{CCCCC}
+		\hline
+		\textbf{Day} & \textbf{High} (\textdegree F) & \textbf{Low} (\textdegree F) & \textbf{Rain} (inches) & \textbf{Snow} (inches) \\
+		\hline
+		29 & 31.4 & 13.3 & 0.12 & 0.59 \\ 
+		30 & 31.6 & 3.4  & 0.08 & 0.47 \\ 
+		31 & 31.7 & 13.5 & 0.12 & 0.63 \\ 
+		\hline
+	\end{tabulary} 
+	\caption{Portland, Maine data}
+	\label{05:tab02}
+\end{table}
 
 
 Notice that the banded row formatting continues as additional rows are added to the tables.
@@ -230,17 +253,20 @@ Notice that the banded row formatting continues as additional rows are added to 
 2. Click on A34 (the left-most cell below the last row in the table).
 3. Enter the following data:
 
-Table 5.3 Portland, Oregon data
-
-
-
-Rain     Snow
-Day High (°F) Low (°F)
-(inches) (inches)
-29      48.8       36.2       0.16     0
-30      49.0       36.2       0.11     0.32
-31      49.1       36.1       0.16     0
-
+\begin{table}[H]
+	\centering
+	\begin{tabulary}{\linewidth}{CCCCC}
+		\hline
+		\textbf{Day} & \textbf{High} (\textdegree F) & \textbf{Low} (\textdegree F) & \textbf{Rain} (inches) & \textbf{Snow} (inches) \\
+		\hline
+		29 & 48.8 & 36.2 & 0.16 & 0 \\ 
+		30 & 49.0 & 36.2 & 0.11 & 0.32 \\ 
+		31 & 49.1 & 36.1 & 0.16 & 0 \\ 
+		\hline
+	\end{tabulary} 
+	\caption{Portland, Oregon data}
+	\label{05:tab03}
+\end{table}
 
 \subsection{Finding and Editing Data}
 
@@ -253,7 +279,7 @@ We know that a temperature of 3.4 degrees (brrr!) was entered erroneously in the
 sheet. It should have been 13.4. To fix this error, complete the following steps.
 
 1.    Click on the Portland ME sheet.
-2.    Press the CTRL+HOME keys together to go to the top of the sheet (A1).
+2.    Press the \keystroke{Ctrl}+\keystroke{Home} keys together to go to the top of the sheet (A1).
 3.    In the Home tab of the ribbon, click on Find \& Select in the Editing Group and then click Find.
 4.    In the Find box, type 3.4, and then click Find Next.
 
@@ -274,20 +300,32 @@ sheet. It should have been 13.4. To fix this error, complete the following steps
 7. Now switch to the Portland Oregon sheet and find the Snow error of .32. Change it to 0.12. You
 should find the error in Day 3.
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Finding and Replacing Data}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-Skill Refresher
+			\item In the Home tab of the ribbon, click on Find \& Select in the Editing Group and then click Find.
+			\item In the Find box, type the phrase to find then click Find Next.
+			\item Continuing click Find Next until the phrase is found.
+			\item Click Close and edit the data.
+			
+			\item one
+			\item two
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
 
-Finding and Replacing Data
-
-1. In the Home tab of the ribbon, click on Find \& Select in the Editing Group and then click Find.
 
 
 
 
-2. In the Find box, type what you want to find, and then click Find Next.
-3. Continuing click Find Next until you find.what you are looking for.
-4. Click Close and edit your data.
 
 
 
@@ -328,30 +366,26 @@ To unfreeze your headings:
 \subsection{Simple Sort}
 
 Content in a table can be sorted alphabetically, numerically, and in many other ways. Sorting helps
-organize data by one or more columns in your table. Table 5.4 describes the different sort orders
-available for each column of data.
+organize data by one or more columns in your table. Table \ref{05:tab04} describes the different sort orders available for each column of data.
 
-Table 5.4 Sort Options
-
-Sort Order     Text                     Numbers               Dates
-Smallest to Largest
-
-Ascending      Alphabetical (A-Z)                             Chronological (oldest to newest)
-
-Lowest to Highest
-Largest to Smallest
-Reverse Chronological (newest to
-Descending Reverse Alphabetical (Z-A)
-oldest)
-Highest to Lowest
+{\small
+	\begin{longtable}{p{0.75in}p{1.0in}p{0.65in}p{0.85in}} %Max width: 4.25in
+		\textbf{Sort Order} & \textbf{Text} & \textbf{Numbers} & \textbf{Dates} \endhead
+		\hline \\
+		Ascending & Alphabetical (A-Z) & Smallest to Largest & Chronological (oldest to newest)\\
+		Descending & Reverse Alphabetical (Z-A) & Largest to Smallest & Reverse Chronological (newest to oldest)\\
+		\caption{Sort Options}
+		\label{05:tab04}
+	\end{longtable}
+}
 
 
-Let’s say we want to know what the snowiest day was in January in Portland, Maine; so we want to
+Let's say we want to know what the snowiest day was in January in Portland, Maine; so we want to
 sort the Snow column in Descending order so that the snowiest day ends up at the top of the table.
 
 1. Click on the filter Click arrow to the right of the header Snow (inches) in the Portland ME
 worksheet.
-2. Click on the choice Click %ZA↓ Sort Largest to Smallest. See Figure 5.8 below.
+2. Click on the choice Click ZA$ \downarrow $ Sort Largest to Smallest. See Figure 5.8 below.
 
 
 \begin{figure}[H]
@@ -394,19 +428,21 @@ Oregon. Check your answers with Figure 5.10.
 
 
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Sort a Column}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-
-
-Skill Refresher
-
-
-Sort a Column
-
-1. Click on the filter Click arrow to the right of the header in the column you want to sort.
-2. Click on the choice AZ! or %ZA↓ to sort your data by that column.
-
-
-
+			\item Click on the filter down arrow to the right of the header in the column to be sorted.
+			\item Click on the choice AZ$ \downarrow $ or ZA$ \downarrow $ to sort the data in that column.
+						
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
 \subsection{Multi-Level Sort}
 
@@ -526,48 +562,49 @@ order and, within each week, in Day order.
 \end{figure}
 
 
+\begin{center}
+	\begin{tkwbox}{Key Take-Aways}
+		\textbf{Save}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-
-
-
-
-
-Key Takeaways
-
-
-• Tables are made up of adjacent rows and columns of data with a single row of column headings at the top.
-
-• You can create a table by clicking in the top left-most cell in your data and selecting Table in the Insert tab of
-the ribbon.
-
-• There are a gallery of styles, as well as, style options to choose from to format a table.
-
-• When you need to add data, it is best to add it one row below the bottom of the table. You can then sort to
-reorganize your data.
-
-• Freezing heading keeps your column headings displayed while you scroll through your table data.
-
-• You can use the filter arrows in the table headings to sort by a single column. Use Sort in the Data tab in the
-ribbon to sort by two or more columns at a time.
-
-• Custom Sorts can be used when data needs to be sorted in a special way (i.e. – Days of the Week).
+			\item Tables are made up of adjacent rows and columns of data with a single row of column headings at the top.
+			\item Tables are created by clicking in the top left-most cell in the data and selecting Table in the Insert tab of the ribbon.
+			\item There are a gallery of styles and options to choose from to format a table.
+			\item To add data it is best to add it one row below the bottom of the table. The table can then be resorted to organize the data.
+			\item Freezing heading keeps column headings displayed while scrolling through the table data.
+			\item Filter arrows in the table headings sort the data by a single column. Use Sort in the Data tab in the ribbon to sort by two or more columns at a time.
+			\item Custom Sorts can be used when data needs to be sorted in a special way (i.e. Days of the Week).
+			
+			\item one
+			\item two
+			
+		\end{itemize}
+	\end{tkwbox}
+\end{center}
 
 
 
 \section{Intermediate Table Skills}
 
 
+\begin{center}
+	\begin{objbox}{Learning Objectives}
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-
-Learning Objectives
-
-
-• Filter table data.
-
-• Add a total row to a table.
-
-• Insert subtotals into a table.
-
+			\item Filter table data.
+			\item Add a total row to a table.
+			\item Insert subtotals into a table.
+			
+		\end{itemize}
+	\end{objbox}
+\end{center}
 
 
 \subsection{Filtering Data}
@@ -576,24 +613,25 @@ When you first create an Excel table, filter arrows appear in all the column hea
 that you can use those arrows to sort your data by a single column. You can also use these same arrows
 to filter or limit the data you see by narrowing the displayed data within a column. There are many
 ways to filter data within a column depending on whether the data in the column is text or numeric.
-Table 5.5 gives you some filter examples:
+Table \ref{05:tab05} gives you some filter examples:
 
-Table 5.5 Filter Examples
-
-Text Filters
-Desired Results                                     Filter Column Text Filter                         Checkbox Selected
-Data for the State of New Jersey (NJ)               State            Equals NJ                        NJ
-Data for Books that Have Gardening in Their Title Title              Contains Gardening
-Data for Weather on the Weekend                     Day              Equals Saturday OR equals Sunday Saturday and Sunday
-
-
-
-
-Numeric Filters
-Desired Results                         Filter Column Number Filter                       Checkbox Selected
-Data for Income Greater Than \$1,000 Income             Greater than 1,000
-Data for Amount Paid Equal to Zero      Amount Paid    Equals 0.00                        0.00
-Data for Mortgage and Auto Loans        Loan Type      Equals Mortgage OR equals Auto Mortgage and Auto
+{\fontsize{8}{10} \selectfont
+	\begin{longtable}{p{1.5in}p{0.75in}p{1.0in}p{0.75in}} %Max width: 4.25in
+		\textbf{Desired Results} & \textbf{Filter Column} & \textbf{Filter} & \textbf{Checkbox} \endhead
+		\hline \\
+		\multicolumn{4}{l}{\textbf{Text Filters}} \\
+		Data for the State of New Jersey (NJ) & State & Equals NJ & NJ \\
+		Data for Books that Have Gardening in Their Title & Title & Contains Gardening & \\
+		Data for Weather on the Weekend & Day & Equals Saturday or equals Sunday & Saturday and Sunday \\
+		\hline \\
+		\multicolumn{4}{l}{\textbf{Numeric Filters}} \\
+		Data for Income Greater Than $ \$1,000 $ & Income & Greater than $ 1000 $ & \\
+		Data for Amount Paid Equal to Zero & Amount Paid & Equals 0.00 & 0.00 \\
+		Data for Mortgage and Auto Loans & Loan Type & Equals Mortgage or equals Auto & Mortgage and Auto \\
+		\caption{Filter Examples}
+		\label{05:tab05}
+	\end{longtable}
+}
 
 
 Notice there are sometimes more than one way to filter data (i.e. – with a filter choice or a checked
@@ -630,16 +668,25 @@ To remove your filter:
 1. Click the funnel next to the Week heading.
 2. Select “Clear filter from Week”.
 
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Filter a Column}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-Skill Refresher
+			\item Click the filter arrow to the right of the heading in the column you want to filter.
+			\item Click the Select All checkbox to deselect all of the checkbox choices.
+			\item Click on the checkboxes you want to filter by.
+			\item Click OK.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
 
-Filter a Column
-
-1. Click the filter arrow to the right of the heading in the column you want to filter.
-2. Click the Select All checkbox to deselect all of the checkbox choices.
-3. Click on the checkboxes you want to filter by.
-4. Click OK.
 
 Un-Filter a Column
 
@@ -648,7 +695,7 @@ Un-Filter a Column
 
 
 
-Now let’s try a numeric filter. We want to find days in Portland ME when it’s warmer than 32
+Now let's try a numeric filter. We want to find days in Portland ME when it’s warmer than 32
 degrees in January:
 
 1. Click in the Portland ME sheet, then click on a cell in the table.
@@ -737,7 +784,7 @@ in Figure 5.20 will show on your screen.
 2. In the Size group on the Slicer Options ribbon (NOT the Buttons group), change the width to 1”.
 3. Click in the table and scroll down to Day 15 and click the 15 button to show only the data for
 January 15th in the table.
-4. Hold down the CTRL key and click on the Slicer buttons for Days 10 through 14. Your table
+4. Hold down the \keystroke{Ctrl} key and click on the Slicer buttons for Days 10 through 14. Your table
 should now show the data from Days 10-15.
 5. Sort the Day column in Ascending order to show the days in order as in Figure 5.21.
 
@@ -794,34 +841,45 @@ your table.
 and Low: 35.8. Change the label “Total” to “Average” by clicking A37 and typing Average.
 
 
-Skill Refresher
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Add a Total Row}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
+			\item Click on the Total Row check box in the Table Style Options group in the Table Tools Design tab in the ribbon.
+			\item Scroll to the bottom of your table to find the Total Row.
+			\item Click in one of the columns in the Total Row, and then click the down-arrow that appears to the right of the cell.
+			\item Choose Sum to add a sum to the Total Row in the column.
+			\item To see the Average for column, click on the arrow again and choose Average. Some other choices in the Total Row are Count (for words), Count Numbers, Max, and Min.
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
-Add a Total Row
+\begin{center}
+	\begin{sklbox}{Skill Refresher}
+		\textbf{Add a Slicer}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-1. Click on the Total Row check box in the Table Style Options group in the Table Tools Design tab in the
-ribbon.
-2. Scroll to the bottom of your table to find the Total Row.
-3. Click in one of the columns in the Total Row, and then click the down-arrow that appears to the right of
-the cell.
-4. Choose Sum to add a sum to the Total Row in the column.
-5. To see the Average for column, click on the arrow again and choose Average.
+			\item Click on Insert Slicer in the Table Tools Design tab in the ribbon.
+			\item Check the box for the column to which you want to add a Slicer.
+			\item Click OK.
+			
+			\item one
+			\item two
+			
+		\end{itemize}
+	\end{sklbox}
+\end{center}
 
-Some other choices in the Total Row are Count (for words), Count Numbers, Max, and Min.
-
-
-
-
-Skill Refresher
-
-
-Add a Slicer
-
-
-
-1. Click on Insert Slicer in the Table Tools Design tab in the ribbon.
-2. Check the box for the column to which you want to add a Slicer.
-3. Click OK.
 
 
 
@@ -846,11 +904,11 @@ data to a new sheet, sort by the days of the week, and then convert the table in
 see the subtotal.
 
 1. Click on the Weekly OR sheet.
-2. Point at the Weekly OR sheet tab at the bottom of the screen, hold the CTRL key down, and
+2. Point at the Weekly OR sheet tab at the bottom of the screen, hold the \keystroke{Ctrl} key down, and
 left-drag the sheet to the right until you are past all the existing sheets.
-3. When you see a sheet icon with a + sign, let go of the mouse button and then the CTRL key. A
+3. When you see a sheet icon with a + sign, let go of the mouse button and then the \keystroke{Ctrl} key. A
 Weekly OR (2) sheet will appear.
-4. Right-click on the new Sheet tab, select Rename, type Subtotal OR, and then press ENTER.
+4. Right-click on the new Sheet tab, select Rename, type Subtotal OR, and then press \keystroke{Enter}.
 5. Save your file before you start Subtotaling!
 6. Remove all filters in the table by clicking the Data tab and then choosing Clear.
 7. Now we want to Sort the table by the Day column using a Custom Sort in the Sort button in the
@@ -906,21 +964,19 @@ subtotals using the Remove All button in Figure 5.24, sort your table, and then 
 
 
 Notice the three Outline buttons circled in the upper-left corner of the spreadsheet. These allow you
-to control the amount of subtotaled data that is displayed. Table 5.5 describes the different Outline
-buttons.
+to control the amount of subtotaled data that is displayed. Table \ref{05:tab06} describes the different Outline buttons.
 
-Table 5.5 Subtotal Outline Buttons
-
-Button Content Displayed
-Only grand total
-Level 1
-
-
-Subtotals and grand total
-Level 2
-
-
-Level 3 Individual records, subtotals, and grand total
+{\small
+	\begin{longtable}{p{0.50in}p{3.00in}} %Max width: 4.25in
+		\textbf{Button} & \textbf{Content Displayed} \endhead
+		\hline \\
+		Level 1 & Only the grand total\\
+		Level 2 & Subtotals and grand total\\
+		Level 3 & Individual records, subtotals, and grand total\\
+		\caption{Subtotal Outline Buttons}
+		\label{05:tab06}
+	\end{longtable}
+}
 
 
 Let’s try the three Outline buttons to see the difference in the data displayed:
@@ -938,43 +994,55 @@ buttons hide a portion of the data at a time.
 8. All the individual records along with the subtotals, and Grand Average should be displayed.
 9. Save your Excel file.
 
+\begin{center}
+	\begin{tkwbox}{Key Take-Aways}
+		\textbf{Save}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-Key Takeaways
+			\item Filtering is an easy way to see a subset of the data. Filtering arrows appear to the right of each column heading when the table has a header row.
+			\item Data can be filtered by text or numerically.
+			\item A slicer is another way to filter in Excel that provides a set of filtering buttons on the sheet.
+			\item Adding a total row to a table is a quick, efficient way to see summary statistics for one or more columns in a table.
+			\item Subtotaling provides a way to quickly add totals to groups within a column along with providing a grand total at the bottom of the table.
+			\item Subtotal Outline buttons allow users to see add of the subtotaled data, just the totals and grand total, or simply the grand total.
+			\item Plus and minus buttons within subtotaling allow a user to expand and hide portions of the subtotaled data.
+			
+			\item one
+			\item two
+			
+		\end{itemize}
+	\end{tkwbox}
+\end{center}
 
 
-• Filtering is an easy way to see a subset of your data. Filtering arrows appear to the right of each column
-heading when you insert a table with a header row.
-
-• You can filter by text or numerically.
-
-• A slicer is another way to filter in Excel that provides a set of filtering buttons on your sheet.
-
-• Adding a total row to a table is a quick, efficient way to see summary statistics for one or more columns in a
-table.
-
-• Subtotaling provides a way to quickly add totals to groups within a column along with providing a grand total
-at the bottom of the table.
-
-• Subtotal Outline buttons allow users to see add of the subtotaled data, just the totals and grand total, or
-simply the grand total.
-
-• Plus and minus buttons within subtotaling allow a user to expand and hide portions of the subtotaled data.
 
 
 
 \section{Preparing to Print}
 
 
+\begin{center}
+	\begin{objbox}{Learning Objectives}
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+
+			\item Review options for professional page setup for printing.
+			\item Understand how to insert a picture to enhance the visual appearance of a worksheet.
+			\item Preview worksheets containing tables to ensure they will print in a professional manner.
+			
+		\end{itemize}
+	\end{objbox}
+\end{center}
 
 
-Learning Objectives
 
 
-1. Review options for professional page setup for printing.
-2. Understand how to insert a picture to enhance the visual appearance of a worksheet.
-3. In this section, we will preview the worksheets containing tables to ensure they will print in a professional
-manner. We will make any formatting and page setup changes that are needed, as well as add a picture to
-one of the worksheets to enhance its appearance.
 
 
 
@@ -1121,16 +1189,24 @@ appropriately. Exit Backstage View.
 8. Compare your work with the self-check answer key (found in the Course Files link) and then
 submit the CH5 National Weather workbook as directed by your instructor.
 
+\begin{center}
+	\begin{tkwbox}{Key Take-Aways}
+		\textbf{Save}
+		\\
+		\begin{itemize}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
 
-Key Takeaways
-
-
-• When working with Excel workbooks, the final step should always be to review the worksheets in Print
-Preview to make sure they are printing appropriately.
-
-• You can add images you have saved, or images you find online, to a worksheet to enhance its appearance. Be
-sure to resize and move them appropriately so they do not detract from the data.
-
+			\item When working with Excel workbooks, the final step should always be to review the worksheets in Print Preview to make sure they are printing appropriately.
+			\item Images can be added to a worksheet to enhance its appearance. Be sure to resize and move them appropriately so they do not detract from the data.
+			
+			\item one
+			\item two
+			
+		\end{itemize}
+	\end{tkwbox}
+\end{center}
 
 
 \section{Chapter Practice}
@@ -1229,16 +1305,16 @@ a daily basis by a retail company. See Figure 5.31 above.
 
 1. Open the data file SC5 Data and save the file to your computer as SC5 Dynamite Customer
 Sales.
-2. Click on the Sales sheet. In I4 , enter a VLOOKUP function that will find the Product Price for
-the Product in E4 in the table in the Product Table sheet and return it to I4. In your VLOOKUP
-function, fill in the required parameters using Figure 5.32 below. Copy the VLOOKUP function
+2. Click on the Sales sheet. In I4 , enter a \formatfunc{Vlookup} function that will find the Product Price for
+the Product in E4 in the table in the Product Table sheet and return it to I4. In your \formatfunc{Vlookup}
+function, fill in the required parameters using Figure 5.32 below. Copy the \formatfunc{Vlookup} function
 down column I.
 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch05_fig32}
-	\caption{VLOOKUP window}
+	\caption{\formatfunc{Vlookup} window}
 	\label{05:fig32}
 \end{figure}
 
@@ -1247,9 +1323,9 @@ down column I.
 
 
 
-3. In J4 , enter a VLOOKUP function that will find the Product Cost for the Product in E4 in the
-table in the Product Table sheet and return it to J4. This VLOOKUP function will be the same as
-the %VLOOKUP function in I4 – EXCEPT THE COL_INDEX_NUM will be 3 instead of 4. Copy
+3. In J4 , enter a \formatfunc{Vlookup} function that will find the Product Cost for the Product in E4 in the
+table in the Product Table sheet and return it to J4. This \formatfunc{Vlookup} function will be the same as
+the \formatfunc{Vlookup} function in I4 EXCEPT THE COL\_INDEX\_NUM will be 3 instead of 4. Copy
 the function down column J.
 4. In K4, calculate Profit (Product Price – Product Cost). Copy this formula down column K.
 5. Format columns I, J, and K as currency with two decimal places.
@@ -1265,7 +1341,7 @@ by Name.
 9. Make another copy of the Sales sheet and rename it Sales by Product. Place this new sheet to
 the right of the June Sales by Country sheet. Hide the Region column.
 10. Insert a slicer in the Sales by Product sheet for Product Sold. Move the top left corner of the
-slicer to the top left-hand corner of cell M1. Resize the height of the entire slicer to 2.09”.
+slicer to the top left-hand corner of cell M1. Resize the height of the entire slicer to 2.09 inches.
 11. Select both DETA100 and DETA200 in the slicer. Sort the filtered sheet by Product Sold. Add a
 Total Row that includes the overall average for the Product Price, Product Cost, and Profit
 columns. Change the heading in A53 to Average.
