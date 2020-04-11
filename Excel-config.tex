@@ -57,10 +57,28 @@
 	\mbox{}
 	\newpage
 }
-% The following creates a simulated keystroke font. That is
-% \keystroke{Esc} puts the letters ``Esc'' in a box that 
-% resembles a keystroke.
-\newcommand{\keystroke}[1]{%
+%***********************************************
+% Format various elements in the text
+%***********************************************
+
+% Button and other links in dialog boxes
+\newcommand{\fmtButton}[1]{\textit{#1}}
+% Cell Location
+\newcommand{\fmtCellLocation}[1]{\textsf{#1}}
+% Formulas and functions
+\newcommand{\fmtFunction}[1]{\textit{\textcolor{blue}{#1}}}
+% Ribbon Button (like Find and Autosum)
+\newcommand{\fmtRibbonButton}[1]{\textit{#1}}
+% Ribbon Group
+\newcommand{\fmtRibbonGroup}[1]{\textit{#1}}
+% Ribbon Tab
+\newcommand{\fmtRibbonTab}[1]{\textit{#1}}
+% Workbook (file) name
+\newcommand{\fmtWorkbookName}[1]{\textbf{#1}}
+% Worksheet name
+\newcommand{\fmtWorksheetName}[1]{\textit{#1}}
+% Keystrokes (like: Enter)
+\newcommand{\fmtKeystroke}[1]{%
 	\tikz[baseline=(key.base)]
 	\node[%
 	draw,
@@ -75,8 +93,6 @@
 	;
 }
 
-% The following formats formulas and functions
-\newcommand{\formatfunc}[1]{\textit{\textcolor{blue}{#1}}}
 
 % The following creates a function named maxwidth that permits
 % me to set a maximum width for images. If the natural width of

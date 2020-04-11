@@ -59,13 +59,6 @@
 \blfootnote{Whatever.}
 
 %***************************************************************************
-\section{Formulas and Functions}
-%***************************************************************************
-% Use the following for Excel formulas and functions
-\formatfunc{FormulaHere}
-%\textit{\textcolor{blue}{FormulaHere}}
-
-%***************************************************************************
 \section{Box: Text}
 %***************************************************************************
 % Creates a nice boxed text with a title and main section
@@ -237,9 +230,14 @@
 \begin{enumerate}
 	\setcounter{enumi}{2} %Note: set counter to the number desired -1
 	
-	\item Left Click and drag the mouse pointer to cell \textsf{C2}.
+	\item One
 \end{enumerate}
 
+OR
+
+\begin{enumerate}[resume]
+	\item One
+\end{enumerate}
 
 %***************************************************************************
 \section{ToDo}
@@ -247,19 +245,6 @@
 % Create a ToDo note in the text. This also creates a new clickable TODO
 % section in the ``structure'' box on the left side of the page.
 %TODO This is a todo note.
-
-%***************************************************************************
-\section{Code Snip}
-%***************************************************************************
-\lstset{ %
-  caption={caption},
-  label=SL:lst:listing01,
-  numbers=left,
-  language=Verilog
-}
-\begin{lstlisting}
-  Code here
-\end{lstlisting}
 
 %***************************************************************************
 \section{Figure Without Caption}
@@ -306,7 +291,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 \section{Style Guide}
 %**************************************************************************
 
-Bold these names: Workbook, Worksheet, Tab, Tab Group, Button (like ``click \textbf{OK}'') 
+I defined several format commands in ``Excel-config.tex''. Each of the commands start with ``fmt...'' so they are easy to find. By using these, I can re-format an item throughout the text by changing only the lines in the config file.
 
 For menu selections: Click \textsc{\fbox{Analyze $ \rightarrow $ Descriptive Statistics $ \rightarrow $ Frequencies}}
 
