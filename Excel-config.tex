@@ -57,6 +57,17 @@
 	\mbox{}
 	\newpage
 }
+
+%**********************************************
+% The following lets me create ragged margins
+% in my table cells. I define the column type as 
+% R for ragged right margin.
+%**********************************************
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
 %***********************************************
 % Format various elements in the text
 %***********************************************
@@ -195,6 +206,12 @@
 \usepackage{subfig}  
 
 \usepackage{booktabs}
+
+%***********************************
+% Special colors I use
+%***********************************
+\definecolor{captionwhite}{RGB}{255,255,255}
+\definecolor{tablerow}{RGB}{240,248,255}
 
 %*****
 % Special text boxes

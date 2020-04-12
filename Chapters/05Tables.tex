@@ -112,21 +112,25 @@ Notice that a new ribbon tab, \fmtRibbonTab{Table Tools Design}, appears when th
 
 There are many ways to format an Excel table. There are preset colored Table Styles with Light, Medium, and Dark colors. There are also a variety of Table Style Options as listed in Table \ref{05:tab01}.
 
-{\small
-	\begin{longtable}{p{1.0in}p{3.00in}} %Max width: 4.25in
-		\textbf{Table Style} & \textbf{Description} \endhead
-		\hline \\
-		Header Row & Top row of the table that includes column headings\\
-		Total Row & Row added to the bottom that applies column summary calculations\\
-		First Column & Formatting added to the left-most column in the table\\
-		Last Column & Formatting added to the right-most column in the table\\
-		Banded Rows & Alternating rows of color added to make it easier to see rows of data\\
-		Banded Columns & Alternating columns of color added to make it easier to see columns of data\\
-		Filter Button & Button that appear at the top of each column that lists options for sorting and filtering\\
-		\caption{Table Style Options}
-		\label{05:tab01}
-	\end{longtable}
-}
+\begin{table}[H]
+	\rowcolors{1}{}{tablerow} % zebra striping background
+	{\small		
+		\begin{longtable}{L{1.0in}L{3.00in}} %Max width: 4.25in
+			\textbf{Table Style} & \textbf{Description} \endhead
+			\hline
+			Header Row & Top row of the table that includes column headings\\
+			Total Row & Row added to the bottom that applies column summary calculations\\
+			First Column & Formatting added to the left-most column in the table\\
+			Last Column & Formatting added to the right-most column in the table\\
+			Banded Rows & Alternating rows of color added to make it easier to see rows of data\\
+			Banded Columns & Alternating columns of color added to make it easier to see columns of data\\
+			Filter Button & Button that appear at the top of each column that lists options for sorting and filtering\\
+			\rowcolor{captionwhite}
+			\caption{Table Style Options}
+			\label{05:tab01}
+		\end{longtable}
+	}
+\end{table}
 
 Add formatting to both of of the Portland weather tables in the following steps.
 
@@ -171,22 +175,23 @@ Add the last three days of the months to the \fmtWorksheetName{Portland ME} and 
 \begin{enumerate}
 	\item Click on the \fmtWorksheetName{Portland ME} worksheet.
 	\item Click on \fmtCellLocation{A34} (the left-most cell below the last row in the table).
-	\item Enter the data from the following table.
+	\item Enter the data from table \ref{05:tab02}.
 \end{enumerate}
 
 \begin{table}[H]
-	\centering
-	\begin{tabulary}{\linewidth}{CCCCC}
-		\hline
-		\textbf{Day} & \textbf{High} (\textdegree F) & \textbf{Low} (\textdegree F) & \textbf{Rain} (inches) & \textbf{Snow} (inches) \\
-		\hline
-		29 & 31.4 & 13.3 & 0.12 & 0.59 \\ 
-		30 & 31.6 & 3.4  & 0.08 & 0.47 \\ 
-		31 & 31.7 & 13.5 & 0.12 & 0.63 \\ 
-		\hline
-	\end{tabulary} 
-	\caption{Portland, Maine data}
-	\label{05:tab02}
+	\rowcolors{1}{}{tablerow} % zebra striping background
+	{\small		
+		\begin{longtable}{L{0.5in}L{0.5in}L{0.5in}L{0.5in}L{0.5in}} 
+			\textbf{Day} & \textbf{High} (\textdegree F) & \textbf{Low} (\textdegree F) & \textbf{Rain} (inches) & \textbf{Snow} (inches) \endhead
+			\hline
+			29 & 31.4 & 13.3 & 0.12 & 0.59 \\
+			30 & 31.6 & 3.4  & 0.08 & 0.47 \\
+			31 & 31.7 & 13.5 & 0.12 & 0.63 \\ 
+			\rowcolor{captionwhite}
+			\caption{Portland, Maine data}
+			\label{05:tab02}
+		\end{longtable}
+	}
 \end{table}
 
 Notice that the banded row formatting continues as additional rows are added to the tables.
@@ -194,22 +199,23 @@ Notice that the banded row formatting continues as additional rows are added to 
 \begin{enumerate}
 	\item Click on the \fmtWorksheetName{Portland OR} worksheet.
 	\item Click on \fmtCellLocation{A34} (the left-most cell below the last row in the table).
-	\item Enter the data from the following table.
+	\item Enter the data from table \ref{05:tab03}.
 \end{enumerate}
 
 \begin{table}[H]
-	\centering
-	\begin{tabulary}{\linewidth}{CCCCC}
-		\hline
-		\textbf{Day} & \textbf{High} (\textdegree F) & \textbf{Low} (\textdegree F) & \textbf{Rain} (inches) & \textbf{Snow} (inches) \\
-		\hline
-		29 & 48.8 & 36.2 & 0.16 & 0 \\ 
-		30 & 49.0 & 36.2 & 0.11 & 0.32 \\ 
-		31 & 49.1 & 36.1 & 0.16 & 0 \\ 
-		\hline
-	\end{tabulary} 
-	\caption{Portland, Oregon data}
-	\label{05:tab03}
+	\rowcolors{1}{}{tablerow} % zebra striping background
+	{\small		
+		\begin{longtable}{L{0.5in}L{0.5in}L{0.5in}L{0.5in}L{0.5in}} 
+			\textbf{Day} & \textbf{High} (\textdegree F) & \textbf{Low} (\textdegree F) & \textbf{Rain} (inches) & \textbf{Snow} (inches) \endhead
+			\hline
+			29 & 48.8 & 36.2 & 0.16 & 0 \\ 
+			30 & 49.0 & 36.2 & 0.11 & 0.32 \\ 
+			31 & 49.1 & 36.1 & 0.16 & 0 \\ 
+			\rowcolor{captionwhite}
+			\caption{Portland, Oregon data}
+			\label{05:tab03}
+		\end{longtable}
+	}
 \end{table}
 
 \subsection{Finding and Editing Data}
@@ -260,11 +266,10 @@ A temperature of $ 3.4 $ degrees was entered erroneously in the \fmtWorksheetNam
 
 When panes are ``frozen'' in a worksheet, Microsoft Excel keeps specific rows or columns visible in the table as it is scrolled on the screen. For example, if the first row in the spreadsheet contains labels, that row might be frozen to make sure that the column labels remain visible as the sheet is scrolled down. When scrolling through the weather data, it would be nice to keep column headings visible on the screen. Follow these steps to freeze the headings.
 
-%TODO Start Here
 \begin{enumerate}
-	\item Click in \textsf{A6}, the left-most cell below the headings row.
-	\item Click the View tab in the ribbon.
-	\item Select Freeze Panes and then Freeze Top Row (see Figure \ref{05:fig07}).
+	\item Click in \fmtCellLocation{A6} which is the left-most cell below the headings row.
+	\item Click the \fmtRibbonTab{View} tab in the ribbon.
+	\item Select \fmtRibbonButton{Freeze Panes} and then \fmtRibbonButton{Freeze Top Row} (see Figure \ref{05:fig07}).
 	\item Scroll up and down the sheet and notice that the headings are always displayed at the top of the table.
 \end{enumerate}
 
@@ -275,33 +280,37 @@ When panes are ``frozen'' in a worksheet, Microsoft Excel keeps specific rows or
 	\label{05:fig07}
 \end{figure}
 
-To unfreeze the headings:
+Follow this procedure to unfreeze the headings.
 
 \begin{enumerate}
-	\item Click on the View tab in the ribbon.
-	\item Select Unfreeze Panes.
+	\item Click on the \fmtRibbonTab{View} tab in the ribbon.
+	\item Select \fmtRibbonButton{Unfreeze Panes}.
 \end{enumerate}
 
 \subsection{Simple Sort}
 
 Content in a table can be sorted alphabetically, numerically, and in many other ways. Sorting helps organize data by one or more columns in the table. Table \ref{05:tab04} describes the different sort orders available for each column of data.
 
-{\small
-	\begin{longtable}{p{0.75in}p{1.0in}p{0.65in}p{0.85in}} %Max width: 4.25in
-		\textbf{Sort Order} & \textbf{Text} & \textbf{Numbers} & \textbf{Dates} \endhead
-		\hline \\
-		Ascending & Alphabetical (A-Z) & Smallest to Largest & Chronological (oldest to newest)\\
-		Descending & Reverse Alphabetical (Z-A) & Largest to Smallest & Reverse Chronological (newest to oldest)\\
-		\caption{Sort Options}
-		\label{05:tab04}
-	\end{longtable}
-}
+\begin{table}[H]
+	\rowcolors{1}{}{tablerow} % zebra striping background
+	{\small		
+		\begin{longtable}{L{0.75in}L{1.00in}L{0.65in}L{0.85in}}
+			\textbf{Sort Order} & \textbf{Text} & \textbf{Numbers} & \textbf{Dates} \endhead
+			\hline
+			Ascending & Alphabetical (A-Z) & Smallest to Largest & Chronological (oldest to newest)\\
+			Descending & Reverse Alphabetical (Z-A) & Largest to Smallest & Reverse Chronological (newest to oldest)\\
+			\rowcolor{captionwhite}
+			\caption{Sort Options}
+			\label{05:tab04}
+		\end{longtable}
+	}
+\end{table}
 
 Suppose it is important to know what the snowiest day was in January in Portland, Maine. One way to find that is to sort the Snow column in Descending order.
 
 \begin{enumerate}
-	\item Click on the filter Click arrow to the right of the header Snow (inches) in the Portland ME worksheet.
-	\item Click on Click ZA$ \downarrow $ Sort Largest to Smallest. See Figure \ref{05:fig08} below.
+	\item Click on the arrow to the right of the Snow (inches) header in the \fmtWorksheetName{Portland ME} worksheet.
+	\item Click on the choice \fmtButton{Click ZA$ \downarrow $ Sort Largest to Smallest}. See Figure \ref{05:fig08}.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -311,7 +320,7 @@ Suppose it is important to know what the snowiest day was in January in Portland
 	\label{05:fig08}
 \end{figure}
 
-If this is done correctly, the snowiest day, January 3rd (in row 6) with 0.73 inches of snow, will be at the top of the list. Notice the filter arrow changes in the snow column to a downward pointing arrow to indicate that the column is sorted in descending order (largest to smallest).
+If this is done correctly, the snowiest day, January 3rd (in \fmtCellLocation{row 6}) with $ 0.73 $ inches of snow, will be at the top of the list. Notice the filter arrow changes in the snow column to a downward pointing arrow to indicate that the column is sorted in descending order (largest to smallest).
 
 \begin{figure}[H]
 	\centering
@@ -321,7 +330,7 @@ If this is done correctly, the snowiest day, January 3rd (in row 6) with 0.73 in
 \end{figure}
 
 \begin{enumerate}
-	\item Now switch to the Portland Oregon sheet and repeat these sort steps to find the snowiest day in Oregon. Check the worksheet with Figure \ref{05:fig10}.
+	\item Now switch to the \fmtWorksheetName{Portland OR} sheet and repeat these sort steps to find the snowiest day in Oregon. Check the worksheet with Figure \ref{05:fig10}.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -341,7 +350,7 @@ If this is done correctly, the snowiest day, January 3rd (in row 6) with 0.73 in
 			\setlength{\parsep}{0pt}
 
 			\item Click on the filter down arrow to the right of the header in the column to be sorted.
-			\item Click on the choice AZ$ \downarrow $ or ZA$ \downarrow $ to sort the data in that column.
+			\item Click on the choice \fmtButton{AZ$ \downarrow $} or \fmtButton{ZA$ \downarrow $} to sort the data in that column.
 						
 		\end{itemize}
 	\end{sklbox}
@@ -349,18 +358,18 @@ If this is done correctly, the snowiest day, January 3rd (in row 6) with 0.73 in
 
 \subsection{Multi-Level Sort}
 
-Sometimes a table needs to be sorted by more than one column at a time in order to efficiently analyze the data. For example, if the data included several different types of loans from several bank offices, it would need to be sorted by the type of loan and then by bank office name to clearly see the different groups of loans. As another example, if a worksheet included a list of grades for students over their time in high school, the data should be sorted first by student name, then by grade level (freshman, sophomore, junior, and senior) so that each student's grades appear in chronological order.
+Sometimes a table needs to be sorted by more than one column at a time in order to efficiently analyze the data. For example, if the data included several different types of loans from several bank offices, it would need to be sorted by the type of loan and then by bank office name to clearly see the different groups of loans. As another example, if a worksheet included a list of grades for students over their time in high school, the data should be sorted first by student name, then by grade level (freshman, sophomore, junior, and senior) so that the grades appear alphabetically by level.
 
-For the weather data, determine how cold the snow days were in Oregon.
+For the weather data, sort the temperature on snow days to determine how cold those days were.
 
 \begin{enumerate}
-	\item Click on the Portland OR sheet then click on a cell in the table.
-	\item Click on the Data tab in the ribbon and then click the Sort button.
-	\item Click the down-arrow for Column and select Snow (inches).
-	\item Click the down-arrow for Order and select Largest to Smallest.
-	\item To add 2nd level sort, click on the Add Level button in the top left corner of the dialog box.
-	\item In the new Then by row, click the down-arrow for Column and select Low (°F).
-	\item In the same row, click the down-arrow for Order and select Smallest to Largest. The dialog box should look like Figure \ref{05:fig11}.
+	\item Click on the \fmtWorksheetName{Portland OR} sheet then click on any cell in the table.
+	\item Click on the \fmtRibbonTab{Data} tab in the ribbon and then click the \fmtButton{Sort} button.
+	\item Click the down-arrow for Column and select \fmtButton{Snow (inches)}.
+	\item Click the down-arrow for Order and select \fmtButton{Largest to Smallest}.
+	\item To add 2nd level sort, click on the \fmtButton{Add Level} button in the top left corner of the dialog box.
+	\item In the new ``Then by'' row, click the down-arrow for Column and select \fmtButton{Low (°F)}.
+	\item In the same row, click the down-arrow for Order and select \fmtButton{Smallest to Largest}. The dialog box should look like Figure \ref{05:fig11}.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -371,7 +380,7 @@ For the weather data, determine how cold the snow days were in Oregon.
 \end{figure}
 
 \begin{enumerate}[resume]
-	\item Click OK. The table sort results should look like Figure \ref{05:fig12}. Notice for the two days with $ 0.08 $ inches of snow, the low temp of $ 35.5 $ on Day $ 9 $ is displayed before the low temp of $ 36.2 $ on Day $ 25 $. The lowest of the two was listed first. Also notice that the filter arrows changed on the sorted columns to show how they are sorted.
+	\item Click \fmtButton{OK}. The table sort results should look like Figure \ref{05:fig12}. Notice for the two days with $ 0.08 $ inches of snow, the low temp of $ 35.5 $ on Day $ 9 $ is displayed before the low temp of $ 36.2 $ on Day $ 25 $. The lowest of the two was listed first. Also notice that the filter arrows changed on the sorted columns to show how they are sorted.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -383,19 +392,19 @@ For the weather data, determine how cold the snow days were in Oregon.
 
 \subsection{Custom Sorts}
 
-In most cases, the data should be sorted in ``typical'' sort order: numbers sorted highest to lowest, words sorted alphabetically, etc. Some data does not make sense when sorted this way. For example, if the days of the week are sorted alphabetically, the result would be : Friday, Monday, Saturday, Sunday, Thursday, Tuesday, and Wednesday. This order would be of no use to anyone! Similarly, the months of the year would not make sense alphabetically.
+In most cases, data is sorted in ``typical'' sort order: numbers sorted highest to lowest, words sorted alphabetically, etc. However, some data does not make sense when sorted this way. For example, if the days of the week are sorted alphabetically, the result would be : Friday, Monday, Saturday, Sunday, Thursday, Tuesday, and Wednesday. This order would be of no use to anyone. Similarly, the months of the year would not make sense alphabetically.
 
-In the weather data, a column was added for the week in the Weekly OR sheet and changed the days to Sunday through Saturday. This sheet facilitates further analysis of Portland, Oregon's data to see if there are weekly trends in the weather. To look for those trends, sort the Weekly OR sheet by Week and then by Day.
+In the weather data, a column was added for the week in the \fmtWorksheetName{Weekly OR} sheet and changed the days to Sunday through Saturday. This sheet facilitates further analysis of Portland, Oregon's data to see if there are weekly trends in the weather. To look for those trends, sort the \fmtWorksheetName{Weekly OR} sheet by Week and then by Day.
 
 \begin{enumerate}
-	\item Click on the Weekly OR worksheet.
-\item Click on A5 and insert a table.
-\item Click on Sort in the Data tab in the ribbon.
-\item Click the down-arrow for Column and select Week.
-\item Click the down-arrow for Order and select Smallest to Largest.
-\item To add 2nd level sort, click on the Add Level button in the top right corner of the dialog box.
-\item In the new Then by row, click the down-arrow for Column and select Day.
-\item Click the down-arrow for Order and select Custom List. The dialog box in Figure \ref{05:fig13} will appear on the screen.
+	\item Click on the \fmtWorksheetName{Weekly OR} worksheet.
+	\item Click on \fmtCellLocation{A5} and insert a table.
+	\item Click on \fmtButton{Sort} in the \fmtRibbonTab{Data} tab in the ribbon.
+	\item Click the down-arrow for Column and select \fmtButton{Week}.
+	\item Click the down-arrow for Order and select \fmtButton{Smallest to Largest}.
+	\item To add 2nd level sort, click on the \fmtButton{Add Level} button in the top right corner of the dialog box.
+	\item In the new ``Then by'' row, click the down-arrow for Column and select \fmtButton{Day}.
+	\item Click the down-arrow for Order and select \fmtButton{Custom List}. The dialog box in Figure \ref{05:fig13} will appear on the screen.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -406,8 +415,8 @@ In the weather data, a column was added for the week in the Weekly OR sheet and 
 \end{figure}
 
 \begin{enumerate}[resume]
-	\item Click on Sunday, Monday, Tuesday, etc. in the Custom lists on the left-side of the dialog box. NOTE: Make sure to select the days of the week spelled out, not the abbreviations for the days of the week.
-	\item Click OK. The Sort dialog box should look like Figure \ref{05:fig14}.
+	\item Click on \fmtButton{Sunday, Monday, Tuesday, etc.} in the Custom lists on the left-side of the dialog box. NOTE: Make sure to select the days of the week spelled out, not the abbreviations for the days of the week.
+	\item Click \fmtButton{OK}. The Sort dialog box should look like Figure \ref{05:fig14}.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -418,8 +427,8 @@ In the weather data, a column was added for the week in the Weekly OR sheet and 
 \end{figure}
 
 \begin{enumerate}
-	\item Click OK again. The sorted table should now look like Figure \ref{05:fig15}. Notice the data is in Week order and, within each week, in Day order.
-\item Save the workbook.
+	\item Click \fmtButton{OK} again. The sorted table should now look like Figure \ref{05:fig15}. Notice the data is in Week order and, within each week, in Day order.
+	\item Save the workbook.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -471,35 +480,38 @@ In the weather data, a column was added for the week in the Weekly OR sheet and 
 
 When an Excel table is first created, filter arrows appear in all the column headings. Those arrows can be used to sort the data by a single column. These same arrows can also be used to filter or limit the data by narrowing the displayed data within a column. There are many ways to filter data within a column depending on whether the data in the column is text or numeric. Table \ref{05:tab05} contains a few filter examples.
 
-{\fontsize{8}{10} \selectfont
-	\begin{longtable}{p{1.5in}p{0.75in}p{1.0in}p{0.75in}} %Max width: 4.25in
-		\textbf{Desired Results} & \textbf{Filter Column} & \textbf{Filter} & \textbf{Checkbox} \endhead
-		\hline \\
-		\multicolumn{4}{l}{\textbf{Text Filters}} \\
-		Data for the State of New Jersey (NJ) & State & Equals NJ & NJ \\
-		Data for Books that Have Gardening in Their Title & Title & Contains Gardening & \\
-		Data for Weather on the Weekend & Day & Equals Saturday or equals Sunday & Saturday and Sunday \\
-		\hline \\
-		\multicolumn{4}{l}{\textbf{Numeric Filters}} \\
-		Data for Income Greater Than $ \$1,000 $ & Income & Greater than $ 1000 $ & \\
-		Data for Amount Paid Equal to Zero & Amount Paid & Equals 0.00 & 0.00 \\
-		Data for Mortgage and Auto Loans & Loan Type & Equals Mortgage or equals Auto & Mortgage and Auto \\
-		\caption{Filter Examples}
-		\label{05:tab05}
-	\end{longtable}
-}
+\begin{table}[H]
+	\rowcolors{1}{}{tablerow} % zebra striping background
+	{\fontsize{8}{10} \selectfont		
+		\begin{longtable}{L{1.5in}L{0.75in}L{1.0in}L{0.75in}}
+			\textbf{Desired Results} & \textbf{Filter Column} & \textbf{Filter} & \textbf{Checkbox} \endhead
+			\hline
+			\multicolumn{4}{l}{\textbf{Text Filters}} \\
+			Data for the State of New Jersey (NJ) & State & Equals NJ & NJ \\
+			Data for Books that Have Gardening in Their Title & Title & Contains Gardening & \\
+			Data for Weather on the Weekend & Day & Equals Saturday or equals Sunday & Saturday and Sunday \\
+			\multicolumn{4}{l}{\textbf{Numeric Filters}} \\
+			Data for Income Greater Than $ \$1,000 $ & Income & Greater than $ 1000 $ & \\
+			Data for Amount Paid Equal to Zero & Amount Paid & Equals 0.00 & 0.00 \\
+			Data for Mortgage and Auto Loans & Loan Type & Equals Mortgage or equals Auto & Mortgage and Auto \\
+			\rowcolor{captionwhite}
+			\caption{Filter Examples}
+			\label{05:tab05}
+		\end{longtable}
+	}
+\end{table}
 
-Notice there are sometimes more than one way to filter data (\ie with a filter choice or a checked box). There are also single criteria filters, as well as multi-criteria filters. To start filtering, look at just the first week of data in the Weekly OR sheet.
+Notice there are sometimes more than one way to filter data (\ie with a filter choice or a checked box). There are also single criteria filters, as well as multi-criteria filters. The first week of data in the \fmtWorksheetName{Weekly OR} sheet is used to introduce filtering.
 
 \begin{enumerate}
-	\item Click on the Weekly OR sheet and click on a cell in the table.
+	\item Click on the \fmtWorksheetName{Weekly OR} sheet and click on a cell in the table.
 	\item Click the filter arrow to the right of the Week heading.
-	\item Click the Select All checkbox to deselect all of the checkbox choices.
+	\item Click the \fmtButton{Select All} checkbox to deselect all of the checkbox choices.
 	\item Click on $ 1 $ to select Week $ 1 $.
-	\item Click OK.
+	\item Click \fmtButton{OK}.
 \end{enumerate}
 
-The table should look like Figure \ref{05:fig16}. Only $ 7 $ rows of Week $ 1 $ data should be visible in the table. Notice in the Status Bar at the bottom of the screen the message ``7 of 31 records found''. Also notice that the filter arrow in the Week heading has changed to a funnel which indicates that this column is currently filtered.
+The table should look like Figure \ref{05:fig16}. Only $ 7 $ rows of Week $ 1 $ data are visible in the table. Notice in the Status Bar at the bottom of the screen the message ``7 of 31 records found''. Also notice that the filter arrow in the Week heading has changed to a funnel which indicates that this column is currently filtered.
 
 \begin{figure}[H]
 	\centering
@@ -512,7 +524,7 @@ Follow this procedure to remove the filter.
 
 \begin{enumerate}
 	\item Click the funnel next to the Week heading.
-	\item Select ``Clear filter from Week''.
+	\item Select \fmtButton{Clear filter} from Week.
 \end{enumerate}
 
 \begin{center}
@@ -525,9 +537,9 @@ Follow this procedure to remove the filter.
 			\setlength{\parsep}{0pt}
 
 			\item Click the filter arrow to the right of the heading in the column to be filtered.
-			\item Click the Select All checkbox to deselect all of the checkbox choices.
+			\item Click the \fmtButton{Select All} checkbox to deselect all of the checkbox choices.
 			\item Click on the checkboxes to filter by.
-			\item Click OK.
+			\item Click \fmtButton{OK}.
 			
 		\end{itemize}
 		
@@ -540,7 +552,7 @@ Follow this procedure to remove the filter.
 			\setlength{\parsep}{0pt}
 			
 			\item Click the funnel to the right of the heading in the column to be filtered.
-			\item Select Clear filter.
+			\item Select \fmtButton{Clear filter}.
 			
 		\end{itemize}
 	\end{sklbox}
@@ -549,11 +561,11 @@ Follow this procedure to remove the filter.
 As an example of using a numeric filter, find the days in Portland ME when it was warmer than $ 32 $ degrees in January.
 
 \begin{enumerate}
-	\item Click in the Portland ME sheet, then click on a cell in the table.
+	\item Click in the \fmtWorksheetName{Portland ME} sheet, then click on any cell in the table.
 	\item Click on the filter arrow next to the High heading.
-	\item Click on Number filters, then select Greater than. The Custom AutoFilter dialog box will appear on the screen.
+	\item Click on \fmtButton{Number} filters, then select \fmtButton{Greater than}. The Custom AutoFilter dialog box will appear on the screen.
 	\item Enter $ 32 $ in the space to the right of ``is Greater than''. The Custom AutoFilter dialog box should now match Figure \ref{05:fig17}.
-	\item Click OK.
+	\item Click \fmtButton{OK}.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -575,7 +587,7 @@ It is now easy to see that it was only above $ 32 $ degrees for the first three 
 Review sorting and filtering in the following steps.
 
 \begin{enumerate}
-	\item Click on the Weekly OR sheet and clear the Day column filter.
+	\item Click on the \fmtButton{Weekly OR} sheet and clear the Day column filter.
 	\item Sort the table by Week (smallest to largest).
 	\item Filter the table to only show Mondays.
 	\item Compare the table results to Figure \ref{05:fig19}.
@@ -595,12 +607,12 @@ Beginning in Excel $ 2013 $, slicers were added as another way to filter table d
 Try using the Slicer to filter the Portland OR data table.
 
 \begin{enumerate}
-	\item Click on the Portland OR sheet and click in the table.
-	\item In the ribbon's Table Tools Design tab, click Insert Slicer.
-	\item Click on Day in the Insert Slicers dialog box, and then click OK.
-	\item Drag the slicer so that the upper left-hand corner lines up with the top corner of cell G5.
-	\item Notice that when a Slicer is inserted, a Slicer Options tab appears on the ribbon. This tab contains links to change the style and size of the entire slicer or the individual slicer buttons.
-	\item Click on the Slicer options tab, then click on the More button next to Slicer Styles. The choices in Figure \ref{05:fig20} will show on the screen.
+	\item Click on the \fmtWorksheetName{Portland OR} sheet and click any cell in the table.
+	\item In the ribbon's \fmtRibbonTab{Table Tools Design} tab, click \fmtButton{Insert Slicer}.
+	\item Click on Day in the Insert Slicers dialog box, and then click \fmtButton{OK}.
+	\item Drag the slicer so that the upper left-hand corner lines up with the top corner of cell \fmtCellLocation{G5}.
+	\item Notice that when a Slicer is inserted, a \fmtRibbonTab{Slicer Options} tab appears on the ribbon. This tab contains links to change the style and size of the entire slicer or individual slicer buttons.
+	\item Click on the \fmtRibbonTab{Slicer options} tab, then click on the \fmtButton{More} button next to \fmtRibbonGroup{Slicer Styles}. The choices in Figure \ref{05:fig20} will show on the screen.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -612,7 +624,7 @@ Try using the Slicer to filter the Portland OR data table.
 
 \begin{enumerate}
 	\item Select the first choice under Dark.
-	\item In the Size group on the Slicer Options ribbon (NOT the Buttons group), change the width to $ 1 $ inch.
+	\item In the \fmtRibbonGroup{Size group} on the \fmtRibbonTab{Slicer Options} ribbon (NOT the \fmtRibbonGroup{Buttons} group), change the width to $ 1 $ inch.
 	\item Click in the table and scroll down to Day $ 15 $ and click the $ 15 $ button to show only the data for January $ 15 $ in the table.
 	\item Hold down the \fmtKeystroke{Ctrl} key and click on the Slicer buttons for Days $ 10 $ through $ 14 $. The table should now show the data from Days $ 10-15 $.
 	\item Sort the Day column in Ascending order to show the days in order as in Figure \ref{05:fig21}.
@@ -627,19 +639,19 @@ Try using the Slicer to filter the Portland OR data table.
 
 \subsection{Total Rows}
 
-By adding a total row to the bottom of the table, summary data is easily seen for one or more of the columns. Total rows can be added to tables as a whole or to only those that are filtered. Total rows can easily be toggled on and off as the need for summary data arises.
+By adding a total row to the bottom of the table, summary data is easily seen for one or more of the columns. Total rows can be added to entire tables or to only rows that are filtered. Total rows can easily be toggled on and off as the need for summary data arises.
 
 \begin{enumerate}
-	\item Click on the Portland ME sheet and clear the filter from the High column.
-	\item Click on the Total Row check box in the Table Style Options group in the Table Tools Design tab in the ribbon.
-	\item Scroll to the bottom of the table to the Total Row. Notice the total for the Snow data.
-	\item Click on D37 (in the Rain column), and then click the down-arrow that appears to the right of the cell.
-	\item Choose Sum to add a sum to the Total Row in the Rain column.
-	\item To see the Average rainfall for the month of January, click on the arrow again and choose Average.
-	\item Repeat this step in E37 to see the Average snowfall.
-	\item Use the Decrease Decimal button in the Home tab of the ribbon to change the decimal places in D37 and E37 to 2. Compare the Total Row to Figure $ 5.22 $.
+	\item Click on the \fmtWorksheetName{Portland ME} sheet and clear the filter from the High column.
+	\item Click on the \fmtButton{Total Row} check box in the \fmtRibbonGroup{Table Style Options} group in the \fmtRibbonTab{Table Tools Design} tab in the ribbon.
+	\item Scroll to the bottom of the table to the \fmtCellLocation{Total Row}. Notice the total for the Snow data.
+	\item Click on \fmtCellLocation{D37} (in the Rain column), and then click the down-arrow that appears to the right of the cell.
+	\item Choose \fmtButton{Sum} to add a sum to the \fmtCellLocation{Total Row} in the Rain column.
+	\item To see the Average rainfall for the month of January, click on the arrow again and choose \fmtButton{Average}.
+	\item Repeat this step in \fmtCellLocation{E37} to see the Average snowfall.
+	\item Use the \fmtButton{Decrease Decimal} button in the \fmtRibbonTab{Home} tab of the ribbon to change the decimal places in \fmtCellLocation{D37} and \fmtCellLocation{E37} to $ 2 $. Compare the \fmtCellLocation{Total Row} to Figure $ 5.22 $.
 \end{enumerate}
-
+%TODO Start Here
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch05_fig22}
@@ -752,17 +764,21 @@ The data should look like Figure \ref{05:fig25}. Successful subtotaling shows on
 
 Notice the three Outline buttons circled in the upper-left corner of the spreadsheet. These control the amount of subtotaled data that is displayed. Table \ref{05:tab06} describes the different Outline buttons.
 
-{\small
-	\begin{longtable}{p{0.50in}p{3.00in}} %Max width: 4.25in
-		\textbf{Button} & \textbf{Content Displayed} \endhead
-		\hline \\
-		Level 1 & Only the grand total\\
-		Level 2 & Subtotals and grand total\\
-		Level 3 & Individual records, subtotals, and grand total\\
-		\caption{Subtotal Outline Buttons}
-		\label{05:tab06}
-	\end{longtable}
-}
+\begin{table}[H]
+	\rowcolors{1}{}{tablerow} % zebra striping background
+	{\small		
+		\begin{longtable}{p{0.50in}p{3.00in}} %Left-aligned, Max width: 4.25in
+			\textbf{Button} & \textbf{Content Displayed} \endhead
+			\hline
+			Level 1 & Only the grand total\\
+			Level 2 & Subtotals and grand total\\
+			Level 3 & Individual records, subtotals, and grand total\\
+			\rowcolor{captionwhite}
+			\caption{Subtotal Outline Buttons}
+			\label{05:tab06}
+		\end{longtable}
+	}
+\end{table}
 
 Try the three Outline buttons to see the difference in the data displayed.
 

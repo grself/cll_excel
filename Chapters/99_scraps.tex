@@ -162,6 +162,25 @@
 \end{center}
 
 %***************************************************************************
+\section{Text Table: Default For This Document}
+%***************************************************************************
+\begin{table}[H]
+	\rowcolors{1}{}{tablerow} % zebra striping background
+	{\small
+		%\fontsize{8}{10} \selectfont %Replace small for special font size
+		\begin{longtable}{L{1.0in}L{1.00in}} %Left-aligned, Max width: 4.25in
+			\textbf{ColA} & \textbf{ColB} \endhead
+			\hline
+			A & B\\
+			C & D\\
+			\rowcolor{captionwhite}
+			\caption{caption}
+			\label{05:tab01}
+		\end{longtable}
+	}
+\end{table}
+
+%***************************************************************************
 \section{Text Table: Long}
 %***************************************************************************
 % instead of using a standard font size, like small, I can specify
@@ -169,7 +188,7 @@
 % {base line stretch}.
 % \fontsize{8}{10} \selectfont
 {\small
-\begin{longtable}{p{0.75in}p{1.5in}p{1.5in}} %Max width: 4.25in
+\begin{longtable}{L{0.75in}L{1.5in}L{1.5in}} %Max width: 4.25in
 	\textbf{Command} & \textbf{Purpose} & \textbf{Use} \endhead
 	\hline \\
 	Margins & Sets the top, bottom, right, and left margin space for the printed document & 1. Click the Page Layout tab of the Ribbon.\newline2. Click the Margin button.\newline3. Click one of the preset margin options or click Custom Margins.\\
