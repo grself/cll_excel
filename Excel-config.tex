@@ -71,23 +71,42 @@
 %***********************************************
 % Format various elements in the text
 %***********************************************
+% Insert the xcolor package so I can define colors 
+%for the format elements
+\usepackage[svgnames,table]{xcolor}
 
 % Button and other links in dialog boxes
-\newcommand{\fmtButton}[1]{\textit{#1}}
+\definecolor{Btn}{RGB}{136,3,145} %Purple
+\newcommand{\fmtButton}[1]{\textcolor{Btn}{\textbf{\textit{#1}}}}
+
 % Cell Location
-\newcommand{\fmtCellLocation}[1]{\textsf{#1}}
+\definecolor{CellLoc}{RGB}{255,69,0} %Orange
+\newcommand{\fmtCellLocation}[1]{\textcolor{CellLoc}{\textbf{\textsf{#1}}}}
+
 % Formulas and functions
-\newcommand{\fmtFunction}[1]{\textit{\textcolor{blue}{#1}}}
+\definecolor{Func}{RGB}{0,100,0} %Green
+\newcommand{\fmtFunction}[1]{\textcolor{Func}{\textbf{\textsf{#1}}}}
+
 % Ribbon Button (like Find and Autosum)
-\newcommand{\fmtRibbonButton}[1]{\textit{#1}}
+\definecolor{RbnBtn}{RGB}{0,206,209} %Turquois
+\newcommand{\fmtRibbonButton}[1]{\textcolor{RbnBtn}{\textbf{\textsf{#1}}}}
+
 % Ribbon Group
-\newcommand{\fmtRibbonGroup}[1]{\textit{#1}}
+\definecolor{RbnGrp}{RGB}{160,82,45} %Sienna
+\newcommand{\fmtRibbonGroup}[1]{\textcolor{RbnGrp}{\textbf{\textsf{#1}}}}
+
 % Ribbon Tab
-\newcommand{\fmtRibbonTab}[1]{\textit{#1}}
+\definecolor{RbnTab}{RGB}{112,128,144} %Slate Gray
+\newcommand{\fmtRibbonTab}[1]{\textcolor{RbnTab}{\textbf{\textsf{#1}}}}
+
 % Workbook (file) name
-\newcommand{\fmtWorkbookName}[1]{\textbf{#1}}
+\definecolor{WkbkName}{RGB}{184,134,11} %Golden rod
+\newcommand{\fmtWorkbookName}[1]{\textcolor{WkbkName}{\textbf{\textsf{#1}}}}
+
 % Worksheet name
-\newcommand{\fmtWorksheetName}[1]{\textit{#1}}
+\definecolor{WkShtName}{RGB}{85,107,47} %Olive
+\newcommand{\fmtWorksheetName}[1]{\textcolor{WkShtName}{\textbf{\textsf{#1}}}}
+
 % Keystrokes (like: Enter)
 \newcommand{\fmtKeystroke}[1]{%
 	\tikz[baseline=(key.base)]
@@ -189,7 +208,7 @@
 \usepackage{float}
 \usepackage{wrapfig}
 	\restylefloat{figure}
-\usepackage[svgnames,table]{xcolor} % control row/cell color in a table
+%\usepackage[svgnames,table]{xcolor} % control row/cell color in a table
 \usepackage{tabularx} % better tables
 \usepackage{tabulary} % another tables option
 \usepackage{multirow} % permits merging rows in a table
