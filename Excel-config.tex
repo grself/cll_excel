@@ -75,36 +75,40 @@
 %for the format elements
 \usepackage[svgnames,table]{xcolor}
 
-% Button and other links in dialog boxes
-\definecolor{Btn}{RGB}{136,3,145} %Purple
-\newcommand{\fmtButton}[1]{\textcolor{Btn}{\textbf{\textit{#1}}}}
-
 % Cell Location
-\definecolor{CellLoc}{RGB}{255,69,0} %Orange
+\definecolor{CellLoc}{HTML}{708090} %SlateGray
 \newcommand{\fmtCellLocation}[1]{\textcolor{CellLoc}{\textbf{\textsf{#1}}}}
 
 % Formulas and functions
-\definecolor{Func}{RGB}{0,100,0} %Green
-\newcommand{\fmtFunction}[1]{\textcolor{Func}{\textbf{\textsf{#1}}}}
+\definecolor{Func}{HTML}{2F4F4F} %DarkSlateGray
+\newcommand{\fmtFunction}[1]{\textcolor{Func}{\textsf{#1}}}
+
+% Popup box names
+\definecolor{Popup}{HTML}{CD853F} %Peru
+\newcommand{\fmtPopupBox}[1]{\textcolor{Popup}{\textbf{\textsf{#1}}}}
+
+% Popup buttons and other clicks in popup boxes
+\definecolor{PopupBtn}{HTML}{8B4513} %SaddleBrown
+\newcommand{\fmtPopupButton}[1]{\textcolor{PopupBtn}{\textbf{\textsf{#1}}}}
 
 % Ribbon Button (like Find and Autosum)
-\definecolor{RbnBtn}{RGB}{0,206,209} %Turquois
+\definecolor{RbnBtn}{HTML}{4B0082} %Indigo 4B0082
 \newcommand{\fmtRibbonButton}[1]{\textcolor{RbnBtn}{\textbf{\textsf{#1}}}}
 
 % Ribbon Group
-\definecolor{RbnGrp}{RGB}{160,82,45} %Sienna
+\definecolor{RbnGrp}{HTML}{9400D3} %DarkViolet 9400D3
 \newcommand{\fmtRibbonGroup}[1]{\textcolor{RbnGrp}{\textbf{\textsf{#1}}}}
 
 % Ribbon Tab
-\definecolor{RbnTab}{RGB}{112,128,144} %Slate Gray
+\definecolor{RbnTab}{HTML}{9370DB} %MediumPurple 9370DB
 \newcommand{\fmtRibbonTab}[1]{\textcolor{RbnTab}{\textbf{\textsf{#1}}}}
 
 % Workbook (file) name
-\definecolor{WkbkName}{RGB}{184,134,11} %Golden rod
+\definecolor{WkbkName}{HTML}{000080} %Navy
 \newcommand{\fmtWorkbookName}[1]{\textcolor{WkbkName}{\textbf{\textsf{#1}}}}
 
 % Worksheet name
-\definecolor{WkShtName}{RGB}{85,107,47} %Olive
+\definecolor{WkShtName}{HTML}{4169E1} %RoyalBlue
 \newcommand{\fmtWorksheetName}[1]{\textcolor{WkShtName}{\textbf{\textsf{#1}}}}
 
 % Keystrokes (like: Enter)
