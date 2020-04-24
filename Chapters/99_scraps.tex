@@ -310,19 +310,34 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 \section{Style Guide}
 %**************************************************************************
 
-I defined several format commands in ``Excel-config.tex''. Each of the commands start with ``fmt...'' so they are easy to find. By using these, I can re-format an item throughout the text by changing only the lines in the config file.
+I defined several format commands in ``Excel-config.tex''. Each of the commands start with ``fmt...'' so they are easy to find. By using these, I can re-format an item throughout the entire text by changing only the lines in the config file. Here are my usage guidelines for those formats. In general, these are only used when a student is expected to actually click or type something, not just as some text in passing.
 
-For menu selections: Click \textsc{\fbox{Analyze $ \rightarrow $ Descriptive Statistics $ \rightarrow $ Frequencies}}
+% CellLoc: Full cell location ID, not for just col or row names
+% Keystroke: Keystrokes (like: Enter)
+% Popup: Popup box names
+% PopupBtn: Popup buttons and other clicks in popup boxes
+% RbnBtn: Ribbon Button (like Find and Autosum)
+% RbnGrp: Ribbon Group
+% RbnTab: Ribbon Tab
+% typing: Typed-in Text, like formulas
+% WkbkName: Workbook (file) name
+% WkShtName: Worksheet name
 
-Put the name of the drop-down menu in quotes and italicize selections in that menu, so: In the Sort dialog box, select the \textit{Interest Rate} option in the ``Sort by'' drop-down box.
+Error messages that are displayed, like #DIV/0, are italicized.
 
 Labels should be a chapter, colon, verbal desc (all lc with underscores): \label{03:title}
 
 For figures, label should be chapter, colon, ``fig'' and number: \label{03:fig01}
 
+For tables, label should be chapter, colon, ``tab'' and number: \label{03:tab01}
+
 Dates do not include an apostrophe: In the 1960s this happened...
 
 Wrap all numbers in an in-line math block: $ 123 $
 
-The word ``data'' is plural, thus: ``Data are analyzed...''
+The word ``data'' is singular, thus: ``Data is analyzed...''
 
+Handy Regex Expressions:
+All caps: \b([A-Z]+\b) NOTE: enable case-sensitive search
+One or more numbers followed by a space: \d+\s
+One or more numbers followed by a period: \d+\.

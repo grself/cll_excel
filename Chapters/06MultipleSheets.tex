@@ -4,6 +4,8 @@
 
 Excel workbooks often contain a large amount of data and worksheets can quickly become overwhelming. When one worksheet becomes cumbersome, data can be broken out into smaller subsets and placed in separate worksheets within the same Excel file. Separating out spreadsheet data into smaller pieces can lead to better data organization within a file and increase its ease of use. When a retail company needs to track overall sales along with individual store sales, it makes sense to place each store's sales data in a separate sheet within a file. Adding a summary sheet that sums across all the sheets will total the entire company sales data in the same file. This chapter will show how to set up a workbook to make multi-sheet formulas quick and easy.
 
+24
+
 Other examples of when multiple sheets make the most sense are when comparing regional data for a company, data for a salesforce where individual salesperson performance is analyzed along with overall sales, and data over a period of time where sheets can be broken out by year or by month. When comparing data across several sheets, it is essential that all the sheets are laid out in the same way. To facilitate this, a template can be used. A template is the basic pattern for each new sheet that can be used repeatedly to make sure each new sheet has the same setup, formatting, formulas, etc. as the existing sheets in a file. In this chapter, both pre-made Excel templates along with ones created from scratch will be used to meet the specific needs of the work required.
 
 \section{Multiple Sheet Basics}
@@ -23,7 +25,7 @@ Other examples of when multiple sheets make the most sense are when comparing re
 	\end{objbox}
 \end{center}
 
-The Excel workbooks used throughout this textbook have included multiple sheets. This chapter develops a personal budget file that contains income and expenses for an entire year. The file contains a sheet for each month of the year as well as a Summary sheet that totals all twelve monthly sheets of data together. The chapter begins with exercises designed to demonstrate moving through worksheets, organizing them, and making sure that all twelve monthly sheets are consistent. Figure \ref{06:fig01} shows the \fmtWorksheetName{January} sheet in the \fmtWorkbookName{Personal Budget} file along with all the sheet tabs along the bottom of the window.
+The Excel workbooks used throughout this textbook have included multiple sheets. This chapter develops a personal budget file that contains income and expenses for an entire year. The file contains a sheet for each month of the year as well as a Summary sheet that totals all twelve monthly sheets of data together. The chapter begins with exercises designed to demonstrate moving through worksheets, organizing them, and making sure that all twelve monthly sheets are consistent. Figure \ref{06:fig01} shows the \fmtWorksheetName{January} sheet in the Personal Budget file along with all the sheet tabs along the bottom of the window.
 
 \begin{figure}[H]
 	\centering
@@ -37,8 +39,8 @@ The Excel workbooks used throughout this textbook have included multiple sheets.
 \textit{Data file: CH6 Data}
 
 \begin{enumerate}
-	\item Open the data file \fmtWorkbookName{CH6 Data} and save the file as \fmtWorkbookName{CH6 Personal Budget}. Notice that the file has a Expenses Summary sheet tab at the far left followed by monthly sheets.
-	\item Click on the different sheet tabs at the bottom of the screen to move through the sheets. Notice that the \fmtWorkbookName{Expenses Summary} sheet is formatted differently from the monthly sheets. Notice also that all the monthly sheets are identical in layout and format.
+	\item Open the data file \fmtWorkbookName{CH6 Data} and save the file as \fmtWorkbookName{CH6 Personal Budget}. Notice that the file has an \fmtWorksheetName{Expenses Summary} sheet tab at the far left followed by monthly sheets.
+	\item Click on the different sheet tabs at the bottom of the screen to move through the sheets. Notice that the \fmtWorksheetName{Expenses Summary} sheet is formatted differently from the monthly sheets. Notice also that all the monthly sheets are identical in layout and format.
 	\item Take a second look at the months and notice the end of the year data for September through October has not been added and there is no sheet for December. 
 	\item Add the following data in the September, October, and November sheets.
 \end{enumerate}
@@ -50,13 +52,13 @@ The Excel workbooks used throughout this textbook have included multiple sheets.
 		\begin{longtable}{L{1.0in}L{0.75in}L{0.75in}L{0.75in}} %Left-aligned, Max width: 4.25in
 			\textbf{Item} & \textbf{September} & \textbf{October} & \textbf{November} \endhead
 			\hline
-			Power         & \$135 & \$135 & \$135\\
-			Water         & \$30  & \$30  & \$30 \\
-			Groceries     & \$300 & \$325 & \$400\\
-			Miscellaneous & \$100 & \$50  & \$100\\
-			Bonus         &       &       &      \\
-			Freelance     & \$500 &       & \$150\\
-			Other         &       & \$100 &      \\
+			Power         & $ \$135 $ & $ \$135 $ & $ \$135 $ \\
+			Water         & $ \$30 $  & $ \$30 $  & $ \$30 $  \\
+			Groceries     & $ \$300 $ & $ \$325 $ & $ \$400 $ \\
+			Miscellaneous & $ \$100 $ & $ \$50 $  & $ \$100 $ \\
+			Bonus         &           &           &           \\
+			Freelance     & $ \$500 $ &           & $ \$150 $ \\
+			Other         &           & $ \$100 $ &           \\
 
 			\rowcolor{captionwhite}
 			\caption{Data for September/October/November}
@@ -70,11 +72,11 @@ The Excel workbooks used throughout this textbook have included multiple sheets.
 To make a December sheet, copy the November sheet.
 
 \begin{enumerate}
-	\item Point the mouse at the November sheet tab at the bottom of the screen.
+	\item Point the mouse at the \fmtWorksheetName{November} sheet tab at the bottom of the screen.
 	\item Hold down the left mouse button and then press and hold down the \fmtKeystroke{Ctrl} key.
-	\item At this point, notice a black down-pointing arrow to the left of the November sheet tab and the mouse cursor becomes a small piece of paper with a plus sign on it.
-	\item Drag the mouse to the right (still holding down the left-mouse button and the \fmtKeystroke{Ctrl} key) until the black down-pointing arrow is to the right of the November sheet tab.
-	\item Let go of the mouse button and then the \fmtKeystroke{Ctrl} key. There should now be a \fmtWorksheetName{November (2)} sheet to the right of the November sheet as shown in Figure \ref{06:fig02}.
+	\item At this point, notice a black down-pointing arrow to the left of the \fmtWorksheetName{November} sheet tab and the mouse cursor becomes a small piece of paper with a plus sign on it.
+	\item Drag the mouse to the right (still holding down the left-mouse button and the \fmtKeystroke{Ctrl} key) until the black down-pointing arrow is to the right of the \fmtWorksheetName{November} sheet tab.
+	\item Let go of the mouse button and then the \fmtKeystroke{Ctrl} key. There should now be a \fmtWorksheetName{November (2)} sheet to the right of the \fmtWorksheetName{November} sheet as shown in Figure \ref{06:fig02}.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -84,18 +86,18 @@ To make a December sheet, copy the November sheet.
 	\label{06:fig02}
 \end{figure}
 
-Next, update the \fmtWorksheetName{November (2)} sheet to turn it into the December sheet.
+Next, update the \fmtWorksheetName{November (2)} sheet to turn it into the \fmtWorksheetName{December} sheet.
 
 \begin{enumerate}
-	\item Right-click on the November (2) sheet name at the bottom of the screen and choose Rename.
-	\item Type ``December'' and press Enter.
-	\item Click on the December sheet.
-	\item Click on B1 and change ``November'' to ``December.''
+	\item Right-click on the \fmtWorksheetName{November (2)} sheet name at the bottom of the screen and choose \fmtPopupButton{Rename}.
+	\item Type \fmtTyping{December} and press \fmtKeystroke{Enter}.
+	\item Click on the \fmtWorksheetName{December} sheet.
+	\item Click on \fmtCellLocation{B1} and change \textit{November} to \textit{December}.
 	\item Make the following data changes.
 
 	\begin{itemize}
-		\item Miscellaneous: \$300
-		\item Bonus: \$250 (it's the holidays!)
+		\item Miscellaneous: $ \$300 $
+		\item Bonus: $ \$250 $ (it's the holidays!)
 		\item Freelance: delete amount
 	\end{itemize}
 
@@ -143,7 +145,7 @@ Since the \fmtWorksheetName{Practice} sheet is not needed in the \fmtWorkbookNam
 \begin{enumerate}
 	\item Right-click on the Practice sheet tab at the bottom of the screen.
 	\item Click \fmtPopupButton{Delete}. Figure \ref{06:fig03} shows the warning message box that will appear, though it may look slightly different depending on the version of Excel being using. It is important to note that once a sheet is deleted, \fmtPopupButton{Undo} will not bring it back.
-	\item Click fmtPopupButton{Delete}.
+	\item Click \fmtPopupButton{Delete}.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -171,18 +173,18 @@ Now all $ 12 $ sheets should be selected. This can be verified in two ways: the 
 	\label{06:fig04}
 \end{figure}
 
-\textit{It is important to remember that any changes made to the January sheet will be made to all the sheets.} This makes it easy to make changes to all the sheets at once, but they must be ungrouped after making changes or data on linked sheets can be inadvertently destroyed. 
+\textit{It is important to remember that any changes made to the January sheet will be made to all of the grouped sheets.} This makes it easy to make changes to all the sheets at once, but they must be ungrouped after making changes or data on linked sheets can be inadvertently destroyed. 
 
 \begin{enumerate}
 	\item Click in \fmtCellLocation{F11} in the \fmtWorksheetName{January} grouped sheet.
-	\item Enter the formula \fmtFunction{=SUM(F5:F8)}.
-	\item In \fmtCellLocation{F12}, enter the formula \fmtFunction{=SUM(C5:C13)}.
-	\item In \fmtCellLocation{F13}, subtract Expenses from Income. In the \fmtWorksheetName{January} sheet, the balance should be \$690. \textit{Hint}: if the answer is negative, then Income was subtracted from Expenses.
-	\item Click on \fmtCellLocation{I6}. (\fmtCellLocation{I6} and \fmtCellLocation{I7} are formatted and merged together – this is fine.)
+	\item Enter the formula \fmtTyping{=SUM(F5:F8)}.
+	\item In \fmtCellLocation{F12}, enter the formula \fmtTyping{=SUM(C5:C13)}.
+	\item In \fmtCellLocation{F13}, subtract Expenses from Income. In the \fmtWorksheetName{January} sheet, the balance should be $ \$690 $. \textit{Hint}: if the answer is negative, then Income was subtracted from Expenses.
+	\item Click on \fmtCellLocation{I6}. (\fmtCellLocation{I6} and \fmtCellLocation{I7} are formatted and merged together, this is fine.)
 	\item Enter a formula that divides Expenses (\fmtCellLocation{F12}) by Income (\fmtCellLocation{F11}). The answer will show as a percentage since this cell has already been formatted to do this. \textit{Hint}: If the percentage is greater than 100\% the numbers are reversed.
 \end{enumerate}
 
-Notice that a data bar was set up in \fmtCellLocation{I5} to visually show the income spent. This skill was covered elsewhere in the course. The \fmtWorksheetName{January} sheet should now look like Figure \ref{06:fig05}.
+Notice that a data bar was set up in \fmtCellLocation{I5} to visually show the income spent, which is a skill that was covered elsewhere in the course. The \fmtWorksheetName{January} sheet should now look like Figure \ref{06:fig05}.
 
 \begin{figure}[H]
 	\centering
@@ -192,7 +194,7 @@ Notice that a data bar was set up in \fmtCellLocation{I5} to visually show the i
 \end{figure}
 
 \begin{enumerate}[resume]
-	\item Now that the monthly sheets are done, they need to be ungrouped. Right-click on one of the grouped sheets and choose \fmtPopupButton{Ungroup Sheets}. Notice the sheets tabs are no longer bold and the word [Group] is no longer in the title bar.
+	\item Now that the monthly sheets are done, they need to be ungrouped. Right-click on one of the grouped sheets and choose \fmtPopupButton{Ungroup Sheets}. Notice the sheets tabs are no longer bold and the word \textit{[Group]} is no longer in the title bar.
 	\item Click on several of the month sheets to see that all the formulas have been added.
 	\item Click on the \fmtWorksheetName{December} sheet. The sheet should now look like Figure \ref{06:fig06}.
 \end{enumerate}
@@ -205,10 +207,10 @@ Notice that a data bar was set up in \fmtCellLocation{I5} to visually show the i
 \end{figure}
 
 \begin{enumerate}
-	\item Take a look at the Notes in the \fmtWorksheetName{September} sheet. It says that the rent was raised in September, so the Gym Membership needs to be cancelled and \$0 should be entered for the Gym amount in October, November, and December.
+	\item Take a look at the Notes in the \fmtWorksheetName{September} sheet. It says that the rent was raised in September, so the Gym Membership needs to be cancelled and $ \$0 $ should be entered for the Gym amount in October, November, and December.
 	\item Group the \fmtWorksheetName{October}, \fmtWorksheetName{November}, and \fmtWorksheetName{December} sheets. If this is done successfully these three sheet names should be bold and the word \textit{[Group]} will appear in the Title bar.
-	\item Click on \fmtCellLocation{C13} and change the amount to \$0. Press \fmtKeystroke{Enter}.
-	\item Ungroup the sheets.The balances should be: October \$605, November \$530, and December \$430.
+	\item Click on \fmtCellLocation{C13} and change the amount to $ \$0 $. Press \fmtKeystroke{Enter}.
+	\item Ungroup the sheets.The balances should be October: \$605, November: \$530, and December: $ \$430 $.
 \end{enumerate}
 
 \begin{center}
@@ -245,7 +247,7 @@ Notice that a data bar was set up in \fmtCellLocation{I5} to visually show the i
 			\setlength{\parskip}{0pt}
 			\setlength{\parsep}{0pt}
 			
-			\item Sheet can be easily moved, copied, deleted, and renamed.
+			\item Sheets can be easily moved, copied, deleted, and renamed.
 			\item When grouped, identically formatted sheets can be changed at the same time.
 			
 		\end{itemize}
@@ -262,23 +264,23 @@ Notice that a data bar was set up in \fmtCellLocation{I5} to visually show the i
 			\setlength{\parsep}{0pt}
 
 			\item Entering formulas that reference another sheet.
-			\item Using the \fmtFunction{SUM} function to total values on multiple sheets.
+			\item Using the SUM function to total values on multiple sheets.
 			
 		\end{itemize}
 	\end{objbox}
 \end{center}
 
-The \fmtWorksheetName{Summary} sheet in many multiple sheet workbooks is utilized to present totaled information from the other sheets in the file. This is done to give a quick synopsis of all the other sheets in one convenient location. For this reason, the \fmtWorksheetName{Summary} sheet is usually the first sheet in multiple-sheet files. Summary sheets ``pull'' data from the other sheets using three-dimensional (3-D) cell references. In order to distinguish between \fmtCellLocation{A3} in the \fmtWorksheetName{Summary} sheet, \fmtCellLocation{A3} in the \fmtWorksheetName{January} sheet, \fmtCellLocation{A3} in the \fmtWorksheetName{February} sheet, etc.; a 3-D cell reference includes the sheet name along with the cell reference. The syntax to reference a cell in a different sheet is \fmtFunction{=SheetName!CellRange}. So, the cell reference for \fmtCellLocation{A15} in the \fmtWorksheetName{March} sheet would be \fmtFunction{=March!A15}.
+The \fmtWorksheetName{Summary} sheet in many multiple sheet workbooks is utilized to present totaled information from the other sheets in the file. This is done to give a quick synopsis of all the other sheets in one convenient location. For this reason, the \fmtWorksheetName{Summary} sheet is usually the first sheet in multiple-sheet files. Summary sheets ``pull'' data from the other sheets using three-dimensional (3-D) cell references. In order to distinguish between \fmtCellLocation{A3} in the \fmtWorksheetName{Summary} sheet, \fmtCellLocation{A3} in the \fmtWorksheetName{January} sheet, \fmtCellLocation{A3} in the \fmtWorksheetName{February} sheet, etc.; a 3-D cell reference includes the sheet name along with the cell reference. The syntax to reference a cell in a different sheet is \fmtTyping{=SheetName!CellRange}. So, the cell reference for \fmtCellLocation{A15} in the \fmtWorksheetName{March} sheet would be \fmtTyping{=March!A15}.
 
 Start working on the \fmtWorksheetName{Summary} sheet by trying out some 3-D formula.
 
 \begin{enumerate}
 	\item Click on the \fmtWorksheetName{Expenses Summary} sheet tab at the bottom of the screen.
-	\item Click on \fmtCellLocation{C5} and enter the formula \fmtFunction{=January!C5}. Press \fmtKeystroke{Enter}. This will get the amount \$700 from cell \fmtCellLocation{C5} in the \fmtWorksheetName{January} sheet.
+	\item Click on \fmtCellLocation{C5} and enter the formula \fmtTyping{=January!C5}. Press \fmtKeystroke{Enter}. This will get the amount $ \$700 $ from cell \fmtCellLocation{C5} in the \fmtWorksheetName{January} sheet.
 	\item Delete the formula in \fmtCellLocation{C5} in the \fmtWorksheetName{Expenses Summary} sheet.
-	\item This time, click on \fmtCellLocation{C5} and type \fmtFunction{=}. Then click on the \fmtWorksheetName{January} sheet, and then click on \fmtCellLocation{C5}.
-	\item Press \fmtKeystroke{Enter}. This will put the same formula, \fmtFunction{=January!C5}, in cell \fmtCellLocation{C5} in the \fmtWorksheetName{Expenses Summary} sheet and will return the value \$700.
-	\item In cell \fmtCellLocation{C6} in the \fmtWorksheetName{Expenses Summary} sheet, try entering a formula for the Power amount in the \fmtWorksheetName{April} sheet. The Power amount should be \$135.
+	\item This time, click on \fmtCellLocation{C5} and type \fmtTyping{=}. Then click on the \fmtWorksheetName{January} sheet, and then click on \fmtCellLocation{C5}.
+	\item Press \fmtKeystroke{Enter}. This will put the same formula, \fmtTyping{=January!C5}, in cell \fmtCellLocation{C5} in the \fmtWorksheetName{Expenses Summary} sheet and will return the value $ \$700 $.
+	\item In cell \fmtCellLocation{C6} in the \fmtWorksheetName{Expenses Summary} sheet, try entering a formula for the Power amount in the \fmtWorksheetName{April} sheet. The Power amount should be $ \$135 $.
 	\item Delete the formulas in cells \fmtCellLocation{C5} and \fmtCellLocation{C6} in the \fmtWorksheetName{Expenses Summary} sheet.
 \end{enumerate}
 
@@ -294,7 +296,7 @@ For the Annual Amounts in \fmtCellLocation{C5:C13} in the \fmtWorksheetName{Expe
 			\setlength{\parsep}{0pt}
 			
 			\item Click on the cell where the 3-D SUM should appear.
-			\item Type \fmtFunction{=SUM(}
+			\item Type \fmtTyping{=SUM(}
 			\item Click on the leftmost sheet in the group of sheets to sum.
 			\item Hold the \fmtKeystroke{Shift} key down and click on the rightmost sheet in the group of sheets to sum.
 			\item Click on the cell in the sheet that should be summed.
@@ -308,17 +310,17 @@ Follow these steps to sum all of the monthly amounts in the \fmtWorksheetName{Ex
 
 \begin{enumerate}
 	\item Click in \fmtCellLocation{C5} in the \fmtWorksheetName{Expenses Summary} sheet.
-	\item Type \fmtFunction{=SUM(}. (Make sure to type the open parentheses.)
+	\item Type \fmtTyping{=SUM(}. (Make sure to type the open parentheses.)
 	\item Click on the \fmtWorksheetName{January} sheet.
 	\item Hold the \fmtKeystroke{Shift} key down and click on the \fmtWorksheetName{December} sheet.
 	\item Click on \fmtCellLocation{C5} again and press \fmtKeystroke{Enter}. Cell \fmtCellLocation{C5} should display the sum of $ \$8,400 $.
-	\item Click on \fmtCellLocation{C5} in the \fmtWorksheetName{Expenses Summary} sheet. The formula bar should show the following: \fmtFunction{=SUM( January:December!C5)}. This means Excel should calculate the sum of \fmtCellLocation{C5} in the sheets \fmtWorksheetName{January} through \fmtWorksheetName{December}.
+	\item Click on \fmtCellLocation{C5} in the \fmtWorksheetName{Expenses Summary} sheet. The formula bar should show the following: \fmtTyping{=SUM(January:December!C5)}. This means Excel should calculate the sum of \fmtCellLocation{C5} in the sheets \fmtWorksheetName{January} through \fmtWorksheetName{December}.
 	\item For another 3-D sum, click on \fmtCellLocation{C6}.
-	\item Type \fmtFunction{=SUM(}. (Make sure to type the open parentheses.)
+	\item Type \fmtTyping{=SUM(}. (Make sure to type the open parentheses.)
 	\item Click on the \fmtWorksheetName{January} sheet.
 	\item Hold the \fmtKeystroke{Shift} key down and click on the \fmtWorksheetName{December} sheet.
-	\item Click on \fmtFunction{C6} again and press \fmtKeystroke{Enter}. Cell \fmtCellLocation{C6} should now display the sum of $ \$1,610 $.
-	\item Click on \fmtCellLocation{C6} in the \fmtWorksheetName{Expenses Summary} sheet. The formula bar should show the following: \fmtFunction{=SUM( January:December!C6)}.
+	\item Click on \fmtTyping{C6} again and press \fmtKeystroke{Enter}. Cell \fmtCellLocation{C6} should now display the sum of $ \$1,610 $.
+	\item Click on \fmtCellLocation{C6} in the \fmtWorksheetName{Expenses Summary} sheet. The formula bar should show the following: \fmtTyping{=SUM(January:December!C6)}.
 \end{enumerate}
 
 Copy \fmtCellLocation{C6} down through \fmtCellLocation{C13} to fill in the rest of the formulas. The \fmtWorksheetName{Expenses Summary} sheet should match Figure \ref{06:fig07}.
@@ -330,7 +332,7 @@ Copy \fmtCellLocation{C6} down through \fmtCellLocation{C13} to fill in the rest
 	\label{06:fig07}
 \end{figure}
 
-While the 3-D formulas are complete in the Expenses Summary sheet, the summary feels like it is lacking something. Add a visual representation of the summary numbers to the sheet.
+While the 3-D formulas are complete in the \fmtWorksheetName{Expenses Summary} sheet, the summary feels like it is lacking something. Add a visual representation of the summary numbers to the sheet.
 
 \begin{enumerate}
 	\item Highlight cells \fmtCellLocation{B5:C13} in the \fmtWorksheetName{Expenses Summary} sheet.
@@ -360,12 +362,12 @@ While the 3-D formulas are complete in the Expenses Summary sheet, the summary f
 			\setlength{\parskip}{0pt}
 			\setlength{\parsep}{0pt}
 			
-			\item To reference a cell in another sheet, use the formula syntax \fmtFunction{=SheetName!CellAddress}.
+			\item To reference a cell in another sheet, use the formula syntax \fmtTyping{=SheetName!CellAddress}.
 			\bigskip
 			\item To enter a 3-D reference:
 
 			\begin{enumerate}
-				\item Click on the cell where the formula should appear and type =.
+				\item Click on the cell where the formula should appear and type \fmtTyping{=}.
 				\item Click on the sheet with the cell to reference.
 				\item Click on the cell in the sheet and press \fmtKeystroke{Enter}.
 			\end{enumerate}
@@ -417,7 +419,7 @@ Microsoft has made many predefined templates available in Excel. Follow these st
 	\item Click the \fmtRibbonTab{File} tab in the ribbon.
 	\item Click \fmtPopupButton{New} in the Backstage View.
 	\item Click in the \fmtPopupBox{Search} box for Online template.
-	\item Type \fmtFunction{Travel} and press \fmtKeystroke{Enter}.
+	\item Type \fmtTyping{Travel} and press \fmtKeystroke{Enter}.
 	\item Click on the \fmtPopupButton{Travel Expense Report} and click \fmtPopupButton{Create}. Note: If this template is not available, ask the instructor which template to use.
 \end{enumerate}
 
@@ -488,7 +490,7 @@ To create a custom template a blank template can be created or an existing sprea
 \begin{enumerate}
 	\item Click the \fmtRibbonTab{File} tab in the ribbon and then click \fmtRibbonButton{Save As}.
 	\item Choose the location to save the file.
-	\item In the \fmtPopupBox{Save as} type pull-down list, select \fmtPopupButton{Excel Template (*.xltx)}.
+	\item In the \fmtPopupBox{Save as type} pull-down list, select \fmtPopupButton{Excel Template (*.xltx)}.
 	\item At the top of the screen, double-check that the location selected to save the file has not changed. If it has, use the pull-down list to find the location to save the file. \textit{Be Careful Here!} By default, Excel will try to save this to a default template file location on the local hard drive.
 	\item Type in the file name \fmtWorkbookName{CH6 Personal Budget Template.xltx}. Carefully compare the screen with Figure \ref{06:fig11}. Keep in mind that the template file may be getting saved to a different place on the computer since Excel will normally save templates to a specific folder on the local hard drive.
 	\item Click \fmtPopupButton{Save}.
@@ -688,9 +690,9 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 	\item Group the sheets and add the following formulas to both sheets.
 
 	\begin{itemize}
-		\item In \fmtCellLocation{C22} and \fmtCellLocation{D22}, count the \textit{Xs} in rows 12 through 21. To do this, use a \fmtFunction{COUNTA} formula.
-		\item In \fmtCellLocation{E22} and \fmtCellLocation{F22}, sum rows 12 through 21.
-		\item In \fmtCellLocation{G12}, calculate Goal Percentage by dividing the number of Shots by the number of Goals. This will display an error message because there are zeros in column F. An \fmtFunction{IF} statement that tests the value of column F will keep error messages from appearing. Change the formula in \fmtCellLocation{G12} with the following three pieces.
+		\item In \fmtCellLocation{C22} and \fmtCellLocation{D22}, count the \textit{Xs} in rows $ 12 $ through $ 21 $. To do this, use a \fmtTyping{COUNTA} formula.
+		\item In \fmtCellLocation{E22} and \fmtCellLocation{F22}, sum rows $ 12 $ through $ 21 $.
+		\item In \fmtCellLocation{G12}, calculate Goal Percentage by dividing the number of Shots by the number of Goals. This will display an error message because there are zeros in column F. An \fmtTyping{IF} statement that tests the value of column F will keep error messages from appearing. Change the formula in \fmtCellLocation{G12} with the following three pieces.
 		\begin{itemize}
 			\item Test: is \fmtCellLocation{F12} greater than zero
 			\item If the Test is True: divide the number of Goals by the number of Shots
@@ -711,18 +713,18 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 		\item \fmtCellLocation{D5} – Pacific Northwest Soccer
 	\end{itemize}
 	
-	\item Enter the coach's name, phone number, and email address in row 8.
+	\item Enter the coach's name, phone number, and email address in row $ 8 $.
 	\item Make four copies of the \fmtWorksheetName{Player Statistics} sheet. Rename the player sheets \fmtWorksheetName{Player 1}, \fmtWorksheetName{Player 2}, \fmtWorksheetName{Player 3}, \fmtWorksheetName{Player 4}, and \fmtWorksheetName{Player 5}.
 	\item Group the Player sheets. Enter the following formulas:
 
 	\begin{itemize}
-		\item A formula in \fmtCellLocation{D4} that points to cell \fmtCellLocation{D3} in the \fmtWorksheetName{Season Stats} sheet. \textit{Note}: the formula will be \fmtFunction{='Season Stats'!D3:G3} instead of \fmtFunction{='Season Stats'!D3} because \fmtCellLocation{D3:G3} are merged together.
+		\item A formula in \fmtCellLocation{D4} that points to cell \fmtCellLocation{D3} in the \fmtWorksheetName{Season Stats} sheet. \textit{Note}: the formula will be \fmtTyping{='Season Stats'!D3:G3} instead of \fmtTyping{='Season Stats'!D3} because \fmtCellLocation{D3:G3} are merged together.
 		\item A formula in \fmtCellLocation{D5} that points to cell \fmtCellLocation{D4} in the \fmtWorksheetName{Season Stats} sheet.
 		\item A formula in \fmtCellLocation{D6} that points to cell \fmtCellLocation{D5} in the \fmtWorksheetName{Season Stats} sheet.
 	\end{itemize}	
 
 	\item Ungroup the sheets.
-	\item Click on the \fmtWorksheetName{Player 1} sheet. Enter the Player Name: \fmtFunction{Juan Ramirez}. Enter the data from Table \ref{06:tab02}:
+	\item Click on the \fmtWorksheetName{Player 1} sheet. Enter the Player Name: \fmtTyping{Juan Ramirez}. Enter the data from Table \ref{06:tab02}:
 \end{enumerate}
 
 \begin{table}[H]
@@ -732,16 +734,16 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 		\begin{longtable}{L{0.65in}C{0.45in}C{0.50in}C{0.40in}C{0.40in}} %Left-aligned, Max width: 4.25in
 			\textbf{Game} & \textbf{Played} & \textbf{Started} & \textbf{Shots} & \textbf{Goals}\endhead
 			\hline
-			Game 1  & x & x & 2 & 1 \\
-			Game 2  & x & x & 3 & 1 \\
-			Game 3  &   &   &   &   \\
-			Game 4  & x &   &   &   \\
-			Game 5  & x & x & 2 & 0 \\
-			Game 6  & x &   &   &   \\
-			Game 7  &   &   &   &   \\
-			Game 8  & x & x & 1 & 1 \\
-			Game 9  & x & x & 4 & 2 \\
-			Game 10 & x & x & 3 & 3 \\
+			Game $ 1  $  & x & x & $ 2 $ & $ 1 $ \\
+			Game $ 2  $  & x & x & $ 3 $ & $ 1 $ \\
+			Game $ 3  $  &   &   &       &       \\
+			Game $ 4  $  & x &   &       &       \\
+			Game $ 5  $  & x & x & $ 2 $ & $ 0 $ \\
+			Game $ 6  $  & x &   &       &       \\
+			Game $ 7  $  &   &   &       &       \\
+			Game $ 8  $  & x & x & $ 1 $ & $ 1 $ \\
+			Game $ 9  $  & x & x & $ 4 $ & $ 2 $ \\
+			Game $ 10 $  & x & x & $ 3 $ & $ 3 $ \\
 			\rowcolor{captionwhite}
 			\caption{Player 1 Sheet}
 			\label{06:tab02}
@@ -751,7 +753,7 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 
 
 \begin{enumerate}[resume]
-	\item Click on the \fmtWorksheetName{Player 2} sheet. Enter the Player Name: \fmtFunction{Zach Johnson}. Enter the data from Table \ref{06:tab03}.
+	\item Click on the \fmtWorksheetName{Player 2} sheet. Enter the Player Name: \fmtTyping{Zach Johnson}. Enter the data from Table \ref{06:tab03}.
 \end{enumerate}
 
 \begin{table}[H]
@@ -761,16 +763,16 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 		\begin{longtable}{L{0.65in}C{0.45in}C{0.50in}C{0.40in}C{0.40in}} %Left-aligned, Max width: 4.25in
 			\textbf{Game} & \textbf{Played} & \textbf{Started} & \textbf{Shots} & \textbf{Goals}\endhead
 			\hline
-			Game 1  & x & x & 1 & 1 \\
-			Game 2  & x & x & 2 & 1 \\
-			Game 3  & x & x & 1 & 1 \\
-			Game 4  & x & x & 1 & 1 \\
-			Game 5  & x & x & 2 & 0 \\
-			Game 6  & x & x & 5 & 2 \\
-			Game 7  & x & x & 4 & 2 \\
-			Game 8  & x & x & 1 & 1 \\
-			Game 9  & x & x & 4 & 1 \\
-			Game 10 & x & x & 3 & 2 \\
+			Game $ 1 $  & x & x & $ 1 $ & $ 1 $ \\
+			Game $ 2 $  & x & x & $ 2 $ & $ 1 $ \\
+			Game $ 3 $  & x & x & $ 1 $ & $ 1 $ \\
+			Game $ 4 $  & x & x & $ 1 $ & $ 1 $ \\
+			Game $ 5 $  & x & x & $ 2 $ & $ 0 $ \\
+			Game $ 6 $  & x & x & $ 5 $ & $ 2 $ \\
+			Game $ 7 $  & x & x & $ 4 $ & $ 2 $ \\
+			Game $ 8 $  & x & x & $ 1 $ & $ 1 $ \\
+			Game $ 9 $  & x & x & $ 4 $ & $ 1 $ \\
+			Game $ 10 $ & x & x & $ 3 $ & $ 2 $ \\
 			\rowcolor{captionwhite}
 			\caption{Player 2 Sheet}
 			\label{06:tab03}
@@ -779,7 +781,7 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 \end{table}
 
 \begin{enumerate}[resume]
-	\item Click on the \fmtWorksheetName{Player 3} sheet. Enter the Player Name: \fmtFunction{Vito Lawrenz}. Enter the data from Table \ref{06:tab04}.
+	\item Click on the \fmtWorksheetName{Player 3} sheet. Enter the Player Name: \fmtTyping{Vito Lawrenz}. Enter the data from Table \ref{06:tab04}.
 \end{enumerate}
 
 \begin{table}[H]
@@ -789,16 +791,16 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 		\begin{longtable}{L{0.65in}C{0.45in}C{0.50in}C{0.40in}C{0.40in}} %Left-aligned, Max width: 4.25in
 			\textbf{Game} & \textbf{Played} & \textbf{Started} & \textbf{Shots} & \textbf{Goals}\endhead
 			%\hline
-			Game 1  & x & x & 0 & 0 \\
-			Game 2  & x & x & 1 & 1 \\
-			Game 3  & x & x & 2 & 0 \\
-			Game 4  & x &   & 1 & 1 \\
-			Game 5  & x & x & 2 & 0 \\
-			Game 6  & x & x & 3 & 1 \\
-			Game 7  & x & x & 2 & 1 \\
-			Game 8  & x & x & 1 & 1 \\
-			Game 9  & x & x & 1 & 1 \\
-			Game 10 & x & x & 1 & 1 \\
+			Game $ 1  $ & x & x & $ 0 $ & $ 0 $ \\
+			Game $ 2  $ & x & x & $ 1 $ & $ 1 $ \\
+			Game $ 3  $ & x & x & $ 2 $ & $ 0 $ \\
+			Game $ 4  $ & x &   & $ 1 $ & $ 1 $ \\
+			Game $ 5  $ & x & x & $ 2 $ & $ 0 $ \\
+			Game $ 6  $ & x & x & $ 3 $ & $ 1 $ \\
+			Game $ 7  $ & x & x & $ 2 $ & $ 1 $ \\
+			Game $ 8  $ & x & x & $ 1 $ & $ 1 $ \\
+			Game $ 9  $ & x & x & $ 1 $ & $ 1 $ \\
+			Game $ 10 $ & x & x & $ 1 $ & $ 1 $ \\
 			\rowcolor{captionwhite}
 			\caption{Player 3 Sheet}
 			\label{06:tab04}
@@ -808,9 +810,9 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 
 \begin{enumerate}
 	\item Make up information for the names and data in the \fmtWorksheetName{Player 4} and \fmtWorksheetName{Player 5} sheets.
-	\item Go to the \fmtWorksheetName{Season Stats} sheet and click on cell \fmtCellLocation{C12}. Enter a 3-D formula to \fmtFunction{COUNTA} (``count text'') in \fmtCellLocation{C12} through sheets \fmtWorksheetName{Player 1} through \fmtWorksheetName{Player 5}. Copy the formula in \fmtCellLocation{C12} through \fmtCellLocation{D22}.
-	\item Change the formulas in \fmtCellLocation{C22} and \fmtCellLocation{D22} to \fmtFunction{SUM}.
-	\item Click on \fmtCellLocation{E12}. Enter a 3-D formula to \fmtFunction{SUM E12} in sheets \fmtWorksheetName{Player 1} through \fmtWorksheetName{Player 5}. Copy the formulas through \fmtCellLocation{F22}.
+	\item Go to the \fmtWorksheetName{Season Stats} sheet and click on cell \fmtCellLocation{C12}. Enter a 3-D formula to \fmtTyping{COUNTA} (``count text'') in \fmtCellLocation{C12} through sheets \fmtWorksheetName{Player 1} through \fmtWorksheetName{Player 5}. Copy the formula in \fmtCellLocation{C12} through \fmtCellLocation{D22}.
+	\item Change the formulas in \fmtCellLocation{C22} and \fmtCellLocation{D22} to \fmtTyping{SUM}.
+	\item Click on \fmtCellLocation{E12}. Enter a 3-D formula to \fmtTyping{SUM E12} in sheets \fmtWorksheetName{Player 1} through \fmtWorksheetName{Player 5}. Copy the formulas through \fmtCellLocation{F22}.
 	\item Preview the worksheets in Print Preview. Notice that only part of the data is printing for each worksheet. This is because a Print Area was incorrectly set when the file was first created. This print area needs to be cleared for each worksheet individually (modifying print areas cannot be done on grouped sheets). Exit Backstage View and for each worksheet click the \fmtPopupButton{Print Area} button on the \fmtRibbonTab{Page Layout} tab and select \fmtRibbonButton{Clear Print Area}.
 	\item Save the \fmtWorkbookName{PR6 High Flyers} workbook.
 	\item Compare the work with the self-check answer key (found in the Course Files) and then submit the \fmtWorkbookName{PR6 High Flyers} workbook and \fmtWorkbookName{PR6 Pacific NW Team Template}.
@@ -850,11 +852,11 @@ A template for National Parks usage data along with a Summary of the parks visit
 		\begin{longtable}{L{1.25in}L{0.70in}L{0.60in}L{0.70in}L{0.60in}} %Left-aligned, Max width: 4.25in
 		\textbf{Name} & \textbf{Recreation Visitors} & \textbf{Non-recreation Visitors} & \textbf{Recreation Hours} & \textbf{Non-recreation Hours} \endhead
 		\hline
-		Acadia NP       & 2,811,184  & 47,100    & 14,452,151 & 47,100    \\
-		Blue Ridge PKWY & 15,054,603 & 1,942,260 & 93,977,122 & 971,136   \\
-		Crater Lake NP  & 614,712    & 49,600    & 4,033,484  & 24,800    \\
-		Yellowstone NP  & 4,097,710  & 1,156,118 & 82,016,845 & 711,795   \\
-		Yosemite NP     & 4,150,217  & 155,081   & 78,505,877 & 3,993,223 \\
+		Acadia NP       & $ 2,811,184 $  & $ 47,100 $    & $ 14,452,151 $ & $ 47,100 $    \\
+		Blue Ridge PKWY & $ 15,054,603 $ & $ 1,942,260 $ & $ 93,977,122 $ & $ 971,136 $   \\
+		Crater Lake NP  & $ 614,712 $    & $ 49,600 $    & $ 4,033,484 $  & $ 24,800 $    \\
+		Yellowstone NP  & $ 4,097,710 $  & $ 1,156,118 $ & $ 82,016,845 $ & $ 711,795 $   \\
+		Yosemite NP     & $ 4,150,217 $  & $ 155,081 $   & $ 78,505,877 $ & $ 3,993,223 $ \\
 		\rowcolor{captionwhite}
 		\caption{National Park Data, Pt 1}
 		\label{06:tab05}
@@ -869,11 +871,11 @@ A template for National Parks usage data along with a Summary of the parks visit
 		\begin{longtable}{L{1.25in}L{0.60in}L{0.60in}L{0.60in}L{0.60in}} %Left-aligned, Max width: 4.25in
 			\textbf{Name} & \textbf{Concessioner Lodging} & \textbf{Concessioner Camping} & \textbf{Tent Campers} & \textbf{RV Campers} \endhead
 			\hline
-			Acadia NP       & 0       & 0       & 135,000 & 32,094  \\
-			Blue Ridge PKWY & 53,688  & 0       & 61,481  & 33,499  \\
-			Crater Lake NP  & 34,629  & 55,596  & 7,548   & 0       \\
-			Yellowstone NP  & 552,940 & 584,979 & 104,149 & 69,830  \\
-			Yosemite NP     & 938,418 & 0       & 588,701 & 284,372 \\
+			Acadia NP       & $ 0 $       & $ 0 $       & $ 135,000 $ & $ 32,094 $  \\
+			Blue Ridge PKWY & $ 53,688 $  & $ 0 $       & $ 61,481 $  & $ 33,499 $  \\
+			Crater Lake NP  & $ 34,629 $  & $ 55,596 $  & $ 7,548 $   & $ 0 $       \\
+			Yellowstone NP  & $ 552,940 $ & $ 584,979 $ & $ 104,149 $ & $ 69,830 $  \\
+			Yosemite NP     & $ 938,418 $ & $ 0 $       & $ 588,701 $ & $ 284,372 $ \\
 			\rowcolor{captionwhite}
 			\caption{National Park Data, Pt 2}
 			\label{06:tab06}
@@ -888,11 +890,11 @@ A template for National Parks usage data along with a Summary of the parks visit
 		\begin{longtable}{L{1.25in}L{0.60in}L{0.60in}} %Left-aligned, Max width: 4.25in
 			\textbf{Name} & \textbf{Backcountry Campers} & \textbf{Misc Overnight Stays} \endhead
 			\hline
-			Acadia NP       & 1,233   & 8,343  \\
-			Blue Ridge PKWY & 2,101   & 1,294  \\
-			Crater Lake NP  & 3,253   & 0      \\
-			Yellowstone NP  & 44,898  & 11,715 \\
-			Yosemite NP     & 211,966 & 39,214 \\
+			Acadia NP       & $ 1,233 $   & $ 8,343 $  \\
+			Blue Ridge PKWY & $ 2,101 $   & $ 1,294 $  \\
+			Crater Lake NP  & $ 3,253 $   & $ 0 $      \\
+			Yellowstone NP  & $ 44,898 $  & $ 11,715 $ \\
+			Yosemite NP     & $ 211,966 $ & $ 39,214 $ \\
 			\rowcolor{captionwhite}
 			\caption{National Park Data, Pt 3}
 			\label{06:tab07}
