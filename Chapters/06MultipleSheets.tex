@@ -4,9 +4,7 @@
 
 Excel workbooks often contain a large amount of data and worksheets can quickly become overwhelming. When one worksheet becomes cumbersome, data can be broken out into smaller subsets and placed in separate worksheets within the same Excel file. Separating out spreadsheet data into smaller pieces can lead to better data organization within a file and increase its ease of use. When a retail company needs to track overall sales along with individual store sales, it makes sense to place each store's sales data in a separate sheet within a file. Adding a summary sheet that sums across all the sheets will total the entire company sales data in the same file. This chapter will show how to set up a workbook to make multi-sheet formulas quick and easy.
 
-24
-
-Other examples of when multiple sheets make the most sense are when comparing regional data for a company, data for a salesforce where individual salesperson performance is analyzed along with overall sales, and data over a period of time where sheets can be broken out by year or by month. When comparing data across several sheets, it is essential that all the sheets are laid out in the same way. To facilitate this, a template can be used. A template is the basic pattern for each new sheet that can be used repeatedly to make sure each new sheet has the same setup, formatting, formulas, etc. as the existing sheets in a file. In this chapter, both pre-made Excel templates along with ones created from scratch will be used to meet the specific needs of the work required.
+Other examples of when multiple sheets make the most sense are when comparing regional data for a company, data for a sales force where individual salesperson performance is analyzed along with overall sales, and data over a period of time where sheets can be broken out by year or by month. When comparing data across several sheets, it is essential that all the sheets are laid out in the same way. To facilitate this, a template can be used. A template is the basic pattern for each new sheet that can be used repeatedly to make sure each new sheet has the same setup, formatting, formulas, etc. as the existing sheets in a file. In this chapter, both predefined Excel templates and those created from scratch will be used to meet the specific needs of the work required.
 
 \section{Multiple Sheet Basics}
 
@@ -25,12 +23,12 @@ Other examples of when multiple sheets make the most sense are when comparing re
 	\end{objbox}
 \end{center}
 
-The Excel workbooks used throughout this textbook have included multiple sheets. This chapter develops a personal budget file that contains income and expenses for an entire year. The file contains a sheet for each month of the year as well as a Summary sheet that totals all twelve monthly sheets of data together. The chapter begins with exercises designed to demonstrate moving through worksheets, organizing them, and making sure that all twelve monthly sheets are consistent. Figure \ref{06:fig01} shows the \fmtWorksheetName{January} sheet in the Personal Budget file along with all the sheet tabs along the bottom of the window.
+The Excel workbooks used throughout this textbook have included multiple sheets. This chapter develops a personal budget file that contains income and expenses for an entire year. The file contains a sheet for each month of the year as well as a Summary sheet that totals all twelve monthly sheets of data together. The chapter begins with exercises designed to demonstrate moving through worksheets, organizing them, and making sure that all twelve monthly sheets are consistent. Figure \ref{06:fig01} shows the \fmtWorksheetName{January} sheet in the \fmtWorkbookName{Personal Budget} file along with all the sheet tabs along the bottom of the window.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch06_fig01}
-	\caption{Personal Budget File}
+	\caption{January Sheet in the Personal Budget File}
 	\label{06:fig01}
 \end{figure}
 
@@ -42,7 +40,7 @@ The Excel workbooks used throughout this textbook have included multiple sheets.
 	\item Open the data file \fmtWorkbookName{CH6 Data} and save the file as \fmtWorkbookName{CH6 Personal Budget}. Notice that the file has an \fmtWorksheetName{Expenses Summary} sheet tab at the far left followed by monthly sheets.
 	\item Click on the different sheet tabs at the bottom of the screen to move through the sheets. Notice that the \fmtWorksheetName{Expenses Summary} sheet is formatted differently from the monthly sheets. Notice also that all the monthly sheets are identical in layout and format.
 	\item Take a second look at the months and notice the end of the year data for September through October has not been added and there is no sheet for December. 
-	\item Add the following data in the September, October, and November sheets.
+	\item Add the following data in the \fmtWorksheetName{September}, \fmtWorksheetName{October}, and \fmtWorksheetName{November} sheets.
 \end{enumerate}
 
 \begin{table}[H]
@@ -69,7 +67,7 @@ The Excel workbooks used throughout this textbook have included multiple sheets.
 
 \subsection{Copying a Sheet}
 
-To make a December sheet, copy the November sheet.
+To make a \fmtWorksheetName{December} sheet, copy the \fmtWorksheetName{November} sheet.
 
 \begin{enumerate}
 	\item Point the mouse at the \fmtWorksheetName{November} sheet tab at the bottom of the screen.
@@ -92,12 +90,12 @@ Next, update the \fmtWorksheetName{November (2)} sheet to turn it into the \fmtW
 	\item Right-click on the \fmtWorksheetName{November (2)} sheet name at the bottom of the screen and choose \fmtPopupButton{Rename}.
 	\item Type \fmtTyping{December} and press \fmtKeystroke{Enter}.
 	\item Click on the \fmtWorksheetName{December} sheet.
-	\item Click on \fmtCellLocation{B1} and change \textit{November} to \textit{December}.
+	\item Click on \fmtCellLocation{B1} and change \textit{November} to \fmtTyping{December}.
 	\item Make the following data changes.
 
 	\begin{itemize}
 		\item Miscellaneous: $ \$300 $
-		\item Bonus: $ \$250 $ (it's the holidays!)
+		\item Bonus: $ \$250 $ (holiday bonus)
 		\item Freelance: delete amount
 	\end{itemize}
 
@@ -106,7 +104,7 @@ Next, update the \fmtWorksheetName{November (2)} sheet to turn it into the \fmtW
 	\item Hold down the left mouse button and then press and hold down the \fmtKeystroke{Ctrl} key.
 	\item Drag the mouse to the right (still holding down the left-mouse button and the \fmtKeystroke{Ctrl} key) until the black down-pointing arrow is to the right of the \fmtWorksheetName{December} sheet.
 	\item Let go of the mouse button and then the \fmtKeystroke{Ctrl} key. There should now be a \fmtWorksheetName{December (2)} sheet to the right of the \fmtWorksheetName{December} sheet.
-	\item Rename the \fmtWorksheetName{December(2)} sheet \fmtWorksheetName{Practice}.
+	\item Rename the \fmtWorksheetName{December(2)} sheet to \fmtTyping{Practice}.
 \end{enumerate}
 
 \begin{center}
@@ -143,8 +141,8 @@ Sometimes worksheets do not end up in the right order, and they need to be moved
 Since the \fmtWorksheetName{Practice} sheet is not needed in the \fmtWorkbookName{Budget} file, delete it now.
 
 \begin{enumerate}
-	\item Right-click on the Practice sheet tab at the bottom of the screen.
-	\item Click \fmtPopupButton{Delete}. Figure \ref{06:fig03} shows the warning message box that will appear, though it may look slightly different depending on the version of Excel being using. It is important to note that once a sheet is deleted, \fmtPopupButton{Undo} will not bring it back.
+	\item Right-click on the \fmtWorksheetName{Practice} sheet tab at the bottom of the screen.
+	\item Click \fmtPopupButton{Delete}. Figure \ref{06:fig03} shows the warning message box that will appear, though it may look slightly different depending on the version of Excel being using. \textbf{Important!} Once a sheet is deleted, \fmtPopupButton{Undo} will not bring it back.
 	\item Click \fmtPopupButton{Delete}.
 \end{enumerate}
 
@@ -271,6 +269,15 @@ Notice that a data bar was set up in \fmtCellLocation{I5} to visually show the i
 \end{center}
 
 The \fmtWorksheetName{Summary} sheet in many multiple sheet workbooks is utilized to present totaled information from the other sheets in the file. This is done to give a quick synopsis of all the other sheets in one convenient location. For this reason, the \fmtWorksheetName{Summary} sheet is usually the first sheet in multiple-sheet files. Summary sheets ``pull'' data from the other sheets using three-dimensional (3-D) cell references. In order to distinguish between \fmtCellLocation{A3} in the \fmtWorksheetName{Summary} sheet, \fmtCellLocation{A3} in the \fmtWorksheetName{January} sheet, \fmtCellLocation{A3} in the \fmtWorksheetName{February} sheet, etc.; a 3-D cell reference includes the sheet name along with the cell reference. The syntax to reference a cell in a different sheet is \fmtTyping{=SheetName!CellRange}. So, the cell reference for \fmtCellLocation{A15} in the \fmtWorksheetName{March} sheet would be \fmtTyping{=March!A15}.
+
+\begin{center}
+	\begin{infobox}{Best Practice}
+		\textbf{Summary Sheet}
+		\\
+		\\
+		Even if there are no 3-D formulas to summarize on a summary sheet, it is considered a best practice to include a summary sheet with information about the data contained in the workbook and contact information for the person who created the workbook.  
+	\end{infobox}
+\end{center}
 
 Start working on the \fmtWorksheetName{Summary} sheet by trying out some 3-D formula.
 
@@ -407,9 +414,9 @@ While the 3-D formulas are complete in the \fmtWorksheetName{Expenses Summary} s
 	\end{objbox}
 \end{center}
 
-A template is a predefined pattern for a spreadsheet. Hundreds of templates created by Microsoft are available to use inside Excel. These templates are very helpful to quickly start and complete a new task in Excel. Templates include all the formulas, formatting, etc. needed in a professional Excel spreadsheet. All that is left to do is enter the data. Predefined Microsoft templates include everything from billing statements to blood pressure trackers to business cards. Categories include: Business, Personal, Industry, Financial Management, Logs, Calculators, and Lists.
+A template is a predefined pattern for a spreadsheet. Hundreds of templates created by Microsoft are available to use inside Excel and these templates are very helpful to quickly start and complete a new task in Excel. Templates include all the formulas, formatting, etc. needed in a professional Excel spreadsheet. All that is left to do is enter the data. Predefined Microsoft templates include everything from billing statements to blood pressure trackers to business cards. Categories include: Business, Personal, Industry, Financial Management, Logs, Calculators, and Lists.
 
-Sometimes a very specific template is needed that has not already been created by Microsoft. Taking the time to create a custom template allows users to create new files from it over and over again. If a new version of some spreadsheet is needed on a regular basis, templates will make this work much easier. This chapter explores both types of templates: predefined and custom.
+Sometimes a very specific template is needed that has not already been created by Microsoft. Taking the time to create a custom template allows users to create new spreadsheets from it over and over again. If a new version of some spreadsheet is needed on a regular basis, templates will make this work much easier. This chapter explores both types of templates: predefined and custom.
 
 \subsection{Predefined Templates}
 
@@ -463,7 +470,7 @@ Complete the following steps to investigate this template.
 
 \subsection{Custom Templates}
 
-To create a custom template a blank template can be created or an existing spreadsheet can be saved as a template. Either way, the templated can be used to create new spreadsheets that have a uniform appearance and set of functions. For this exercise, the existing \fmtWorkbookName{CH6 Personal Budget} file will be converted into a template but in the assignments at the end of the chapter a template will be built from scratch.
+To create a custom template a blank template can be created or an existing spreadsheet can be saved as a template. Either way, the template can be used to create new spreadsheets that have a uniform appearance and set of functions. For this exercise, the existing \fmtWorkbookName{CH6 Personal Budget} file will be converted into a template but the assignments at the end of the chapter a build a template from scratch.
 
 \begin{enumerate}
 	\item Open the \fmtWorkbookName{CH6 Personal Budget.xlsx} file.
@@ -579,7 +586,7 @@ Use the new budget template to start a Personal Budget file for $ 2017 $. Use th
 			\setlength{\parsep}{0pt}
 			
 			\item Templates save time and effort when compared to designing and creating spreadsheets files from scratch.
-			\item There are many pre-designed templates in Excel.
+			\item There are many predefined templates in Excel.
 			\item Custom templates can be created for special purposes.
 			
 		\end{itemize}
@@ -645,7 +652,7 @@ Print Preview makes it clear that the \fmtWorksheetName{Expenses Summary} sheet 
 \end{figure}
 
 \begin{enumerate}
-	\item Click the drop-down arrow for \fmtPopupButton{Width:} and select $ 1 $ page. This has the same result as selecting Fit All Columns on One Page in the Scaling setting in Print Preview.
+	\item Click the drop-down arrow for \fmtPopupButton{Width:} and select $ 1 $ page. This has the same result as selecting \fmtPopupButton{Fit All Columns on One Page} in the \fmtPopupBox{Scaling} setting in Print Preview.
 	\item Return to Print Preview to confirm that the \fmtWorksheetName{Expenses Summary} worksheet is now printing on one page only.
 	\item Exit Backstage View.
 	\item Save the \fmtWorkbookName{CH6 2017 Personal Budget} workbook.
@@ -713,9 +720,9 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 		\item \fmtCellLocation{D5} – Pacific Northwest Soccer
 	\end{itemize}
 	
-	\item Enter the coach's name, phone number, and email address in row $ 8 $.
+	\item Make up a coach's name, phone number, and email address for row $ 8 $.
 	\item Make four copies of the \fmtWorksheetName{Player Statistics} sheet. Rename the player sheets \fmtWorksheetName{Player 1}, \fmtWorksheetName{Player 2}, \fmtWorksheetName{Player 3}, \fmtWorksheetName{Player 4}, and \fmtWorksheetName{Player 5}.
-	\item Group the Player sheets. Enter the following formulas:
+	\item Group the Player sheets and enter the following formulas.
 
 	\begin{itemize}
 		\item A formula in \fmtCellLocation{D4} that points to cell \fmtCellLocation{D3} in the \fmtWorksheetName{Season Stats} sheet. \textit{Note}: the formula will be \fmtTyping{='Season Stats'!D3:G3} instead of \fmtTyping{='Season Stats'!D3} because \fmtCellLocation{D3:G3} are merged together.
@@ -810,7 +817,7 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 
 \begin{enumerate}
 	\item Make up information for the names and data in the \fmtWorksheetName{Player 4} and \fmtWorksheetName{Player 5} sheets.
-	\item Go to the \fmtWorksheetName{Season Stats} sheet and click on cell \fmtCellLocation{C12}. Enter a 3-D formula to \fmtTyping{COUNTA} (``count text'') in \fmtCellLocation{C12} through sheets \fmtWorksheetName{Player 1} through \fmtWorksheetName{Player 5}. Copy the formula in \fmtCellLocation{C12} through \fmtCellLocation{D22}.
+	\item Go to the \fmtWorksheetName{Season Stats} sheet and click on cell \fmtCellLocation{C12}. Enter a 3-D formula to \fmtTyping{COUNTA} in \fmtCellLocation{C12} through sheets \fmtWorksheetName{Player 1} through \fmtWorksheetName{Player 5}. Copy the formula in \fmtCellLocation{C12} through \fmtCellLocation{D22}.
 	\item Change the formulas in \fmtCellLocation{C22} and \fmtCellLocation{D22} to \fmtTyping{SUM}.
 	\item Click on \fmtCellLocation{E12}. Enter a 3-D formula to \fmtTyping{SUM E12} in sheets \fmtWorksheetName{Player 1} through \fmtWorksheetName{Player 5}. Copy the formulas through \fmtCellLocation{F22}.
 	\item Preview the worksheets in Print Preview. Notice that only part of the data is printing for each worksheet. This is because a Print Area was incorrectly set when the file was first created. This print area needs to be cleared for each worksheet individually (modifying print areas cannot be done on grouped sheets). Exit Backstage View and for each worksheet click the \fmtPopupButton{Print Area} button on the \fmtRibbonTab{Page Layout} tab and select \fmtRibbonButton{Clear Print Area}.
