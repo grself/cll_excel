@@ -21,9 +21,23 @@
 % Use to create a footnote without a numbering marker
 \blfootnote{Whatever.}
 
-%***************************************************************************
+%************************************************************************
+\section{Insert Fig Into Enum List}
+%************************************************************************
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch07_fig0}
+\caption{x}
+\label{07:fig0}
+\end{figure}
+
+\begin{enumerate}[resume]
+
+%************************************************************************
 \section{Box: Text}
-%***************************************************************************
+%************************************************************************
 % Creates a nice boxed text with a title and main section
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black]
 	% Upper half of box: my "title" area
