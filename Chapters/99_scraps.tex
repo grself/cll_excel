@@ -21,19 +21,6 @@
 % Use to create a footnote without a numbering marker
 \blfootnote{Whatever.}
 
-%************************************************************************
-\section{Insert Fig Into Enum List}
-%************************************************************************
-\end{enumerate}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch07_fig0}
-\caption{x}
-\label{07:fig0}
-\end{figure}
-
-\begin{enumerate}[resume]
 
 %************************************************************************
 \section{Box: Text}
@@ -242,9 +229,9 @@ OR
 % section in the ``structure'' box on the left side of the page.
 %TODO This is a todo note.
 
-%***************************************************************************
-\section{Figure Without Caption}
-%**************************************************************************
+%**********************************************************************
+\section{Figure: Without Caption}
+%**********************************************************************
 % Use this for figures at the top of each chapter
 
 \begin{wrapfigure}{r}{0.4\textwidth}
@@ -254,9 +241,24 @@ OR
 
 First paragraph.\blfootnote{Photo by lindsay Cotter on Unsplash}
 
-%***************************************************************************
-\section{Wrap Figure}
-%**************************************************************************
+%**********************************************************************
+\section{Figure: Insert Into Enum List}
+%**********************************************************************
+
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch08_fig3}
+	\caption{x}
+	\label{08:fig3}
+\end{figure}
+
+\begin{enumerate}[resume]
+
+%**********************************************************************
+\section{Figure: Wrap}
+%**********************************************************************
 \begin{wrapfigure}{O}{0.2\textwidth}
 	\caption{} % No text, wraps badly in very narrow space (does print fig number)
 	% to not print a fig number use \caption*{}
@@ -266,9 +268,9 @@ First paragraph.\blfootnote{Photo by lindsay Cotter on Unsplash}
 \end{wrapfigure}
 
 
-%***************************************************************************
-\section{Regular Figure}
-%**************************************************************************
+%**********************************************************************
+\section{Figure: Regular}
+%*********************************************************************
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/99-placeholder}
@@ -276,16 +278,14 @@ First paragraph.\blfootnote{Photo by lindsay Cotter on Unsplash}
 	\label{03:fig03}
 \end{figure}
 
-
-
-%***************************************************************************
+%**********************************************************************
 \section{Lorem}
-%**************************************************************************
+%**********************************************************************
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
 
-%***************************************************************************
+%**********************************************************************
 \section{Style Guide}
-%**************************************************************************
+%**********************************************************************
 
 I defined several format commands in ``Excel-config.tex''. Each of the commands start with ``fmt...'' so they are easy to find. By using these, I can re-format an item throughout the entire text by changing only the lines in the config file. Here are my usage guidelines for those formats. In general, these are only used when a student is expected to actually click or type something, not just as some text in passing.
 
