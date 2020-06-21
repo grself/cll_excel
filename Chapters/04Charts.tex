@@ -58,9 +58,7 @@ Table \ref{04:tab01}, \textit{Key Steps Before Constructing an Excel Chart}, pro
 
 \subsection{Time Series Trend: Line Chart 1}
 
-The first chart is a line chart. Figure \ref{04:fig01} shows part of the data that will be used to create two line charts. The first will show the trend of the NASDAQ stock index.
-
-\footnote{The NASDAQ data was found at \url{http://www.investopedia.com/terms/n/nasdaq.asp}}
+The first chart is a line chart. Figure \ref{04:fig01} shows part of the data that will be used to create two line charts. The first will show the trend of the NASDAQ stock index.\footnote{The NASDAQ data was found at \url{http://www.investopedia.com/terms/n/nasdaq.asp}}
 
 This chart will be used to communicate a simple message: to show how the index has performed over a two-year period. This chart can be used in a presentation to show whether stock prices have been increasing, decreasing, or remaining constant over the designated period of time.
 
@@ -343,7 +341,7 @@ A column chart is commonly used to show trends over time, as long as the data is
 \begin{enumerate}
 	\item Select the \fmtWorksheetName{Grade Distribution} worksheet.
 	\item Change the years in Row $ 3 $ to the current academic term and year.
-	\item Highlight the range $ A3:A8 $ on the \fmtWorksheetName{Grade Distribution} worksheet. Column A shows the grade categories.
+	\item Highlight the range \fmtCellLocation{A3:A8} on the \fmtWorksheetName{Grade Distribution} worksheet. Column A shows the grade categories.
 	\item Hold down the \fmtKeystroke{Crtl} key and select \fmtCellLocation{C3:C8}
 	\item Click the \fmtRibbonButton{Column} button in the \fmtRibbonGroup{Charts} group section on the \fmtRibbonTab{Insert} tab of the ribbon. Select the first option in the 2-D Column section, which is the \fmtPopupBox{Clustered Column} format.
 	\item Click and drag the chart so the upper left corner is in the middle of cell \fmtCellLocation{H2}.
@@ -1050,7 +1048,7 @@ The chart demonstrates the percentage differences in enrollment between the comm
 	\label{04:fig41}
 \end{figure}
 
-\subsection{Add Text Boxes to Include Additional Information in the Chart.}
+\subsection{Add Additional Information to the Chart.}
 
 \begin{enumerate}
 	\item Click the \fmtRibbonButton{Text Box} button in the \fmtRibbonGroup{Text} group on the \fmtRibbonTab{Insert} tab of the ribbon (see Figure \ref{04:fig42}). 
@@ -1068,6 +1066,21 @@ The chart demonstrates the percentage differences in enrollment between the comm
 
 	\item Save the workbook.
 
+	\item Excel also makes several graphic objects like circles, arrows, and stars available to draw attention to elements on charts. It is important to keep in mind the purpose of a chart is to present information to the audience, not show off the skill of the designer, so do not overdo these types of graphic objects.
+	\item Select a \fmtRibbonButton{Callout: Line} shape at the bottom of the \fmtRibbonGroup{Shapes} menu of the \fmtRibbonGroup{Illustrations} group on the \fmtRibbonTab{Insert} tab.
+	\item Drag a square on the graph. Do not worry about exact placement since the text square and callout line can be easily resized and repositioned later. See Figure \ref{04:fig42} for guidance.
+	\item The callout is initially filled with blue, but that does not offer enough contrast with the chart bar. The \fmtPopupBox{Format Shape} panel opens when the callout is added. Click the \fmtPopupBox{Shape Options} tab on the format panel and make these adjustments.
+	
+	\begin{enumerate}
+		\item Select \textit{Orange, Accent 6, Lighter 60\%} as the fill color for the box.
+		\item Select \textit{Orange, Accent 6, Darker 25\%} as the color for the line.
+		\item Set the line width to $ 2.5 $ pt.
+	\end{enumerate}
+	
+	\item Double-click inside the callout box and enter \fmtTyping{Diversity Program Result}.
+	\item Click the callout box to highlight it and on the \fmtRibbonTab{Home} tab select Arial, $ 12 $pt, Bold font. Also, click the \fmtRibbonButton{Center} button to center the text in the box.
+	\item Resize the callout box to fit the text.
+	
 \end{enumerate}
 
 \begin{figure}[H]
@@ -1076,7 +1089,6 @@ The chart demonstrates the percentage differences in enrollment between the comm
 	\caption{Completed Stacked Column Chart}
 	\label{04:fig42}
 \end{figure}
-
 
 \begin{center}
 	\begin{sklbox}{Skill Refresher}

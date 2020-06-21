@@ -111,7 +111,7 @@
 \definecolor{WkShtName}{HTML}{4169E1} %RoyalBlue
 \newcommand{\fmtWorksheetName}[1]{\textcolor{WkShtName}{\textbf{\textsf{#1}}}}
 
-% Keystrokes (like: Enter)
+% Keystrokes (like: Control)
 \newcommand{\fmtKeystroke}[1]{%
 	\tikz[baseline=(key.base)]
 	\node[%
@@ -123,6 +123,40 @@
 	inner sep=1pt,
 	line width=0.5pt,
 	font=\scriptsize\sffamily
+	](key) {#1\strut}
+	;
+}
+
+% Excel 365 sections
+\newcommand{\fmtExcelNew}[1]{%
+	\tikz[baseline=(key.base)]
+	\node[%
+	draw,
+	fill=red!10!white,
+	text=red!90!black,
+	drop shadow={shadow xshift=0.25ex,shadow yshift=-0.25ex,fill=black,opacity=0.75},
+	rectangle,
+	rounded corners=2pt,
+	inner sep=1pt,
+	line width=0.5pt,
+	font=\scriptsize\sffamily\bfseries
+	](key) {#1\strut}
+	;
+}
+
+% Excel 365 sections
+\newcommand{\fmtExcelOld}[1]{%
+	\tikz[baseline=(key.base)]
+	\node[%
+	draw,
+	fill=blue!10!white,
+	text=blue!90!black,
+	drop shadow={shadow xshift=0.25ex,shadow yshift=-0.25ex,fill=black,opacity=0.75},
+	rectangle,
+	rounded corners=2pt,
+	inner sep=1pt,
+	line width=0.5pt,
+	font=\scriptsize\sffamily\bfseries
 	](key) {#1\strut}
 	;
 }
