@@ -1,27 +1,3 @@
-\section{Miscellaneous Notes}
-% the text width in a normal line is 11.80737cm
-% To make a TODO note, start a comment with two or more consecutive capital letters.
-
-% Figures are in the gfx folder. They should not have dots in the names
-% since that interferes with the crossref function. They should be named
-% something like 'ch01_fig01.png' where the first two digits are the 
-% chapter number and then a one-up figure number.
-
-% My tilde character: $\sim$
-
-%**************************************************************************
-\section{Margin Paragraph} 
-%**************************************************************************
-% Use to create a sidebar paragraph out in the margin
-\marginpar{Whatever.}
-
-%**************************************************************************
-\section{Footnote Without Marker} 
-%**************************************************************************
-% Use to create a footnote without a numbering marker
-\blfootnote{Whatever.}
-
-
 %************************************************************************
 \section{Box: Text}
 %************************************************************************
@@ -126,15 +102,49 @@
 \end{center}
 
 %***************************************************************************
-\section{Ribbon Selection}
+\section{Enumerate Resume}
 %***************************************************************************
-Click \fmtRibbonButton{Tab $ \Rightarrow $ Group $ \Rightarrow $ Button}.
+\begin{enumerate}[resume]
+	\item One
+\end{enumerate}
 
-%***************************************************************************
-\section{Excel 16/365}
-%***************************************************************************
-(\fmtExcelNew{365} Note: this is ... in Excel 365.)
-(\fmtExcelOld{2016} Note: this is ... in Excel 16.)
+%**********************************************************************
+\section{Figure: Without Caption}
+%**********************************************************************
+% Use this for figures that need no caption
+
+\begin{wrapfigure}{r}{0.4\textwidth}
+	\centering
+	\includegraphics[width=0.4\textwidth]{gfx/05-cake} 
+\end{wrapfigure}
+
+First paragraph.\blfootnote{Photo by lindsay Cotter on Unsplash}
+
+%**********************************************************************
+\section{Figure: Insert Into Enum List}
+%**********************************************************************
+
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch08_fig3}
+\caption{x}
+\label{08:fig3}
+\end{figure}
+
+\begin{enumerate}[resume]
+
+%**********************************************************************
+\section{Figure: Wrap}
+%**********************************************************************
+\begin{wrapfigure}{O}{0.2\textwidth}
+	\caption{} % No caption, wraps badly in very narrow space (does print fig number)
+	% to not print a fig number use \caption*{}
+	\label{03:fig02} 
+	\centering
+	\includegraphics[width=0.2\textwidth]{gfx/99-placeholder} 
+\end{wrapfigure}
 
 %***************************************************************************
 \section{Text Table: Default For This Document}
@@ -155,83 +165,6 @@ Click \fmtRibbonButton{Tab $ \Rightarrow $ Group $ \Rightarrow $ Button}.
 	} % End small
 \end{table}
 
-%***************************************************************************
-\section{Text Table: Long}
-%***************************************************************************
-% instead of using a standard font size, like small, I can specify
-% a point size using the following line. This is {font points} and 
-% {base line stretch}.
-% \fontsize{8}{10} \selectfont
-{\small
-\begin{longtable}{L{0.75in}L{1.5in}L{1.5in}} %Max width: 4.25in
-	\textbf{Command} & \textbf{Purpose} & \textbf{Use} \endhead
-	\hline \\
-	Margins & Sets the top, bottom, right, and left margin space for the printed document & 1. Click the Page Layout tab of the Ribbon.\newline2. Click the Margin button.\newline3. Click one of the preset margin options or click Custom Margins.\\
-	\caption{Purpose and Use for Page Setup Commands}
-\label{01:tab02}
-\end{longtable}
-}
-
-%***************************************************************************
-\section{Text Table: Simple}
-%***************************************************************************
-\begin{table}[H]
-	\centering
-	\begin{tabulary}{\linewidth}{LCCCC}
-		\hline
-		\multicolumn{5}{l}{\textbf{Do you support these propositions?}} \\
-		\hline
-		Prop & Strongly Support & Support & Do Not Support & Strongly Do Not Support  \\ 
-		\hline
-		100 & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ \\ 
-		115 & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ \\ 
-		220 & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ \\ 
-		\hline
-	\end{tabulary} 
-	\caption{My great table.}
-	\label{03:tab01}
-\end{table}
-
-
-%***************************************************************************
-\section{Text Table Zebra Stripes}
-% The 'p{}' values determine the width of each cell
-%***************************************************************************
-\begin{table}[H]
-	\centering
-	\definecolor{ltgray}{gray}{0.95} % this is a light gray
-	\rowcolors{1}{}{ltgray} % zebra striping background
-	\begin{tabularx}{0.95\linewidth}{
-			p{0.22\linewidth}
-			p{0.22\linewidth}
-			p{0.22\linewidth}
-			p{0.22\linewidth}}
-		\toprule
-		\textbf{Party} & \textbf{Clinton} & \textbf{Trump} & \textbf{Other} \\
-		\midrule
-		Democrats & $ 89\% $ & $ 8\% $ & $ 3\% $ \\
-		Republicans & $ 8\% $ & $ 88\% $ & $ 4\% $ \\
-		Independents & $ 42\% $ & $ 46\% $ & $ 12\% $ \\
-		\bottomrule
-	\end{tabularx}
-	\caption{2016 Exit Poll.}
-	\label{tab06.02}
-\end{table}
-
-%***************************************************************************
-\section{Set Enumerate Counter}
-%***************************************************************************
-\begin{enumerate}
-	\setcounter{enumi}{2} %Note: set counter to the number desired -1
-	
-	\item One
-\end{enumerate}
-
-OR
-
-\begin{enumerate}[resume]
-	\item One
-\end{enumerate}
 
 %***************************************************************************
 \section{ToDo}
@@ -241,91 +174,166 @@ OR
 %TODO This is a todo note.
 
 %**********************************************************************
-\section{Figure: Without Caption}
-%**********************************************************************
-% Use this for figures at the top of each chapter
-
-\begin{wrapfigure}{r}{0.4\textwidth}
-	\centering
-	\includegraphics[width=0.4\textwidth]{gfx/05-cake} 
-\end{wrapfigure}
-
-First paragraph.\blfootnote{Photo by lindsay Cotter on Unsplash}
-
-%**********************************************************************
-\section{Figure: Insert Into Enum List}
+\section{Chapter Checklist}
 %**********************************************************************
 
-\end{enumerate}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/ch08_fig3}
-	\caption{x}
-	\label{08:fig3}
-\end{figure}
-
-\begin{enumerate}[resume]
-
-%**********************************************************************
-\section{Figure: Wrap}
-%**********************************************************************
-\begin{wrapfigure}{O}{0.2\textwidth}
-	\caption{} % No text, wraps badly in very narrow space (does print fig number)
-	% to not print a fig number use \caption*{}
-	\label{03:fig02} 
-	\centering
-	\includegraphics[width=0.2\textwidth]{gfx/99-placeholder} 
-\end{wrapfigure}
-
-
-%**********************************************************************
-\section{Figure: Regular}
-%*********************************************************************
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=\maxwidth{.95\linewidth}]{gfx/99-placeholder}
-	\caption{Caption}
-	\label{03:fig03}
-\end{figure}
-
-%**********************************************************************
-\section{Lorem}
-%**********************************************************************
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
+To check each chapter, search for:
+\fmtPopupButton to \fmtButton
+\fmtWorksheetName to \fmtWorksheet
+\fmtWorkbookName to \fmtWorksheet
+\fmtCellLocation to \fmtLoc
+\fmtRibbonButton to \fmtButton
+Check that all file names include a hyphen, like ``CH2-yada.xlxs''
+\fmtRibbonGroup since that will signal a ribbon location
+\fmtRibbonTab to see if this is a ribbon location
+\fmtPopupBox to italics
+Row and Column identifiers to format those (like ``Row 2'')
 
 %**********************************************************************
 \section{Style Guide}
 %**********************************************************************
 
-I defined several format commands in ``Excel-config.tex''. Each of the commands start with ``fmt...'' so they are easy to find. By using these, I can re-format an item throughout the entire text by changing only the lines in the config file. Here are my usage guidelines for those formats. In general, these are only used when a student is expected to actually click or type something, not just as some text in passing.
+\subsection{Text Formatting Codes}
+I defined several format commands in ``Excel-config.tex''. Each of the commands start with ``fmt...'' so they are easy to find. By using these, I can re-format an item throughout the entire text by changing only the lines in the config file.
 
-% CellLoc: Full cell location ID, not for just col or row names
+fmtButton: Anything clickable 
+fmtKeystroke: Any key stroke
+fmtLoc: Any cell location, including column or row name
+fmtNewExcel: Excel 365 information (use: fmtNewExcel{365})
+fmtOldExcel: Excel 2016 information (use: fmtOldExcel{2016})
+fmtTyping: Anything typed in
+fmtWorksheet: Any workbook or worksheet or file name
+
+% *** The following are obsolete
+% CellLoc: Cell location (A1), column or row name (Column A, Row 1)
 % Keystroke: Keystrokes (like: Enter)
-% Popup: Popup box names
-% PopupBtn: Popup buttons and other clicks in popup boxes
-% RbnBtn: Ribbon Button (like Find and Autosum)
-% RbnGrp: Ribbon Group
-% RbnTab: Ribbon Tab
-% typing: Typed-in Text, like formulas
-% WkbkName: Workbook (file) name
-% WkShtName: Worksheet name
+% PopupBox: Popup box names
+% PopupButton: Anything clickable in a popup box, like select lists
+% RibbonButton: Any clickable item on the ribbon (like Find and Autosum)
+% RibbonGroup: Ribbon Group
+% RibbonTab: Ribbon Tab
+% Typing: Typed-in Text, like formulas
+% WorkbookName: Workbook (file) name
+% WorksheetName: Worksheet name
+% ExcelNew: Excel 365 information
+% ExcelOld: Excel 2016 information
 
-Error messages that are displayed, like #DIV/0, are italicized.
 
+\subsection{Special Character Formats}
+My tilde character: $\sim$
+
+``Control'' is abbreviated ``Ctrl''
+
+Locations in text but not a procedure, like $ A1 $:$ D1 $ (note, italics doesn't matter with a math formula). Note, leave the colon outside the math formula for better spacing.
+
+The ``Auto Fill Handle'' should be formatted as a button.
+
+Italicize:
+  Excel error messages that are displayed, like \textit{#DIV/0}
+  \textit{Backstage} is italicized, but buttons on the Backstage view are formatted as buttons.
+  The names of dialog boxes are italicized
+  Functions, sheetname, etc. in text, not a procedural step
+  Row/column designations in text, not a procedural step. Do not enclose row number in in-line math symbols (dollar signs)
+  Color selectors, like \textit{Blue, Accent 1, Darker 25\%}
+
+\subsection{Objectives/Takeaways}
+
+Learning Objectives should be bullet-points that start with an action verb, like: Learn how to save workbooks. These are only used for Sections, nothing lesser
+
+Key Takeaways are more verbose and briefly summarize the main elements of the section. These are used to bookend a Learning Objectives element.
+
+\subsection{Ribbon Locations}
+Click \fmtButton{Tab $ \Rightarrow $ Group $ \Rightarrow $ Button}.
+
+\subsection{Cross-Reference}
+Cross-references should be placed in a footnote rather than in-line.
+\footnote{See Chapter \ref{ch01:fundamentals}, \nameref{ch01:fundamentals}, page \pageref{ch01:fundamentals} for more information about Excel fundamentals.}
+\footnote{See Chapter \ref{ch02:computations}, \nameref{ch02:computations}, page \pageref{ch02:computations} for more information about mathematical computations.}
+\footnote{See Chapter \ref{ch03:formulas}, \nameref{ch03:formulas}, page \pageref{ch03:formulas} for more information about formulas.}
+\footnote{See Chapter \ref{ch04:charts}, \nameref{ch04:charts}, page \pageref{ch04:charts} for more information about charts.}
+\footnote{See Chapter \ref{ch05:tables}, \nameref{ch05:tables}, page \pageref{ch05:tables} for more information about tables.}
+\footnote{See Chapter \ref{ch06:sheets}, \nameref{ch06:sheets}, page \pageref{ch06:sheets} for more information about using multiple sheets.}
+\footnote{See Chapter \ref{ch07:data}, \nameref{ch07:data}, page \pageref{ch07:data} for more information about manipulating data.}
+\footnote{See Chapter \ref{ch08:forecasting}, \nameref{ch08:forecasting}, page \pageref{ch08:forecasting} for more information about forecasting.}
+\footnote{See Chapter \ref{ch09:topics}, \nameref{ch09:topics}, page \pageref{ch09:topics} for more information.}
+
+\subsection{Labels}
 Labels should be a chapter, colon, verbal desc (all lc with underscores): \label{03:title}
+For figures, label should be ``ch'' + chapter number, underscore, ``fig'' + number: ch01_fig01
+For tables, label should be chapter number + colon + ``tab'' + number: 03:tab01
+Reference: Chapter \ref{ch09:topics}, \nameref{ch09:topics}, page \pageref{ch09:topics}
 
-For figures, label should be chapter, colon, ``fig'' and number: \label{03:fig01}
-
-For tables, label should be chapter, colon, ``tab'' and number: \label{03:tab01}
+\subsection{Misc}
+The text width in a normal line is 11.80737cm
 
 Dates do not include an apostrophe: In the 1960s this happened...
 
-Wrap all numbers in an in-line math block: $ 123 $
+Wrap all numbers in an in-line math block: $ 123 $, even if the number is also formatted for text entry: \fmtTyping{$ 123 $}
 
 The word ``data'' is singular, thus: ``Data is analyzed...''
 
-Handy Regex Expressions:
-All caps: \b([A-Z][A-Z]+)\b NOTE: enable case-sensitive search
-One or more numbers followed by a space: \d+\s
-One or more numbers followed by a period: \d+\.
+Insert chapter cross-refs in a footnote.
+
+Clickable items in an Objectives or Takeaway box are italicized rather than using the \fmt... commands.
+
+
+%**********************************************************************
+\section{Obsolete Stuff}
+%**********************************************************************
+The following items were copied in from other books I've written but are not used here. I left them in so I can reuse them if I want.
+
+%**************************************************************************
+%\section{Margin Paragraph} 
+%**************************************************************************
+% Use to create a sidebar paragraph out in the margin
+%\marginpar{Whatever.}
+
+%**************************************************************************
+%\section{Footnote Without Marker} 
+%**************************************************************************
+% Use to create a footnote without a numbering marker
+%\blfootnote{Whatever.}
+
+%***************************************************************************
+%\section{Handy Regex Expressions}
+%***************************************************************************
+%All caps: \b([A-Z][A-Z]+)\b NOTE: enable case-sensitive search
+%One or more numbers followed by a space: \d+\s
+%One or more numbers followed by a period: \d+\.
+
+%***************************************************************************
+%\section{Text Table: Long}
+%***************************************************************************
+% instead of using a standard font size, like small, I can specify
+% a point size using the following line. This is {font points} and 
+% {base line stretch}.
+% \fontsize{8}{10} \selectfont
+%{\small
+%\begin{longtable}{L{0.75in}L{1.5in}L{1.5in}} %Max width: 4.25in
+%	\textbf{Command} & \textbf{Purpose} & \textbf{Use} \endhead
+%	\hline \\
+%	Margins & Sets the top, bottom, right, and left margin space for the printed document & 1. Click the Page Layout tab of the Ribbon.\newline2. Click the Margin button.\newline3. Click one of the preset margin options or click Custom Margins.\\
+%	\caption{Purpose and Use for Page Setup Commands}
+%\label{01:tab02}
+%\end{longtable}
+%}
+
+%***************************************************************************
+%\section{Text Table: Simple}
+%***************************************************************************
+%\begin{table}[H]
+%	\centering
+%	\begin{tabulary}{\linewidth}{LCCCC}
+%		\hline
+%		\multicolumn{5}{l}{\textbf{Do you support these propositions?}} \\
+%		\hline
+%		Prop & Strongly Support & Support & Do Not Support & Strongly Do Not Support  \\ 
+%		\hline
+%		100 & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ \\ 
+%		115 & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ \\ 
+%		220 & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ & $\bigcirc$ \\ 
+%		\hline
+%	\end{tabulary} 
+%	\caption{My great table.}
+%	\label{03:tab01}
+%\end{table}

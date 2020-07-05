@@ -69,47 +69,29 @@
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 %***********************************************
-% Format various elements in the text
+% Begin: format various elements in the text
 %***********************************************
 % Insert the xcolor package so I can define colors 
 %for the format elements
 \usepackage[svgnames,table]{xcolor}
 
-% Cell Location
-\definecolor{CellLoc}{HTML}{708090} %SlateGray
-\newcommand{\fmtCellLocation}[1]{\textcolor{CellLoc}{\textbf{\textsf{#1}}}}
+% Codes used to highlight key phrases in the text.
 
-% Popup box names
-\definecolor{Popup}{HTML}{CD853F} %Peru
-\newcommand{\fmtPopupBox}[1]{\textcolor{Popup}{\textbf{\textsf{#1}}}}
+% Anything clickable, like buttons or links
+\definecolor{Button}{HTML}{8B4513} %SaddleBrown
+\newcommand{\fmtButton}[1]{\textcolor{Button}{\textbf{\textsf{#1}}}}
 
-% Popup buttons and other clicks in popup boxes
-\definecolor{PopupBtn}{HTML}{8B4513} %SaddleBrown
-\newcommand{\fmtPopupButton}[1]{\textcolor{PopupBtn}{\textbf{\textsf{#1}}}}
-
-% Ribbon Button (like Find and Autosum)
-\definecolor{RbnBtn}{HTML}{4B0082} %Indigo 4B0082
-\newcommand{\fmtRibbonButton}[1]{\textcolor{RbnBtn}{\textbf{\textsf{#1}}}}
-
-% Ribbon Group
-\definecolor{RbnGrp}{HTML}{9400D3} %DarkViolet 9400D3
-\newcommand{\fmtRibbonGroup}[1]{\textcolor{RbnGrp}{\textbf{\textsf{#1}}}}
-
-% Ribbon Tab
-\definecolor{RbnTab}{HTML}{9370DB} %MediumPurple 9370DB
-\newcommand{\fmtRibbonTab}[1]{\textcolor{RbnTab}{\textbf{\textsf{#1}}}}
+% Cell Location, including column and row names
+\definecolor{CellLoc}{HTML}{000080} %Navy
+\newcommand{\fmtLoc}[1]{\textcolor{CellLoc}{\textbf{\textsf{#1}}}}
 
 % Typed-in Text
-\definecolor{Typing}{HTML}{2F4F4F} %DarkSlateGray
-\newcommand{\fmtTyping}[1]{\textcolor{Typing}{\textsf{\textit{#1}}}}
-
-% Workbook (file) name
-\definecolor{WkbkName}{HTML}{000080} %Navy
-\newcommand{\fmtWorkbookName}[1]{\textcolor{WkbkName}{\textbf{\textsf{#1}}}}
+\definecolor{Typing}{HTML}{4B0082} %Indigo 4B0082
+\newcommand{\fmtTyping}[1]{\textcolor{Typing}{\textbf{\textit{#1}}}}
 
 % Worksheet name
 \definecolor{WkShtName}{HTML}{4169E1} %RoyalBlue
-\newcommand{\fmtWorksheetName}[1]{\textcolor{WkShtName}{\textbf{\textsf{#1}}}}
+\newcommand{\fmtWorksheet}[1]{\textcolor{WkShtName}{\textbf{\textsf{#1}}}}
 
 % Keystrokes (like: Control)
 \newcommand{\fmtKeystroke}[1]{%
@@ -128,7 +110,7 @@
 }
 
 % Excel 365 sections
-\newcommand{\fmtExcelNew}[1]{%
+\newcommand{\fmtNewExcel}[1]{%
 	\tikz[baseline=(key.base)]
 	\node[%
 	draw,
@@ -140,12 +122,12 @@
 	inner sep=1pt,
 	line width=0.5pt,
 	font=\scriptsize\sffamily\bfseries
-	](key) {#1\strut}
+	](new) {#1\strut}
 	;
 }
 
-% Excel 365 sections
-\newcommand{\fmtExcelOld}[1]{%
+% Excel 2016 sections
+\newcommand{\fmtOldExcel}[1]{%
 	\tikz[baseline=(key.base)]
 	\node[%
 	draw,
@@ -160,6 +142,30 @@
 	](key) {#1\strut}
 	;
 }
+
+% *** Obsolete *** Popup buttons and other clicks in popup boxes
+%\definecolor{PopupBtn}{HTML}{8B4513} %SaddleBrown
+%\newcommand{\fmtPopupButton}[1]{\textcolor{PopupBtn}{\textbf{\textsf{#1}}}}
+
+% *** Obsolete *** Ribbon Button (like Find and Autosum)
+%\definecolor{RbnBtn}{HTML}{4B0082} %Indigo 4B0082
+%\newcommand{\fmtRibbonButton}[1]{\textcolor{RbnBtn}{\textbf{\textsf{#1}}}}
+
+% *** Obsolete *** Ribbon Group
+%\definecolor{RbnGrp}{HTML}{9400D3} %DarkViolet 9400D3
+%\newcommand{\fmtRibbonGroup}[1]{\textcolor{RbnGrp}{\textbf{\textsf{#1}}}}
+
+% *** Obsolete *** Ribbon Tab
+%\definecolor{RbnTab}{HTML}{9370DB} %MediumPurple 9370DB
+%\newcommand{\fmtRibbonTab}[1]{\textcolor{RbnTab}{\textbf{\textsf{#1}}}}
+
+% *** Obsolete *** Workbook (file) name
+%\definecolor{WkbkName}{HTML}{000080} %Navy
+%\newcommand{\fmtWorkbookName}[1]{\textcolor{WkbkName}{\textbf{\textsf{#1}}}}
+
+%***********************************************
+% End: format various elements in the text
+%***********************************************
 
 
 % The following creates a function named maxwidth that permits
