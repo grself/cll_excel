@@ -22,7 +22,7 @@ Perhaps the most valuable feature of Excel is its ability to produce mathematica
 	\end{objbox}
 \end{center}
 
-This section reviews the fundamental skills for entering formulas into an Excel worksheet. The example used for this chapter is a personal budget. Most financial advisors recommend that households construct and maintain a personal budget to achieve and maintain strong financial health. Organizing and maintaining a personal budget is a skill that can be practiced at any point in one's life. A budget is also a vital tool when making financial decisions for a small business.
+This section reviews the fundamental skills for entering formulas into an Excel worksheet by constructing a personal budget. Most financial advisors recommend that households construct and maintain a personal budget to achieve and maintain strong financial health. A budget is also a vital tool when making financial decisions for a small business.
 
 Figure \ref{02:fig01} shows the completed workbook that will be demonstrated in this chapter. Notice that this workbook contains four worksheets. The first worksheet, \textit{Budget Summary}, contains formulas that utilize or reference the data in the other three worksheets. As a result, the \textit{Budget Summary} worksheet serves as an overview of the data that was entered and calculated in the other three worksheets.
 
@@ -141,7 +141,7 @@ Once a formula is typed into a worksheet, it can be copied and pasted to other c
 	\item Press the \fmtKeystroke{Enter} key.
 \end{enumerate}
 
-Figure \ref{02:fig05} shows the outputs added to the rest of the cell locations in the Monthly Spend column. For each row, the formula takes the value in the Annual Spend column and divides it by $ 12 $. In the figure, cell $ D6 $ has been double clicked to show the formula. Notice that Excel automatically changed the original cell reference of $ D3 $ to $ D6 $. This is the result of relative referencing, which means Excel automatically adjusts a cell reference relative to its original location when it is pasted into new cell locations. In this example, the formula was pasted into eight cell locations below the original cell location. As a result, Excel increased the row number of the original cell reference by a value of one for each row it was pasted into.
+Figure \ref{02:fig05} shows the outputs added to the rest of the cell locations in the Monthly Spend column. For each row, the formula takes the value in the Annual Spend column and divides it by $ 12 $. In the figure, cell $ D6 $ has been double clicked to show the formula. Notice that Excel automatically changed the original cell reference from $ D3 $ to $ D6 $. This is the result of relative referencing, which means Excel automatically adjusts a cell reference relative to its original location when it is pasted into new cell locations. In this example, the formula was pasted into eight cell locations below the original cell location. As a result, Excel increased the row number of the original cell reference by a value of one for each row it was pasted into.
 
 \begin{figure}[H]
 	\centering
@@ -174,7 +174,7 @@ The next formula to be added to the \textit{Personal Budget} workbook is the per
 	\item Type the slash \fmtTyping{/} symbol for division.
 	\item Click cell \fmtLoc{E3}. This completes the formula that will calculate the percent change of last year's actual spent dollars vs. this year's budgeted spend dollars (see Figure \ref{02:fig06}).
 	\item Press the \fmtKeystroke{Enter} key. The result of this formula is $ 0.0\% $ since the values in \textit{Annual Spend} and \textit{LY Spend} are the same.
-	\item Click cell \fmtLoc{F3} to activate it.
+	\item Click cell \fmtLoc{F3}.
 	\item Place the mouse pointer over the \fmtButton{Auto Fill Handle}.
 	\item When the mouse pointer turns from a white block plus sign to a black plus sign, click and drag down to cell \fmtLoc{F11}. This pastes the formula into the range \fmtLoc{F4:F11}.
 \end{enumerate}
@@ -233,12 +233,12 @@ Figure \ref{02:fig07} shows the result of the percent change formula if the pare
 			\setlength{\parskip}{0pt}
 			\setlength{\parsep}{0pt}
 			
-			\item Type an equal sign \fmtTyping{=}.
+			\item Type an equal sign \textit{=}.
 			\item Click or type a cell location. If using constants, type a number.
 			\item Type a mathematical operator.
 			\item Click or type a cell location. If using constants, type a number.
 			\item Use parentheses where necessary to control the order of operations.
-			\item Press the \fmtKeystroke{Enter} key.
+			\item Press the \textit{Enter} key.
 
 		\end{itemize}
 	\end{sklbox}
@@ -249,7 +249,6 @@ Figure \ref{02:fig07} shows the result of the percent change formula if the pare
 Excel provides a few tools that can be used to review the formulas entered into a worksheet. For example, instead of showing the outputs for the formulas used in a worksheet, Excel can be set to show the formula as it was entered in the cell locations. This is demonstrated below.
 
 \begin{enumerate}
-	\item Click the \fmtWorksheet{Budget Detail} worksheet to open it if it is not already open.
 	\item Click \fmtButton{Formulas $ \Rightarrow $ Formula Auditing $ \Rightarrow $ Show Formulas}. This displays the formulas in the worksheet instead of showing the mathematical outputs.
 	\item Click \fmtButton{Formulas $ \Rightarrow $ Formula Auditing $ \Rightarrow $ Show Formulas} again. The worksheet returns to showing the output of the formulas.
 \end{enumerate}
@@ -281,7 +280,7 @@ Figure \ref{02:fig08} shows the \textit{Budget Detail} worksheet after activatin
 			\setlength{\parskip}{0pt}
 			\setlength{\parsep}{0pt}
 			
-			\item Click \fmtButton{Formulas $ \Rightarrow $ Formula Auditing $ \Rightarrow $ Show Formulas} to toggle the formula display on and off.
+			\item Click \textit{Formulas $ \Rightarrow $ Formula Auditing $ \Rightarrow $ Show Formulas} to toggle the formula display on and off.
 			
 		\end{itemize}
 	\end{sklbox}
@@ -311,7 +310,7 @@ Two other valuable formula tools are \textit{Trace Precedents} and \textit{Trace
 	\item Click cell \fmtLoc{F3} in the \fmtWorksheet{Budget Detail} worksheet.
 	\item Click \fmtButton{Formulas $ \Rightarrow $ Formula Auditing $ \Rightarrow $ Trace Precedents}. A blue arrow running through cells \fmtLoc{D3} and \fmtLoc{E3} and pointing to cell \fmtLoc{F3} appears (see Figure \ref{02:fig10}). This indicates that cells \fmtLoc{D3} and \fmtLoc{E3} are references in a formula entered in cell \fmtLoc{F3}.
 	\item Click \fmtButton{Formulas $ \Rightarrow $ Formula Auditing $ \Rightarrow $ Remove Arrows} to remove the \textit{Trace Precedents} arrow.
-	\item Save the \fmtWorksheet{Ch2-Personal Budget} file.
+	\item Save the \fmtWorksheet{Ch2-Personal Budget} file. Remember, it is always a good idea to regularly save a file.
 \end{enumerate}
 
 Figure \ref{02:fig09} shows the \textit{Trace Dependents} arrow on the \textit{Budget Detail} worksheet. The blue dot represents the activated cell. The arrows indicate where the cell is referenced in formulas.
@@ -342,9 +341,9 @@ Figure \ref{02:fig10} shows the \textit{Trace Precedents} arrow on the \textit{B
 			\setlength{\parsep}{0pt}
 			
 			\item Click a cell location that contains a number or formula.
-			\item Click \fmtButton{Formulas $ \Rightarrow $ Formula Auditing $ \Rightarrow $ Trace Dependents}.
+			\item Click \textit{Formulas $ \Rightarrow $ Formula Auditing $ \Rightarrow $ Trace Dependents}.
 			\item Use the arrow(s) to determine where the cell is referenced in formulas and functions.
-			\item Click \fmtButton{Formulas $ \Rightarrow $ Formula Auditing $ \Rightarrow $ Remove Arrows} to remove the arrows from the worksheet.
+			\item Click \textit{Formulas $ \Rightarrow $ Formula Auditing $ \Rightarrow $ Remove Arrows} to remove the arrows from the worksheet.
 			
 		\end{itemize}
 	\end{sklbox}
@@ -360,9 +359,9 @@ Figure \ref{02:fig10} shows the \textit{Trace Precedents} arrow on the \textit{B
 			\setlength{\parsep}{0pt}
 			
 			\item Click a cell location that contains a formula or function.
-			\item Click \fmtButton{Formulas $ \Rightarrow $ Formula Auditing $ \Rightarrow $ Trace Precedents}.
+			\item Click \textit{Formulas $ \Rightarrow $ Formula Auditing $ \Rightarrow $ Trace Precedents}.
 			\item Use the dot(s) along the line to determine what cells are referenced in the formula or function.
-			\item Click \fmtButton{Formulas $ \Rightarrow $ Formula Auditing $ \Rightarrow $ Remove Arrows} to remove the arrows from the worksheet.
+			\item Click \textit{Formulas $ \Rightarrow $ Formula Auditing $ \Rightarrow $ Remove Arrows} to remove the arrows from the worksheet.
 			
 		\end{itemize}
 	\end{sklbox}
@@ -411,7 +410,7 @@ Figure \ref{02:fig10} shows the \textit{Trace Precedents} arrow on the \textit{B
 	\end{objbox}
 \end{center}
 
-In addition to formulas, another way to conduct mathematical computations in Excel is through functions. Statistical functions apply an established mathematical process to a group of cells in a worksheet. For example, the \textit{SUM} function is used to add the values contained in a range of cells. A list of commonly used statistical functions is shown in Table \ref{02:tab04}. Functions are more efficient than formulas when applying a mathematical process to a group of cells. If formulas are used to add the values in a range of cells, each cell location would have to be added to the formula one at a time. This can be very time-consuming, especially if the worksheet includes hundreds of cell locations. However, when using a function, all the cells that contain values to sum can be highlighted in just one step. This section demonstrates a variety of statistical functions that will be added to the \textit{Personal Budget} workbook. In addition to demonstrating functions, this section also reviews ``percent of total'' calculations and the use of absolute references.
+In addition to formulas, another way to conduct mathematical computations in Excel is through built-in functions. Statistical functions apply an established mathematical process to a group of cells in a worksheet. For example, the \textit{SUM} function is used to add the values contained in a range of cells. A list of commonly used statistical functions is shown in Table \ref{02:tab04}. Functions are more efficient than formulas when applying a mathematical process to a group of cells. If formulas are used to add the values in a range of cells, each cell location would have to be added to the formula one at a time. This can be very time-consuming, especially if the worksheet includes hundreds of cell locations. However, when using a function, all the cells that contain values to sum can be highlighted in just one step. This section demonstrates a variety of statistical functions that will be added to the \textit{Personal Budget} workbook. In addition to demonstrating functions, this section also reviews ``percent of total'' calculations and the use of absolute references.
 
 \begin{table}[H]
 	\rowcolors{1}{}{tablerow} % zebra striping background
@@ -443,7 +442,7 @@ The following discusses a few of the more commonly-used statistical functions.
 
 \subsection{The Sum Function}
 
-The SUM function is used to calculate totals for a range of cells or a group of selected cells on a worksheet. With regard to the \textit{Budget Detail} worksheet, the \textit{SUM} function is used to calculate the totals in row $ 12 $. It is important to note that there are several methods for adding a function to a worksheet and all will be demonstrated throughout the remainder of this chapter. The following illustrates how a function can be added to a worksheet by typing it into a cell location.
+The SUM function is used to calculate totals for a range of cells or a group of selected cells on a worksheet. With regard to the \textit{Budget Detail} worksheet, the \textit{SUM} function is used to calculate the totals in \textit{Row $ 12 $}. It is important to note that there are several methods for adding a function to a worksheet and all will be demonstrated throughout the remainder of this chapter. The following illustrates how a function can be added to a worksheet by typing it into a cell location.
 
 \begin{enumerate}
 	\item Click the \fmtWorksheet{Budget Detail} worksheet tab to open the worksheet if it is not already open.
@@ -470,8 +469,9 @@ As shown in Figure \ref{02:fig11}, the \textit{SUM} function was added to cell $
 \begin{enumerate}
 	\item Click cell \fmtLoc{C12} in the \fmtWorksheet{Budget Detail} worksheet.
 	\item Click \fmtButton{Home $ \Rightarrow $ Clipboard $ \Rightarrow $ Copy}.
-	\item Highlight cells \fmtLoc{D12} and \fmtLoc{E12}.
+	\item Click in \fmtLoc{D12} and drag the mouse to \fmtLoc{E12} to select both cells.
 	\item Click \fmtButton{Home $ \Rightarrow $ Clipboard $ \Rightarrow $ Paste}. This pastes the \fmtButton{SUM} function into cells \fmtLoc{D12} and \fmtLoc{E12} and calculates the totals for these columns.
+	\item Press \fmtKeystroke{Esc} to stop the ``marching ants'' highlighting of \fmtLoc{C12}.
 	\item Click cell \fmtLoc{F11}.
 	\item Click \fmtButton{Home $ \Rightarrow $ Clipboard $ \Rightarrow $ Copy}.
 	\item Click cell \fmtLoc{F12}.
@@ -492,7 +492,7 @@ Figure \ref{02:fig12} shows the output of the \textit{SUM} function that was add
 		\textbf{Cell Ranges in Statistical Functions}
 		\\
 		\\
-		When using a statistical function on a range of cells in a worksheet, make sure the two cell locations are separated by a colon and not a comma. If two cell locations are separated by a comma, the function will produce an output but it will be applied to only two cell locations instead of the entire range of cells. For example, the \fmtButton{SUM} function shown in Figure \ref{02:fig13} is written with a comma and will add only the values in cells \fmtLoc{C3} and \fmtLoc{C11}, not the range \fmtLoc{C3:C11}.
+		When using a statistical function on a range of cells in a worksheet, make sure the two cell locations are separated by a colon and not a comma. If two cell locations are separated by a comma, the function will produce an output but it will be applied to only two cell locations instead of the entire range of cells. For example, the SUM function shown in Figure \ref{02:fig13} is written with a comma and will add only the values in cells $ C3 $ and $ C11 $, not the range $ C3 $:$ C11 $.
 	\end{infobox}
 \end{center}
 
@@ -505,7 +505,7 @@ Figure \ref{02:fig12} shows the output of the \textit{SUM} function that was add
 
 \subsection{Absolute References (Calculating Percent of Totals)}
 
-Since totals were added to row $ 12 $ of the \textit{Budget Detail} worksheet, a percent of total calculation can be added to \textit{Column B} beginning in cell $ B3 $. The percent of total calculation shows the percentage for each value in the \textit{Annual Spend} column with respect to the total in cell $ D12 $. However, after the formula is created, it will be necessary to turn off Excel's relative referencing feature before copying and pasting the formula to the rest of the cell locations in the column. Turning off Excel's relative referencing feature is accomplished through using an absolute reference. The following steps explain how this is done.
+Since totals were added to \textit{Row $ 12 $} of the \textit{Budget Detail} worksheet, a percent of total calculation can be added to \textit{Column B} beginning in cell $ B3 $. The percent of total calculation shows the percentage for each value in the \textit{Annual Spend} column with respect to the total in cell $ D12 $. However, after the formula is created, it will be necessary to turn off Excel's relative referencing feature before copying and pasting the formula to the rest of the cell locations in the column. Turning off Excel's relative referencing feature is accomplished through using an absolute reference. The following steps explain how this is done.
 
 \begin{enumerate}
 	\item Click cell \fmtLoc{B3} in the \fmtWorksheet{Budget Detail} worksheet.
@@ -523,7 +523,7 @@ Since totals were added to row $ 12 $ of the \textit{Budget Detail} worksheet, a
 	\label{02:fig14}
 \end{figure}
 
-Figure \ref{02:fig14} shows the completed formula that is calculating the percentage that the \textit{Annual Spend} for \textit{Household Utilities}  represents to the total \textit{Annual Spend} for the budget (see cell \textit{$ B3 $}). Normally, this formula would be copied and pasted into the range $ B4 $:$ B11 $. However, because of relative referencing, both cell references will increase by one row as the formula is pasted into the cells below $ B3 $. This is fine for the first cell reference in the formula ($ D3 $) but not for the second cell reference ($ D12 $). Figure \ref{02:fig15} illustrates what happens if the formula is pasted into the range $ B4 $:$ B12 $ in its current state. Notice that Excel produces the $ \#DIV/0 $ error code. This means that Excel is trying to divide a number by zero, which is impossible. Look at the formula in cell $ B4 $ and notice that the first cell reference was changed from $ D3 $ to $ D4 $. This is fine because now the \textit{Annual Spend} for \textit{Insurance} should be divided by the total \textit{Annual Spend} in cell $ D12 $. However, Excel has also changed the $ D12 $ cell reference to $ D13 $. Because cell location $ D13 $ is blank, the formula produces the $ \#DIV/0 $ error code.
+Figure \ref{02:fig14} shows the completed formula that is calculating the percentage that the \textit{Annual Spend} for \textit{Household Utilities}  represents to the total \textit{Annual Spend} for the budget (see cell \textit{$ B3 $}). Normally, this formula would be copied and pasted into the range $ B4 $:$ B11 $. However, because of relative referencing, both cell references will increase by one row as the formula is pasted into the cells below $ B3 $. This is fine for the first cell reference in the formula ($ D3 $) but not for the second cell reference ($ D12 $). Figure \ref{02:fig15} illustrates what happens if the formula is pasted into the range $ B4 $:$ B12 $ in its current state. Notice that Excel produces the \textit{\#DIV/$ 0 $} error code. This means that Excel is trying to divide a number by zero, which is impossible. Look at the formula in cell $ B4 $ and notice that the first cell reference was changed from $ D3 $ to $ D4 $. This is fine because now the \textit{Annual Spend} for \textit{Insurance} should be divided by the total \textit{Annual Spend} in cell $ D12 $. However, Excel has also changed the $ D12 $ cell reference to $ D13 $. Because cell location $ D13 $ is blank, the formula produces the \textit{\#DIV/$ 0 $} error code.
 
 \begin{figure}[H]
 	\centering
@@ -541,7 +541,7 @@ To eliminate the divide-by-zero error shown in Figure \ref{02:fig15} absolute ce
 	\item Press the \fmtKeystroke{Enter} key.
 	\item Click cell \fmtLoc{B3}.
 	\item Click \fmtButton{Home $ \Rightarrow $ Clipboard $ \Rightarrow $ Copy}.
-	\item Highlight the range \fmtLoc{B4:B11}.
+	\item Select the range \fmtLoc{B4:B11}.
 	\item Click \fmtButton{Home $ \Rightarrow $ Clipboard $ \Rightarrow $ Paste}.
 \end{enumerate}
 
@@ -580,11 +580,11 @@ The next function that will be added to the \textit{Budget Detail} worksheet is 
 	\item Type the letter C.
 	\item Click the down arrow on the scroll bar of the function list (see Figure \ref{02:fig17}) and find the word \fmtButton{COUNT}.
 	\item Double click the word \fmtButton{COUNT} from the function list.
-	\item Highlight the range \fmtLoc{D3:D11}.
+	\item Click \fmtLoc{D3} and drag the mouse to \fmtLoc{D11} to select that range.
 	\item Type a closing parenthesis \fmtTyping{)} and then press the \fmtKeystroke{Enter} key, or simply press the \fmtKeystroke{Enter} key and Excel will close the function automatically.
 \end{enumerate}
 
-Figure \ref{02:fig17} shows the function list box that appears after completing steps $ 2 $ and $ 3 $ for the \textit{COUNT} function. The function list provides an alternative method for adding a function to a worksheet. Many users find it easier to select a function from a list rather than try to remember the function's name.
+Figure \ref{02:fig17} shows the function list box that appears after typing the first letter of a function. The function list provides an alternative method for adding a function to a worksheet. Many users find it easier to select a function from a list rather than try to remember the function's name.
 
 \begin{figure}[H]
 	\centering
@@ -609,10 +609,10 @@ The next function to be added to the \textit{Budget Detail} worksheet is the \te
 \begin{enumerate}
 	\item Click cell \fmtLoc{D14} in the \fmtWorksheet{Budget Detail} worksheet.
 	\item Click \fmtButton{Formulas $ \Rightarrow $ Function Library $ \Rightarrow $ More Functions}.
-	\item Place the mouse pointer over the \fmtButton{Statistical} option from the drop-down list of options.
-	\item Click the \fmtButton{AVERAGE} function name from the list of functions that appear in the menu (see Figure \ref{02:fig19}). This opens the \textit{Function Arguments} dialog box.
-	\item Click the \fmtButton{Collapse Dialog} button for \textit{Number1} in the \textit{Function Arguments} dialog box (see Figure \ref{02:fig20}).
-	\item Highlight the range \fmtLoc{D3:D11}.
+	\item Place the mouse pointer over the \fmtButton{Statistical} option from the drop-down list of options (see Figure \ref{02:fig19}).
+	\item Click the \fmtButton{AVERAGE} function name from the list of functions that appear in the menu. This opens the \textit{Function Arguments} dialog box (see Figure \ref{02:fig20}).
+	\item Click the \fmtButton{Collapse Dialog} button for \textit{Number1} in the \textit{Function Arguments} dialog box.
+	\item Select the range \fmtLoc{D3:D11}.
 	\item Click the \fmtButton{Expand Dialog} button in the \textit{Function Arguments} dialog box (see Figure \ref{02:fig21}). Simply pressing the \fmtKeystroke{Enter} key will get the same result.
 	\item Click the \fmtButton{OK} button on the \textit{Function Arguments} dialog box. This adds the \fmtButton{AVERAGE} function to the worksheet.
 \end{enumerate}
@@ -671,13 +671,13 @@ The final two statistical functions that will be added to the \textit{Budget Det
 	\item Type an equal sign \fmtTyping{=}.
 	\item Type the word \fmtTyping{MIN}.
 	\item Type an open parenthesis \fmtTyping{(}.
-	\item Highlight the range \fmtLoc{D3:D11}.
+	\item Select the range \fmtLoc{D3:D11}.
 	\item Type a closing parenthesis \fmtTyping{)} and press the \fmtKeystroke{Enter} key, or simply press the \fmtKeystroke{Enter} key and Excel will close the function automatically. The \fmtButton{MIN} function produces an output of $ \$1,200 $, which is the lowest value in the \textit{Annual Spend} column (see Figure \ref{02:fig24}).
 	\item Click cell \fmtLoc{D16}.
 	\item Type an equal sign \fmtTyping{=}.
 	\item Type the word \fmtTyping{MAX}.
 	\item Type an open parenthesis \fmtTyping{(}.
-	\item Highlight the range \fmtLoc{D3:D11}.
+	\item Select the range \fmtLoc{D3:D11}.
 	\item Type a closing parenthesis \fmtTyping{)} and press the \fmtKeystroke{Enter} key, or simply press the \fmtKeystroke{Enter} key and Excel will close the function automatically. The \fmtButton{MAX} function produces an output of $ \$3,500 $. This is the highest value in the \textit{Annual Spend} column (see Figure \ref{02:fig25}).
 \end{enumerate}
 
@@ -704,10 +704,10 @@ The final two statistical functions that will be added to the \textit{Budget Det
 			\setlength{\parskip}{0pt}
 			\setlength{\parsep}{0pt}
 
-			\item Type an equal sign \fmtTyping{=}.
+			\item Type an equal sign \textit{=}.
 			\item Type the function name followed by an open parenthesis \fmtTyping{(} or double click the function name from the function list.
-			\item Highlight a range on a worksheet or click individual cell locations followed by commas.
-			\item Type a closing parenthesis \fmtTyping{)} and press the \fmtKeystroke{Enter} key or simply press the \fmtKeystroke{Enter} key to close the function.
+			\item Select a range on a worksheet or click individual cell locations followed by commas.
+			\item Type a closing parenthesis \textit{)} and press the \fmtKeystroke{Enter} key or simply press the \fmtKeystroke{Enter} key to close the function.
 			
 		\end{itemize}
 	\end{sklbox}
@@ -715,10 +715,10 @@ The final two statistical functions that will be added to the \textit{Budget Det
 
 \subsection{Copy and Paste Formulas (Pasting Without Formats)}
 
-As shown in Figure \ref{02:fig25}, the \textit{COUNT}, \textit{AVERAGE}, \textit{MIN}, and \textit{MAX} functions are summarizing the data in the \textit{Annual Spend} column. There is also space to copy and paste these functions under the \textit{LY Spend} column. This allows a comparison between what was spent last year and what is expected to be spent this year. Normally, functions would be simply copied/pasted into the range $ E13 $:$ E16 $. However, notice the double-line style border that was used around the perimeter of the range $ B13 $:$ E16 $. If a regular Paste command is used the double line on the right side of the range $ E13 $:$ E16 $ would be replaced with a single line since the format for the copied cells will be used. Therefore, one of the Paste Special commands will be used to paste only the functions without any of the cell formatting. This is accomplished through the following steps.
+As shown in Figure \ref{02:fig25}, the \textit{COUNT}, \textit{AVERAGE}, \textit{MIN}, and \textit{MAX} functions are summarizing the data in the \textit{Annual Spend} column. There is also space to copy and paste these functions under the \textit{LY Spend} column. This allows a comparison between what was spent last year and what is expected to be spent this year. Normally, functions would be simply copied/pasted into the range $ E13 $:$ E16 $. However, notice the double-line style border that was used around the perimeter of the range $ B13 $:$ E16 $. If a regular Paste command is used the double line on the right side of the range $ E13 $:$ E16 $ would be replaced with a single line since the format for the copied cells will be used. Therefore, one of the \textit{Paste Special} commands will be used to paste only the functions without any of the cell formatting. This is accomplished through the following steps.
 
 \begin{enumerate}
-	\item Highlight the range \fmtLoc{D13:D16} in the \fmtWorksheet{Budget Detail} worksheet.
+	\item Select \fmtLoc{D13:D16} in the \fmtWorksheet{Budget Detail} worksheet.
 	\item Click \fmtButton{Home $ \Rightarrow $ Clipboard $ \Rightarrow $ Copy}.
 	\item Click cell \fmtLoc{E13}.
 	\item Click \fmtButton{Home $ \Rightarrow $ Clipboard $ \Rightarrow $ Paste Down Arrow}.
@@ -744,9 +744,9 @@ Figure \ref{02:fig26} shows the list of buttons that appear when the down arrow 
 			\setlength{\parsep}{0pt}
 			
 			\item Click a cell location containing a formula or function.
-			\item Click \fmtButton{Home $ \Rightarrow $ Clipboard $ \Rightarrow $ Copy}.
+			\item Click \textit{Home $ \Rightarrow $ Clipboard $ \Rightarrow $ Copy}.
 			\item Click the cell location or cell range where the formula or function will be pasted.
-			\item Click \fmtButton{Home $ \Rightarrow $ Clipboard $ \Rightarrow $ Paste Down Arrow $ \Rightarrow $ Formulas}.
+			\item Click \textit{Home $ \Rightarrow $ Clipboard $ \Rightarrow $ Paste Down Arrow $ \Rightarrow $ Formulas}.
 			
 		\end{itemize}
 	\end{sklbox}
@@ -757,7 +757,7 @@ Figure \ref{02:fig26} shows the list of buttons that appear when the down arrow 
 The \textit{Budget Detail} worksheet shown in Figure \ref{02:fig26} is now producing several mathematical outputs through formulas and functions. The outputs allow analysis of the details and identify trends as to how money is being budgeted and spent. Before drawing conclusions from this worksheet, it will be sorted based on the \textit{Percent of Total} column. Sorting is a powerful tool that enables analysis of key trends in any data set. Sorting will be covered thoroughly in another chapter, but will be briefly introduced here. For the purposes of the \textit{Budget Detail} worksheet, multiple levels for the sort order must be used. This is accomplished through the following steps.
 
 \begin{enumerate}
-	\item Highlight the range \fmtLoc{A2:F11} in the \fmtWorksheet{Budget Detail} worksheet.
+	\item Select \fmtLoc{A2:F11} in the \fmtWorksheet{Budget Detail} worksheet.
 	\item Click \fmtButton{Data $ \Rightarrow $ Sort \& Filter $ \Rightarrow $ Sort}. This opens the \textit{Sort} dialog box, as shown in Figure \ref{02:fig27}.
 	\item Click the down arrow next to the \fmtButton{Sort by} box.
 	\item Click the \fmtButton{Percent of Total} option from the drop-down list.
@@ -765,8 +765,8 @@ The \textit{Budget Detail} worksheet shown in Figure \ref{02:fig26} is now produ
 	\item Click the \fmtButton{Largest to Smallest} option.
 	\item Click the \fmtButton{Add Level} button. This allows a second level to be set in case there are any duplicate values in the \textit{Percent of Total} column.
 	\item Click the down arrow next to the \fmtButton{Then by} box.
-	\item Select the \textit{LY Spend} option. Leave the Sort Order as \fmtButton{Smallest to Largest}
-	\item Click the \fmtButton{OK} button at the bottom of the \textit{Sort} dialog box.
+	\item Select the \fmtButton{LY Spend} option. Leave the Sort Order as \fmtButton{Smallest to Largest}
+	\item Click \fmtButton{OK} at the bottom of the \textit{Sort} dialog box.
 	\item Save the \fmtWorksheet{Ch2-Personal Budget} file.
 \end{enumerate}
 
@@ -795,13 +795,13 @@ Figure \ref{02:fig28} shows the \fmtWorksheet{Budget Detail} worksheet after it 
 			\setlength{\parskip}{0pt}
 			\setlength{\parsep}{0pt}
 			
-			\item Highlight a range of cells to be sorted.
-			\item Click \fmtButton{Data $ \Rightarrow $ Sort \& Filter $ \Rightarrow $ Sort}.
-			\item Select a column from the \fmtButton{Sort by} drop-down list in the \textit{Sort} dialog box.
-			\item Select a sort order from the \fmtButton{Order} drop-down list in the \textit{Sort} dialog box.
-			\item Click the \fmtButton{Add Level} button in the \textit{Sort} dialog box.
+			\item Select a range of cells to be sorted.
+			\item Click \textit{Data $ \Rightarrow $ Sort \& Filter $ \Rightarrow $ Sort}.
+			\item Select a column from the \textit{Sort by} drop-down list in the \textit{Sort} dialog box.
+			\item Select a sort order from the \textit{Order} drop-down list in the \textit{Sort} dialog box.
+			\item Click the \textit{Add Level} button in the \textit{Sort} dialog box.
 			\item Add as many levels as necessary.
-			\item Click the \fmtButton{OK} button on the \textit{Sort} dialog box.
+			\item Click the \textit{OK} button on the \textit{Sort} dialog box.
 			
 		\end{itemize}
 	\end{sklbox}
@@ -809,7 +809,7 @@ Figure \ref{02:fig28} shows the \fmtWorksheet{Budget Detail} worksheet after it 
 
 Now that the \textit{Budget Detail} worksheet is sorted, a few key trends can be easily identified. The worksheet clearly shows that the top three categories as a percentage of total budgeted spending for the year are \textit{Taxes}, \textit{Household Utilities}, and \textit{Food}. All three categories are necessities (or realities) of life and typically require a significant amount of income for most households. The \textit{Percent Change} column indicates how the planned spending is expected to change from last year. This is perhaps the most important column on the worksheet because it shows whether the budget plan is realistic. Notice that there are no changes planned for \textit{Taxes} and \textit{Household Utilities}. While \textit{Taxes} can change from year to year, it is not too difficult to predict what they will be. In this case, the assumption is that there are no changes to the tax costs for the budget. The plan also includes no change in \textit{Household Utilities}. While these costs can fluctuate from year to year, measures can be taken to reduce costs, such as using less electricity, turning off heat when no one is in the house, keeping track of the wireless minutes to avoid overage charges, and so on. As a result, there is no change in planned spending for \textit{Household Utilities} because any rate increases will be offset with a decrease in usage. The third item that is planned to not change is \textit{Insurance}. Insurance policies for cars and homes can change, but as is true for taxes, the changes are predictable. Therefore, it is reasonable to assume no changes in the insurance policy.
 
-The first big change that is noticeable in the worksheet is the \textit{Food} and \textit{Entertainment} categories in rows $ 5 $ and $ 6 $ (see the category definitions in Table \ref{02:tab01}). The \textit{Percent Change} column indicates that there is an $ 11.1\% $ decrease in \textit{Entertainment} spending and an $ 11.1\% $ increase in \textit{Food} spending. This is logical because if the plan is to eat in restaurants less frequently then eating at home will be more frequent. Although this makes sense in theory, it may be hard to do in practice. Dinners and parties with friends may be tough to turn down. However, the entire process of maintaining a budget is based on discipline, and it certainly takes a significant amount of discipline to plan targets and stick to them.
+The first big change that is noticeable in the worksheet is the \textit{Food} and \textit{Entertainment} categories in Rows $ 5 $ and $ 6 $ (see the category definitions in Table \ref{02:tab01}). The \textit{Percent Change} column indicates that there is an $ 11.1\% $ decrease in \textit{Entertainment} spending and an $ 11.1\% $ increase in \textit{Food} spending. This is logical because if the plan is to eat in restaurants less frequently then eating at home will be more frequent. Although this makes sense in theory, it may be hard to do in practice. Dinners and parties with friends may be tough to turn down. However, the entire process of maintaining a budget is based on discipline, and it certainly takes a significant amount of discipline to plan targets and stick to them.
 
 A few other points to note are the changes in the \textit{Gasoline} and \textit{Vacation} categories. Commuting to school or work means that the price of gas can have a significant impact on the budget. It is important to be realistic in the budget if gas prices are increasing. To compensate for the increased spending for gas, the spending plan for vacations has been reduced by $ 25\% $. Budgeting often requires a certain degree of creativity. Although the \textit{Vacation} budget has been reduced, there is still money that can be set aside to make plans for long weekends or other breaks.
 
@@ -827,7 +827,7 @@ Finally, the budget shows a decrease in \textit{Miscellaneous} spending of $ 19.
 			\item Statistical functions are used when a mathematical process is required for a range of cells, such as summing the values in several cell locations. For these computations, functions are preferable to formulas because adding many cell locations one at a time to a formula can be very time-consuming.
 			\item Statistical functions can be created using cell ranges or selected cell locations separated by commas. Make sure to use a cell range (two cell locations separated by a colon) when applying a statistical function to a contiguous range of cells.
 			\item To prevent Excel from changing the cell references in a formula or function when they are pasted to a new cell location, use an absolute reference. Do this by placing a dollar sign (\$) in front of the column letter and row number of a cell reference.
-			\item The $ \#DIV/0 $ error appears if a formula attempts to divide a constant or the value in a cell reference by zero.
+			\item The \textit{\#DIV/$ 0 $} error appears if a formula attempts to divide a constant or the value in a cell reference by zero.
 			\item The Paste Formulas option is used to paste formulas without any formatting treatments into cell locations that have already been formatted.
 			\item Set multiple levels, or columns, in the Sort dialog box when sorting data that contains several duplicate values.
 			
@@ -924,9 +924,9 @@ The \textit{PMT} function will be used in the \textit{Personal Budget} workbook 
 	\item Click the \fmtWorksheet{Mortgage Payments} worksheet tab.
 	\item Click cell \fmtLoc{B5}.
 	\item Click \fmtButton{Formulas $ \Rightarrow $ Function Library $ \Rightarrow $ Insert Function} (see Figure \ref{02:fig30}). This opens the \textit{Insert Function} dialog box, which can be used for searching all functions in Excel.
-	\item In the \textit{Search for a function:} input box at the top of the \textit{Insert Function} dialog box, type \fmtTyping{mortgage payments} (see Figure \ref{02:fig31}). 
+	\item In the \textit{Search for a function:} input box at the top of the \textit{Insert Function} dialog box, type \fmtTyping{payments} (see Figure \ref{02:fig31}). 
 	\item Click \fmtButton{Go} in the upper right side of the \textit{Insert Function} dialog box. This adds all the Excel functions that match the description in the \textit{Select a function:} box to the lower half of the \textit{Insert Function} dialog box (see Figure \ref{02:fig31}).
-	\item Click the \fmtButton{PMT} option in the \textit{Select a function:} box in the lower half of the \textit{Insert Function} dialog box.
+	\item Scroll down to find and click the \fmtButton{PMT} option in the \textit{Select a function:} box in the lower half of the \textit{Insert Function} dialog box.
 	\item Click \fmtButton{OK} at the lower right side of the \textit{Insert Function} dialog box. This will open the \textit{Function Arguments} dialog box.
 \end{enumerate}
 
@@ -959,7 +959,7 @@ The \textit{PMT} function will be used in the \textit{Personal Budget} workbook 
 	\item Type a minus sign \fmtTyping{-}. When defining the Pv argument of the \fmtButton{PMT} function, the cell location or value must be preceded with a minus sign.
 	\item Click cell \fmtLoc{B2} on the worksheet. This is the principal of the loan.
 	\item Press the \fmtKeystroke{Enter} key. Notice that the \textbf{Rate}, \textbf{Nper}, and \textbf{Pv} arguments are all defined for the function.
-	\item Click \fmtButton{OK} at the bottom of the \textit{Function Arguments} dialog box. The function will now be placed into the worksheet. Since there are no lump sum payments at the end of the loan, there is no need to define the Fv argument. Also, since the monthly mortgage payments will be made at the end of each month, there is no need to define the Type argument.
+	\item Click \fmtButton{OK} at the bottom of the \textit{Function Arguments} dialog box. The function will now be placed into the worksheet. Since there are no lump sum payments at the end of the loan, there is no need to define the \textbf{Fv} argument. Also, since the monthly mortgage payments will be made at the end of each month, there is no need to define the \textbf{Type} argument.
 \end{enumerate}
 
 \begin{center}
@@ -1129,7 +1129,7 @@ Other formulas and functions can be added to the \textit{Budget Summary} workshe
 	\item Click cell \fmtLoc{D6} in the \fmtWorksheet{Budget Summary} worksheet.
 	\item Type an equal sign \fmtTyping{=}.
 	\item Type the function name \fmtTyping{SUM} followed by an open parenthesis \fmtTyping{(}.
-	\item Highlight the range \fmtLoc{C3:C5}.
+	\item Select the range \fmtLoc{C3:C5}.
 	\item Type a closing parenthesis \fmtTyping{)} and press the \fmtKeystroke{Enter} key or simply press the \fmtKeystroke{Enter} key to close the function. The total for all annual expenses now appears on the worksheet.
 	\item Click cell \fmtLoc{D7} on the \fmtWorksheet{Budget Summary} worksheet. Enter a formula to calculate \textit{Net Change in Cash} in this cell.
 	\item Type an equal sign \fmtTyping{=}.
@@ -1138,7 +1138,7 @@ Other formulas and functions can be added to the \textit{Budget Summary} workshe
 	\item Press the \fmtKeystroke{Enter} key. This formula produces an output of $ \$1,942 $, indicating the income is greater than the total expenses.
 \end{enumerate}
 
-Figure \ref{02:fig38} shows the results of the formulas that were added to the \textit{Budget Summary} worksheet. The output for the formula in cell $ D7 $ shows that the net income exceeds total planned expenses by $ \$1,942 $. Overall, having the income exceed expenses is a good thing because it allows saving for future spending needs or unexpected events.
+Figure \ref{02:fig38} shows the results of the formulas that were added to the \textit{Budget Summary} worksheet. The output for the formula in cell $ D7 $ shows that the net income exceeds total planned expenses by $ \$1,942 $. Overall, having the income exceed expenses is a good thing because the surplus can be saved for future spending needs or unexpected events.
 
 \begin{figure}[H]
 	\centering
@@ -1238,14 +1238,14 @@ Sales data for a bakery supply company needs to be formatted in a professional m
 Using the skills learned in Chapter \ref{ch01:fundamental_skills}, \nameref{ch01:fundamental_skills}, make the following formatting changes.
 
 \begin{enumerate}
-	\item \fmtLoc{A1:H1} --- Merge and Center; font is 14 point bold; fill color is Blue, Accent 1, Darker 25\%; font color is White
-	\item \fmtLoc{A2:H2} --- Merge and Center; font is 12 point bold italic; fill color is Blue, Accent 1, Lighter 40\%; font color is Black
-	\item \fmtLoc{A5:H5} --- font is bold; fill color is Blue, Accent 1, Lighter 40\%; font color is Black
+	\item \fmtLoc{A1:H1} --- Merge and Center; font is 14 point bold; fill color is \textit{Blue, Accent 1, Darker 25\%}; font color is \textit{White}
+	\item \fmtLoc{A2:H2} --- Merge and Center; font is 12 point bold italic; fill color is \textit{Blue, Accent 1, Lighter 40\%}; font color is \textit{Black}
+	\item \fmtLoc{A5:H5} --- font is bold; fill color is \textit{Blue, Accent 1, Lighter 40\%}; font color is Black
 	\item \fmtLoc{C5:H5} --- Center align
 	\item \fmtLoc{A15:H15} --- Apply Top Border to the cells; format text as bold
 	\item \fmtLoc{C6:H6} and \fmtLoc{C15:H15} --- Apply Accounting Number format with $ 0 $ decimal places
 	\item \fmtLoc{C7:H14} --- Apply Comma style with $ 0 $ decimal places
-	\item \fmtLoc{A6:A14} (salespeople's names) and click \fmtButton{Home $ \Rightarrow $ Alignment $ \Rightarrow $ Increase Indent}. This will indent the text from the cell border.
+	\item \fmtLoc{A6:A14} (salespeople's names) --- \fmtButton{Home $ \Rightarrow $ Alignment $ \Rightarrow $ Increase Indent}. This will indent the text from the cell border.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -1260,15 +1260,15 @@ Using the skills learned in Chapter \ref{ch01:fundamental_skills}, \nameref{ch01
 Once the worksheet is professionally formatted, look at it in \textit{Print Preview} to see how the pages will print.
 
 \begin{enumerate}
-	\item With the \fmtWorksheet{CH2-Sales Data} file still open, click \fmtButton{File} to open the \textit{Backstage} view. 
+	\item Click \fmtButton{File} to open the \textit{Backstage} view. 
 	\item Click \fmtButton{Print}.
 	\item Notice that the worksheet is currently printing on two pages, with the page breaking between the April and May columns. To fix this problem, first change the left and right margins while still in \textit{Print Preview}.
-	\item Click \fmtButton{Page Setup $ \Rightarrow $ Margins} (see Figure \ref{02:fig43}).
+	\item Click \fmtButton{Page Setup $ \Rightarrow $ Margins Tab} (The Page Setup link is at the bottom of the settings column, see Figure \ref{02:fig43}).
 	\item Type in \fmtTyping{0.5} for the Left Margin and \fmtTyping{0.5} for the Right Margin.
 	\item Click \fmtButton{OK}. Changing the margins brought the May column onto the same page, but the June column is still on a separate page. Use Page Scaling to fix this while still in \textit{Print Preview}.
-	\item Click the \fmtButton{Scaling} drop-down arrow in the Settings section (Figure \ref{02:fig43}).
+	\item Click the \fmtButton{Scaling} drop-down arrow in the Settings section (it is the last setting and, by default, is set for \textit{No Scaling}, see Figure \ref{02:fig43}).
 	\item Select \textit{Fit All Columns on One Page}.
-	\item Exit Backstage View.
+	\item Exit Backstage View by clicking the circled arrow at the top right corner of the screen.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -1283,7 +1283,7 @@ Once the worksheet is professionally formatted, look at it in \textit{Print Prev
 Now that the entire worksheet is printing on one page, add a footer with information about the date the file was printed along with the filename. Chapter \ref{ch01:fundamental_skills}, \nameref{ch01:fundamental_skills} demonstrated how to create headers and footers using the \textit{Insert} ribbon tab. Headers and footers can also be created using the \textit{Custom Header/Footer} dialog box.
 
 \begin{enumerate}
-	\item Click \fmtButton{Page Layout $ \Rightarrow $ Page Setup $ \Rightarrow $ Dialog Box Launcher}. 
+	\item Click \fmtButton{Page Layout $ \Rightarrow $ Page Setup $ \Rightarrow $ Dialog Box Launcher}. (Note, the \textit{Dialog Box Launcher} is a small icon that looks like an arrow in a box found in the lower right corner of the \textit{Page Setup} group.)
 	\item Click the \fmtButton{Header/Footer} tab in the \textit{Page Setup} dialog box. A window similar to Figure \ref{02:fig44} will appear.
 \end{enumerate}
 
@@ -1352,70 +1352,95 @@ Running a lawn care business can be an excellent way for young people to make mo
 
 \begin{enumerate}
 	\item Open the file named \fmtWorksheet{PR2-Data} and then Save As \fmtWorksheet{PR2-Lawn Care}.
-	
-	\item Click cell \fmtLoc{C5} in the \fmtWorksheet{Annual Plan} worksheet.
 
-	\item Write a formula that calculates the average price per lawn cut. Do \textit{not} use the \textit{AVERAGE} function. The formula should be the \textit{Price per Acre} multiplied by the \textit{Average Acreage per Customer}.
-	
-	\item Click cell \fmtLoc{C8}.
-	
-	\item Enter a formula that calculates the total number of lawns that will be cut during the year: \textit{Number of Customers * Frequency of Lawn Cuts per Customer}.
-	
-	\item Click cell \fmtLoc{D9}.
-	
-	\item Enter a formula that calculates the total sales for the plan: \textit{Average Price per Cut * Total Lawn Cuts}.
-	
-	\item Click cell \fmtLoc{F3} in the \fmtWorksheet{Leases} worksheet. The \fmtButton{PMT} function will be used to calculate the monthly lease payment for the first item. For many businesses, leasing (or renting) equipment is a more favorable option than purchasing equipment because it requires far less cash. This enables someone to begin a business such as a lawn care business without having to put up a lot of money to buy equipment. The \fmtButton{PMT} function can be entered using the \fmtButton{Insert Function} button as seen in this chapter, or the \fmtButton{PMT} function can be typed directly into a cell. For this assignment, type the function into cell \fmtLoc{F3} using the following instructions.
-	
-	\item Type \fmtTyping{=PMT(}. Define the arguments of the function as follows.
+	\item \fmtWorksheet{Annual Plan} worksheet.
 
 	\begin{enumerate}
-		\item \textbf{Rate}: Click cell \fmtLoc{B3}, type a forward slash \fmtTyping{/} for division, type the number \fmtTyping{12}, and type a comma \fmtTyping{,}. Since monthly payments are being calculated, the annual interest rate must be converted to a monthly interest rate by dividing by $ 12 $.
+		\item Click cell \fmtLoc{C5}.
+	
+		\item Write a formula that calculates the average price per lawn cut. Do \textit{not} use the \textit{AVERAGE} function. The formula should be the \textit{Price per Acre * Average Acreage per Customer}.
 		
-		\item \textbf{Nper}: Click cell \fmtLoc{C3}, type \fmtTyping{*12} and then type a comma \fmtTyping{,}. Similar to the Rate argument, the terms of the lease must be converted to months by multiplying by $ 12 $ since monthly payments are being calculated.
+		\item Click cell \fmtLoc{C8}.
 		
-		\item \textbf{Pv}: Type a minus sign \fmtTyping{-}, click cell \fmtLoc{D3}, and type a comma \fmtTyping{,}. Remember that this argument must always be preceded by a minus sign.
+		\item Enter a formula that calculates the total number of lawns that will be cut during the year: \textit{Number of Customers * Frequency of Lawn Cuts per Customer}.
 		
-		\item \textbf{Fv}: Click cell \fmtLoc{E3} (Residual Value) and type a comma \fmtTyping{,}.
+		\item Click cell \fmtLoc{D9}.
 		
-		\item \textbf{Type}: Type the number \fmtTyping{1}, type a closing parenthesis \fmtTyping{)}, and press the \fmtKeystroke{Enter} key. This assumes the lease payments will be made at the beginning of each month, which requires that this argument be defined with a value of $ 1 $.
+		\item Enter a formula that calculates the total sales for the plan: \textit{Average Price per Cut * Total Lawn Cuts}.
+	\end{enumerate}
+	
+	\item \fmtWorksheet{Leases} worksheet.
+	
+	\begin{enumerate}
+		\item Click cell \fmtLoc{F3}. The \fmtButton{PMT} function will be used to calculate the monthly lease payment for the first item. For many businesses, leasing (or renting) equipment is a more favorable option than purchasing equipment because it requires far less cash. This enables someone to begin a business such as a lawn care business without having to put up a lot of money to buy equipment. The \fmtButton{PMT} function can be entered using the \fmtButton{Insert Function} button as seen in this chapter, or the \fmtButton{PMT} function can be typed directly into a cell. For this assignment, type the function into cell \fmtLoc{F3} using the following instructions.
+		
+		\item Type \fmtTyping{=PMT(}. Define the arguments of the function as follows.
+	
+		\begin{enumerate}
+			\item \textbf{Rate}: Click cell \fmtLoc{B3}, type a forward slash \fmtTyping{/} for division, type the number \fmtTyping{12}, and type a comma \fmtTyping{,}. Since monthly payments are being calculated, the annual interest rate must be converted to a monthly interest rate by dividing by $ 12 $.
+			
+			\item \textbf{Nper}: Click cell \fmtLoc{C3}, type \fmtTyping{*12} and then type a comma \fmtTyping{,}. Similar to the Rate argument, the terms of the lease must be converted to months by multiplying by $ 12 $ since monthly payments are being calculated.
+			
+			\item \textbf{Pv}: Type a minus sign \fmtTyping{-}, click cell \fmtLoc{D3}, and type a comma \fmtTyping{,}. Remember that this argument must always be preceded by a minus sign.
+			
+			\item \textbf{Fv}: Click cell \fmtLoc{E3} (Residual Value) and type a comma \fmtTyping{,}.
+			
+			\item \textbf{Type}: Type the number \fmtTyping{1}, type a closing parenthesis \fmtTyping{)}, and press the \fmtKeystroke{Enter} key. This assumes the lease payments will be made at the beginning of each month, which requires that this argument be defined with a value of $ 1 $.
+		\end{enumerate}
+	
+		\item Copy the \fmtButton{PMT} function in cell \fmtLoc{F3} and paste it into the range \fmtLoc{F4:F6}, or use the \fmtButton{Auto Fill Handle}.
+		
+		\item Click cell \fmtLoc{F10}. 
+		
+		\item Enter an Autosum function to calculate the total for the monthly lease payments. Make sure that blank rows (7 through 9) were included in the range for the \fmtButton{SUM} function so if other items are added later they will be included in the output of the \fmtButton{SUM} function.
+		
+		\item Select the range \fmtLoc{A2:F6}. 
+		
+		\item The data in this range will be sorted, first by \textit{Interest Rate} and then by \textit{Price}. Click \fmtButton{Data $ \Rightarrow $ Sort \& Filter $ \Rightarrow $ Sort}. In the \textit{Sort} dialog box, select \textit{Interest Rate} in the \textit{Sort by} drop-down box. Select \textit{Largest to Smallest} for the sort order. Then, click \fmtButton{Add Level}. Select \textit{Price} in the \textit{Then by} drop-down box. Select \textit{Largest to Smallest} for the sort order. Click \fmtButton{OK}.
+	
 	\end{enumerate}
 
-	\item Copy the \fmtButton{PMT} function in cell \fmtLoc{F3} and paste it into the range \fmtLoc{F4:F6}, or use the \fmtButton{Auto Fill Handle}.
+	\item \fmtWorksheet{Annual Plan} worksheet.
 	
-	\item Click cell \fmtLoc{F10} in the \fmtWorksheet{Leases} worksheet. Enter an Autosum function to calculate the total for the monthly lease payments. Make sure that blank rows (7 through 9) were included in the range for the \fmtButton{SUM} function so if other items are added later they will be included in the output of the \fmtButton{SUM} function.
+	\begin{enumerate}
+		\item Click cell \fmtLoc{B11}. The monthly lease payments that are calculated in the \textit{Leases} worksheet will be displayed in this cell.
+		
+		\item Type an equal sign \fmtTyping{=}, click the \fmtWorksheet{Leases} worksheet, click cell \fmtLoc{F10}, and press the \fmtKeystroke{Enter} key.
+		
+		\item Click \fmtLoc{C12}. Create a formula that calculates the annual lease payments. This should be the \textit{Monthly Lease Payments $ * 12 $}.
+		
+		\item Click cell \fmtLoc{C14}. Create a formula that calculates the Total Lawn \& Equipment Expenses (\textit{Lawn \& Equipment Expenses per Cut * Total Lawn Cuts}).
+		
+		\item Click cell \fmtLoc{D16}. Enter a \fmtButton{SUM} function that adds the Expenses for the business in \fmtLoc{Column C}. Make sure to add the \textit{Expenses} only (not the \textit{Sales Plan} information).
+		
+		\item Click cell \fmtLoc{D17}. Enter a formula that calculates the annual profit (\textit{Operating Income}) for the business. This should be the \textit{Total Sales $ – $ Total Expenses}.
+		
+		\item Format all cells that contain money amounts for \textit{Accounting Number Format} (\$) with no decimals.
+	\end{enumerate}
+
+	\item \fmtWorksheet{Investments} worksheet.
 	
-	\item Highlight the range \fmtLoc{A2:F6} on the \fmtWorksheet{Leases} worksheet. The data in this range will be sorted, first by Interest Rate and then by Price. Click \fmtButton{Data $ \Rightarrow $ Sort \& Filter $ \Rightarrow $ Sort}. In the \textit{Sort} dialog box, select \textit{Interest Rate} in the \textit{Sort by} drop-down box. Select \textit{Largest to Smallest} for the sort order. Then, click \fmtButton{Add Level}. Select \textit{Price} in the \textit{Then by} drop-down box. Select \textit{Largest to Smallest} for the sort order. Click \fmtButton{OK}.
+	\begin{enumerate}
+		\item Click cell \fmtLoc{B10}. 
+		
+		\item Enter a \fmtButton{COUNT} function that counts the number of investments that currently have a balance in \fmtLoc{Column B}. Make sure that the additional blank rows in \fmtLoc{Row 6} through \fmtLoc{Row 8} are included in the range for this function. The function output will automatically change if any new investments are added to the worksheet. It is important to note, however, that the \textit{Total} in cell \fmtLoc{B9} should not be included in the \textit{Count} range.
+		
+		\item Click cell \fmtLoc{D3}.
+		
+		\item Type an equal sign \fmtTyping{=}. Click the \fmtWorksheet{Annual Plan} worksheet. Click cell \fmtLoc{D17} and type a forward slash \fmtTyping{/} for division. Click the \fmtWorksheet{Investments} worksheet. Click cell \fmtLoc{B10} and press the \fmtKeystroke{Enter} key. This formula divides the profit calculated on the \fmtWorksheet{Annual Plan} worksheet by the number of investments in the \fmtWorksheet{Investments} worksheet. This assumes that the profits from this business will be invested evenly among the funds listed in \fmtLoc{Column A} of the \fmtWorksheet{Leases} worksheet.
+		
+		\item Before copying and pasting the formula created in cell \fmtLoc{D3}, absolute references must be added to the cell locations in the formula. Edit the formula in cell \fmtLoc{D3} on the \fmtWorksheet{Investments} worksheet so that cells \fmtLoc{D17} and \fmtLoc{B10} are absolute. The formula in cell \fmtLoc{D3} should be: \fmtTyping{='Annual Plan'!\$D\$17/ Investments!\$B\$10}. When the formula is copied down from cell \fmtLoc{D3}, the cell references will not change, because they are absolute. The formula will continue to divide the Operating Income in cell \fmtLoc{D17} of the Annual Plan by the Number of Investments in cell \fmtLoc{B10} of the \fmtWorksheet{Investments} sheet.
+		
+		\item Copy cell \fmtLoc{D3} and paste it into cells \fmtLoc{D4} and \fmtLoc{D5} or use the \fmtButton{Auto Fill Handle} to copy down.
+		
+		\item Click cell \fmtLoc{B9}. 
+		
+		\item Enter a \fmtButton{SUM} function that adds the current balance for all investments in \fmtLoc{Column B}. Make sure that blank rows (\fmtLoc{Row 6} through \fmtLoc{Row 8}) are added to the range for the function so additional investments will automatically be included in the Autosum function output.
+		
+		\item Copy the \fmtButton{SUM} function in cell \fmtLoc{B9} and paste it into cell \fmtLoc{D9}.
+	\end{enumerate}
 	
-	\item Click cell \fmtLoc{B11} on the \fmtWorksheet{Annual Plan} worksheet. The monthly lease payments that are calculated in the \fmtWorksheet{Lease} worksheet will be displayed in this cell.
-	
-	\item Type an equal sign \fmtTyping{=}. Click the \fmtWorksheet{Leases} worksheet, click cell \fmtLoc{F10}, and press the \fmtKeystroke{Enter} key.
-	
-	\item Click cell \fmtLoc{C12} on the \fmtWorksheet{Annual Plan} worksheet. Create a formula that calculates the annual lease payments. This should be the \textit{Monthly Lease Payments $ * 12 $}.
-	
-	\item Click cell \fmtLoc{C14} on the \fmtWorksheet{Annual Plan} worksheet. Create a formula that calculates the Total Lawn \& Equipment Expenses (\textit{Lawn \& Equipment Expenses per Cut * Total Lawn Cuts}).
-	
-	\item Click cell \fmtLoc{D16} on the \fmtWorksheet{Annual Plan} worksheet. Enter a \fmtButton{SUM} function that adds the Expenses for the business in column C. Make sure to add the Expenses only (not the Sales Plan information).
-	
-	\item Click cell \fmtLoc{D17} on the \fmtWorksheet{Annual Plan} worksheet. Enter a formula that calculates the annual profit (Operating Income) for the business. This should be the \textit{Total Sales $ – $ Total Expenses}.
-	
-	\item Format all cells that contain money amounts in the \fmtWorksheet{Annual Plan} worksheet for Accounting Number Format (\$) with no decimals.
-	
-	\item Click cell \fmtLoc{B10} on the \fmtWorksheet{Investments} worksheet. Enter a \fmtButton{COUNT} function that counts the number of investments that currently have a balance in \fmtLoc{Column B}. Make sure that the additional blank rows in \fmtLoc{Row 6} through \fmtLoc{Row 8} are included in the range for this function. The function output will automatically change if any new investments are added to the worksheet. It is important to note, however, that the \textit{Total} in cell \fmtLoc{B9} should not be included in the \textit{Count} range.
-	
-	\item Click cell \fmtLoc{D3} on the \fmtWorksheet{Investments} worksheet.
-	
-	\item Type an equal sign \fmtTyping{=}. Click the \fmtWorksheet{Annual Plan} worksheet. Click cell \fmtLoc{D17} and type a forward slash \fmtTyping{/} for division. Click the \fmtWorksheet{Investments} worksheet. Click cell \fmtLoc{B10} and press the \fmtKeystroke{Enter} key. This formula divides the profit calculated on the \fmtWorksheet{Annual Plan} worksheet by the number of investments in the \fmtWorksheet{Investments} worksheet. This assumes that the profits from this business will be invested evenly among the funds listed in \fmtLoc{Column A} of the \fmtWorksheet{Leases} worksheet.
-	
-	\item Before copying and pasting the formula created in cell \fmtLoc{D3}, absolute references must be added to the cell locations in the formula. Edit the formula in cell \fmtLoc{D3} on the \fmtWorksheet{Investments} worksheet so that cells \fmtLoc{D17} and \fmtLoc{B10} are absolute. The formula in cell \fmtLoc{D3} should be: \fmtTyping{='Annual Plan'!\$D\$17/ Investments!\$B\$10}. When the formula is copied down from cell \fmtLoc{D3}, the cell references will not change, because they are absolute. The formula will continue to divide the Operating Income in cell \fmtLoc{D17} of the Annual Plan by the Number of Investments in cell \fmtLoc{B10} of the \fmtWorksheet{Investments} sheet.
-	
-	\item Copy cell \fmtLoc{D3} and paste it into cells \fmtLoc{D4} and \fmtLoc{D5} or use the \fmtButton{Auto Fill Handle} to copy down.
-	
-	\item Click cell \fmtLoc{B9} on the \fmtWorksheet{Investments} worksheet. Enter a \fmtButton{SUM} function that adds the current balance for all investments in Column B. Make sure that blank rows (rows 6 through 8) are added to the range for the function so additional investments will automatically be included in the Autosum function output.
-	
-	\item Copy the \fmtButton{SUM} function in cell \fmtLoc{B9} and paste it into cell \fmtLoc{D9}.
-	
-	\item Format the \fmtWorksheet{Investments} and \fmtWorksheet{Leases} sheets appropriately for Accounting Format. This should include \$ signs on the top row and total row for money amounts, and comma style in the middle rows. In the \fmtWorksheet{Investments} sheet, apply Comma Style with $ 0 $ decimals to the ranges \fmtLoc{B4:B5} and \fmtLoc{D4:D5}. In the \fmtWorksheet{Leases} worksheet, apply Accounting Number Format (\$) with two decimals to the range \fmtLoc{D3:F3} and \fmtLoc{F10}. Apply comma format with two decimals to the range \fmtLoc{D4:F9}. Double check that the formatting matches Figures \ref{02:fig47}, \ref{02:fig48}, and \ref{02:fig49}.
+	\item Format the \fmtWorksheet{Investments} and \fmtWorksheet{Leases} sheets appropriately for Accounting Format. This should include \$ signs on the top row and total row for money amounts, and comma style in the middle rows. On the \fmtWorksheet{Investments} sheet, apply Comma Style with $ 0 $ decimals to the ranges \fmtLoc{B4:B5} and \fmtLoc{D4:D5}. On the \fmtWorksheet{Leases} worksheet, apply Accounting Number Format (\$) with two decimals to the range \fmtLoc{D3:F3} and \fmtLoc{F10}. Apply comma format with two decimals to the range \fmtLoc{D4:F9}. Double check that the formatting matches Figures \ref{02:fig47}, \ref{02:fig48}, and \ref{02:fig49}.
 	
 	\item Save the \fmtWorksheet{PR2 Lawn Care} workbook.
 	
@@ -1452,21 +1477,21 @@ The hotel management industry presents a wide variety of career opportunities, r
 \begin{enumerate}
 	\item Open the file named \fmtWorksheet{SC2-Data} and then Save As \fmtWorksheet{SC2-Hotel}.
 	
-	\item Enter a formula in cell \fmtLoc{C5} on the \fmtWorksheet{Occupancy} worksheet to calculate the January capacity for the hotel. The capacity shows how many people the hotel can hold during the month. It is calculated by first multiplying the occupants per room by the number of rooms in the hotel. This result is then multiplied by the number of days in the month (cell \fmtLoc{B5} for January). Create this formula using absolute references so that the appropriate cells do not change when the formula is pasted throughout column C. \textit{Hint}: two of the cells in the formula need to be absolute references.
+	\item Enter a formula in cell \fmtLoc{C5} on the \fmtWorksheet{Occupancy} worksheet to calculate the January capacity for the hotel. The capacity shows how many people the hotel can hold during the month. It is calculated by first multiplying the \textit{Number of Rooms} by the \textit{Occupants per Room} in the hotel. This result is then multiplied by the number of \textit{Days in Month} (cell \fmtLoc{B5} for January). Create this formula using absolute references so that the appropriate cells do not change when the formula is pasted throughout \fmtLoc{Column C}. \textit{Hint}: two of the cells in the formula need to be absolute references.
 	
 	\item Copy the formula in cell \fmtLoc{C5} and paste it into the range \fmtLoc{C6:C16}. Use a paste method that does not remove the border at the bottom of cell \fmtLoc{C16}.
 	
-	\item Enter a formula in cell \fmtLoc{E5} on the \fmtWorksheet{Occupancy} worksheet to calculate the Percent Occupied of the hotel (this statistic shows what percentage of the hotel is full or occupied). The formula should divide the Actual Occupancy by the Hotel Capacity. Then copy and paste the formula into the range \fmtLoc{E6:E16}. Use a paste method that does not remove the border at the bottom of cell \fmtLoc{E16}. Format the results in \fmtLoc{E5:E16} as percentages with two decimal places.
+	\item Enter a formula in cell \fmtLoc{E5} on the \fmtWorksheet{Occupancy} worksheet to calculate the \textit{Percent Occupied} of the hotel (this statistic shows what percentage of the hotel is full or occupied). The formula should divide the \textit{Actual Occupancy} by the \textit{Hotel Capacity}. Then copy and paste the formula into the range \fmtLoc{E6:E16}. Use a paste method that does not remove the border at the bottom of cell \fmtLoc{E16}. Format the results in \fmtLoc{E5:E16} as percentages with two decimal places.
 	
 	\item Enter a function in cell \fmtLoc{C17} on the \fmtWorksheet{Occupancy} worksheet that sums the values in the range \fmtLoc{C5:C16}. Copy the function and paste it into cell \fmtLoc{D17}.
 	
 	\item Copy the formula in cell \fmtLoc{E16} and paste it into cell \fmtLoc{E17}. Make sure cell \fmtLoc{E17} is formatted as a percentage with two decimals and bold.
 	
-	\item On the \fmtWorksheet{Statistics} worksheet, enter a function into cell \fmtLoc{B3} that shows the highest value (Max) in the range \fmtLoc{D5:D16} in the Actual Occupancy column on the \fmtWorksheet{Occupancy} worksheet.
+	\item On the \fmtWorksheet{Statistics} worksheet, enter a function into cell \fmtLoc{B3} that shows the highest value (Max) in the range \fmtLoc{D5:D16} in the \textit{Actual Occupancy} column on the \fmtWorksheet{Occupancy} worksheet.
 	
-	\item On the \fmtWorksheet{Statistics} worksheet, enter a function into cell \fmtLoc{B4} that shows the lowest value (Min) in the range \fmtLoc{D5:D16} in the Actual Occupancy column on the \fmtWorksheet{Occupancy} worksheet.
+	\item On the \fmtWorksheet{Statistics} worksheet, enter a function into cell \fmtLoc{B4} that shows the lowest value (Min) in the range \fmtLoc{D5:D16} in the \textit{Actual Occupancy} column on the \fmtWorksheet{Occupancy} worksheet.
 	
-	\item On the \fmtWorksheet{Statistics} worksheet, enter a function into cell \fmtLoc{B5} that shows the average value in the range \fmtLoc{D5:D16} in the Actual Occupancy column on the \fmtWorksheet{Occupancy} worksheet.
+	\item On the \fmtWorksheet{Statistics} worksheet, enter a function into cell \fmtLoc{B5} that shows the average value in the range \fmtLoc{D5:D16} in the \textit{Actual Occupancy} column on the \fmtWorksheet{Occupancy} worksheet.
 	
 	\item Use the \fmtButton{Auto Fill Handle} to copy the formulas in the range \fmtLoc{B3:B5} to the range \fmtLoc{C3:C5}.
 	

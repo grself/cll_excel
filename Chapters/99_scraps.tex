@@ -173,6 +173,20 @@ First paragraph.\blfootnote{Photo by lindsay Cotter on Unsplash}
 % section in the ``structure'' box on the left side of the page.
 %TODO This is a todo note.
 
+%***************************************************************************
+\section{PicPick Image Notes}
+%***************************************************************************
+To match the images in the Excel book, use these settings for text boxes:
+Place a rectangle with rounded corners on the image.
+Click the ``text'' tab for the object
+Enter the text for the inside of the rectangle. Use mixed case and a period at the end of the sentence
+Font: Tahoma 10pt (not bold)
+Line Color: A43A37
+Fill Color: FFF2CE
+Background opacity: 100%
+Arrow Style: 2
+
+
 %**********************************************************************
 \section{Chapter Checklist}
 %**********************************************************************
@@ -187,7 +201,9 @@ Check that all file names include a hyphen, like ``CH2-yada.xlxs''
 \fmtRibbonGroup since that will signal a ribbon location
 \fmtRibbonTab to see if this is a ribbon location
 \fmtPopupBox to italics
-Row and Column identifiers to format those (like ``Row 2'')
+Remove all special formatting from text areas, they should only use italics
+Row and Column identifiers to format those (like \textit{Row} $ 2 $), \textit{Column B}
+Change ``highlight'' to ``select'' when selecting a range
 
 %**********************************************************************
 \section{Style Guide}
@@ -196,11 +212,11 @@ Row and Column identifiers to format those (like ``Row 2'')
 \subsection{Text Formatting Codes}
 I defined several format commands in ``Excel-config.tex''. Each of the commands start with ``fmt...'' so they are easy to find. By using these, I can re-format an item throughout the entire text by changing only the lines in the config file.
 
-fmtButton: Anything clickable 
+fmtButton: Anything clickable, and the labels for items in a dialog box
 fmtKeystroke: Any key stroke
-fmtLoc: Any cell location, including column or row name
-fmtNewExcel: Excel 365 information (use: fmtNewExcel{365})
-fmtOldExcel: Excel 2016 information (use: fmtOldExcel{2016})
+fmtLoc: Any cell location, including column or row name \fmtLoc{Row $ 1 $}
+fmtNewExcel: Excel 365 information (use: fmtNewExcel{Excel 365})
+fmtOldExcel: Excel 2016 information (use: fmtOldExcel{Excel 2016})
 fmtTyping: Anything typed in
 fmtWorksheet: Any workbook or worksheet or file name
 
@@ -226,14 +242,21 @@ My tilde character: $\sim$
 
 Locations in text but not a procedure, like $ A1 $:$ D1 $ (note, italics doesn't matter with a math formula). Note, leave the colon outside the math formula for better spacing.
 
-The ``Auto Fill Handle'' should be formatted as a button.
+The \fmtButton{Auto Fill Handle} should be formatted as a button.
+
+In text, function names are in all caps with no other formatting, like SUM and COUNTA. In a procedure, they are all caps but formatted as typing or a button (whichever is appropriate).
 
 Italicize:
-  Excel error messages that are displayed, like \textit{#DIV/0}
-  \textit{Backstage} is italicized, but buttons on the Backstage view are formatted as buttons.
-  The names of dialog boxes are italicized
-  Functions, sheetname, etc. in text, not a procedural step
-  Row/column designations in text, not a procedural step. Do not enclose row number in in-line math symbols (dollar signs)
+  Excel error messages that are displayed, like \textit{\#DIV/$ 0 $} (Numbers in an error message must be enclosed in dollar signs).
+    
+  \textit{Backstage} is italicized, but buttons on the Backstage view are formatted as buttons in a procedure.
+  
+  The names of dialog boxes
+  
+  Functions, sheetname, etc. in text, not a procedural step - this includes Skill Refreher boxes (as an exception, keystrokes are always formatted with \fmtKeystroke)
+  
+  Row/column designations in text, not a procedural step. Enclose row number in in-line math symbols (dollar signs) outside the italics section: \textit{Row} $ 25 $.
+  
   Color selectors, like \textit{Blue, Accent 1, Darker 25\%}
 
 \subsection{Objectives/Takeaways}
@@ -264,6 +287,8 @@ For tables, label should be chapter number + colon + ``tab'' + number: 03:tab01
 Reference: Chapter \ref{ch09:topics}, \nameref{ch09:topics}, page \pageref{ch09:topics}
 
 \subsection{Misc}
+Use ``Click in \fmtLoc{A1}'' to specify a single cell, ``Select the range \fmtLoc{A1:C2}'' to select a range.
+
 The text width in a normal line is 11.80737cm
 
 Dates do not include an apostrophe: In the 1960s this happened...
