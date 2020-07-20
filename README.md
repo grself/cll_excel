@@ -14,13 +14,19 @@ This book is published under the Creative Commons 4.0 "Attribution" license, so 
 
 ### Introduction
 
-1. Foundations
+1. Fundamentals of Excel
+2. Computations
+3. Excel Formulas
 
 ### Intermediate
 
-1. Not ready yet
+4. Charts and Graphs
+5. Excel Tables
+6. Using Multiple Worksheets
 
 ### Advanced
 
-10. Not ready yet
+7. Working With Data
+8. Forcasting
+9. Advanced Topics
 
