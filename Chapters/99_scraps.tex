@@ -192,18 +192,15 @@ Arrow Style: 2
 %**********************************************************************
 
 To check each chapter, search for:
-\fmtPopupButton to \fmtButton
-\fmtRibbonButton to \fmtButton
-\fmtWorksheetName to \fmtWorksheet
-\fmtWorkbookName to \fmtWorksheet
-\fmtCellLocation to \fmtLoc
-\fmtPopupBox to \textit
-Check that all file names include a hyphen, like ``CH2-yada.xlxs'' (Search for ``CH7'' since all of the file names start with the chapter number.)
-\fmtRibbonGroup since that will signal a ribbon location
-\fmtRibbonTab to see if this is a ribbon location
+
+\fmtLoc -- Cell locations come before the data entry, so ``In cell \fmtLoc{A1}, enter \fmtTyping{xyz}'' not ``Enter \fmtTyping{xyz} in \fmtLoc{A1}.''
+
+``dialog box'' or just ``box'' -- these should all be called ``dialog box'' and the name of the box is italicized. 
+
 Remove all special formatting from text areas, they should only use italics
-Row and Column identifiers to format those (like \textit{Row} $ 2 $), \textit{Column B}
-Change ``highlight'' to ``select'' when selecting a range
+
+In text, function names are in all caps with no other formatting, like SUM and COUNTA. In a procedure, they are all caps but formatted as typing or a button (whichever is appropriate).
+
 
 %**********************************************************************
 \section{Style Guide}
@@ -215,8 +212,8 @@ I defined several format commands in ``Excel-config.tex''. Each of the commands 
 fmtButton: Anything clickable, and the labels for items in a dialog box
 fmtKeystroke: Any key stroke
 fmtLoc: Any cell location, including column or row name \fmtLoc{Row $ 1 $}
-fmtNewExcel: Excel 365 information (use: fmtNewExcel{Excel 365})
-fmtOldExcel: Excel 2016 information (use: fmtOldExcel{Excel 2016})
+fmtNewExcel: Excel 365 information, use: \fmtNewExcel{Excel 365}
+fmtOldExcel: Excel 2016 information, use: \fmtOldExcel{Excel 2016}
 fmtTyping: Anything typed in
 fmtWorksheet: Any workbook or worksheet or file name
 
@@ -240,22 +237,20 @@ My tilde character: $\sim$
 
 ``Control'' is abbreviated ``Ctrl''
 
-Locations in text but not a procedure, like $ A1 $:$ D1 $ (note, italics doesn't matter with a math formula). Note, leave the colon outside the math formula for better spacing.
-
 The \fmtButton{Auto Fill Handle} should be formatted as a button.
 
 In text, function names are in all caps with no other formatting, like SUM and COUNTA. In a procedure, they are all caps but formatted as typing or a button (whichever is appropriate).
+
+Locations in text but not a procedure, like $ A1 $:$ D1 $ (note, italics doesn't matter with a math formula). Note, leave the colon outside the math formula for better spacing. However, for entire rows, enclose the row number in in-line math symbols (dollar signs) outside the italics section: \textit{Row} $ 25 $. 
 
 Italicize:
   Excel error messages that are displayed, like \textit{\#DIV/$ 0 $} (Numbers in an error message must be enclosed in dollar signs).
     
   \textit{Backstage} is italicized, but buttons on the Backstage view are formatted as buttons in a procedure.
   
-  The names of dialog boxes
+  The names of dialog boxes.
   
-  Functions, sheetname, etc. in text, not a procedural step - this includes Skill Refreher boxes (as an exception, keystrokes are always formatted with \fmtKeystroke)
-  
-  Row/column designations in text, not a procedural step. Enclose row number in in-line math symbols (dollar signs) outside the italics section: \textit{Row} $ 25 $.
+  Functions, sheetname, etc. in text, not a procedural step - this includes Skill Refreher boxes (as an exception, keystrokes are always formatted with \fmtKeystroke). 
   
   Color selectors, like \textit{Blue, Accent 1, Darker 25\%}
 
@@ -264,6 +259,8 @@ Italicize:
 Learning Objectives should be bullet-points that start with an action verb, like: Learn how to save workbooks. These are only used for Sections, nothing lesser
 
 Key Takeaways are more verbose and briefly summarize the main elements of the section. These are used to bookend a Learning Objectives element.
+
+Clickable items and locations in an Objectives or Takeaway box are italicized rather than using the \fmt... commands.
 
 \subsection{Ribbon Locations}
 Click \fmtButton{Tab $ \Rightarrow $ Group $ \Rightarrow $ Button}.
@@ -293,6 +290,8 @@ Reference: Chapter \ref{ch09:topics}, \nameref{ch09:topics}, page \pageref{ch09:
 \subsection{Misc}
 Use ``Click in \fmtLoc{A1}'' to specify a single cell, ``Select the range \fmtLoc{A1:C2}'' to select a range.
 
+Cell locations come before the data entry, so ``In cell \fmtLoc{A1}, enter \fmtTyping{xyz}'' not ``Enter \fmtTyping{xyz} in \fmtLoc{A1}.''
+
 The text width in a normal line is 11.80737cm
 
 Dates do not include an apostrophe: In the 1960s this happened...
@@ -300,10 +299,6 @@ Dates do not include an apostrophe: In the 1960s this happened...
 Wrap all numbers in an in-line math block: $ 123 $, even if the number is also formatted for text entry: \fmtTyping{$ 123 $}
 
 The word ``data'' is singular, thus: ``Data is analyzed...''
-
-Insert chapter cross-refs in a footnote.
-
-Clickable items in an Objectives or Takeaway box are italicized rather than using the \fmt... commands.
 
 
 %**********************************************************************
