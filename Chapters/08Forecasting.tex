@@ -2,7 +2,7 @@
 \chapter{Forecasting}\label{ch08:forecasting}
 %*****************************************
 
-One of the most powerful features of Excel is the ability to analyze data and create charts with trend lines that would help business people forecast future conditions. Excel also contains several tools designed for ``what-if'' analysis where business people can project the results of changing market variables or corporate decisions. This chapter introduces all of these features. 
+One of the most powerful features of Excel is the ability to analyze data and create charts with trend lines that would help businesspeople forecast future conditions. Excel also contains several tools designed for ``what-if'' analysis where businesspeople can project the results of changing market variables or corporate decisions. This chapter introduces all these features. 
 
 \section{Advanced Charts}
 
@@ -116,7 +116,7 @@ Excel creates a bar graph that shows positive values in blue and negative values
 
 \subsection{Trend Lines}
 
-Excel can easily create trend lines on graphs to indicate data trends. These lines can optionally be extended to forecast how the data may move in the near future.
+Excel can easily create trend lines on graphs to indicate data trends. These lines can optionally be extended to forecast how the data may soon move.
 
 \begin{enumerate}
 	\item Open workbook \fmtWorksheet{CH8-Dow Data}. This workbook contains the closing Dow Jones average for each month from $ 1981 $–$ 1990 $.
@@ -145,7 +145,7 @@ Excel can easily create trend lines on graphs to indicate data trends. These lin
 	\end{figure}
 
 	\item Double-click the dotted trendline to activate it and open the \textit{Format Trendline} properties panel.
-	\item Enter \fmtTyping{10} for the \textit{Forward Forcast} period to extend the trendline out five years (ten six-month periods).
+	\item Enter \fmtTyping{10} for the \textit{Forward Forecast} period to extend the trendline out five years (ten six-month periods).
 
 	\begin{figure}[H]
 		\centering
@@ -183,16 +183,16 @@ The trend lines described above are easy to add to a chart, but Excel includes a
 
 \begin{enumerate}[resume]
 	
-	\item The \textit{Create Forecast Worksheet} wizard opens with a preview of the worksheet (see Figure \ref{08:fig13}). There are numerous options available but the default options are appropriate for this exercise. Here are what the other options do.
+	\item The \textit{Create Forecast Worksheet} wizard opens with a preview of the worksheet (see Figure \ref{08:fig13}). There are numerous options available, but the default options are appropriate for this exercise. Here are what the other options do.
 	
 	\begin{itemize}
 		\item \textbf{Forecast End}. Set an end date for the forecast, which are the orange lines in the illustration.
 		\item \textbf{Forecast Start}. Set the start date for the forecast.
 		\item \textbf{Confidence interval}. This is a statistical value that indicates a $ 95 $\% certainty that as time progresses the graph will fall between the upper and lower limits shown. The confidence interval can be adjusted, but $ 95 $\% is common.
 		\item \textbf{Seasonality}. Excel will search for any sort of seasonal cycles and adjust the forecast accordingly.
-		\item \textbf{Timeline and Values Range}. This is the data that was used to create the graph. If Excel got the wrong data ranges then they can be adjusted here.
+		\item \textbf{Timeline and Values Range}. This is the data that was used to create the graph. If Excel got the wrong data ranges, then they can be adjusted here.
 		\item \textbf{Fill Missing Points Using}. This tells Excel how to deal with data points that are missing. It will either fill those missing values with zero or interpolate a value between the two neighboring values. Interpolation is usually the best option.
-		\item \textbf{Aggregate Duplicates Using}. There are a number of options available for aggregating duplicates in the data but \textit{Average} is usually the best option.
+		\item \textbf{Aggregate Duplicates Using}. There are several options available for aggregating duplicates in the data, but \textit{Average} is usually the best option.
 	\end{itemize}	
 	
 	\item Click \fmtButton{Create}.
@@ -207,21 +207,21 @@ The trend lines described above are easy to add to a chart, but Excel includes a
 \end{figure}
 
 \begin{enumerate}[resume]
-	\item Excel creates a new worksheet containing the chart along with a table listing all of the values used to create the chart.
+	\item Excel creates a new worksheet containing the chart along with a table listing all the values used to create the chart.
 	\item Rename \fmtWorksheet{Sheet1} to \fmtTyping{Forecast}.
-	\item Scroll to the bottom of the table to see the values Excel forecast to extend the graph. Those values can be used to forecast the Dow Jones for a specific date; so the Dow was forecast to be at $ 2389.37 $ in January $ 1991 $.
+	\item Scroll to the bottom of the table to see the values Excel forecast to extend the graph. Those values can be used to forecast the Dow Jones for a specific date; so, the Dow was forecast to be at $ 2389.37 $ in January $ 1991 $.
 	\item Save and close the \fmtWorksheet{CH8-Dow} workbook.
 \end{enumerate}
 
 Following is a second example of a forecast worksheet that uses beer production data because it shows a clear seasonal trend over time.
 
 \begin{enumerate}
-	\item Open workbook \fmtWorksheet{CH8-Beer Data}. This workbook contains the total monthly United States beer production, in barrels, for January, $ 1980 $, until December, $ 1991 $. 
+	\item Open workbook \fmtWorksheet{CH8-Beer Data}. This workbook contains the total monthly United States beer production, in barrels, for January $ 1980 $, until December $ 1991 $. 
 	\item Save the workbook as \fmtWorksheet{CH8-Beer}.
 	\item Click in \fmtLoc{A1} to select that location.
 	\item Click \fmtButton{Data $ \Rightarrow $ Forecast $ \Rightarrow $ Forecast Sheet}.
 	\item Accept the default options and click \fmtButton{Create}.
-	\item The graph clearly shows the cyclic nature of beer production and forecasts a similar cycle out to December, $ 1994 $.
+	\item The graph clearly shows the cyclic nature of beer production and forecasts a similar cycle out to December $ 1994 $.
 	\item Rename \fmtWorksheet{Sheet1} to \fmtTyping{Forecast}.
 	\item After viewing the forecast sheet, save and close the \fmtWorksheet{CH8-Beer} workbook.
 \end{enumerate}
@@ -237,9 +237,9 @@ A forecast sheet is a simple method business owners use to predict business cycl
 
 \subsection{3D Maps}
 
-Excel includes a feature called \textit{$ 3 $D Maps} that merge geographically-oriented maps with a time line so business owners can look for trends over time in various geographical areas they service. As an example, if a company markets to an entire state then the owner can create a \textit{$ 3 $D Map} that shows sales by county over the preceding five years, and that may make important trends obvious.
+Excel includes a feature called \textit{$ 3 $D Maps} that merge geographically oriented maps with a timeline so business owners can look for trends over time in various geographical areas they service. As an example, if a company markets to an entire state then the owner can create a \textit{$ 3 $D Map} that shows sales by county over the preceding five years, and that may make important trends obvious.
 
-\textit{$ 3 $D Maps} combines map and time line data in a feature called \textit{Tours}. The process can be somewhat intimidating at first, but becomes easier with practice.
+\textit{$ 3 $D Maps} combines map and timeline data in a feature called \textit{Tours}. The process can be somewhat intimidating at first but becomes easier with practice.
 
 \subsubsection{Arizona Population Growth}
 
@@ -284,7 +284,7 @@ Excel includes a feature called \textit{$ 3 $D Maps} that merge geographically-o
 	\end{figure}
 	
 	\begin{itemize}
-		\item \textbf{Ribbon}. The \textit{$ 3 $D Map} ribbon (Figure \ref{08:fig22}) serves the same function as in any Microsoft program. It contains buttons to activate the most commonly-used mapping functions. The various buttons will be used throughout this lesson and their functions will become clear through use.
+		\item \textbf{Ribbon}. The \textit{$ 3 $D Map} ribbon (Figure \ref{08:fig22}) serves the same function as in any Microsoft program. It contains buttons to activate the most used mapping functions. The various buttons will be used throughout this lesson and their functions will become clear through use.
 
 		\begin{figure}[H]
 			\centering
@@ -336,7 +336,7 @@ Excel includes a feature called \textit{$ 3 $D Maps} that merge geographically-o
 			\item \textbf{Location}. This setting divides the map into geographical locations. Maps can use data for country, state, county, city, and many other regional types. For example, a sales map may show sales by state or sales by city.
 			\item \textbf{Height}. This setting determines the height of the data column on a graph. The data needs to be numeric so it can be converted into a column height.
 			\item \textbf{Category}. This setting contains categories for the values graphed by height. For example, a sales map may include categories for electronics, clothing, or other merchandise.
-			\item \textbf{Time}. This setting contains the time value being graphed. \textit{$ 3 $D Maps} can be created to display a period of time, like the value of monthly or weekly sales, but maps can also be created that do not have a time component.
+			\item \textbf{Time}. This setting contains the time value being graphed. \textit{$ 3 $D Maps} can be created to display a period, like the value of monthly or weekly sales, but maps can also be created that do not have a time component.
 		\end{itemize}		
 
 		\item \textbf{Filters}. This section permits the creation and application of complex filters for the data being charted.
@@ -365,8 +365,8 @@ Excel includes a feature called \textit{$ 3 $D Maps} that merge geographically-o
 	\item Set the Thickness for the column to $ 200\% $.
 	\item Click the color drop-down for \textit{Population (No Aggregation)} and choose blue.
 
-	\item Click and drag \textit{Year} in the \textit{Field List} to the \fmtButton{Time} setting. Not much changes, but a time line bar is added to the bottom of the map. The small triangle marker under the time line can be moved left and right to display the population for any desired point of time.
-	\item Click the down arrow to the right of \textit{Year} in the \textit{Time} setting and select \fmtButton{Year} in the drop down list.
+	\item Click and drag \textit{Year} in the \textit{Field List} to the \fmtButton{Time} setting. Not much changes, but a timeline bar is added to the bottom of the map. The small triangle marker under the timeline can be moved left and right to display the population for any desired point of time.
+	\item Click the down arrow to the right of \textit{Year} in the \textit{Time} setting and select \fmtButton{Year} in the drop-down list.
 	\item Click \fmtButton{Play Tour} at the left edge of the ribbon. Excel will ``play'' the entire timeline in ten seconds (that timing can be changed). When the video is finished playing, click the left-arrow button in the lower left corner of the video screen to return to the map editor.
 	\item Click the \fmtButton{Pencil} icon to edit \textit{Layer 1} in the \textit{Layers Pane} and change the name of the layer to \fmtTyping{Population}.
 
@@ -399,9 +399,9 @@ At this point, this tour is nearly done. However, there are just a few settings 
 	\item Click \textit{Tour 1} at the top of the \textit{Tour Editor} and enter \fmtTyping{Population}. 
 	\item Excel's \textit{$ 3 $D Map} is drawn on a globe so data for countries around the world can be displayed. It is better for this map to be displayed flat rather than on a globe. Click \fmtButton{Flat Map} in the ribbon to convert the map from a globe to a flat map. The map can always be reverted to a globe if desired.
 	\item Having the time displayed on the tour is distracting, so format the displayed date to only show the year. Right-click the date displayed on the screen and select \fmtButton{Edit}. In the edit box, choose the \textit{Time Format} that only shows the year without the month and day, then click \fmtButton{Accept}.
-	\item The legend is not needed for this map, so click that box and delete it. Note: both layers create a legend and both should be deleted. Either legend can be turned back on if desired by clicking the \fmtButton{Legend} button on the ribbon.
+	\item The legend is not needed for this map, so click that box and delete it. Note: both layers create a legend, and both should be deleted. Either legend can be turned back on if desired by clicking the \fmtButton{Legend} button on the ribbon.
 	\item Click and drag the map to center Arizona in the display. Also, experiment with the four arrow and plus/minus buttons to adjust the display.
-	\item Click the \fmtButton{Scene Options} button on the ribbon. Change the name of the scene to \fmtTyping{Population}. The defaults for the other options are appropriate for this tour, but could be adjusted for other tours.
+	\item Click the \fmtButton{Scene Options} button on the ribbon. Change the name of the scene to \fmtTyping{Population}. The defaults for the other options are appropriate for this tour but could be adjusted for other tours.
 	\item Close the \textit{Scene Options} dialog box.
 	\item Click \fmtButton{Themes} to explore the themes available for tours. The first theme, which is default, is appropriate for this tour, but it is easy to apply other themes.
 	\item Click \fmtButton{Map Labels} to turn on the labels. While only the largest cities are named, the labels help to identify Phoenix and Tucson.
@@ -441,10 +441,10 @@ As a second example of a \textit{$ 3 $D Map}, the states' \textit{Gross Domestic
 	\item Open the \fmtWorksheet{GDP} worksheet in \fmtWorksheet{CH8-Maps}.
 	\item Click in \fmtLoc{A1} to activate that cell.
 	\item Click \fmtButton{Insert $ \Rightarrow $ Tours $ \Rightarrow $ $ 3 $D Map}.
-	\item The \textit{Population} tour is listed and could be edited, but click \fmtButton{New Tour} to map the GDP data.
+	\item The \textit{Population} tour is listed and could be edited but click \fmtButton{New Tour} to map the GDP data.
 	\item If necessary, activate the \textit{Tour Editor}, \textit{Layer Pane}, and \textit{Field List} by clicking those buttons in the ribbon.
 	\item If Excel did not automatically place the \textit{State} data field in the \fmtButton{Location} setting, then click and drag \textit{State} in the \textit{GDP Field List} to the \fmtButton{Location} setting. 
-	\item Click the down arrow to the right of \textit{State} in the \fmtButton{Location} setting and select \fmtButton{State/Province} in the drop down list.
+	\item Click the down arrow to the right of \textit{State} in the \fmtButton{Location} setting and select \fmtButton{State/Province} in the drop-down list.
 	\item Click and drag \textit{GDP2015} in the \textit{GDP Field List} to the \fmtButton{Height} setting.
 	\item Click the down-arrow to the right of \textit{GDP2015 (Sum)} and select \fmtButton{Maximum}.
 	\item Click and drag \textit{Sector} in the \textit{GDP Field List} to the \fmtButton{Category} setting.
@@ -453,10 +453,10 @@ As a second example of a \textit{$ 3 $D Map}, the states' \textit{Gross Domestic
 	\item Excel displays all $ 15 $ sectors for each state, but that is too many to be useful. Click the triangle arrow beside \fmtButton{Filters} to open that setting then click \fmtButton{Add Filter}.
 	\item Select \fmtButton{Sector} from the filters list.
 	\item In the \textit{Sector} filter, check \fmtButton{Agriculture, forestry, fishing, and hunting}; \fmtButton{Construction}; \fmtButton{Manufacturing}; and \fmtButton{Mining}.
-	\item Click \fmtButton{Flat Map} and then adjust the map to fit on the screen. Remember that Alaska and Hawaii need to be visible on the map. Also, experiment with the four arrow and plus/minus buttons to adjust the display in order to get the best view of the columns.
-	\item Move and resize the legend so it displays all four sectors without a lot of wasted space and also it does not cover Hawaii.
+	\item Click \fmtButton{Flat Map} and then adjust the map to fit on the screen. Remember that Alaska and Hawaii need to be visible on the map. Also, experiment with the four arrow and plus/minus buttons to adjust the display to get the best view of the columns.
+	\item Move and resize the legend so it displays all four sectors without a lot of wasted space and it does not cover Hawaii.
 	\item The colors used for the four sectors are difficult to differentiate. Click the triangle arrow beside \fmtButton{Layer Options} to open that setting. In the \textit{Color} section, select each of the sectors and choose a color that makes it easy to differentiate from other sectors.
-	\item Also in the \textit{Layer Options}, adjust the thickness of the columns to about $ 200\% $.
+	\item Also, in the \textit{Layer Options}, adjust the thickness of the columns to about $ 200\% $.
 	\item Click \textit{Tour 1} at the top of the \textit{Tour Editor}. Enter \fmtTyping{GDP} as the name of the tour. 
 	\item Click the \fmtButton{Scene Options} button on the ribbon. Change the name of the scene to \fmtTyping{Industry}. In the Effects section, select a transition of $ 3 $ seconds, \textit{Fly Over} as the effect, and adjust the \textit{Effect Distance} slider to about $ 75\% $ to the right.
 	\item Close the \textit{Scene Options} dialog box.
@@ -475,17 +475,19 @@ As a second example of a \textit{$ 3 $D Map}, the states' \textit{Gross Domestic
 	
 	\item Play the tour to see what it looks like. The map size and orientation (using the arrow buttons on the map), along with the locations for the legend and text box can be adjusted for the best possible display.
 	
-	\item Add a second scene for this tour. Click the \fmtButton{New Scene} drow-down arrow and select \fmtButton{Copy Industry}. Excel will create a copy of the \textit{Industry} scene so only a few changes need to be made to continue the tour.
+	\item Add a second scene for this tour. Click the \fmtButton{New Scene} drop-down arrow and select \fmtButton{Copy Industry}. Excel will create a copy of the \textit{Industry} scene so only a few changes need to be made to continue the tour.
 	\item Click the \fmtButton{Scene Options} button on the ribbon. Change the name of the scene to \fmtTyping{Service} and the \textit{Effect} to \fmtButton{Circle}. Close the \textit{Scene Options} dialog.
 	\item While the \textit{Service} scene is active, open the \fmtButton{Filters} setting and uncheck everything, then check \fmtButton{Education services, health care, and social assistance}; \fmtButton{Finance, insurance, real estate, rental, and leasing}; \fmtButton{Information}; and \fmtButton{Other services, except government}.
 	\item Click the triangle arrow beside \fmtButton{Layer Options} to open that setting. In the \textit{Color} section, select each of the sectors and choose a color that makes it easy to differentiate from other sectors.
 	\item Double-click the text box and change the title to \fmtTyping{Service} and the description to \fmtTyping{GDP for four service sectors: Education, Finance, Information, and Other}.
+	\item Click \fmtButton{OK}.
 	
 	\item Add a final scene for this tour. Click the \fmtButton{New Scene} drop-down arrow and select \fmtButton{Copy Service}. Excel will create a copy of the \textit{Service} scene so only a few changes need to be made to continue the tour.
 	\item Click the \fmtButton{Scene Options} button on the ribbon. Change the name of the scene to \fmtTyping{Retail} and the \textit{Effect} to \fmtButton{Push In}. Close the \textit{Scene Options} dialog box.
 	\item While the \textit{Retail} scene is active, open the \fmtButton{Filters} setting and uncheck everything, then check \fmtButton{Professional and business services}; \fmtButton{Retail trade}; and \fmtButton{Transportation and warehousing}.
 	\item Click the triangle arrow beside \fmtButton{Layer Options} to open that setting. In the \textit{Color} section, select each of the sectors and choose a color that makes it easy to differentiate from other sectors.
 	\item Double-click the text box and change the title to \fmtTyping{Retail} and the description to \fmtTyping{GDP for three retail sectors: Professional Services, Retail Trade, and Transportation and Warehousing.}
+	\item Click \fmtButton{OK}.
 	
 	\item Click \fmtButton{Tour Editor}, \fmtButton{Layer Pane}, and \fmtButton{Field List} to turn off those dialog boxes. These can always be turned back on if desired.
 	\item Play the tour to see the completed \textit{$ 3 $D Maps Tour}.
@@ -494,7 +496,7 @@ As a second example of a \textit{$ 3 $D Map}, the states' \textit{Gross Domestic
 	
 \end{enumerate}
 
-The two maps created in this lesson are simple but demonstrate the two most powerful \textit{$ 3 $D Maps} concepts: $ 1 $) Using a time line to focus on a change in data over a defined term, and $ 2 $) building a tour by combining two or more scenes. Excel's \textit{$ 3 $D Map} is a powerful decision-support tool and any time spent mastering it is worthwhile.
+The two maps created in this lesson are simple but demonstrate the two most powerful \textit{$ 3 $D Maps} concepts: $ 1 $) Using a timeline to focus on a change in data over a defined term, and $ 2 $) building a tour by combining two or more scenes. Excel's \textit{$ 3 $D Map} is a powerful decision-support tool and any time spent mastering it is worthwhile.
 
 \begin{center}
 	\begin{tkwbox}{Key Take-Aways}
@@ -555,7 +557,7 @@ As an example of a one-variable data table, imagine that the owner of a small th
 	\end{itemize}
 	
 	\item Adjust the width of \fmtLoc{Column A} so the labels fit in the column.
-	\item Name cells \fmtLoc{B1:B5}. Do this by right-clicking each cell and select \fmtButton{Define Name} from the drop-down menu. Use the default names Excel suggests.
+	\item Name cells \fmtLoc{B1:B5}. Do this by clicking each cell then click \fmtButton{Formulas $ \Rightarrow $ Defined Names $ \Rightarrow $ Define Name}. Use the default names Excel suggests.
 
 	\begin{itemize}
 		\item Cell \fmtLoc{B1}: \fmtTyping{Ticket\_Sales\_Last\_Season}
@@ -606,7 +608,7 @@ As an example of a one-variable data table, imagine that the owner of a small th
 	\item In cell \fmtLoc{E3}, enter \fmtTyping{Revenue}.
 	\item Leave cell \fmtLoc{D4} blank.
 	\item In cells \fmtLoc{D5:D14}, enter \fmtTyping{$ 0.005 $}, \fmtTyping{$ 0.01 $}, \fmtTyping{$ 0.015 $}, \fmtTyping{$ 0.02 $}, \fmtTyping{$ 0.025 $}, \fmtTyping{$ 0.03 $}, \fmtTyping{$ 0.035 $}, \fmtTyping{$ 0.04 $}, \fmtTyping{$ 0.045 $} and \fmtTyping{$ 0.05 $}. \textit{Note}: autofill will help with this task.
-	\item Format \fmtLoc{Column D} as percents and increase the decimal places to two. When done, cell \fmtLoc{D5} should read $ 0.50 $\%.
+	\item Format \fmtLoc{Column D} as percent's and increase the decimal places to two. When done, cell \fmtLoc{D5} should read $ 0.50 $\%.
 	\item In cell \fmtLoc{E4}, enter \fmtTyping{=Revenue\_This\_Season}. This will ``seed'' the revenue formula used in cell \textit{B5} into the data table.
 \end{itemize}
 
@@ -650,9 +652,9 @@ The data table displays the projected revenue for each of the growth rates in \f
 
 \subsubsection{Two-Variable Data Table}
 
-A mortgage is one of the most common loans. A mortgage for a home is a huge investment and borrowers must think carefully about the size of the monthly payment compared to their disposable income. A two-variable data table is very helpful in this type of decision.\footnote{See Chapter \ref{ch02:computations}, \nameref{ch02:computations}, page \pageref{ch02:computations} for more information about computing loans like mortgages.}
+A mortgage is one of the most common loans. A mortgage for a home is a huge investment and borrowers must think carefully about the size of the monthly payment compared to their disposable income. A two-variable data table is helpful in this type of decision.\footnote{See Chapter \ref{ch02:computations}, \nameref{ch02:computations}, page \pageref{ch02:computations} for more information about computing loans like mortgages.}
 
-Mortgages are commonly written for $ 10 $ to $ 30 $ year terms and the interest rate can vary widely, depending on many factors. For this example, assume the interest rate is between $ 5\% $ and $ 8.5\% $.
+Mortgages are commonly written for $ 10 $- to $ 30 $-year terms and the interest rate can vary widely, depending on many factors. For this example, assume the interest rate is between $ 5\% $ and $ 8.5\% $.
 
 \begin{enumerate}
 	\item Open a new worksheet in the \fmtWorksheet{CH8-Data Table} workbook.
@@ -667,19 +669,28 @@ Mortgages are commonly written for $ 10 $ to $ 30 $ year terms and the interest 
 	\end{itemize}
 
 	\item Adjust the width of \fmtLoc{Column A} so the labels fit in the column.
+	\item Name cells \fmtLoc{B1:B4}. Do this by clicking each cell then click \fmtButton{Formulas $ \Rightarrow $ Defined Names $ \Rightarrow $ Define Name}. Use the default names Excel suggests.
+	
+	\begin{itemize}
+		\item Cell \fmtLoc{B1}: \fmtTyping{Loan\_Amount}
+		\item Cell \fmtLoc{B2}: \fmtTyping{Term\_In\_Years}
+		\item Cell \fmtLoc{B3}: \fmtTyping{Interest\_Rate}
+		\item Cell \fmtLoc{B4}: \fmtTyping{Payment}
+	\end{itemize}
+	
 	\item To start the data table, enter these values in \fmtLoc{Column B}.
 	
 	\begin{itemize}
 		\item In cell \fmtLoc{B1} enter \fmtTyping{100000}. This is the amount being borrowed.
 		\item In cell \fmtLoc{B2} enter \fmtTyping{10}. This is the number of years to pay off the loan.
 		\item In cell \fmtLoc{B3} enter \fmtTyping{0.05}. This is the interest rate being charged for the loan. \textit{Note}: the data table may be easier to read if cell \fmtLoc{B3} is formatted as \textit{percent} rather than \textit{general}. If the format is changed, be certain that it reads $ 5\% $.
-		\item In cell \fmtLoc{B4}, enter \fmtTyping{=PMT(B3/12,B2*12,B1)}. Given the information in \fmtLoc{B1:B3}, Excel calculates a payment of $ \$1,060.66 $ per month. This is a negative amount since the payment is going out of the borrower's savings.
+		\item In cell \fmtLoc{B4}, enter \fmtTyping{=PMT(Interest\_Rate/12,Term\_in\_Years*12,Loan\_Amount)}. Given the information in \fmtLoc{B1:B3}, Excel calculates a payment of $ \$1,060.66 $ per month. This is a negative amount since the payment is going out of the borrower's savings.
 	\end{itemize}
 
 	\item Next, set up the data table area.
-	\item In cell \fmtLoc{D4}, enter \fmtTyping{=B4}. This will ``seed'' the \fmtButton{PMT} formula into the data table.
+	\item In cell \fmtLoc{D4}, enter \fmtTyping{=Payment}. This will ``seed'' the \fmtButton{PMT} formula into the data table.
 	\item In cells \fmtLoc{D5:D12}, enter \fmtTyping{0.05}, \fmtTyping{0.055}, \fmtTyping{0.06}, \fmtTyping{0.065}, \fmtTyping{0.07}, \fmtTyping{0.075}, \fmtTyping{0.08}, and \fmtTyping{0.085}.
-	\item Format \fmtLoc{D5:D12} as percents with two decimal places.
+	\item Format \fmtLoc{D5:D12} as percent with two decimal places.
 	\item In cells \fmtLoc{E4:I4}, enter \fmtTyping{10}, \fmtTyping{15}, \fmtTyping{20}, \fmtTyping{25}, and \fmtTyping{30}.
 	\item Select \fmtLoc{D4:I12} to contain the data table.
 	\item Click \fmtButton{Data $ \Rightarrow $ Forecast $ \Rightarrow $ What-If Analysis $ \Rightarrow $ Data Table}.
@@ -741,7 +752,7 @@ This workbook is a simple household budget for the Williams family. There are tw
 		\item \textbf{Changing Cells}: \fmtTyping{\$B\$4,\$B\$5,\$B\$9:\$B\$20}. These are the cells that the user can change for each scenario.
 		\item \textbf{Comment}: \fmtTyping{Baseline Budget}. This is a brief description of the purpose for this scenario.
 		\item \textbf{Prevent Changes}: Checked. This prevents the user from making changes to the Changing Cells other than with the scenario manager.
-		\item \textbf{Hide}: Unchecked. This hides all of the changing cells.
+		\item \textbf{Hide}: Unchecked. This hides all the changing cells.
 	\end{itemize}
 
 \end{enumerate}
@@ -769,7 +780,7 @@ This workbook is a simple household budget for the Williams family. There are tw
 
 \begin{enumerate}[resume]	
 	
-	\item The \textit{Scenario Manager} will pop up. It now indicates that there is one scenario named \textit{Current}. This scenario can be deleted or edited if desired, but click \fmtButton{Add} to create a new scenario.
+	\item The \textit{Scenario Manager} will pop up. It now indicates that there is one scenario named \textit{Current}. This scenario can be deleted or edited if desired but click \fmtButton{Add} to create a new scenario.
 	
 \end{enumerate}
 
@@ -832,8 +843,8 @@ This workbook is a simple household budget for the Williams family. There are tw
 	\item To reset the budget back to its baseline, select \textit{Current} and click \fmtButton{Show} in the \textit{Scenario Manager} box.
 	\item Finally, Morgan and Phoenix want to consider purchasing a new house. Click \fmtButton{Add} in the \textit{Scenario Manager} box to create a new scenario.
 	\item Name the new scenario \fmtTyping{House} and enter \fmtTyping{Possible new house} as a comment. Accept all other default values for this scenario.
-	\item Even though they will not have rent, they will have a mortgage payment. For this worksheet, enter 1250 as rent to cover the cost of a mortgage payment. Enter 150 for electricty, 75 for water, 350 for insurance, 250 for food, 75 for clothes, 50 for entertainment, and 100 for miscellaneous.
-	\item At this point, there are four scenarios and each can be viewed by clicking its name and \fmtButton{Show} in the \textit{Scenario Manager} box. 
+	\item Even though they will not have rent, they will have a mortgage payment. For this worksheet, enter 1250 as rent to cover the cost of a mortgage payment. Enter 150 for electricity, 75 for water, 350 for insurance, 250 for food, 75 for clothes, 50 for entertainment, and 100 for miscellaneous.
+	\item At this point, there are four scenarios, and each can be viewed by clicking its name and \fmtButton{Show} in the \textit{Scenario Manager} box. 
 	
 \end{enumerate}
 
@@ -1008,14 +1019,14 @@ Notice that there is a new \textit{Solver} button at \textit{Data $ \Rightarrow 
 	\item To set up the solver, click \fmtButton{Data $ \Rightarrow $ Analyze $ \Rightarrow $ Solver}.
 	\item In the \textit{Set Objective} box, click the selector button and then click cell \fmtLoc{B12} to select it. This sets the \textit{Solver} to solve for the total cost of the coaches. (Note: since cell \fmtLoc{B12} has a name, the \textit{Solver}  may display the name \textit{Ttl\_Cost} instead of \fmtLoc{B12}.)
 	\item For \textit{To}, Select the \fmtButton{Min} radio button. This sets the \textit{Solver} to look for the minimum cost for the mix of coaches it recommends.
-	\item For \textit{By Changing Variable Cells} enter \fmtTyping{\$E\$6:\$E\$9}. This tells Excel to change the number of coaches allotted in order to minimize the cost for the number of passengers to carry.
+	\item For \textit{By Changing Variable Cells} enter \fmtTyping{\$E\$6:\$E\$9}. This tells Excel to change the number of coaches allotted to minimize the cost for the number of passengers to carry.
 	\item Click \fmtButton{Add} beside the \textit{Subject to the Constraints} box to add the constraints for the \textit{Solver}.
 	\item Specify that cell \fmtLoc{E6} must be $ <= $ cell \fmtLoc{D6}. That means that the number of \textit{Deluxe} coaches allotted for the trip must be less than or equal to the number on hand.
 	\item Click \fmtButton{Add} to add another constraint.
 	\item Specify that cell \fmtLoc{E6} must be an \fmtButton{int} since it is not possible to allot a partial coach.
 	\item Click \fmtButton{OK} to return to the \textit{Solver Parameters} dialog box. 
 	\item There are now two constraints, but the cell names are used rather than the location identifiers. The first constraint requires the number of coaches allotted be less than the number on hand and the second requires only complete coaches be allotted.
-	\item Add constraints for Large, Mid-Size, and Mini coaches that are similar to those for the Deluxe coach.
+	\item Add constraints for Large, Mid-Size, and Mini coaches that are like those for the Deluxe coach.
 	\item Add a constraint that \fmtLoc{B11} must be $ >= $ \fmtLoc{B15} since all riders need to have a seat on a coach.
 	\item Check the box for ``Make Unconstrained Variables Non-Negative'' since it is not possible to have a negative number of coaches or riders.
 	 \item For \textit{Select a Solving Method}, the default is \fmtButton{GRG Nonlinear}. This is normally a good option to use.
@@ -1067,24 +1078,24 @@ After a few seconds, the Solver will calculate the mix of coaches that yields th
 
 \section{Chapter Practice}
 
-\subsubsection{Electoral College Votes}
+\subsection{Electoral College Votes}
 
-The United States Electoral College is a unique institution that is responsible for electing the President. In theory, people vote for electors in November who then meet in December to vote for the President. This exercise draws a \textit{$ 3 $D Map} of the Electoral College presidential votes since $ 1912 $.
+The United States Electoral College is a unique institution that is responsible for electing the President. In theory, people vote for electors in November who then later meet to vote for the President. This exercise draws a \textit{$ 3 $D Map} of the Electoral College presidential votes since $ 1912 $.
 
 \begin{enumerate}
-	\item Open \fmtWorksheet{PR8-Data}. This workbook contains the results of the electoral college vote\footnote{The electoral college data was found at the United States National Archives, \url{https://www.archives.gov/electoral-college}} for all US Presidential elections from $ 1912 $ until $ 2016 $. Notes: In the $ 1912 $ election, Theodore Roosevelt ran under the ``Progressive'' party but his votes are listed as ``Republican'' in this document since there was no Republican candidate that year. Alaska and Hawaii first sent delegates to the electoral college in $ 1960 $ and Washington DC in $ 1964 $.
+	\item Open \fmtWorksheet{PR8-Data}. This workbook contains the results of the electoral college vote\footnote{The electoral college data was found at the United States National Archives, \url{https://www.archives.gov/electoral-college}} for all US Presidential elections from $ 1912 $ until $ 2016 $. Notes: In the $ 1912 $ election, Theodore Roosevelt ran under the ``Progressive'' party, but his votes are listed as ``Republican'' in this document since there was no Republican candidate that year. Alaska and Hawaii first sent delegates to the electoral college in $ 1960 $ and Washington DC in $ 1964 $.
 	\item Save the workbook as \fmtWorksheet{PR8-Elections}.
 	\item Click in \fmtLoc{A1} to activate that cell.
 	\item Click \fmtButton{Insert $ \Rightarrow $ Tours $ \Rightarrow $ 3D Map}.
 	\item If Excel did not automatically place the \textit{State} data field in the \fmtButton{Location} setting, then click and drag \textit{State} in the \textit{Electoral\_College Field List} to the \fmtButton{Location} setting. 
-	\item Click the down arrow to the right of \textit{State} in the \textit{Location} setting and select \fmtButton{State/Province} in the drop down list.
+	\item Click the down arrow to the right of \textit{State} in the \textit{Location} setting and select \fmtButton{State/Province} in the drop-down list.
 	\item Click the pencil icon beside \textit{Layer 1} and change the name of this layer to \fmtTyping{Votes}.
 	\item Click and drag \textit{Votes} in the \textit{Electoral\_College Field List} to the \fmtButton{Height} setting.
 	\item Click and drag \textit{Year} in the \textit{Electoral\_College Field List} to the \fmtButton{Time} setting.
-	\item Click the down arrow to the right of \textit{Year} in the \textit{Time} setting and select \fmtButton{Year} in the drop down list.
+	\item Click the down arrow to the right of \textit{Year} in the \textit{Time} setting and select \fmtButton{Year} in the drop-down list.
 	\item Click and drag \textit{Party} in the \textit{Electoral\_College Field List} to the \fmtButton{Category} setting.
 	\item Change the visualization type to \fmtButton{Bubble}.
-	\item Click the down arrow to the right of \textit{Votes} in the \textit{Size} setting and select \fmtButton{No Aggregation} in the drop down list.
+	\item Click the down arrow to the right of \textit{Votes} in the \textit{Size} setting and select \fmtButton{No Aggregation} in the drop-down list.
 	\item Click \fmtButton{Flat Map} and then adjust the map to fit on the screen. Remember that Alaska and Hawaii need to be visible on the map. Also, experiment with the four arrow and plus/minus buttons to adjust the display.
 	\item Under Layer Options, change the color for \textit{Republican} to red and \textit{Other} to green.
 	\item Play the tour to see what it looks like.

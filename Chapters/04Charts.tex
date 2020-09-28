@@ -1,5 +1,5 @@
 %*****************************************
-\chapter{Presenting Data With Charts}\label{ch04:charts}
+\chapter{Presenting Data with Charts}\label{ch04:charts}
 %*****************************************
 
 One of the most important things to consider when using charts in Excel is that they are intended to be used for communicating an idea to an audience, whether that audience is reading a written report or listening to a presentation. Excel charts are often imported or pasted into Word documents or PowerPoint slides, which serve the purpose of communicating ideas to an audience. Although there are no rules set in stone for using specific charts for certain data types, some chart types are designed to communicate certain messages better than others. This chapter explores numerous charts that can be used for a variety of purposes. In addition, the chapter examines formatting charts and using those charts in Word and PowerPoint documents.
@@ -26,7 +26,7 @@ One of the most important things to consider when using charts in Excel is that 
 	\end{objbox}
 \end{center}
 
-This section reviews the most commonly used Excel chart types. To demonstrate the variety of chart types available in Excel, it is necessary to use a variety of data sets. This is necessary not only to demonstrate the construction of charts but also to explain how to choose the right type of chart given the data and idea being communicated.
+This section reviews the most used Excel chart types. To demonstrate the variety of chart types available in Excel, it is necessary to use a variety of data sets. This is necessary not only to demonstrate the construction of charts but also to explain how to choose the right type of chart given the data and idea being communicated.
 
 Here are a few key points to consider before creating any chart in Excel.
 
@@ -36,7 +36,7 @@ Here are a few key points to consider before creating any chart in Excel.
 	\item The third key point is identifying the values that should appear on the X Axis and Y Axis. One of the ways to identify which values belong on the axes is to sketch the chart on paper first. Visualizing the chart first makes easier to select the information and then use Excel to construct an effective chart that accurately communicates the message. 
 \end{enumerate}
 
-Table \ref{04:tab01}, \textit{Key Steps Before Constructing an Excel Chart}, provides a brief summary of the preceding points.
+Table \ref{04:tab01}, \textit{Key Steps Before Constructing an Excel Chart}, provides a summary of the preceding points.
 
 \begin{table}[H]
 	\rowcolors{1}{}{tablerow} % zebra striping background
@@ -45,8 +45,8 @@ Table \ref{04:tab01}, \textit{Key Steps Before Constructing an Excel Chart}, pro
 		\begin{longtable}{L{0.75in}L{3.50in}} %Left-aligned, Max width: 4.25in
 			\textbf{Step} & \textbf{Description} \endhead
 			\hline
-			Define the message & Identify the main idea being communicated. If there is no main point or important message that can be revealed by a chart then do not create a chart.\\
-			Identify the data needed & Once there is a clear message, identify the data on a worksheet that is needed to construct a chart. In some cases, formulas may be needed to better define the data or some data items may need to be consolidated into broader categories.\\
+			Define the message & Identify the main idea being communicated. If there is no main point or important message that can be revealed by a chart, then do not create a chart.\\
+			Identify the data needed & Once there is a clear message, identify the data on a worksheet that is needed to construct a chart. In some cases, formulas may be needed to better define the data, or some data items may need to be consolidated into broader categories.\\
 			Select a chart type & The type of chart selected will depend on the message being communicated and the data being presented.\\
 			Identify the values for the X Axis and Y Axis & After selecting a chart type, drawing a sketch is often helpful in identifying which values should be on the X Axis and Y Axis. In Excel, the axes are: the X, or ``category,'' axis, which is the horizontal axis, where the labels are found; and the Y, or ``value,'' axis, which is the vertical axis, where the numbers are found.\\
 			\rowcolor{captionwhite}
@@ -58,9 +58,9 @@ Table \ref{04:tab01}, \textit{Key Steps Before Constructing an Excel Chart}, pro
 
 \subsection{Time Series Trend: Line Chart 1}
 
-Figure \ref{04:fig01} shows part of the data that will be used to create two line charts. The first will show the trend of the NASDAQ stock index\footnote{The NASDAQ data was found at \url{http://www.investopedia.com/terms/n/nasdaq.asp}}.
+Figure \ref{04:fig01} shows part of the data that will be used to create two different line charts. The first will show the trend of the NASDAQ stock index\footnote{The NASDAQ data was found at \url{http://www.investopedia.com/terms/n/nasdaq.asp}}.
 
-This chart will be used to communicate a simple message: to show how the index has performed over a two-year period. This chart can be used in a presentation to show whether stock prices have been increasing, decreasing, or remaining constant over the designated period of time.
+This chart will be used to communicate a simple message: to show how the index has performed over a two-year period. This chart can be used in a presentation to show whether stock prices have been increasing, decreasing, or remaining constant over the designated period.
 
 \begin{center}
 	\begin{infobox}{Integrity Check}
@@ -78,12 +78,12 @@ This chart will be used to communicate a simple message: to show how the index h
 	\label{04:fig01}
 \end{figure}
 
-Before creating the line chart, it is important to identify why it is an appropriate chart type given the message being communicated and the data available. When presenting the trend for any data over a designated period of time, the most commonly used chart types are the line chart and the column chart. The line chart constructed in this exercise will show the Month number on the X Axis and the volume of sales for the NASDAQ on the Y Axis. Column charts will be used in later projects.
+Before creating the line chart, it is important to identify why it is an appropriate chart type given the message being communicated and the data available. When presenting the trend for any data over a designated period, the most used chart types are the line chart and the column chart. The line chart constructed in this exercise will show the Month number on the X Axis and the volume of sales for the NASDAQ on the Y Axis. Column charts will be used in later projects.
 
 \begin{enumerate}
 	\item Open data file \fmtWorksheet{CH4-Data} and save it as \fmtWorksheet{CH4-Charting}.
 	\item Open the \fmtWorksheet{Stock Trend} worksheet.
-	\item Select the range \fmtLoc{B4:C28}. (Notice that labels in the \fmtLoc{B4:C4} and all of the labels in \fmtLoc{B5:B28} are selected. Observe where they show up in the completed chart.)
+	\item Select the range \fmtLoc{B4:C28}. (Notice that labels in the \fmtLoc{B4:C4} and all the labels in \fmtLoc{B5:B28} are selected. Observe where they show up in the completed chart.)
 	\item Click \fmtButton{Insert $ \Rightarrow $ Charts $ \Rightarrow $ Line Chart Down Arrow $ \Rightarrow $ 2D Line Chart} (this is the first option from the \textit{Line Chart} list, see Figure \ref{04:fig02}).
 \end{enumerate}
 
@@ -222,11 +222,11 @@ A second line chart will be created using the data in the \textit{Stock Trend} w
 
 Before creating the chart to compare the \textit{NASDAQ Volume} and \textit{Closing Price}, it is important to review the data in the range $ B4 $:$ D28 $ on the \textit{Stock Trend} worksheet. Even a brief examination reveals that the \textit{NASDAQ Volume} and \textit{Closing Price} cannot be used directly on the same chart because the values are not comparable. That is, the \textit{NASDAQ Volume} is in a range of $ 684,000 $ to $ 3,711,000 $ but the \textit{Closing Price} is in a range of $ \$45.00 $ to $ \$115.00 $. If these values are used without scaling, the \textit{Closing Price} would not be visible at all when compared to the \textit{NASDAQ Volume}.
 
-The process to construct the second line chart will be similar to the first one. The X Axis will be the month numbers in $ B4 $:$ D28 $.
+The process to construct the second line chart will be like the first one. The X Axis will be the month numbers in $ B4 $:$ D28 $.
 
 \begin{enumerate}
 	\item Select the range \fmtLoc{B4:D28} on the \fmtWorksheet{Stock Trend} worksheet.
-	\item Click \fmtButton{Insert $ \Rightarrow $ Charts $ \Rightarrow $ Line Chart Down Arrow $ \Rightarrow $ 2D Line Chart} (this is the first option from the \textit{Line Chart} list.
+	\item Click \fmtButton{Insert $ \Rightarrow $ Charts $ \Rightarrow $ Line Chart Down Arrow $ \Rightarrow $ 2D Line Chart} (this is the first option from the \textit{Line Chart} list).
 \end{enumerate}
 
 Figure \ref{04:fig07} shows the appearance of the line chart comparing the \textit{NASDAQ Volume} to the \textit{Closing Price} before it is moved and resized. Notice that the red line for \textit{Closing Price} (labeled as \textit{Close} in the legend) appears as a straight line at the bottom of the chart. Also, the chart is so large that it is covering the data and the title needs to be changed.
@@ -239,7 +239,7 @@ Figure \ref{04:fig07} shows the appearance of the line chart comparing the \text
 \end{figure}
 
 \begin{enumerate}
-	\item Move the chart so the upper left corner is in the middle of cell \fmtLoc{M3}.
+	\item Move the chart, so the upper left corner is in the middle of cell \fmtLoc{M3}.
 	\item Resize the chart using the values in Table \ref{04:tab02}. For each side of the chart, press the \fmtKeystroke{Alt} key while dragging the resize handle on the chart.
 \end{enumerate}	
 	
@@ -262,7 +262,7 @@ Figure \ref{04:fig07} shows the appearance of the line chart comparing the \text
 \end{table}
 
 \begin{enumerate}[resume]
-	\item Edit the \textit{Chart Title} text box and replace the contents with: \fmtTyping{24 Month Trend Comparison}.
+	\item Edit the \textit{Chart Title} text box and replace the contents with \fmtTyping{24 Month Trend Comparison}.
 \end{enumerate}
 
 The \textit{Closing Price} data is just a flat red line at the very bottom of the chart and cannot be seen very well. That is because the scale for this chart goes from $ 0 $ to $ 4,000,000 $ so the \textit{Closing Price} data is compressed at the bottom of the scale. Complete the following steps to add a secondary axis to correct this problem.
@@ -280,7 +280,7 @@ The \textit{Closing Price} data is just a flat red line at the very bottom of th
 	\label{04:fig08}
 \end{figure}
 
-The chart is better; but, it would be nice to be able to see that the values on the right represent prices rather than just numbers.
+The chart is better; but it would be nice to be able to see that the values on the right represent prices rather than just numbers.
 
 \begin{enumerate}
 	\item Right click the Secondary Vertical Axis. (The vertical axis on the right that goes from $ 0 $ to $ 140 $.)
@@ -338,7 +338,7 @@ Excel includes an \textit{Instant Chart} capability that makes charts easy to ad
 
 \subsection{Frequency Distribution: Column Chart 1}
 
-A column chart is commonly used to show trends over time, as long as the data is limited to no more than twenty points. A common use for column charts is a frequency distribution, which shows the number of occurrences by established categories. For example, a common frequency distribution used in most academic institutions is a grade distribution. A grade distribution shows the number of students that achieve each level of a typical grading scale (A, A-, B+, B, etc.). The \textit{Grade Distribution} worksheet contains final grades for several hypothetical Excel classes. To show the grade frequency distribution for all of the Excel classes in that year, the numbers of students appear on the Y Axis and the grade categories appear on the X Axis. The number of students for this chart is in \textit{Column C}. The labels for grades are in \textit{Column A}. The following steps explain how to create this chart.
+A column chart is used to show trends over time if the data is limited to no more than twenty points. A common use for column charts is a frequency distribution, which shows the number of occurrences by established categories. For example, a common frequency distribution used in most academic institutions is a grade distribution. A grade distribution shows the number of students that achieve each level of a typical grading scale (A, A-, B+, B, etc.). The \textit{Grade Distribution} worksheet contains final grades for several hypothetical Excel classes. To show the grade frequency distribution for all the Excel classes in that year, the numbers of students appear on the Y Axis and the grade categories appear on the X Axis. The number of students for this chart is in \textit{Column C}. The labels for grades are in \textit{Column A}. The following steps explain how to create this chart.
 
 \begin{enumerate}
 	\item Click the \fmtWorksheet{Grade Distribution} worksheet to activate it.
@@ -354,7 +354,7 @@ A column chart is commonly used to show trends over time, as long as the data is
 		\label{04:fig13}
 	\end{figure}
 		
-	\item Click and drag the chart so the upper left corner is in the middle of cell \fmtLoc{H2}.
+	\item Click and drag the chart, so the upper left corner is in the middle of cell \fmtLoc{H2}.
 	\item Resize the chart using the values in Table \ref{04:tab03}. For each side of the chart, press the \fmtKeystroke{Alt} key while dragging the resize handle on the chart.
 \end{enumerate}	
 
@@ -417,7 +417,7 @@ The charts that have been created up to this point have been added to, or embedd
 		\textbf{Column Chart vs. Bar Chart}
 		\\
 		\\
-		When using charts to show frequency distributions, the difference between a column chart (where the bars are vertical) and a bar chart (where the bars are horizontal) is really a matter of preference. Both are effective in showing frequency distributions. However, to show a trend over a period of time, a column chart is preferred because a period of time is typically shown on a horizontal axis, with the oldest date on the left edge and the newest date on the right edge.
+		When using charts to show frequency distributions, the difference between a column chart (where the bars are vertical) and a bar chart (where the bars are horizontal) is really a matter of preference. Both are effective in showing frequency distributions. However, to show a trend over a period of time, a column chart is preferred because a period is typically shown on a horizontal axis, with the oldest date on the left edge and the newest date on the right edge.
 	\end{infobox}
 \end{center}
 
@@ -460,7 +460,7 @@ Next, create a column chart that uses the grade categories in the range $ A4 $:$
 \begin{enumerate}
 	\item Select \fmtLoc{A3:A8} then hold down the \fmtKeystroke{Ctrl} key and select \fmtLoc{E3:F8}.
 	\item Click \fmtButton{Insert $ \Rightarrow $ Charts $ \Rightarrow $ Column}. Select the first option from the drop-down list of chart formats, which is the \textit{2-D Clustered Column}.
-	\item Click and drag the chart so the upper left corner is in the middle of cell \fmtLoc{H2}.
+	\item Click and drag the chart, so the upper left corner is in the middle of cell \fmtLoc{H2}.
 	\item Resize the chart using the values in Table \ref{04:tab04}. For each side of the chart, press the \fmtKeystroke{Alt} key while dragging the resize handle on the chart.
 \end{enumerate}	
 
@@ -532,14 +532,14 @@ A pie chart is used to show a percent of total for a data set at a specific poin
 	\item To make the ``slices'' stand out better, choose to ``explode'' the pie chart using the following steps.
 
 	\begin{itemize}
-		\item Click and hold the mouse button down in any of the slices of the pie. Note that there are selection handles on all of the pie slices.
+		\item Click and hold the mouse button down in any of the slices of the pie. Note that there are selection handles on all the pie slices.
 		\item Without letting go of the mouse button, drag one of the slices away from the center.
-		\item All of the slices ``explode'' out from the center.
-		\item \textit{Note}: if the mouse button is released and clicked a second time before dragging a ``slice'' of the pie then only that one slice will move. This is another option for displaying the data. If this happens accidentally, use the \textit{Undo} button and then try again.
+		\item All the slices ``explode'' out from the center.
+		\item \textit{Note}: if the mouse button is released and clicked a second time before dragging a ``slice'' of the pie then only that one slice will move. This is another option for displaying the data. If this happens accidentally, use the \textit{Undo} button, and then try again.
 	\end{itemize}
 
-	\item Click off the slices and into the white canvas to deselect the pie and select the entire chart.
-	\item Click and drag the pie chart so the upper left corner is in the middle of cell \fmtLoc{E2}.
+	\item Click off the slices and then click the white canvas to deselect the pie and select the entire chart.
+	\item Click and drag the pie chart, so the upper left corner is in the middle of cell \fmtLoc{E2}.
 	\item Resize the chart using the values in Table \ref{04:tab05}. For each side of the chart, press the \fmtKeystroke{Alt} key while dragging the resize handle on the chart.
 \end{enumerate}	
 
@@ -571,7 +571,7 @@ A pie chart is used to show a percent of total for a data set at a specific poin
 
 \begin{enumerate}[resume]
 	\item Click the chart legend once and press the \fmtKeystroke{Delete} key. A pie chart typically shows labels next to each slice. Therefore, the legend is not needed.
-	\item Right click any of the slices in the pie chart, and select \fmtButton{Add Data Labels} from the list. This will add the values for each of the slices in the pie.
+	\item Right click any of the slices in the pie chart and select \fmtButton{Add Data Labels} from the list. This will add the values for each of the slices in the pie.
 	\item Now, right click one of the numbers that was just added to the pie chart and select \fmtButton{Format Data Labels} from the list. This will open the \textit{Format Data Labels} pane on the right.
 	\item Check the boxes for \fmtButton{Category Name} and \fmtButton{Percentage} then uncheck the \fmtButton{Value} box in the \textit{Label Options} section in the \textit{Format Data Labels} pane (see Figure \ref{04:fig22}).
 	\item Click the \fmtButton{Close} button at the top of the \textit{Format Data Labels} pane.
@@ -586,7 +586,7 @@ A pie chart is used to show a percent of total for a data set at a specific poin
 	\label{04:fig22}
 \end{figure}
 
-Although there are no specific limits for the number of categories that can be used on a pie chart, a good rule of thumb is ten or less. As the number of  categories exceeds ten it becomes more difficult to identify key categories that make up the majority of the total. Figure \ref{04:fig23} shows the completed pie chart.
+Although there are no specific limits for the number of categories that can be used on a pie chart, a good rule of thumb is ten or less. As the number of  categories exceeds ten it becomes more difficult to identify key categories that make up most of the total. Figure \ref{04:fig23} shows the completed pie chart.
 
 \begin{figure}[H]
 	\centering
@@ -614,7 +614,7 @@ Although there are no specific limits for the number of categories that can be u
 
 \subsection{Percent of Total: Stacked Column Chart}
 
-The last chart type demonstrated in this chapter is the stacked column chart. A stacked column chart is used  to show a percent of a total. For example, the data on the \textit{Enrollment Statistics} worksheet shows student enrollment by race for several colleges. Suppose that it was necessary to show all of the data for all colleges.
+The last chart type demonstrated in this chapter is the stacked column chart. A stacked column chart is used  to show a percent of a total. For example, the data on the \textit{Enrollment Statistics} worksheet shows student enrollment by race for several colleges. Suppose that it was necessary to show all the data for all colleges.
 
 \begin{enumerate}
 	\item Click the \fmtWorksheet{Enrollment Statistics} worksheet to activate it if it is not already activated.
@@ -638,7 +638,7 @@ Figure \ref{04:fig25} shows the column chart that is created after selecting the
 	\label{04:fig25}
 \end{figure}
 
-The reason that Excel organized the data this way is that there are more Race/ethnicity categories (data in \textit{Column A}) than there are colleges (data in \textit{Row }$ 2 $). This is not a bad guess on Excel's part; but, this is not what is wanted in this case. The next steps explain how to correct this problem and complete the chart.
+The reason that Excel organized the data this way is that there are more Race/ethnicity categories (data in \textit{Column A}) than there are colleges (data in \textit{Row }$ 2 $). This is not a bad guess on Excel's part; but this is not what is wanted in this case. The next steps explain how to correct this problem and complete the chart.
 
 \begin{enumerate}
 	\item Click \fmtButton{Chart Tools Design $ \Rightarrow $ Data $ \Rightarrow $ Switch Row/Column}. This reverses the legend and current \textit{X-Y Axis} categories. (\fmtNewExcel{Excel 365} named the tab \textit{Chart Design}.)
@@ -652,7 +652,7 @@ The reason that Excel organized the data this way is that there are more Race/et
 \end{figure}
 
 \begin{enumerate}[resume]
-	\item Click and drag the chart so the upper left corner is in the middle of cell \fmtLoc{E12}.
+	\item Click and drag the chart, so the upper left corner is in the middle of cell \fmtLoc{E12}.
 	\item Resize the chart using the values in Table \ref{04:tab06}. For each side of the chart, press the \fmtKeystroke{Alt} key while dragging the resize handle on the chart.
 \end{enumerate}	
 
@@ -718,17 +718,17 @@ Figure \ref{04:fig27} shows the final stacked column chart. Notice the similarit
 			\setlength{\parsep}{0pt}
 			
 			\item Identifying the message to be conveyed to an audience is a critical first step in creating an Excel chart.
-			\item Both a column chart and a line chart can be used to present a trend over a period of time. However, a line chart is preferred over a column chart when presenting data over long periods of time.
+			\item Both a column chart and a line chart can be used to present a trend over a period. However, a line chart is preferred over a column chart when presenting data over long periods of time.
 			\item The number of bars on a column chart should be limited to twenty bars or less.
 			\item When creating a chart to compare trends, the values for each data series must be within a reasonable range. If there is a wide variance between the values in the two data series (two times or more), the percent change should be calculated with respect to the first data point for each series.
-			\item When working with frequency distributions, the use of a column chart or a bar chart is a matter of preference. However, a column chart is preferred when working with a trend over a period of time.
+			\item When working with frequency distributions, the use of a column chart or a bar chart is a matter of preference. However, a column chart is preferred when working with a trend over a period.
 			\item A pie chart is used to present the percent of total for a data set.
 			\item A stacked column chart is used to show how a percent total changes over time.
 
 		\end{itemize}
 	\end{tkwbox}
 \end{center}
-%TODO Start Here
+
 \section{Formatting Charts}
 
 \begin{center}
@@ -853,7 +853,7 @@ Next, make some changes to the percentage numbers on the Y Axis (vertical axis).
 
 \subsection{Chart Legend and Title Formats}
 
-The next items to be formatted on the \textit{Grade Distribution Comparison} chart are the chart legend and title. Similar to the X Axis and the Y Axis, format these items by activating them and using commands in the \textit{Home} tab or the \textit{Format} pane. The following steps explain how to change these formats.
+The next items to be formatted on the \textit{Grade Distribution Comparison} chart are the chart legend and title. Like the X Axis and the Y Axis, format these items by activating them and using commands in the \textit{Home} tab or the \textit{Format} pane. The following steps explain how to change these formats.
 
 \begin{enumerate}
 	\item Right click the legend on the \textit{Grade Distribution Comparison} chart and select \fmtButton{Format Legend}.
@@ -869,9 +869,9 @@ The next items to be formatted on the \textit{Grade Distribution Comparison} cha
 	\label{04:fig31}
 \end{figure}
 
-\begin{enumerate}
+\begin{enumerate}[resume]
 	\item While the legend is still selected, change \fmtButton{Home $ \Rightarrow $ Font} to Arial, Bold, Italics, Size $ 12 $.
-	\item Click and drag the left sizing handle so the legend is just touching the horizontal grid lines of the plot area and the bottom sizing handle so the entire legend is visible (see Figure \ref{04:fig32}).
+	\item Click and drag the left sizing handle so the legend is just touching the horizontal grid lines of the plot area and the bottom sizing handle, so the entire legend is visible (see Figure \ref{04:fig32}).
 \end{enumerate}
 
 \begin{figure}[H]
@@ -881,9 +881,9 @@ The next items to be formatted on the \textit{Grade Distribution Comparison} cha
 	\label{04:fig32}
 \end{figure}
 
-\begin{enumerate}
+\begin{enumerate}[resume]
 	\item Right click on the chart title and select \fmtButton{Format Chart Title} to open the \textit{Format Chart Title} pane (see Figure \ref{04:fig33}).
-	\item Under \textit{Title Options} in the Effects group (the option in the middle) select the first \textit{outter} preset shadow. 
+	\item Under \textit{Title Options} in the Effects group (the option in the middle) select the first \textit{outer} preset shadow. 
 	\item Select \textit{Blue, Accent 1} as the shadow color.
 	\item Close the \textit{Format Chart Title} pane.
 	\item Save the \fmtWorksheet{CH4-Charting} workbook.
@@ -950,7 +950,7 @@ Titles for the X Axis and Y Axis are necessary for defining the numbers and cate
 
 \begin{enumerate}
 	\item Using \fmtButton{Home $ \Rightarrow $ Font}, change the font of the axis title to Arial, Bold, Size $ 11 $.
-	\item Click in the beginning of the Y Axis title and delete the generic title, then type \fmtTyping{Percent of Enrolled Students}.(see Figure \ref{04:fig35}).
+	\item Click in the beginning of the Y Axis title and delete the generic title, then type \fmtTyping{Percent of Enrolled Students} (see Figure \ref{04:fig35}).
 \end{enumerate}
 
 \begin{figure}[H]
@@ -999,8 +999,8 @@ Next, add the title for the X Axis.
 Adding labels to the data series of a chart is a key formatting feature. A data series is the item that is being displayed graphically on a chart. For example, the blue bars on the \textit{Grade Distribution Comparison} chart represent one data series. Labels can be added at the end of each bar to show the exact percentage the bar represents. In addition, other formatting enhancements can be added to the data series, such as changing the color of the bars or adding an effect. The following steps explain how to add these labels and formats to the chart.
 
 \begin{enumerate}
-	\item Click on any of the the red bars representing the \textit{All Excel Classes} data series on the \textit{Grade Distribution Comparison} chart in the \fmtWorksheet{Grade Distribution} worksheet. Clicking one bar automatically activates all bars in the data series. If a bar is clicked a second time, only that one bar is activated.
-	\item Right click and select \fmtButton{Format Data Series} to open up the \textit{Format Data Series} pane.
+	\item Click on any of the red bars representing the \textit{All Excel Classes} data series on the \textit{Grade Distribution Comparison} chart in the \fmtWorksheet{Grade Distribution} worksheet. Clicking one bar automatically activates all bars in the data series. If a bar is clicked a second time, only that one bar is activated.
+	\item Right click and select \fmtButton{Format Data Series} to open the \textit{Format Data Series} pane.
 	\item Click the \fmtButton{Fill and Line} (paint bucket) button to bring up the \textit{Fill and Border} group of commands.
 	\item Click the word \fmtButton{Fill} (if needed) to expand the list of Fill options.
 	\item Select \fmtButton{Pattern Fill}. Then select \textit{Dotted: }$ 30\% $ (fifth column, top row). Changing the fill pattern to a pattern makes it easier to distinguish between the data series when the chart is printed or viewed in black and white. Experiment with the fill pattern by selecting different foreground and background colors.
@@ -1016,12 +1016,12 @@ Adding labels to the data series of a chart is a key formatting feature. A data 
 
 Next, add the Data Labels at the end of the columns.
 
-\begin{enumerate}
+\begin{enumerate}[resume]
 	\item Be sure that the entire chart is selected, not just one of the data series. 
 	\item Click \fmtButton{Chart Tools Design $ \Rightarrow $ Chart Layouts $ \Rightarrow $ Add Chart Element $ \Rightarrow $ Data Labels $ \Rightarrow $ Outside End} (see Figure \ref{04:fig38}.) (\fmtNewExcel{Excel 365} named the tab \textit{Chart Design}.)
-	\item Click on one of the Data Labels. Notice that all of the data labels for that data series are selected.
+	\item Click on one of the Data Labels for the first data series. Notice that all the data labels for that data series are selected.
 	\item Using \fmtButton{Home $ \Rightarrow $ Font}, change the font to Arial, Bold, Size $ 9 $.
-	\item Click on one of the data labels for the other data series. Using \fmtButton{Home $ \Rightarrow $ Font}, change the font to Arial, Bold, Size $ 9 $.
+	\item Click on one of the data labels for the second data series. Using \fmtButton{Home $ \Rightarrow $ Font}, change the font to Arial, Bold, Size $ 9 $.
 	\item Save the \fmtWorksheet{CH4-Charting} workbook.
 \end{enumerate}
 
@@ -1078,11 +1078,11 @@ Figure \ref{04:fig39} shows the \textit{Grade Distribution Comparison} chart wit
 
 \subsection{Adding Series Lines and Annotations to a Chart}
 
-Series lines are commonly used in stacked column charts to show the change from one stack to the next. Annotations are useful for clarifying the data presented in a chart or for identifying data sources. In addition to demonstrating these skills, this section will review several of the formatting skills that were covered earlier. 
+Series lines are used in stacked column charts to show the change from one stack to the next. Annotations are useful for clarifying the data presented in a chart or for identifying data sources. In addition to demonstrating these skills, this section will review several of the formatting skills that were covered earlier. 
 
 \begin{enumerate}
 	\item Locate the \textit{Enrollment by Race} stacked column chart on the \fmtWorksheet{Enrollment Statistics} worksheet. Activate the chart by clicking anywhere inside the chart perimeter.
-	\item Click \fmtButton{Chart Tools Design $ \Rightarrow $ Chart Layouts $ \Rightarrow $ Move Chart}. (\fmtNewExcel{Excel 365} named this tab \textit{Chart Design}.) (\fmtNewExcel{Excel 365} named the tab \textit{Chart Design}.)
+	\item Click \fmtButton{Chart Tools $ \Rightarrow $ Design $ \Rightarrow $ Location $ \Rightarrow $ Move Chart}. (\fmtNewExcel{Excel 365} named this tab \textit{Chart Design}.) 
 	\item Select \textit{New sheet} and type the following in the input box: \fmtTyping{Enrollment by Race Chart}. 
 	\item Click \fmtButton{OK}. The chart will be moved to a new worksheet and that sheet will be activated.
 	\item Click anywhere on the data table (on the X Axis) to activate it. When active, the data table will have a resizing handle at each of the four corners.
@@ -1125,7 +1125,7 @@ Figure \ref{04:fig41} shows the appearance of the chart with the series lines co
 	\label{04:fig41}
 \end{figure}
 
-The chart demonstrates the percentage differences in enrollment between the community colleges. But, it would be handy to know the total enrollment at each of the colleges. To display that, add text boxes above each column. To start, make room for the text boxes.
+The chart demonstrates the percentage differences in enrollment between the community colleges. But it would be handy to know the total enrollment at each of the colleges. To display that, add text boxes above each column. To start, make room for the text boxes.
 
 \begin{enumerate}
 	\item Select the Plot Area. Place cursor on the top center handle of the Plot Area and drag down about $ 1/2 $ inch. (See Figure \ref{04:fig42}.)
@@ -1144,9 +1144,9 @@ The chart demonstrates the percentage differences in enrollment between the comm
 	\item Click \fmtButton{Insert $ \Rightarrow $ Text $ \Rightarrow $ Text Box}.
 	\item Place the mouse pointer on the left edge of the chart area approximately one-quarter inch from the top. Click and drag a rectangle approximately one and a half inches wide and one-quarter inch high. Do not worry if it is not exact, it will be moved and resized later.
 	\item Type \fmtTyping{Total Enrollment} in the text box.
-	\item Select all of the text in the text box. (The text can be selected by either dragging over it with the mouse or by clicking on the border of the text box once). 
+	\item Select all the text in the text box. (The text can be selected by either dragging over it with the mouse or by clicking on the border of the text box once). 
 	\item Click \fmtButton{Home $ \Rightarrow $ Font}. Change the font to Arial, size $ 14 $.
-	\item Resize and position the text box so it fits above the $ 100\% $ label on the Y Axis, as in \ref{04:fig43}
+	\item Resize and position the text box, so it fits above the $ 100\% $ label on the Y Axis, as in \ref{04:fig43}
 	\item Repeat the process to add and format text boxes above each column. The boxes can be copy/pasted to save time.
 	\item In each text box, type the Total Enrollment for each school:
 
@@ -1190,7 +1190,7 @@ The chart demonstrates the percentage differences in enrollment between the comm
 	\item Click the border of the callout box to select it.
 	\item Using \fmtButton{Home $ \Rightarrow $ Font}, change the font to Arial, $ 12 $pt, Bold font. 
 	\item Click \fmtButton{Home $ \Rightarrow $ Alignment $ \Rightarrow $ Center}.
-	\item Using the drag handles, resize and position the callout box so it is similar to Figure \ref{04:fig45}.
+	\item Using the drag handles, resize and position the callout box so it is like Figure \ref{04:fig45}.
 	\item Save the \fmtWorksheet{CH4-Charting} workbook.
 \end{enumerate}
 
@@ -1263,7 +1263,7 @@ The chart demonstrates the percentage differences in enrollment between the comm
 	\end{tkwbox}
 \end{center}
 
-\section{Using Charts With Microsoft Word and Microsoft Powerpoint}
+\section{Using Charts with Microsoft Word and Microsoft PowerPoint}
 
 \begin{center}
 	\begin{objbox}{Learning Objectives}
@@ -1279,7 +1279,7 @@ The chart demonstrates the percentage differences in enrollment between the comm
 	\end{objbox}
 \end{center}
 
-Charts that are created in Excel are commonly used in Microsoft Word\textsuperscript{\textregistered} documents or PowerPoint\textsuperscript{\textregistered} presentations and Excel provides options for pasting a chart's image into either. Additionally, a link can be established between Excel and Word or PowerPoint so that if the data changes in the Excel file it is automatically updated in the Word or PowerPoint files. Both methods of sharing a chart are covered in this section.
+Charts that are created in Excel are used in Microsoft Word\textsuperscript{\textregistered} documents or PowerPoint\textsuperscript{\textregistered} presentations and Excel provides options for pasting a chart's image into either. Additionally, a link can be established between Excel and Word or PowerPoint so that if the data changes in the Excel file it is automatically updated in the Word or PowerPoint files. Both methods of sharing a chart are covered in this section.
 
 \subsection{Pasting a Chart Image Into Word}
 
@@ -1295,10 +1295,10 @@ Excel charts can be valuable tools for explaining quantitative data in a written
 \begin{enumerate}
 	\item Open the Word document, \fmtWorksheet{CH4-Diversity}. (Note: the student files include both a Word document and PowerPoint presentation named Diversity. Be sure to open the Word document for this activity.) Save it as \fmtWorksheet{CH4-Diversity in Enrollment in Community Colleges}.
 	\item Click below the figure heading in the Word document that reads: \textit{Figure 1: Enrollment by Race}. The image of the stacked column chart will be placed below this heading.
-	\item If needed, open the Excel file used in this chapter,  (\fmtWorksheet{CH4-Charting}). 
+	\item If needed, open the Excel file used in this chapter,  \fmtWorksheet{CH4-Charting}. 
 	\item Click the \textit{Enrollment by Race} chart in the \fmtWorksheet{Enrollment by Race Chart} sheet to active the chart.
 	\item Click \fmtButton{Home $ \Rightarrow $ Copy Down Arrow $ \Rightarrow $ Copy as Picture}.
-	\item The \textit{Copy Picture} diaglog box will open. Select \fmtButton{OK} --- Accepting the \textit{Copy Pictures} defaults:
+	\item The \textit{Copy Picture} dialog box will open. Select \fmtButton{OK} --- Accepting the \textit{Copy Pictures} defaults:
 	
 	\begin{itemize}
 		\item As shown on Screen
@@ -1369,7 +1369,7 @@ Figure \ref{04:fig48} shows the final appearance of the \textit{Enrollment by Ra
 	\end{sklbox}
 \end{center}
 
-\subsection{Pasting a Linked Chart Image Into Powerpoint}
+\subsection{Pasting a Linked Chart Image into PowerPoint}
 
 This exercise requires two files:
 
@@ -1378,7 +1378,7 @@ This exercise requires two files:
 	\item A PowerPoint file: \textit{CH4-Diversity}
 \end{itemize}
 
-Microsoft PowerPoint is perhaps the most commonly used tool for delivering live presentations. The charts used in a live presentation are critical for efficiently delivering ideas to an audience. Similar to written documents, a wide range of presentations may require the explanation of quantitative data. This demonstration includes a PowerPoint slide that could be used in a presentation. The \textit{Enrollment by Race} chart will be pasted into this PowerPoint slide. However, instead of pasting an image, as demonstrated in the Word document above, a link will be established to the Excel file. As a result, if the chart in the Excel file is changed that change will be reflected in the PowerPoint file. The following steps explain how to link these two files.
+Microsoft PowerPoint is perhaps the most used tool for delivering live presentations. The charts used in a live presentation are critical for efficiently delivering ideas to an audience. Like written documents, a wide range of presentations may require the explanation of quantitative data. This demonstration includes a PowerPoint slide that could be used in a presentation. The \textit{Enrollment by Race} chart will be pasted into this PowerPoint slide. However, instead of pasting an image, as demonstrated in the Word document above, a link will be established to the Excel file. As a result, if the chart in the Excel file is changed that change will be reflected in the PowerPoint file. The following steps explain how to link these two files.
 
 \begin{enumerate}
 	\item Open \fmtWorksheet{CH4-Diversity.pptx} and save it as \fmtWorksheet{CH4-Diversity in Enrollment in Community Colleges}. (Note: the student files include both a PowerPoint presentation and a Word document named Diversity. Be sure to open the PowerPoint presentation for this activity.) 
@@ -1417,7 +1417,7 @@ Linking this chart caused trouble with the text boxes, so delete them.
 \begin{enumerate}
 	\item Select each text box by hovering the mouse over the outside edge of the text box until it changes into a four-headed arrow, then click.
 	\item Press the \fmtKeystroke{Delete} key. Be sure that the insertion point is \textit{NOT} blinking inside the text box. If it is, the contents of the text box will be edited instead of deleting the complete text box.
-	\item Reposition and resize the \textit{Diversity Program Result} callout box so the text is visible and the callout points to the the top of the first data item for Portland Community College.
+	\item Reposition and resize the \textit{Diversity Program Result} callout box so the text is visible and the callout points to the top of the first data item for Portland Community College.
 \end{enumerate}
 
 The benefit of adding this chart to the presentation as a link is that it will automatically update when the data in the linked spreadsheet file is changed.
@@ -1429,7 +1429,7 @@ The benefit of adding this chart to the presentation as a link is that it will a
 	\item Return to the \fmtWorksheet{Diversity in Enrollment in Community Colleges} PowerPoint file by clicking the file in the taskbar.
 	\item On Slide $ 6 $, notice that the chart was updated to reflect the change in enrollment (see Figure \ref{04:fig48}).
 	\item If the chart has not changed, be sure that the chart is selected, click \fmtButton{Chart Tools Design $ \Rightarrow $ Chart Tools $ \Rightarrow $ Refresh Data}. (\fmtNewExcel{Excel 365} named the tab \textit{Chart Design}.) The change made in the Excel workbook is now reflected on the PowerPoint slide.
-	\item If that still does not work, check to see if a ``normal'' link was created instead instead of a ``Paste'' Link. If so, delete the chart and follow the steps again from the beginning of this section.
+	\item If that still does not work, check to see if a ``normal'' link was created instead of a ``Paste'' Link. If so, delete the chart and follow the steps again from the beginning of this section.
 	\item Return the changed number to its original value. Open \fmtWorksheet{CH4-Charting Excel}.
 	\item Select the \fmtWorksheet{Enrollment Statistics} worksheet (the one with the Enrollment data). Change the value in cell \fmtLoc{D3} to $ 4751 $, the original value.
 	\item Save all files and close PowerPoint. The files will be submitted at the end of the next section.
@@ -1493,7 +1493,7 @@ Figure \ref{04:fig51} shows the appearance of the PowerPoint slide after the Exc
 		\textbf{Severed Link?}
 		\\
 		\\
-		When creating a link to an Excel chart in Word or PowerPoint, the Excel workbook must stay in its original location on the computer or network. If the workbook is moved or deleted, an error message will be generated when the link in the Word or PowerPoint file is updated. An error is also generated if the Excel workbook is saved on a network drive that the computer cannot access. These errors occur because the link to the Excel workbook has been severed. Therefore, if a USB drive is being used for a presentation then all of the linked Excel workbooks must be moved to the USB drive before establishing the Word or PowerPoint link.
+		When creating a link to an Excel chart in Word or PowerPoint, the Excel workbook must stay in its original location on the computer or network. If the workbook is moved or deleted, an error message will be generated when the link in the Word or PowerPoint file is updated. An error is also generated if the Excel workbook is saved on a network drive that the computer cannot access. These errors occur because the link to the Excel workbook has been severed. Therefore, if a USB drive is being used for a presentation then all the linked Excel workbooks must be moved to the USB drive before establishing the Word or PowerPoint link.
 	\end{infobox}
 \end{center}
 
@@ -1529,7 +1529,7 @@ The first worksheet, \textit{Closing Prices}, is a chart sheet. This means that 
 	\item There is nothing to change so close the print preview by clicking the arrow at the top left corner of the preview screen.
 \end{enumerate}
 
-\subsection{Printing Worksheets With Data and Charts}
+\subsection{Printing Worksheets with Data and Charts}
 
 The next worksheet (\textit{Stock Trend}) has data and two charts. To print the data and the charts, the page setup will need some modification.
 
@@ -1570,12 +1570,11 @@ The first thing to do is remove the numbers that are appearing on page seven. To
 	\item Remain in \textit{Print Preview} for the next steps.
 \end{enumerate}
 
-
 The data is still split between Page $ 2 $ and Page $ 3 $, and the charts are splitting oddly as well. The first step to fix these issues is to change the page orientation and scaling.
 
 \begin{enumerate}
 	\item While still in \textit{Print Preview}, change the page orientation to \fmtButton{Landscape}.
-	\item This puts all of the data on one sheet, but the charts are still split between two pages.
+	\item This puts all the data on one sheet, but the charts are still split between two pages.
 	\item Change the page scaling to \fmtButton{Fit Sheet on One Page}.
 	\item This fits everything on one page, but it is too small to be able to read.
 	\item Change the page scaling back to \fmtButton{No Scaling}.
@@ -1585,7 +1584,7 @@ The next thing to try is moving one, or both, of the charts.
 
 \begin{enumerate}
 	\item Close the print preview by clicking the arrow at the top left corner of the preview screen.
-	\item Click \fmtButton{View $ \Rightarrow $ Workbook Views $ \Rightarrow $ Page Break Preview}. The screen should look similar to Figure \ref{04:fig53}. (Remember that the dotted blue lines indicate automatic page breaks.)
+	\item Click \fmtButton{View $ \Rightarrow $ Workbook Views $ \Rightarrow $ Page Break Preview}. The screen should look like Figure \ref{04:fig53}. (Remember that the dotted blue lines indicate automatic page breaks.)
 	\item Move the \textit{24 Month Comparison} (double-line) chart closer to the top of its page.
 	\item Move the \textit{May 2014-2015 Trend for NASDAQ Sales Volume} (line chart) so that it is under the \textit{24 Month Comparison} chart.
 	\item The link to the data source is still at the bottom of page $ 2 $ (in \fmtLoc{A50:A51}) so it needs to be moved to \fmtLoc{M31:M32}.
@@ -1664,7 +1663,7 @@ It is possible to hide an entire worksheet so it will not print nor will anyone 
 	\item Select \fmtButton{Hide} from the menu that appears. The \fmtWorksheet{Enrollment by Race Chart} sheet should no longer be visible.
 	\item To unhide the worksheet, right-click on any other worksheet tab and select Unhide from the menu. A list of hidden worksheets will be displayed. Select the \fmtWorksheet{Enrollment by Race Chart} and click \fmtButton{OK}.
 	\item Save the \fmtWorksheet{CH4-Charting} workbook.
-	\item Compare all of the worksheets with the self-check answer key.
+	\item Compare all the worksheets with the self-check answer key.
 	\item Submit all three files from this chapter (\fmtWorksheet{CH4-Charting.xlsx}, \fmtWorksheet{CH4-Diversity in Enrollment in Community Colleges.docx}, and \fmtWorksheet{CH4-Diversity in Enrollment in Community Colleges.pptx}).
 \end{enumerate}
 
@@ -1678,14 +1677,14 @@ Excel is an excellent tool for helping to display historical data. This exercise
 
 \subsubsection{Task1 – National Minimum Wage in the Us – 1960-2014}
 
-Since the beginning of the previous century, the United States has set a minimum wage, in order to set a ``floor'' beneath which wages cannot fall. Most states have set their own minimum wages, but none are lower than the national minimum wage\footnote{To learn more about the national minimum wage, look at \url{https://en.wikipedia.org/wiki/Minimum_wage_in_the_United_States}.}.
+Since the beginning of the previous century, the United States has set a minimum wage to set a ``floor'' beneath which wages cannot fall. Most states have set their own minimum wages, but none are lower than the national minimum wage\footnote{To learn more about the national minimum wage, look at \url{https://en.wikipedia.org/wiki/Minimum_wage_in_the_United_States}.}.
 
 \begin{enumerate}
 	\item Open the file named \fmtWorksheet{PR4-Data} and then Save As \fmtWorksheet{PR4-Historical Data}.
 	\item On the \fmtWorksheet{Minimum Wage} worksheet, select the range \fmtLoc{B4:C60}.
 	\item Click \fmtButton{Insert $ \Rightarrow $ Charts $ \Rightarrow $ Recommended Chart}. \textit{Recommended Charts} allows users to first see how selected data would be represented on a variety of chart types before committing to a particular type of chart. Being able to see the data as it would look in a variety of charts helps when selecting the kind of chart that best matches the data. It does a particularly good job when using dates or years as labels, though sometimes Excel gets confused and thinks that dates are part of the data instead of labels.
 	\item Select the first \textit{Line Chart} and press \fmtButton{OK}.
-	\item The line chart is create in the \fmtWorksheet{Minimum Wage} worksheet.
+	\item The line chart is created in the \fmtWorksheet{Minimum Wage} worksheet.
 	\item Resize the chart using the values in Table \ref{04:tab07}. For each side of the chart, press the \fmtKeystroke{Alt} key while dragging the resize handle on the chart.
 \end{enumerate}	
 
@@ -1728,7 +1727,7 @@ In the past $ 40 $ years, between $ 1970 $ and $ 2010 $, life expectancy for Ore
 	\item Double click the chart sheet tab name and change it to \fmtTyping{Men}.
 	\item Take a good look at this chart. It is not what was expected. Excel has made a mistake and charted the \textit{Birth Year} information as though it was data, instead of using it to label the Y Axis.
 	\item Click the chart to activate it.
-	\item Click \fmtButton{Chart Tools Design $ \Rightarrow $ Select Data}. (\fmtNewExcel{Excel 365} named the tab \textit{Chart Design}.) This opens the \textit{Select Data Source} dialog box. The box at the top tells us the range that was selected, which looks fine. 
+	\item Click \fmtButton{Chart Tools Design $ \Rightarrow $ Data $ \Rightarrow $ Select Data}. (\fmtNewExcel{Excel 365} named the tab \textit{Chart Design}.) This opens the \textit{Select Data Source} dialog box. The box at the top tells us the range that was selected, which looks fine. 
 \end{enumerate}
 	
 The \textit{Legend Entries} in the large box on the left side of the \textit{Select Data Source} box need to be corrected. Also, the \textit{Horizontal Axis Labels} are just a series of default numbers, but they need to be the range that contains the years.
@@ -1744,7 +1743,7 @@ The \textit{Legend Entries} in the large box on the left side of the \textit{Sel
 	\item Return to the \textit{Life Expectancy} tab, select \fmtLoc{A5:D11}.
 	\item Use the \fmtButton{Recommended Charts} tool to create a line chart (it will be the first option).
 	\item Change the \textit{Chart Title} to \fmtTyping{Oregon: Projected Life Expectancy at Birth}.
-	\item The green line across the bottom of the chart represents the difference between men's and women's life expectancy. It is not very helpful as it is. Right click on the green line to open the context menu. Select \fmtButton{Format Data Series}. In the \textit{Format Data Series} pane, under the \fmtButton{Series Options} tab, select the radio button in front of \fmtButton{Secondary Axis}.
+	\item The green line across the bottom of the chart represents the difference between men's and women's life expectancy, but it is not helpful as it is. Right click on the green line to open the context menu. Select \fmtButton{Format Data Series}. In the \textit{Format Data Series} pane, under the \fmtButton{Series Options} tab, select the radio button in front of \fmtButton{Secondary Axis}.
 	\item Close the \textit{Format Data Series} pane.
 	\item Add a text box that explains the \textit{Difference} calculation. While the chart is still selected:
 	

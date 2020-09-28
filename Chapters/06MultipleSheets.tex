@@ -32,11 +32,11 @@ The Excel workbooks used throughout this textbook have included multiple workshe
 	\label{06:fig01}
 \end{figure}
 
-\subsection{Navigating Through File With Multiple Worksheets}
+\subsection{Navigating Through File with Multiple Worksheets}
 
 \begin{enumerate}
 	\item Open \fmtWorksheet{CH6-Data} and save the file as \fmtWorksheet{CH6-Personal Budget}. Notice that the file has an \fmtWorksheet{Expenses Summary} worksheet tab at the far left followed by monthly worksheets.
-	\item Click on the different worksheet tabs at the bottom of the screen to move through the worksheets. The \fmtWorksheet{Expenses Summary} worksheet is formatted differently from the monthly worksheets but all the monthly worksheets are identical in layout and format.
+	\item Click on the different worksheet tabs at the bottom of the screen to move through the worksheets. The \fmtWorksheet{Expenses Summary} worksheet is formatted differently from the monthly worksheets, but all the monthly worksheets are identical in layout and format.
 	\item Take a second look at the months and notice the monthly expenses and income for September through October has not been added and there is no worksheet for December. 
 	\item Add the following data in the \fmtWorksheet{September}, \fmtWorksheet{October}, and \fmtWorksheet{November} worksheets.
 \end{enumerate}
@@ -159,7 +159,7 @@ Since the \textit{Practice} worksheet is not needed, use the following procedure
 
 \subsection{Grouping and Ungrouping Worksheets}
 
-Take a look at the monthly worksheets again. Notice that there is a place in each of these worksheets to calculate three pieces of \textit{Summary} data: \textit{Income}, \textit{Expenses}, and \textit{Balance}; but there are no formulas in these cells. There is also a place for the \textit{\% of Income Spent}, but a formula is needed in $ I6 $ to calculate this. If these formulas were individually added in each of the $ 12 $ month worksheets, it would take a long time and since this task is very repetitive it would also be likely that mistakes would be made along the way. By grouping all the month worksheets together, the formulas are entered only once but appear in all the worksheets.
+Look at the monthly worksheets again. Notice that there is a place in each of these worksheets to calculate three pieces of \textit{Summary} data: \textit{Income}, \textit{Expenses}, and \textit{Balance}; but there are no formulas in these cells. There is also a place for the \textit{\% of Income Spent}, but a formula is needed in $ I6 $ to calculate this. If these formulas were individually added in each of the twelve monthly worksheets, it would take a long time and since this task is very repetitive it would also be likely that mistakes would be made along the way. By grouping all the month worksheets together, the formulas are entered only once but appear in all the worksheets.
 
 \begin{enumerate}
 	\item Click the \fmtWorksheet{January} worksheet tab to make it active.
@@ -175,13 +175,13 @@ All $ 12 $ worksheets are selected. This can be verified in two ways: the worksh
 	\label{06:fig04}
 \end{figure}
 
-\textit{It is important to remember that any changes made to the January worksheet will be made to all of the grouped worksheets.} This makes it easy to make changes to all the worksheets at once, but they must be ungrouped after making changes or data on linked worksheets can be inadvertently destroyed. 
+\textit{It is important to remember that any changes made to the January worksheet will be made to all the grouped worksheets.} This makes it easy to make changes to all the worksheets at once, but they must be ungrouped after making changes or data on linked worksheets can be inadvertently destroyed. 
 
 \begin{enumerate}
 	\item Click cell \fmtLoc{F11} in the \fmtWorksheet{January} worksheet and enter the formula \fmtTyping{=SUM(F5:F8)}.
 	\item In cell \fmtLoc{F12}, enter the formula \fmtTyping{=SUM(C5:C13)}.
 	\item In cell \fmtLoc{F13}, subtract \textit{Expenses} from \textit{Income}. In the \fmtWorksheet{January} worksheet, the balance should be $ \$690 $. \textit{Hint}: if the answer is negative, then \textit{Income} was subtracted from \textit{Expenses} and the formula needs to be corrected.
-	\item Click cell \fmtLoc{I6}. (\fmtLoc{I6} and \fmtLoc{I7} are merged together, but that does not matter.)
+	\item Click cell \fmtLoc{I6}. (\fmtLoc{I6} and \fmtLoc{I7} are merged, but that does not matter.)
 	\item Enter a formula that divides \textit{Expenses} (\fmtLoc{F12}) by \textit{Income} (\fmtLoc{F11}). The answer will show as a percentage since this cell has already been formatted to do this. \textit{Hint}: If the percentage is greater than 100\% the numbers are reversed.
 \end{enumerate}
 
@@ -207,13 +207,13 @@ Notice that a data bar was set up in $ I5 $ to visually show the income spent, w
 	\label{06:fig06}
 \end{figure}
 
-Take a look at the \textit{Notes} in the \textit{September} worksheet. It says that the rent was raised in September, so the \textit{Gym Membership} needs to be cancelled and $ \$0 $ should be entered for that amount in October, November, and December.
+Look at the \textit{Notes} in the \textit{September} worksheet. It says that the rent was raised in September, so the \textit{Gym Membership} needs to be cancelled and $ \$0 $ should be entered for that amount in October, November, and December.
 
 \begin{enumerate}
 	\item Group the \fmtWorksheet{October}, \fmtWorksheet{November}, and \fmtWorksheet{December} worksheets. If this is done successfully these three worksheet names should be bold and the word \textit{Group} will appear in the Title bar.
 	\item Click the \fmtWorksheet{October} worksheet tab to activate it.
 	\item Click cell \fmtLoc{C13} (\textit{Gym Membership}) and change the amount to $ \$0 $. Press \fmtKeystroke{Enter}.
-	\item Ungroup the worksheets.The \textit{Balance} should be October: \$605, November: \$530, and December: $ \$430 $.
+	\item Ungroup the worksheets. The \textit{Balance} should be October: \$605, November: \$530, and December: $ \$430 $.
 	\item Save the \fmtWorksheet{CH6-Personal Budget} workbook.
 \end{enumerate}
 
@@ -274,7 +274,7 @@ Take a look at the \textit{Notes} in the \textit{September} worksheet. It says t
 	\end{objbox}
 \end{center}
 
-The \textit{Summary} worksheet in many multiple worksheet workbooks is utilized to present totaled information from the other worksheets in the file. This is done to give a quick synopsis of all the other worksheets in one convenient location. For this reason, the \textit{Summary} worksheet is usually the first worksheet in multiple-sheet files. Summary worksheets ``pull'' data from the other worksheets using three-dimensional ($ 3 $-D ) cell references. In order to distinguish between $ A3 $ in the \textit{Summary} worksheet, $ A3 $ in the \textit{January} worksheet, $ A3 $ in the \textit{February} worksheet, etc.; a $ 3 $-D cell reference includes the worksheet name along with the cell reference. The syntax to reference a cell in a different worksheet is \textit{=SheetName!CellRange}. So, the cell reference for $ A15 $ in the \textit{March} worksheet would be \textit{=March!A15}.
+The \textit{Summary} worksheet in many multiple worksheet workbooks is utilized to present totaled information from the other worksheets in the file. This is done to give a quick synopsis of all the other worksheets in one convenient location. For this reason, the \textit{Summary} worksheet is usually the first worksheet in multiple-sheet files. Summary worksheets ``pull'' data from the other worksheets using three-dimensional ($ 3 $-D ) cell references. To distinguish between $ A3 $ in the \textit{Summary} worksheet, $ A3 $ in the \textit{January} worksheet, $ A3 $ in the \textit{February} worksheet, etc.; a $ 3 $-D cell reference includes the worksheet name along with the cell reference. The syntax to reference a cell in a different worksheet is \textit{=SheetName!CellRange}. So, the cell reference for $ A15 $ in the \textit{March} worksheet would be \textit{=March!A15}.
 
 \begin{center}
 	\begin{infobox}{Best Practice}
@@ -295,7 +295,7 @@ The \textit{Summary} worksheet in many multiple worksheet workbooks is utilized 
 	\item Delete the formulas in cells \fmtLoc{C5} and \fmtLoc{C6} in the \fmtWorksheet{Expenses Summary} worksheet.
 \end{enumerate}
 
-For the \textit{Annual Amounts} in $ C5 $:$ C13 $ in the \textit{Expenses Summary} worksheet, the amount from a single month's worksheet is not needed; instead, the sum of all the entries in all the monthly worksheets should be entered. So, a $ 3 $-D sum for all twelve month worksheets should be entered. Here is a helpful hint on the steps that will sum cells on multiple worksheets.
+For the \textit{Annual Amounts} in $ C5 $:$ C13 $ in the \textit{Expenses Summary} worksheet, the amount from a single month's worksheet is not needed; instead, the sum of all the entries in all the monthly worksheets should be entered. So, a $ 3 $-D sum for all twelve monthly worksheets should be entered. Here is a helpful hint on the steps that will sum cells on multiple worksheets.
 
 \begin{center}
 	\begin{sklbox}{Skill Refresher}
@@ -317,7 +317,7 @@ For the \textit{Annual Amounts} in $ C5 $:$ C13 $ in the \textit{Expenses Summar
 	\end{sklbox}
 \end{center}
 
-Follow these steps to sum all of the monthly amounts in the \textit{Expenses Summary} worksheet.
+Follow these steps to sum  the monthly amounts in the \textit{Expenses Summary} workall ofsheet.
 
 \begin{enumerate}
 	\item Click cell \fmtLoc{C5} in the \fmtWorksheet{Expenses Summary} worksheet.
@@ -448,9 +448,9 @@ While the $ 3 $-D formulas are complete in the \textit{Expenses Summary} workshe
 	\end{objbox}
 \end{center}
 
-A template is a predefined pattern for a workbook. Hundreds of templates created by Microsoft are available to use inside Excel and these templates are very helpful to quickly start and complete a new task in Excel. Templates include all the formulas, formatting, etc. needed in a professional Excel workbook. All that is left to do is enter the data. Predefined Microsoft templates include everything from billing statements to blood pressure trackers to business cards. Categories include: Business, Personal, Industry, Financial Management, Logs, Calculators, and Lists.
+A template is a predefined pattern for a workbook. Hundreds of templates created by Microsoft are available to use inside Excel and these templates are extremely helpful to quickly start and complete a new task in Excel. Templates include all the formulas, formatting, etc. needed in a professional Excel workbook. All that is left to do is enter the data. Predefined Microsoft templates include everything from billing statements to blood pressure trackers to business cards. Categories include: Business, Personal, Industry, Financial Management, Logs, Calculators, and Lists.
 
-Sometimes a very specific template is needed that has not already been created by Microsoft. Taking the time to create a custom template allows users to create new workbooks from it over and over again. If a new version of some workbook is needed on a regular basis, templates will make this work much easier. This chapter explores both types of templates: predefined and custom.
+Sometimes a specific template is needed that has not already been created by Microsoft. Taking the time to create a custom template allows users to create new workbooks from it repeatedly. If a new version of some workbook is needed on a regular basis, templates will make this work much easier. This chapter explores both types of templates: predefined and custom.
 
 \subsection{Predefined Templates}
 
@@ -603,7 +603,7 @@ Use the new budget template to start a Personal Budget file for $ 2017 $.
 \end{figure}
 
 \begin{enumerate}[resume]
-	\item Click the \fmtWorksheet{Expenses Summary} worksheet tab to activate it. The data and the pie chart should show the \textit{January} data since that is the only data in the twelve month worksheets. The worksheet should look like Figure \ref{06:fig14}.
+	\item Click the \fmtWorksheet{Expenses Summary} worksheet tab to activate it. The data and the pie chart should show the \textit{January} data since that is the only data in the twelve monthly worksheets. The worksheet should look like Figure \ref{06:fig14}.
 	\item Save the \fmtWorksheet{CH6-2017 Personal Budget} workbook.
 \end{enumerate}
 
@@ -640,7 +640,7 @@ Use the new budget template to start a Personal Budget file for $ 2017 $.
 			\setlength{\parskip}{0pt}
 			\setlength{\parsep}{0pt}
 			
-			\item Printing all of the worksheets in a workbook at one time.
+			\item Printing all the worksheets in a workbook at one time.
 			\item Preparing multiple worksheets for printing using grouping.
 			
 		\end{itemize}
@@ -654,9 +654,9 @@ Just like consistency in formatting is important when working with workbooks con
 As always, review the workbook in Print Preview before considering it complete.
 \begin{enumerate}
 	\item Click \fmtButton{File $ \Rightarrow $ Print}.
-	\item To view all of the worksheets at one time, select \fmtButton{Print Entire Workbook} in the first box in the \textit{Settings} section. There should be $ 26 $ pages to scroll through in \textit{Print Preview}. At this point, clicking the \fmtButton{Print} button would print all of the worksheets rather than just the active sheet.
+	\item To view all the worksheets at one time, select \fmtButton{Print Entire Workbook} in the first box in the \textit{Settings} section. There should be $ 26 $ pages to scroll through in \textit{Print Preview}. At this point, clicking the \fmtButton{Print} button would print all the worksheets rather than just the active sheet.
 	\item Exit \textit{Print Preview} by clicking the arrow button in the top left corner of the screen. The page orientation of all the worksheets can be changed at one time, but not in \textit{Print Preview}.
-	\item Group all of the worksheets together, including the \fmtWorksheet{Expenses Summary} worksheet through the \fmtWorksheet{December} worksheet.
+	\item Group all the worksheets together, including the \fmtWorksheet{Expenses Summary} worksheet through the \fmtWorksheet{December} worksheet.
 	\item Click \fmtButton{Page Layout $ \Rightarrow $ Page Setup $ \Rightarrow $ Orientation $ \Rightarrow $ Landscape}.
 	\item Click \fmtButton{Page Layout $ \Rightarrow $ Page Setup Launcher $ \Rightarrow $ Header/Footer Tab $ \Rightarrow $ Custom Footer}.
 	\item In the center section of the custom footer, insert the worksheet name using the \fmtButton{Insert Sheet Name} button (that is the last button in the fourth group; it looks like a tiny worksheet). The Footer dialog box should look like Figure \ref{06:fig15}.
@@ -677,7 +677,7 @@ As always, review the workbook in Print Preview before considering it complete.
 	\item Exit \textit{Print Preview} by clicking the arrow button in the top left corner.
 	\item Ungroup the worksheets.
 	\item If needed, click the \fmtWorksheet{Expenses Summary} worksheet tab to activate it.
-	\item Click \fmtButton{Page Layout $ \Rightarrow $ Scale to Fit $ \Rightarrow $ Width Down-Arrow}. Select $ 1 $ page. This has the same result as selecting \fmtButton{Fit All Columns on One Page} in the \textit{Scaling} setting in \textit{Print Preview}. (See Figure  \ref{06:fig16})
+	\item Click \fmtButton{Page Layout $ \Rightarrow $ Scale to Fit $ \Rightarrow $ Width Down-Arrow}. Select $ 1 $ page. This has the same result as selecting \fmtButton{Fit All Columns on One Page} in the \textit{Scaling} setting in \textit{Print Preview} (see Figure \ref{06:fig16}).
 \end{enumerate}
 
 \begin{figure}[H]
@@ -712,7 +712,7 @@ As always, review the workbook in Print Preview before considering it complete.
 			\setlength{\parskip}{0pt}
 			\setlength{\parsep}{0pt}
 			
-			\item To print all of the worksheets in a workbook at one time select \textit{Print Entire Workbook} in the \textit{Print Settings}.
+			\item To print all the worksheets in a workbook at one time select \textit{Print Entire Workbook} in the \textit{Print Settings}.
 			\item Page setup options, such as scaling, orientation, and headers/footers, can be applied to multiple worksheets at one time by grouping them.
 			
 		\end{itemize}
@@ -742,7 +742,7 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 			\item \textbf{If the Test is False}: zero
 		\end{itemize}
 		\item Copy \fmtLoc{F9} to \fmtLoc{F10:F19}.
-		\item Format \fmtLoc{F9:F19} as as percentages.
+		\item Format \fmtLoc{F9:F19} as percentages.
 		\item Using \fmtButton{Home $ \Rightarrow $ Font $ \Rightarrow $ Fill Color}, set \fmtLoc{Row $ 10 $}, \fmtLoc{Row $ 12 $}, \fmtLoc{Row $ 14 $}, \fmtLoc{Row $ 16 $}, and \fmtLoc{Row $ 18 $} to \textit{No Fill}. 
 		\end{itemize}	
 	
@@ -795,7 +795,7 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 \begin{enumerate}[resume]
 	\item Save the \fmtWorksheet{PR6 High Flyers} workbook.
 	\item Click the \fmtWorksheet{Player 2} worksheet tab to activate it. 
-	\item In cell \fmtLoc{D3}, enter the \textit{Player Name}: \fmtTyping{Zach Johnson}. 
+	\item In cell \fmtLoc{C5}, enter the \textit{Player Name}: \fmtTyping{Zach Johnson}. 
 	\item Enter other data from Table \ref{06:tab04}:
 \end{enumerate}
 
@@ -827,7 +827,7 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 	\item Save the \fmtWorksheet{PR6 High Flyers} workbook.
 	
 	\item Click the \fmtWorksheet{Player 3} worksheet tab to activate it. 
-	\item In cell \fmtLoc{D3}, enter the \textit{Player Name}: \fmtTyping{Vito Lawrenz}. 
+	\item In cell \fmtLoc{C5}, enter the \textit{Player Name}: \fmtTyping{Vito Lawrenz}. 
 	\item Enter other data from Table \ref{06:tab05}:
 \end{enumerate}
 
@@ -861,12 +861,12 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 	\item Click the \fmtWorksheet{Season Stats} worksheet to activate it.
 
 	\item Click cell \fmtLoc{B9}. 
-	\item Enter a $ 3 $-D formula to \fmtTyping{COUNTA} in \fmtLoc{B9} on worksheets \fmtWorksheet{Player 1} through \fmtWorksheet{Player 5}. Note: this is easier if the \textit{Insert Function} dialog box is used.
+	\item Enter a $ 3 $-D formula to \fmtTyping{COUNTA} in \fmtLoc{B9} on worksheets \fmtWorksheet{Player 1} through \fmtWorksheet{Player 5}. 
 	\item Copy \fmtLoc{B9} to \fmtLoc{B10:B18}.
 	\item Copy \fmtLoc{B9} to \fmtLoc{C9:C18}.
 	\item Change the formulas in \fmtLoc{B19} and \fmtLoc{C19} from \fmtTyping{COUNTA} to \fmtTyping{SUM}.
 	\item Click cell \fmtLoc{D9}. 
-	\item Enter a $ 3 $-D formula to \fmtTyping{SUM} cells \fmtLoc{D9} on worksheets \fmtWorksheet{Player 1} through \fmtWorksheet{Player 5}. Note: this is easier if the \textit{Insert Function} dialog box is used.
+	\item Enter a $ 3 $-D formula to \fmtTyping{SUM} cells \fmtLoc{D9} on worksheets \fmtWorksheet{Player 1} through \fmtWorksheet{Player 5}. 
 	\item Copy \fmtLoc{D9} to \fmtLoc{D10:D18}.
 	\item Copy \fmtLoc{D9} to \fmtLoc{E9:E18}.
 	\item Using \fmtButton{Home $ \Rightarrow $ Font $ \Rightarrow $ Fill Color}, set \fmtLoc{Row $ 10 $}, \fmtLoc{Row $ 12 $}, \fmtLoc{Row $ 14 $}, \fmtLoc{Row $ 16 $}, and \fmtLoc{Row $ 18 $} to \textit{No Fill}. 

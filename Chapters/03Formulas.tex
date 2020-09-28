@@ -78,13 +78,13 @@ Before moving on to the more interesting calculations discussed in this chapter,
 \end{figure}
 
 \begin{enumerate}[resume]
-	\item Select the range \fmtLoc{B5:B24}. The calculation will up date to: \fmtTyping{=MAX(B5:B24)}. Press \fmtKeystroke{Enter} to complete the formula.
+	\item Select the range \fmtLoc{B5:B24}. The calculation will update to: \fmtTyping{=MAX(B5:B24)}. Press \fmtKeystroke{Enter} to complete the formula.
 	\item Now, use the \fmtButton{Auto Fill Handle} to copy \fmtLoc{B25} to \fmtLoc{C25:N25}. Note that as the calculation is copied from one column to the next, the cell references change. The calculation in \fmtLoc{B25} reads: \fmtTyping{=MAX(B5:B24)} and the one in \fmtLoc{N25} reads \fmtTyping{=MAX(N5:N24)}. These cell references are called \textit{relative} references.
 \end{enumerate}
 
 By default, the calculations that Excel copies change their cell references relative to the row or column they are copied to. That makes sense. \textit{Column N} should not display an answer that uses the values from \textit{Column K}.
 
-To see all the calculations that were just created, press \fmtKeystroke{Ctrl} + \fmtKeystroke{$ ` $} (that is the back-tic near the \fmtKeystroke{one} on the keyboard). (See Figure \ref{03:fig03}) \fmtKeystroke{Ctrl} + \fmtKeystroke{$ ` $} displays the calculations (formulas) in each cell. Pressing \fmtKeystroke{Ctrl} + \fmtKeystroke{$ ` $} a second time will display calculations as values, which is the default view for cells.
+To see all the calculations that were just created, press \fmtKeystroke{Ctrl} + \fmtKeystroke{$ ` $} (that is the back-tic near the \fmtKeystroke{one} on the keyboard, see Figure \ref{03:fig03}) \fmtKeystroke{Ctrl} + \fmtKeystroke{$ ` $} displays the calculations (formulas) in each cell. Pressing \fmtKeystroke{Ctrl} + \fmtKeystroke{$ ` $} a second time will display calculations as values, which is the default view for cells.
 
 \begin{figure}[H]
 	\centering
@@ -128,7 +128,7 @@ If necessary, press \fmtKeystroke{Ctrl} + \fmtKeystroke{$ ` $} to return the spr
 
 \begin{enumerate}
 	\item Select cell \fmtLoc{P4}.
-	\item Click \fmtButton{Review $ \Rightarrow $ Insights $ \Rightarrow $ Smart Lookup}. (See Figure \ref{03:fig06}). This will find more about Percentage calculations. If this is the first time that the \textit{Smart Lookup} tool has been used a privacy statement may pop up. Press the \fmtButton{Got it} button.
+	\item Click \fmtButton{Review $ \Rightarrow $ Insights $ \Rightarrow $ Smart Lookup} (see Figure \ref{03:fig06}). This will find more about Percentage calculations. If this is the first time that the \textit{Smart Lookup} tool has been used a privacy statement may pop up. Press the \fmtButton{Got it} button.
 \end{enumerate}
 
 Excel searches the web for articles relevant to \textit{percentage} and lists links to those articles. Figure \ref{03:fig06} illustrates the result of the search done when this lesson was written, but that result will change depending on what information is available on the web.
@@ -147,7 +147,7 @@ Now that the data needed for the \textit{Percentage} calculation is known, a for
 	\item Press \fmtTyping{=} then click \fmtLoc{O5}. 
 	\item Enter \fmtTyping{/}
 	\item Click \fmtLoc{O25}. The calculation should look like \fmtTyping{=O5/O25}.
-	\item Press \fmtKeystroke{Enter}. The result of the formula should be $ 0.95641026 $. So far, so good. DeShea Andrews is doing well in this class, with a percentage grade of almost 96\%. Definitely an ``A''!)
+	\item Press \fmtKeystroke{Enter}. The result of the formula should be $ 0.95641026 $. So far, so good. DeShea Andrews is doing well in this class, with a percentage grade of almost 96\%---definitely an ``A''!)
 	\item Next use the \fmtButton{Auto Fill Handle} to copy the calculation from \fmtLoc{P5} to \fmtLoc{P6:P24} to calculate the other students' grades. Unfortunately, this error message is displayed: \textit{\#DIV/$ 0 $}. This message means that an attempt has been made to divide a number by $ 0 $ (zero), which is impossible. The formula in \fmtLoc{P9} reads $ =O9/O29 $. The first cell reference is correct --- it points to Moesha Gashi's total points for the class. But the second reference is wrong. It points to an empty cell, \fmtLoc{O29}.
 
 \end{enumerate}
@@ -246,12 +246,12 @@ In addition to doing arithmetic, Excel can do other kinds of functions based on 
 
 \subsection{If Function}
 
-The \textit{IF} function is one of the most popular functions in Excel. It makes logical comparisons between a value and what was expected and then fills a cell based on that comparison. In its simplest form, the \textit{IF} function says something like, \textit{If the value in a cell is what is expected (true) then do this; otherwise do that}.
+The \textit{IF} function is one of the most popular functions in Excel. It makes logical comparisons between a value and what was expected and then fills a cell based on that comparison. In its simplest form, the \textit{IF} function says something like, \textit{If the value in a cell is expected (true) then do this; otherwise do that}.
 
 The \textit{IF} function has three arguments.
 
 \begin{itemize}
-	\item \textbf{Logical test}. This is the test to see if the value in a selected cell is what was expected. A test can be something like ``$ B7=14 $'' or ``$ B7>12 $'' or ``$ B7<6 $.''
+	\item \textbf{Logical test}. This is the test to see if the value in a selected cell expected. A test can be something like ``$ B7=14 $'' or ``$ B7>12 $'' or ``$ B7<6 $.''
 	\item \textbf{Value\_if\_true}. What to do if the requirements in the logical test are met, for example, if $ B7 $ is equal to $ 14 $ then fill the cell with text like ``True,'' or ``On budget!'' Alternatively, this argument can contain a calculation, like $ B7*2 $. That is, if $ B7 $ equals $ 14 $ then multiply it by $ 2 $. Finally, if Excel should put nothing at all in the cell then type ``'' (two empty quotes).
 	\item \textbf{Value\_if\_false}. What to do if the requirements in the logical test are \textit{NOT} met; for example, if \textit{B7} does \textit{NOT} equal $ 14 $. To have Excel do nothing, then type empty double quotes. Of course, Excel can also enter whatever text or calculation is desired.
 \end{itemize}
@@ -260,7 +260,7 @@ For the grade book, \textit{Column Q} should indicate whether a student is passi
 
 \begin{enumerate}
 	\item Click in \fmtLoc{Q5}.
-	\item Click \fmtButton{Formulas $ \Rightarrow $ Function Library $ \Rightarrow $ Logical $ \Rightarrow $ IF}. (See Figure \ref{03:fig09}).
+	\item Click \fmtButton{Formulas $ \Rightarrow $ Function Library $ \Rightarrow $ Logical $ \Rightarrow $ IF} (see Figure \ref{03:fig09}).
 \end{enumerate}
 
 \begin{figure}[H]
@@ -333,7 +333,7 @@ Fill in the dialog box so that it looks like Figure \ref{03:fig13}.
 
 \begin{itemize}
 	\item \textbf{Lookup\_value}. Specify the percentage score, which is in cell \fmtLoc{P5} for the first student.
-	\item \textbf{Table\_array}. This is the range that contains the value to be returned by the function. In this case, that range is $ A28 $:$ B32 $. Note that this range does \textit{NOT} include the label in \textit{Row} $ 27 $; just the actual data. It is important that the cell references for the Table\_array need to be absolute: \fmtLoc{\$A\$28:\$B\$32}. When this function is copied to other cells the cell references should not change.
+	\item \textbf{Table\_array}. This is the range that contains the value to be returned by the function. In this case, that range is $ A28 $:$ B32 $. Note that this range does \textit{NOT} include the label in \textit{Row} $ 27 $, just the actual data. It is important that the cell references for the Table\_array need to be absolute: \fmtLoc{\$A\$28:\$B\$32}. When this function is copied to other cells the cell references should not change.
 	\item \textbf{Col\_index\_number}. This is the column in the table array range that includes the information that should be returned. In this case, the grades are in the 2nd column of the range so the column index will be $ 2 $.
 	\item \textbf{Range\_lookup}. Since an approximate match is appropriate for this application the default value of TRUE is appropriate. Since that is the default, nothing needs to be entered for this value. 
 \end{itemize}
@@ -383,7 +383,7 @@ Sometimes Excel notices errors in the calculations and may post a slightly myste
 			\hline
 			\#DIV/$ 0 $ & The division operation refers to a cell that contains the value $ 0 $ or is blank.\\
 			\#N/A & Technically, this is not an error value but a special value 		that can be manually entered into a cell to indicate that there is no value yet. This is a placeholder used while a spreadsheet is being developed.\\
-			\#NAME? & This error value appears when a range name is incorrectly entered or the name is deleted. Also, this commonly means that the formula is missing quotation marks around a text string.\\
+			\#NAME? & This error value appears when a range name is incorrectly entered, or the name is deleted. Also, this commonly means that the formula is missing quotation marks around a text string.\\
 			\#NULL & This error occurs if a space is used instead of a comma between ranges in function arguments. The formula needs to be carefully checked and corrected.\\
 			\#NUM & This error is caused by an invalid argument in an Excel	function or by a formula that produces a number too large or too small for the worksheet.\\
 			\#REF & This error occurs when a cell referred to in a formula has been deleted.\\
@@ -414,14 +414,14 @@ Sometimes Excel notices errors in the calculations and may post a slightly myste
 
 \subsection{Date Functions}
 
-Very often dates and times are an important part of Excel data. Numbers that are correct today may not be accurate tomorrow so it is frequently useful to include dates and times on the spreadsheets. Dates and times fall into two general categories.
+Very often dates and times are an important part of Excel data. Numbers that are correct today may not be accurate tomorrow, so it is frequently useful to include dates and times on the spreadsheets. Dates and times fall into two general categories.
 
 \begin{itemize}
 	\item \textbf{Remain the same.} For instance, if a spreadsheet includes data for May $ 15 $th then that date should not change each time the spreadsheet is accessed.
 	\item \textbf{Change to reflect the current date/time.} When it is important to have the current date or time on a spreadsheet then Excel should update the information regularly.
 \end{itemize}
 
-Take a look at the functions at \textit{Formulas $ \Rightarrow $ Function Library $ \Rightarrow $ Date \& Time}. (See Figure \ref{03:fig16}).
+Look at the functions at \textit{Formulas $ \Rightarrow $ Function Library $ \Rightarrow $ Date \& Time} (see Figure \ref{03:fig16}).
 
 \begin{figure}[H]
 	\centering
@@ -436,7 +436,7 @@ For the grade book, the date and time should be displayed in $ A2 $, and it need
 	\item Click in \fmtLoc{A2}. Notice that \fmtLoc{A2} extends all the way from \fmtLoc{Column A} to \fmtLoc{Column R}. Previously, the \fmtButton{Merge \& Center} tool was used on this cell to make it match the width of the title in \fmtLoc{Row 1}.
 	\item Click \fmtButton{Formulas $ \Rightarrow $ Function Library $ \Rightarrow $ Date \& Time $ \Rightarrow $ NOW}. 
 	\item Click \fmtButton{OK}.
-	\item The result in the formula bar is: \fmtTyping{=NOW()} and the result in \fmtLoc{A2} depends on the current date and time. The \fmtButton{NOW} function is a very handy function, it takes no arguments and is volatile! That is not as alarming as it may seem. This just means that it does not need any information to do its job and the results will change frequently. 
+	\item The result in the formula bar is: \fmtTyping{=NOW()} and the result in \fmtLoc{A2} depends on the current date and time. The \fmtButton{NOW} function is a very handy function; it takes no arguments and is volatile! That is not as alarming as it may seem. This just means that it does not need any information to do its job and the results will change frequently. 
 	\item Wait at least one minute and then click in \fmtLoc{A2} and press \fmtKeystroke{F9} to update the time.
 \end{enumerate}
 
@@ -448,8 +448,8 @@ Another variation of the current date is the \textit{TODAY} function.
 	\item Click in \fmtLoc{A2}. Press \fmtKeystroke{Delete} to remove the \fmtButton{NOW} function.
 	\item Click \fmtButton{Formulas $ \Rightarrow $ Function Library $ \Rightarrow $ Date \& Time $ \Rightarrow $ TODAY}. 
 	\item Click \fmtButton{OK}.
-	\item The result in the formula bar is \fmtTyping{=TODAY()} and the result in \fmtLoc{A2} is the current date. Since the time was not requested it is likely $ 12\!:\!00 $\textit{ AM}. That is not very helpful so the date format needs to be adjusted.
-	\item Click \fmtButton{Home $ \Rightarrow $ Number $ \Rightarrow $ Number Format Launcher}. (See Figure \ref{03:fig17}).
+	\item The result in the formula bar is \fmtTyping{=TODAY()} and the result in \fmtLoc{A2} is the current date. Since the time was not requested it is likely $ 12\!:\!00 $\textit{ AM}. That is not helpful, so the date format needs to be adjusted.
+	\item Click \fmtButton{Home $ \Rightarrow $ Number $ \Rightarrow $ Number Format Launcher} (see Figure \ref{03:fig17}).
 	\item In the \textit{Format Cells} dialog box, click the \textit{Number} tab. Choose the \fmtButton{Date} category and select the second option, \fmtButton{Wednesday, March 14, 2012} (this format is called \textit{Long Date}).
 	\item Click \fmtButton{OK}.
 	\item The current day and date should now be displayed in \fmtLoc{A2}.
@@ -515,15 +515,17 @@ Another variation of the current date is the \textit{TODAY} function.
 	\end{objbox}
 \end{center}
 
+\subsection{Initiating Conditional Formatting}
+
 All necessary calculations are now in the \textit{CAS 170 Grades} spreadsheet. However, the grade book contains a lot of data. To make it easier to quickly find the most important pieces of data, Excel provides \textit{Conditional Formatting}.
 
 \begin{enumerate}
 	\item Select the range \fmtLoc{O5:O24}.
 	\item At the bottom of the selection, click on the \fmtButton{Quick Analysis Tool}. This is a popup tool with an icon that looks like a spreadsheet with colored lines.
-	\item Click \fmtButton{Formatting $ \Rightarrow $ Data Bars}. (See Figure \ref{03:fig18}).
+	\item Click \fmtButton{Formatting $ \Rightarrow $ Data Bars} (see Figure \ref{03:fig18}).
 \end{enumerate}
 
-Excel places blue bars on top of the values; long blue bars for larger numbers, shorter ones for smaller numbers. This makes it easier to see how well each student did in the class at a glance without having to look at the specific numbers.
+Excel places blue bars on top of the values; long blue bars for larger numbers, shorter ones for smaller numbers. This makes it easier to see how well each student did in the class immediately without having to look at the specific numbers.
 
 \begin{figure}[H]
 	\centering
@@ -551,9 +553,9 @@ It is even more important to highlight the students who are failing in the class
 
 \begin{enumerate}
 	\item Select the range \fmtLoc{R5:R24}.
-	\item Click \fmtButton{Home $ \Rightarrow $ Styles $ \Rightarrow $ Conditional Formatting $ \Rightarrow $ Highlight Cells Rules}. (See Figure \ref{03:fig20}).
+	\item Click \fmtButton{Home $ \Rightarrow $ Styles $ \Rightarrow $ Conditional Formatting $ \Rightarrow $ Highlight Cells Rules} (see Figure \ref{03:fig20}).
 	\item Select \fmtButton{Equal To}
-	\item Enter \fmtTyping{F} in the \textit{Format cells that are EQUAL TO} text box so those cells are highlighted with \fmtButton{Light Red Fill with Dark Red Text} (see Figure \ref{03:fig21}).
+	\item Enter \fmtTyping{F} in the \textit{Format cells that are EQUAL TO} text box, so those cells are highlighted with \fmtButton{Light Red Fill with Dark Red Text} (see Figure \ref{03:fig21}).
 	\item Click \fmtButton{OK}.
 \end{enumerate}
 
@@ -571,13 +573,13 @@ It is even more important to highlight the students who are failing in the class
 	\label{03:fig21}
 \end{figure}
 
-Now, highlight students who are passing the class. This time, use the Pass/Fail text in the Pass/Fail column. If the text for a student is \textit{Pass} the cell should be formatted with a yellow fill and dark yellow text.
+Now, highlight students who are passing the class. This time use the Pass/Fail text in the Pass/Fail column. If the text for a student is \textit{Pass} the cell should be formatted with a yellow fill and dark yellow text.
 
 \begin{enumerate}
 	\item Select the range \fmtLoc{Q5:Q24}.
-	\item Click \fmtButton{Home $ \Rightarrow $ Styles $ \Rightarrow $ Conditional Formatting $ \Rightarrow $ Highlight Cells Rules}. (See Figure \ref{03:fig20}).
+	\item Click \fmtButton{Home $ \Rightarrow $ Styles $ \Rightarrow $ Conditional Formatting $ \Rightarrow $ Highlight Cells Rules} (see Figure \ref{03:fig20}).
 	\item Select \fmtButton{Equal To}
-	\item Enter \fmtTyping{Pass} in the \textit{Format cells that are EQUAL TO} text box so those cells are highlighted with \fmtButton{Yellow Fill with Dark Yellow Text}.
+	\item Enter \fmtTyping{Pass} in the \textit{Format cells that are EQUAL TO} text box, so those cells are highlighted with \fmtButton{Yellow Fill with Dark Yellow Text}.
 	\item Click \fmtButton{OK}.
 \end{enumerate}
 
@@ -585,7 +587,7 @@ The default styles are a simple way to make specified data stand out, but any ce
 
 \begin{enumerate}
 	\item Select the range \fmtLoc{P5:P24}.
-	\item Click \fmtButton{Home $ \Rightarrow $ Styles $ \Rightarrow $ Conditional Formmating $ \Rightarrow $ Highlight Cells Rules}. (See Figure \ref{03:fig20}).
+	\item Click \fmtButton{Home $ \Rightarrow $ Styles $ \Rightarrow $ Conditional Formatting $ \Rightarrow $ Highlight Cells Rules} (see Figure \ref{03:fig20}).
 	\item Select \fmtButton{Less Than}
 	\item Fill out the \textit{Less Than} dialog box so that cells that are less than $ 0.6 $ (that is 60\%) will have conditional formatting. Instead of using the default red text on a light red fill, press the down arrow at the end of the \textit{with} box and select \fmtButton{Custom Format}.
 	\item On the \textit{Font} tab of the \textit{Format Cells} dialog box, in the \textit{Font style} box, select \fmtButton{Bold Italic}. In the \textit{Color} box, select \fmtButton{Red} (see Figure \ref{03:fig22}).
@@ -599,9 +601,9 @@ The default styles are a simple way to make specified data stand out, but any ce
 	\label{03:fig22}
 \end{figure}
 
-Conditional Formatting is valuable since it reflects the current data and it changes whenever the data changes. To test this, delete DeShea's final exam score. (Click $ N5 $ then press \fmtKeystroke{Delete} on the keyboard.) Suddenly, DeShae is failing the course and the Conditional Formatting reflects that. Press \fmtKeystroke{CTRL} + \fmtKeystroke{Z} (Undo). The test score reappears and the Conditional formatting reflects that as well.
+Conditional Formatting is valuable since it reflects the current data and it changes whenever the data changes. To test this, delete DeShea's final exam score. (Click $ N5 $ then press \fmtKeystroke{Delete} on the keyboard.) Suddenly, DeShae is failing the course and the Conditional Formatting reflects that. Press \fmtKeystroke{CTRL} + \fmtKeystroke{Z} (Undo). The test score reappears, and the Conditional formatting reflects that as well.
 
-\subsection{Making Changes}
+\subsection{Modifying Conditional Formatting}
 
 What if there is a mistake with the Conditional Formatting or it needs to be deleted altogether? Use the \textit{Conditional Formatting Manage Rules} tool. The following steps remove the conditional formatting rule that formats the \textit{Pass} text with yellow and modify the minimum passing percentage.
 
@@ -622,7 +624,7 @@ In a previous exercise (the \textit{IF} function), it was decided that students 
 
 \begin{enumerate}[resume]
 	\item Click the first rule, it reads \textit{Cell Value $ <0.6 $}.
-	\item Click the \fmtButton{Edit Rule} button, and change the $ 0.6 $ to $ 0.7 $ (see Figure \ref{03:fig24}).
+	\item Click the \fmtButton{Edit Rule} button and change the $ 0.6 $ to $ 0.7 $ (see Figure \ref{03:fig24}).
 	\item Click \fmtButton{OK} (or \fmtButton{Apply}) two times.
 \end{enumerate}
 
@@ -732,7 +734,7 @@ Now that the formatting inconsistencies have been corrected, apply additional fo
 
 \begin{enumerate}
 	\item Select \fmtLoc{A4:A43} (the cells with the state labels).
-	\item Click \fmtButton{Home $ \Rightarrow $ Alignment $ \Rightarrow $ Middle Align}. (See Figure \ref{03:fig27}). Notice that the names of the states are now centered between the top and bottom borders of the cells.
+	\item Click \fmtButton{Home $ \Rightarrow $ Alignment $ \Rightarrow $ Middle Align} (see Figure \ref{03:fig27}). Notice that the names of the states are now centered between the top and bottom borders of the cells.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -767,7 +769,7 @@ Now that the cell and text formatting are corrected, review the worksheet in \te
 \begin{enumerate}
 	\item With the \fmtWorksheet{CH3-National Parks} file still open, click \fmtButton{File $ \Rightarrow $ Print}.
 	\item Click through each of the pages using the page number identifier at the bottom of the preview. The worksheet is currently printing on four pages, with the \textit{City} and \textit{Sizes} columns printing on separate pages from the rest of the data.
-	\item Using the \fmtButton{Orientation} button on the left side of the preview, change the orientation to \textit{Landscape} to fit all of the columns on one page. Unfortunately, the second and third pages have no column labels to identify the information in each column. 
+	\item Using the \fmtButton{Orientation} button on the left side of the preview, change the orientation to \textit{Landscape} to fit all the columns on one page. Unfortunately, the second and third pages have no column labels to identify the information in each column. 
 	\item Exit \textit{Print Preview} by clicking the arrow button at the top left corner of the preview.
 	\item Click \fmtButton{Page Layout $ \Rightarrow $ Page Setup $ \Rightarrow $ Print Titles}. The dialog box shown in Figure \ref{03:fig29} should appear.
 \end{enumerate}
@@ -812,10 +814,10 @@ The worksheet does not change in Normal view, so return to \textit{Print Preview
 
 \subsection{Inserting Page Breaks}
 
-Notice that the data for California is split between the first and second pages. Since it is desirable to keep all of the data for each state on the same page, the page breaks need to be adjusted. Start by inserting a page break before the California data to force it to start on the second page, then move the page break for the third page if needed. To make these changes work in \textit{Page Break Preview}.
+Notice that the data for California is split between the first and second pages. Since it is desirable to keep all the data for each state on the same page, the page breaks need to be adjusted. Start by inserting a page break before the California data to force it to start on the second page, then move the page break for the third page if needed. To make these changes work in \textit{Page Break Preview}.
 
 \begin{enumerate}
-	\item Click \fmtButton{View $ \Rightarrow $ Workbook Views $ \Rightarrow $ Page Break Preview}. The screen should be similar to Figure \ref{03:fig30}.
+	\item Click \fmtButton{View $ \Rightarrow $ Workbook Views $ \Rightarrow $ Page Break Preview}. The screen should be like Figure \ref{03:fig30}.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -825,11 +827,11 @@ Notice that the data for California is split between the first and second pages.
 	\label{03:fig30}
 \end{figure}
 
-In \textit{Page Break Preview}, automatic page breaks are displayed as dotted blue lines. Notice the dotted blue lines after \textit{Row} $ 20 $ and \textit{Row} $ 37 $, which indicate where Excel will start a new page. For this worksheet, the first page should to break at the \textit{California} data, so insert a manual page break there.
+In \textit{Page Break Preview}, automatic page breaks are displayed as dotted blue lines. Notice the dotted blue lines after \textit{Row} $ 20 $ and \textit{Row} $ 37 $, which indicate where Excel will start a new page. For this worksheet, the first page should break at the \textit{California} data, so insert a manual page break there.
 
 \begin{enumerate}
 	\item Select cell \fmtLoc{A15}. When inserting a page break, select the cell \textit{below} where the page break should appear.
-	\item Click \fmtButton{Page Layout $ \Rightarrow $ Page Setup $ \Rightarrow $ Breaks $ \Rightarrow $ Insert Page Break}. (See Figure \ref{03:fig31}).
+	\item Click \fmtButton{Page Layout $ \Rightarrow $ Page Setup $ \Rightarrow $ Breaks $ \Rightarrow $ Insert Page Break} (see Figure \ref{03:fig31}).
 	\item There is now a solid blue line after \textit{Row} $ 14 $, which indicates a manual page break was inserted.
 	\item Click \fmtButton{File $ \Rightarrow $ Print}. Notice that the California data now starts on the second page.
 \end{enumerate}
@@ -847,7 +849,7 @@ After looking at each page in \textit{Print Preview} it was decided that the thi
 	\item Exit \textit{Print Preview} by clicking the arrow button at the top left corner of the preview.
 	\item Switch back to \textit{Page Break Preview} if needed.
 	\item Locate the dotted blue line (automatic page break) after \fmtLoc{Row 31}.
-	\item Put the pointer over the dotted blue line and it will switch to a vertical double-headed arrow. Click on the dotted blue line and drag it above \fmtLoc{Row 30} (Montana).
+	\item Put the pointer over the dotted blue line, and it will switch to a vertical double-headed arrow. Click on the dotted blue line and drag it above \fmtLoc{Row 30} (Montana).
 	\item The line will now be a solid blue line, indicating a manual page break.
 	\item Click \fmtButton{File $ \Rightarrow $ Print}. The Montana row now appears at the top of the third page.
 \end{enumerate}
@@ -870,14 +872,14 @@ Now that the worksheet is printing on three pages, with page breaks in appropria
 	\item Click \fmtButton{View $ \Rightarrow $ Workbook Views $ \Rightarrow $ Page Layout}. 
 	\item The white space at the top of the worksheet should say \textit{Add header}. 
 	\item Place the mouse pointer over the left section of the \textit{Header} and click to activate that section.
-	\item Click \fmtButton{Header \& Footer Tools Design $ \Rightarrow $ Header \& Footer Elements $ \Rightarrow $ Current Date}. (See Figure \ref{03:fig32}). Inserting the date this way will insert a field that will update every time the workbook is opened. (\fmtNewExcel{Excel 365} This tab is called \fmtButton{Header \& Footer}.)
+	\item Click \fmtButton{Header \& Footer Tools Design $ \Rightarrow $ Header \& Footer Elements $ \Rightarrow $ Current Date} (see Figure \ref{03:fig32}). Inserting the date this way will insert a field that will update every time the workbook is opened. (\fmtNewExcel{Excel 365} This tab is called \fmtButton{Header \& Footer}.)
 	\item Place the mouse pointer over the right section of the \textit{Header} and click to activate that section.
-	\item Click \fmtButton{Header \& Footer Tools Design $ \Rightarrow $ Header \& Footer Elements $ \Rightarrow $ Filename}. (See Figure \ref{03:fig32}). Inserting the filename this way will insert a field that will update if the filename is changed.
+	\item Click \fmtButton{Header \& Footer Tools Design $ \Rightarrow $ Header \& Footer Elements $ \Rightarrow $ Filename} (see Figure \ref{03:fig32}). Inserting the filename this way will insert a field that will update if the filename is changed.
 	\item Click \fmtButton{Header \& Footer Tools Design $ \Rightarrow $ Navigation $ \Rightarrow $ Go to Footer}. 
 	\item In the center section of the footer, type the word \fmtTyping{Page} with a space after it.
-	\item Click \fmtButton{Header \& Footer Tools Design $ \Rightarrow $ Header \& Footer Elements $ \Rightarrow $ Page Number}. (See Figure \ref{03:fig32}), then type a space after the \fmtTyping{\&[Page]} code that appears.
+	\item Click \fmtButton{Header \& Footer Tools Design $ \Rightarrow $ Header \& Footer Elements $ \Rightarrow $ Page Number} (see Figure \ref{03:fig32}), then type a space after the \fmtTyping{\&[Page]} code that appears.
 	\item Type the word \fmtTyping{of} with a space after it.
-	\item Click \fmtButton{Header \& Footer Tools Design $ \Rightarrow $ Header \& Footer Elements $ \Rightarrow $ Number of Pages}. (See Figure \ref{03:fig32}). The footer should match Figure \ref{03:fig33}.
+	\item Click \fmtButton{Header \& Footer Tools Design $ \Rightarrow $ Header \& Footer Elements $ \Rightarrow $ Number of Pages} (see Figure \ref{03:fig32}). The footer should match Figure \ref{03:fig33}.
 	\item Click anywhere on the worksheet to close the \textit{Footer} editing.
 	\item Click \fmtButton{File $ \Rightarrow $ Print}. Check that the date and file name are in the header and the page numbers in the footer are correct.
 	\item Exit \textit{Print Preview} by clicking the arrow button at the top left corner of the preview.
@@ -954,11 +956,11 @@ Elijah and Kelly Williams are a recently married couple living in Portland, Oreg
 	\item \fmtLoc{O2}: \fmtTyping{Yearly Total} (adjust column width as needed to fit this text)
 \end{itemize}
 
-	\item Starting in \fmtLoc{C2}, use the \fmtButton{Auto Fill Handle} to fill in the months \textit{February} through \textit{December} in cells \fmtLoc{D2:N2}. Adjust the column widths of \fmtLoc{C2:N2} to $ 10 $.
+	\item Starting in \fmtLoc{C2}, use the \fmtButton{Auto Fill Handle} to fill in the months \textit{February} through \textit{December} in cells \fmtLoc{D2:N2}. Adjust the widths of \fmtLoc{Column C} to \fmtLoc{Column N} to $ 10 $.
 	\item Select \fmtLoc{A2:O2}.
 	\item Click \fmtButton{Home $ \Rightarrow $ Font $ \Rightarrow $ Bold}.
 	\item Click \fmtButton{Home $ \Rightarrow $ Alignment $ \Rightarrow $ Center}. 
-	\item Click \fmtLoc{A1} and type \fmtTyping{Williams Family Budget}. 
+	\item Click \fmtLoc{A1} and enter \fmtTyping{Williams Family Budget}. 
 	\item Select \fmtLoc{A1:O1}.
 	\item Click \fmtButton{Home $ \Rightarrow $ Alignment $ \Rightarrow $ Merge \& Center}.
 	\item Select \fmtLoc{A1:O1}.
@@ -971,7 +973,7 @@ Elijah and Kelly Williams are a recently married couple living in Portland, Oreg
 		\item Copy \fmtLoc{C8:C9} and paste to \fmtLoc{D8:N9}.
 		\item Copy \fmtLoc{C25} and paste to \fmtLoc{D25:N25}.
 		\item Copy \fmtLoc{C27} and paste to \fmtLoc{D27:N27}.
-		\item Copy \fmtLoc{C41} and paste to \fmtLoc{D41:N417}.
+		\item Copy \fmtLoc{C41} and paste to \fmtLoc{D41:N41}.
 	\end{enumerate}	
 	
 	\item Select \fmtLoc{O3:O44}.
@@ -1100,7 +1102,7 @@ Elijah and Kelly Williams are a recently married couple living in Portland, Oreg
 	\item Compare the result with the self-check answer key and then submit the \fmtWorksheet{PR3-Williams} workbook as directed by the instructor.
 \end{enumerate}
 
-\section{Chapter Scored}
+\section{Scored Assessment}
 
 \subsection{Astrocoffee Company}
 

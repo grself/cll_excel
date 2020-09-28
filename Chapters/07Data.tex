@@ -1,5 +1,5 @@
 %*****************************************
-\chapter{Working With Data}\label{ch07:data}
+\chapter{Working with Data}\label{ch07:data}
 %*****************************************
 
 Excel is designed to work with data, and this chapter demonstrates how data is imported and analyzed with tools like pivot tables. The chapter begins with information about validating data input and safeguarding workbooks. 
@@ -27,7 +27,7 @@ It is occasionally desirable to safeguard certain cells in a worksheet, or the e
 Excel's data validation rules can be used in a variety of ways.
 
 \begin{itemize}
-	\item Restrict the data entered into a cell.
+	\item Restrict the data entered in a cell.
 	\item Circle all cells that do not conform to specified validation rules.
 	\item Limit the user to a list of possibilities.
 \end{itemize}
@@ -109,7 +109,7 @@ After following the above steps, a drop-down selection box will appear whenever 
 \end{figure}
 
 \begin{enumerate}[resume]
-	\item Copy \fmtLoc{E2} to \fmtLoc{E3:E11} so all of those cells will also get the drop-down \textit{Zip Codes} validation list.
+	\item Copy \fmtLoc{E2} to \fmtLoc{E3:E11} so all those cells will also get the drop-down \textit{Zip Codes} validation list.
 	\item Select any of the \textit{Zip Codes} to fill \fmtLoc{E2:E11}.
 \end{enumerate}
 
@@ -125,7 +125,7 @@ After following the above steps, a drop-down selection box will appear whenever 
 A second validation method is used when the user can enter data that cannot be selected from a list. For example, if users are required to enter their age then a drop-down list containing every possible age is not reasonable. In this case, Excel can be set up to ensure that the data entered is within certain specific bounds. For example, an ``age'' entry could be between $ 20 $ and $ 65 $ for working adults (or maybe some other range). Data validation can use a full set of Boolean comparisons (between, equal to, greater than, etc.). As part of the process, various messages can be displayed when the cell is selected to help guide the user. Finally, the action taken when invalid data is entered (\textit{Stop}, \textit{Warning}, or \textit{Information}) can be specified.
 
 \begin{enumerate}
-	\item Notice that the \fmtWorksheet{Validation} worksheet includes an entry for \textit{Age}. The expectation is that users will enter their age but it is important to restrict this data to numbers between $ 20 $ and $ 65 $ so they do not accidentally enter a number out of the range or even text.
+	\item Notice that the \fmtWorksheet{Validation} worksheet includes an entry for \textit{Age}. The expectation is that users will enter their age, but it is important to restrict this data to numbers between $ 20 $ and $ 65 $ so they do not accidentally enter a number out of the range or even text.
 	\item Select \fmtLoc{F2}, which is the first cell that needs data validation. 
 	\item Click \fmtButton{Data $ \Rightarrow $ Data Tools $ \Rightarrow $ Data Validation}. (\textit{Note}, click the button, not the down arrow on the right side of the button.)
 	\item Select \fmtButton{Whole number} in the \textit{Allow} field.
@@ -146,7 +146,7 @@ A second validation method is used when the user can enter data that cannot be s
 	\item Click the \textit{Error Alert} tab and select the \fmtButton{Stop} style then enter \fmtTyping{Age} for the \textit{Title} and \fmtTyping{Input an age between $ 20 $ and $ 65 $.} for the \textit{Input Message}.
 	\item Click \fmtButton{OK}.
 	\item Copy \fmtLoc{F2} to \fmtLoc{F3:F11}.
-	\item Click in \fmtLoc{F2} to activate that cell. Notice that the help message pops up. Enter some number in \fmtLoc{F2}. If that number is between $ 20 $ and $ 65 $ then the entry works without error, but if anything else is entered an error message pops up and forces a correct number to be entered.
+	\item Click in \fmtLoc{F2} to activate that cell. Notice that the help message pops up. Enter some number in \fmtLoc{F2}. If that number is between $ 20 $ and $ 65 $ then the entry works without error, but if anything else is entered, an error message pops up and forces a correct number to be entered.
 	\item Enter $ 19 $ in \fmtLoc{F2} to force an error.
 	\item Click \fmtButton{Cancel} on the \textit{Age} error message.
 	\item Delete the data in \fmtLoc{F2}.
@@ -166,7 +166,7 @@ A second validation method is used when the user can enter data that cannot be s
 	\item This cell was initially set to \textit{Stop} on an error. Perhaps, though, it would be acceptable for the user to finish the data entry even if it contained an error. Change the Style drop-down to \fmtButton{Warning}.
 	\item Click \fmtButton{OK}.
 	\item Copy \fmtLoc{F2} to \fmtLoc{F3:F11}.
-	\item Click in \fmtLoc{F2} to activate that cell. Notice that the help message pops up. Enter some number in \fmtLoc{F2}. If that number is between $ 20 $ and $ 65 $ then the entry works without error, but if anything else is entered a warning message pops up and permits the user to continue with the bad number or retry.
+	\item Click in \fmtLoc{F2} to activate that cell. Notice that the help message pops up. Enter some number in \fmtLoc{F2}. If that number is between $ 20 $ and $ 65 $ then the entry works without error, but if anything else is entered, a warning message pops up and permits the user to continue with the bad number or retry.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -208,7 +208,7 @@ A second validation method is used when the user can enter data that cannot be s
 		\textbf{Data Validation}
 		\\
 		\\
-		Data validation will not automatically update the error circles as new data is entered. Therefore, after data is entered into a worksheet the \textit{Circle Invalid Data} button must be clicked to check that data.
+		Data validation will not automatically update the error circles as new data is entered. Therefore, after data is entered in a worksheet the \textit{Circle Invalid Data} button must be clicked to check that data.
 	\end{infobox}
 \end{center}
 
@@ -277,9 +277,9 @@ After entering the data validation rules, it may be desirable to lock the \fmtWo
 	\end{objbox}
 \end{center}
 
-To use Excel's powerful tools for analysis, data must first be imported into a spreadsheet. Data can be imported from many sources but two common ones are from the web and from a datafile located on the local computer. Data is very often posted on the web for researchers to use in their projects. The United States federal government, for example, has more than $ 200,000 $ datasets freely available in fields like taxes, crime, trade, education, and dozens of other topics\footnote{See \url{https://www.data.gov/}}. Sometimes, that data can be imported directly into Excel but more often it must be downloaded to a local computer and then imported into Excel from that file. This section demonstrates both of those procedures.
+To use Excel's powerful tools for analysis, data must first be imported into a spreadsheet. Data can be imported from many sources, but two common ones are from the web and from a datafile located on the local computer. Data is very often posted on the web for researchers to use in their projects. The United States federal government, for example, has more than $ 200,000 $ datasets freely available in fields like taxes, crime, trade, education, and dozens of other topics\footnote{See \url{https://www.data.gov/}}. Sometimes, that data can be imported directly into Excel but more often it must be downloaded to a local computer and then imported into Excel from that file. This section demonstrates both of those procedures.
 
-\subsection{Import From the Web}
+\subsection{Import from the Web}
 
 Data contained in a table on a website can be imported directly into an Excel workbook. Follow these steps to import data from a website.
 
@@ -332,7 +332,7 @@ For this exercise, the ``Juggling World Records'' page on Wikipedia will be used
 \end{figure}
 	
 \begin{enumerate}[resume]
-	\item A box will popup with a list of all tables on the page. In Figure \ref{07:fig02b}, the first table has been selected and a preview of that table can be seen.
+	\item A box will pop up with a list of all tables on the page. In Figure \ref{07:fig02b}, the first table has been selected and a preview of that table can be seen.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -354,7 +354,7 @@ For this exercise, the ``Juggling World Records'' page on Wikipedia will be used
 	\label{07:fig02c}
 \end{figure}
 
-The imported data contains records for number of balls juggled as found on a Wikipedia page. Excel displays a \textit{Queries \& Connections} box on the right side of the screen. That box lists the Web queries that were used to import data tables. Since there has only been one query then only one item appears in this box, but if more queries are run they will also be listed here. 
+The imported data contains records for number of balls juggled as found on a Wikipedia page. Excel displays a \textit{Queries \& Connections} box on the right side of the screen. That box lists the Web queries that were used to import data tables. Since there has only been one query then only one item appears in this box, but if more queries are run, they will also be listed here. 
 
 \begin{enumerate}[resume]
 	\item Close the \textit{Queries \& Connections} box by clicking the \fmtButton{X} in the top right corner of the box.
@@ -415,7 +415,7 @@ Normally, raw data includes unnecessary rows and columns that will need to be ``
 	\item Close \fmtWorksheet{CH7-WebData.xlsx}.
 \end{enumerate}
 
-\subsection{Import From Data File}\label{07:ImportFromDataFile}
+\subsection{Import from Data File}\label{07:ImportFromDataFile}
 
 It is common for web data to be downloaded via a data file. Those data files are, typically, in a \textit{.CSV} format (that stands for ``Comma Separated Values''). This is a simple text file and can be opened with a program no more complicated than \textit{Notepad}; but \textit{.CSV} files are typically opened with Excel or some other data analysis tool. Figure \ref{07:fig04} shows the first few lines of the sales data file used in this lesson opened in \textit{Notepad}.
 
@@ -518,7 +518,7 @@ Figure \ref{07:fig10} shows the first few lines of the worksheet which has the i
 	\end{objbox}
 \end{center}
 
-Pivot tables dynamically summarize data and are a favorite tool for analysts since they are highly customizable and very powerful. These tools are called pivot tables because the data displayed can be easily pivoted from rows to columns and back. Pivot tables are sometimes called contingency tables or crosstabs and are frequently seen in reports where tabular data is presented. A common example of a pivot table is found in newspapers and magazines during elections where the editor creates a table showing the number of voters by party, gender, race, or other factors. For this exercise, sales data from a small supplier will be analyzed.
+Pivot tables dynamically summarize data and are a favorite tool for analysts since they are highly customizable and enormously powerful. These tools are called pivot tables because the data displayed can be easily pivoted from rows to columns and back. Pivot tables are sometimes called contingency tables or crosstabs and are frequently seen in reports where tabular data is presented. A common example of a pivot table is found in newspapers and magazines during elections where the editor creates a table showing the number of voters by party, gender, race, or other factors. For this exercise, sales data from a small supplier will be analyzed.
 
 \begin{enumerate}
 	\item Open the \fmtWorksheet{Sales Summary} workbook that was created in section \ref{07:ImportFromDataFile} if it is not already opened.
@@ -598,7 +598,7 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 	\item Change the value displayed to average rather than sum.
 	
 	\begin{enumerate}
-		\item Click the down arrow in \textit{Sum of Total} in the \textit{Values} area, as illustrated in Figure \ref{07:fig16}
+		\item Click the down arrow in \textit{Sum of Total} in the \textit{Values} area, as illustrated in Figure \ref{07:fig16}.
 
 		\begin{figure}[H]
 			\centering
@@ -608,7 +608,7 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 		\end{figure}
 
 		\item Select \fmtButton{Value Field Settings}.
-		\item Select \fmtButton{Average} in the popup, as illustrated in Figure \ref{07:fig17}
+		\item Select \fmtButton{Average} in the popup, as illustrated in Figure \ref{07:fig17}.
 		\item Click \fmtButton{OK}.
 	\end{enumerate}
 
@@ -679,7 +679,7 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 \end{figure}
 
 \begin{enumerate}[resume]
-	\item To filter the data, click the down arrow to the right of the \textit{Column Labels} or \textit{Row Labels} headers on the pivot table (see Figure \ref{07:fig22}). Check only those regions or dates that should be included in the pivot table. For example, click the down arrow to the right of the \textit{Column Labels} and uncheck everything except \textit{East} and notice how the pivot table is updated to include only the East region. Also notice that the dropdown includes options to sort the data in the pivot table.
+	\item To filter the data, click the down arrow to the right of the \textit{Column Labels} or \textit{Row Labels} headers on the pivot table (see Figure \ref{07:fig22}). Check only those regions or dates that should be included in the pivot table. For example, click the down arrow to the right of the \textit{Column Labels} and uncheck everything except \textit{East} then click \fmtButton{OK}. Notice how the pivot table is updated to include only the East region. Also notice that the dropdown includes options to sort the data in the pivot table.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -690,6 +690,7 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 \end{figure}
 
 \begin{enumerate}[resume]
+	\item All regions should be included for the rest of this exercise, so click the down arrow to the right of the \textit{Column Labels} and check \textit{Select All} then click \fmtButton{OK}.
 	\item While managers normally like having dates grouped by month/quarter/year, that can be easily modified. Click cell \fmtLoc{A5} in the pivot table so only that one cell is selected. Click \fmtButton{Analyze $ \Rightarrow $ Group $ \Rightarrow $ Group Field}.
 \end{enumerate}
 
@@ -701,7 +702,7 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 \end{figure}
 
 \begin{enumerate}[resume]
-	\item In the \textit{Grouping} popup box the start/end dates for the data can be specified in order to limit the data shown in the pivot table. For this excercise, leave the dates at their default (two entire years), but click \textit{months} so it is no longer highlighted then click \fmtButton{OK}. Figure \ref{07:fig24} illustrates the \textit{Grouping} popup box after the \fmtButton{Months} item is inactivated. This will remove the \textit{Months} drill down capability and only show years and quarters in the pivot table. By using this option, details can be removed from the pivot table so trends may become more visible.
+	\item In the \textit{Grouping} popup box, the start/end dates for the data can be specified to limit the data shown in the pivot table. For this exercise, leave the dates at their default (two entire years), but click \textit{months} so it is no longer highlighted then click \fmtButton{OK}. Figure \ref{07:fig24} illustrates the \textit{Grouping} popup box after the \fmtButton{Months} item is inactivated. This will remove the \textit{Months} drill down capability and only show years and quarters in the pivot table. By using this option, details can be removed from the pivot table so trends may become more visible.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -776,7 +777,7 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 	\item Excel creates the pivot table in a new worksheet. Name that worksheet \fmtWorksheet{Sales By Region}.
 	Move \fmtWorksheet{Sales By Region} to the right of \fmtWorksheet{Annual Pivot}.
 	\item Click \fmtButton{Analyze $ \Rightarrow $ PivotTable $ \Rightarrow $ PivotTable Name} and enter \fmtTyping{By Region}.
-	\item The new pivot table includes all of the same features as those created manually so formatting and variable manipulation is available to modify this table.
+	\item The new pivot table includes all the same features as those created manually so formatting and variable manipulation is available to modify this table.
 	\item Save the \fmtWorksheet{CH7-Sales Summary} workbook.
 \end{enumerate}
 
@@ -830,7 +831,7 @@ One of the strengths of creating a pivot table is that the table can be used to 
 \begin{enumerate}[resume]	
 	\item In the \textit{Create PivotChart} popup, ensure that Excel automatically selected either the data table by name, \textit{CH7\_Data}, or the data range, \$A\$1:\$G\$44, which is all the data on the worksheet. Also, ensure \fmtButton{New Worksheet} is selected as the location of the new pivot chart.
 	\item Click \fmtButton{OK}.
-	\item Excel will open a new pivot chart worksheet. This worksheet is similar to a pivot table worksheet and creating a chart is like creating a table.
+	\item Excel will open a new pivot chart worksheet. This worksheet is like a pivot table worksheet and creating a chart is like creating a table.
 	\item Rename the pivot chart worksheet to \fmtWorksheet{Sales By Item}. 
 	\item Move \fmtWorksheet{Sales By Item} to the right of \fmtWorksheet{Sales By Region}.
 	\item In the \textit{Field List}, click the checkboxes for \fmtButton{Rep} and \fmtButton{Total}. Excel creates a bar chart that shows the total sales for each Representative, as illustrated in Figure \ref{07:fig28}.
@@ -889,7 +890,7 @@ One of the strengths of creating a pivot table is that the table can be used to 
 \end{figure}
 
 \begin{enumerate}[resume]	
-	\item Click off of the chart so it is no longer selected and then right-click on the chart title. Select \fmtButton{Edit Text} from the popup menu.
+	\item Click off the chart so it is no longer selected and then right-click on the chart title. Select \fmtButton{Edit Text} from the popup menu.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -900,7 +901,7 @@ One of the strengths of creating a pivot table is that the table can be used to 
 \end{figure}
 
 \begin{enumerate}[resume]	
-	\item Enter \fmtTyping{Sales by Item} as the chart title and then click off of the chart so it is no longer selected.
+	\item Enter \fmtTyping{Sales by Item} as the chart title and then click off the chart so it is no longer selected.
 	\item The chart colors and other chart elements can be changed using options found at \fmtButton{Design $ \Rightarrow $ Group $ \Rightarrow $ Button}.
 	\item Save the \fmtWorksheet{CH7-Sales Summary} workbook.
 	\item Close the \fmtWorksheet{CH7-Sales Summary} workbook.
@@ -916,7 +917,7 @@ One of the strengths of creating a pivot table is that the table can be used to 
 			\setlength{\parsep}{0pt}
 			
 			\item Creating a pivot chart uses the same process as a pivot table.
-			\item Once a pivot chart has been created, it can be modified using all of the chart tools.
+			\item Once a pivot chart has been created, it can be modified using all the chart tools.
 			
 		\end{itemize}
 	\end{tkwbox}
@@ -942,10 +943,9 @@ Just like consistency in formatting is important when working with workbooks con
 
 \begin{enumerate}
 	\item Open the \fmtWorksheet{CH7-Sales Summary} workbook that was created in section \ref{07:ImportFromDataFile}.
-	\item Click \fmtButton{File $ \Rightarrow $ Print} to enter the print preview. To view all of the worksheets at one time, select \fmtButton{Print Entire Workbook} in the first box in the Settings section. There are $ 6 $ pages to scroll through in \textit{Print Preview}. 
+	\item Click \fmtButton{File $ \Rightarrow $ Print} to enter the print preview. To view all the worksheets at one time, select \fmtButton{Print Entire Workbook} in the first box in the Settings section. There are $ 6 $ pages to scroll through in \textit{Print Preview}. 
 
 	\begin{itemize}
-		\item All of the pages look good except pages one and five.
 		\item Page one is just the raw data. There is no point in printing that worksheet so it should be hidden.
 		\item Page five has part of a pivot chart, but it continues onto another page.
 		\item A header and footer should be added.
@@ -976,17 +976,18 @@ Just like consistency in formatting is important when working with workbooks con
 \end{table}
 
 \begin{enumerate}[resume]
-	\item Activate the \fmtWorksheet{Sales Pivot} worksheet by clicking that tab. 
-	\item Click \fmtButton{Insert $ \Rightarrow $ Text $ \Rightarrow $ Header \& Footer}.
-	\item Click in the right section of the header to activate it. 
-	\item Click \fmtButton{Header \& Footer Elements $ \Rightarrow $ Current Date}.
-	\item Click \fmtButton{Navigation $ \Rightarrow $ Go to Footer}. 
-	\item Click in the center section of the footer to activate it. 
-	\item Click \fmtButton{Header \& Footer Elements $ \Rightarrow $ Sheet Name}
-	\item Click anywhere on the worksheet outside the footer.
-	\item Click \fmtButton{View \& Workbook Views $ \Rightarrow $ Normal}.
-	\item Repeat the same procedure to place a header and footer on the other three worksheets.
-	\item Click \fmtButton{File $ \Rightarrow $ Print} to enter the print preview. To view all of the worksheets at one time, select \fmtButton{Print Entire Workbook} in the first box in the Settings section. There are $ 4 $ pages to scroll through in \textit{Print Preview}. Confirm that each worksheet is printing on one page with the date in the header and the worksheet name in the footer.
+	\item Right-click the \fmtWorksheet{Sales Pivot} worksheet and click \fmtWorksheet{Select All Sheets} to group all four worksheets. 
+	\item Click \fmtButton{Page Layout $ \Rightarrow $ Page Setup $ \Rightarrow $ Launcher}.
+	\item Click the \fmtButton{Header/Footer} tab.
+	\item Click \fmtButton{Custom Header...}.
+	\item Click in the right section to activate it and then click the \fmtButton{Insert Date} button.
+	\item Click \fmtButton{OK}.
+	\item Click \fmtButton{Custom Footer...}.
+	\item Click in the center section to activate it and then click the \fmtButton{Insert Sheet Name} button.
+	\item Click \fmtButton{OK}.
+	\item Click \fmtButton{OK} to close the \textit{Page Setup} dialog box.
+	\item Right-click the \fmtWorksheet{Sales Pivot} worksheet and select \fmtButton{Ungroup Sheets}.
+	\item Click \fmtButton{File $ \Rightarrow $ Print} to enter the print preview. To view all the worksheets at one time, select \fmtButton{Print Entire Workbook} in the first box in the Settings section. There are $ 4 $ pages to scroll through in \textit{Print Preview}. Confirm that each worksheet is printing on one page with the date in the header and the worksheet name in the footer.
 	\item Save and close the \fmtWorksheet{CH7-Sales Summary} workbook.
 \end{enumerate}
 
