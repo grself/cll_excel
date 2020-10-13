@@ -27,7 +27,9 @@ One of the most powerful features of Excel is the ability to analyze data and cr
 Sparklines are tiny graphs that visually represent data in a single worksheet cell. These are powerful ways to help managers quickly ``see'' the data.
 
 \begin{enumerate}
+%fileopen CH8-Sparkline Data
 	\item Open workbook \fmtWorksheet{CH8-Sparkline Data}.
+%filesave CH8-Sparkline
 	\item Save the workbook as \fmtWorksheet{CH8-Sparkline}.
 	\item Open the \fmtWorksheet{Precipitation} worksheet. This worksheet contains the average monthly precipitation for ten United States cities\footnote{The climate data was found at \url{https://www.usclimatedata.com/climate/united-states/us}}.
 	\item Click cell \fmtLoc{N4} to activate that location.
@@ -111,7 +113,12 @@ The sparklines change into column graphs. The information does not change, but i
 Excel creates a bar graph that shows positive values in blue and negative values in red. This does not show the magnitude of each value, but only whether it is positive or negative in nature. This type of sparkline is useful for quickly determining things like if a stock price is increasing or decreasing.
 
 \begin{enumerate}[resume]
-	\item Save and close the \fmtWorksheet{CH8-Sparkline} workbook.
+%filesave CH8-Sparkline
+	\item Save the \fmtWorksheet{CH8-Sparkline} workbook.
+%fileclose CH8-Sparkline
+%filesolution CH8-Sparkline
+	\item Compare the workbook with the self-check answer key (\fmtWorksheet{CH8-Sparkline Solution}) and then close and submit the \fmtWorksheet{CH8-Sparkline} workbook as directed by the instructor.
+
 \end{enumerate}
 
 \subsection{Trend Lines}
@@ -119,7 +126,9 @@ Excel creates a bar graph that shows positive values in blue and negative values
 Excel can easily create trend lines on graphs to indicate data trends. These lines can optionally be extended to forecast how the data may soon move.
 
 \begin{enumerate}
+%fileopen CH8-Dow Data
 	\item Open workbook \fmtWorksheet{CH8-Dow Data}. This workbook contains the closing Dow Jones average for each month from $ 1981 $–$ 1990 $.
+%filesave CH8-Dow
 	\item Save the workbook as \fmtWorksheet{CH8-Dow}.
 	\item Click cell \fmtLoc{A1} to activate that location.
 	\item Click \fmtButton{Insert $ \Rightarrow $ Charts $ \Rightarrow $ Recommended Charts}.
@@ -210,20 +219,33 @@ The trend lines described above are easy to add to a chart, but Excel includes a
 	\item Excel creates a new worksheet containing the chart along with a table listing all the values used to create the chart.
 	\item Rename \fmtWorksheet{Sheet1} to \fmtTyping{Forecast}.
 	\item Scroll to the bottom of the table to see the values Excel forecast to extend the graph. Those values can be used to forecast the Dow Jones for a specific date; so, the Dow was forecast to be at $ 2389.37 $ in January $ 1991 $.
-	\item Save and close the \fmtWorksheet{CH8-Dow} workbook.
+	
+%filesave CH8-Dow
+	\item Save the \fmtWorksheet{CH8-Dow} workbook.
+%fileclose CH8-Dow
+%filesolution CH8-Dow	
+	\item Compare the workbook with the self-check answer key (\fmtWorksheet{CH8-Dow Solution}) and then close and submit the \fmtWorksheet{CH8-Dow} workbook as directed by the instructor.
+
 \end{enumerate}
 
 Following is a second example of a forecast worksheet that uses beer production data because it shows a clear seasonal trend over time.
 
 \begin{enumerate}
+%fileopen CH8-Beer Data
 	\item Open workbook \fmtWorksheet{CH8-Beer Data}. This workbook contains the total monthly United States beer production, in barrels, for January $ 1980 $, until December $ 1991 $. 
+%filesave CH8-Beer
 	\item Save the workbook as \fmtWorksheet{CH8-Beer}.
 	\item Click in \fmtLoc{A1} to select that location.
 	\item Click \fmtButton{Data $ \Rightarrow $ Forecast $ \Rightarrow $ Forecast Sheet}.
 	\item Accept the default options and click \fmtButton{Create}.
 	\item The graph clearly shows the cyclic nature of beer production and forecasts a similar cycle out to December $ 1994 $.
 	\item Rename \fmtWorksheet{Sheet1} to \fmtTyping{Forecast}.
-	\item After viewing the forecast sheet, save and close the \fmtWorksheet{CH8-Beer} workbook.
+%filesave CH8-Beer
+	\item Save the \fmtWorksheet{CH8-Beer} workbook.
+%fileclose CH8-Beer
+%filesolution CH8-Beer
+	\item Compare the workbook with the self-check answer key (\fmtWorksheet{CH8-Beer Solution}) and then close and submit the \fmtWorksheet{CH8-Beer} workbook as directed by the instructor.
+	
 \end{enumerate}
 
 \begin{figure}[H]
@@ -244,13 +266,14 @@ Excel includes a feature called \textit{$ 3 $D Maps} that merge geographically o
 \subsubsection{Arizona Population Growth}
 
 \begin{enumerate}
+%fileopen CH8-Map Data
 	\item Open workbook \fmtWorksheet{CH8-Map Data}. This workbook contains two worksheets.
 	
 	\begin{itemize}
 		\item \textbf{AZ Population}. This worksheet lists the population for all Arizona counties from $ 1969 $ until $ 2018 $, by year.\footnote{This data was found at the United States Bureau of Economic Analysis, \url{https://apps.bea.gov/iTable/iTable.cfm?reqid=70&step=1&isuri=1&acrdn=7\#reqid=70&step=1&isuri=1&acrdn=7}} Note: La Paz County was separated from Yuma County on January $ 1 $, $ 1983 $ so the Yuma data contains counts of people who lived in what became La Paz County through $ 1982 $ and excludes it beginning with $ 1983 $.
 		\item \textbf{GDP}. This worksheet contains the real \textit{Gross Domestic Product} (in millions of dollars) for each of the fifty states, and Washington D.C., from $ 2010 $ until $ 2015 $, by economic sector.\footnote{The GDP information was found at \url{http://proximityone.com/gdpbyindustry.htm}.} The table also includes a \textit{Quantity Index} for each year which indicates the percent change in each value when compared to the base year, $ 2009 $.
 	\end{itemize}
-	
+%filesave CH8-Maps
 	\item Save the workbook as \fmtWorksheet{CH8-Maps}.
 	\item In the \fmtWorksheet{AZ Population} worksheet, click cell \fmtLoc{A1} to activate that location.
 	\item Click \fmtButton{Insert $ \Rightarrow $ Tours $ \Rightarrow $ $ 3 $D Map}.
@@ -492,7 +515,12 @@ As a second example of a \textit{$ 3 $D Map}, the states' \textit{Gross Domestic
 	\item Click \fmtButton{Tour Editor}, \fmtButton{Layer Pane}, and \fmtButton{Field List} to turn off those dialog boxes. These can always be turned back on if desired.
 	\item Play the tour to see the completed \textit{$ 3 $D Maps Tour}.
 	\item To save the map, click \fmtButton{File $ \Rightarrow $ Close}. The map is saved as part of the workbook and will be available the next time the workbook is opened.
-	\item Save and close the \fmtWorksheet{CH8-Maps} workbook.
+
+%fileclose CH8-Maps
+	\item Save the \fmtWorksheet{CH8-Maps} workbook.
+%fileclose CH8-Maps
+%filesolution CH8-Maps
+	\item Compare the workbook with the self-check answer key (\fmtWorksheet{CH8-Maps Solution}) and then close and submit the \fmtWorksheet{CH8-Maps} workbook as directed by the instructor.
 	
 \end{enumerate}
 
@@ -544,6 +572,7 @@ As an example of a one-variable data table, imagine that the owner of a small th
 
 \begin{enumerate}
 	\item Open a new blank workbook.
+%filesave CH8-Data Table
 	\item Save the workbook as \fmtWorksheet{CH8-Data Table}.
 	\item Rename \fmtWorksheet{Sheet1} to \fmtTyping{Revenue}.
 	\item Enter the following labels (see Figure \ref{08:fig40}).
@@ -647,6 +676,7 @@ The data table displays the projected revenue for each of the growth rates in \f
 \end{figure}
 
 \begin{enumerate}[resume]
+%filesave CH8-Data Table
 	\item Save the \fmtWorksheet{CH8-Data Table} workbook.
 \end{enumerate}
 
@@ -717,7 +747,12 @@ The data table displays the payment due for each combination of interest rate an
 \end{figure}
 
 \begin{enumerate}[resume]
-	\item Save and close the \fmtWorksheet{CH8-Data Table} workbook.
+%filesave CH8-Data Table
+	\item Save the \fmtWorksheet{CH8-Data Table} workbook.
+%fileclose CH8-Data Table
+%filesolution CH8-Data Table Solution
+	\item Compare the workbook with the self-check answer key (\fmtWorksheet{CH8-Data Table Solution}) and then close and submit the \fmtWorksheet{CH8-Data Table} workbook as directed by the instructor.
+
 \end{enumerate}
 
 \subsection{Scenarios}
@@ -725,7 +760,9 @@ The data table displays the payment due for each combination of interest rate an
 Users may have data in a worksheet and want to change some of the variables to see the effect. For example, a business owner may want to consider ``best case'' and ``worst case'' values and then compare the results. This type of analysis is called a scenario in Excel.
 
 \begin{enumerate}
+%fileopen CH8-Scenario
 	\item Open workbook \fmtWorksheet{CH8-Scenario}.
+%filesave CH8-Williams Budget
 	\item Save the workbook as \fmtWorksheet{CH8-Williams Budget}.
 \end{enumerate}
 
@@ -884,7 +921,12 @@ This workbook is a simple household budget for the Williams family. There are tw
 \end{figure}
 
 \begin{enumerate}[resume]
-	\item Save and close the \fmtWorksheet{CH8-Williams Budget} workbook.
+	\item Save the \fmtWorksheet{CH8-Williams Budget} workbook.
+	
+%fileclose CH8-Williams Budget
+%filesolution CH8-Williams Budget Solution
+	\item Compare the workbook with the self-check answer key (\fmtWorksheet{CH8-Williams Budget Solution}) and then close and submit the \fmtWorksheet{CH8-Williams Budget} workbook as directed by the instructor.
+		
 \end{enumerate}
 
 \subsection{Goal Seeking}
@@ -894,6 +936,7 @@ Sometimes it is desirable to calculate a specific output for a formula by changi
 \begin{enumerate}
 	\item Open a new blank workbook.
 	\item Rename \fmtWorksheet{Sheet1} to \fmtTyping{Optimum Rate}.
+%filesave CH8-Goal Seek
 	\item Save the workbook as \fmtWorksheet{CH8-Goal Seek}.
 	\item Enter these labels in the first column.
 
@@ -941,7 +984,12 @@ Excel calculates an interest rate of $ 0.07021 $ ($ 7\% $) to yield a monthly pa
 
 \begin{enumerate}[resume]
 	\item To save the calculated amounts in the worksheet, click \textit{OK} but to cancel this process and return to the original worksheet values, click \textit{Cancel}. For this exercise, click \fmtButton{OK}.
-	\item Save and close the \fmtWorksheet{CH8-Goal Seek} workbook.
+%filesave CH8-Goal Seek
+	\item Save the \fmtWorksheet{CH8-Goal Seek} workbook.
+%fileclose CH8-Goal Seek
+%filesolution CH8-Goal Seek Solution
+	\item Compare the workbook with the self-check answer key (\fmtWorksheet{CH8-Goal Seek Solution}) and then close and submit the \fmtWorksheet{CH8-Goal Seek} workbook as directed by the instructor.
+
 \end{enumerate}
 
 \begin{figure}[H]
@@ -956,7 +1004,9 @@ Excel calculates an interest rate of $ 0.07021 $ ($ 7\% $) to yield a monthly pa
 The Excel Solver is used to find an optimum solution for complex business problems. As an example, Solver would evaluate multiple parameters to find the best mix of products for a company to manufacture. For this exercise, the \textit{PeopleMover Transportation} company wants to create a spreadsheet that will help their planners determine the best mix of motor coaches for a contract.
 
 \begin{enumerate}
+%fileopen CH8-Solver
 	\item Open workbook \fmtWorksheet{CH8-Solver}.
+%filesave CH8-PeopleMover
 	\item Save the workbook as \fmtWorksheet{CH8-PeopleMover}.
 \end{enumerate}
 
@@ -1055,7 +1105,12 @@ After a few seconds, the Solver will calculate the mix of coaches that yields th
 
 \begin{enumerate}[resume]
 	\item Click \fmtButton{Keep Solver Solution} and \fmtButton{OK} to save this solution. (To return to the original values without saving, click \textit{Restore Original Values} and \textit{OK}. Finally, this solution can be saved as a scenario so it can be compared with other solutions.)
-	\item Save and close \fmtWorksheet{CH8-PeopleMover}.
+%filesave CH8-PeopleMover
+	\item Save \fmtWorksheet{CH8-PeopleMover}.
+%fileclose CH8-PeopleMover
+%filesolution CH8-PeopleMover Solution
+	\item Compare the workbook with the self-check answer key (\fmtWorksheet{CH8-PeopleMover Solution}) and then close and submit the \fmtWorksheet{CH8-PeopleMover} workbook as directed by the instructor.
+
 \end{enumerate}
 
 \begin{center}
@@ -1083,7 +1138,9 @@ After a few seconds, the Solver will calculate the mix of coaches that yields th
 The United States Electoral College is a unique institution that is responsible for electing the President. In theory, people vote for electors in November who then later meet to vote for the President. This exercise draws a \textit{$ 3 $D Map} of the Electoral College presidential votes since $ 1912 $.
 
 \begin{enumerate}
+%fileopen PR8-Data
 	\item Open \fmtWorksheet{PR8-Data}. This workbook contains the results of the electoral college vote\footnote{The electoral college data was found at the United States National Archives, \url{https://www.archives.gov/electoral-college}} for all US Presidential elections from $ 1912 $ until $ 2016 $. Notes: In the $ 1912 $ election, Theodore Roosevelt ran under the ``Progressive'' party, but his votes are listed as ``Republican'' in this document since there was no Republican candidate that year. Alaska and Hawaii first sent delegates to the electoral college in $ 1960 $ and Washington DC in $ 1964 $.
+%filesave PR8-Elections
 	\item Save the workbook as \fmtWorksheet{PR8-Elections}.
 	\item Click in \fmtLoc{A1} to activate that cell.
 	\item Click \fmtButton{Insert $ \Rightarrow $ Tours $ \Rightarrow $ 3D Map}.
@@ -1119,10 +1176,12 @@ The United States Electoral College is a unique institution that is responsible 
 	\item Click \fmtButton{Create Video} to create a video version of the tour.
 	\item In the \textit{Create Video} dialog box, select \fmtButton{Quick Export \& Mobile}, then click \fmtButton{Create}. Save the video in the same folder as \fmtWorksheet{PR8-Elections}. Note: The video is being created at the lowest possible resolution so the file is small to make it easier to submit it to the instructor; to create a video designed to be presented to clients, it should be created at a higher resolution.
 	\item To save the map, click \fmtButton{File $ \Rightarrow $ Close}. The map is saved as part of the workbook and will be available the next time the workbook is opened.
-	\item Save and close the \fmtWorksheet{PR8-Elections} workbook.
-	\item Submit the \fmtWorksheet{PR8-Elections} workbook and video to the instructor.
+%filesave PR8-Elections
+	\item Save the \fmtWorksheet{PR8-Elections} workbook.
+%fileclose PR8-Elections
+%filesolution PR8-Elections Solution
+	\item Compare the workbook with the self-check answer key (\fmtWorksheet{PR8-Elections Solution}) and then close and submit the \fmtWorksheet{PR8-Elections} workbook and \fmtWorksheet{PR8-Election} video as directed by the instructor.
 \end{enumerate}
-
 
 \section{Scored Assessment}
 
@@ -1131,7 +1190,9 @@ The United States Electoral College is a unique institution that is responsible 
 The \textit{Giant Electronics} company is a local small business that sells discounted electronic devices, like televisions and computers. The owners, Addison and Kelsey, are planning for their annual spring promotion and want to create a good mix of sale items.
 
 \begin{enumerate}
+%fileopen SC8-Data
 	\item Open workbook \fmtWorksheet{SC8-Data}.
+%filesave SC8-Product Mix
 	\item Save the workbook as \fmtWorksheet{SC8-Product Mix}.
 \end{enumerate}
 
@@ -1223,7 +1284,8 @@ Take a look at \textit{Answer Report 1}, \textit{Answer Report 2}, and \textit{A
 		\caption{Solver Scenario Summary}
 		\label{08:fig83}
 	\end{figure}
-
+%filesave SC8-Product Mix
+%fileclose SC8-Product Mix
 	\item Save and close the \fmtWorksheet{SC8-Product Mix} workbook.
 	\item Submit the \fmtWorksheet{SC8-Product Mix} workbook to the instructor.
 \end{enumerate}
@@ -1242,7 +1304,9 @@ Take a look at \textit{Answer Report 1}, \textit{Answer Report 2}, and \textit{A
 After Excel $ 2016 $ was released, Microsoft added a new feature, \textit{Filled Maps}. This feature was added to Excel installations that included an Office 365 subscription, but not to stand-alone installations. As a result, some Excel $ 2016 $ installations will have \textit{Filled Maps} available but others will not. This addendum was included with this chapter for students who have access to \textit{Filled Maps}, but it is not considered part of the formal Excel training course.
 
 \begin{enumerate}
-	\item Open workbook \fmtWorksheet{CH8-CancerRate}. This workbook contains the rate of cigarette smoking along with cancer rates for various types of cancer that seem to be related to smoking. The data was captured in a study completed in $ 1960 $.
+%fileopen CH8-Cancer Rate
+	\item Open workbook \fmtWorksheet{CH8-Cancer Rate}. This workbook contains the rate of cigarette smoking along with cancer rates for various types of cancer that seem to be related to smoking. The data was captured in a study completed in $ 1960 $.
+%filesave CH8-Cancer Map
 	\item Save the workbook as \fmtWorksheet{CH8-Cancer Map}.
 	\item Click cell \fmtLoc{A3:B43} to activate that range of cells.
 	\item Click \fmtButton{Insert $ \Rightarrow $ Charts $ \Rightarrow $ Maps $ \Rightarrow $ Filled Map}.
@@ -1270,7 +1334,13 @@ After Excel $ 2016 $ was released, Microsoft added a new feature, \textit{Filled
 \end{figure}
 
 \begin{enumerate}[resume]
-	\item Save and close the \fmtWorksheet{CH8-Cancer Map} workbook.
+%filesave CH8-Cancer Map
+	\item Save the \fmtWorksheet{CH8-Cancer Map} workbook.
+	
+%fileclose CH8-Cancer Map
+%filesolution CH8-Cancer Map
+	\item Compare the workbook with the self-check answer key (\fmtWorksheet{CH8-Cancer Map Solution}) and then close the \fmtWorksheet{CH8-Cancer Map} workbook. Note: this is an addendum to the chapter so the workbook is not submitted.
+	
 \end{enumerate}
 
 In the same way that the cigarette use rate was mapped, any of the types of cancer can be mapped. The limitation is that only one variable, plus the state names, can be mapped at one time. However, if managers had sales data available, this would be a great way to determine, for example, where their best customers live so they can plan some sort of promotion.

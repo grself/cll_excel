@@ -35,6 +35,8 @@ The Excel workbooks used throughout this textbook have included multiple workshe
 \subsection{Navigating Through File with Multiple Worksheets}
 
 \begin{enumerate}
+%fileopen CH6-Data
+%filesave CH6-Personal Budget
 	\item Open \fmtWorksheet{CH6-Data} and save the file as \fmtWorksheet{CH6-Personal Budget}. Notice that the file has an \fmtWorksheet{Expenses Summary} worksheet tab at the far left followed by monthly worksheets.
 	\item Click on the different worksheet tabs at the bottom of the screen to move through the worksheets. The \fmtWorksheet{Expenses Summary} worksheet is formatted differently from the monthly worksheets, but all the monthly worksheets are identical in layout and format.
 	\item Take a second look at the months and notice the monthly expenses and income for September through October has not been added and there is no worksheet for December. 
@@ -93,7 +95,7 @@ To make a \textit{December} worksheet, copy the \textit{November} worksheet.
 		\item Bonus: $ \$250 $ (holiday bonus)
 		\item Freelance: delete amount
 	\end{itemize}
-
+%filesave CH6-Personal Budget
 	\item Save the \fmtWorksheet{CH6-Personal Budget} workbook.
 	\item Point the mouse at the \fmtWorksheet{December} worksheet tab at the bottom of the screen.
 	\item Hold down the left mouse button and then press and hold down the \fmtKeystroke{Ctrl} key. 
@@ -214,6 +216,7 @@ Look at the \textit{Notes} in the \textit{September} worksheet. It says that the
 	\item Click the \fmtWorksheet{October} worksheet tab to activate it.
 	\item Click cell \fmtLoc{C13} (\textit{Gym Membership}) and change the amount to $ \$0 $. Press \fmtKeystroke{Enter}.
 	\item Ungroup the worksheets. The \textit{Balance} should be October: \$605, November: \$530, and December: $ \$430 $.
+%filesave CH6-Personal Budget	
 	\item Save the \fmtWorksheet{CH6-Personal Budget} workbook.
 \end{enumerate}
 
@@ -285,6 +288,8 @@ The \textit{Summary} worksheet in many multiple worksheet workbooks is utilized 
 	\end{infobox}
 \end{center}
 
+\subsection{Create the Expenses Summary Worksheet}
+
 \begin{enumerate}
 	\item Click the \fmtWorksheet{Expenses Summary} worksheet tab to activate it.
 	\item Click cell \fmtLoc{C5} and enter \fmtTyping{=January!C5}. Press \fmtKeystroke{Enter}. This will get the amount $ \$700 $ from cell \fmtLoc{C5} in the \fmtWorksheet{January} worksheet.
@@ -317,7 +322,7 @@ For the \textit{Annual Amounts} in $ C5 $:$ C13 $ in the \textit{Expenses Summar
 	\end{sklbox}
 \end{center}
 
-Follow these steps to sum  the monthly amounts in the \textit{Expenses Summary} workall ofsheet.
+Follow these steps to sum the monthly amounts in the \textit{Expenses Summary} worksheet.
 
 \begin{enumerate}
 	\item Click cell \fmtLoc{C5} in the \fmtWorksheet{Expenses Summary} worksheet.
@@ -333,6 +338,7 @@ Follow these steps to sum  the monthly amounts in the \textit{Expenses Summary} 
 	\item Click cell \fmtTyping{C6} again and press \fmtKeystroke{Enter}. Cell \fmtLoc{C6} on the \fmtWorksheet{Expenses Summary} worksheet should now display the sum of $ \$1,610 $.
 	\item Click cell \fmtLoc{C6} in the \fmtWorksheet{Expenses Summary} worksheet. The formula bar should show the following: \fmtTyping{=SUM(January:December!C6)}.
 	\item Copy \fmtLoc{C6} to \fmtLoc{C7:C13}. The \fmtWorksheet{Expenses Summary} worksheet should match Figure \ref{06:fig07}.
+%filesave CH6-Personal Budget	
 	\item Save the \fmtWorksheet{CH6-Personal Budget} workbook.
 \end{enumerate}
 
@@ -382,9 +388,11 @@ While the $ 3 $-D formulas are complete in the \textit{Expenses Summary} workshe
 
 	\item Click \fmtButton{Chart Design $ \Rightarrow $ Chart Layouts $ \Rightarrow $ Add Chart Element $ \Rightarrow $ Data Labels $ \Rightarrow $ Outside End}.
 	\item The complete \fmtWorksheet{Expenses Summary} worksheet should look like Figure \ref{06:fig08} below.
+%filesave CH6-Personal Budget
 	\item Save the \fmtWorksheet{CH6-Personal Budget} workbook. 
-	\item If it is necessary to print the assignment, print ONLY the Summary worksheet in both regular and formula view. 
-	\item Close the \fmtWorksheet{CH6-Personal Budget} workbook.
+%fileclose CH6-Personal Budget
+%filesolution CH6-Personal Budget Solution
+	\item Compare the workbook with the self-check answer key (\fmtWorksheet{CH6-Personal Budget Solution}) and then close and submit the \fmtWorksheet{CH6-Personal Budget} workbook as directed by the instructor.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -481,8 +489,11 @@ Complete the following steps to investigate this template.
 	\item In formula view, carefully delete just the data in \fmtLoc{C10:I13}. Do not delete any formulas!
 	\item Press \fmtKeystroke{Ctrl}$+$\fmtKeystroke{$ \sim $} (that is \textit{Ctrl+tilde}) again to return to Normal view.
 	\item Enter dates and expenses for an imaginary trip in \fmtLoc{Row $ 10 $}, \fmtLoc{Row $ 11 $}, and \fmtLoc{Row $ 12 $}.
-	\item Save the completed workbook as \fmtWorksheet{CH6-Travel Expenses}. 
-	\item Close the \fmtWorksheet{CH6-Travel Expenses} workbook.
+%filesave CH6-Travel Expenses
+	\item Save the completed workbook as \fmtWorksheet{CH6-Travel Expenses}.
+%fileclose CH6-Travel Expenses
+%filesolution CH6-Travel Expenses Solution
+	\item Compare the workbook with the self-check answer key (\fmtWorksheet{CH6-Travel Expenses Solution}) and then close and submit the \fmtWorksheet{CH6-Travel Expenses} workbook as directed by the instructor.
 \end{enumerate}
 
 \begin{center}
@@ -506,7 +517,8 @@ Complete the following steps to investigate this template.
 To create a custom template, either start with a blank workbook or use an existing workbook . Either way, the template can be used to create new workbooks that have a uniform appearance and set of functions. For this exercise, the existing \textit{CH6-Personal Budget} file will be converted into a template but the assignments at the end of the chapter build a template from scratch.
 
 \begin{enumerate}
-	\item Open the \fmtWorksheet{CH6-Personal Budget.xlsx} file.
+%fileopen CH6-Personal Budget
+	\item Open the \fmtWorksheet{CH6-Personal Budget} file.
 	\item Group the month worksheets (\fmtWorksheet{January} through \fmtWorksheet{December}).
 	\item Press \fmtKeystroke{Ctrl}$+$\fmtKeystroke{$ \sim $} (that is \textit{Ctrl+tilde}) to switch to Formula view.
 	\item Delete only the data from these worksheets, not labels or formulas. 
@@ -536,9 +548,13 @@ To create a custom template, either start with a blank workbook or use an existi
 	\item Choose the location to save the file.
 	\item In the \textit{Save as type} pull-down list, select \fmtButton{Excel Template (*.xltx)}.
 	\item At the top of the screen, double-check that the location selected to save the file has not changed. If it has, navigate to the folder where the template will be saved. \textit{Be Careful Here!} By default, Excel will try to save this to a default template file location on the local hard drive.
-	\item Type in the file name \fmtWorksheet{CH6-Personal Budget Template.xltx}. Carefully compare the screen with Figure \ref{06:fig11}. Keep in mind that the template file may be getting saved to a different place on the computer since Excel will normally save templates to a specific folder on the local hard drive.
+%filesave CH6-Personal Budget Template
+	\item Type in the file name \fmtWorksheet{CH6-Personal Budget Template}. Carefully compare the screen with Figure \ref{06:fig11}. Keep in mind that the template file may be getting saved to a different place on the computer since Excel will normally save templates to a specific folder on the local hard drive.
 	\item Click \fmtButton{Save}.
-	\item Close the \fmtWorksheet{CH6-Personal Budget Template} file.
+%fileclose CH6-Personal Budget Template	
+%filesolution CH6-Personal Budget Template Solution
+	\item Compare the workbook with the self-check answer key (\fmtWorksheet{CH6-Personal Budget Template Solution}) and then close and submit the \fmtWorksheet{CH6-Personal Budget Template} workbook as directed by the instructor.
+	
 \end{enumerate}
 
 \begin{figure}[H]
@@ -572,10 +588,12 @@ Use the new budget template to start a Personal Budget file for $ 2017 $.
 
 \begin{enumerate}
 	\item Click \fmtButton{File $ \Rightarrow $ Open}.
+%fileopen CH6-Personal Budget Template
 	\item Navigate to the folder containing the \fmtWorksheet{CH6-Personal Budget Template} and open that file.
 	\item Click \fmtButton{File $ \Rightarrow $ Save As}.
 	\item Choose the location to save the $ 2017 $ version of the file.
 	\item Change the \textit{Save as Type} to \fmtButton{Excel Workbook (*.xlsx)}.
+%filesave CH6-2017 Personal Budget	
 	\item Enter the File name \fmtWorksheet{CH6-2017 Personal Budget}. Compare the screen to Figure \ref{06:fig12}.
 \end{enumerate}
 
@@ -604,6 +622,7 @@ Use the new budget template to start a Personal Budget file for $ 2017 $.
 
 \begin{enumerate}[resume]
 	\item Click the \fmtWorksheet{Expenses Summary} worksheet tab to activate it. The data and the pie chart should show the \textit{January} data since that is the only data in the twelve monthly worksheets. The worksheet should look like Figure \ref{06:fig14}.
+%filesave CH6-2017 Personal Budget	
 	\item Save the \fmtWorksheet{CH6-2017 Personal Budget} workbook.
 \end{enumerate}
 
@@ -647,7 +666,7 @@ Use the new budget template to start a Personal Budget file for $ 2017 $.
 	\end{objbox}
 \end{center}
 
-Just like consistency in formatting is important when working with workbooks containing multiple worksheets with the same type of data, so is consistency in page setup. Now that the \textit{Personal Budget 2017} workbook is complete, prepare it for printing by changing the page orientation and adding a header. All $ 13 $ worksheets will also be printed at one time.
+Just like consistency in formatting is important when working with workbooks containing multiple worksheets with the same type of data, so is consistency in page setup. Now that the \textit{2017 Personal Budget} workbook is complete, prepare it for printing by changing the page orientation and adding a header. All $ 13 $ worksheets will also be printed at one time.
 
 \subsection{Applying Page Setup Options to Grouped Worksheets}
 
@@ -691,15 +710,11 @@ As always, review the workbook in Print Preview before considering it complete.
 	\item Click \fmtButton{File $ \Rightarrow $ Print}.
 	\item Confirm that the \fmtWorksheet{Expenses Summary} worksheet is now printing on one page only. There should only be $ 13 $ pages in the printout.
 	\item Exit \textit{Print Preview}.
+%filesave CH6-2017 Personal Budget	
 	\item Save the \fmtWorksheet{CH6-2017 Personal Budget} workbook.
-	\item Compare the workbook with the self-check answer keys (found in the Course Files) and then submit the following files as directed by the instructor.
-	
-	\begin{itemize}
-		\item \fmtWorksheet{CH6-Personal Budget}
-		\item \fmtWorksheet{CH6-Personal Budget Template}
-		\item \fmtWorksheet{CH6-Travel Expenses}
-		\item \fmtWorksheet{CH6-2017 Personal Budget}
-	\end{itemize}
+%fileclose CH6-2017 Personal Budget
+%filesubmit CH6-2017 Personal Budget
+	\item Compare the workbook with the self-check answer key (\fmtWorksheet{CH6-2017 Personal Budget Solution}) and then close and submit the \fmtWorksheet{CH6-2017 Personal Budget} workbook as directed by the instructor.
 
 \end{enumerate}
 
@@ -726,6 +741,8 @@ As always, review the workbook in Print Preview before considering it complete.
 The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way to keep track of their team statistics. To help with this, create a template for season stats for each team. The \textit{High Flyers} team coach will use the template to enter that team's statistics into a workbook.
 
 \begin{enumerate}
+%fileopen PR6-Data
+%filesave PR6-Pacific NW Sports Team
 	\item Open the data file \fmtWorksheet{PR6-Data} and save the file as \fmtWorksheet{PR6-Pacific NW Sports Team}.
 	\item On the \fmtWorksheet{Season Stats} worksheet, copy \fmtLoc{A8:F19} to the same range in the \fmtWorksheet{Player Stats} worksheet.
 	\item Group the worksheets and add the following formulas to both worksheets.
@@ -747,8 +764,11 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 		\end{itemize}	
 	
 	\item Ungroup the worksheets.
-	\item Save the file as a template called \fmtWorksheet{PR6-Pacific NW Team Template.xltx}. Make sure to save the  template to a USB drive and not the default folder for templates on the local hard drive.
-	\item Make a new file using the \fmtWorksheet{PR6 Pacific NW Team Template} and save it as a regular Excel workbook named \fmtWorksheet{PR6 High Flyers.xlsx}. 
+%filesave PR6-Pacific NW Team Template
+%filesolution PR6-Pacific NW Sports Team Solution
+	\item Compare the workbook with the self-check answer key (\fmtWorksheet{PR6-Pacific NW Sports Team Solution}) and then save the file as a template called \fmtWorksheet{PR6-Pacific NW Team Template}. Make sure to save the  template to a USB drive and not the default folder for templates on the local hard drive.
+%filesave PR6-High Flyers
+	\item Make a new file using the \fmtWorksheet{PR6 Pacific NW Team Template} and save it as a regular Excel workbook named \fmtWorksheet{PR6-High Flyers}. 
 	\item In the \fmtWorksheet{Season Stats} worksheet, enter the following data:
 	
 	\begin{itemize}
@@ -793,7 +813,8 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 \end{table}
 
 \begin{enumerate}[resume]
-	\item Save the \fmtWorksheet{PR6 High Flyers} workbook.
+%filesave PR6-High Flyers
+	\item Save the \fmtWorksheet{PR6-High Flyers} workbook.
 	\item Click the \fmtWorksheet{Player 2} worksheet tab to activate it. 
 	\item In cell \fmtLoc{C5}, enter the \textit{Player Name}: \fmtTyping{Zach Johnson}. 
 	\item Enter other data from Table \ref{06:tab04}:
@@ -824,7 +845,8 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 \end{table}
 
 \begin{enumerate}[resume]
-	\item Save the \fmtWorksheet{PR6 High Flyers} workbook.
+%filesave PR6-High Flyers	
+	\item Save the \fmtWorksheet{PR6-High Flyers} workbook.
 	
 	\item Click the \fmtWorksheet{Player 3} worksheet tab to activate it. 
 	\item In cell \fmtLoc{C5}, enter the \textit{Player Name}: \fmtTyping{Vito Lawrenz}. 
@@ -856,7 +878,8 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 \end{table}
 
 \begin{enumerate}[resume]
-	\item Save the \fmtWorksheet{PR6 High Flyers} workbook.
+%filesave PR6-High Flyers	
+	\item Save the \fmtWorksheet{PR6-High Flyers} workbook.
 	\item Make up information for the names and data in the \fmtWorksheet{Player 4} and \fmtWorksheet{Player 5} worksheets.
 	\item Click the \fmtWorksheet{Season Stats} worksheet to activate it.
 
@@ -874,8 +897,11 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 	\item Exit \textit{Print Preview} by clicking the arrow in the top left corner of the screen. 
 	\item Click the tab to activate each of the six worksheets one at a time and then click \fmtButton{Page Layout $ \Rightarrow $ Page Setup $ \Rightarrow $ Print Area $ \Rightarrow $ Clear Print Area} for each worksheet.
 	\item Click \fmtButton{File $ \Rightarrow $ Print} to preview the worksheets in \textit{Print Preview}. Notice that now all six sheets print correctly.
+%filesave PR6-High Flyers	
 	\item Save the \fmtWorksheet{PR6-High Flyers} workbook.
-	\item Compare the workbook with the self-check answer key (found in the Course Files) and then submit the \fmtWorksheet{PR6-High Flyers} workbook and \fmtWorksheet{PR6-Pacific NW Team Template}.
+%fileclose PR6-High Flyers
+%filesolution PR6-High Flyers Solution
+	\item Compare the workbook with the self-check answer key (PR6-High Flyers Solution) and then close and submit the \fmtWorksheet{PR6-High Flyers} workbook and \fmtWorksheet{PR6-Pacific NW Team Template}.
 \end{enumerate}
 
 \section{Scored Assessment}
@@ -886,9 +912,10 @@ A template for National Parks usage data along with a Summary of the parks visit
 
 \begin{enumerate}
 	\item Open a new blank workbook.
-	\item Save the workbook as a template named \fmtWorksheet{SC6-National Parks Template}.
+%filesave SC6-National Parks Template
+%	\item Save the workbook as a template named \fmtWorksheet{SC6-National Parks Template}.
 	\item Change the name of \fmtWorksheet{Sheet1} to \fmtWorksheet{Park Data}. 
-	\item Design a professional quality worksheet to display individual park data. Include areas to enter the name of a park and the park statistics as found in Tables \ref{06:tab06}, \ref{06:tab07}, and \ref{06:tab08} below. (\textit{Note}: do not copy the physical layout of the data tables.) Figure \ref{06:fig17} is one example of how this could be set up, though students are encouraged to explore alternate layouts. (\textit{Note}: the camping graphic is available in the student files.)
+	\item Design a professional quality worksheet to display individual park data. Include areas to enter the name of a park and the park statistics as found in Tables \ref{06:tab06}, \ref{06:tab07}, and \ref{06:tab08} below. (\textit{Note}: do not copy the physical layout of the data tables.) Figure \ref{06:fig17} is one example of how this could be set up, though students are encouraged to explore alternate layouts. (\textit{Note}: the camping graphic is available in the student files as \textit{CH6-Camping.png}.)
 \end{enumerate}
 
 \begin{figure}[H]
@@ -900,9 +927,12 @@ A template for National Parks usage data along with a Summary of the parks visit
 
 \begin{enumerate}
 	\item Make a copy of the \fmtWorksheet{Park Data} worksheet and rename it \fmtWorksheet{Summary Park Data}. Make sure both worksheets are laid out exactly the same. The \fmtWorksheet{Summary Park Data} worksheet tab should be first and the \fmtWorksheet{Park Data} worksheet tab should be second.
-	\item Save the file as a template called \fmtWorksheet{SC6-National Parks Template.xltx}. Make sure this gets saved to a USB drive and not the default template folder on the hard drive. 
-	\item Close the template.
-	\item Make a new file using the template and save it as a regular Excel workbook with a name of \fmtWorksheet{SC6-Five National Parks.xlsx}.
+%filesave SC6-National Parks Template	
+	\item Save the file as a template called \fmtWorksheet{SC6-National Parks Template}. Make sure this gets saved to a USB drive and not the default template folder on the hard drive.
+%fileclose SC6-National Parks Template
+	\item Close \fmtWorksheet{SC6-National Parks Template}.
+%filesave SC6-Five National Parks
+	\item Make a new file using the template and save it as a regular Excel workbook with a name of \fmtWorksheet{SC6-Five National Parks}.
 	\item Make four copies of the \fmtWorksheet{Park Data} worksheet. Rename the five \textit{Park Data} worksheets after the five parks listed in Table \ref{06:tab06}.\footnote{Note: The National Park $ 2015 $ Data is from: \url{https://irma.nps.gov/Stats/SSRSReports}.}
 	\item Enter the park name in cell \fmtLoc{B3} on each of the \textit{Park Data} sheets.
 	\item To make the sheets a bit more readable, right-align cell \fmtLoc{B3} on each of the \textit{Park Data} worksheets.
@@ -973,6 +1003,8 @@ A template for National Parks usage data along with a Summary of the parks visit
 	\item On the \fmtWorksheet{Summary Park Data} worksheet, create formulas for all the fields that sum the same fields in the five park worksheets. So, cell \fmtLoc{B5} on \fmtWorksheet{Summary Park Data} should contain a sum of the \textit{Recreation Visitors} for all five parks.
 	\item On the \fmtWorksheet{Summary Park Data} worksheet, apply comma format to \fmtLoc{B5:B14} and reduce the number of decimal places to zero.
 	\item Click \fmtButton{File $ \Rightarrow $ Print} and check the entire workbook in \textit{Print Preview} to ensure that it is printing professionally. Make any changes needed.
+%filesave SC6-Five National Parks	
 	\item Save the \fmtWorksheet{SC6-Five National Parks} workbook.
-	\item Submit both the \fmtWorksheet{SC6-Five National Parks} and \fmtWorksheet{SC6-National Parks Template} files as directed by the instructor.
+%fileclose SC6-Five National Parks	
+	\item Close and submit both the \fmtWorksheet{SC6-Five National Parks} and \fmtWorksheet{SC6-National Parks Template} files as directed by the instructor.
 \end{enumerate}

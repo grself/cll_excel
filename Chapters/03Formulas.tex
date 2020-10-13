@@ -65,7 +65,9 @@ Figure \ref{03:fig01} shows the completed workbook that will be demonstrated in 
 Before moving on to the more interesting calculations discussed in this chapter, it is necessary to determine how many points it is possible for each student to earn for each of the assignments. This information will go into \textit{Row} $ 25 $. The \textit{=MAX} function is the tool of choice for this task.
 
 \begin{enumerate}
-	\item Open the data file \fmtWorksheet{CH3-Data} and save the file to the local computer as \fmtWorksheet{CH3-Grade Book}.
+%fileopen CH3-Data
+%filesave CH3-Grade Book
+	\item Open the data file \fmtWorksheet{CH3-Data} and save the file as \fmtWorksheet{CH3-Grade Book}.
 	\item Click \fmtLoc{B25}.
 	\item Start typing \fmtTyping{=MAX} (See Figure \ref{03:fig02}). Note the explanation that pops up on the offered list of functions. Either keep typing \fmtTyping{(} (an open parenthesis) or double click \fmtButton{MAX} from the popup list.
 \end{enumerate}
@@ -660,8 +662,11 @@ Next, preview the worksheet in \textit{Print Preview} to check that the print ar
 	\item Set the orientation to \fmtButton{Landscape}.
 	\item Change the scaling so that the entire worksheet prints on one page.
 	\item Close the print preview by clicking the arrow at the top left corner of the preview screen.
+%filesave CH3-Grade Book
 	\item Save the \fmtWorksheet{CH3-Grade Book} workbook.
-	\item Compare the worksheet with the self-check answer key (found in the Course Files) and then submit the \fmtWorksheet{CH3-Grade Book} workbook as directed by the instructor.
+%fileclose CH3-Grade Book
+%filesolution CH3-Grade Book Solution
+	\item Compare the worksheet with the self-check answer key (\fmtWorksheet{CH3-Grade Book Solution}) and then close and submit the \fmtWorksheet{CH3-Grade Book} workbook as directed by the instructor.
 \end{enumerate}
 
 \section{Preparing to Print}
@@ -700,6 +705,8 @@ The workbook used for this exercise contains data about the national parks in th
 The first thing to do is review the worksheet for formatting inconsistencies.
 
 \begin{enumerate}
+%fileopen CH3-PTP Data
+%filesave CH3-National Parks
 	\item Open the data file named \fmtWorksheet{CH3-PTP Data} and use the \textit{File/Save As} command to save it as \fmtWorksheet{CH3-National Parks}.
 	\item Scroll through the worksheet and locate the following formatting errors.
 
@@ -752,6 +759,7 @@ The next formatting correction is to change the label in $ E3 $ from \textit{Siz
 	\item Click \fmtButton{Home $ \Rightarrow $ Font $ \Rightarrow $ Dialog Box Launcher}. 	
 	\item In the Effects section of the \textit{Format Cells} dialog box, check the box for \fmtButton{Superscript} (see Figure \ref{03:fig28}). 
 	\item Click \fmtButton{OK}.
+%filesave CH3-National Parks
 	\item Save the \fmtWorksheet{CH3-National Parks} file.
 \end{enumerate}
 
@@ -883,8 +891,11 @@ Now that the worksheet is printing on three pages, with page breaks in appropria
 	\item Click anywhere on the worksheet to close the \textit{Footer} editing.
 	\item Click \fmtButton{File $ \Rightarrow $ Print}. Check that the date and file name are in the header and the page numbers in the footer are correct.
 	\item Exit \textit{Print Preview} by clicking the arrow button at the top left corner of the preview.
+%filesave CH3-National Parks
 	\item Save the \fmtWorksheet{CH3-National Parks} workbook.
-	\item Compare the worksheet with the self-check answer key (found in the Course Files) and then submit the \fmtWorksheet{CH3-National Parks} workbook as directed by the instructor.
+%fileclose CH3-National Parks
+%filesolution CH3-National Parks Solution
+	\item Compare the worksheet with the self-check answer key (\fmtWorksheet{CH3-National Parks Solution}) and then close and submit the \fmtWorksheet{CH3-National Parks} workbook as directed by the instructor.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -945,6 +956,8 @@ Now that the worksheet is printing on three pages, with page breaks in appropria
 Elijah and Kelly Williams are a recently married couple living in Portland, Oregon. Elijah works part time and attends the local community college. Kelly works as a marketing manager at a clothing company in North Portland. They are trying to decide if they can afford to move to a better apartment, one that is closer to work and school. They want to use Excel to examine their household budget. They have started their budget spreadsheet, but they need help with it.
 
 \begin{enumerate}
+%fileopen PR3-Data
+%filesave PR3-Williams
 	\item Open the file named \fmtWorksheet{PR3-Data} and then save it as \fmtWorksheet{PR3-Williams}.
 	\item Insert two new rows at the top of the worksheet.
 	\item Enter the following text in the indicated cells.
@@ -1097,9 +1110,11 @@ Elijah and Kelly Williams are a recently married couple living in Portland, Oreg
 	\item Check to see if the \fmtButton{IF} statement worked correctly in \fmtLoc{Row 50}. If the cells say \textit{No} when the data bar in the cell above it is red and \textit{Maybe} when the data bar in the cell above it is blue, then the \fmtButton{IF} statement is correct.
 
 	\item Review the worksheet in \textit{Print Preview}. Make any changes needed to make the worksheet print with landscape orientation on one page.
-
+%filesave PR3-Williams
 	\item Save the \fmtWorksheet{PR3-Williams} workbook.
-	\item Compare the result with the self-check answer key and then submit the \fmtWorksheet{PR3-Williams} workbook as directed by the instructor.
+%fileclose PR3-Williams
+%filesolution PR3-Williams Solution
+	\item Compare the result with the self-check answer key (\fmtWorksheet{PR3-Williams Solution}) and then close and submit the \fmtWorksheet{PR3-Williams} workbook as directed by the instructor.
 \end{enumerate}
 
 \section{Scored Assessment}
@@ -1109,6 +1124,8 @@ Elijah and Kelly Williams are a recently married couple living in Portland, Oreg
 Cynthia McHenry owns a coffee supply company named \textit{AstroCoffee}. She needs some help writing the formulas for the order form she uses to invoice customers. Formulas are needed for all of the calculations on the form. Some of the more complex parts are determining if the customer will get a discount (based on the customer status) as well as the shipping charge (orders over \$200 get free shipping). Use \fmtButton{IF} functions for both of those calculations.
 
 \begin{enumerate}
+%fileopen SC3-Data
+%filesave SC3-AstroCoffee
 	\item Open the \fmtWorksheet{SC3-Data} workbook and save it as \fmtWorksheet{SC3-AstroCoffee}.
 \item Enter the following order information.
 \begin{itemize}
@@ -1151,6 +1168,8 @@ Cynthia McHenry owns a coffee supply company named \textit{AstroCoffee}. She nee
 \item In cell \fmtLoc{F29}, use an \fmtButton{IF} function to display the correct Shipping Charge, based on the amount of the \textit{Discounted Total}. If the \textit{Discounted Total} is greater than or equal to the \textit{Free Shipping Minimum} found in cell \fmtLoc{B28}, the Shipping Charge is $ 0 $ (zero), otherwise, the Shipping Charge is $ 5\% $ of the Discounted Total. \textit{Hint:} a formula is needed for the Value if False to calculate what $ 5\% $ of the Discounted Total will be.
 \item Calculate the \textit{Invoice Total} in cell \fmtLoc{F31}. \textit{Hint:} This will be the total of the \textit{Discounted Total} and the \textit{Shipping Charge}.
 \item Review the worksheet in \textit{Print Preview}. Make any changes needed to make the worksheet print on one page.
-\item Save the \fmtWorksheet{SC3-AstroCoffee} workbook.
+%filesave SC3-AstroCoffee
+%fileclose SC3-AstroCoffee
+\item Save and close the \fmtWorksheet{SC3-AstroCoffee} workbook.
 \item Submit the \fmtWorksheet{SC3-AstroCoffee} workbook as directed by the instructor.
 \end{enumerate}

@@ -73,8 +73,10 @@ The first formula added to the \textit{Budget Detail} worksheet will calculate t
 
 \begin{enumerate}
 	\item Click \fmtButton{File $ \Rightarrow $ Open $ \Rightarrow $ Browse}.
+%fileopen CH2-Data	
 	\item Navigate to \fmtWorksheet{CH2-Data} and click \fmtButton{Open}.
 	\item Click \fmtButton{File $ \Rightarrow $ Save As $ \Rightarrow $ Browse}.
+%filesave CH2-Personal Budget
 	\item Navigate to the desired file location and save it with the name \fmtWorksheet{CH2-Personal Budget}.
 	\item Click the \fmtWorksheet{Budget Detail} worksheet tab to open the worksheet.
 	\item Click cell \fmtLoc{C3}.
@@ -310,6 +312,7 @@ Two other valuable formula tools are \textit{Trace Precedents} and \textit{Trace
 	\item Click cell \fmtLoc{F3} in the \fmtWorksheet{Budget Detail} worksheet.
 	\item Click \fmtButton{Formulas $ \Rightarrow $ Formula Auditing $ \Rightarrow $ Trace Precedents}. A blue arrow running through cells \fmtLoc{D3} and \fmtLoc{E3} and pointing to cell \fmtLoc{F3} appears (see Figure \ref{02:fig10}). This indicates that cells \fmtLoc{D3} and \fmtLoc{E3} are references in a formula entered in cell \fmtLoc{F3}.
 	\item Click \fmtButton{Formulas $ \Rightarrow $ Formula Auditing $ \Rightarrow $ Remove Arrows} to remove the \textit{Trace Precedents} arrow.
+%filesave CH2-Personal Budget	
 	\item Save the \fmtWorksheet{CH2-Personal Budget} file. Remember, it is always a good idea to regularly save a file.
 \end{enumerate}
 
@@ -767,6 +770,7 @@ The \textit{Budget Detail} worksheet shown in Figure \ref{02:fig26} is now produ
 	\item Click the down arrow next to the \fmtButton{Then by} box.
 	\item Select the \fmtButton{LY Spend} option. Leave the Sort Order as \fmtButton{Smallest to Largest}
 	\item Click \fmtButton{OK} at the bottom of the \textit{Sort} dialog box.
+%filesave CH2-Personal Budget
 	\item Save the \fmtWorksheet{CH2-Personal Budget} file.
 \end{enumerate}
 
@@ -1159,9 +1163,11 @@ Now, a few formulas can be added that calculate both the spending rate and the s
 	\item Click cell \fmtLoc{E6}.
 	\item Place the mouse pointer over the \fmtButton{Auto Fill Handle}.
 	\item When the mouse pointer turns to a black plus sign, left click and drag down to cell \fmtLoc{E7} to copy and paste the formula into cell \fmtLoc{E7}.
+%filesave CH2-Personal Budget
 	\item Save the \fmtWorksheet{CH2-Personal Budget} file.
-	\item Compare the workbook with the self-check answer key (found in the Course Files) and then submit the \fmtWorksheet{CH2-Personal Budget} workbook as directed by the instructor.
-	\item Close the \fmtWorksheet{CH2-Personal Budget} file before moving on to \ref{ch02:preparing_to_print}: \nameref{ch02:preparing_to_print}.
+%fileclose CH2-Personal Budget
+%filesolution CH2-Personal Budget Solution
+	\item Compare the worksheet with the self-check answer key (\fmtWorksheet{CH2-Personal Budget Solution}) and then close and submit the \fmtWorksheet{CH2-Personal Budget} workbook as directed by the instructor.
 \end{enumerate}
 
 Figure \ref{02:fig39} shows the output of the formulas calculating the spending rate and savings rate as a percentage of net income. The absolute reference shown for cell $ D2 $ prevents the cell from changing when the formula is copied from cell $ E6 $ and pasted into cell $ E7 $. The results of the formula show that the current budget allows for a savings rate of $ 5.9\% $, which is a good savings rate.
@@ -1217,12 +1223,16 @@ This section reviews some of the formatting techniques covered in Chapter \ref{c
 	\label{02:fig40}
 \end{figure}
 
+\subsection{Formatting the Worksheet}
+
 Sales data for a bakery supply company needs to be formatted in a professional manner. This worksheet will be printed and presented to investors, so it needs to be prepared for printing as well. Figure \ref{02:fig40} shows how the finished worksheet will appear in Print Preview.
 
 \begin{enumerate}
 	\item Click \fmtButton{File $ \Rightarrow $ Open $ \Rightarrow $ Browse}.
+%fileopen CH2-PTP Data
 	\item Navigate to \fmtWorksheet{CH2-PTP Data} and click \fmtButton{Open}.
 	\item Click \fmtButton{File $ \Rightarrow $ Save As $ \Rightarrow $ Browse}.
+%filesave CH2-Sales Data
 	\item Navigate to the desired file location and save it with the name \fmtWorksheet{CH2-Sales Data}.
 	\item To change the font of the entire worksheet, click the \fmtButton{Select All} button in the top left corner of the worksheet grid (see Figure \ref{02:fig41}).
 	\item Change the font to Calibri, Size 12.
@@ -1235,7 +1245,7 @@ Sales data for a bakery supply company needs to be formatted in a professional m
 	\label{02:fig41}
 \end{figure}
 
-Using the skills learned in Chapter \ref{ch01:fundamental_skills}, \nameref{ch01:fundamental_skills}, make the following formatting changes.
+Using the skills learned in Chapter \ref{ch01:fundamentals}, \nameref{ch01:fundamentals}, page \pageref{ch01:fundamentals}, make the following formatting changes.
 
 \begin{enumerate}
 	\item \fmtLoc{A1:H1} --- Merge and Center; font is 14 point bold; fill color is \textit{Blue, Accent 1, Darker 25\%}; font color is \textit{White}
@@ -1280,7 +1290,7 @@ Once the worksheet is professionally formatted, look at it in \textit{Print Prev
 
 \subsection{Creating a Footer Using Page Setup}
 
-Now that the entire worksheet is printing on one page, add a footer with information about the date the file was printed along with the filename. Chapter \ref{ch01:fundamental_skills}, \nameref{ch01:fundamental_skills} demonstrated how to create headers and footers using the \textit{Insert} ribbon tab. Headers and footers can also be created using the \textit{Custom Header/Footer} dialog box.
+Now that the entire worksheet is printing on one page, add a footer with information about the date the file was printed along with the filename. Chapter \ref{ch01:fundamentals}, \nameref{ch01:fundamentals}, page \pageref{ch01:fundamentals}, demonstrated how to create headers and footers using the \textit{Insert} ribbon tab. Headers and footers can also be created using the \textit{Custom Header/Footer} dialog box.
 
 \begin{enumerate}
 	\item Click \fmtButton{Page Layout $ \Rightarrow $ Page Setup $ \Rightarrow $ Dialog Box Launcher}. (Note, the \textit{Dialog Box Launcher} is a small icon that looks like an arrow in a box found in the lower right corner of the \textit{Page Setup} group.)
@@ -1314,9 +1324,12 @@ Now that the entire worksheet is printing on one page, add a footer with informa
 	\item The \textit{Footer} dialog box should look like Figure \ref{02:fig46}.
 	\item Click the \fmtButton{OK} button. Click \fmtButton{OK} again to close the \textit{Page Setup} dialog box.
 	\item Go to \fmtButton{File $ \Rightarrow $ Print} to see that the current date and file name are displayed in the footer.
-	\item Exit \textit{Backstage} View. 
+	\item Exit \textit{Backstage} View.
+%filesave CH2-Sales Data
 	\item Save the \fmtWorksheet{CH2-Sales Data} file.
-	\item Compare the workbook with the self-check answer key (found in the Course Files) and then submit the \fmtWorksheet{CH2-Sales Data} workbook as directed by the instructor.
+%fileclose CH2-Sales Data 
+%filesolution CH2-Sales Data Solution
+	\item Compare the worksheet with the self-check answer key (\fmtWorksheet{CH2-Sales Data Solution}) and then close and submit the \fmtWorksheet{CH2-Sales Data} workbook as directed by the instructor.	
 \end{enumerate}
 
 \begin{figure}[H]
@@ -1351,6 +1364,8 @@ Now that the entire worksheet is printing on one page, add a footer with informa
 Running a lawn care business can be an excellent way for young people to make money over the summer. It can also be a way to supplement existing income for the purpose of saving money for retirement or for a college fund. However, managing the costs of the business will be critical for it to be a profitable venture. In this exercise, a simple financial plan will be created for a lawn care business by using the skills covered in this chapter.
 
 \begin{enumerate}
+%fileopen PR2-Data
+%filesave PR2-Lawn Care
 	\item Open the file named \fmtWorksheet{PR2-Data} and then Save As \fmtWorksheet{PR2-Lawn Care}.
 
 	\item \fmtWorksheet{Annual Plan} worksheet.
@@ -1449,10 +1464,12 @@ Running a lawn care business can be an excellent way for young people to make mo
 	\end{enumerate}
 	
 	Double check that the formatting matches Figures \ref{02:fig47}, \ref{02:fig48}, and \ref{02:fig49}.
-	
+%filesave PR2-Lawn Care
 	\item Save the \fmtWorksheet{PR2-Lawn Care} workbook.
-	
-	\item Compare the workbook with the self-check answer key (found in the Course Files) and then submit the \fmtWorksheet{PR2 Lawn Care} workbook as directed by the instructor.
+%fileclose PR2-Lawn Care
+%filesolution	PR2-Lawn Care Solution
+	\item Compare the worksheet with the self-check answer key (\fmtWorksheet{PR2-Lawn Care Solution}) and then close and submit the \fmtWorksheet{PR2-Lawn Care} workbook as directed by the instructor.
+
 \end{enumerate}
 
 \begin{figure}[H]
@@ -1483,6 +1500,8 @@ Running a lawn care business can be an excellent way for young people to make mo
 The hotel management industry presents a wide variety of career opportunities, ranging from running a bed and breakfast to a management position at a large hotel. Regardless of the hotel management career, understanding hotel occupancy and costs are critical to running a successful operation. This exercise examines the occupancy rate and expenses of a small hotel.
 
 \begin{enumerate}
+%fileopen SC2-Data
+%filesave SC2-Hotel
 	\item Open the file named \fmtWorksheet{SC2-Data} and then Save As \fmtWorksheet{SC2-Hotel}.
 	
 	\item Enter a formula in cell \fmtLoc{C5} on the \fmtWorksheet{Occupancy} worksheet to calculate the January capacity for the hotel. The capacity shows how many people the hotel can hold during the month. It is calculated by first multiplying the \textit{Number of Rooms} by the \textit{Occupants per Room} in the hotel. This result is then multiplied by the number of \textit{Days in Month} (cell \fmtLoc{B5} for January). Create this formula using absolute references so that the appropriate cells do not change when the formula is pasted throughout \fmtLoc{Column C}. \textit{Hint}: two of the cells in the formula need to be absolute references.
@@ -1529,8 +1548,8 @@ The hotel management industry presents a wide variety of career opportunities, r
 	\item Center the \fmtWorksheet{Lease or Buy} worksheet horizontally on the page.
 	
 	\item Insert a footer on the \fmtWorksheet{Lease or Buy} worksheet. Insert the date (use the \fmtButton{Insert Date} button) in the left section of the footer. Insert the File Name (use the \fmtButton{Insert File Name} button) in the right section of the footer.
-	
-	\item Save the \fmtWorksheet{SC2-Hotel} workbook.
-	
+%filesave SC2-Hotel
+%fileclose SC2-Hotel
+	\item Save and close the \fmtWorksheet{SC2-Hotel} workbook.
 	\item Submit the \fmtWorksheet{SC2-Hotel} workbook as directed by the instructor.
 \end{enumerate}
