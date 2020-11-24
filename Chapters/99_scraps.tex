@@ -165,6 +165,25 @@ First paragraph.\blfootnote{Photo by lindsay Cotter on Unsplash}
 	} % End small
 \end{table}
 
+%***************************************************************************
+\section{Text Table With No Label or Caption}
+%***************************************************************************
+\begin{table}[H]
+	\rowcolors{1}{}{tablerow} % zebra striping background
+	\captionsetup{labelformat=empty} % kill the label and caption area
+	{\small
+		%\fontsize{8}{10} \selectfont %Replace small for special font size
+		\begin{longtable}{R{0.75in}L{1.50in}} %Left-aligned, Max width: 4.25in
+			\textbf{Chart Side} & \textbf{Locked To} \endhead
+			\hline
+			Top & Top of \fmtLoc{Row 3}\\
+			Left & Left of \fmtLoc{Column D}\\
+			Bottom & Bottom of \fmtLoc{Row 13}\\
+			Right & Right of \fmtLoc{Column J}\\
+		\end{longtable}
+	} % End small
+\end{table}
+
 
 %***************************************************************************
 \section{ToDo}
