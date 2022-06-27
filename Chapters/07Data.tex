@@ -1,6 +1,7 @@
 %*****************************************
 \chapter{Working with Data}\label{ch07:data}
 %*****************************************
+% Second pass corrections made and grammar checked 220624
 
 Excel is designed to work with data, and this chapter demonstrates how data is imported and analyzed with tools like pivot tables. The chapter begins with information about validating data input and safeguarding workbooks. 
 
@@ -20,7 +21,7 @@ Excel is designed to work with data, and this chapter demonstrates how data is i
 	\end{objbox}
 \end{center}
 
-It is occasionally desirable to safeguard certain cells in a worksheet, or the entire worksheet, to keep a user from accidentally changing something important. For example, if several cells include complex formulas then those should be secured so users will not accidentally delete them. There are two methods generally used to safeguard worksheets: data validation and worksheet protection. 
+It is occasionally desirable to safeguard specific cells in a worksheet, or the entire worksheet, to keep a user from accidentally changing something important. For example, if several cells include complex formulas, those should be secured so users will not accidentally delete them. Two methods are used to safeguard worksheets: data validation and worksheet protection. 
 
 \subsection{Data Validation}
 
@@ -83,7 +84,7 @@ One of the easiest ways to restrict data is to provide a drop-down list of choic
 		\end{figure}
 
 		\item Check \fmtButton{Ignore blank}. If this is left unchecked then it would force the user to enter a zip code, but when this is checked the user can leave the zip code field blank.
-		\item Check \fmtButton{In-cell dropdown}. This creates a drop-down list so the user can select a zip code from a list rather than enter it manually.
+		\item Check \fmtButton{In-cell drop-down}. This creates a drop-down list so the user can select a zip code from a list rather than enter it manually.
 		\item Enter \fmtTyping{=Zip\_Codes} for the \textit{Source} (notice the underscore between the word ``Zip'' and ``Codes''). This tells Excel that the acceptable list of zip codes for cell \fmtLoc{E2} is found in the \textit{Zip Codes} list.
 		\item Click \fmtButton{OK}.
 	\end{enumerate}
@@ -121,7 +122,7 @@ After following the above steps, a drop-down selection box will appear whenever 
 	\end{infobox}
 \end{center}
 
-A second validation method is used when the user can enter data that cannot be selected from a list. For example, if users are required to enter their age then a drop-down list containing every possible age is not reasonable. In this case, Excel can be set up to ensure that the data entered is within certain specific bounds. For example, an ``age'' entry could be between $ 20 $ and $ 65 $ for working adults (or maybe some other range). Data validation can use a full set of Boolean comparisons (between, equal to, greater than, etc.). As part of the process, various messages can be displayed when the cell is selected to help guide the user. Finally, the action taken when invalid data is entered (\textit{Stop}, \textit{Warning}, or \textit{Information}) can be specified.
+A second validation method is used when the user can enter data that cannot be selected from a list. For example, if users are required to enter their age, then a drop-down list containing every possible age is not reasonable. Excel can be set up, in this case, to ensure that the data entered is within certain specific bounds. For example, an ``age'' entry could be between $ 20 $ and $ 65 $ for working adults (or maybe some other range). Data validation can use various Boolean comparisons (like between, equal to, and greater than). As part of the process, various messages can be displayed when the cell is selected to help guide the user. Finally, the action to be taken when invalid data is entered (\textit{Stop}, \textit{Warning}, or \textit{Information}) can be specified.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -159,10 +160,10 @@ A second validation method is used when the user can enter data that cannot be s
 		\item Click \fmtLoc{F2} to activate that cell.
 		\item Click \fmtButton{Data $ \Rightarrow $ Data Tools $ \Rightarrow $ Data Validation}. (\textit{Note}, click the button, not the down arrow on the right side of the button.)
 		\item Click the \textit{Error Alert} tab on the \textit{Data Validation} dialog box. 
-		\item This cell was initially set to \textit{Stop} on an error. Perhaps, though, it would be acceptable for the user to finish the data entry even if it contained an error. Change the Style drop-down to \fmtButton{Warning}.
+		\item This cell was initially set to \textit{Stop} on an error. Perhaps it would be acceptable for the user to finish the data entry even if it contained an error. Change the Style drop-down to \fmtButton{Warning}.
 		\item Click \fmtButton{OK}.
 		\item Copy \fmtLoc{F2} to \fmtLoc{F3:F11}.
-		\item Click in \fmtLoc{F2} to activate that cell. Notice that the help message pops up. Enter some number in \fmtLoc{F2}. If that number is between $ 20 $ and $ 65 $ then the entry works without error, but if anything else is entered, a warning message pops up and permits the user to continue with the bad number or retry.
+		\item Click in \fmtLoc{F2} to activate that cell. Notice that the help message pops up. Enter some number in \fmtLoc{F2}. The entry works without error if that number is between $ 20 $ and $ 65 $. A warning message pops up if anything else is entered,  but the user can leave the incorrect age in place.
 
 		\begin{figure}[H]
 			\centering
@@ -171,7 +172,7 @@ A second validation method is used when the user can enter data that cannot be s
 			\label{07:fig41}
 		\end{figure}
 
-		\item Enter these numbers into cells \fmtLoc{F2:F11}: \fmtTyping{$ 19 $, $ 50 $, $ 67 $, $ 40 $, $ 53 $, $ 35 $, $ 60 $, $ 23 $, $ 65 $, $ 21 $}. A warning should pop up for \fmtLoc{F2} and \fmtLoc{F4} since those entries are out of the acceptable range, but click \fmtButton{Yes} on the warning popup box so the data is entered.
+		\item Enter these numbers into cells \fmtLoc{F2:F11}: \fmtTyping{$ 19 $, $ 50 $, $ 67 $, $ 40 $, $ 53 $, $ 35 $, $ 60 $, $ 23 $, $ 65 $, $ 21 $}. A warning should pop up for \fmtLoc{F2} and \fmtLoc{F4} since those entries are out of the acceptable range, but click \fmtButton{Yes} on the warning pop-up box, so the data is entered.
 		\item Click \fmtButton{Data $ \Rightarrow $ Data Tools $ \Rightarrow $ $ \Rightarrow $ Data Validation Down Arrow $ \Rightarrow $ Circle Invalid Data}.
 
 		\begin{figure}[H]
@@ -205,7 +206,7 @@ A second validation method is used when the user can enter data that cannot be s
 
 \subsection{Worksheet Protection}
 
-After entering the data validation rules, it may be desirable to lock the \fmtWorksheet{Validation} worksheet so users cannot accidentally delete the formulas or change the \textit{Zip Codes} validation list. Before adding protection to a worksheet, cells that need to remain open for editing must be unlocked. That way, after the entire sheet is locked those selected cells can still be edited. Follow these steps to unlock cells that should remain editable.
+After entering the data validation rules, it may be desirable to lock the \fmtWorksheet{Validation} worksheet so users cannot accidentally delete the formulas or change the \textit{Zip Codes} validation list. Before adding protection to a worksheet, cells that need to remain open for editing must be unlocked. That way, after the entire sheet is locked, those selected cells can still be edited. Follow these steps to unlock cells that should remain editable.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -271,7 +272,7 @@ After entering the data validation rules, it may be desirable to lock the \fmtWo
 	\end{objbox}
 \end{center}
 
-To use Excel's powerful tools for analysis, data must first be imported into a spreadsheet. Data can be imported from many sources, but two common ones are from the web and from a datafile located on the local computer. Data is very often posted on the web for researchers to use in their projects. The United States federal government, for example, has more than $ 200,000 $ datasets freely available in fields like taxes, crime, trade, education, and dozens of other topics\footnote{See \url{https://www.data.gov/}}. Sometimes, that data can be imported directly into Excel but more often it must be downloaded to a local computer and then imported into Excel from that file. This section demonstrates both of those procedures.
+Data must first be imported into a spreadsheet to use Excel’s powerful analysis tools. Data can be imported from many sources, but two common ones are from the web and a data file on the local computer. Data is often posted on the web for researchers to use in their projects. The United States federal government, for example, has more than $ 200,000 $ datasets freely available in fields like taxes, crime, trade, education, and dozens of other topics\footnote{See \url{https://www.data.gov/}}. Sometimes, that data can be imported directly into Excel, but more often, it must be downloaded to a local computer and then imported into Excel from that file. This section demonstrates both of those procedures.
 
 \subsection{Import from the Web}
 
@@ -292,7 +293,7 @@ Data contained in a table on a website can be imported directly into an Excel wo
 	\end{infobox}
 \end{center}
 
-For this exercise, the ``Juggling World Records'' page on Wikipedia will be used since it includes several different tables.
+The ``Juggling World Records'' page on Wikipedia will be used for this exercise since it includes several different tables.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -306,7 +307,7 @@ For this exercise, the ``Juggling World Records'' page on Wikipedia will be used
 			\label{07:fig01}
 		\end{figure}
 	
-		\item Select the \fmtButton{Basic} option and enter \fmtTyping{https://bit.ly/AdExcelC} in the \textit{From Web} popup, as shown in Figure \ref{07:fig02a}.
+		\item Select the \fmtButton{Basic} option and enter \fmtTyping{https://bit.ly/AdExcelC} in the \textit{From Web} pop-up, as shown in Figure \ref{07:fig02a}.
 	
 		\begin{figure}[H]
 			\centering
@@ -315,7 +316,7 @@ For this exercise, the ``Juggling World Records'' page on Wikipedia will be used
 			\label{07:fig02a}
 		\end{figure}
 	
-		\item Press \fmtButton{OK}
+		\item Click \fmtButton{OK}
 		\item It may take a few seconds for Excel to make a connection.
 		\item Excel permits several options to be set before accessing the Web content, but the defaults are acceptable. Click \fmtButton{Connect}.
 
@@ -347,7 +348,7 @@ For this exercise, the ``Juggling World Records'' page on Wikipedia will be used
 	\label{07:fig02c}
 \end{figure}
 
-The imported data contains records for number of balls juggled as found on a Wikipedia page. Excel displays a \textit{Queries \& Connections} box on the right side of the screen. That box lists the Web queries that were used to import data tables. Since there has only been one query then only one item appears in this box, but if more queries are run, they will also be listed here. 
+The imported data contains records for the number of balls juggled, as found on a Wikipedia page. Excel displays a \textit{Queries \& Connections} box on the right side of the screen. That box lists the Web queries that were used to import data tables. Since there has only been one query, only one item appears in this box, but if more queries are run, they will also be listed here. 
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -361,15 +362,15 @@ The webpage data is imported into Excel as a table, so tools like filtering, sor
 
 \subsection{Transforming Data}
 
-Normally, raw data includes unnecessary rows and columns that will need to be ``cleaned up'' a bit before it can be imported. This is a process that is called \textit{Transforming} and Excel makes that process easy to complete. 
+Raw data typically includes unnecessary rows and columns that need to be ``cleaned up'' a bit before they can be imported. This process is called \textit{Transforming}, and Excel makes that process easy to complete. 
 
 \begin{enumbox}
 	\begin{enumerate}
 		\item \fmtOldExcel{Excel 2016} Click \fmtButton{Data $ \Rightarrow $ Get \& Transform $ \Rightarrow $ New Query $ \Rightarrow $ From Other Sources $ \Rightarrow $ From Web}
 		\item \fmtNewExcel{Excel 365} Click \fmtButton{Data $ \Rightarrow $ Get \& Transform Data $ \Rightarrow $ Get Data $ \Rightarrow $ From Other Sources $ \Rightarrow $ From Web}
-		\item Enter \fmtTyping{https://bit.ly/AdExcelB} in the \textit{From Web} popup, as shown in Figure \ref{07:fig02a} and click \fmtButton{OK}.
-		\item For this exercise, an online table with FBI crime statistics from $ 2017 $ is being used as a source. Select Table $ 0 $, as shown in Figure \ref{07:fig02d}.
-		\item Notice in the preview that this table includes crime statistics for the years $ 2016 $ and $ 2017 $. It also includes various non-state regions, like ``Northeast.'' For this exercise, only the state-level data for $ 2017 $ is needed and it is much easier to filter that before the data is imported than to remove it later.
+		\item Enter \fmtTyping{https://bit.ly/AdExcelB} in the \textit{From Web} pop-up, as shown in Figure \ref{07:fig02a}, and click \fmtButton{OK}.
+		\item This exercise uses an online table with FBI crime statistics from $ 2017 $ as a source. Select Table $ 0 $, as shown in Figure \ref{07:fig02d}.
+		\item Notice in the preview that this table includes crime statistics for $ 2016 $ and $ 2017 $. It also includes various non-state regions, like ``Northeast.'' For this exercise, only the state-level data for $ 2017 $ is needed, and it is much easier to filter before the data is imported than to remove it later.
 		\item \fmtOldExcel{Excel 2016} Click \fmtButton{Edit} under the preview area.
 		\item \fmtNewExcel{Excel 365} Click \fmtButton{Transform Data} under the preview area.
 
@@ -408,7 +409,7 @@ Normally, raw data includes unnecessary rows and columns that will need to be ``
 
 \subsection{Import from Data File}\label{07:ImportFromDataFile}
 
-It is common for web data to be downloaded via a data file. Those data files are, typically, in a \textit{.CSV} format (that stands for ``Comma Separated Values''). This is a simple text file and can be opened with a program no more complicated than \textit{Notepad}; but \textit{.CSV} files are typically opened with Excel or some other data analysis tool. Figure \ref{07:fig04} shows the first few lines of the sales data file used in this lesson opened in \textit{Notepad}.
+It is common for web data to be downloaded via a data file. Those data files are, typically, in a \textit{.CSV} format (that stands for ``Comma Separated Values''). This data is a simple text file and can be opened with a program no more complicated than \textit{Notepad}, but \textit{.CSV} files are typically opened with Excel or some other data analysis tool. Figure \ref{07:fig04} shows the first few lines of the sales data file used in this lesson opened in \textit{Notepad}. (\textit{Note: this is dummy data created for this lesson.})
 
 \begin{figure}[H]
 	\centering
@@ -458,7 +459,7 @@ Complete the following steps to load a \textit{.CSV} file into Excel.
 	\end{enumerate}
 \end{enumbox}
 
-Figure \ref{07:fig10} shows the first few lines of the worksheet which has the imported data in a table that can be manipulated like any other table.
+Figure \ref{07:fig10} shows the first few lines of the worksheet, which has the imported data in a table that can be manipulated like any other table.
 
 \begin{figure}[H]
 	\centering
@@ -507,7 +508,7 @@ Figure \ref{07:fig10} shows the first few lines of the worksheet which has the i
 	\end{objbox}
 \end{center}
 
-Pivot tables dynamically summarize data and are a favorite tool for analysts since they are highly customizable and enormously powerful. These tools are called pivot tables because the data displayed can be easily pivoted from rows to columns and back. Pivot tables are sometimes called contingency tables or crosstabs and are frequently seen in reports where tabular data is presented. A common example of a pivot table is found in newspapers and magazines during elections where the editor creates a table showing the number of voters by party, gender, race, or other factors. For this exercise, sales data from a small supplier will be analyzed.
+Pivot tables dynamically summarize data and are a favorite tool for analysts since they are highly customizable and enormously powerful. These tools are called pivot tables because the data displayed can be easily pivoted from rows to columns and back. Pivot tables are sometimes called contingency tables or crosstabs and are frequently seen in reports where tabular data is presented. A typical pivot table example is found in newspapers and magazines during elections. The editor creates a table showing the number of voters by party, gender, race, or other factors. For this exercise, sales data from a small supplier will be analyzed.
 
 \subsection{Introduction to Pivot Tables}
 
@@ -524,7 +525,7 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 			\label{07:fig11}
 		\end{figure}
 
-		\item In the \textit{Create PivotTable} popup, as seen in Figure \ref{07:fig12}, ensure that Excel automatically selected either the name of the data table, \textit{CH7\_Data}, or the range \$A\$1:\$G\$44, which is all the data on the worksheet. Also, ensure \fmtButton{New Worksheet} is selected as the location of the new pivot table. 
+		\item In the \textit{Create PivotTable} pop-up, as seen in Figure \ref{07:fig12}, ensure that Excel automatically selected either the name of the data table, \textit{CH7\_Data}, or \$A\$1:\$G\$44, which is all the data on the worksheet. Also, ensure \fmtButton{New Worksheet} is selected as the location of the new pivot table. 
 		\item Click \fmtButton{OK}.
 
 		\begin{figure}[H]
@@ -541,7 +542,7 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 		\begin{itemize}
 			\item \textbf{A}. The \textbf{Pivot Table} will appear in the large area on the left (it is blank in the illustration).
 			\item \textbf{B}. The \textbf{Field List} contains the names of all the fields available in the data set. These are the column headers in the data table.
-			\item \textbf{C}. \textbf{Filters} is where complex filters can be created to restrict the data displayed on the pivot table.
+			\item \textbf{C}. \textbf{Filters} are where complex filters can be created to restrict the data displayed on the pivot table.
 			\item \textbf{D}. \textbf{Column Labels} define the columns on the pivot table.
 			\item \textbf{E}. \textbf{Row Labels} define the rows on the pivot table.
 			\item \textbf{F}. \textbf{Values} define the numeric data calculated and displayed in the pivot table.
@@ -565,7 +566,7 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 			\label{07:fig14}
 		\end{figure}
 	
-		\item Click and drag \textit{Item} from the \textit{Row Labels} area to the \textit{Column Labels} area. (Note, this can also be done by clicking the down-arrow for \textit{Item} and selecting \fmtButton{Move to Column Labels}.) The same data is still being displayed, but it has been rearranged to make it easier to compare regions. Also notice that Excel automatically created two Grand Totals, one for the rows and one for the columns. Figure \ref{07:fig15} illustrates the pivot table at this point.
+		\item Click and drag \textit{Item} from the \textit{Row Labels} area to the \textit{Column Labels} area. (Note, this can also be done by clicking the down-arrow for \textit{Item} and selecting \fmtButton{Move to Column Labels}.) The same data is still being displayed, but it has been rearranged to make it easier to compare regions. Also, notice that Excel automatically created two Grand Totals, one for the rows and one for the columns. Figure \ref{07:fig15} illustrates the pivot table at this point.
 
 		\begin{figure}[H]
 			\centering
@@ -574,22 +575,22 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 			\label{07:fig15}
 		\end{figure}
 
-		\item Uncheck \textit{Units} in the \textit{Field List}. This removes it from the pivot table and leaves only labels with no numbers.
-		\item Check \textit{Total} in the \textit{Field List}. This is the total value of the items sold and Excel places \textit{Total} in the \textit{Values} area since it contains numbers. The table now reports the total value of all sales by region and item.
+		\item Uncheck \textit{Units} in the \textit{Field List} to remove it from the pivot table and leave only labels with no numbers.
+		\item Check \textit{Total} in the \textit{Field List} to place \textit{Total} in the \textit{Values} area. The table now reports the total value of all sales by region and item.
 		\item Change the value displayed to average rather than sum.
 	
 		\begin{enumerate}
-			\item Click the down arrow in \textit{Sum of Total} in the \textit{Values} area, as illustrated in Figure \ref{07:fig16}.
+			\item Click the down arrow in \textit{Sum of Total} in the \textit{Values} area, as in Figure \ref{07:fig16}.
 	
 			\begin{figure}[H]
 				\centering
 				\includegraphics[width=\maxwidth{.75\linewidth}]{gfx/ch07_fig16}
-				\caption{Values popup}
+				\caption{Values pop-up}
 				\label{07:fig16}
 			\end{figure}
 	
 			\item Select \fmtButton{Value Field Settings}.
-			\item Select \fmtButton{Average} in the popup, as illustrated in Figure \ref{07:fig17}.
+			\item Select \fmtButton{Average} in the pop-up, as illustrated in Figure \ref{07:fig17}.
 			\item Click \fmtButton{OK}.
 		\end{enumerate}
 	
@@ -606,7 +607,7 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 		\begin{enumerate}
 			\item Click the down arrow in \textit{Average of Total} in the \textit{Values} area. 
 			\item Select \fmtButton{Value Field Settings}.
-			\item Click the \fmtButton{Number Format} button at the bottom left corner of the \textit{Value Field Settings} popup, as illustrated in Figure \ref{07:fig18}.
+			\item Click the \fmtButton{Number Format} button at the bottom left corner of the \textit{Value Field Settings} pop-up, as illustrated in Figure \ref{07:fig18}.
 	
 			\begin{figure}[H]
 				\centering
@@ -645,15 +646,15 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 
 \begin{enumbox}
 	\begin{enumerate}
-		\item Create a new pivot table by clicking in cell \fmtLoc{A1} in the \fmtWorksheet{Sales Data} worksheet.
+		\item Create a new pivot table by clicking cell \fmtLoc{A1} in the \fmtWorksheet{Sales Data} worksheet.
 		\item Click \fmtButton{Insert $ \Rightarrow $ Tables $ \Rightarrow $ PivotTable}.
-		\item In the \textit{Create PivotTable} popup, ensure that Excel automatically selected the data table name, \textit{CH7\_Data}, or the data range \$A\$1:\$G\$44, which is all the data on the worksheet. Also, ensure \fmtButton{New Worksheet} is selected as the location of the new pivot table. 
+		\item In the \textit{Create PivotTable} pop-up, ensure that Excel automatically selects the data table name, \textit{CH7\_Data}, or \$A\$1:\$G\$44, which is all the data on the worksheet. Also, ensure \fmtButton{New Worksheet} is selected as the location of the new pivot table. 
 		\item Click \fmtButton{OK}.
 		\item A pivot table is created on a new worksheet. Rename that worksheet \fmtWorksheet{Annual Pivot} and move it to the right of \fmtWorksheet{Sales Pivot}.
 		\item Click \fmtButton{Analyze $ \Rightarrow $ PivotTable $ \Rightarrow $ PivotTable Name} and enter \fmtTyping{Annual} for the \textit{Pivot Table Name}.
-		\item Check \textit{OrderDate} in the \textit{Field List}. By default, Excel places that item in the pivot table \textit{Row Labels} area since it contains dates. Notice that Excel automatically expands the dates into years and quarters.
-		\item Drag \textit{Total} from the \textit{Field List} to \textit{Values}. The pivot table now shows the total sales by date. Clicking the plus sign beside the years and quarters in the pivot table drills down to specific quarters and months of interest.
-		\item Drag \textit{Region} from the \textit{Field List} to \textit{Columns}. This creates columns for each region in the pivot table so now management can find sales by month and region.
+		\item Check \textit{OrderDate} in the \textit{Field List}. Since it contains dates, Excel places that item in the \textit{Row Labels} area. Notice that Excel automatically expands the dates into years and quarters.
+		\item Drag \textit{Total} from the \textit{Field List} to \textit{Values}. The pivot table now shows the total sales by date. Click the plus sign beside the years and quarters to drill down to specific times of interest.
+		\item Drag \textit{Region} from the \textit{Field List} to \textit{Columns} to create columns for each region. Now management can find sales by month and region.
 
 		\begin{figure}[H]
 			\centering
@@ -662,7 +663,7 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 			\label{07:fig21}
 		\end{figure}
 
-		\item To filter the data, click the down arrow to the right of the \textit{Column Labels} or \textit{Row Labels} headers on the pivot table (see Figure \ref{07:fig22}). Check only those regions or dates that should be included in the pivot table. For example, click the down arrow to the right of the \textit{Column Labels} and uncheck everything except \textit{East} then click \fmtButton{OK}. Notice how the pivot table is updated to include only the East region. Also notice that the dropdown includes options to sort the data in the pivot table.
+		\item To filter the data, click the down arrow to the right of the \textit{Column Labels} or \textit{Row Labels} headers on the pivot table (see Figure \ref{07:fig22}). Check only those regions or dates that should be included in the pivot table. For example, click the down arrow to the right of the \textit{Column Labels}, uncheck everything except \textit{East}, and then click \fmtButton{OK}. Notice how the pivot table is updated to include only the East region. Also, notice that the drop-down includes options to sort the data in the pivot table.
 
 		\begin{figure}[H]
 			\centering
@@ -671,8 +672,8 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 			\label{07:fig22}
 		\end{figure}
 
-		\item All regions should be included for the rest of this exercise, so click the down arrow to the right of the \textit{Column Labels} and check \textit{Select All} then click \fmtButton{OK}.
-		\item While managers normally like having dates grouped by month/quarter/year, that can be easily modified. Click cell \fmtLoc{A5} in the pivot table so only that one cell is selected. Click \fmtButton{Analyze $ \Rightarrow $ Group $ \Rightarrow $ Group Field}.
+		\item All regions should be included for the rest of this exercise, so click the down arrow to the right of the \textit{Column Labels} and check \textit{Select All}, then click \fmtButton{OK}.
+		\item While managers usually like having dates grouped by month/quarter/year, that can be easily modified. Click cell \fmtLoc{A5} in the pivot table, so only one cell is selected. Click \fmtButton{Analyze $ \Rightarrow $ Group $ \Rightarrow $ Group Field}.
 
 		\begin{figure}[H]
 			\centering
@@ -681,7 +682,7 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 			\label{07:fig23}
 		\end{figure}
 
-		\item In the \textit{Grouping} popup box, the start/end dates for the data can be specified to limit the data shown in the pivot table. For this exercise, leave the dates at their default (two entire years), but click \textit{months} so it is no longer highlighted then click \fmtButton{OK}. Figure \ref{07:fig24} illustrates the \textit{Grouping} popup box after the \fmtButton{Months} item is inactivated. This will remove the \textit{Months} drill down capability and only show years and quarters in the pivot table. By using this option, details can be removed from the pivot table so trends may become more visible.
+		\item In the \textit{Grouping} pop-up box, the start/end dates for the data can be specified to limit the data shown in the pivot table. For this exercise, leave the dates at their default (two entire years), click \textit{months} so it is no longer selected, then click \fmtButton{OK}. Figure \ref{07:fig24} illustrates the \textit{Grouping} pop-up box after the \fmtButton{Months} item is inactivated. This process removes the \textit{Months} drill-down capability and only shows years and quarters. By using this option, details can be removed from the pivot table so trends may become more visible.
 
 		\begin{figure}[H]
 			\centering
@@ -690,7 +691,7 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 			\label{07:fig24}
 		\end{figure}
 
-		\item Drag \textit{Rep} from the Field List to the Filters area. Notice that the pivot table now has a selector in cell \fmtLoc{B1} so a specific representative (or group of representatives) can be used to filter data on the pivot table. Click the down arrow for the \textit{Rep} filter, select \fmtButton{Andrews}, and click \fmtButton{OK}. Notice that the pivot table is instantly updated to include only Andrews' sales data.
+		\item Drag \textit{Rep} from the Field List to the Filters area. Notice that the pivot table now has a selector in cell \fmtLoc{B1}, so a specific representative (or group of representatives) can be used to filter data on the pivot table. Click the down arrow for the \textit{Rep} filter, select \fmtButton{Andrews}, and click \fmtButton{OK}. Notice that the pivot table is instantly updated to include only Andrews' sales data.
 
 		\begin{figure}[H]
 			\centering
@@ -739,7 +740,7 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 		\item Open the \fmtWorksheet{Sales Summary} workbook that was created in section \ref{07:ImportFromDataFile} if it is not already opened.
 		\item Click cell \fmtLoc{A1} in the \fmtWorksheet{Sales Data} worksheet.
 		\item Click \fmtButton{Insert $ \Rightarrow $ Tables $ \Rightarrow $ Recommended PivotTables}.
-		\item Excel will analyze the data and create several recommended pivot tables. These can be clicked and previewed in the \textit{Recommended PivotTables} popup. Figure \ref{07:fig26} illustrates the \textit{Recommended PivotTables} popup.
+		\item Excel will analyze the data and create several recommended pivot tables that can be previewed in the \textit{Recommended PivotTables} pop-up. Figure \ref{07:fig26} illustrates the \textit{Recommended PivotTables} pop-up.
 
 		\begin{figure}[H]
 			\centering
@@ -752,7 +753,7 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 		\item Excel creates the pivot table in a new worksheet. Name that worksheet \fmtWorksheet{Sales By Region}.
 		Move \fmtWorksheet{Sales By Region} to the right of \fmtWorksheet{Annual Pivot}.
 		\item Click \fmtButton{Analyze $ \Rightarrow $ PivotTable $ \Rightarrow $ PivotTable Name} and enter \fmtTyping{By Region}.
-		\item The new pivot table includes all the same features as those created manually so formatting and variable manipulation is available to modify this table.
+		\item The new pivot table includes the same features created manually, so formatting and variable manipulation are available to modify this table.
 		\item Save the \fmtWorksheet{CH7-Sales Summary} workbook.
 	\end{enumerate}
 \end{enumbox}
@@ -788,7 +789,7 @@ Pivot tables dynamically summarize data and are a favorite tool for analysts sin
 	\end{objbox}
 \end{center}
 
-One of the strengths of creating a pivot table is that the table can be used to create a chart and as the table is modified the chart is also automatically modified. Follow these directions to explore the power of pivot charts.
+One of the strengths of creating a pivot table is that the table can be used to create a chart and as the table is modified, the chart is also automatically modified. Follow these directions to explore the power of pivot charts.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -804,12 +805,12 @@ One of the strengths of creating a pivot table is that the table can be used to 
 			\label{07:fig27}
 		\end{figure}
 
-		\item In the \textit{Create PivotChart} popup, ensure that Excel automatically selected either the data table by name, \textit{CH7\_Data}, or the data range, \$A\$1:\$G\$44, which is all the data on the worksheet. Also, ensure \fmtButton{New Worksheet} is selected as the location of the new pivot chart.
+		\item In the \textit{Create PivotChart} pop-up, ensure that Excel automatically selected either the data table by name, \textit{CH7\_Data}, or \$A\$1:\$G\$44, which is all the data on the worksheet. Also, ensure \fmtButton{New Worksheet} is selected as the location of the new pivot chart.
 		\item Click \fmtButton{OK}.
-		\item Excel will open a new pivot chart worksheet. This worksheet is like a pivot table worksheet and creating a chart is like creating a table.
+		\item Excel will open a new pivot chart worksheet. This worksheet is like a pivot table worksheet; creating a chart is like creating a table.
 		\item Rename the pivot chart worksheet to \fmtWorksheet{Sales By Item}. 
 		\item Move \fmtWorksheet{Sales By Item} to the right of \fmtWorksheet{Sales By Region}.
-		\item In the \textit{Field List}, click the checkboxes for \fmtButton{Rep} and \fmtButton{Total}. Excel creates a bar chart that shows the total sales for each Representative, as illustrated in Figure \ref{07:fig28}.
+		\item In the \textit{Field List}, click the checkboxes for \fmtButton{Rep} and \fmtButton{Total}. Excel creates a bar chart showing each Representative's total sales, as in Figure \ref{07:fig28}.
 	
 		\begin{figure}[H]
 			\centering
@@ -819,10 +820,10 @@ One of the strengths of creating a pivot table is that the table can be used to 
 		\end{figure}
 
 		\item Uncheck \fmtButton{Rep} and check \fmtButton{Item}.
-		\item The bar chart automatically updates to display the total sales for each item in the inventory. This chart, though, would be better if it were a pie chart.
+		\item The bar chart automatically updates to display the total sales for each item in the inventory. However, this chart would be better if it were a pie chart.
 		\item Click the down arrow for the \fmtButton{Sum of Total} item in the \textit{Values} area of the pivot table.
-		\item Select \fmtButton{Value Field Settings} in the popup options menu.
-		\item Click the \fmtButton{Show Values As} tab in the \textit{Value Field Settings} popup box.
+		\item Select \fmtButton{Value Field Settings} in the pop-up options menu.
+		\item Click the \fmtButton{Show Values As} tab in the \textit{Value Field Settings} pop-up box.
 		\item Choose \fmtButton{\% of Grand Total} in the drop-down menu near the middle of the \textit{Value Field Settings} box.
 
 		\begin{figure}[H]
@@ -854,7 +855,7 @@ One of the strengths of creating a pivot table is that the table can be used to 
 			\label{07:fig31}
 		\end{figure}
 
-		\item Click off the chart so it is no longer selected and then right-click on the chart title. Select \fmtButton{Edit Text} from the popup menu.
+		\item Click off the chart so it is no longer selected and then right-click on the chart title. Select \fmtButton{Edit Text} from the pop-up menu.
 
 		\begin{figure}[H]
 			\centering
@@ -901,7 +902,7 @@ One of the strengths of creating a pivot table is that the table can be used to 
 	\end{objbox}
 \end{center}
 
-Just like consistency in formatting is important when working with workbooks containing multiple worksheets with pivot tables and charts,  so is consistency in page setup. The \textit{CH7-Sales Summary} workbook should be prepared for printing by modifying some of the settings and adding a header and footer. 
+Consistency in page setup is essential when working with pivot tables and charts. The \textit{CH7-Sales Summary} workbook should be prepared for printing by modifying some settings and adding a header and footer. 
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -916,8 +917,8 @@ Just like consistency in formatting is important when working with workbooks con
 	
 		\item Exit \textit{Print Preview} by clicking the arrow in the top left corner of the page.
 		\item Right-click on the \fmtWorksheet{Sales Data} worksheet tab and select \fmtButton{Hide}. This hides the worksheet so it is not printed, but the worksheet and data are all still available in the workbook so the pivot tables will still be functional.
-		\item Activate the \fmtWorksheet{Sales By Item} worksheet by clicking that tab. Notice that part of the chart is printing on a second page as indicated by a dotted line running down the edge of column J. 
-		\item Resize the chart using the following values. For each side of the chart, press the \fmtKeystroke{Alt} key while dragging the resize handle on the chart.
+		\item Activate the \fmtWorksheet{Sales By Item} worksheet by clicking that tab. Notice that part of the chart is printed on a second page, as indicated by a dotted line running down the edge of column J. 
+		\item Resize the chart using the following values. For each side of the chart, press and hold \fmtKeystroke{Alt}, then left-click and drag the resize handle on the chart to make it ``lock into'' position.
 	
 		\begin{table}[H]
 		\rowcolors{1}{}{tablerow} % zebra striping background
@@ -935,18 +936,18 @@ Just like consistency in formatting is important when working with workbooks con
 		} % End small
 		\end{table}
 
-		\item Right-click the \fmtWorksheet{Sales Pivot} worksheet and click \fmtWorksheet{Select All Sheets} to group all four worksheets. 
+		\item Right-click the \fmtWorksheet{Sales Pivot} worksheet and \fmtWorksheet{Select All Sheets} to group all four worksheets. 
 		\item Click \fmtButton{Page Layout $ \Rightarrow $ Page Setup $ \Rightarrow $ Launcher}.
 		\item Click the \fmtButton{Header/Footer} tab.
-		\item Click \fmtButton{Custom Header...}.
-		\item Click in the right section to activate it and then click the \fmtButton{Insert Date} button.
+		\item Click \fmtButton{Custom Header$\ldots$}.
+		\item Click the right section to activate it, and then click the \fmtButton{Insert Date} button.
 		\item Click \fmtButton{OK}.
-		\item Click \fmtButton{Custom Footer...}.
-		\item Click in the center section to activate it and then click the \fmtButton{Insert Sheet Name} button.
+		\item Click \fmtButton{Custom Footer$\ldots$}.
+		\item Click the center section to activate it, and then click the \fmtButton{Insert Sheet Name} button.
 		\item Click \fmtButton{OK}.
 		\item Click \fmtButton{OK} to close the \textit{Page Setup} dialog box.
 		\item Right-click the \fmtWorksheet{Sales Pivot} worksheet and select \fmtButton{Ungroup Sheets}.
-		\item Click \fmtButton{File $ \Rightarrow $ Print} to enter the print preview. To view all the worksheets at one time, select \fmtButton{Print Entire Workbook} in the first box in the Settings section. There are $ 4 $ pages to scroll through in \textit{Print Preview}. Confirm that each worksheet is printing on one page with the date in the header and the worksheet name in the footer.
+		\item Click \fmtButton{File $ \Rightarrow $ Print} to enter the print preview. To view all the worksheets at one time, select \fmtButton{Print Entire Workbook} in the first box in the Settings section. There are four pages to scroll through in \textit{Print Preview}. Confirm that each worksheet prints on one page. The date should be in the header and the worksheet name in the footer.
 		\item Save the \fmtWorksheet{CH7-Sales Summary} workbook.
 	
 	\item Compare the workbook with the self-check answer key (\fmtWorksheet{CH7-Sales Summary Solution}) and then close and submit the \fmtWorksheet{CH7-Sales Summary} workbook as directed by the instructor.
@@ -1003,7 +1004,7 @@ Just like consistency in formatting is important when working with workbooks con
 			\item Change the \textit{Custom Name} of this field to \fmtTyping{Total Billed}.
 			\item Click \fmtButton{OK}.
 			\item Right-click in cell \fmtLoc{B2} to activate it.
-			\item In the popup menu, select \fmtButton{Sort $ \Rightarrow $ Sort Largest to Smallest}. This sorts the total billed from the largest to smallest amount.
+			\item In the pop-up menu, select \fmtButton{Sort $ \Rightarrow $ Sort Largest to Smallest} to sort the total billed from the largest to the smallest amount.
 			\item Save the \fmtWorksheet{PR7-Project} workbook.
 		\end{enumerate}
 	
@@ -1018,7 +1019,7 @@ Just like consistency in formatting is important when working with workbooks con
 			\item Drag \textit{Client} from the \textit{Field List} to the \textit{Rows} area.
 			\item Drag \textit{Amount Billed} from the \textit{Field List} to the \textit{Values} area.
 			\item Change the name of the values header from \textit{Sum of Amount Billed} to \fmtTyping{Total Billed}.
-			\item Sort the \textit{Total Billed} column so the largest number is at the top.
+			\item Sort the \textit{Total Billed} column, so the largest number is at the top.
 			\item Save the \fmtWorksheet{PR7-Project} workbook.
 		\end{enumerate}
 	
@@ -1037,7 +1038,7 @@ Just like consistency in formatting is important when working with workbooks con
 			\item Save the \fmtWorksheet{PR7-Project} workbook.
 		\end{enumerate}
 		
-		\item{\textbf{Question 4}: Which team completed the largest proportion of the projects?}
+		\item{\textbf{Question 4}: Which team completed most of the projects?}
 	
 		\begin{enumerate}
 			\item Click in cell \fmtLoc{A1} in the \fmtWorksheet{Project Data} worksheet to activate it.
@@ -1048,7 +1049,7 @@ Just like consistency in formatting is important when working with workbooks con
 			\item Drag \textit{Team Leader} from the \textit{Field List} to the \textit{Axis (Categories)} area.
 			\item Drag \textit{Hours Spent} from the \textit{Field List} to the \textit{Values} area.
 			\item Change the name of the values header from \textit{Sum of Hours Spent} to \fmtTyping{Total Hours}.
-			\item Sort the \textit{Total Hours} column so the largest number is at the top.
+			\item Sort the \textit{Total Hours} column, so the largest number is at the top.
 			\item Change the title of the chart to \fmtTyping{Total Hours Spent}.
 			\item Since there is only one data point, the legend is not needed, so remove it. Click the $ + $ sign near the top right corner of the chart and uncheck the \fmtButton{Legend} item.
 		\end{enumerate}
@@ -1083,11 +1084,11 @@ Just like consistency in formatting is important when working with workbooks con
 		\item{\textbf{Question 1}: What is the average salary for each role?}
 		
 		\begin{enumerate}
-			\item Create a pivot table that lists the roles in the business (Accounting, Associate, etc.), the number of people in each role, and the average salary for that role. Hint: the \textit{Role} field should be dragged to both the \textit{Rows} area and the \textit{Values} area.
-			\item The pivot table and worksheet should be named \fmtWorksheet{Avr Salary} and that worksheet should be to the right of the \fmtWorksheet{Employee Data} worksheet.
-			\item The \textit{Salary} field should be changed from sum to average and renamed \textit{Avr Salary}. It should also be formatted as currency with two decimal places.
+			\item Create a pivot table listing the business roles, the number of people, and the average salary for each role. Hint: the \textit{Role} field should be dragged to both the \textit{Rows} and \textit{Values} areas.
+			\item The pivot table and worksheet should be named \fmtWorksheet{Avr Salary}, and that worksheet should be to the right of the \fmtWorksheet{Employee Data} worksheet.
+			\item The \textit{Salary} field should be changed from \textit{sum} to \textit{average} and renamed \textit{Avr Salary}. It should also be formatted as currency with two decimal places.
 			\item \textit{Count of role} in the \textit{values} field should be renamed \textit{Count}.
-			\item Sort the list so the highest salary is first. 
+			\item Sort the list, so the highest salary is first. 
 			\item Save the \fmtWorksheet{SC7-Employees} workbook.
 			\item Figure \ref{07:fig58} illustrates how the pivot table should look.
 		\end{enumerate}
@@ -1139,7 +1140,7 @@ Just like consistency in formatting is important when working with workbooks con
 	
 		\begin{enumerate}
 			\item Create a pivot chart (\textit{note}, this is a chart, not a table) that shows the count by role. (\textit{Hint}: count the username field since each employee has a unique username.)
-			\item The pivot chart and worksheet should be named \fmtWorksheet{Count By Role} and that worksheet should be to the right of the \fmtWorksheet{Year Hired} worksheet.
+			\item The pivot chart and worksheet should be named \fmtWorksheet{Count By Role} and moved to the right of the \fmtWorksheet{Year Hired} worksheet.
 			\item The username field should be labeled \textit{Number}.
 			\item The data should be sorted such that the role with the most employees (``Associate'') should be first.
 			\item The chart's title should be \textit{Count by Role}

@@ -1,10 +1,11 @@
 %*****************************************
 \chapter{Multiple Sheets}\label{ch06:sheets}
 %*****************************************
+% Second pass corrections made and grammar checked 220624
 
-Excel workbooks often contain a large amount of data and worksheets can quickly become overwhelming. When one worksheet becomes cumbersome, data can be broken out into smaller subsets and placed in separate worksheets within the same Excel file. Separating out workbook data into smaller pieces can lead to better data organization within a file and increase its ease of use. For example, when a retail company needs to track overall sales along with individual store sales, it makes sense to place each store's sales data in a separate worksheet within a file. Adding a summary worksheet that sums across all the worksheets will total the entire company sales data in the same file. This chapter will show how to set up a workbook to make using multiple worksheets quick and easy.
+Excel workbooks often contain a large amount of data, and worksheets can quickly become overwhelming. When one worksheet becomes cumbersome, data can be divided into smaller subsets and placed in separate worksheets within the same Excel file. Separating workbook data into smaller pieces can lead to better data organization within a file and increase its ease of use. For example, when a retail company needs to track overall sales and individual store sales, it makes sense to place each store's sales data in a separate worksheet within a file. Adding a worksheet that summarizes all the worksheets makes the data comprehensive. This chapter will show how to set up a workbook using multiple worksheets quickly and easily.
 
-When spreading data across several worksheets, it is essential that each worksheet is laid out in the same way. To facilitate this, a template can be used. A template is the basic pattern for each new worksheet that can be used repeatedly to make sure each new worksheet has the same setup, formatting, formulas, etc. as the existing worksheets in a file. In this chapter, both predefined Excel templates and those created from scratch will be used to meet the specific needs of the work required.
+When spreading data across several worksheets, each worksheet must be laid out in the same way. A template facilitates this process. A template is a basic pattern for each new worksheet that can be used repeatedly to ensure each new worksheet has the same setup, formatting, and formulas. In this chapter, predefined Excel templates and those created from scratch will be used to meet the specific needs of the work required.
 
 \section{Multiple Worksheet Basics}
 
@@ -23,7 +24,7 @@ When spreading data across several worksheets, it is essential that each workshe
 	\end{objbox}
 \end{center}
 
-The Excel workbooks used throughout this textbook have included multiple worksheets, so this concept will not be new. This chapter develops a personal budget file that contains income and expenses for an entire year. The file contains a worksheet for each month of the year as well as a summary worksheet that totals all twelve monthly worksheets. The chapter begins with exercises designed to demonstrate moving through worksheets, organizing them, and making sure that all twelve monthly worksheets are consistent. Figure \ref{06:fig01} shows the \textit{January} worksheet in the \textit{Personal Budget} file along with all the worksheet tabs along the bottom of the window.
+The Excel workbooks used throughout this textbook have included multiple worksheets, so this concept will not be new. This chapter develops a personal budget file containing an entire year's income and expenses. The file contains a worksheet for each month of the year and a summary worksheet that totals all twelve monthly worksheets. The chapter begins with exercises designed to demonstrate organizing worksheets and ensuring that the monthly worksheets are consistently formatted. Figure \ref{06:fig01} shows the \textit{January} worksheet in the \textit{Personal Budget} file and all the worksheet tabs at the bottom of the window.
 
 \begin{figure}[H]
 	\centering
@@ -72,7 +73,7 @@ To make a \textit{December} worksheet, copy the \textit{November} worksheet.
 \begin{enumbox}
 	\begin{enumerate}
 		\item Point the mouse at the \fmtWorksheet{November} worksheet tab at the bottom of the screen.
-		\item Hold down the left mouse button and then press and hold down the \fmtKeystroke{Ctrl} key. 
+		\item Press and hold the left mouse button and \fmtKeystroke{Ctrl} at the same time. 
 		\item Drag the mouse to the right and drop the copied worksheet to the right of the \fmtWorksheet{November} worksheet.
 		\item There should now be a \fmtWorksheet{November (2)} worksheet to the right of the \fmtWorksheet{November} worksheet as shown in Figure \ref{06:fig02}.
 
@@ -84,7 +85,7 @@ To make a \textit{December} worksheet, copy the \textit{November} worksheet.
 		\end{figure}
 
 		\item Right-click on the \fmtWorksheet{November (2)} worksheet name at the bottom of the screen and choose \fmtButton{Rename}.
-		\item Type \fmtTyping{December} and press \fmtKeystroke{Enter}.
+		\item Type \fmtTyping{December}, then tap \fmtKeystroke{Enter}.
 		\item Click on the \fmtWorksheet{December} worksheet tab to activate it. Note, be sure to activate the cell and not just the \textit{Monthly Budget} image.
 		\item Click cell \fmtLoc{B1} and change \textit{November} to \fmtTyping{December}.
 		\item Make the following data changes.
@@ -96,7 +97,7 @@ To make a \textit{December} worksheet, copy the \textit{November} worksheet.
 		\end{itemize}
 		\item Save the \fmtWorksheet{CH6-Personal Budget} workbook.
 		\item Point the mouse at the \fmtWorksheet{December} worksheet tab at the bottom of the screen.
-		\item Hold down the left mouse button and then press and hold down the \fmtKeystroke{Ctrl} key. 
+		\item Press and hold the left mouse button and \fmtKeystroke{Ctrl} at the same time. 
 		\item Drag the mouse to the right and drop the copied worksheet to the right of the \fmtWorksheet{December} worksheet.
 		\item There should now be a \fmtWorksheet{December (2)} worksheet to the right of the \fmtWorksheet{December} worksheet.
 		\item Rename the \fmtWorksheet{December(2)} worksheet to \fmtTyping{Practice}.
@@ -113,9 +114,9 @@ To make a \textit{December} worksheet, copy the \textit{November} worksheet.
 			\setlength{\parsep}{0pt}
 			
 			\item Point the mouse at the worksheet to copy at the bottom of the screen.
-			\item Hold down the left mouse button and then press and hold down the \fmtKeystroke{Ctrl} key.
-			\item Drag the mouse to the right (still holding down the left-mouse button and the \fmtKeystroke{Ctrl} key) until the black down-pointing arrow is to the right of the existing worksheet.
-			\item Let go of the mouse button and then the \fmtKeystroke{Ctrl} key. There should now be a \textit{Sheetname (2)} to the right of the original worksheet.
+			\item Press and hold the left mouse button and \fmtKeystroke{Ctrl} at the same time.
+			\item Drag the mouse to the right (still holding down the left-mouse button and \fmtKeystroke{Ctrl}) until the black down-pointing arrow is to the right of the existing worksheet.
+			\item Let go of the mouse button and then \fmtKeystroke{Ctrl}. There should now be a \textit{Sheetname (2)} to the right of the original worksheet.
 			\item Rename the \textit{Sheetname (2)} worksheet as desired.
 			
 		\end{itemize}
@@ -124,11 +125,11 @@ To make a \textit{December} worksheet, copy the \textit{November} worksheet.
 
 \subsection{Moving and Deleting Worksheets}
 
-Sometimes worksheets do not end up in the right order, and they need to be moved.
+Sometimes worksheets are not in the correct order and need to be moved.
 
 \begin{enumbox}
 	\begin{enumerate}
-		\item Point to the \fmtWorksheet{Practice} worksheet and hold down the left mouse button.
+		\item Point to the \fmtWorksheet{Practice} worksheet, then press and hold the left mouse button.
 		\item Notice this time that there is still a black arrow to the left of the \fmtWorksheet{Practice} worksheet, but the piece of paper is blank. It does not have a plus sign ($ + $) because the worksheet is moving instead of copying.
 		\item While still holding the left mouse button, drag to the left until a black arrow marker is between the \fmtWorksheet{October} and \fmtWorksheet{November} worksheets.
 		\item Release the mouse button.
@@ -136,7 +137,7 @@ Sometimes worksheets do not end up in the right order, and they need to be moved
 	\end{enumerate}
 \end{enumbox}
 
-Since the \textit{Practice} worksheet is not needed, use the following procedure to delete it.
+Since the \textit{Practice} worksheet is unnecessary, use the following process to delete it.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -164,16 +165,23 @@ Since the \textit{Practice} worksheet is not needed, use the following procedure
 
 \subsection{Grouping and Ungrouping Worksheets}
 
-Look at the monthly worksheets again. Notice that there is a place in each of these worksheets to calculate three pieces of \textit{Summary} data: \textit{Income}, \textit{Expenses}, and \textit{Balance}; but there are no formulas in these cells. There is also a place for the \textit{\% of Income Spent}, but a formula is needed in $ I6 $ to calculate this. If these formulas were individually added in each of the twelve monthly worksheets, it would take a long time and since this task is very repetitive it would also be likely that mistakes would be made along the way. By grouping all the month worksheets together, the formulas are entered only once but appear in all the worksheets.
+Look at the monthly worksheets again. Notice there is a place in each of these worksheets to calculate three pieces of \textit{Summary} data: \textit{Income}, \textit{Expenses}, and \textit{Balance}, but there are no formulas in these cells. There is also a place for the \textit{\% of Income Spent}, but a formula is needed in $ I6 $ to calculate this. If these formulas were individually added to each of the twelve monthly worksheets, it would take a long time, and since this task is very repetitive, mistakes would likely be made along the way. By grouping all the monthly worksheets, the formulas are entered only once but appear in all the worksheets.
 
 \begin{enumbox}
 	\begin{enumerate}
-		\item Click the \fmtWorksheet{January} worksheet tab to make it active.
-		\item Hold the \fmtKeystroke{Shift} key down and click on the \fmtWorksheet{December} worksheet tab to group them.
+		\item Tap the \fmtWorksheet{January} worksheet tab to make it active.
+		\item Press and hold \fmtKeystroke{Shift}, then click on the \fmtWorksheet{December} worksheet tab to group them.
 	\end{enumerate}
 \end{enumbox}
 
-All $ 12 $ worksheets are selected. This can be verified in two ways: the worksheet tabs that have been selected are in bold font at the bottom of the screen and the title bar at the top of the screen adds the word \textit{Group} to the end of the title. These are both visible in Figure \ref{06:fig04}.
+All $ 12 $ worksheets are selected, which can be verified in two ways, as illustrated in Figure \ref{06:fig04}.
+
+\begin{enumbox}
+	\begin{enumerate}
+		\item Selected worksheet tabs are in bold font at the bottom of the screen.
+		\item The title bar at the top of the screen adds the word \textit{Group} to the end of the title.
+	\end{enumerate}
+\end{enumbox}
 
 \begin{figure}[H]
 	\centering
@@ -182,7 +190,7 @@ All $ 12 $ worksheets are selected. This can be verified in two ways: the worksh
 	\label{06:fig04}
 \end{figure}
 
-\textit{It is important to remember that any changes made to the January worksheet will be made to all the grouped worksheets.} This makes it easy to make changes to all the worksheets at once, but they must be ungrouped after making changes or data on linked worksheets can be inadvertently destroyed. 
+\textit{It is important to remember that any changes made to the January worksheet will be made to all the grouped worksheets.} Grouping worksheets make it easy to make changes to all the worksheets at once, but they must be ungrouped after making changes, or data on linked worksheets can be inadvertently destroyed. 
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -194,7 +202,7 @@ All $ 12 $ worksheets are selected. This can be verified in two ways: the worksh
 	\end{enumerate}
 \end{enumbox}
 
-Notice that a data bar was set up in $ I5 $ to visually show the income spent, which is a skill that is covered elsewhere in the course. The \textit{January} worksheet should now look like Figure \ref{06:fig05}.
+Notice that a data bar was set up in $ I5 $ to visually show the income spent, a skill covered elsewhere in the course. The \textit{January} worksheet should now look like Figure \ref{06:fig05}.
 
 \begin{figure}[H]
 	\centering
@@ -218,14 +226,14 @@ Notice that a data bar was set up in $ I5 $ to visually show the income spent, w
 	\label{06:fig06}
 \end{figure}
 
-Look at the \textit{Notes} in the \textit{September} worksheet. It says that the rent was raised in September, so the \textit{Gym Membership} needs to be cancelled and $ \$0 $ should be entered for that amount in October, November, and December.
+Look at the \textit{Notes} in the \textit{September} worksheet. It says that the rent was raised in September, so the \textit{Gym Membership} needs to be canceled, and $ 0 $ should be entered for that amount in October, November, and December.
 
 \begin{enumbox}
 	\begin{enumerate}
 		\item Group the \fmtWorksheet{October}, \fmtWorksheet{November}, and \fmtWorksheet{December} worksheets. If this is done successfully these three worksheet names should be bold and the word \textit{Group} will appear in the Title bar.
 		\item Click the \fmtWorksheet{October} worksheet tab to activate it.
-		\item Click cell \fmtLoc{C13} (\textit{Gym Membership}) and change the amount to $ \$0 $. Press \fmtKeystroke{Enter}.
-		\item Ungroup the worksheets. The \textit{Balance} should be October: \$605, November: \$530, and December: $ \$430 $.
+		\item Click cell \fmtLoc{C13} (\textit{Gym Membership}) and change the amount to $ \$0 $, then tap \fmtKeystroke{Enter}.
+		\item Ungroup the worksheets. The \textit{Balance} should be October: $ \$605 $, November: $ \$530 $, and December: $ \$430 $.
 		\item Save the \fmtWorksheet{CH6-Personal Budget} workbook.
 	\end{enumerate}
 \end{enumbox}
@@ -239,7 +247,8 @@ Look at the \textit{Notes} in the \textit{September} worksheet. It says that the
 			\setlength{\parskip}{0pt}
 			\setlength{\parsep}{0pt}
 			
-			\item Click on the leftmost worksheet group; then hold the \fmtKeystroke{Shift} key down and click on the rightmost worksheet to group.
+			\item Click on the leftmost worksheet group.
+			\item Press and hold \fmtKeystroke{Shift}, then click the rightmost worksheet to group.
 		\end{itemize}
 			
 		\bigskip
@@ -287,7 +296,7 @@ Look at the \textit{Notes} in the \textit{September} worksheet. It says that the
 	\end{objbox}
 \end{center}
 
-The \textit{Summary} worksheet in many multiple worksheet workbooks is utilized to present totaled information from the other worksheets in the file. This is done to give a quick synopsis of all the other worksheets in one convenient location. For this reason, the \textit{Summary} worksheet is usually the first worksheet in multiple-sheet files. Summary worksheets ``pull'' data from the other worksheets using three-dimensional ($ 3 $-D ) cell references. To distinguish between $ A3 $ in the \textit{Summary} worksheet, $ A3 $ in the \textit{January} worksheet, $ A3 $ in the \textit{February} worksheet, etc.; a $ 3 $-D cell reference includes the worksheet name along with the cell reference. The syntax to reference a cell in a different worksheet is \textit{=SheetName!CellRange}. So, the cell reference for $ A15 $ in the \textit{March} worksheet would be \textit{=March!A15}.
+The \textit{Summary} worksheet presents totaled information from the other worksheets to give a quick synopsis in one convenient location. For this reason, the \textit{Summary} worksheet is usually the first worksheet in multiple-sheet files. Summary worksheets ``pull'' data from the other worksheets using three-dimensional ($ 3 $-D) cell references. A $ 3 $-D cell reference includes the worksheet name with the cell reference to distinguish between $ A3 $ in the \textit{Summary} worksheet and $ A3 $ in the monthly worksheets. The syntax to reference a cell in a different worksheet is \textit{=SheetName!CellRange}. So, the cell reference for $ A15 $ in the \textit{March} worksheet would be \textit{=March!A15}.
 
 \begin{center}
 	\begin{infobox}{Best Practice}
@@ -303,9 +312,9 @@ The \textit{Summary} worksheet in many multiple worksheet workbooks is utilized 
 \begin{enumbox}
 	\begin{enumerate}
 		\item Click the \fmtWorksheet{Expenses Summary} worksheet tab to activate it.
-		\item Click cell \fmtLoc{C5} and enter \fmtTyping{=January!C5}. Press \fmtKeystroke{Enter}. This will get the amount $ \$700 $ from cell \fmtLoc{C5} in the \fmtWorksheet{January} worksheet.
+		\item Click cell \fmtLoc{C5} and enter \fmtTyping{=January!C5}, then tap \fmtKeystroke{Enter}. This will get the amount $ \$700 $ from cell \fmtLoc{C5} in the \fmtWorksheet{January} worksheet.
 		\item Delete the formula in \fmtLoc{C5} in the \fmtWorksheet{Expenses Summary} worksheet.
-		\item This time, click cell \fmtLoc{C5} and type \fmtTyping{=}. Then click on the \fmtWorksheet{January} worksheet, click cell \fmtLoc{C5}, and press \fmtKeystroke{Enter}.
+		\item This time, click cell \fmtLoc{C5} and type \fmtTyping{=}. Then click on the \fmtWorksheet{January} worksheet, click cell \fmtLoc{C5}, then tap \fmtKeystroke{Enter}.
 		\item This will put the same formula, \fmtTyping{=January!C5}, in cell \fmtLoc{C5} in the \fmtWorksheet{Expenses Summary} worksheet and will return the value $ \$700 $. In general, it is more time-consuming to create a $ 3 $-D formula by clicking on separate worksheets, but it is less prone to error.
 		\item In cell \fmtLoc{C6} in the \fmtWorksheet{Expenses Summary} worksheet, try entering a formula for the \textit{Power} amount in the \fmtWorksheet{April} worksheet. That amount should be $ \$135 $.
 		\item Delete the formulas in cells \fmtLoc{C5} and \fmtLoc{C6} in the \fmtWorksheet{Expenses Summary} worksheet.
@@ -326,9 +335,9 @@ For the \textit{Annual Amounts} in $ C5 $:$ C13 $ in the \textit{Expenses Summar
 			\item Click on the cell where the $ 3 $-D SUM should appear.
 			\item Type \textit{=SUM(}
 			\item Click on the leftmost worksheet in the group of worksheets to sum.
-			\item Hold the \fmtKeystroke{Shift} key down and click on the rightmost worksheet in the group of worksheets to sum.
-			\item Click on the cell in the worksheet that should be summed.
-			\item Press \fmtKeystroke{Enter}.
+			\item Press and hold \fmtKeystroke{Shift}, then click the rightmost worksheet in the group of worksheets to sum.
+			\item Click the cell in the worksheet that should be summed.
+			\item Tap \fmtKeystroke{Enter}.
 			
 		\end{itemize}
 	\end{sklbox}
@@ -341,14 +350,14 @@ Follow these steps to sum the monthly amounts in the \textit{Expenses Summary} w
 		\item Click cell \fmtLoc{C5} in the \fmtWorksheet{Expenses Summary} worksheet.
 		\item Type \fmtTyping{=SUM(}. (Make sure to type the open parentheses.)
 		\item Click on the \fmtWorksheet{January} worksheet.
-		\item Hold the \fmtKeystroke{Shift} key down and click on the \fmtWorksheet{December} worksheet.
-		\item Click cell \fmtLoc{C5} again (this will be on the \fmtWorksheet{January} worksheet) and press \fmtKeystroke{Enter}. Cell \fmtLoc{C5} should display the sum of $ \$8,400 $.
+		\item Press and hold \fmtKeystroke{Shift}, then click the \fmtWorksheet{December} worksheet.
+		\item Click cell \fmtLoc{C5} again (this will be on the \fmtWorksheet{January} worksheet), then tap \fmtKeystroke{Enter}. Cell \fmtLoc{C5} should display the sum of $ \$8,400 $.
 		\item Click on \fmtLoc{C5} in the \fmtWorksheet{Expenses Summary} worksheet. The formula bar should show the following: \fmtTyping{=SUM(January:December!C5)}. This means Excel will calculate the sum of \fmtLoc{C5} on the \fmtWorksheet{January} through \fmtWorksheet{December} worksheets.
 		\item For another $ 3 $-D sum, click cell \fmtLoc{C6}.
 		\item Type \fmtTyping{=SUM(}. (Make sure to type the open parentheses.)
 		\item Click on the \fmtWorksheet{January} worksheet.
-		\item Hold the \fmtKeystroke{Shift} key down and click on the \fmtWorksheet{December} worksheet.
-		\item Click cell \fmtTyping{C6} again and press \fmtKeystroke{Enter}. Cell \fmtLoc{C6} on the \fmtWorksheet{Expenses Summary} worksheet should now display the sum of $ \$1,610 $.
+		\item Press and hold \fmtKeystroke{Shift}, then click the \fmtWorksheet{December} worksheet.
+		\item Click cell \fmtTyping{C6} again, then tap \fmtKeystroke{Enter}. Cell \fmtLoc{C6} on the \fmtWorksheet{Expenses Summary} worksheet should now display the sum of $ \$1,610 $.
 		\item Click cell \fmtLoc{C6} in the \fmtWorksheet{Expenses Summary} worksheet. The formula bar should show the following: \fmtTyping{=SUM(January:December!C6)}.
 		\item Copy \fmtLoc{C6} to \fmtLoc{C7:C13}. The \fmtWorksheet{Expenses Summary} worksheet should match Figure \ref{06:fig07}.
 		\item Save the \fmtWorksheet{CH6-Personal Budget} workbook.
@@ -362,14 +371,14 @@ Follow these steps to sum the monthly amounts in the \textit{Expenses Summary} w
 	\label{06:fig07}
 \end{figure}
 
-While the $ 3 $-D formulas are complete in the \textit{Expenses Summary} worksheet, the summary feels like it is lacking something, so add a visual representation of the summary numbers to the worksheet.
+While the $ 3 $-D formulas are complete in the \textit{Expenses Summary} worksheet, the summary feels like it lacks something, so add a visual representation of the summary numbers to the worksheet.
 
 \begin{enumbox}
 	\begin{enumerate}
 		\item Select cells \fmtLoc{B5:C13} in the \fmtWorksheet{Expenses Summary} worksheet.
 		\item Click \fmtButton{Insert $ \Rightarrow $ Charts $ \Rightarrow $ Pie Chart $ \Rightarrow $ First 2-D Pie}.
 	
-		\item Resize the pie chart using the values below. For each side of the chart, press the \fmtKeystroke{Alt} key while dragging the resize handle on the chart to make it ``lock into'' position.
+		\item Resize the pie chart using the values below. •	For each side of the chart, press and hold \fmtKeystroke{Alt}, then left-click and drag the resize handle on the chart to make it ``lock into'' position.
 	
 		\begin{table}[H]
 		\rowcolors{1}{}{tablerow} % zebra striping background
@@ -426,7 +435,7 @@ While the $ 3 $-D formulas are complete in the \textit{Expenses Summary} workshe
 			\begin{enumerate}
 				\item Click on the cell where the formula should appear and type \textit{=}.
 				\item Click the worksheet with the cell to reference.
-				\item Click the cell and press \fmtKeystroke{Enter}.
+				\item Click the cell, then tap \fmtKeystroke{Enter}.
 			\end{enumerate}
 			
 		\end{itemize}
@@ -464,9 +473,9 @@ While the $ 3 $-D formulas are complete in the \textit{Expenses Summary} workshe
 	\end{objbox}
 \end{center}
 
-A template is a predefined pattern for a workbook. Hundreds of templates created by Microsoft are available to use inside Excel and these templates are extremely helpful to quickly start and complete a new task in Excel. Templates include all the formulas, formatting, etc. needed in a professional Excel workbook. All that is left to do is enter the data. Predefined Microsoft templates include everything from billing statements to blood pressure trackers to business cards. Categories include: Business, Personal, Industry, Financial Management, Logs, Calculators, and Lists.
+A template is a predefined pattern for a workbook. Hundreds of templates created by Microsoft are available to use inside Excel, which is beneficial to starting and completing a new task in Excel quickly. Templates include all the formulas and formatting needed in a professional Excel workbook. All that is left to do is enter the data. Predefined Microsoft templates include billing statements, blood pressure trackers, business cards, and many others. Categories include Business, Personal, Industry, Financial Management, Logs, Calculators, and Lists.
 
-Sometimes a specific template is needed that has not already been created by Microsoft. Taking the time to create a custom template allows users to create new workbooks from it repeatedly. If a new version of some workbook is needed on a regular basis, templates will make this work much easier. This chapter explores both types of templates: predefined and custom.
+Sometimes a unique template is needed that is not predefined. Taking the time to create a custom template allows users to make standardized workbooks. This chapter explores both types of templates: predefined and custom.
 
 \subsection{Predefined Templates}
 
@@ -476,12 +485,12 @@ Microsoft has made many predefined templates available in Excel. Follow these st
 	\begin{enumerate}
 		\item Click \fmtButton{File $ \Rightarrow $ New}.
 		\item Click in the \textit{Search} box for Online template.
-		\item Type \fmtTyping{Travel} and press \fmtKeystroke{Enter}.
+		\item Type \fmtTyping{Travel}, then tap \fmtKeystroke{Enter}.
 		\item Click the \fmtButton{Travel Expense Report} and click \fmtButton{Create}. Note: If this template is not available, ask the instructor which template to use.
 	\end{enumerate}
 \end{enumbox}
 
-The screen should look like Figure \ref{06:fig09} below. Notice the design, layout, and formulas have already been set up.
+The screen should look like Figure \ref{06:fig09} below. Notice that the design, layout, and formulas have already been set up.
 
 \begin{figure}[H]
 	\centering
@@ -496,10 +505,10 @@ Complete the following steps to investigate this template.
 	\begin{enumerate}
 		\item Enter the student's name in \fmtLoc{C3} (\textit{Name}).
 		\item Enter \fmtTyping{CLL} in \fmtLoc{C5} (\textit{Department}).
-		\item Press \fmtKeystroke{Ctrl}$+$\fmtKeystroke{$ \sim $} (that is \textit{Ctrl+tilde}) to see where the formulas are in the worksheet. Working in the formula view helps find formulas, so they will not be accidentally deleted.
+		\item Press and hold \fmtKeystroke{Ctrl}, then tap \fmtKeystroke{$ \sim $} (that is \textit{Ctrl+tilde}) to see where the formulas are in the worksheet. Working in the formula view helps find formulas, so they will not be accidentally deleted.
 		\item In formula view, carefully delete just the data in \fmtLoc{C10:I13}. Do not delete any formulas!
-		\item Press \fmtKeystroke{Ctrl}$+$\fmtKeystroke{$ \sim $} (that is \textit{Ctrl+tilde}) again to return to Normal view.
-		\item Enter dates and expenses for an imaginary trip in \fmtLoc{Row $ 10 $}, \fmtLoc{Row $ 11 $}, and \fmtLoc{Row $ 12 $}.
+		\item Press and hold \fmtKeystroke{Ctrl}, then tap \fmtKeystroke{$ \sim $} (that is \textit{Ctrl+tilde}) again to return to Normal view.
+		\item Enter dates and expenses for an imaginary trip in \fmtLoc{Row 10}, \fmtLoc{Row 11}, and \fmtLoc{Row 12}.
 		\item Save the completed workbook as \fmtWorksheet{CH6-Travel Expenses}.
 		\item Compare the workbook with the self-check answer key (\fmtWorksheet{CH6-Travel Expenses Solution}) and then close and submit the \fmtWorksheet{CH6-Travel Expenses} workbook as directed by the instructor.
 	\end{enumerate}
@@ -515,7 +524,7 @@ Complete the following steps to investigate this template.
 			\setlength{\parsep}{0pt}
 
 			\item Click \textit{File $ \Rightarrow $ New}.
-			\item Type the desired template description in the \textit{Search} box, and press \fmtKeystroke{Enter}.
+			\item Type the desired template description in the \textit{Search} box, then tap \fmtKeystroke{Enter}.
 			
 		\end{itemize}
 	\end{sklbox}
@@ -523,22 +532,22 @@ Complete the following steps to investigate this template.
 
 \subsection{Custom Templates}
 
-To create a custom template, either start with a blank workbook or use an existing workbook . Either way, the template can be used to create new workbooks that have a uniform appearance and set of functions. For this exercise, the existing \textit{CH6-Personal Budget} file will be converted into a template but the assignments at the end of the chapter build a template from scratch.
+To create a custom template, either start with a blank workbook or use an existing workbook. Either way, the template can be used to create new workbooks that have a uniform appearance and set of functions. The existing \textit{CH6-Personal Budget} file will be converted into a template for this exercise. Other assignments in this chapter build a template from scratch.
 
 \begin{enumbox}
 	\begin{enumerate}
 		\item Open the \fmtWorksheet{CH6-Personal Budget} file.
 		\item Group the month worksheets (\fmtWorksheet{January} through \fmtWorksheet{December}).
-		\item Press \fmtKeystroke{Ctrl}$+$\fmtKeystroke{$ \sim $} (that is \textit{Ctrl+tilde}) to switch to Formula view.
+		\item Press and hold \fmtKeystroke{Ctrl}, then tap \fmtKeystroke{$ \sim $} (that is \textit{Ctrl+tilde}) to switch to Formula view.
 		\item Delete only the data from these worksheets, not labels or formulas. 
 	
 		\begin{itemize}
-			\item Select \fmtLoc{C5:C13} (with all the worksheets still grouped) and press \fmtKeystroke{Delete}.
-			\item Select \fmtLoc{F5:F8} (with all the worksheets still grouped) and press \fmtKeystroke{Delete}.
-			\item Select \fmtLoc{H11:J13} (with all the worksheets still grouped) and press \fmtKeystroke{Delete}.
+			\item Select \fmtLoc{C5:C13} (with all the worksheets still grouped), then tap \fmtKeystroke{Delete}.
+			\item Select \fmtLoc{F5:F8} (with all the worksheets still grouped), then tap \fmtKeystroke{Delete}.
+			\item Select \fmtLoc{H11:J13} (with all the worksheets still grouped), then tap \fmtKeystroke{Delete}.
 		\end{itemize}	
 	
-	\item Press \fmtKeystroke{Ctrl}$+$\fmtKeystroke{$ \sim $} (that is \textit{Ctrl+tilde}) to switch back to Normal view.
+	\item Press and hold \fmtKeystroke{Ctrl}, then tap \fmtKeystroke{$ \sim $} (that is \textit{Ctrl+tilde}) to switch back to Normal view.
 		\item Ungroup the worksheets. 
 		\item Look through the worksheets to check that only the data has been deleted. Notice the error message \textit{\#DIV/O} appears in \fmtLoc{I6} since the data for this formula has been deleted. The \fmtWorksheet{January} worksheet should look like Figure \ref{06:fig10}.
 	\end{enumerate}
@@ -551,7 +560,7 @@ To create a custom template, either start with a blank workbook or use an existi
 	\label{06:fig10}
 \end{figure}
 
-\textit{Note}: There are only formulas and the pie chart in the \textit{Expenses Summary} worksheet, so nothing needs to be deleted from this worksheet to setup the template.
+\textit{Note}: There are only formulas and the pie chart in the \textit{Expenses Summary} worksheet, so nothing needs to be deleted from this worksheet to set up the template.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -612,7 +621,7 @@ Use the new budget template to start a Personal Budget file for $ 2017 $.
 
 		\item Click \fmtButton{Save}.
 		\item Group all the worksheets together including the \fmtWorksheet{Expenses Summary} worksheet.
-		\item Click on \fmtLoc{H1}. Type \fmtTyping{$ 2017 $} and press \fmtKeystroke{Enter}.
+		\item Click \fmtLoc{H1}. Type \fmtTyping{$ 2017 $}, then tap \fmtKeystroke{Enter}.
 		\item Ungroup the worksheets.
 		\item Click the \fmtWorksheet{January} worksheet tab to activate it. 
 		\item Enter the data found in Figure \ref{06:fig13}.
@@ -669,7 +678,7 @@ Use the new budget template to start a Personal Budget file for $ 2017 $.
 	\end{objbox}
 \end{center}
 
-Just like consistency in formatting is important when working with workbooks containing multiple worksheets with the same type of data, so is consistency in page setup. Now that the \textit{2017 Personal Budget} workbook is complete, prepare it for printing by changing the page orientation and adding a header. All $ 13 $ worksheets will also be printed at one time.
+Consistency in page setup is essential when working with workbooks containing multiple worksheets. Now that the \textit{2017 Personal Budget} workbook is complete prepare it for printing by changing the page orientation and adding a header. All $ 13 $ worksheets will also be printed at one time.
 
 \subsection{Applying Page Setup Options to Grouped Worksheets}
 
@@ -696,7 +705,7 @@ As always, review the workbook in Print Preview before considering it complete.
 	\label{06:fig15}
 \end{figure}
 
-\textit{Print Preview} makes it clear that the \textit{Expenses Summary} worksheet is not set to print correctly since part of the chart is appearing on a second page. This can be easily fixed by changing the \textit{Scaling}, but to change the scaling of only the \textit{Expenses Summary} worksheet, not the entire workbook, the worksheets need to be ungrouped.
+\textit{Print Preview} clarifies that the \textit{Expenses Summary} worksheet is not set to print correctly since part of the chart appears on a second page. \textit{Scaling} will correct this error, but only the \textit{Expenses Summary} worksheet should be rescaled.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -744,7 +753,7 @@ As always, review the workbook in Print Preview before considering it complete.
 
 \subsection{A Multiple Worksheet Template for a Sports Team}
 
-The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way to keep track of their team statistics. To help with this, create a template for season stats for each team. The \textit{High Flyers} team coach will use the template to enter that team's statistics into a workbook.
+The \textit{Pacific Northwest Soccer Club} coaches want team statistics consistently tracked. To help with this, create a template for season stats for each team. The \textit{High Flyers} team coach will use the template to enter that team's statistics into a workbook.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -757,15 +766,15 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 			\item Copy \fmtLoc{B19} to \fmtLoc{C19} to count the number of \textit{X's} in those rows for children who started the game.
 			\item In \fmtLoc{D19}, enter \fmtTyping{=SUM(D9:D18)} to calculate the total number of shots taken. 
 			\item Copy \fmtLoc{D19} to \fmtLoc{E19} to calculate the total number of goals.
-			\item In \fmtLoc{F9}, calculate \textit{Goal Percentage} by dividing the number of \textit{Goals} by the number of \textit{Shots}. This will display an error message because there are zeros in \fmtLoc{Column D}. An \fmtTyping{IF} statement that tests the value of \fmtLoc{Column D} will keep error messages from appearing. Change \fmtLoc{F9} to an \fmtTyping{IF} formula using the following three parameters.
+			\item In \fmtLoc{F9}, calculate \textit{Goal Percentage} by dividing the number of \textit{Goals} by the number of \textit{Shots}. This calculation will display an error message because there are zeros in \fmtLoc{Column D}. An \fmtTyping{IF} statement that tests the value of \fmtLoc{Column D} will keep error messages from appearing. Change \fmtLoc{F9} to an \fmtTyping{IF} formula using the following three parameters.
 			\begin{itemize}
 				\item \textbf{Test}: is \fmtLoc{D9} greater than zero
-				\item \textbf{If the Test is True}: number of \textit{Goals} divided by the number of \textit{Shots}
+				\item \textbf{If the Test is True}: the number of \textit{Goals} divided by the number of \textit{Shots}
 				\item \textbf{If the Test is False}: zero
 			\end{itemize}
 			\item Copy \fmtLoc{F9} to \fmtLoc{F10:F19}.
 			\item Format \fmtLoc{F9:F19} as percentages.
-			\item Using \fmtButton{Home $ \Rightarrow $ Font $ \Rightarrow $ Fill Color}, set \fmtLoc{Row $ 10 $}, \fmtLoc{Row $ 12 $}, \fmtLoc{Row $ 14 $}, \fmtLoc{Row $ 16 $}, and \fmtLoc{Row $ 18 $} to \textit{No Fill}. 
+			\item Using \fmtButton{Home $ \Rightarrow $ Font $ \Rightarrow $ Fill Color}, set \fmtLoc{Row 10}, \fmtLoc{Row 12}, \fmtLoc{Row 14}, \fmtLoc{Row 16}, and \fmtLoc{Row 18} to \textit{No Fill}. 
 			\end{itemize}	
 		
 		\item Ungroup the worksheets.
@@ -798,16 +807,16 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 		\begin{longtable}{L{0.65in}C{0.45in}C{0.50in}C{0.40in}C{0.40in}} %Left-aligned, Max width: 4.25in
 			\textbf{Game} & \textbf{Played} & \textbf{Started} & \textbf{Shots} & \textbf{Goals}\endhead
 			\hline
-			Game $ 1  $  & x & x & $ 2 $ & $ 1 $ \\
-			Game $ 2  $  & x & x & $ 3 $ & $ 1 $ \\
+			Game $ 1  $  & X & X & $ 2 $ & $ 1 $ \\
+			Game $ 2  $  & X & X & $ 3 $ & $ 1 $ \\
 			Game $ 3  $  &   &   &       &       \\
-			Game $ 4  $  & x &   &       &       \\
-			Game $ 5  $  & x & x & $ 2 $ & $ 0 $ \\
-			Game $ 6  $  & x &   &       &       \\
-			Game $ 7  $  &   &   &       &       \\
-			Game $ 8  $  & x & x & $ 1 $ & $ 1 $ \\
-			Game $ 9  $  & x & x & $ 4 $ & $ 2 $ \\
-			Game $ 10 $  & x & x & $ 3 $ & $ 3 $ \\
+			Game $ 4  $  & X & X &       &       \\
+			Game $ 5  $  & X & X & $ 2 $ & $ 0 $ \\
+			Game $ 6  $  & X & X &       &       \\
+			Game $ 7  $  & X & X &       &       \\
+			Game $ 8  $  & X & X & $ 1 $ & $ 1 $ \\
+			Game $ 9  $  & X & X & $ 4 $ & $ 2 $ \\
+			Game $ 10 $  & X & X & $ 3 $ & $ 3 $ \\
 			\rowcolor{captionwhite}
 			\caption{Player 1 Worksheet}
 			\label{06:tab03}
@@ -831,16 +840,16 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 		\begin{longtable}{L{0.65in}C{0.45in}C{0.50in}C{0.40in}C{0.40in}} %Left-aligned, Max width: 4.25in
 			\textbf{Game} & \textbf{Played} & \textbf{Started} & \textbf{Shots} & \textbf{Goals}\endhead
 			\hline
-			Game $ 1 $  & x & x & $ 1 $ & $ 1 $ \\
-			Game $ 2 $  & x & x & $ 2 $ & $ 1 $ \\
-			Game $ 3 $  & x & x & $ 1 $ & $ 1 $ \\
-			Game $ 4 $  & x & x & $ 1 $ & $ 1 $ \\
-			Game $ 5 $  & x & x & $ 2 $ & $ 0 $ \\
-			Game $ 6 $  & x & x & $ 5 $ & $ 2 $ \\
-			Game $ 7 $  & x & x & $ 4 $ & $ 2 $ \\
-			Game $ 8 $  & x & x & $ 1 $ & $ 1 $ \\
-			Game $ 9 $  & x & x & $ 4 $ & $ 1 $ \\
-			Game $ 10 $ & x & x & $ 3 $ & $ 2 $ \\
+			Game $ 1 $  & X & X & $ 1 $ & $ 1 $ \\
+			Game $ 2 $  & X & X & $ 2 $ & $ 1 $ \\
+			Game $ 3 $  & X &   & $ 1 $ & $ 1 $ \\
+			Game $ 4 $  & X & X & $ 1 $ & $ 1 $ \\
+			Game $ 5 $  & X & X & $ 2 $ & $ 0 $ \\
+			Game $ 6 $  & X & X & $ 5 $ & $ 2 $ \\
+			Game $ 7 $  & X & X & $ 4 $ & $ 2 $ \\
+			Game $ 8 $  & X & X & $ 1 $ & $ 1 $ \\
+			Game $ 9 $  & X & X & $ 4 $ & $ 1 $ \\
+			Game $ 10 $ & X & X & $ 3 $ & $ 2 $ \\
 			\rowcolor{captionwhite}
 			\caption{Player 2 Worksheet}
 			\label{06:tab04}
@@ -865,16 +874,16 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 		\begin{longtable}{L{0.65in}C{0.45in}C{0.50in}C{0.40in}C{0.40in}} %Left-aligned, Max width: 4.25in
 			\textbf{Game} & \textbf{Played} & \textbf{Started} & \textbf{Shots} & \textbf{Goals}\endhead
 			%\hline
-			Game $ 1  $ & x & x & $ 0 $ & $ 0 $ \\
-			Game $ 2  $ & x & x & $ 1 $ & $ 1 $ \\
-			Game $ 3  $ & x & x & $ 2 $ & $ 0 $ \\
-			Game $ 4  $ & x &   & $ 1 $ & $ 1 $ \\
-			Game $ 5  $ & x & x & $ 2 $ & $ 0 $ \\
-			Game $ 6  $ & x & x & $ 3 $ & $ 1 $ \\
-			Game $ 7  $ & x & x & $ 2 $ & $ 1 $ \\
-			Game $ 8  $ & x & x & $ 1 $ & $ 1 $ \\
-			Game $ 9  $ & x & x & $ 1 $ & $ 1 $ \\
-			Game $ 10 $ & x & x & $ 1 $ & $ 1 $ \\
+			Game $ 1  $ & X & X & $ 0 $ & $ 0 $ \\
+			Game $ 2  $ & X & X & $ 1 $ & $ 1 $ \\
+			Game $ 3  $ & X & X & $ 2 $ & $ 0 $ \\
+			Game $ 4  $ & X &   & $ 1 $ & $ 1 $ \\
+			Game $ 5  $ & X & X & $ 2 $ & $ 0 $ \\
+			Game $ 6  $ & X & X & $ 3 $ & $ 1 $ \\
+			Game $ 7  $ & X & X & $ 2 $ & $ 1 $ \\
+			Game $ 8  $ & X & X & $ 1 $ & $ 1 $ \\
+			Game $ 9  $ & X & X & $ 1 $ & $ 1 $ \\
+			Game $ 10 $ & X & X & $ 1 $ & $ 1 $ \\
 			\rowcolor{captionwhite}
 			\caption{Player 3 Worksheet}
 			\label{06:tab05}
@@ -897,10 +906,10 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 		\item Enter a $ 3 $-D formula to \fmtTyping{SUM} cells \fmtLoc{D9} on worksheets \fmtWorksheet{Player 1} through \fmtWorksheet{Player 5}. 
 		\item Copy \fmtLoc{D9} to \fmtLoc{D10:D18}.
 		\item Copy \fmtLoc{D9} to \fmtLoc{E9:E18}.
-		\item Using \fmtButton{Home $ \Rightarrow $ Font $ \Rightarrow $ Fill Color}, set \fmtLoc{Row $ 10 $}, \fmtLoc{Row $ 12 $}, \fmtLoc{Row $ 14 $}, \fmtLoc{Row $ 16 $}, and \fmtLoc{Row $ 18 $} to \textit{No Fill}. 
-		\item Click \fmtButton{File $ \Rightarrow $ Print} to preview the worksheets in \textit{Print Preview}. Notice that only part of the data is printing for each worksheet. This is because a \textit{Print Area} was incorrectly set when the file was first created. This print area needs to be cleared for each worksheet individually (modifying print areas cannot be done on grouped worksheets). 
+		\item Using \fmtButton{Home $ \Rightarrow $ Font $ \Rightarrow $ Fill Color}, set \fmtLoc{Row 10}, \fmtLoc{Row 12}, \fmtLoc{Row 14}, \fmtLoc{Row 16}, and \fmtLoc{Row 18} to \textit{No Fill}. 
+		\item Click \fmtButton{File $ \Rightarrow $ Print} to preview the worksheets in \textit{Print Preview}. Notice that only part of the data is printed for each worksheet since a \textit{Print Area} was incorrectly set when the file was first created. This print area needs to be cleared for each worksheet individually (modifying print areas cannot be done on grouped worksheets). 
 		\item Exit \textit{Print Preview} by clicking the arrow in the top left corner of the screen. 
-		\item Click the tab to activate each of the six worksheets one at a time and then click \fmtButton{Page Layout $ \Rightarrow $ Page Setup $ \Rightarrow $ Print Area $ \Rightarrow $ Clear Print Area} for each worksheet.
+		\item Click the tab to activate each of the six worksheets one at a time, and then click \fmtButton{Page Layout $ \Rightarrow $ Page Setup $ \Rightarrow $ Print Area $ \Rightarrow $ Clear Print Area} for each worksheet.
 		\item Click \fmtButton{File $ \Rightarrow $ Print} to preview the worksheets in \textit{Print Preview}. Notice that now all six sheets print correctly.
 		\item Save the \fmtWorksheet{PR6-High Flyers} workbook.
 		\item Compare the workbook with the self-check answer key (PR6-High Flyers Solution) and then close and submit the \fmtWorksheet{PR6-High Flyers} workbook and \fmtWorksheet{PR6-Pacific NW Team Template}.
@@ -911,13 +920,13 @@ The coaches of the \textit{Pacific Northwest Soccer Club} want a consistent way 
 
 \subsection{A Multiple Worksheet Template for National Parks Data}
 
-A template for National Parks usage data along with a Summary of the parks visitation data will be developed. To do this, create a template with summary and individual park worksheets and then use that template to enter park data for five national parks.
+A template for National Parks usage data and a summary of the park's visitation data will be developed. To do this, create a template with a  summary and individual park worksheets and then use that template to enter park data for five national parks.
 
 \begin{enumbox}
 	\begin{enumerate}
 		\item Open a new blank workbook.
 		\item Change the name of \fmtWorksheet{Sheet1} to \fmtWorksheet{Park Data}. 
-		\item Design a professional quality worksheet to display individual park data. Include areas to enter the name of a park and the park statistics as found in Tables \ref{06:tab06}, \ref{06:tab07}, and \ref{06:tab08} below. (\textit{Note}: do not copy the physical layout of the data tables.) Figure \ref{06:fig17} is one example of how this could be set up, though students are encouraged to explore alternate layouts. (\textit{Note}: the camping graphic is available in the student files as \textit{CH6-Camping.png}.)
+		\item Design a professional quality worksheet to display individual park data. Include areas to enter the name of a park and the park statistics as found in Tables \ref{06:tab06}, \ref{06:tab07}, and \ref{06:tab08} below. (\textit{Note}: do not copy the physical layout of the data tables.) Figure \ref{06:fig17} shows how this could be set up, though students are encouraged to explore alternate layouts. (\textit{Note}: the camping graphic is available in the student files as \textit{CH6-Camping.png}.)
 
 		\begin{figure}[H]
 			\centering
@@ -926,10 +935,10 @@ A template for National Parks usage data along with a Summary of the parks visit
 			\label{06:fig17}
 		\end{figure}
 
-		\item Make a copy of the \fmtWorksheet{Park Data} worksheet and rename it \fmtWorksheet{Summary Park Data}. Make sure both worksheets are laid out exactly the same. The \fmtWorksheet{Summary Park Data} worksheet tab should be first and the \fmtWorksheet{Park Data} worksheet tab should be second.
+		\item Make a copy of the \fmtWorksheet{Park Data} worksheet and rename it \fmtWorksheet{Summary Park Data}. Make sure both worksheets are laid out the same. The \fmtWorksheet{Summary Park Data} worksheet tab should be first, and the \fmtWorksheet{Park Data} worksheet tab should be second.
 		\item Save the file as a template called \fmtWorksheet{SC6-National Parks Template}. Make sure this gets saved to a USB drive and not the default template folder on the hard drive.
 		\item Close \fmtWorksheet{SC6-National Parks Template}.
-		\item Make a new file using the template and save it as a regular Excel workbook with a name of \fmtWorksheet{SC6-Five National Parks}.
+		\item Make a new file using the template and save it as a regular Excel workbook named \fmtWorksheet{SC6-Five National Parks}.
 		\item Make four copies of the \fmtWorksheet{Park Data} worksheet. Rename the five \textit{Park Data} worksheets after the five parks listed in Table \ref{06:tab06}.\footnote{Note: The National Park $ 2015 $ Data is from: \url{https://irma.nps.gov/Stats/SSRSReports}.}
 		\item Enter the park name in cell \fmtLoc{B3} on each of the \textit{Park Data} sheets.
 		\item To make the sheets a bit more readable, right-align cell \fmtLoc{B3} on each of the \textit{Park Data} worksheets.

@@ -1,9 +1,10 @@
 %********************************************************************
 % Appendix
 %*******************************************************
+% First pass corrections made and grammar checked 220626
+
 % If problems with the headers: get headings in appendix etc. right
 %\markboth{\spacedlowsmallcaps{Appendix}}{\spacedlowsmallcaps{Appendix}}
-%
 
 %********************************************************************
 % Appendix A
@@ -15,7 +16,7 @@
 
 \chapter{Function Quick Reference}\label{app01:functions}
 
-According to Microsoft's specification sheet for Excel, there are $ 341 $ worksheet functions. No user needs to be familiar with all of these functions, but this appendix lists those found in this book, which are the most commonly used.
+According to Microsoft's specification sheet for Excel, there are $ 341 $ worksheet functions. No user needs to be familiar with all these functions, but this appendix lists the most commonly used ones, as found in this book.
 
 \section{AND}
 
@@ -28,12 +29,12 @@ Returns TRUE if all of its arguments evaluate to TRUE and FALSE if one or more a
 	\medskip
 	
 	{\color{Syntax}
-		\noindent\textit{\textbf{AND(logical1, [logical2], ...)}}
+		\noindent\textit{\textbf{AND(logical1, [logical2], $\ldots$)}}
 	}
 	
 	\begin{description}
-		\item[Logical1] \textit{Required}. The first condition to be tested that can evaluate to either TRUE or FALSE.
-		\item[Logical2, ...] \textit{Optional}. Additional conditions to be tested that can evaluate to either TRUE or FALSE, up to a maximum of 255 conditions.
+		\item[Logical1] \textit{Required}. The first condition to be evaluated as either TRUE or FALSE.
+		\item[Logical2, $\ldots$] \textit{Optional}. Additional conditions evaluated as either TRUE or FALSE, up to a maximum of 255 conditions.
 	\end{description}
 
 	\medskip
@@ -70,12 +71,12 @@ Returns the average (arithmetic mean) of the arguments.
 	\medskip
 
 	{\color{Syntax}
-		\noindent\textbf{\textit{AVERAGE(number1, [number2], ...)}}
+		\noindent\textbf{\textit{AVERAGE(number1, [number2], $\ldots$)}}
 	}
 	
 	\begin{description}
 		\item[Number1] \textit{Required}. The first number, cell reference, or range for which you want the average.
-		\item[Number2, ...] \textit{Optional}. Additional numbers, cell references or ranges for which you want the average, up to a maximum of 255.
+		\item[Number2, $\ldots$] \textit{Optional}. Other numbers, cell references, or ranges for which you want the average, up to a maximum of 255.
 	\end{description}
 
 	\medskip
@@ -103,7 +104,7 @@ Returns the average (arithmetic mean) of the arguments.
 
 \section{CONCATENATE}
 
-Joins two or more text strings into one string. \textbf{IMPORTANT}: This function was replaced with \textit{CONCAT} in Excel 365, but the syntax is the same for both functions.
+Joins two or more text strings into one string. \textbf{IMPORTANT}: This function was replaced with \textit{CONCAT} in Excel 365, but both functions' syntax is the same.
 
 \begin{addmargin}[1cm]{0cm}
 
@@ -112,12 +113,12 @@ Joins two or more text strings into one string. \textbf{IMPORTANT}: This functio
 	\medskip
 
 	{\color{Syntax}
-		\noindent\textbf{\textit{CONCATENATE(text1, [text2], ...)}}
+		\noindent\textbf{\textit{CONCATENATE(text1, [text2], $\ldots$)}}
 	}
 	
 	\begin{description}
 		\item[text1] \textit{Required}. The first item to join. The item can be a text value, number, or cell reference.
-		\item[text2, ...] \textit{Optional}. Additional text items to join. You can have up to 255 items, up to a total of 8,192 characters.
+		\item[text2, $\ldots$] \textit{Optional}. Additional text items to join. You can have up to 255 items and up to 8,192 characters.
 	\end{description}
 
 	\medskip
@@ -154,12 +155,12 @@ Counts the number of cells that contain numerical values. Cells with non-numeric
 	\medskip
 
 	{\color{Syntax}
-		\noindent\textbf{\textit{COUNT(value1, [value2], ...)}}
+		\noindent\textbf{\textit{COUNT(value1, [value2], $\ldots$)}}
 	}
 	
 	\begin{description}
 		\item[value1] \textit{Required}. The first item, cell reference, or range within which the cells containing numbers must be counted.
-		\item[value2, ...] \textit{Optional}. Up to 255 additional items, cell references, or ranges within which the cells containing numbers must be counted.
+		\item[value2, $\ldots$] \textit{Optional}. Up to 255 additional items, cell references, or ranges within which the cells containing numbers must be counted.
 	\end{description}
 
 	\medskip
@@ -201,7 +202,7 @@ Counts the number of cells that meet a criterion.
 	
 	\begin{description}
 		\item[range] \textit{Required}. The group of cells to count. \textit{Range} can contain numbers, arrays, a named range, or references that contain numbers. Blank and text values are ignored.
-		\item[criteria] \textit{Required}. A number, expression, cell reference, or text string that determines which cells will be counted.
+		\item[criteria] \textit{Required}. A number, expression, cell reference, or text string determines which cells will be counted.
 	\end{description}
 
 	\medskip
@@ -229,7 +230,7 @@ Counts the number of cells that meet a criterion.
 
 \section{COUNTIFS}
 
-Applies criteria to cells across multiple ranges and counts the number of times all criteria are met.
+Applies criteria to cells across multiple ranges and counts the times all criteria are met.
 
 \begin{addmargin}[1cm]{0cm}
 
@@ -238,13 +239,13 @@ Applies criteria to cells across multiple ranges and counts the number of times 
 	\medskip
 
 	{\color{Syntax}
-		\noindent\textbf{\textit{COUNTIFS(range1, criteria1, [range2, criteria2], ...)}}
+		\noindent\textbf{\textit{COUNTIFS(range1, criteria1, [range2, criteria2], $\ldots$)}}
 	}
 	
 	\begin{description}
 		\item[range1] \textit{Required}. The first range in which to evaluate the associated criteria.
-		\item[criteria1] \textit{Required}. The criteria in the form of a number, expression, cell reference, or text string that determines which cells will be counted.
-		\item[range2, criteria2, ...] \textit{Optional}. Additional ranges and criteria. Up to $ 127 $ range/criteria pairs are allowed.
+		\item[criteria1] \textit{Required}. The criteria in the form of a number, expression, cell reference, or text string determine which cells will be counted.
+		\item[range2, criteria2, $\ldots$] \textit{Optional}. Different ranges and criteria. Up to $ 127 $ range/criteria pairs are allowed.
 	\end{description}
 
 	\medskip
@@ -272,7 +273,7 @@ Applies criteria to cells across multiple ranges and counts the number of times 
 
 \section{DATE}
 
-Combines three separate values to form a date.
+Combines three different values to form a date.
 
 \begin{addmargin}[1cm]{0cm}
 
@@ -285,8 +286,8 @@ Combines three separate values to form a date.
 	}
 	
 	\begin{description}
-		\item[year] \textit{Required}. The value of the year argument can include one to four digits. Excel interprets the year argument according to the date system the computer is using.
-		\item[month] \textit{Required}. An integer representing the month of the year from $ 1 $ to $ 12 $ (January to December).
+		\item[year] \textit{Required}. The value of the year argument can include one to four digits. Excel interprets the year argument according to the date system the computer uses.
+		\item[month] \textit{Required}. An integer represents the month from $ 1 $ to $ 12 $ (January to December).
 		\item[day] \textit{Required}. An integer representing the day of the month from $ 1 $ to $ 31 $.
 	\end{description}
 
@@ -306,7 +307,7 @@ Combines three separate values to form a date.
 
 \section{DATEDIF}
 
-Calculates the number of days, months, or years between two dates. \textbf{Warning}: Excel provides the \textit{DATEDIF} function in order to support older workbooks from Lotus 1-2-3. The \textit{DATEDIF} function may calculate incorrect results under certain scenarios.
+Calculates the number of days, months, or years between two dates. \textbf{Warning}: Excel provides the \textit{DATEDIF} function to support older workbooks from Lotus 1-2-3. The \textit{DATEDIF} function may calculate incorrect results under specific scenarios.
 
 \begin{addmargin}[1cm]{0cm}
 
@@ -319,9 +320,9 @@ Calculates the number of days, months, or years between two dates. \textbf{Warni
 	}
 	
 	\begin{description}
-		\item[start\_date] \textit{Required}. A date that represents the first, or starting date of a given period. Dates may be entered as text strings within quotation marks (for example, ``1/30/2001'') or as the result of other formulas or functions.
-		\item[end\_date] \textit{Required}. A date that represents the last, or ending, date of the period.
-		\item[unit] \textit{Required}. The type of information to be returned. ``Y'' is the number of complete years in the period, ``M'' is the number of complete months in the period, ``D'' is the number of complete days in the period. 
+		\item[start\_date] \textit{Required}. The first or starting date of a given period. Dates may be entered as text strings within quotation marks (for example, ``1/30/2001'') or as the result of other formulas or functions.
+		\item[end\_date] \textit{Required}. The last or end date of the period.
+		\item[unit] \textit{Required}. The type of information to be returned. ``Y'' is the number of whole years in the period, ``M'' is the number of whole months in the period, and ``D'' is the number of whole days in the period.
 	\end{description}
 
 	\medskip
@@ -343,13 +344,13 @@ Calculates the number of days, months, or years between two dates. \textbf{Warni
 		\textit{\textbf{=DATEDIF(A1,A2,"Y")}}
 	}
 	
-	\noindent it would return $ 65 $. This is how a person's age can be calculated with Excel.
+	\noindent it would return $ 65 $. \textit{DateDif} is how a person's age can be calculated with Excel.
 
 \end{addmargin}
 
 \section{IF}
 
-Makes logical comparisons between a value and what was expected. This is one of the most popular Excel functions.
+Makes logical comparisons between a value and what was expected. This function is one of Excel's most popular.
 
 \begin{addmargin}[1cm]{0cm}
 
@@ -363,8 +364,8 @@ Makes logical comparisons between a value and what was expected. This is one of 
 	
 	\begin{description}
 		\item[logical\_test] \textit{Required}. The condition being tested.
-		\item[value\_if\_true] \textit{Required}. The value returned if the result of logical\_test is TRUE.
-		\item[unit] \textit{Optional}. The value returned if the result of logical\_test is FALSE. 
+		\item[value\_if\_true] \textit{Required}. The value returned if the result of \textit{logical\_test} is TRUE.
+		\item[unit] \textit{Optional}. The value returned if the result of \textit{logical\_test} is FALSE. 
 	\end{description}
 
 	\medskip
@@ -435,7 +436,7 @@ Returns a value or the reference to a value from within a table or range.
 
 \section{LEFT}
 
-Returns the first character or characters in a text string, based on the number of characters specified.
+Returns the first character or characters in a text string based on the number of characters specified.
 
 \begin{addmargin}[1cm]{0cm}
 	
@@ -448,8 +449,8 @@ Returns the first character or characters in a text string, based on the number 
 	}
 	
 	\begin{description}
-		\item[text] \textit{Required}. The text string that contains the characters to be extracted.
-		\item[num\_chars] \textit{Optional}. Specifies the number of characters to be extracted. If num\_chars is omitted, it is assumed to be $ 1 $.
+		\item[text] \textit{Required}. The text string containing the characters to be extracted.
+		\item[num\_chars] \textit{Optional}. Specifies the number of characters to be extracted. If this parameter is omitted, it is assumed to be $ 1 $.
 	\end{description}
 
 	\medskip
@@ -518,7 +519,7 @@ Converts all uppercase letters in a text string to lowercase.
 
 \section{MATCH}
 
-Searches for a specified item in a range of cells and then returns the relative position of that item in the range. This function is commonly combined with \textit{Index} to lookup data in a table.
+Searches for a specified item in a range of cells and then returns the relative position of that item in the range. This function is commonly combined with \textit{Index} to look up data in a table.
 
 \begin{addmargin}[1cm]{0cm}
 	
@@ -531,9 +532,9 @@ Searches for a specified item in a range of cells and then returns the relative 
 	}
 	
 	\begin{description}
-		\item[lookup\_value] \textit{Required}. The value that to be matched in \textit{lookup\_array}.
+		\item[lookup\_value] \textit{Required}. The value to be matched in \textit{lookup\_array}.
 		\item[lookup\_array] \textit{Required}. The range of cells being searched.
-		\item[match\_type] \textit{Optional}. The number $ -1 $, $ 0 $, or $ 1 $ specifies how Excel matches \textit{lookup\_value} with values in \textit{lookup\_array}. $ 1 $ finds the largest value that is less than or equal to \textit{lookup\_value}. $ 0 $ finds the first value that is exactly equal to \textit{lookup\_value}. $ -1 $ finds the smallest value that is greater than or equal to \textit{lookup\_value}. If omitted, the default is $ 1 $.
+		\item[match\_type] \textit{Optional}. The number $ -1 $, $ 0 $, or $ 1 $ specifies how Excel matches \textit{lookup\_value} in \textit{lookup\_array}. $ 1 $ finds the largest value that is less than or equal to \textit{lookup\_value}. $ 0 $ finds the first value that is equal to \textit{lookup\_value}. $ -1 $ finds the smallest value that is greater than or equal to \textit{lookup\_value}. If omitted, the default is $ 1 $.
 	\end{description}
 
 	\medskip
@@ -570,11 +571,11 @@ Returns the largest value in a set of values.
 	\medskip
 	
 	{\color{Syntax}
-		\noindent\textbf{\textit{MAX(number1, [number2], ...)}}
+		\noindent\textbf{\textit{MAX(number1, [number2], $\ldots$)}}
 	}
 	
 	\begin{description}
-		\item[number1, number2, ...] \textit{Required}. Up to $ 255 $ numbers for which the maximum value is returned. This is usually a reference to a range of numbers.
+		\item[number1, number2, $\ldots$] \textit{Required}. Up to $ 255 $ numbers from which the maximum value is returned. This parameter is usually a reference to a range of numbers.
 	\end{description}
 
 	\medskip
@@ -615,7 +616,7 @@ Returns a specific number of characters from a text string, starting at the posi
 	}
 	
 	\begin{description}
-		\item[text] \textit{Required}. The text string that contains the characters to be extracted.
+		\item[text] \textit{Required}. The text string containing the characters to be extracted.
 		\item[start\_num] \textit{Required}. The position of the first character to be extracted in \textit{text}. The first character in \textit{text} has a start\_num of $ 1 $, and so on.
 		\item[num\_chars] \textit{Required}. Specifies the number of characters to be extracted. 
 	\end{description}
@@ -654,11 +655,11 @@ Returns the smallest value in a set of values.
 	\medskip
 	
 	{\color{Syntax}
-		\noindent\textbf{\textit{MIN(number1, [number2], ...)}}
+		\noindent\textbf{\textit{MIN(number1, [number2], $\ldots$)}}
 	}
 	
 	\begin{description}
-		\item[number1, number2, ...] \textit{Required}. Up to $ 255 $ numbers for which the minimum value is returned.  This is usually a reference to a range of numbers.
+		\item[number1, number2, $\ldots$] \textit{Required}. Up to $ 255 $ numbers for which the minimum value is returned.  This parameter is usually a reference to a range of numbers.
 	\end{description}
 
 	\medskip
@@ -686,7 +687,7 @@ Returns the smallest value in a set of values.
 
 \section{NOW}
 
-Returns the serial number of the current date and time. If the cell format was \textit{General} before the function was entered, Excel changes the cell format so that it matches the date and time format of the regional settings. Note: to get only the date without the time, use the \textit{TODAY} function.
+Returns the serial number of the current date and time. If the cell format was \textit{General} before the function was entered, Excel changes it to match the regional date and time setting. Note: to get only the date without the time, use the \textit{TODAY} function.
 
 \begin{addmargin}[1cm]{0cm}
 	
@@ -711,7 +712,7 @@ Returns the serial number of the current date and time. If the cell format was \
 		\textit{\textbf{=NOW()}}
 	}
 	
-	\noindent it would return the current date and time. When this was written the value returned was \textit{12/27/2020 12:42}.
+	\noindent it would return the current date and time. When this book was written, the value returned was \textit{12/27/2020 12:42}.
 		
 \end{addmargin}
 
@@ -730,7 +731,7 @@ Reverses the value of its logical argument.
 	}
 	
 	\begin{description}
-		\item[logical] \textit{Required}. A value or expression that can be evaluated to TRUE or FALSE. If \textit{logical} is FALSE, NOT returns TRUE; if logical is TRUE, NOT returns FALSE.
+		\item[logical] \textit{Required}. A value or expression that can be evaluated as TRUE or FALSE. If \textit{logical} is FALSE, NOT returns TRUE; if logical is TRUE, NOT returns FALSE.
 	\end{description}
 
 	\medskip
@@ -767,12 +768,12 @@ Returns TRUE if any of its arguments evaluate to TRUE and FALSE if all arguments
 	\medskip
 	
 	{\color{Syntax}
-		\noindent\textit{\textbf{OR(logical1, [logical2], ...)}}
+		\noindent\textit{\textbf{OR(logical1, [logical2], $\ldots$)}}
 	}
 	
 	\begin{description}
-		\item[Logical1] \textit{Required}. The first condition to be tested that can evaluate to either TRUE or FALSE.
-		\item[Logical2, ...] \textit{Optional}. Additional conditions to be tested that can evaluate to either TRUE or FALSE, up to a maximum of 255 conditions.
+		\item[Logical1] \textit{Required}. The first condition evaluated as either TRUE or FALSE.
+		\item[Logical2, $\ldots$] \textit{Optional}. Additional conditions evaluated as either TRUE or FALSE, up to a maximum of 255 conditions.
 	\end{description}
 
 	\medskip
@@ -800,7 +801,7 @@ Returns TRUE if any of its arguments evaluate to TRUE and FALSE if all arguments
 
 \section{PMT}
 
-Calculates the payment for a loan based on constant payments and a constant interest rate.
+Calculate a loan's payment based on a regular payment and interest rate.
 
 \begin{addmargin}[1cm]{0cm}
 	
@@ -815,7 +816,7 @@ Calculates the payment for a loan based on constant payments and a constant inte
 	\begin{description}
 		\item[rate] \textit{Required}. The interest rate for the loan.
 		\item[nper] \textit{Required}. The total number of payments for the loan.
-		\item[pv] \textit{Required}. The present value, or the total amount that a series of future payments is worth now; also known as the principal.
+		\item[pv] \textit{Required}. The present value, or principal, of the loan.
 		\item[fv] \textit{Optional}. The future value, or a cash balance attained after the last payment is made. If \textit{fv} is omitted, it is assumed to be $ 0 $.  
 		\item[type] \textit{Optional}. Indicates when payments are due, $ 0 $ for the end of the period or $ 1 $ for the beginning of the period.
 	\end{description}
@@ -830,7 +831,7 @@ Calculates the payment for a loan based on constant payments and a constant inte
 		\textit{\textbf{=PMT(0.05/12,5*12,-25000)}}
 	}
 	
-	\noindent it would return $ 471.78 $. So, a loan of \$$ 25000 $ at $ 5 $\% interest rate per year for a term of $ 5 $ years would generate a monthly payment of $ 471.78 $.
+	\noindent it would return $ 471.78 $. So, a loan of \$$ 25000 $ at a $ 5 $\% annual interest rate for $ 5 $ years would generate a monthly payment of \$$ 471.78 $.
 
 \end{addmargin}
 
@@ -910,7 +911,7 @@ Returns a random integer number between the numbers specified. A new random inte
 
 \section{RIGHT}
 
-Returns the last character or characters in a text string, based on the number of characters specified.
+Returns the last character or characters in a text string based on the number of characters specified.
 
 \begin{addmargin}[1cm]{0cm}
 	
@@ -923,7 +924,7 @@ Returns the last character or characters in a text string, based on the number o
 	}
 	
 	\begin{description}
-		\item[text] \textit{Required}. The text string that contains the characters to be extracted.
+		\item[text] \textit{Required}. The text string containing the characters to be extracted.
 		\item[num\_chars] \textit{Optional}. Specifies the number of characters to be extracted. If \textit{num\_chars} is omitted, it is assumed to be $ 1 $.
 	\end{description}
 
@@ -966,7 +967,7 @@ Rounds a number to a specified number of digits.
 	
 	\begin{description}
 		\item[number] \textit{Required}. The number to be rounded.
-		\item[num\_digits] \textit{Required}. The number of digits to which \textit{number} is rounded. If \textit{num\_digits} is greater than $ 0 $ then number is rounded to the specified number of decimal places. If \textit{num\_digits} is $ 0 $ the number is rounded to the nearest integer. If \textit{num\_digits} is less than $ 0 $, the number is rounded to the left of the decimal point.
+		\item[num\_digits] \textit{Required}. The number of digits to which \textit{number} is rounded. If \textit{num\_digits} is greater than $ 0 $, then \textit{number} is rounded to the specified number of decimal places. If \textit{num\_digits} is $ 0 $, the number is rounded to the nearest integer. If \textit{num\_digits} is less than $ 0 $, the number is rounded to the left of the decimal point.
 	\end{description}
 
 	\medskip
@@ -1037,12 +1038,12 @@ Sums the values in a range.
 	\medskip
 	
 	{\color{Syntax}
-		\noindent\textbf{\textit{SUM(number1,[number2],...)}}
+		\noindent\textbf{\textit{SUM(number1,[number2],$\ldots$)}}
 	}
 	
 	\begin{description}
 		\item[number1] \textit{Required}. The first number to be added.
-		\item[number2, ...] \textit{Optional}. Up to 255 additional numbers to be added.
+		\item[number2, $\ldots$] \textit{Optional}. Up to 255 other numbers to be added.
 	\end{description}
 
 	\medskip
@@ -1070,7 +1071,7 @@ Sums the values in a range.
 
 \section{SUMIF}
 
-Sums the values in a range that meet a specified criteria. 
+Sums the values in a range that meet specified criteria. 
 
 \begin{addmargin}[1cm]{0cm}
 	
@@ -1083,9 +1084,9 @@ Sums the values in a range that meet a specified criteria.
 	}
 	
 	\begin{description}
-		\item[range] \textit{Required}. The range of cells to be evaluated by criteria. 
-		\item[criteria] \textit{Required}. The criteria in the form of a number, expression, a cell reference, text, or a function that defines which cells will be added.
-		\item[sum\_range] \textit{Optional}. The actual cells to add if cells other than those specified in the range argument are to be added. If the \textit{sum\_range} argument is omitted, Excel adds the cells that are specified in the \textit{range} argument (the same cells to which the criteria is applied).
+		\item[range] \textit{Required}. The range of cells evaluated by criteria. 
+		\item[criteria] \textit{Required}. The criteria include a number, expression, a cell reference, text, or a function that defines which cells will be added.
+		\item[sum\_range] \textit{Optional}. The actual cells to add if cells other than those specified in the range argument are to be added. If the \textit{sum\_range} argument is omitted, Excel adds the cells specified in the \textit{range} argument (the same cells to which the criteria are applied).
 	\end{description}
 
 	\medskip
@@ -1122,14 +1123,14 @@ Sums the values in a range that meet multiple specified criteria.
 	\medskip
 	
 	{\color{Syntax}
-		\noindent\textbf{\textit{SUMIFS(range, crit\_range1, crit1, [crit\_range2, crit2], ...)}}
+		\noindent\textbf{\textit{SUMIFS(range, crit\_range1, crit1, [crit\_range2, crit2], $\ldots$)}}
 	}
 	
 	\begin{description}
 		\item[range] \textit{Required}. The range of cells to be summed. 
 		\item[crit\_range1] \textit{Required}. The range that is tested using \textit{crit1}.
-		\item[crit1] \textit{Required}. The criteria that defines which cells in \textit{crit\_range1} will be added.
-		\item[crit\_range2, crit2, ...] \textit{Optional}. Additional ranges and their associated criteria. Up to 127 range/criteria pairs can be entered.
+		\item[crit1] \textit{Required}. The criteria that define which cells in \textit{crit\_range1} will be added.
+		\item[crit\_range2, crit2, $\ldots$] \textit{Optional}. Different ranges and their associated criteria. Up to 127 range/criteria pairs can be entered.
 	\end{description}
 
 	\medskip
@@ -1157,7 +1158,7 @@ Sums the values in a range that meet multiple specified criteria.
  
 \section{TODAY}
 
-Returns the serial number of the current date. If the cell format was \textit{General} before the function was entered, Excel changes the cell format so that it matches the date and time format of the regional settings. Note: to get both the date and time, use the \textit{NOW} function.
+Returns the serial number of the current date. If the cell format was \textit{General} before the function was entered, Excel changes it to match the regional date and time setting. Note: Use the \textit{NOW} function to get the date and time.
 
 \begin{addmargin}[1cm]{0cm}
 	
@@ -1182,7 +1183,7 @@ Returns the serial number of the current date. If the cell format was \textit{Ge
 		\textit{\textbf{=TODAY()}}
 	}
 	
-	\noindent it would return the current date. When this was written the value returned was \textit{12/27/2020}.
+	\noindent it would return the current date. When this book was written, the value returned was \textit{12/27/2020}.
 	
 	
 \end{addmargin}
@@ -1277,7 +1278,7 @@ Looks up a value in a table or range by row.
 	\begin{description}
 		\item[value] \textit{Required}. The value to be looked up.
 		\item[array] \textit{Required}. A range of cells to be searched for the \textit{value}.
-		\item[col\_num] \textit{Required}. Selects the column in \textit{array} from which to return a value. The columns are numbered starting with $ 1 $ which is the far left column. 
+		\item[col\_num] \textit{Required}. Selects the column in \textit{array} from which to return a value. The columns are numbered starting with $ 1 $, which is the far left column. 
 		\item[range\_lookup] \textit{Optional}. Specifies whether an approximate match, TRUE, or exact match, FALSE, is desired. The default is approximate.
 	\end{description}
 
@@ -1315,13 +1316,13 @@ Looks up a value in a table or range by row.
 
 \chapter{Dynamic Arrays}\label{app02:dynamic}
 
-\fmtNewExcel{Excel 365} NOTE: This appendix concerns \textit{dynamic arrays}, a feature that was first included in Excel 365 and is only available in versions of Excel that are included with a Microsoft Office subscription. Therefore, students who are using Excel 2016 will not be able to use the information in this appendix.
+\fmtNewExcel{Excel 365} NOTE: This appendix concerns \textit{dynamic arrays}, a feature first included in Excel 365 and only available in versions of Excel that are included with a Microsoft Office subscription. Therefore, students using Excel 2016 will not be able to use the information in this appendix.
 
 \section{Definition}
 
-Dynamic arrays are grids of data created by calculating values based on the formula in a single cell. From its inception, Excel has always used a ``one cell, one formula'' approach, so designers who wanted to fill a grid of values would have to copy/paste a formula into each cell in that grid. This was time consuming and error-prone. Dynamic arrays, though, use a formula in a single cell to calculate values in many other cells, saving time and improving accuracy.
+Dynamic arrays are data grids created by calculating values based on the formula in a single cell. From its inception, Excel has always used a ``one cell, one formula'' approach, so designers who wanted to fill a grid of values would have to copy/paste a formula into each cell in that grid. This process was time-consuming and error-prone. Dynamic arrays use a formula in a single cell to calculate values in many other cells, saving time and improving accuracy.
 
-The introduction of dynamic arrays includes several new functions that make working with a data array easier. As an example, UNIQUE() will search an array and return only the unique (non-repeating) values. Additionally, dynamic array functions are automatically updated if items are added or removed from the data array.
+The introduction of dynamic arrays includes several new functions that make working with a data array easier. For example, UNIQUE() will search an array and return only the unique (non-repeating) values. Additionally, dynamic array functions are automatically updated if items are added or removed from the data array.
 
 These concepts are easiest to understand with examples.
 
@@ -1343,7 +1344,7 @@ This simple worksheet lists the names, regions, and number of monthly units sold
 
 \[ =SORT(array,[sort\_index],[sort\_order],[by\_col]) \]
 
-One of the simplest dynamic array functions is \textit{SORT()}. The syntax above indicates that the only required variable is the array to be sorted, the others are optional. The following steps use the function in its simplest form.
+One of the most straightforward dynamic array functions is \textit{SORT()}. The syntax above indicates that the only required variable is the array to be sorted; the others are optional. The following steps use the function in its simplest form.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -1353,7 +1354,7 @@ One of the simplest dynamic array functions is \textit{SORT()}. The syntax above
 	\end{enumerate}
 \end{enumbox}
 
-Notice that even though the formula was only entered in one cell, $ E2 $, it filled an entire range, $ E2 $ : $ E21 $ with the sorted data. The sorted data is dynamic so if any of the names in \textit{Column A} are changed the list in \textit{Column E} is updated to reflect that change.
+Notice that even though the formula was only entered in one cell, $ E2 $, it filled an entire range, $ E2 $:$ E21 $, with the sorted data. If any of the names in \textit{Column A} are changed, \textit{Column E} is updated since the data is dynamic.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -1380,7 +1381,7 @@ Notice that even though the formula was only entered in one cell, $ E2 $, it fil
 	\label{apb:fig01}
 \end{figure}
 
-Click in $ E2 $ and notice that the formula displayed in the formula bar is in normal font. Then click in $ E3 $ and notice that the formula displayed in the formula bar is grayed out and cannot be edited. Also notice that the range $ E2 $:$ E21 $ is surrounded with a blue border, indicating that this is a \textit{spilled array} that is generated automatically from the formula in cell $ E2 $.
+Click in $ E2 $ and notice that the formula displayed in the formula bar is in a standard font. Then click $ E3 $ and notice that the formula displayed in the formula bar is grayed out and cannot be edited. Also, notice that the range $ E2 $:$ E21 $ is surrounded by a blue border, indicating that this is a \textit{spilled array} generated automatically from the formula in cell $ E2 $.
 
 \begin{center}
 	\begin{infobox}{Best Practice}
@@ -1395,7 +1396,7 @@ Click in $ E2 $ and notice that the formula displayed in the formula bar is in n
 
 \[ =SORTBY(array, array1, [order1], [array2, order2],…)  \]
 
-\textit{SORTBY()} makes it possible to sort one range by another range for more complex sorts. As an example, the following steps sorts the \textit{Sales} table by \textit{Name} and \textit{Region}. 
+\textit{SORTBY()} makes it possible to sort one range by another for more complex sorts. For example, sort the \textit{Sales} table by \textit{Name} and \textit{Region} in the following steps.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -1412,7 +1413,7 @@ Click in $ E2 $ and notice that the formula displayed in the formula bar is in n
 	\label{apb:fig02}
 \end{figure}
 
-\textit{Columns F:G} now contains all of the names sorted alphabetically by region. The \textit{SORTBY()} function used in $ F2 $ looks complex, but it is not that difficult to understand. Each of the sections of the command are separated by commas and described below.
+\textit{Columns F:G} now contains all the names sorted alphabetically by region. The \textit{SORTBY()} function used in $ F2 $ looks complex, but it is not that difficult to understand. Each of the command sections is separated by commas and described below.
 
 \begin{description}
 	\item[{Sales[[Name]:[Region]]}] \textemdash\: Sort the data in the \textit{Name} and \textit{Region} columns from the \textit{Sales} table.
@@ -1422,7 +1423,7 @@ Click in $ E2 $ and notice that the formula displayed in the formula bar is in n
 	\item[1] \textemdash\: Sort the names alphabetically from first to last.	
 \end{description}
 
-The \textit{SORTBY()} function is very powerful and even permits sorting by columns that are not in the final output array. For example, to sort the array in $ F2 $:$ G21 $ by \textit{Units}, change the function in $ F2 $ to:\\ \textit{=SORTBY(Sales[[Name]:[Region]], Sales[Region], 1, Sales[Units], -1)}. With this new sort order, Stewart becomes the first name in the Midwest region since he sold the most number of units in that region.
+The \textit{SORTBY()} function permits sorting by columns not in the final output array. For example, to sort the array in $ F2 $:$ G21 $ by \textit{Units}, change the function in $ F2 $ to:\\ \textit{=SORTBY(Sales[[Name]:[Region]], Sales[Region], 1, Sales[Units], -1)}. With this new sort, Stewart became the first name in the Midwest region since he sold the most units.
 
 \subsection{Unique()}
 
@@ -1465,13 +1466,13 @@ Dynamic array functions, like any functions, can be nested to improve their usef
 	\end{enumerate}
 \end{enumbox}
 
-Now the list of regions in \textit{Column H} will be sorted in alphabetical order.
+The list of regions in \textit{Column H} will be sorted in alphabetical order.
 
 \subsection{Filter()}
 
 \[ =FILTER(array,include,[if\_empty]) \]
 
-Dynamic arrays can be filtered to focus on specific items. The following steps remove all regions except Pacific.
+Dynamic arrays can be filtered to focus on specific items. The following steps remove all regions except the Pacific.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -1480,7 +1481,7 @@ Dynamic arrays can be filtered to focus on specific items. The following steps r
 	\end{enumerate}
 \end{enumbox}
 
-A dynamic array is created in $ I2 $:$ I5 $ that lists the names of everyone assigned to the Pacific region. This list would be more useful if it were alphabetized so a \textit{SORT()} function can be added. 
+A dynamic array is created in $ I2 $:$ I5 $ that lists the names of everyone assigned to the Pacific region. This list would be more valuable if alphabetized so a \textit{SORT()} function can be added. 
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -1501,7 +1502,7 @@ Follow these steps to test the dynamic filter.
 
 \subsection{Referencing A Dynamic Array}
 
-Dynamic arrays can grow or shrink depending on the data being analyzed but formulas that refer to that array need to work, no matter its size. To do that, add a hash (\fmtKeystroke{\#}) after the array reference. This is illustrated in the following steps.
+Dynamic arrays can grow or shrink depending on the data being analyzed, but formulas that refer to that array must work, no matter its size. To do that, add a hash (\fmtKeystroke{\#}) after the array reference. This process is illustrated in the following steps.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -1517,7 +1518,7 @@ Dynamic arrays can grow or shrink depending on the data being analyzed but formu
 	\label{apb:fig04}
 \end{figure}
 
-Cell $ J2 $ displays $ 4 $ since there are four representatives listed in the dynamic array starting in $ I2 $. Complete the following steps to test the dynamic charactistics of this array.
+Cell $ J2 $ displays $ 4 $ since four representatives are listed in the dynamic array starting in $ I2 $. Complete the following steps to test the dynamic characteristics of this array.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -1551,7 +1552,7 @@ The formula in cell $ J2 $ counts all of the lines in the dynamic array starting
 	\label{apb:fig05}
 \end{figure}
 
-The \textit{XLookup} function searches in the \textit{Name} column for the name found in cell $ K2 $. When it finds that value, it returns the \textit{Region} and \textit{Units} values for that name. In the example above, \textit{Colby} returns \textit{Midwest} and $ 276 $ from the \textit{Sales} table. One of the strengths of using dynamic arrays is that if the \textit{Sales} table is modified by adding or deleting rows or columns, the \textit{XLookup} function will continue to work.
+The \textit{XLookup} function searches in the \textit{Name} column for the name found in cell $ K2 $. It returns the \textit{Region} and \textit{Units} for that name when it finds that value. In the example above, \textit{Colby} returns \textit{Midwest} and $ 276 $ from the \textit{Sales} table. One of the strengths of using dynamic arrays is that if the \textit{Sales} table is modified by adding or deleting rows or columns, the \textit{XLookup} function will continue to work.
 
 \subsection{XMatch()}
 
@@ -1591,7 +1592,7 @@ Cell $ L5 $ will display $ 1 $ since the value in $ K5 $, \textit{Colby}, is in 
 	\label{apb:fig07}
 \end{figure}
 
-This returns $ 276 $, which is how many units Colby sold. If the data table contained dozens of columns and hundreds of rows, \textit{XMatch+Index} is very useful in pinpointing the specific data needed.
+This function returns $ 276 $, which is how many units Colby sold. If the data table contains dozens of columns and hundreds of rows, \textit{XMatch+Index} is very useful in pinpointing the specific data needed.
 
 \subsection{Randarray()}
 
@@ -1613,7 +1614,7 @@ Use the following steps to create a dynamic array of random numbers.
 	\label{apb:fig08}
 \end{figure}
 
-This creates an array of three rows and four columns that contain random numbers between $ 10 $ and $ 99 $. The final \textit{TRUE} restricts the random numbers to integers rather than decimals. NOTE: The function creates an array of random numbers so the illustration in this book will not match the student's work.
+This function creates an array of three rows and four columns that contain random numbers between $ 10 $ and $ 99 $. The final \textit{TRUE} restricts the random numbers to integers rather than decimals. NOTE: The function creates an array of random numbers, so the illustration in this book will not match the student's work.
 
 \subsection{Sequence()}
 
@@ -1635,5 +1636,5 @@ Follow these steps to create a dynamic array that contains a sequence of numbers
 	\label{apb:fig09}
 \end{figure}
 
-This creates a sequence of numbers filling five rows and three columns starting at $ 25 $ and stepping by $ 3 $. 
+This function creates a sequence of numbers filling five rows and three columns starting at $ 25 $ and stepping by $ 3 $. 
 

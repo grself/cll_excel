@@ -1,8 +1,9 @@
 %*****************************************
 \chapter{Tables}\label{ch05:tables}
 %*****************************************
+% Second pass corrections made and grammar checked 220624
 
-Excel workbooks are designed to store data and it is challenging to organize that data to yield meaningful information. Excel has many features that can help organize data and find needed information efficiently. Setting up data as a table from the onset allows users to sort, filter, total, and subtotal the data easily. In Excel, a table is a collection of data about a subject stored in adjacent rows and columns. Tables can improve the look and feel of a worksheet. This chapter explores how to set up, edit, and work with Excel tables effectively. These skills will be demonstrated in the context of a multi-sheet file that shows national average weather for two vastly different cities in the United States. Weather data is often voluminous and difficult to summarize since so much is collected every hour of every day and providing meaningful summaries of such data is a useful skill. The skills learned using weather data in this chapter can be transferred to data found in any discipline or field.
+Excel workbooks are designed to store data; organizing that data to yield meaningful information is challenging. Excel has many features that can help organize data and find needed information efficiently. Setting up data as a table from the onset allows users to sort, filter, and subtotal the data. In Excel, a table is a data collection about a subject stored in adjacent rows and columns. Tables can improve the look and feel of a worksheet. This chapter explores how to effectively set up, edit, and work with Excel tables. These skills will be demonstrated in the context of a multi-sheet file that shows the national average weather for two vastly different cities in the United States. Weather data is often voluminous and difficult to summarize since so much is collected every hour of every day, and providing meaningful summaries of such data is a valuable skill. The skills learned using weather data in this chapter can be transferred to data found in any discipline or field.
 
 \section{Basic Table Skills}
 
@@ -21,7 +22,7 @@ Excel workbooks are designed to store data and it is challenging to organize tha
 	\end{objbox}
 \end{center}
 
-This section reviews the fundamental skills for setting up and maintaining an Excel table. The objective used for this chapter is the construction of a multi-sheet file to keep track of two cities' national weather data for the month of January. Organizing, maintaining, and reporting data are essentials skills for employees in most industries.
+This section reviews the fundamental skills for setting up and maintaining an Excel table. The objective used for this chapter is the construction of a multi-sheet file to keep track of two cities' national weather data for January. Organizing, maintaining, and reporting data are essential skills for employees in most industries.
 
 Figure \ref{05:fig01} shows the completed workbook that will be created in this chapter. Notice that this workbook contains four worksheets. The first worksheet contains weather data for Portland, Maine, the second contains weather data for Portland, Oregon, the third organizes the Oregon data by week, and the fourth contains subtotals for the Oregon data.
 
@@ -34,24 +35,24 @@ Figure \ref{05:fig01} shows the completed workbook that will be created in this 
 
 \subsection{Creating a Table}
 
-When data is presented in long lists or columns, it helps if the table is set up properly. Here are some rules of data-entry etiquette to follow when creating a table from scratch.
+When data is presented in long lists or columns, it helps if the table is set up correctly. Here are some rules of data-entry etiquette to follow when creating a table from scratch.
 
 \begin{itemize}
-	\item Whenever possible, organize information using adjacent (neighboring) columns and rows.
+	\item Organize information using adjacent (neighboring) rows and columns whenever possible.
 	\item Start the table in the upper-left corner of the worksheet and work down the sheet.
-	\item Do not skip columns and rows just to ``space out'' the information. To place white space between information in adjacent columns and rows, widen columns, heighten rows, or change the alignment.
-	\item Reserve a single column at the left edge of the table for the table's row headings or identifying information.
+	\item Do not skip columns and rows to ``space out'' the information. To place white space between information in adjacent columns and rows, widen columns, heighten rows, or change the alignment.
+	\item Reserve a single column at the table's left edge for the row headings or identifying information.
 	\item Reserve a single row at the top of the table for the table's column headings.
-	\item If the table requires a title, put the title in the row(s) above the column headings.
+	\item If the table requires a title, put it in the row above the column headings.
 \end{itemize}
 
-Following these rules will help ensure that the sorts, filters, totals, and subtotals applied to the table with return the desired results. With these rules in mind, begin working on \textit{National Weather} workbook. 
+Following these rules will help ensure that the sorts, filters, totals, and subtotals applied to the table will return the desired results. With these rules in mind, begin working on the \textit{National Weather} workbook. 
 
 \begin{enumbox}
 	\begin{enumerate}
 		\item Open data file \fmtWorksheet{CH5-Data} and save the file as \fmtWorksheet{CH5-National Weather}.
 		\item Click the \fmtWorksheet{Portland ME} worksheet tab to activate it.
-		\item Notice that the data is in adjacent columns and rows. The upper-left corner of the table is in \fmtLoc{A5} and the titles are above the column headings in \fmtLoc{Row 5}.
+		\item Notice that the data is in adjacent columns and rows. The table's upper-left corner is \fmtLoc{A5}, and the titles are above the column headings in \fmtLoc{Row 5}.
 		\item Click cell \fmtLoc{A5}.
 		\item Click \fmtButton{Insert $ \Rightarrow $ Tables $ \Rightarrow $ Table}.
 		\item The dialog box illustrated in Figure \ref{05:fig02} pops up. Excel has correctly determined that the data range is $ A5 $:$ E33 $ and that the table has headers.
@@ -65,7 +66,7 @@ Following these rules will help ensure that the sorts, filters, totals, and subt
 
 		\item Click \fmtButton{OK}.
 		\item Click \fmtLoc{A5}.
-		\item Adjust all column widths so that the complete headings are visible in \fmtLoc{Row 5} with the filter arrows showing. The filter arrows are the down-arrow buttons that appear in the header row when the table is created. 
+		\item Adjust all column widths, so the complete headings and filter arrows are visible in \fmtLoc{Row 5}. The filter arrows are the down-arrow buttons that appear in the header row when the table is created. 
 	\end{enumerate}
 \end{enumbox}
 	
@@ -114,7 +115,7 @@ Notice that a new ribbon tab, \textit{Table Tools Design}, appears when the mous
 
 \subsection{Formatting Tables}
 
-There are many ways to format an Excel table. One of the easiest to use is a preset \textit{Table Style} using Light, Medium, or Dark colors. There are also a variety of \textit{Table Style Options} as listed in Table \ref{05:tab01}.
+There are many ways to format an Excel table. One of the easiest to use is a preset \textit{Table Style} using Light, Medium, or Dark colors. There are also a variety of \textit{Table Style Options}, as listed in Table \ref{05:tab01}.
 
 \begin{table}[H]
 	\rowcolors{1}{}{tablerow} % zebra striping background
@@ -137,7 +138,7 @@ There are many ways to format an Excel table. One of the easiest to use is a pre
 	} % End small
 \end{table}
 
-Add formatting to both of the Portland weather tables in the following steps.
+Add the following formatting to the Portland weather tables.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -174,7 +175,7 @@ Add formatting to both of the Portland weather tables in the following steps.
 
 Over time, new data will need to be added to a table, and that should be added in a blank row. The easiest way to do this is to enter the data below the last row in the table, then sort the table to arrange its data. If data must be added in a specific place in the middle of a table, insert a blank row and add the data there.
 
-Add the last three days of the months to the \textit{Portland ME} and \textit{Portland OR} worksheets. The following steps walks through this process.
+Add the last three days of the months to the \textit{Portland ME} and \textit{Portland OR} worksheets. The following steps walk through this process.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -236,14 +237,14 @@ Notice that the banded row formatting continues as additional rows are added to 
 	
 \subsection{Finding and Editing Data}
 
-It is inevitable that data errors which need to be corrected will appear in a table. While it is possible to visually scan through a table to find errors, this can be a tedious and tiresome process, especially if the table is large. Excel can help with this through the \textit{Find} command. When using \textit{Find}, the best practice is to start with the cell pointer in cell $ A1 $ to ensure that all the data in the worksheet is included in the search.
+Data errors that need to be corrected will inevitably appear in a table. While it is possible to scan through a table to find errors visually, this can be a tedious process, especially if the table is large. Excel can help with this through the \textit{Find} command. When using \textit{Find}, start with the cell pointer in $ A1 $, so the entire worksheet is included.
 
 A temperature of $ 3.4 $ degrees was entered erroneously in the \textit{Portland ME} sheet. It should have been $ 13.4 $. To fix this error, complete the following steps.
 
 \begin{enumbox}
 	\begin{enumerate}
 		\item Click on the \fmtWorksheet{Portland ME} sheet.
-		\item Press the \fmtKeystroke{Ctrl}+\fmtKeystroke{Home} keys together to go to the top of the sheet (cell \fmtLoc{A1}).
+		\item Press and hold \fmtKeystroke{Ctrl}, then tap \fmtKeystroke{Home} to go to the top of the sheet (cell \fmtLoc{A1}).
 		\item Click \fmtButton{Home $ \Rightarrow $ Editing $ \Rightarrow $ Find \& Select $ \Rightarrow $ Find}.
 		\item In the \fmtButton{Find} box, type $ 3.4 $, and then click \fmtButton{Find Next}.
 	
@@ -281,7 +282,7 @@ A temperature of $ 3.4 $ degrees was entered erroneously in the \textit{Portland
 
 \subsection{Freeze Rows and Columns}
 
-When panes are ``frozen'' in a worksheet, Microsoft Excel keeps specific rows or columns visible in the table as it is scrolled on the screen. For example, if the first row in the spreadsheet contains labels, that row might be frozen to make sure that the column labels remain visible as the sheet is scrolled down. Follow these steps to freeze the worksheet headings and keep them visible on the screen.
+When panes are ``frozen'' in a worksheet, Microsoft Excel keeps specific rows or columns visible in the table as it is scrolled on the screen. For example, if the first row in the spreadsheet contains labels, that row might be frozen to ensure that the column labels remain visible as the sheet is scrolled down. Follow these steps to freeze the worksheet headings and keep them visible on the screen.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -327,7 +328,7 @@ Content in a table can be sorted alphabetically, numerically, and in many other 
 	} % End small
 \end{table}
 
-Suppose it is important to know what the snowiest day was in January in Portland, Maine. One way to find that is to sort the \textit{Snow} column in Descending order.
+Suppose it is important to know the snowiest day in January in Portland, Maine. One way to find that is to sort the \textit{Snow} column in Descending order.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -344,7 +345,7 @@ Suppose it is important to know what the snowiest day was in January in Portland
 	\label{05:fig08}
 \end{figure}
 
-If this is done correctly, the snowiest day, January 3rd (in \textit{Row} $ 6 $) with $ 0.73 $ inches of snow, will sort to the top of the list. Notice the filter arrow changes in the snow column to a downward pointing arrow to indicate that the column is sorted in descending order (largest to smallest).
+If this is done correctly, the snowiest day, January 3rd (in \textit{Row 6}), with $ 0.73 $ inches of snow, will sort to the top of the list. Notice the filter arrow changes in the snow column to a downward pointing arrow to indicate that the column is sorted in descending order (largest to smallest).
 
 \begin{figure}[H]
 	\centering
@@ -384,7 +385,7 @@ If this is done correctly, the snowiest day, January 3rd (in \textit{Row} $ 6 $)
 
 \subsection{Multi-Level Sort}
 
-Sometimes a table needs to be sorted by more than one column at a time to efficiently analyze the data. For example, if the data included different types of loans from several bank offices, it would need to be sorted by the type of loan and then by bank office name to clearly see the different groups of loans. As another example, if a worksheet included a list of grades for students over their time in high school, the data should be sorted first by student name, then by grade level (freshman, sophomore, junior, and senior) so that each student's grades appear in chronological order.
+Sometimes a table needs to be sorted by more than one column at a time to analyze the data efficiently. For example, if the data included different types of loans from several bank offices, it would need to be sorted by the type of loan and then by bank office name to see the different groups of loans. As another example, imagine a worksheet containing a list of high school students’ grades. The data could be sorted first by student name and then grade level (first-year, second-year, junior, and senior) so each student’s grades appear in chronological order.
 
 For the weather data, determine how cold the snow days were in Oregon.
 
@@ -407,7 +408,7 @@ For the weather data, determine how cold the snow days were in Oregon.
 		\end{figure}
 
 		\item Click \fmtButton{OK}.
-		\item The table sort results should look like Figure \ref{05:fig12}. Notice for the two days with $ 0.08 $ inches of snow, the low temp of $ 35.5 $ on Day $ 9 $ is displayed before the low temp of $ 36.2 $ on Day $ 25 $. The lowest of the two was listed first. Also notice that the filter arrows changed on the sorted columns to show how they are sorted.
+		\item The table sort results should look like Figure \ref{05:fig12}. Notice for the two days with $ 0.08 $ inches of snow, the low temp of $ 35.5 $ on Day $ 9 $ is displayed before the low temp of $ 36.2 $ on Day $ 25 $. The lowest of the two was listed first. Also, notice that the filter arrows changed on the sorted columns to show how they are sorted.
 	\end{enumerate}
 \end{enumbox}
 
@@ -420,9 +421,9 @@ For the weather data, determine how cold the snow days were in Oregon.
 
 \subsection{Custom Sorts}
 
-In most cases, the data should be sorted in ``typical'' sort order: numbers sorted highest to lowest, words sorted alphabetically, etc. Some data does not make sense when sorted this way. For example, if the days of the week are sorted alphabetically, the result would be Friday, Monday, Saturday, Sunday, Thursday, Tuesday, and Wednesday. This order would be of no use to anyone! Similarly, the months of the year would not make sense alphabetically.
+In most cases, the data should be sorted in ``typical'' order: numbers from highest to lowest and words alphabetically. Some data does not make sense when sorted this way. For example, if the days of the week are sorted alphabetically, the result would be Friday, Monday, Saturday, Sunday, Thursday, Tuesday, and Wednesday. This order would be of no use to anyone! Similarly, the months of the year would not make sense alphabetically.
 
-To illustrate how days can be sorted, a \textit{Week} number column was added to the \textit{Weekly OR} sheet. Then, the \textit{Day} column was changed from a number to names like Sunday. This sheet facilitates further analysis of the data to see if there are weekly trends in the weather. To look for those trends, sort the \textit{Weekly OR} sheet by \textit{Week} and then by \textit{Day}.
+A \textit{Week} number column was added to the \textit{Weekly OR} sheet to illustrate how days can be sorted. Then, the \textit{Day} column was changed from a number to names like Sunday. This sheet facilitates further analysis of the data to see if there are weekly trends in the weather. To look for those trends, sort the \textit{Weekly OR} sheet by \textit{Week} and then by \textit{Day}.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -436,7 +437,7 @@ To illustrate how days can be sorted, a \textit{Week} number column was added to
 		\item Click the down-arrow for \textit{Order} and select \textit{Smallest to Largest}.
 		\item To add a 2nd level sort, click \fmtButton{Add Level} at the top left corner of the dialog box.
 		\item Click the down-arrow for \textit{Then by} and select \textit{Day}.
-		\item In the same row, click the down-arrow for \textit{Order} and select \textit{Custom List}. The dialog box should look like Figure \ref{05:fig13} will appear on the screen.
+		\item Click the down-arrow for \textit{Order} and select \textit{Custom List}. A dialog box like Figure \ref{05:fig13} will appear on the screen.
 
 		\begin{figure}[H]
 			\centering
@@ -445,7 +446,7 @@ To illustrate how days can be sorted, a \textit{Week} number column was added to
 			\label{05:fig13}
 		\end{figure}
 
-		\item Click on \fmtButton{Sunday, Monday, Tuesday, etc.} in the \textit{Custom} lists on the left-side of the dialog box. NOTE: Make sure to select the list with the days of the week spelled out, not the abbreviations for the days of the week.
+		\item Click on \fmtButton{Sunday, Monday, Tuesday$\ldots$} in the \textit{Custom} lists on the left side of the dialog box. NOTE: Make sure to select the list with the days of the week spelled out, not the abbreviations for the days of the week.
 		\item Click \fmtButton{OK}. 
 		\item The \textit{Sort} dialog box should look like Figure \ref{05:fig14}.
 
@@ -509,9 +510,7 @@ To illustrate how days can be sorted, a \textit{Week} number column was added to
 
 \subsection{Filtering Data}
 
-When an Excel table is first created, filter arrows appear in all the column headings. Those arrows can be used to sort the data by a single column. These same arrows can also be used to filter or limit the displayed data within a column. There are many ways to filter data within a column depending on whether the data is text or numeric. 
-
-Notice there is sometimes more than one way to filter data (\ie with a filter choice or a checked box). There are also single criteria filters and multi-criteria filters. As an introduction to filtering, look at just the first week of data in the \textit{Weekly OR} sheet.
+When an Excel table is created, filter arrows appear in all the column headings. Those arrows open a drop-down menu, so the column can be sorted or filtered to change the data display. There is sometimes more than one way to filter data (\ie with a filter choice or a checked box). There are also single criteria filters and multi-criteria filters. As an introduction to filtering, look at the first week of data in the \textit{Weekly OR} sheet.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -524,7 +523,7 @@ Notice there is sometimes more than one way to filter data (\ie with a filter ch
 	\end{enumerate}
 \end{enumbox}
 	
-The table should look like Figure \ref{05:fig16}. Only seven rows of Week One are visible in the table. Notice in the Status Bar at the bottom of the screen the message ``$ 7 $ of $ 31 $ records found''. Also notice that the filter arrow in the Week heading has changed to a funnel which indicates that this column is currently filtered.
+The table should look like Figure \ref{05:fig16}. Only seven rows of Week One are visible in the table. Notice in the Status Bar at the bottom of the screen the message ``$ 7 $ of $ 31 $ records found''. Also, notice that the filter arrow in the Week heading has changed to a funnel, indicating that this column is currently filtered.
 
 \begin{figure}[H]
 	\centering
@@ -573,7 +572,7 @@ Follow this procedure to remove the filter.
 	\end{sklbox}
 \end{center}
 
-As an example of using a numeric filter, find the days in Portland ME when it was warmer than $ 32 $ degrees.
+An example of using a numeric filter is to find the days in Portland, ME, when it was warmer than $ 32 $ degrees.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -603,7 +602,7 @@ It is now easy to see that it was above $ 32 $ degrees for only the first three 
 	\label{05:fig18}
 \end{figure}
 
-Review sorting and filtering in the following steps.
+The following steps review sorting and filtering.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -624,7 +623,7 @@ Review sorting and filtering in the following steps.
 
 \subsection{Filtering Using the Slicer}
 
-Beginning in Excel $ 2013 $, slicers were added as another way to filter table data. A slicer is useful because it clearly indicates what data is shown in the table after the data has been filtered.
+Beginning in Excel $ 2013 $, slicers were added as another way to filter table data. A slicer is helpful because it indicates what data is shown in the table after filtering.
 
 Try using the Slicer to filter the \textit{Portland OR} data table.
 
@@ -676,7 +675,7 @@ Try using the Slicer to filter the \textit{Portland OR} data table.
 		\item Click in the slicer and scroll down to Day $ 15 $. Click the \fmtButton{15} button to show only the data for day $ 15 $ in the data table.
 		\item Click the \textit{Multiselect} button in the top center of the slicer to permit the selection of multiple lines.
 		\item Click the Slicer buttons for Days $ 10 $ through $ 14 $. The table should now show the data from Days $ 10-15 $.
-		\item Using the filter arrow on the right edge of the \textit{Day} header in \fmtLoc{A5}, sort the column from smallest to largest to show the days in order as in Figure \ref{05:fig21}.
+		\item Using the filter arrow on the right edge of the \textit{Day} header in \fmtLoc{A5}, sort the column from smallest to largest to show the days in order, as in Figure \ref{05:fig21}.
 
 		\begin{figure}[H]
 			\centering
@@ -687,13 +686,13 @@ Try using the Slicer to filter the \textit{Portland OR} data table.
 
 		\item Click the red \fmtButton{X} in the top right corner of the slicer to remove the filter and show the complete data file.
 		\item Using the filter arrow on the right edge of the \textit{Day} header in \fmtLoc{A5}, sort the column from smallest to largest to show the days in order.
-		\item Click in the top margin of the slicer to select the slicer tool. It should have a thick border and drag handles. Press \fmtKeystroke{Delete} to remove the slicer.
+		\item Click in the top margin of the slicer to select the slicer tool. It should have a thick border and drag handles. Tap \fmtKeystroke{Delete} to remove it.
 	\end{enumerate}
 \end{enumbox}
 
 \subsection{Total Rows}
 
-By adding a total row to the bottom of the table, summary data is easily seen for one or more of the columns. Total rows can be added to tables as a whole or to only those that are filtered. Total rows can easily be toggled on and off as the need for summary data arises.
+By adding a total row to the bottom of the table, summary data is easily seen for one or more of the columns. 
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -771,14 +770,14 @@ Now switch to the \textit{Weekly OR} sheet and add a Slicer and Total Row to thi
 
 \subsection{Subtotaling}
 
-Subtotals and grand totals can be easily calculated for a column in a table. This is a powerful tool that to quickly display multiple levels of summary data within the table. This can provide Management with a report of higher-level summary data one minute, and then can be easily switched back to detailed data the next minute. \textit{It is important to save often during this process and follow the steps carefully.} It is recommended to make a copy of the data to be subtotaled and place it in a new sheet, so the summary subtotaled data can be separately saved if desired.
+Subtotals and grand totals can display multiple levels of summary data within the table so that Management can reference details and multiple summaries. \textit{It is essential to save during this process and follow the steps carefully.} Consider copying the raw data to a new worksheet so it can be separately saved.
 
-The following steps summarize the process to add subtotals to a worksheet.
+The following steps summarize the process of adding subtotals to a worksheet.
 
 \begin{enumbox}
 	\begin{enumerate}
-		\item Sort by the column to subtotal on.
-		\item Convert the table back to a normal Excel range since a table cannot contain a subtotal.
+		\item Sort by the subtotaled column.
+		\item Convert the table to a range since a table cannot contain a subtotal.
 		\item Click \textit{Data $ \Rightarrow $ Outline $ \Rightarrow $ Subtotal}.
 		\item To limit the displayed data further, click \textit{Data $ \Rightarrow $ Sort \& Filter $ \Rightarrow $ Filter}.
 	\end{enumerate}
@@ -789,19 +788,19 @@ To practice subtotaling, determine what the weather looks like for each day of t
 \begin{enumbox}
 	\begin{enumerate}
 		\item Click on the \fmtWorksheet{Weekly OR} sheet.
-		\item Hover the mouse over the \fmtWorksheet{Weekly OR} sheet tab at the bottom of the screen, hold the \fmtKeystroke{Ctrl} key down and then click-and-drag the sheet to the right until it is past all the existing sheets.
-		\item When a sheet icon with a \textbf{+} sign is visible, let go of the mouse button and then the \fmtKeystroke{Ctrl} key. A \fmtWorksheet{Weekly OR (2)} sheet will appear.
-		\item Right-click on the new sheet tab, select \fmtButton{Rename}, type \fmtTyping{Subtotal OR}, and then press \fmtKeystroke{Enter}.
+		\item Hover the mouse over the \fmtWorksheet{Weekly OR} sheet tab at the bottom of the screen, press and hold \fmtKeystroke{Ctrl}, then click-and-drag the sheet to the right until it is past all existing sheets.
+		\item When a sheet icon with a \textbf{+} sign is visible, let go of the mouse button and then \fmtKeystroke{Ctrl}. A \fmtWorksheet{Weekly OR (2)} sheet will appear.
+		\item Right-click on the new sheet tab, select \fmtButton{Rename}, type \fmtTyping{Subtotal OR}, and then tap \fmtKeystroke{Enter}.
 		\item Save the \fmtWorksheet{CH5-National Weather} workbook.
 		\item Remove all filters in the table by clicking \fmtButton{Data $ \Rightarrow $ Sort \& Filter $ \Rightarrow $ Clear}.
-		\item Click in the top margin of the slicer to select the slicer tool. It should have a thick border and drag handles. Press \fmtKeystroke{Delete} to remove the slicer.
+		\item Click in the top margin of the slicer to select the slicer tool. It should have a thick border and drag handles. Tap \fmtKeystroke{Delete} to remove it.
 	
 		\item Click \fmtButton{Data $ \Rightarrow $ Sort \& Filter $ \Rightarrow $ Sort}. 
 		\item Click the down-arrow for \textit{Column Sort By} and select \textit{Day}.
 		\item Click the down-arrow for \textit{Order} and select \textit{Custom List}.
-		\item Select the custom list Sunday, Monday, Tuesday, etc. (See Figure \ref{05:fig13} through Figure \ref{05:fig15} for a review of Custom Sorting.)
-		\item Click \fmtButton{OK} then click \fmtButton{OK} a second time.
-		\item Before adding subtotals, convert the table back to a regular range. To do this, click \fmtButton{Table Tools Design $ \Rightarrow $ Tools $ \Rightarrow $ Convert to Range} (see Figure \ref{05:fig23}). (\fmtNewExcel{Excel 365}. This tab is called \textit{Table Design} rather than \textit{Table Tools Design}.)
+		\item Select the custom list Sunday, Monday, Tuesday$\ldots$ (See Figures \ref{05:fig13} through \ref{05:fig15} for a review of Custom Sorting.)
+		\item Click \fmtButton{OK}, then click \fmtButton{OK} a second time.
+		\item Before adding subtotals, convert the table back to a range. To do this, click \fmtButton{Table Tools Design $ \Rightarrow $ Tools $ \Rightarrow $ Convert to Range} (see Figure \ref{05:fig23}). (\fmtNewExcel{Excel 365}. This tab is called \textit{Table Design} rather than \textit{Table Tools Design}.)
 
 		\begin{figure}[H]
 			\centering
@@ -813,7 +812,7 @@ To practice subtotaling, determine what the weather looks like for each day of t
 		\item When a box pops up with a warning about converting the table, click \fmtButton{Yes}.
 		\item Click cell \fmtLoc{A6}.
 		\item Click \fmtButton{Data $ \Rightarrow $ Outline $ \Rightarrow $ Subtotal}.
-		\item In the \textit{Subtotal Window}, make the choices shown in the Figure \ref{05:fig24}. It is essential to select the column that the data is sorted by in the \textit{At each change in field} at the top of the window. 
+		\item In the \textit{Subtotal Window}, make the choices shown in Figure \ref{05:fig24}. The sorted column must be selected for the \textit{At each change in field} at the top of the window. 
 		\item Click \fmtButton{OK}.
 	\end{enumerate}
 \end{enumbox}
@@ -825,7 +824,7 @@ To practice subtotaling, determine what the weather looks like for each day of t
 	\label{05:fig24}
 \end{figure}
 
-The data should look like Figure \ref{05:fig25}. Successful subtotaling shows only one subtotal for each group in the column sorted by. (\textit{HINT}: If there is more than one Subtotal for the same group (\ie one of the days of the week in the example), then the column was not sorted before subtotaling. Remove the subtotals using the \textit{Remove All} button in Figure \ref{05:fig24}, sort the table, and then subtotal again.)
+The data should look like Figure \ref{05:fig25}. There should only be one subtotal for each group in the sorted column. (\textit{HINT}: If there is more than one subtotal for a specific group, the column was not sorted before subtotaling. Remove the subtotals using the \textit{Remove All} button in Figure \ref{05:fig24}, sort the table, and then subtotal again.)
 
 \begin{figure}[H]
 	\centering
@@ -834,7 +833,7 @@ The data should look like Figure \ref{05:fig25}. Successful subtotaling shows on
 	\label{05:fig25}
 \end{figure}
 
-Notice the three \textit{Outline} buttons circled in the upper-left corner of the spreadsheet. These control the amount of subtotaled data that is displayed. Table \ref{05:tab06} describes the different \textit{Outline} buttons.
+The three \textit{Outline} buttons circled in the upper-left corner of the spreadsheet control the level of displayed data. Table \ref{05:tab06} describes the different \textit{Outline} buttons.
 
 \begin{table}[H]
 	\rowcolors{1}{}{tablerow} % zebra striping background
@@ -923,7 +922,7 @@ Notice that cells $ A1 $, $ A2 $, and $ A3 $ are not merged and centered over th
 \begin{enumbox}
 	\begin{enumerate}
 		\item Select cell \fmtLoc{A1} and click \fmtButton{Home $ \Rightarrow $ Alignment $ \Rightarrow $ Merge \& Center}. This should split \fmtLoc{A1} into four cells (\fmtLoc{A1:D1}).
-		\item Select the range \fmtLoc{A1:E1} and click \fmtButton{Home $ \Rightarrow $ Alignment $ \Rightarrow $ Merge \& Center}. Cell \fmtLoc{A1} should now be merged across \fmtLoc{A1:E1}.
+		\item Select \fmtLoc{A1:E1} and click \fmtButton{Home $ \Rightarrow $ Alignment $ \Rightarrow $ Merge \& Center}. Cell \fmtLoc{A1} should now be merged across \fmtLoc{A1:E1}.
 		\item Repeat these steps for \fmtLoc{A2} and \fmtLoc{A3}.
 	\end{enumerate}
 \end{enumbox}
@@ -975,12 +974,12 @@ Next, open \textit{Print Preview} and determine what page setup options need to 
 
 \subsection{Inserting an Image to Enhance a Worksheet}
 
-Next add a small weather-related graphic to the worksheet to enhance its appearance. In Excel, an image file from either the local hard drive or downloaded from an online source can be used. For this exercise, use the graphic in the student files for this chapter.
+Next, add a small weather-related graphic to the worksheet to enhance its appearance. In Excel, an image file from either the local hard drive or downloaded from an online source can be used. For this exercise, use the graphic in the student files for this chapter.
 
 \begin{enumbox}
 	\begin{enumerate}
 		\item \fmtOldExcel{Excel 2016} Click \fmtButton{Insert $ \Rightarrow $ Illustrations $ \Rightarrow $ Pictures}. (This inserts an image from the local computer. To search for an online image, click the \fmtButton{Online Pictures} button.) (See Figure \ref{05:fig28}.)
-		\item \fmtNewExcel{Excel 365} Click \fmtButton{Insert $ \Rightarrow $ Illustrations $ \Rightarrow $ Pictures $ \Rightarrow $ This Device}. (This inserts an image from the local computer. To search for an online image, click the \fmtButton{Online Pictures} button in the \textit{Pictures} dropdown menu.)
+		\item \fmtNewExcel{Excel 365} Click \fmtButton{Insert $ \Rightarrow $ Illustrations $ \Rightarrow $ Pictures $ \Rightarrow $ This Device}. (This inserts an image from the local computer. To search for an online image, click the \fmtButton{Online Pictures} button in the \textit{Pictures} drop-down menu.)
 
 		\begin{figure}[H]
 			\centering
@@ -993,7 +992,7 @@ Next add a small weather-related graphic to the worksheet to enhance its appeara
 	\end{enumerate}
 \end{enumbox}
 
-The image now appears on the worksheet, but not in the desired location. It is also slightly larger than desired (see Figure \ref{05:fig29}).
+The image appears on the worksheet but not in the desired location. It is also slightly larger than desired (see Figure \ref{05:fig29}).
 
 \begin{figure}[H]
 	\centering
@@ -1014,7 +1013,7 @@ The image now appears on the worksheet, but not in the desired location. It is a
 	
 \subsection{Previewing the Remaining Worksheets}
 
-Before considering this workbook finished, confirm that the remaining worksheets are all printing appropriately.
+Before the workbook is finished, confirm that the remaining worksheets are all printing appropriately.
 
 \begin{enumbox}
 	\begin{enumerate}
@@ -1069,16 +1068,16 @@ Before considering this workbook finished, confirm that the remaining worksheets
 	\label{05:fig30}
 \end{figure}
 
-Travel and tour companies need to keep track of client data as well as travel/tour options and tour guides. Keeping up-to-date, accurate records is essential to their bottom line. To run a tour company, employees must be able to manipulate their data quickly and easily. This exercise illustrates how to use the skills presented in this chapter to generate the data needed daily by a tourism company. Figure \ref{05:fig30} shows one of the completed worksheets.
+Travel and tour companies must keep track of client data, travel/tour options, and tour guides. Keeping up-to-date, accurate records is essential to their bottom line. To run a tour company, employees must be able to manipulate the data quickly and easily. This exercise illustrates how to use the skills presented in this chapter to generate the data needed daily by a tourism company. Figure \ref{05:fig30} shows one of the completed worksheets.
 
 \begin{enumbox}
 	\begin{enumerate}
 		\item Open the data file \fmtWorksheet{PR5-Data} and save the file as \fmtWorksheet{PR5-Canyon Trails}.
 		\item In \fmtLoc{J4}, calculate \textit{Total Cost} (\fmtTyping{Guests*Per Person Cost}). Copy the formula down the column.
 		\item Format \fmtLoc{Column I} and \fmtLoc{Column J} as \textit{Accounting} with no decimal places.
-		\item Center all headings in \fmtLoc{Row }$ 3 $.
-		\item Click cell \fmtLoc{A3}. Insert a table with headers for the range \fmtLoc{A3:J53}.
-		\item Adjust column widths within the table so that all the headings are completely visible.
+		\item Center all headings in \fmtLoc{Row 3}.
+		\item Click cell \fmtLoc{A3}. Insert a table with headers for \fmtLoc{A3:J53}.
+		\item Adjust column widths within the table to make all headings completely visible.
 		\item Rename \fmtWorksheet{Sheet $ 1 $} to \fmtTyping{Current Tours}. Sort this sheet alphabetically (A to Z) by \textit{Last Name}.
 	
 		\item Make a copy of the \fmtWorksheet{Current Tours} sheet and rename it \fmtWorksheet{Tours by Canyon}.
@@ -1087,18 +1086,18 @@ Travel and tour companies need to keep track of client data as well as travel/to
 	
 		\item Make another copy of the \fmtWorksheet{Current Tours} sheet and rename it \fmtWorksheet{US Guests}.
 		\item Place the \fmtWorksheet{US Guests} sheet to the right of the \fmtWorksheet{Tours by Canyon} sheet.
-		\item Filter the \fmtWorksheet{US Guests} worksheet so that only guests with a \textit{Home Country} of the United States show. 
+		\item Filter the \fmtWorksheet{US Guests} worksheet so only guests with a \textit{Home Country} of the United States show. 
 		\item Sort the worksheet by \textit{Tour State} (A to Z).
 		\item Add a Total Row that sums the \textit{Guests} and \textit{Total Cost} columns.
 	
 		\item Make another copy of the \fmtWorksheet{Current Tours} sheet and rename it \fmtWorksheet{European Guests}. 
 		\item Place the \fmtWorksheet{European Guests} sheet to the right of the \fmtWorksheet{US Guests} sheet. 
 		\item On the \fmtWorksheet{European Guests} worksheet, hide the \textit{Average Age} column.
-		\item Insert a slicer in the \fmtWorksheet{European Guests} sheet for \textit{Home Country}. Move the slicer so its top left corner is near the center of \fmtLoc{K3}. Click-and-drag the bottom right corner of the slicer so it is near the center of \fmtLoc{N16}.
+		\item Insert a slicer in the \fmtWorksheet{European Guests} sheet for \textit{Home Country}. Move the slicer, so its top left corner is near the center of \fmtLoc{K3}. Click and drag the bottom right corner of the slicer so it is near the center of \fmtLoc{N16}.
 		\item Select both \textit{Germany} and the \textit{United Kingdom} on the slicer.
 		\item Sort the filtered sheet by \textit{Home Country} (A to Z) and then \textit{Last Name} (A to Z).
 	
-		\item Make one more copy of the \fmtWorksheet{Current Tours} sheet and rename it \fmtWorksheet{Tours by State}.
+		\item Make a copy of the \fmtWorksheet{Current Tours} sheet and rename it \fmtWorksheet{Tours by State}.
 		\item Place the \fmtWorksheet{Tours by State} sheet to the right of the \fmtWorksheet{European Guests} sheet. 
 		\item Subtotal the sheet by \textit{Tour State}, summing the \textit{Total Cost} column. (Remember to sort the worksheet by \textit{Tour State} before applying subtotals.)
 		\item Change the name of the \fmtWorksheet{Tours by State} sheet to \fmtWorksheet{$ 5-7 $ Day Tours by State}. Filter out $ 3 $-day tours in the table.
@@ -1111,7 +1110,7 @@ Travel and tour companies need to keep track of client data as well as travel/to
 			\item Set the scaling to \fmtButton{Fit All Columns on One Page}.
 		\end{itemize}
 	
-		\item For any worksheets that print on more than one page, add Print Titles to repeat the first three rows at the top of each page.
+		\item Add Print Titles to repeat the first three rows at the top of each page for any worksheets that print on more than one page.
 		\item Make sure the sheets are in the following order from left to right: \fmtWorksheet{Current Tours}, \fmtWorksheet{Tours by Canyon}, \fmtWorksheet{US Guests}, \fmtWorksheet{European Guests}, and \fmtWorksheet{$ 5-7 $ Day Tours by State}.
 		\item Save the \fmtWorksheet{PR5-Canyon Trails} workbook.
 		\item Compare the workbook with the self-check answer key (\fmtWorksheet{PR5-Canyon Trails Solution}) and then close and submit the \fmtWorksheet{PR5-Canyon Trails} workbook as directed by the instructor.
@@ -1123,7 +1122,7 @@ Travel and tour companies need to keep track of client data as well as travel/to
 
 \subsection{Tables for a Retail Company}
 
-Retail companies with online and in-store sales have a huge quantity of data to keep track of. Keeping track of sales, costs, and profits on a daily basis is essential to making the most of a business. This exercise illustrates how to use the skills presented in this chapter to generate the data needed on a daily basis by a retail company. Figure \ref{05:fig31} shows the completed worksheet.
+Retail companies with online and in-store sales have massive data to track. Keeping track of daily sales, costs, and profits is essential to making the most of a business. This exercise illustrates how to use the skills presented in this chapter to generate the data needed by a retail company. Figure \ref{05:fig31} shows the completed worksheet.
 
 \begin{figure}[H]
 	\centering
@@ -1136,7 +1135,7 @@ Retail companies with online and in-store sales have a huge quantity of data to 
 	\begin{enumerate}
 		\item Open \fmtWorksheet{SC5-Data} and save the file as \fmtWorksheet{SC5-Dynamite Customer Sales}.
 		\item Click on the \fmtWorksheet{Sales} worksheet.
-		\item In \fmtLoc{I4}, enter a \fmtTyping{Vlookup} function that will find the \textit{Product Price} for the Product in \fmtLoc{E4} using the table in the \fmtWorksheet{Product Table} worksheet. In the \fmtTyping{Vlookup} function, fill in the required parameters using the values below along with Figure \ref{05:fig32} as a reference. (Notice that the \textit{Table\_array} parameter uses absolute cell references.)
+		\item In \fmtLoc{I4}, enter a \fmtTyping{Vlookup} function that will find the \textit{Product Price} for the Product in \fmtLoc{E4} using the the \fmtWorksheet{Product Table} worksheet. In the \fmtTyping{Vlookup} function, fill in the required parameters using the values below along with Figure \ref{05:fig32} as a reference. (Notice that the \textit{Table\_array} parameter uses absolute cell references.)
 		
 		\begin{itemize}
 			\item \textbf{Lookup\_value}: E$ 4 $
@@ -1158,7 +1157,7 @@ Retail companies with online and in-store sales have a huge quantity of data to 
 		\item In \fmtLoc{K4}, calculate \textit{Profit} (\textit{Product Price} $ – $ \textit{Product Cost}).
 		\item Copy \fmtLoc{K4} to \fmtLoc{K5:K52}.
 		\item Format \fmtLoc{Columns I}, \fmtLoc{Column J}, and \fmtLoc{Column K} as \textit{Accounting} with two decimal places.
-		\item Click cell \fmtLoc{A3}. Insert a table with headers for the range \fmtLoc{A3:K52}. \textit{BE CAREFUL HERE}: Excel will try to insert a table starting with \fmtLoc{A2}. Be certain the range starts with \fmtLoc{A3}.
+		\item Click cell \fmtLoc{A3}. Insert a table with headers for \fmtLoc{A3:K52}. \textit{BE CAREFUL HERE}: Excel will try to insert a table starting with \fmtLoc{A2}. Be sure the range starts with \fmtLoc{A3}.
 	\end{enumerate}
 \end{enumbox}
 	
